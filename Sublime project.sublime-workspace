@@ -1,0 +1,1190 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dire",
+				"direction_of_stairs"
+			],
+			[
+				"close",
+				"close_other_channels"
+			],
+			[
+				"pulse",
+				"pulse_amplitude_Q	statement"
+			],
+			[
+				"drive",
+				"drive_amplitude"
+			],
+			[
+				"num_",
+				"num_Cliffords	param"
+			],
+			[
+				"calcuslope",
+				"calculate_flux_slope	function"
+			],
+			[
+				"current",
+				"current_RO_frequency	statement"
+			],
+			[
+				"calc",
+				"calculate_flux_frequency	function"
+			],
+			[
+				"RF",
+				"qubit_RF_instrument"
+			],
+			[
+				"cur",
+				"current_RO_frequency	statement"
+			],
+			[
+				"qubisour",
+				"qubit_source_power"
+			],
+			[
+				"data_from",
+				"data_from_time	function"
+			],
+			[
+				"figu",
+				"figureinset"
+			],
+			[
+				"tempera",
+				"temperature_names	statement"
+			],
+			[
+				"savedat",
+				"savedata	statement"
+			],
+			[
+				"fo",
+				"for	keyword"
+			],
+			[
+				"Ins",
+				"instrument	module"
+			],
+			[
+				"def",
+				"def	Function"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 467.0,
+		"last_filter": "sib",
+		"selected_items":
+		[
+			[
+				"sib",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"indenta",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				"sidr",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sider",
+				"Side Bar: Refresh"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"rena",
+				"ANF: Rename File"
+			],
+			[
+				"new fil",
+				"ANF: New File"
+			],
+			[
+				"new il",
+				"File: New View into File"
+			],
+			[
+				"dele",
+				"ANF: Delete Current File"
+			],
+			[
+				"latex",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"check",
+				"LaTeXing: Check System"
+			],
+			[
+				"check sy",
+				"LaTeXing: Check System"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"error",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"next",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"gutter the",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"debug",
+				"SublimeLinter: Disable Debug Mode"
+			],
+			[
+				"linter gut",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"togll",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"togg lin",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"rep ",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyt",
+				"SublimeREPL: Python"
+			],
+			[
+				"rep py",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl pytho",
+				"SublimeREPL: Python"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"compa",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"git ",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"gitgu",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"pack con",
+				"Package Control: Discover Packages"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"rename",
+				"ANF: Rename File"
+			],
+			[
+				"renam",
+				"ANF: Rename File"
+			],
+			[
+				"theme",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"pak in",
+				"Package Control: Install Package"
+			],
+			[
+				"fun",
+				"Snippet: Function"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack con re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack control s",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"gitgutt",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 685.0
+	},
+	"console":
+	{
+		"height": 244.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"sys.path",
+			"sys.path.append('C:\\\\Python27\\Lib\\site-packages')",
+			"sys.path",
+			"import sys",
+			"import os",
+			"sys.path",
+			"os.sys.path",
+			"platform.python_version()",
+			"platform.version()",
+			"import platform",
+			"os.sys.path",
+			"import os",
+			"PYTHONPATH",
+			"os.sys.path",
+			"os.path",
+			"import os",
+			"which git",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Serwan/Documents/cQED/Master Thesis"
+	],
+	"file_history":
+	[
+		"/C/Python27/Lib/site-packages/pythonwarrior/serwan-khan-intermediate/player.py",
+		"/C/Python27/Scripts/pythonwarrior",
+		"/C/PycQED/scripts/personal_folders/Serwan/calibrate_drag_detuning.py",
+		"/C/PycQED/modules/analysis/measurement_analysis.py",
+		"/C/PycQED/modules/measurement/composite_detector_functions.py",
+		"/C/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking_measurement.py",
+		"/C/PycQED/scripts/personal_folders/Chris/calibrate_amplitude_mixer_skewness.py",
+		"/C/PycQED/instruments/container_instruments/qubit_object.py",
+		"/C/Users/Serwan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/PycQED/instruments/meta_instruments/TimeDomainMeasurement.py",
+		"/C/PycQED/modules/measurement/AWG_sweep_functions.py",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati_VNA/P_to_P_in.py",
+		"/C/PycQED/instruments/physical_instruments/Tektronix_AWG5014.py",
+		"/C/PycQED/modules/measurement/calibration_toolbox.py",
+		"/C/PycQED/modules/utils/physcon.py",
+		"/C/PycQED/instruments/meta_instruments/AWG_Composite.py",
+		"/C/PycQED/modules/analysis/analysis_toolbox.py",
+		"/C/PycQED/scripts/personal_folders/Chris/RandomizedBenchmarking.py",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/running_avg.dem",
+		"/C/PycQED/readme.md",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/random-points",
+		"/C/PycQED/instruments/meta_instruments/MeasurementControl.py",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/matplotlib/mpl_ex_cursor.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/Resonator_powersweep.py",
+		"/C/PycQED/qtlab/source/prologix_ethernet.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/printfuncs.py",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Instruments/Plot3D/oldversionsandtrials/Plot3D.Monitor2.vi",
+		"/C/PycQED/qtlab/instrument_plugins/Optodac.py",
+		"/C/PycQED/instruments/physical_instruments/IVVI.py",
+		"/C/PycQED/instruments/meta_instruments/Flux_Control.py",
+		"/C/PycQED/scripts/personal_folders/Serwan/match_frequencies_Ramsey.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/maserati_tests.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/guess_initial_values.py",
+		"/C/PycQED/qtlab/source/instrument.py",
+		"/C/PycQED/modules/measurement/sweep_functions.py",
+		"/C/PycQED/init/config/setup_dict.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/set_flux_control.py",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/fontfile_latex.dem",
+		"/C/PycQED/modules/analysis/fitting_models.py",
+		"/C/PycQED/scripts/personal_folders/Serwan/measure_readout_crosstalk.py",
+		"/C/PycQED/scripts/measurement_control_dummy_sweep_and_detector.py",
+		"/C/PycQED/qtlab/source/lib/misc.py",
+		"/C/PycQED/scripts/personal_folders/Serwan/tracked_spectroscopy_script.py",
+		"/C/PycQED/scripts/personal_folders/Chris/Getting_Qubit_Arches.py",
+		"/C/PycQED/scripts/personal_folders/Chris/Getting_Full_Matrix.py",
+		"/C/PycQED/scripts/personal_folders/Chris/Getting_Flux_Matrix_Elements.py",
+		"/C/PycQED/modules/measurement/detector_functions.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/Pulsed_spec.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/Getting_Qubit_Arches.py",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Server/TCP Read All.vi",
+		"/C/PycQED/scripts/personal_folders/Chris/Testing_Readout_Cal.py",
+		"/C/PycQED/scripts/personal_folders/Adriaan/qubit_char_script.py",
+		"/C/PycQED/scripts/personal_folders/Serwan/tracked_spectroscopy.py",
+		"/C/PycQED/init/config/La_Maserati.py",
+		"/C/PycQED/qtlab/examples/measure_module.py",
+		"/C/PycQED/qtlab/examples/monitor_ins.py",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati/get_base_temperature_LaMasserati.py",
+		"/C/PycQED/instruments/physical_instruments/_SignalHound/GetSweep.vi",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati_VNA/get_temp_vespa.py",
+		"/C/PycQED/modules/utilities/general.py",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/gijs_scripts/test_load_adapter.py",
+		"/C/PycQED/init/config/La_Ferrari.py",
+		"/C/PycQED/instruments/physical_instruments/_Alazar_ATS9870/development/AcqToDisk.cpp",
+		"/C/PycQED/qtlab/clients/gui_client/windows/source_window_disabled.py",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/delaunay-edges.dat",
+		"/C/PycQED/qtlab/source/data.py",
+		"/C/PycQED/init/config/CDickel_Desktop.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/functions.py",
+		"/C/PycQED/modules/analysis/utils/__init__.py",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/dataprocessing/moving_average_norm.py",
+		"/C/PycQED/scripts/homodyne_analysis.py",
+		"/C/PycQED/qtlab/examples/hdf5.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/__init__.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/old/__init__.py",
+		"/C/PycQED/modules/analysis/fit_toolbox/old/hamil2.py",
+		"/C/PycQED/modules/utils/__init__.py",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Utilities/SetGlobalMonitorVariable.vi",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/utils/last_data.py",
+		"/C/PycQED/modules/utilities/__init__.py",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/lvdata to pydata/_support/unsigned integer to pystring.vi",
+		"/C/PycQED/qtlab/userconfig.py",
+		"/C/PycQED/data/Noise characterization/IF_sweep_frequency/IF_sweep.pickle",
+		"/C/PycQED/qtlab/source/lib/network/share_qt.py",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/charset.dem",
+		"/C/PycQED/qtlab/CHANGELOG",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Message Builder/methodCall/call header.vi",
+		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Utilities/CombinedMonitor.vi",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/backup-scripts/20141021/calibrate_offsets.py",
+		"/C/PycQED/qtlab/qtlab",
+		"/c/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty",
+		"/C/Users/Serwan/Documents/cQED/Resonator paper/paper/SOM_resonators.tex",
+		"/C/Users/Serwan/Documents/cQED/Resonator paper/paper/Paper.tex",
+		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/bibliography.bib",
+		"/C/Users/Serwan/Documents/cQED/SOM_resonators.tex",
+		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/Three month evaluation.tex",
+		"/C/Users/Serwan/Documents/cQED/PaperNotes.bib",
+		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/Three month evaluation.aux",
+		"/C/Users/Serwan/Documents/Three-month-evaluation/bibliography.bib",
+		"/C/PycQED/ipython_notebooks/.ipynb_checkpoints/Fitting Convergence-checkpoint.ipynb",
+		"/C/PycQED/ipython_notebooks/Fitting Convergence.ipynb",
+		"/C/PycQED/qtlab/examples/filename_auto_increment.py",
+		"/C/PycQED/ipython_notebooks/Find Resonators.ipynb",
+		"/C/PycQED/modules/analysis/__init__.py",
+		"/C/Users/Serwan/Documents/Three-month-evaluation/Three month evaluation.toc",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaVespa/Kian/diff_test.py",
+		"/C/PycQED/ipython_notebooks/Dispersive shift fit.ipynb",
+		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/utils/print_data_info.py",
+		"/C/PycQED/qtlab/AUTHORS",
+		"/C/PycQED/instruments/physical_instruments/Fridge_Monitor.py",
+		"/C/PycQED/qtlab/source/hdf5_data.py",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/bin/share/PostScript/unicode_small.map",
+		"/C/PycQED/qtlab/source/instruments.py",
+		"/C/PycQED/init/config/Serwans_Laptop.py",
+		"/C/PycQED/qtlab/examples/simple_example.py",
+		"/C/PycQED/qtlab/instrument_plugins/SMC100.py",
+		"/C/PycQED/qtlab/INSTALL",
+		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/imageNaN.dem",
+		"/C/PycQED/init/config/userconfig.py",
+		"/C/PycQED/init/999_init_location.py",
+		"/C/PycQED/init/config/Serwans_Laptop",
+		"/C/PycQED/qtlab/init/80_create_instruments.py",
+		"/C/texlive/2014/README",
+		"/C/qtlab/scripts/general/measurement/set_RF_power.py",
+		"/C/qtlab/examples/simple_example.py",
+		"/C/qtlab/measurement/sweep_functions.py",
+		"/C/qtlab/scripts/LaFerrari/init.py",
+		"/C/qtlab/instrument_plugins/_Spectrum_M2i2030/errors.py",
+		"/C/qtlab/instrument_plugins/example.py"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 117.0,
+		"where_history":
+		[
+			"C:\\PycQED\\modules,C:\\PycQED\\scripts,C:\\PycQED\\instruments,C:\\PycQED\\qtlab,-*.log",
+			"C:\\PycQED\\modules,C:\\PycQED\\scripts",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			";",
+			"drive",
+			"'Dupl2",
+			"qt.instru",
+			"Dupl",
+			"qt.instru",
+			"Dupl2",
+			"qt.instru",
+			"Dupl",
+			"qt.instr",
+			"Dupl2",
+			"qt.instru",
+			"Dupl2",
+			"qt.instr",
+			"self.dupl",
+			"dupl",
+			"drivedetuning",
+			"switch_t",
+			"flux",
+			"resonator",
+			"freqs",
+			"get",
+			"find_qu",
+			"RF_instr",
+			"qubit_source",
+			"channels_off",
+			"Pulsed",
+			"pulsed_spec",
+			"Pulsed",
+			"Pulsed_Spec",
+			"Pulsed",
+			"Pulsed_Spec",
+			"if",
+			"get_qubit_drive",
+			"set_source",
+			"qubit_linew",
+			"qubit_width",
+			"RF",
+			"RF_power",
+			"get_source_power",
+			"self.cal_",
+			"calibr",
+			"set_det",
+			"peak_finder",
+			"datdir set to",
+			"est_stderr",
+			"estimated_qubit_frequency",
+			"sig_resonator",
+			"['center']",
+			"analysis_t",
+			"latest_da",
+			"timestamp",
+			"analysis_group",
+			"todo",
+			"fwhm",
+			"todo",
+			"lambda",
+			"-wave",
+			"quarter",
+			"lambda",
+			"todo",
+			"drie",
+			"todo",
+			"metal",
+			"TODO",
+			"todo",
+			"{}",
+			"\\sim",
+			"{}",
+			"todo",
+			"chapter",
+			"figure",
+			"todo",
+			"cdot",
+			"todo",
+			"corresponding",
+			"todo",
+			"schwarz",
+			"relativ",
+			"todo",
+			"toddo",
+			"svn",
+			"the fact that the",
+			"\\text{res",
+			"begin{figu",
+			"figure",
+			"fig",
+			"todo",
+			"geometry",
+			"decoherence",
+			"todo",
+			"9$\\",
+			"trans",
+			"\\si",
+			"figure",
+			"k_B",
+			"k_b",
+			"rms",
+			"scheme",
+			"cirquit",
+			"^",
+			"\\si",
+			"SI",
+			"square",
+			"root-mean",
+			"generator",
+			"infrare",
+			"but",
+			"eps-converted",
+			"{~",
+			"~",
+			"photon",
+			"* ",
+			"pars",
+			"['",
+			".add(",
+			".add",
+			"x",
+			"loss",
+			"loss tang",
+			"%timema",
+			"timemark",
+			"userconfig",
+			"mac_dict\nmac_dict",
+			"str(mac)\nstr(mac)",
+			"create",
+			"mac_dict",
+			"Adriaans_mac"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 193.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 219.0
+	},
+	"pinned_build_system": "",
+	"project": "Sublime project.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"timedom",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
+			],
+			[
+				"calib",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning.py"
+			],
+			[
+				"calibra",
+				"scripts\\personal_folders\\Chris\\calibrate_amplitude_mixer_skewness.py"
+			],
+			[
+				"qubit",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"qubitobj",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"awgswf",
+				"modules\\measurement\\AWG_sweep_functions.py"
+			],
+			[
+				"randomized",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_measurement.py"
+			],
+			[
+				"randomiz",
+				"scripts\\personal_folders\\Chris\\RandomizedBenchmarking.py"
+			],
+			[
+				"measan",
+				"modules\\analysis\\measurement_analysis.py"
+			],
+			[
+				"caldra",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning.py"
+			],
+			[
+				"ompdet",
+				"modules\\measurement\\composite_detector_functions.py"
+			],
+			[
+				"matchfrram",
+				"scripts\\personal_folders\\Serwan\\match_frequencies_Ramsey.py"
+			],
+			[
+				"ivvi",
+				"instruments\\physical_instruments\\IVVI.py"
+			],
+			[
+				"fluxcon",
+				"instruments\\meta_instruments\\Flux_Control.py"
+			],
+			[
+				"caltool",
+				"modules\\measurement\\calibration_toolbox.py"
+			],
+			[
+				"cdet",
+				"modules\\measurement\\composite_detector_functions.py"
+			],
+			[
+				"qubi",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"meas",
+				"instruments\\meta_instruments\\MeasurementControl.py"
+			],
+			[
+				"meascon",
+				"scripts\\measurement_control_dummy_sweep_and_detector.py"
+			],
+			[
+				"qubitob",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"trac",
+				"scripts\\personal_folders\\Serwan\\tracked_spectroscopy_script.py"
+			],
+			[
+				"lamaser",
+				"init\\config\\La_Maserati.py"
+			],
+			[
+				"sweep",
+				"modules\\measurement\\sweep_functions.py"
+			],
+			[
+				"det",
+				"modules\\measurement\\detector_functions.py"
+			],
+			[
+				"flux",
+				"instruments\\meta_instruments\\Flux_Control.py"
+			],
+			[
+				"fitmo",
+				"modules\\analysis\\fitting_models.py"
+			],
+			[
+				"atool",
+				"modules\\analysis\\analysis_toolbox.py"
+			],
+			[
+				"qubich",
+				"scripts\\personal_folders\\Adriaan\\qubit_char_script.py"
+			],
+			[
+				"anatoo",
+				"modules\\analysis\\analysis_toolbox.py"
+			],
+			[
+				"homody",
+				"scripts\\homodyne_analysis.py"
+			],
+			[
+				"cal",
+				"modules\\measurement\\calibration_toolbox.py"
+			],
+			[
+				"fittoolbos",
+				"modules\\analysis\\fit_toolbox\\functions.py"
+			],
+			[
+				"fittol",
+				"modules\\analysis\\fitting_models.py"
+			],
+			[
+				"utilsinit",
+				"modules\\analysis\\utils\\__init__.py"
+			],
+			[
+				"utilini",
+				"modules\\utilities\\__init__.py"
+			],
+			[
+				"utils",
+				"instruments\\meta_instruments\\PyLabVIEW\\Utilities\\SetGlobalMonitorVariable.vi"
+			],
+			[
+				"qubch",
+				"scripts\\personal_folders\\Adriaan\\qubit_char_script.py"
+			],
+			[
+				"qub",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"compde",
+				"modules\\measurement\\composite_detector_functions.py"
+			],
+			[
+				"anal",
+				"modules\\analysis\\analysis_toolbox.py"
+			],
+			[
+				"measana",
+				"modules\\analysis\\measurement_analysis.py"
+			],
+			[
+				"bib",
+				"bibliography.bib"
+			],
+			[
+				"tex",
+				"Three month evaluation.tex"
+			],
+			[
+				"fittool",
+				"PycQED\\modules\\analysis\\fit_toolbox\\fit.py"
+			],
+			[
+				"fit",
+				"modules\\analysis\\fitting_models.py"
+			],
+			[
+				"ana",
+				"modules\\analysis\\analysis_toolbox.py"
+			],
+			[
+				"meaasana",
+				"modules\\analysis\\measurement_analysis.py"
+			],
+			[
+				"hdf5da",
+				"source\\hdf5_data.py"
+			],
+			[
+				"hdf",
+				"qtlab\\source\\hdf5_data.py"
+			],
+			[
+				"h",
+				"qtlab\\examples\\hdf5.py"
+			],
+			[
+				"measur",
+				"instruments\\meta_instruments\\MeasurementControl.py"
+			],
+			[
+				"usercon",
+				"qtlab\\userconfig.py"
+			],
+			[
+				"setup",
+				"init\\config\\setup_dict.py"
+			],
+			[
+				"instrument",
+				"qtlab\\source\\instruments.py"
+			],
+			[
+				"instr",
+				"qtlab\\source\\instrument.py"
+			],
+			[
+				"80cr",
+				"qtlab\\init\\80_create_instruments.py"
+			],
+			[
+				"misc",
+				"qtlab\\source\\lib\\misc.py"
+			],
+			[
+				"meacontr",
+				"instruments\\meta_instruments\\MeasurementControl.py"
+			],
+			[
+				"frid",
+				"instruments\\physical_instruments\\Fridge_Monitor.py"
+			],
+			[
+				"detec",
+				"measurement\\detector_functions.py"
+			],
+			[
+				"serini",
+				"scripts\\Serwan\\init.py"
+			],
+			[
+				"iniloca",
+				"init\\991_init_location.py"
+			],
+			[
+				"userconfig",
+				"userconfig.py"
+			],
+			[
+				"meascontr",
+				"measurement\\MeasurementControl.py"
+			],
+			[
+				"test",
+				"scripts\\LaMaserati\\testscripts.py"
+			],
+			[
+				"ifswenav",
+				"scripts\\LaMaserati_VNA\\IF_sweep_navg.py"
+			],
+			[
+				"spec_track_mc",
+				"scripts\\playground\\Serwan\\spec_track_MC.py"
+			],
+			[
+				"ignore",
+				".gitignore"
+			],
+			[
+				"mcon",
+				"measurement\\MeasurementControl.py"
+			],
+			[
+				"track",
+				"scripts\\playground\\Serwan\\spec_track_MC.py"
+			],
+			[
+				"homsour",
+				"instrument_plugins\\user_instruments\\Homodyne_source.py"
+			],
+			[
+				"homosour",
+				"instrument_plugins\\user_instruments\\Homodyne_source.py"
+			],
+			[
+				"measc",
+				"measurement\\MeasurementControl.py"
+			],
+			[
+				"spectrack",
+				"scripts\\general\\measurement\\spec_track.py"
+			],
+			[
+				"hdf5",
+				"source\\hdf5_data.py"
+			],
+			[
+				"obje",
+				"source\\lib\\network\\object_sharer.py"
+			],
+			[
+				"plotmon",
+				"instrument_plugins\\user_instruments\\Plot_Monitor.py"
+			],
+			[
+				"userc",
+				"userconfig.py"
+			],
+			[
+				"measurana",
+				"modules\\analysis\\measurement_analysis.py"
+			],
+			[
+				"ini",
+				"scripts\\LaFerrari\\init.py"
+			],
+			[
+				"dummy",
+				"scripts\\playground\\Adriaan\\dummy_MeasurementControl_script.py"
+			],
+			[
+				"laferinit",
+				"scripts\\LaFerrari\\init.py"
+			],
+			[
+				"qtlabbat",
+				"qtlab.bat"
+			],
+			[
+				"use",
+				"userconfig.py"
+			],
+			[
+				"autal",
+				"scripts\\LaMaserati_VNA\\auto_ale_vespa.py"
+			],
+			[
+				"autoal",
+				"scripts\\LaMaserati_VNA\\auto_ale_vespa.py"
+			],
+			[
+				"mmeasure",
+				"modules\\measurement\\measurement.py"
+			],
+			[
+				"homodyne",
+				"modules\\measurement\\continuous_wave\\homodyne.py"
+			],
+			[
+				"homo",
+				"scripts\\homodyne_script.py"
+			],
+			[
+				"hom",
+				"scripts\\homodyne_analysis.py"
+			],
+			[
+				"analysis",
+				"analysis\\MeasurementAnalysis.py"
+			],
+			[
+				"h5data",
+				"source\\hdf5_data.py"
+			],
+			[
+				"du",
+				"scripts\\playground\\Adriaan\\dummy_measurement.py"
+			],
+			[
+				"dummmeas",
+				"scripts\\playground\\Adriaan\\dummy_measurement.py"
+			],
+			[
+				"init99",
+				"init\\99_init_user.py"
+			],
+			[
+				"config",
+				"userconfig.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Serwan\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\qtlab.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 352.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
