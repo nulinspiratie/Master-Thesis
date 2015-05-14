@@ -23,6 +23,8 @@
 \newcommand{\Ec}{$E_\text{c}$}
 \newcommand{\Ej}{$E_\text{J}$}
 \newcommand{\fbare}{$f_\text{bare}$}
+\newcommand{\fres}{$f_\text{r}$}
+\newcommand{\fqub}{$f_\text{q}$}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 % \onehalfspacing
@@ -104,6 +106,7 @@ Dr.~Alessandro Bruno
 \begin{itemize}
   \item Explain heterodyne detection
   \item Explain VNA
+  \item Explain that resonance frequency \fres is not necessarily at the transmission minimum when the resonator exhibits asymmetry.
 \end{itemize}
 
 
@@ -194,7 +197,9 @@ Dr.~Alessandro Bruno
 
 
   \chapter{Qubit characterization}
-    This chapter gives a step-by-step description of how to find a resonator and qubit, and subsequently how to tune the qubit's parameters.
+    \begin{description}
+     \item This chapter gives a step-by-step description of how to find a resonator and qubit, and subsequently how to tune the qubit's parameters.
+     \end{description}
 
     In the design of cQED chips, the parameters of the qubits and resonators are always targeted which are ideal for the experiment.
     For coplanar waveguide resonators one can already obtain relatively good parameters for the required dimensions from simple formulae \textbf{TODO:} refer to formula.
@@ -234,6 +239,7 @@ Dr.~Alessandro Bruno
         \textbf{TODO:}
         \begin{itemize}
           \item Explain better theory behind resonator shift $\chi$
+          \item cosine formula for qubit curve.
           \item Explain theory behind transition to bare cavity frequency
           \item Refer to thesis Reed for more info on frequency shifts
         \end{itemize}
@@ -244,10 +250,45 @@ Dr.~Alessandro Bruno
         \end{itemize}
 
       \subsection{Scan for sweet-spots}
-        Some of the qubits are flux-tunable. This
+        Some of the qubits have a tunable resonance frequency. This is done through a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. The SQUID loop is sensitive to the amount of flux passing through the loop. The amount of flux going through the SQUID loop can be changed by changing the surrounding magnetic field. This is commonly done by having a flux-bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, and hence changes the amount of flux through the SQUID loop. A digital-to-analog converter is used to specify the amount of current that is sent through the flux-bias-line. Depending on the amount of flux through the SQUID loop, the resonance frequency of the qubit changes accordingly. these qubits are therefore called flux-tunable.
+
+        For qubits that are flux-tunable, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the resonator shift \textbf{TODO:} $\chi$? also varies. At the sweet-spot of the qubit, the resonance frequency of the resonator, which henceforth shall be denoted as the resonator's frequency \fres, is at a maximum. This is irrespective of whether the resonance frequency of the qubit's ground to excited state transition, which henceforth shall be denoted as the qubit's frequency \fqub, is above or below that of the resonator.
+
+        The accurate way to measure the sweet-spot is to perform resonator scans as the DAC voltage is varied. The result is a 2D scan shown in \textbf{TODO:} Figure.
+
+        A faster second approach for finding the qubit sweet-spot, at the cost of providing less information, is by choosing a fixed frequency close to the resonator's frequency \fres (preferrably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of \textbf{TODO:} Figure. The idea this measurement is that if the qubit's frequency \fqub decreases, the resonator's frequency also decreases, resulting in a decrease in transmission (closer to \fres). Likewise, if the qubit's frequency \fqub increases, the resonator's frequency increases \textbf{TODO:} Why?, resulting in an increase in transmission (further away from \fres).
+
+        At the qubit's sweet-spot, the resonator's frequency \fres is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the amount of detuning only depends on the deviation from the flux sweet-spot \textbf{TODO:} improve, the transmission should be symmetric with respect to the DAC voltage sweet-spot. If the resonator's frequency \fres shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases it works like a charm.
+
+        In the case where the powersweep showed no measurable frequency shift, these two measurements are also useful in discerning whether or not the qubit is actually dead, or whether it was simply far detuned from the resonator.
+
+
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Give detailed information on SQUID loop
+          \begin{itemize}
+            \item Why does the qubit frequency change in a SQUID loop
+            \item Sweet-spot
+          \end{itemize}
+          \item Mention flux-noise?
+          \begin{itemize}
+            \item 1/f noise
+            \item usually not limiting, as it is very slow
+            \item This noise can be seen as occasional jumps (every few hours?) It would mean that every few hours the frequency must be recalibrated.
+          \end{itemize}
+        \end{itemize}
+
+        \textbf{Figures:}
+        \begin{itemize}
+          \item SEM picture of SQUID loop, including flux-bias line
+          \item Figure of 2D resonator scan vs DAC voltage
+          \item Figure of 1D resonator fixed frequency DAC voltage scan
+        \end{itemize}
 
       \subsection{Scanning for qubits}
+        Once the preliminary measurements have been performed
         \textbf{Mention what to do if qubit is close to or far away from resonator}
+
 
 
 
