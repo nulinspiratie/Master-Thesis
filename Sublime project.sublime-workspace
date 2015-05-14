@@ -4,81 +4,537 @@
 		"selected_items":
 		[
 			[
-				"dire",
-				"direction_of_stairs"
+				"cal_pts_",
+				"cal_pts_2Q"
 			],
 			[
-				"close",
-				"close_other_channels"
+				"Mux",
+				"Mux0_Bottom_Qubit"
+			],
+			[
+				"M",
+				"Mux0_Top_Qubit"
+			],
+			[
+				"dupl",
+				"duplexer_output_channel	statement"
+			],
+			[
+				"Du",
+				"duplexer_output_channel	statement"
+			],
+			[
+				"qubi",
+				"qubit_drive	statement"
+			],
+			[
+				"curre",
+				"current_frequency	statement"
+			],
+			[
+				"meas",
+				"measure_AllXY"
+			],
+			[
+				"drag_",
+				"drag_amplitude	forflow"
+			],
+			[
+				"drag_amp",
+				"drag_amplitude	forflow"
 			],
 			[
 				"pulse",
 				"pulse_amplitude_Q	statement"
 			],
 			[
+				"set_pulse_amplitu",
+				"set_pulse_amplitude_Q"
+			],
+			[
+				"calibre",
+				"calibrate_drive_amplitude_flipping	function"
+			],
+			[
+				"drag_amplitu",
+				"drag_amplitude_range	forflow"
+			],
+			[
+				"drag_a",
+				"drag_amplitude_ranges	param"
+			],
+			[
+				"ampl",
+				"amplitude_range	param"
+			],
+			[
+				"sweep",
+				"sweep_points_phase	statement"
+			],
+			[
+				"ampli",
+				"amplitude_ranges	statement"
+			],
+			[
+				"def",
+				"default_amplitude	param"
+			],
+			[
+				"phase",
+				"phase_str	statement"
+			],
+			[
+				"Dupl",
+				"Duplexer_attenuation	class"
+			],
+			[
+				"set_swee",
+				"set_sweep_function"
+			],
+			[
+				"other_",
+				"other_input_channel_phase	statement"
+			],
+			[
+				"inpu",
+				"input_channel	statement"
+			],
+			[
+				"other",
+				"other_input_channel_phase	statement"
+			],
+			[
+				"S",
+				"Signal_Hound_fixed_frequency	class"
+			],
+			[
+				"amp",
+				"amplitude_min	param"
+			],
+			[
+				"sweep_poin",
+				"sweep_points_phase"
+			],
+			[
+				"calibrate",
+				"calibrate_drive_amplitude_flipping	function"
+			],
+			[
+				"msmt_",
+				"msmt_name_offset	statement"
+			],
+			[
+				"AWG",
+				"AWG_delay	statement"
+			],
+			[
+				"qubit",
+				"qubit_RF_instrument	statement"
+			],
+			[
+				"prep",
+				"prepare_for_CW	function"
+			],
+			[
+				"rotated_",
+				"rotated_data_ch2	statement"
+			],
+			[
+				"cal_one",
+				"cal_one_points_three	statement"
+			],
+			[
+				"cal_zero_points",
+				"cal_zero_points_three	statement"
+			],
+			[
+				"ancill",
+				"ancilla_flux_val	forflow"
+			],
+			[
+				"setup_AWG",
+				"setup_AWG2_pi_pulse"
+			],
+			[
+				"find_",
+				"find_frequency_Ramsey"
+			],
+			[
+				"f_read",
+				"f_readout_top	statement"
+			],
+			[
+				"f_re",
+				"f_readout_top"
+			],
+			[
+				"calibra",
+				"calibrate_drive_amplitude_Rabi"
+			],
+			[
+				"min_ampl",
+				"min_ampl	statement"
+			],
+			[
+				"min_pha",
+				"min_phase_idx	statement"
+			],
+			[
+				"chann",
+				"channel_out	statement"
+			],
+			[
+				"set",
+				"setup_Duplexer"
+			],
+			[
+				"msmt",
+				"msmt_type	forflow"
+			],
+			[
+				"zero",
+				"zero_mean	statement"
+			],
+			[
+				"T",
+				"TimeDomainDetector_multiplexed	class"
+			],
+			[
+				"f_readout",
+				"f_readout_list	statement"
+			],
+			[
+				"LO",
+				"LO_IF"
+			],
+			[
+				"set_",
+				"set_multiplex"
+			],
+			[
+				"ancil",
+				"ancilla_flux_val	forflow"
+			],
+			[
+				"ancilla_",
+				"ancilla_channel"
+			],
+			[
+				"anc",
+				"ancilla_flux_vals	statement"
+			],
+			[
+				"make",
+				"make_params	function"
+			],
+			[
+				"str",
+				"strftime"
+			],
+			[
+				"inter",
+				"interleaved_lst	statement"
+			],
+			[
+				"fil",
+				"filter_pos	statement"
+			],
+			[
+				"ma",
+				"matplotlib	module"
+			],
+			[
+				"smoot",
+				"smoothed_data_1"
+			],
+			[
+				"shif",
+				"shifted_data_1"
+			],
+			[
+				"qubit_ini",
+				"qubit_init_factor	5"
+			],
+			[
+				"save",
+				"save_fig	function"
+			],
+			[
+				"measure",
+				"measured_values	statement"
+			],
+			[
+				"cal",
+				"cal_points"
+			],
+			[
+				"cal_",
+				"cal_points	statement"
+			],
+			[
+				"rotate",
+				"rotated_data_ch2"
+			],
+			[
+				"rot",
+				"rotated_data_ch2"
+			],
+			[
+				"rotated_d",
+				"rotated_data_ch1"
+			],
+			[
+				"cal_on",
+				"cal_one_idx	statement"
+			],
+			[
+				"cal_zer",
+				"cal_zero_idx	statement"
+			],
+			[
+				"prepare_for",
+				"prepare_for_TD	function"
+			],
+			[
+				"freq",
+				"frequency_threshold	param"
+			],
+			[
+				"T2_",
+				"T2_star_stderr	statement"
+			],
+			[
+				"set_pulse_",
+				"set_pulse_amplitude_Q"
+			],
+			[
+				"pulse_amplitude",
+				"pulse_amplitude_Q"
+			],
+			[
 				"drive",
 				"drive_amplitude"
 			],
 			[
-				"num_",
-				"num_Cliffords	param"
+				"pulse_amplitud",
+				"pulse_amplitude_Q"
 			],
 			[
-				"calcuslope",
-				"calculate_flux_slope	function"
+				"get_pulse",
+				"get_pulse_amplitude_I"
 			],
 			[
-				"current",
-				"current_RO_frequency	statement"
+				"update",
+				"update_qubit"
 			],
 			[
-				"calc",
-				"calculate_flux_frequency	function"
+				"prepare_",
+				"prepare_for_CW"
 			],
 			[
-				"RF",
-				"qubit_RF_instrument"
+				"prepare",
+				"prepare_for_TD"
 			],
 			[
-				"cur",
-				"current_RO_frequency	statement"
+				"calibrate_",
+				"calibrate_drive_amplitude_flipping"
 			],
 			[
-				"qubisour",
-				"qubit_source_power"
+				"cali",
+				"calibrate_drive_amplitude_Rabi"
 			],
 			[
-				"data_from",
-				"data_from_time	function"
+				"q",
+				"qubit_readout	statement"
 			],
 			[
-				"figu",
-				"figureinset"
+				"pulse_",
+				"pulse_amp_control	statement"
 			],
 			[
-				"tempera",
-				"temperature_names	statement"
+				"print_s",
+				"suppress_print_statements"
 			],
 			[
-				"savedat",
-				"savedata	statement"
+				"max",
+				"max_nr_iterations	param"
 			],
 			[
-				"fo",
-				"for	keyword"
+				"pulseq",
+				"pulse_phase_Q	statement"
 			],
 			[
-				"Ins",
-				"instrument	module"
+				"pul",
+				"pulse_amplitude_I	statement"
 			],
 			[
-				"def",
-				"def	Function"
+				"MC",
+				"MC_name	param"
+			],
+			[
+				"pre",
+				"prepare_for_TD	function"
+			],
+			[
+				"qubit_",
+				"qubit_readout	param"
+			],
+			[
+				"driv",
+				"drive_scaling_factor	statement"
+			],
+			[
+				"dat",
+				"data_peak_to_peak	statement"
+			],
+			[
+				"dr",
+				"drive_scaling_factor	statement"
+			],
+			[
+				"fit_re",
+				"fit_results_quadratic	statement"
+			],
+			[
+				"slop",
+				"slope_quadratic	statement"
+			],
+			[
+				"slope",
+				"slope_sine	statement"
+			],
+			[
+				"fit",
+				"fit_results	statement"
+			],
+			[
+				"chi",
+				"chisqr_quadratic	statement"
+			],
+			[
+				"ch",
+				"chisqr_sine	statement"
+			],
+			[
+				"fit_",
+				"fit_results_quadratic	statement"
+			],
+			[
+				"cal_data",
+				"cal_data_mean	statement"
+			],
+			[
+				"Co",
+				"CosModel	statement"
+			],
+			[
+				"Motzo",
+				"MotzoiDetuning_"
+			],
+			[
+				"Y",
+				"YpX90_mean	statement"
+			],
+			[
+				"get_pul",
+				"get_pulse_amplitude_I"
+			],
+			[
+				"qub",
+				"qubit_top"
+			],
+			[
+				"navg",
+				"navg_outer	statement"
+			],
+			[
+				"phase_",
+				"phase_str_lst	statement"
+			],
+			[
+				"swe",
+				"sweep_point	forflow"
+			],
+			[
+				"mini",
+				"minimize_RB	function"
+			],
+			[
+				"se",
+				"sequence_name"
+			],
+			[
+				"int_",
+				"int_dat_ch1	statement"
+			],
+			[
+				"Motzoi",
+				"Motzoi_amplitude"
+			],
+			[
+				"Mot",
+				"Motzoi_amplitude"
+			],
+			[
+				"fre",
+				"frequency	statement"
+			],
+			[
+				"AWG_Sw",
+				"AWG_Sweep_File	class"
+			],
+			[
+				"ste",
+				"stepsize	200"
+			],
+			[
+				"measur",
+				"measure_AllXY	class"
+			],
+			[
+				"qubit_bo",
+				"qubit_bottom_name"
+			],
+			[
+				"TD_",
+				"TD_Measurement"
+			],
+			[
+				"am",
+				"amp_ch2"
+			],
+			[
+				"AWG_Seep",
+				"AWG_Sweep_File	class"
+			],
+			[
+				"force",
+				"force_load_sequence	statement"
+			],
+			[
+				"force_",
+				"force_load_sequence"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "thesis.tex",
+			"settings":
+			{
+				"buffer_size": 8761,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/K/ns/qt/Transmon/Personal Folders/Serwan/Three-month-evaluation/Three month evaluation.tex",
+			"settings":
+			{
+				"buffer_size": 37272,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -87,12 +543,36 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 467.0,
-		"last_filter": "sib",
+		"height": 392.0,
+		"last_filter": "Snippet: ",
 		"selected_items":
 		[
 			[
-				"sib",
+				"Snippet: ",
+				"Snippet: figure"
+			],
+			[
+				"late",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"newfile",
+				"ANF: New File"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"sideb",
+				"View: Toggle Side Bar"
+			],
+			[
+				"new",
+				"ANF: New File"
+			],
+			[
+				"sidebar",
 				"View: Toggle Side Bar"
 			],
 			[
@@ -100,175 +580,259 @@
 				"View: Toggle Side Bar"
 			],
 			[
-				"indenta",
-				"Indentation: Reindent Lines"
+				"sidbar",
+				"Side Bar: Refresh"
 			],
 			[
-				"user",
-				"Preferences: Settings - User"
+				"newfil",
+				"ANF: New File"
 			],
 			[
-				"prefer",
-				"Preferences: Settings - User"
+				"newf",
+				"ANF: New File"
 			],
 			[
-				"sidr",
+				"sid",
 				"View: Toggle Side Bar"
 			],
 			[
 				"sider",
-				"Side Bar: Refresh"
+				"View: Toggle Side Bar"
 			],
 			[
-				"lint",
-				"SublimeLinter: Toggle Linter"
+				"renam",
+				"File: Rename"
+			],
+			[
+				"copy",
+				"ANF: Copy Current File"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"cop",
+				"ANF: Copy Current File"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"clo",
+				"File: Close All"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"",
+				"ANF: Copy Current File"
+			],
+			[
+				"togles",
+				"View: Toggle Side Bar"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Ren",
+				"File: Rename"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"save as",
+				"Project: Save As"
+			],
+			[
+				"anf ",
+				"ANF: New File"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"linnter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
 				"list",
 				"Package Control: List Packages"
 			],
 			[
-				"remove",
-				"Package Control: Remove Package"
+				"pack",
+				"Package Control: List Packages"
 			],
 			[
-				"rena",
-				"ANF: Rename File"
+				"anfnew",
+				"ANF: New File"
+			],
+			[
+				"afn",
+				"ANF: New File"
+			],
+			[
+				"anfne",
+				"ANF: New File"
+			],
+			[
+				"anfn",
+				"ANF: New File"
+			],
+			[
+				"linter to",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"newvi",
+				"File: New View into File"
+			],
+			[
+				"anf newf",
+				"ANF: New File"
+			],
+			[
+				"newvie",
+				"File: New View into File"
+			],
+			[
+				"anf",
+				"ANF: New File"
+			],
+			[
+				"prefde",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prefu",
+				"Preferences: Settings - User"
+			],
+			[
+				"pref",
+				"Preferences: Settings - Default"
+			],
+			[
+				"prefus",
+				"Preferences: Settings - User"
+			],
+			[
+				"anf ne",
+				"ANF: New File"
+			],
+			[
+				"pref ",
+				"Preferences: Settings - Default"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"pack enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack contr dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac ins",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"syntax mult",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"packconin",
+				"Package Control: Install Package"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
 			],
 			[
 				"new fil",
 				"ANF: New File"
 			],
 			[
-				"new il",
-				"File: New View into File"
-			],
-			[
-				"dele",
-				"ANF: Delete Current File"
-			],
-			[
-				"latex",
-				"LaTeXTools: Reconfigure and migrate settings"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"check",
-				"LaTeXing: Check System"
-			],
-			[
-				"check sy",
-				"LaTeXing: Check System"
-			],
-			[
-				"isntall",
-				"Package Control: Install Package"
-			],
-			[
-				"error",
-				"SublimeLinter: Next Error"
-			],
-			[
-				"next",
-				"SublimeLinter: Next Error"
-			],
-			[
-				"linter",
-				"SublimeLinter: Choose Mark Style"
-			],
-			[
-				"gutter the",
-				"SublimeLinter: Choose Gutter Theme"
+				"new file",
+				"ANF: New File"
 			],
 			[
 				"debug",
-				"SublimeLinter: Disable Debug Mode"
+				"SublimeLinter: Enable Debug Mode"
 			],
 			[
-				"linter gut",
-				"SublimeLinter: Choose Gutter Theme"
-			],
-			[
-				"togll",
+				"lint",
 				"SublimeLinter: Toggle Linter"
 			],
 			[
-				"togg lin",
-				"SublimeLinter: Toggle Linter"
+				"dupl",
+				"File: Duplicate"
 			],
 			[
-				"status",
-				"Git: Status"
+				"remove",
+				"Package Control: Remove Package"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
+				"snippet",
+				"Snippet: #!/usr/bin/env"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
+				"Snippet:",
+				"Snippet: Instrument get parameter"
 			],
 			[
-				"pac",
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"unfold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"fold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"pa list",
 				"Package Control: List Packages"
 			],
 			[
-				"python",
-				"SublimeREPL: Python"
-			],
-			[
-				"repl",
-				"SublimeREPL: Python"
-			],
-			[
-				"rep ",
-				"SublimeREPL: Python"
-			],
-			[
-				"pyt",
-				"SublimeREPL: Python"
-			],
-			[
-				"rep py",
-				"SublimeREPL: Python"
-			],
-			[
-				"repl pytho",
-				"SublimeREPL: Python"
-			],
-			[
-				"push",
-				"Git: Push"
-			],
-			[
-				"git com",
-				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"instak",
+				"p inst",
 				"Package Control: Install Package"
 			],
 			[
+				"file dif",
+				"FileDiffs: Menu"
+			],
+			[
 				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta ",
 				"Package Control: Install Package"
 			],
 			[
@@ -276,123 +840,81 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"remove pa",
-				"Package Control: Remove Package"
-			],
-			[
-				"quic",
-				"Git: Quick Commit"
-			],
-			[
-				"git comm",
-				"Git: Commit"
-			],
-			[
-				"git stat",
-				"Git: Status"
-			],
-			[
-				"compa",
-				"GitGutter: Compare Against Branch"
-			],
-			[
-				"git",
-				"GitGutter: Compare Against HEAD"
-			],
-			[
-				"git ",
-				"GitGutter: Show Comparing Against"
-			],
-			[
-				"gitgu",
-				"GitGutter: Show Comparing Against"
-			],
-			[
-				"pack con",
-				"Package Control: Discover Packages"
-			],
-			[
-				"pack",
-				"Package Control: List Packages"
-			],
-			[
-				"rename",
-				"ANF: Rename File"
-			],
-			[
-				"renam",
-				"ANF: Rename File"
-			],
-			[
-				"theme",
-				"SublimeLinter: Choose Gutter Theme"
-			],
-			[
-				"upgr",
-				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"instl",
+				"instal",
 				"Package Control: Install Package"
 			],
 			[
-				"pak in",
+				"subl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"pylint",
+				"Preferences: SublimeLinter Key Bindings – Default"
+			],
+			[
+				"subli lint",
+				"SublimeLinter: Show Errors on Save"
+			],
+			[
+				"lint mo",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"sublim ",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"lint ena",
+				"SublimeLinter: Enable Linter"
+			],
+			[
+				"lint to",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"pack insta",
 				"Package Control: Install Package"
 			],
 			[
-				"fun",
-				"Snippet: Function"
-			],
-			[
-				"pack in",
+				"pack instal",
 				"Package Control: Install Package"
 			],
 			[
-				"pack con re",
-				"Package Control: Remove Package"
-			],
-			[
-				"pack control s",
-				"Preferences: Package Control Settings – Default"
-			],
-			[
-				"gitgutt",
-				"GitGutter: Show Comparing Against"
-			],
-			[
-				"install p",
+				"inst pack",
 				"Package Control: Install Package"
 			],
 			[
-				"ins",
+				"pack inst",
+				"Package Control: Install Package"
+			],
+			[
+				"open f",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"package install",
 				"Package Control: Install Package"
 			]
 		],
-		"width": 685.0
+		"width": 416.0
 	},
 	"console":
 	{
-		"height": 244.0,
+		"height": 302.0,
 		"history":
 		[
-			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
-			"sys.path",
-			"sys.path.append('C:\\\\Python27\\Lib\\site-packages')",
-			"sys.path",
-			"import sys",
-			"import os",
-			"sys.path",
-			"os.sys.path",
-			"platform.python_version()",
-			"platform.version()",
-			"import platform",
-			"os.sys.path",
-			"import os",
+			"for x in range(10):",
+			"PATH",
 			"PYTHONPATH",
-			"os.sys.path",
-			"os.path",
-			"import os",
-			"which git",
+			"pythonpath",
+			"sbulimelinter",
+			"sublime linter",
+			"print 'hi'",
+			"print hi",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
@@ -407,150 +929,170 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Serwan/Documents/cQED/Master Thesis"
+		"/K/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis"
 	],
 	"file_history":
 	[
-		"/C/Python27/Lib/site-packages/pythonwarrior/serwan-khan-intermediate/player.py",
-		"/C/Python27/Scripts/pythonwarrior",
-		"/C/PycQED/scripts/personal_folders/Serwan/calibrate_drag_detuning.py",
-		"/C/PycQED/modules/analysis/measurement_analysis.py",
-		"/C/PycQED/modules/measurement/composite_detector_functions.py",
-		"/C/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking_measurement.py",
-		"/C/PycQED/scripts/personal_folders/Chris/calibrate_amplitude_mixer_skewness.py",
-		"/C/PycQED/instruments/container_instruments/qubit_object.py",
-		"/C/Users/Serwan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/C/PycQED/instruments/meta_instruments/TimeDomainMeasurement.py",
-		"/C/PycQED/modules/measurement/AWG_sweep_functions.py",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati_VNA/P_to_P_in.py",
-		"/C/PycQED/instruments/physical_instruments/Tektronix_AWG5014.py",
-		"/C/PycQED/modules/measurement/calibration_toolbox.py",
-		"/C/PycQED/modules/utils/physcon.py",
-		"/C/PycQED/instruments/meta_instruments/AWG_Composite.py",
-		"/C/PycQED/modules/analysis/analysis_toolbox.py",
-		"/C/PycQED/scripts/personal_folders/Chris/RandomizedBenchmarking.py",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/running_avg.dem",
-		"/C/PycQED/readme.md",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/random-points",
-		"/C/PycQED/instruments/meta_instruments/MeasurementControl.py",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/matplotlib/mpl_ex_cursor.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/Resonator_powersweep.py",
-		"/C/PycQED/qtlab/source/prologix_ethernet.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/printfuncs.py",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Instruments/Plot3D/oldversionsandtrials/Plot3D.Monitor2.vi",
-		"/C/PycQED/qtlab/instrument_plugins/Optodac.py",
-		"/C/PycQED/instruments/physical_instruments/IVVI.py",
-		"/C/PycQED/instruments/meta_instruments/Flux_Control.py",
-		"/C/PycQED/scripts/personal_folders/Serwan/match_frequencies_Ramsey.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/maserati_tests.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/guess_initial_values.py",
-		"/C/PycQED/qtlab/source/instrument.py",
-		"/C/PycQED/modules/measurement/sweep_functions.py",
-		"/C/PycQED/init/config/setup_dict.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/set_flux_control.py",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/fontfile_latex.dem",
-		"/C/PycQED/modules/analysis/fitting_models.py",
-		"/C/PycQED/scripts/personal_folders/Serwan/measure_readout_crosstalk.py",
-		"/C/PycQED/scripts/measurement_control_dummy_sweep_and_detector.py",
-		"/C/PycQED/qtlab/source/lib/misc.py",
-		"/C/PycQED/scripts/personal_folders/Serwan/tracked_spectroscopy_script.py",
-		"/C/PycQED/scripts/personal_folders/Chris/Getting_Qubit_Arches.py",
-		"/C/PycQED/scripts/personal_folders/Chris/Getting_Full_Matrix.py",
-		"/C/PycQED/scripts/personal_folders/Chris/Getting_Flux_Matrix_Elements.py",
-		"/C/PycQED/modules/measurement/detector_functions.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/Pulsed_spec.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/Getting_Qubit_Arches.py",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Server/TCP Read All.vi",
-		"/C/PycQED/scripts/personal_folders/Chris/Testing_Readout_Cal.py",
-		"/C/PycQED/scripts/personal_folders/Adriaan/qubit_char_script.py",
-		"/C/PycQED/scripts/personal_folders/Serwan/tracked_spectroscopy.py",
-		"/C/PycQED/init/config/La_Maserati.py",
-		"/C/PycQED/qtlab/examples/measure_module.py",
-		"/C/PycQED/qtlab/examples/monitor_ins.py",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati/get_base_temperature_LaMasserati.py",
-		"/C/PycQED/instruments/physical_instruments/_SignalHound/GetSweep.vi",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaMaserati_VNA/get_temp_vespa.py",
-		"/C/PycQED/modules/utilities/general.py",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/gijs_scripts/test_load_adapter.py",
-		"/C/PycQED/init/config/La_Ferrari.py",
-		"/C/PycQED/instruments/physical_instruments/_Alazar_ATS9870/development/AcqToDisk.cpp",
-		"/C/PycQED/qtlab/clients/gui_client/windows/source_window_disabled.py",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/delaunay-edges.dat",
-		"/C/PycQED/qtlab/source/data.py",
-		"/C/PycQED/init/config/CDickel_Desktop.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/functions.py",
-		"/C/PycQED/modules/analysis/utils/__init__.py",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/dataprocessing/moving_average_norm.py",
-		"/C/PycQED/scripts/homodyne_analysis.py",
-		"/C/PycQED/qtlab/examples/hdf5.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/__init__.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/old/__init__.py",
-		"/C/PycQED/modules/analysis/fit_toolbox/old/hamil2.py",
-		"/C/PycQED/modules/utils/__init__.py",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Utilities/SetGlobalMonitorVariable.vi",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/utils/last_data.py",
-		"/C/PycQED/modules/utilities/__init__.py",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/lvdata to pydata/_support/unsigned integer to pystring.vi",
-		"/C/PycQED/qtlab/userconfig.py",
-		"/C/PycQED/data/Noise characterization/IF_sweep_frequency/IF_sweep.pickle",
-		"/C/PycQED/qtlab/source/lib/network/share_qt.py",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/charset.dem",
-		"/C/PycQED/qtlab/CHANGELOG",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Message Builder/methodCall/call header.vi",
-		"/C/PycQED/instruments/meta_instruments/PyLabVIEW/Utilities/CombinedMonitor.vi",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/backup-scripts/20141021/calibrate_offsets.py",
-		"/C/PycQED/qtlab/qtlab",
-		"/c/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty",
-		"/C/Users/Serwan/Documents/cQED/Resonator paper/paper/SOM_resonators.tex",
-		"/C/Users/Serwan/Documents/cQED/Resonator paper/paper/Paper.tex",
-		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/bibliography.bib",
-		"/C/Users/Serwan/Documents/cQED/SOM_resonators.tex",
-		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/Three month evaluation.tex",
-		"/C/Users/Serwan/Documents/cQED/PaperNotes.bib",
-		"/C/Users/Serwan/Documents/cQED/Three-month-evaluation/Three month evaluation.aux",
-		"/C/Users/Serwan/Documents/Three-month-evaluation/bibliography.bib",
-		"/C/PycQED/ipython_notebooks/.ipynb_checkpoints/Fitting Convergence-checkpoint.ipynb",
-		"/C/PycQED/ipython_notebooks/Fitting Convergence.ipynb",
-		"/C/PycQED/qtlab/examples/filename_auto_increment.py",
-		"/C/PycQED/ipython_notebooks/Find Resonators.ipynb",
-		"/C/PycQED/modules/analysis/__init__.py",
-		"/C/Users/Serwan/Documents/Three-month-evaluation/Three month evaluation.toc",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/LaVespa/Kian/diff_test.py",
-		"/C/PycQED/ipython_notebooks/Dispersive shift fit.ipynb",
-		"/C/PycQED/data/set4_LaMaserati/20141113/10_set4_LaMaserati/scripts/general/utils/print_data_info.py",
-		"/C/PycQED/qtlab/AUTHORS",
-		"/C/PycQED/instruments/physical_instruments/Fridge_Monitor.py",
-		"/C/PycQED/qtlab/source/hdf5_data.py",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/bin/share/PostScript/unicode_small.map",
-		"/C/PycQED/qtlab/source/instruments.py",
-		"/C/PycQED/init/config/Serwans_Laptop.py",
-		"/C/PycQED/qtlab/examples/simple_example.py",
-		"/C/PycQED/qtlab/instrument_plugins/SMC100.py",
-		"/C/PycQED/qtlab/INSTALL",
-		"/C/PycQED/qtlab/3rd_party/gnuplot/demo/imageNaN.dem",
-		"/C/PycQED/init/config/userconfig.py",
-		"/C/PycQED/init/999_init_location.py",
-		"/C/PycQED/init/config/Serwans_Laptop",
-		"/C/PycQED/qtlab/init/80_create_instruments.py",
-		"/C/texlive/2014/README",
-		"/C/qtlab/scripts/general/measurement/set_RF_power.py",
-		"/C/qtlab/examples/simple_example.py",
-		"/C/qtlab/measurement/sweep_functions.py",
-		"/C/qtlab/scripts/LaFerrari/init.py",
-		"/C/qtlab/instrument_plugins/_Spectrum_M2i2030/errors.py",
-		"/C/qtlab/instrument_plugins/example.py"
+		"/D/TUD277449/AppData/Sublime Text 3/Packages/User/Latex TODO.sublime-snippet",
+		"/K/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/thesis.toc",
+		"/K/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/thesis.log",
+		"/D/PycQED/scripts/personal_folders/Serwan/batch_measurement.py",
+		"/D/PycQED/modules/analysis/measurement_analysis.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Rabi12.py",
+		"/D/PycQED/init/config/La_Maserati.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/tune_up_qubits.py",
+		"/D/PycQED/instruments/container_instruments/qubit_object.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/testing.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/marker_calibration_RB.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/prepare_monoplex.py",
+		"/D/PycQED/modules/measurement/AWG_sweep_functions.py",
+		"/D/PycQED/instruments/meta_instruments/TimeDomainMeasurement.py",
+		"/D/PycQED/modules/analysis/analysis_toolbox.py",
+		"/D/PycQED/modules/measurement/composite_detector_functions.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/delay_calibration_AWG2.py",
+		"/D/PycQED/modules/measurement/calibration_toolbox.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/prepare_second_AWG.py",
+		"/D/PycQED/modules/measurement/detector_functions.py",
+		"/D/PycQED/modules/measurement/sweep_functions.py",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/Call Python code.vi - Shortcut.lnk",
+		"/D/TUD277449/Desktop/PycQED.sublime-project",
+		"/D/TUD277449/AppData/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/TUD277449/AppData/Sublime Text 3/Packages/User/GitGutter.sublime-settings",
+		"/D/PycQED/scripts/personal_folders/Serwan/calibrate_phase_mixer_skewness.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/mixer_skewness_calibration.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Duplexer_Phase_Cal.py",
+		"/D/PycQED/instruments/meta_instruments/MeasurementControl.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/prepare_multiplex.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking_multiplex.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/three_tone_spec.py",
+		"/D/PycQED/modules/analysis/fitting_models.py",
+		"/D/PycQED/instruments/physical_instruments/SignalHound_USB_SA124B.py",
+		"/D/PycQED/instruments/physical_instruments/Tektronix_AWG5014.py",
+		"/D/PycQED/instruments/meta_instruments/PulsedSpectroscopy.py",
+		"/D/PycQED/init/config/La_Ducati.py",
+		"/D/PycQED/init/config/La_Ferrari.py",
+		"/D/PycQED/instruments/meta_instruments/ATS_TD.py",
+		"/D/PycQED/scripts/personal_folders/Chris/Testing_Pulsed_Spec.py",
+		"/C/Users/TUD277449/.matplotlib/matplotlibrc",
+		"/D/PycQED/qtlab/source/qtflow.py",
+		"/D/PycQED/instruments/physical_instruments/Alazar_ATS9870.py",
+		"/D/PycQED/qtlab/source/lib/gui/stopbutton.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Testing_Multiplexed_Readout.py",
+		"/D/PycQED/qtlab/source/lib/network/object_sharer.py",
+		"/D/PycQED/qtlab/source/qt.py",
+		"/D/PycQED/qtlab/clients/gui_client/gui_client.py",
+		"/D/PycQED/qtlab/qtlab",
+		"/D/PycQED/modules/utilities/general.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/test.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/calibrate_drag_detuning_alternating.py",
+		"/D/PycQED/instruments/dummy_instruments/Alazar_ATS9870_dummy.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/marker_calibration_PiX360.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/tune_qubits.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/marker_calibration_PiX180.py",
+		"/D/PycQED/qtlab/source/visa.py",
+		"/X/LaMaserati/Duplex_RBalternatingBoth_EnvelopeCal_4_10_100_4_0_5014/Duplex_RBalternatingBoth_EnvelopeCal_4_10_100_4_0_5014.awg",
+		"/D/PycQED/qtlab/qtlab.cfg",
+		"/D/PycQED/instruments/physical_instruments/Fridge_Monitor.py",
+		"/D/PycQED/qtlab/userconfig.py",
+		"/D/PycQED/scripts/personal_folders/Ramiro/tracked_spectroscopy_script.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/send_email.py",
+		"/C/Python27/Lib/site-packages/gtk-2.0/glib/__init__.py",
+		"/D/PycQED/instruments/meta_instruments/Flux_Control.py",
+		"/D/PycQED/docs/qubit_tune_up_procedure.md",
+		"/D/PycQED/instruments/physical_instruments/Aeroflex_8310.py",
+		"/D/PycQED/instruments/physical_instruments/Aeroflex_8320.py",
+		"/D/PycQED/scripts/personal_folders/Ramiro/measure_T1_night.py",
+		"/D/PycQED/instruments/physical_instruments/RS_SGS100A.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/VATT_measurements.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/calibrate_drag_detuning_AllXY.py",
+		"/D/PycQED/instruments/physical_instruments/_SignalHound/GetSweep.vi",
+		"/D/PycQED/qtlab/source/instrument.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/calibrate_amplitude_mixer_skewness.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/cross_coupling_moving_Ancilla.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/ancilla_measurements.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking_alt.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/prepare_AWG_ancilla.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/ancilla_Rabi.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/cross_coupling_moving_Top.py",
+		"/D/PycQED/instruments/physical_instruments/RS_FSP.py",
+		"/D/PycQED/instruments/physical_instruments/Agilent_E8257D.py",
+		"/D/PycQED/instruments/meta_instruments/Plot_Monitor.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Duplexer_tests.py",
+		"/D/PycQED/instruments/physical_instruments/QuTech_Duplexer.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Duplexer_phase_calibration.py",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/lv_monitor.py",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/Tests/EXAMPLE-PythonClient_LabVIEWServer.vi",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/all.dem",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/running_avg.dem",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/random-points",
+		"/D/PycQED/qtlab/source/lib/gui/slider.py",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/simple.dem",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/silver.dat",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/System/System.Get_Instruments.vi",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Parser/GetStructMembers/GetStructMembersAsNameAndValue.vi",
+		"/D/PycQED/scripts/personal_folders/Serwan/getting_flux_matrix_elements.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/measure_TD.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/Duplexer_TD_measurements.py",
+		"/D/PycQED/instruments/meta_instruments/AWG_Composite.py",
+		"/D/PycQED/qtlab/examples/plot_err.py",
+		"/D/PycQED/qtlab/source/plot.py",
+		"/D/PycQED/qtlab/examples/plots.py",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/Copyright",
+		"/D/PycQED/qtlab/source/prologix_ethernet.py",
+		"/D/PycQED/modules/analysis/fit_toolbox/printfuncs.py",
+		"/D/PycQED/modules/utils/physcon.py",
+		"/D/PycQED/qtlab/examples/simple_example.py",
+		"/D/PycQED/init/config/setup_dict.py",
+		"/D/PycQED/scripts/personal_folders/Adriaan/set_flux_control.py",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/multiplt.dem",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/multipalette.dem",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/demo/multiaxis.dem",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/Bas/XML-RPC LV 2009/XML-RPC Server/XML-RPC Methods/Generate Sine Wave.vi",
+		"/D/PycQED/instruments/meta_instruments/PyLabVIEW/OpenG.lib/Parse String with TDs__Py2LV.vi",
+		"/D/PycQED/instruments/dummy_instruments/Dummy_AWG5014.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/timedomain_power_test.py",
+		"/D/PycQED/scripts/testing/time_domain_test.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/randomized_benchmarking_measurement.py",
+		"/D/PycQED/readme.md",
+		"/D/PycQED/scripts/personal_folders/Adriaan/flux_tuning_maserati_mux.py",
+		"/D/PycQED/instruments/physical_instruments/_SignalHound/SignalHoundTCPIP.Server.vi",
+		"/D/PycQED/instruments/physical_instruments/Alazar_ATS9870_test.py",
+		"/D/PycQED/scripts/personal_folders/Serwan/RB_interleaved.py",
+		"/D/PycQED/qtlab/3rd_party/gnuplot/bin/share/PostScript/unicode_small.map",
+		"/D/PycQED/instruments/physical_instruments/QuTech_Duplexer_normalized_gain.hdf5"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
-		"height": 117.0,
+		"height": 93.0,
 		"where_history":
 		[
-			"C:\\PycQED\\modules,C:\\PycQED\\scripts,C:\\PycQED\\instruments,C:\\PycQED\\qtlab,-*.log",
-			"C:\\PycQED\\modules,C:\\PycQED\\scripts",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts,D:\\PycQED\\instruments,D:\\PycQED\\init,D:\\PycQED\\qtlab,-*.log",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts,D:\\PycQED\\instruments,D:\\PycQED\\qtlab,-*.log",
+			"",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts,D:\\PycQED\\instruments,D:\\PycQED\\qtlab,-*.log",
+			"",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts,D:\\PycQED\\instruments,D:\\PycQED\\qtlab,-*.log",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts,D:\\PycQED\\instruments,D:\\PycQED\\qtlab",
+			"D:\\PycQED\\modules,D:\\PycQED\\scripts",
+			"D:\\PycQED\\modules",
+			"D:\\PycQED\\scripts",
+			"D:\\PycQED\\modules",
+			"D:\\PycQED\\",
+			"D:\\PycQED\\modules",
+			"D:\\PycQED",
+			"D:\\PycQED\\qtlab",
+			"",
+			"d:/PycQED",
+			"d:/qtlab/",
+			"d:/qtlab/scripts",
+			"scripts",
+			"",
+			"D:\\qtlab\\scripts",
 			""
 		]
 	},
@@ -559,134 +1101,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"si",
+			"{}",
+			"t1",
+			"warning",
+			"plot_results",
+			"multiplex",
+			"multipl",
+			"envelope",
+			"data_rotated",
+			"allxy",
+			"kw",
+			"rabi",
+			"awg2",
 			";",
-			"drive",
-			"'Dupl2",
-			"qt.instru",
-			"Dupl",
-			"qt.instru",
-			"Dupl2",
-			"qt.instru",
-			"Dupl",
-			"qt.instr",
-			"Dupl2",
-			"qt.instru",
-			"Dupl2",
-			"qt.instr",
-			"self.dupl",
-			"dupl",
-			"drivedetuning",
-			"switch_t",
-			"flux",
-			"resonator",
-			"freqs",
-			"get",
-			"find_qu",
-			"RF_instr",
-			"qubit_source",
-			"channels_off",
-			"Pulsed",
-			"pulsed_spec",
-			"Pulsed",
-			"Pulsed_Spec",
-			"Pulsed",
-			"Pulsed_Spec",
-			"if",
-			"get_qubit_drive",
-			"set_source",
-			"qubit_linew",
-			"qubit_width",
-			"RF",
-			"RF_power",
-			"get_source_power",
-			"self.cal_",
-			"calibr",
-			"set_det",
-			"peak_finder",
-			"datdir set to",
-			"est_stderr",
-			"estimated_qubit_frequency",
-			"sig_resonator",
-			"['center']",
-			"analysis_t",
-			"latest_da",
-			"timestamp",
-			"analysis_group",
-			"todo",
-			"fwhm",
-			"todo",
-			"lambda",
-			"-wave",
-			"quarter",
-			"lambda",
-			"todo",
-			"drie",
-			"todo",
-			"metal",
-			"TODO",
-			"todo",
-			"{}",
-			"\\sim",
-			"{}",
-			"todo",
-			"chapter",
-			"figure",
-			"todo",
-			"cdot",
-			"todo",
-			"corresponding",
-			"todo",
-			"schwarz",
-			"relativ",
-			"todo",
-			"toddo",
-			"svn",
-			"the fact that the",
-			"\\text{res",
-			"begin{figu",
-			"figure",
-			"fig",
-			"todo",
-			"geometry",
-			"decoherence",
-			"todo",
-			"9$\\",
-			"trans",
-			"\\si",
-			"figure",
-			"k_B",
-			"k_b",
-			"rms",
-			"scheme",
-			"cirquit",
-			"^",
-			"\\si",
-			"SI",
-			"square",
-			"root-mean",
-			"generator",
-			"infrare",
-			"but",
-			"eps-converted",
-			"{~",
-			"~",
-			"photon",
-			"* ",
-			"pars",
-			"['",
-			".add(",
-			".add",
-			"x",
-			"loss",
-			"loss tang",
-			"%timema",
-			"timemark",
-			"userconfig",
-			"mac_dict\nmac_dict",
-			"str(mac)\nstr(mac)",
-			"create",
-			"mac_dict",
-			"Adriaans_mac"
+			"rabi12",
+			"if self.save_",
+			"plotmon",
+			"update",
+			"IQ",
+			"AWG",
+			"pickle",
+			"savez",
+			"get_naming_and",
+			"get_naming",
+			"sweep_points",
+			"cal_pts",
+			"sweep_points",
+			"FSV_fixed",
+			"nosweeps",
+			"awg_seq_file",
+			"dx",
+			"box_props",
+			"bbox",
+			"emit",
+			"self.emit",
+			"emit",
+			"set_status",
+			"is_measuring",
+			"_range",
+			"_msps",
+			"sample_rate",
+			"hdf5.",
+			"gauss_width",
+			"marker",
+			";",
+			"get_sweep_points",
+			"delay",
+			"stepsizes",
+			"_top",
+			"allocate_memory",
+			"print_if_error",
+			"print_if_err",
+			"error executing",
+			",N",
+			"allowed_ips",
+			"qubit_top",
+			"filename",
+			"freq_",
+			"freq",
+			"start_freq",
+			"freq_step",
+			"stepsize",
+			"span",
+			"end_freq",
+			"start_freq",
+			"spec_sweep_range",
+			"get_msmt_label_suffix",
+			"qubit_readout",
+			"Motzoi",
+			"	",
+			"get_all",
+			"command",
+			"8310",
+			"signal_hound_spectrum",
+			"669",
+			".",
+			"<<<",
+			"useoffset",
+			"top",
+			")",
+			"sweep_points",
+			"three",
+			"Three",
+			"three",
+			"sequenc",
+			"\n        ",
+			"f_readout_ancilla",
+			"np",
+			"6.7997e9",
+			"6.6995e9",
+			"f_ancilla_readout",
+			"savez",
+			"TD_Meas",
+			"ancilla",
+			"AWG2",
+			"AWG",
+			"self.awg",
+			"ExpDam",
+			"ch2",
+			"ch1",
+			"self.int_dat_ch2",
+			"self.int_dat_ch1",
+			"bottom",
+			"380",
+			"ancilla_flux_val",
+			"ancilla",
+			"qubit_ancilla",
+			"10",
+			"LO",
+			"uncertain",
+			"com",
+			"impedance",
+			"gates_row",
+			"random_",
+			"*",
+			", ",
+			"exp",
+			"qubit",
+			"TD_RO_frequency_Multiplex_GHz",
+			"fig2",
+			"setup_",
+			".f1",
+			"measurementstr",
+			"self.plot",
+			"acquire_data_point(self)",
+			"label",
+			"ax = ",
+			"print "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -694,6 +1236,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Duplexer",
+			"savedir"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -704,8 +1248,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "thesis.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1686,
+								1686
+							]
+						],
+						"settings":
+						{
+							"_anf_new": "",
+							"spell_check": true,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 682.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/K/ns/qt/Transmon/Personal Folders/Serwan/Three-month-evaluation/Three month evaluation.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37272,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37272,
+								37272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -715,7 +1318,7 @@
 	},
 	"input":
 	{
-		"height": 41.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -742,21 +1345,17 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 193.0
+		"height": 104.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"output.git":
-	{
-		"height": 219.0
-	},
 	"pinned_build_system": "",
 	"project": "Sublime project.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -766,23 +1365,43 @@
 		"selected_items":
 		[
 			[
-				"timedom",
-				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
+				"randomiez",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
 			],
 			[
-				"calib",
-				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning.py"
+				"fitmod",
+				"modules\\analysis\\fitting_models.py"
 			],
 			[
-				"calibra",
-				"scripts\\personal_folders\\Chris\\calibrate_amplitude_mixer_skewness.py"
+				"measan",
+				"modules\\analysis\\measurement_analysis.py"
 			],
 			[
-				"qubit",
-				"instruments\\container_instruments\\qubit_object.py"
+				"bat",
+				"scripts\\personal_folders\\Serwan\\batch_measurement.py"
+			],
+			[
+				"rabi12",
+				"scripts\\personal_folders\\Serwan\\Rabi12.py"
+			],
+			[
+				"testing",
+				"scripts\\personal_folders\\Serwan\\testing.py"
+			],
+			[
+				"randomiz",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking.py"
+			],
+			[
+				"lamas",
+				"init\\config\\La_Maserati.py"
 			],
 			[
 				"qubitobj",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"qubi",
 				"instruments\\container_instruments\\qubit_object.py"
 			],
 			[
@@ -790,380 +1409,484 @@
 				"modules\\measurement\\AWG_sweep_functions.py"
 			],
 			[
-				"randomized",
-				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_measurement.py"
-			],
-			[
-				"randomiz",
-				"scripts\\personal_folders\\Chris\\RandomizedBenchmarking.py"
-			],
-			[
-				"measan",
-				"modules\\analysis\\measurement_analysis.py"
-			],
-			[
-				"caldra",
-				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning.py"
-			],
-			[
-				"ompdet",
-				"modules\\measurement\\composite_detector_functions.py"
-			],
-			[
-				"matchfrram",
-				"scripts\\personal_folders\\Serwan\\match_frequencies_Ramsey.py"
-			],
-			[
-				"ivvi",
-				"instruments\\physical_instruments\\IVVI.py"
-			],
-			[
-				"fluxcon",
-				"instruments\\meta_instruments\\Flux_Control.py"
-			],
-			[
-				"caltool",
-				"modules\\measurement\\calibration_toolbox.py"
-			],
-			[
 				"cdet",
 				"modules\\measurement\\composite_detector_functions.py"
-			],
-			[
-				"qubi",
-				"instruments\\container_instruments\\qubit_object.py"
-			],
-			[
-				"meas",
-				"instruments\\meta_instruments\\MeasurementControl.py"
-			],
-			[
-				"meascon",
-				"scripts\\measurement_control_dummy_sweep_and_detector.py"
-			],
-			[
-				"qubitob",
-				"instruments\\container_instruments\\qubit_object.py"
-			],
-			[
-				"trac",
-				"scripts\\personal_folders\\Serwan\\tracked_spectroscopy_script.py"
-			],
-			[
-				"lamaser",
-				"init\\config\\La_Maserati.py"
-			],
-			[
-				"sweep",
-				"modules\\measurement\\sweep_functions.py"
-			],
-			[
-				"det",
-				"modules\\measurement\\detector_functions.py"
-			],
-			[
-				"flux",
-				"instruments\\meta_instruments\\Flux_Control.py"
-			],
-			[
-				"fitmo",
-				"modules\\analysis\\fitting_models.py"
-			],
-			[
-				"atool",
-				"modules\\analysis\\analysis_toolbox.py"
-			],
-			[
-				"qubich",
-				"scripts\\personal_folders\\Adriaan\\qubit_char_script.py"
-			],
-			[
-				"anatoo",
-				"modules\\analysis\\analysis_toolbox.py"
-			],
-			[
-				"homody",
-				"scripts\\homodyne_analysis.py"
-			],
-			[
-				"cal",
-				"modules\\measurement\\calibration_toolbox.py"
-			],
-			[
-				"fittoolbos",
-				"modules\\analysis\\fit_toolbox\\functions.py"
-			],
-			[
-				"fittol",
-				"modules\\analysis\\fitting_models.py"
-			],
-			[
-				"utilsinit",
-				"modules\\analysis\\utils\\__init__.py"
-			],
-			[
-				"utilini",
-				"modules\\utilities\\__init__.py"
-			],
-			[
-				"utils",
-				"instruments\\meta_instruments\\PyLabVIEW\\Utilities\\SetGlobalMonitorVariable.vi"
-			],
-			[
-				"qubch",
-				"scripts\\personal_folders\\Adriaan\\qubit_char_script.py"
-			],
-			[
-				"qub",
-				"instruments\\container_instruments\\qubit_object.py"
-			],
-			[
-				"compde",
-				"modules\\measurement\\composite_detector_functions.py"
-			],
-			[
-				"anal",
-				"modules\\analysis\\analysis_toolbox.py"
 			],
 			[
 				"measana",
 				"modules\\analysis\\measurement_analysis.py"
 			],
 			[
-				"bib",
-				"bibliography.bib"
-			],
-			[
-				"tex",
-				"Three month evaluation.tex"
-			],
-			[
-				"fittool",
-				"PycQED\\modules\\analysis\\fit_toolbox\\fit.py"
-			],
-			[
-				"fit",
-				"modules\\analysis\\fitting_models.py"
-			],
-			[
-				"ana",
+				"atool",
 				"modules\\analysis\\analysis_toolbox.py"
 			],
 			[
-				"meaasana",
-				"modules\\analysis\\measurement_analysis.py"
+				"caltool",
+				"modules\\measurement\\calibration_toolbox.py"
 			],
 			[
-				"hdf5da",
-				"source\\hdf5_data.py"
+				"prepare",
+				"scripts\\personal_folders\\Serwan\\prepare_monoplex.py"
 			],
 			[
-				"hdf",
-				"qtlab\\source\\hdf5_data.py"
+				"tdmeas",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
 			],
 			[
-				"h",
-				"qtlab\\examples\\hdf5.py"
+				"preparemo",
+				"scripts\\personal_folders\\Serwan\\prepare_monoplex.py"
 			],
 			[
-				"measur",
+				"prepa",
+				"scripts\\personal_folders\\Serwan\\prepare_second_AWG.py"
+			],
+			[
+				"delay",
+				"scripts\\personal_folders\\Serwan\\delay_calibration_AWG2.py"
+			],
+			[
+				"caltools",
+				"instruments\\meta_instruments\\PyLabVIEW\\Bas\\Call Python code.vi - Shortcut.lnk"
+			],
+			[
+				"qubit",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"detect",
+				"modules\\measurement\\detector_functions.py"
+			],
+			[
+				"swee",
+				"modules\\measurement\\sweep_functions.py"
+			],
+			[
+				"caltoo",
+				"modules\\measurement\\calibration_toolbox.py"
+			],
+			[
+				"sweepf",
+				"modules\\measurement\\sweep_functions.py"
+			],
+			[
+				"phaseskew",
+				"scripts\\personal_folders\\Serwan\\calibrate_phase_mixer_skewness.py"
+			],
+			[
+				"mixersk",
+				"scripts\\personal_folders\\Serwan\\mixer_skewness_calibration.py"
+			],
+			[
+				"batc",
+				"scripts\\personal_folders\\Serwan\\batch_measurement.py"
+			],
+			[
+				"meascon",
 				"instruments\\meta_instruments\\MeasurementControl.py"
 			],
 			[
-				"usercon",
-				"qtlab\\userconfig.py"
+				"batch",
+				"scripts\\personal_folders\\Serwan\\batch_measurement.py"
 			],
 			[
-				"setup",
-				"init\\config\\setup_dict.py"
+				"random",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
 			],
 			[
-				"instrument",
-				"qtlab\\source\\instruments.py"
+				"randomized",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking.py"
 			],
 			[
-				"instr",
-				"qtlab\\source\\instrument.py"
+				"prepar",
+				"scripts\\personal_folders\\Serwan\\prepare_multiplex.py"
 			],
 			[
-				"80cr",
-				"qtlab\\init\\80_create_instruments.py"
+				"duplexer",
+				"scripts\\personal_folders\\Serwan\\Duplexer_Phase_Cal.py"
 			],
 			[
-				"misc",
-				"qtlab\\source\\lib\\misc.py"
+				"qubiob",
+				"instruments\\container_instruments\\qubit_object.py"
 			],
 			[
-				"meacontr",
-				"instruments\\meta_instruments\\MeasurementControl.py"
+				"signalhou",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
 			],
 			[
-				"frid",
-				"instruments\\physical_instruments\\Fridge_Monitor.py"
+				"sign",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
 			],
 			[
 				"detec",
-				"measurement\\detector_functions.py"
+				"modules\\measurement\\detector_functions.py"
 			],
 			[
-				"serini",
-				"scripts\\Serwan\\init.py"
+				"fitti",
+				"modules\\analysis\\fitting_models.py"
 			],
 			[
-				"iniloca",
-				"init\\991_init_location.py"
+				"three",
+				"scripts\\personal_folders\\Serwan\\three_tone_spec.py"
 			],
 			[
-				"userconfig",
-				"userconfig.py"
+				"aw",
+				"instruments\\physical_instruments\\Tektronix_AWG5014.py"
 			],
 			[
-				"meascontr",
-				"measurement\\MeasurementControl.py"
+				"swf",
+				"modules\\measurement\\sweep_functions.py"
 			],
 			[
-				"test",
-				"scripts\\LaMaserati\\testscripts.py"
+				"calibrate",
+				"scripts\\personal_folders\\Serwan\\calibrate_phase_mixer_skewness.py"
 			],
 			[
-				"ifswenav",
-				"scripts\\LaMaserati_VNA\\IF_sweep_navg.py"
+				"phase",
+				"scripts\\personal_folders\\Serwan\\calibrate_phase_mixer_skewness.py"
 			],
 			[
-				"spec_track_mc",
-				"scripts\\playground\\Serwan\\spec_track_MC.py"
+				"det",
+				"modules\\measurement\\detector_functions.py"
 			],
 			[
-				"ignore",
-				".gitignore"
+				"signalhound",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
 			],
 			[
-				"mcon",
-				"measurement\\MeasurementControl.py"
+				"skewnes",
+				"scripts\\personal_folders\\Serwan\\mixer_skewness_calibration.py"
 			],
 			[
-				"track",
-				"scripts\\playground\\Serwan\\spec_track_MC.py"
+				"laferr",
+				"init\\config\\La_Ferrari.py"
 			],
 			[
-				"homsour",
-				"instrument_plugins\\user_instruments\\Homodyne_source.py"
+				"atstd",
+				"instruments\\meta_instruments\\ATS_TD.py"
 			],
 			[
-				"homosour",
-				"instrument_plugins\\user_instruments\\Homodyne_source.py"
+				"laducati",
+				"init\\config\\La_Ducati.py"
 			],
 			[
-				"measc",
-				"measurement\\MeasurementControl.py"
+				"pulsedsp",
+				"instruments\\meta_instruments\\PulsedSpectroscopy.py"
 			],
 			[
-				"spectrack",
-				"scripts\\general\\measurement\\spec_track.py"
+				"m",
+				"instruments\\meta_instruments\\MeasurementControl.py"
 			],
 			[
-				"hdf5",
-				"source\\hdf5_data.py"
+				"qubitobje",
+				"instruments\\container_instruments\\qubit_object.py"
 			],
 			[
-				"obje",
-				"source\\lib\\network\\object_sharer.py"
+				"tdeas",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
 			],
 			[
-				"plotmon",
-				"instrument_plugins\\user_instruments\\Plot_Monitor.py"
+				"alazar",
+				"instruments\\physical_instruments\\Alazar_ATS9870.py"
 			],
 			[
-				"userc",
-				"userconfig.py"
+				"timedomain",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
 			],
 			[
-				"measurana",
+				"timed",
+				"scripts\\personal_folders\\Serwan\\Testing_Multiplexed_Readout.py"
+			],
+			[
+				"measa",
 				"modules\\analysis\\measurement_analysis.py"
 			],
 			[
-				"ini",
-				"scripts\\LaFerrari\\init.py"
+				"objec",
+				"qtlab\\source\\lib\\network\\object_sharer.py"
 			],
 			[
-				"dummy",
-				"scripts\\playground\\Adriaan\\dummy_MeasurementControl_script.py"
+				"qtflow",
+				"qtlab\\source\\qtflow.py"
 			],
 			[
-				"laferinit",
-				"scripts\\LaFerrari\\init.py"
+				"ats",
+				"instruments\\physical_instruments\\Alazar_ATS9870.py"
 			],
 			[
-				"qtlabbat",
-				"qtlab.bat"
+				"gene",
+				"modules\\utilities\\general.py"
 			],
 			[
-				"use",
-				"userconfig.py"
+				"flow",
+				"qtlab\\source\\qtflow.py"
 			],
 			[
-				"autal",
-				"scripts\\LaMaserati_VNA\\auto_ale_vespa.py"
+				"sourcqt",
+				"qtlab\\source\\qt.py"
 			],
 			[
-				"autoal",
-				"scripts\\LaMaserati_VNA\\auto_ale_vespa.py"
+				"qt",
+				"qtlab\\qtlab"
 			],
 			[
-				"mmeasure",
-				"modules\\measurement\\measurement.py"
+				"gui",
+				"qtlab\\clients\\gui_client\\gui_client.py"
 			],
 			[
-				"homodyne",
-				"modules\\measurement\\continuous_wave\\homodyne.py"
+				"randomimult",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
 			],
 			[
-				"homo",
-				"scripts\\homodyne_script.py"
+				"objectsh",
+				"qtlab\\source\\lib\\network\\object_sharer.py"
 			],
 			[
-				"hom",
-				"scripts\\homodyne_analysis.py"
+				"timedom",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
 			],
 			[
-				"analysis",
-				"analysis\\MeasurementAnalysis.py"
+				"atoo",
+				"modules\\analysis\\analysis_toolbox.py"
 			],
 			[
-				"h5data",
-				"source\\hdf5_data.py"
+				"multiplex",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
 			],
 			[
-				"du",
-				"scripts\\playground\\Adriaan\\dummy_measurement.py"
+				"visa",
+				"qtlab\\source\\visa.py"
 			],
 			[
-				"dummmeas",
-				"scripts\\playground\\Adriaan\\dummy_measurement.py"
+				"fitmods",
+				"modules\\analysis\\fitting_models.py"
 			],
 			[
-				"init99",
-				"init\\99_init_user.py"
+				"ranomized",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
 			],
 			[
-				"config",
-				"userconfig.py"
+				"randomizedbenchmarking",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking.py"
+			],
+			[
+				"dr",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning_alternating.py"
+			],
+			[
+				"tune",
+				"scripts\\personal_folders\\Serwan\\tune_qubits.py"
+			],
+			[
+				"qubit_ob",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"tim",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
+			],
+			[
+				"alaza",
+				"instruments\\physical_instruments\\Alazar_ATS9870.py"
+			],
+			[
+				"randomize",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking.py"
+			],
+			[
+				"180",
+				"scripts\\personal_folders\\Serwan\\marker_calibration_PiX180.py"
+			],
+			[
+				"awg5014",
+				"instruments\\physical_instruments\\Tektronix_AWG5014.py"
+			],
+			[
+				"marker",
+				"scripts\\personal_folders\\Serwan\\marker_calibration_RB.py"
+			],
+			[
+				"general",
+				"modules\\utilities\\general.py"
+			],
+			[
+				"sendemail",
+				"scripts\\personal_folders\\Serwan\\send_email.py"
+			],
+			[
+				"drag",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning_alternating.py"
+			],
+			[
+				"tracked",
+				"scripts\\personal_folders\\Ramiro\\tracked_spectroscopy_script.py"
+			],
+			[
+				"fri",
+				"instruments\\physical_instruments\\Fridge_Monitor.py"
+			],
+			[
+				"fitting",
+				"modules\\analysis\\fitting_models.py"
+			],
+			[
+				"user",
+				"qtlab\\userconfig.py"
+			],
+			[
+				"randomi",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking.py"
+			],
+			[
+				"test",
+				"scripts\\personal_folders\\Serwan\\test.py"
+			],
+			[
+				"prep",
+				"scripts\\personal_folders\\Serwan\\prepare_multiplex.py"
+			],
+			[
+				"rand",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_multiplex.py"
+			],
+			[
+				"flux",
+				"instruments\\meta_instruments\\Flux_Control.py"
+			],
+			[
+				"cali",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning_alternating.py"
+			],
+			[
+				"qubiobj",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"signalho",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
+			],
+			[
+				"meas",
+				"scripts\\personal_folders\\Ramiro\\measure_T1_night.py"
+			],
+			[
+				"measco",
+				"instruments\\meta_instruments\\MeasurementControl.py"
+			],
+			[
+				"dete",
+				"modules\\measurement\\detector_functions.py"
+			],
+			[
+				"sweep",
+				"modules\\measurement\\sweep_functions.py"
+			],
+			[
+				"sgs1",
+				"instruments\\physical_instruments\\RS_SGS100A.py"
+			],
+			[
+				"sgs",
+				"instruments\\physical_instruments\\_SignalHound\\GetSweep.vi"
+			],
+			[
+				"qubitob",
+				"instruments\\container_instruments\\qubit_object.py"
+			],
+			[
+				"calidra",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning_alternating.py"
+			],
+			[
+				"allxy",
+				"scripts\\personal_folders\\Serwan\\calibrate_drag_detuning_AllXY.py"
+			],
+			[
+				"aero",
+				"instruments\\physical_instruments\\Aeroflex_8310.py"
+			],
+			[
+				"measc",
+				"instruments\\meta_instruments\\MeasurementControl.py"
+			],
+			[
+				"alaz",
+				"instruments\\physical_instruments\\Alazar_ATS9870.py"
+			],
+			[
+				"instrumen",
+				"qtlab\\source\\instrument.py"
+			],
+			[
+				"signalh",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
+			],
+			[
+				"lafer",
+				"init\\config\\La_Ferrari.py"
+			],
+			[
+				"signal",
+				"instruments\\physical_instruments\\SignalHound_USB_SA124B.py"
+			],
+			[
+				"ferr",
+				"init\\config\\La_Ferrari.py"
+			],
+			[
+				"laduc",
+				"init\\config\\La_Ducati.py"
+			],
+			[
+				"tdmea",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
+			],
+			[
+				"meanaly",
+				"modules\\analysis\\measurement_analysis.py"
+			],
+			[
+				"calibrateamp",
+				"scripts\\personal_folders\\Serwan\\calibrate_amplitude_mixer_skewness.py"
+			],
+			[
+				"skewness",
+				"scripts\\personal_folders\\Serwan\\calibrate_phase_mixer_skewness.py"
+			],
+			[
+				"mixer",
+				"scripts\\personal_folders\\Serwan\\mixer_skewness_calibration.py"
+			],
+			[
+				"crosscou",
+				"scripts\\personal_folders\\Serwan\\cross_coupling_moving_Ancilla.py"
+			],
+			[
+				"awgsw",
+				"modules\\measurement\\AWG_sweep_functions.py"
+			],
+			[
+				"time",
+				"instruments\\meta_instruments\\TimeDomainMeasurement.py"
+			],
+			[
+				"rabiana",
+				"scripts\\personal_folders\\Serwan\\randomized_benchmarking_alt.py"
+			],
+			[
+				"preparemul",
+				"scripts\\personal_folders\\Serwan\\prepare_multiplex.py"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 625.0,
+		"height": 0.0,
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"",
-				"C:\\Users\\Serwan\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\qtlab.sublime-project"
-			]
 		],
-		"width": 475.0
+		"width": 0.0
 	},
 	"select_symbol":
 	{
@@ -1178,11 +1901,11 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
-	"show_open_files": false,
+	"show_minimap": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 352.0,
+	"side_bar_width": 384.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

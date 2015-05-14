@@ -1,8 +1,8 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Deep-reactive ion etched resonators}{3}
-\contentsline {chapter}{\numberline {2}Muxmon experiment}{4}
-\contentsline {section}{\numberline {2.1}Introduction}{4}
-\contentsline {section}{\numberline {2.2}Muxmon chip architecture}{4}
-\contentsline {section}{\numberline {2.3}Qubit characterization and initial tune-up}{6}
-\contentsline {section}{\numberline {2.4}Calibration routines}{6}
-\contentsline {section}{\numberline {2.5}Randomized benchmarking}{6}
+\contentsline {part}{I\hspace {1em}Deep-reactive ion etched resonators}{3}
+\contentsline {part}{II\hspace {1em}Muxmon experiment}{4}
+\contentsline {chapter}{\numberline {1}Muxmon chip architecture}{7}
+\contentsline {chapter}{\numberline {2}Qubit characterization}{9}
+\contentsline {section}{\numberline {2.1}Part I: Continuous wave measurements}{9}
+\contentsline {chapter}{\numberline {3}Calibration routines}{10}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{11}
