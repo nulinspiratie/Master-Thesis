@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Deep-reactive ion etched resonators}{3}
+\contentsline {chapter}{\numberline {2}Muxmon experiment}{4}
+\contentsline {section}{\numberline {2.1}Introduction}{4}
+\contentsline {section}{\numberline {2.2}Muxmon chip architecture}{4}
+\contentsline {section}{\numberline {2.3}Qubit characterization and initial tune-up}{6}
+\contentsline {section}{\numberline {2.4}Calibration routines}{6}
+\contentsline {section}{\numberline {2.5}Randomized benchmarking}{6}

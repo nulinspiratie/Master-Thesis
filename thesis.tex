@@ -1,0 +1,194 @@
+% Todo:
+% Change all the variables such that they are not in italics
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+% \usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{siunitx}
+\usepackage{subcaption}
+\usepackage[space]{grffile}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+% \onehalfspacing
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Serwan Asaad}
+\fancyhead[R]{Delft University of Technology}
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+~\\ [4.0cm]
+\textsc{\LARGE Delft University of Technology}
+\\ [3.0cm]
+\textsc{\Large Master Thesis}
+\HRule{0.5pt} \\
+\LARGE \textbf{\uppercase{Master thesis}}
+\HRule{2pt} \\ [0.5cm]
+
+% Author and supervisor
+\noindent
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Serwan Asaad
+\end{flushleft}
+\end{minipage}%
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr.~Alessandro Bruno
+\end{flushright}
+\end{minipage}
+\\ [3.0cm]
+{\large \today}
+\end{center}
+
+\end{titlepage}
+
+
+\author{
+        Serwan Asaad
+        Student ID: 4323475 \\
+        Delft University of Technology \\
+        Kavli Institute of Nanoschience\\
+        Quantum Nanoscience Department\\
+        Quantum Transport Group\\
+        DiCarlo Lab}
+
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+\section*{Introduction}
+
+\chapter{Deep-reactive ion etched resonators}
+
+
+
+
+
+
+
+\chapter{Muxmon experiment}
+
+\textBF{TODO:} Explain surface code architecture
+
+
+
+\section{Introduction}
+
+At this moment circuit QED is at the stage where multi-qubit experiments are being realized.
+
+
+
+\section{Muxmon chip architecture}
+
+\textbf{Topics that should be explained in this section:}
+\begin{itemize}
+    \item The Muxmon0 and Muxmon1 chip are designed with two purposes
+    \begin{enumerate}
+        \item Testing multiplexing using the Duplexer
+        \item Explore qubit frequency re-use
+    \end{enumerate}
+
+    \item Explain similarities of chips
+    \begin{itemize}
+        \item Three qubits per chip
+        \item All three qubits have individual flux tuning
+        \item Air bridges are used, not only for connect the ground planes, but also such that the feedline can pass over other coplanar waveguides without contact \\
+    \end{itemize}
+
+    \item Explain differences between Muxmon0 and Muxmon1.
+    \begin{itemize}
+        \item The Muxmon0 chip has a driving line connected to each of the qubits. \\
+              It has two resonator buses at \SI{4.9}{\giga \hertz} and \SI{5.0}{\giga \hertz}
+        \begin{description}
+            \item[Advantage] Able to fully control each qubit individually, even when multiple qubits share the same frequency.
+            \item[Advantage] Less coupling between data qubits.
+            \item[Disadvantage] Requires more driving lines.
+            \item[Disadvantage] Adds extra source of dissipation for the qubits.
+        \end{description}
+        \item The Muxmon1 chip has two driving lines, each capacitively coupled to one of the two data qubits, and to the Ancilla qubit.
+        \begin{description}
+            \item[Advantage] Less driving lines required
+            \item[Advantage] Less dissipation due to capacitive coupling
+            \item[Disadvantage] Cannot individually control data qubit and ancilla qubit when they share the same frequency
+            \item[Disadvantage] More coupling between qubits
+        \end{description}
+        \item Simplified model of the suface code
+    \end{itemize}
+
+    \item Explain concepts of cross-coupling and readout cross-talk
+    \begin{description}
+        \item[Cross-coupling] The coupling between qubits. \\
+                              Cross-coupling leads to transfer of excitation.\\
+                              An associated coupling strength \textbf{g} can be associated to cross-coupling.\\
+                              Can be determined by driving one qubit extremely hard, and measuring signal from other qubit.\\
+                              \textBF{TODO:} Show values of cross-coupling found, or do this in characterization section \\
+                              \textbf{TODO:} Leads to coherent errors? \\
+                              \textBF{TODO:} Two types of cross-coupling? Direct leakage of pulse pulse, and transfer of excitation? cross-driving?
+        \item[Readout cross-talk] Coupling between a qubit and a resonator that are not directly coupled.\\
+                                  A part of the signal measured from one resonator is then due to the state of another qubit \\
+                                  \textBF{TODO:} Understand more behind readout cross-talk
+    \end{description}
+
+\end{itemize}
+
+\textbf{Left to think about:}
+\begin{itemize}
+    \item Should I already include items such as coherence times, the fact that Muxmon0 performs better than Muxmon 1?
+    \item Where should I include coherence times versus frequency?
+    \item Should the part on cross-coupling and readout cross-talk not be in characterization section?
+    \item Should the section on the Duplexer go in here?
+\end{itemize}
+
+\textbf{Figures that need to be included:}
+\begin{itemize}
+    \item Muxmon0 and Muxmon1 chip, preferably optical microscopy
+    \item SEM image of air-bridges such that coplanar wave-guides cross without intersecting
+    \item schematic of cross-coupling and readout cross-talk \\
+          It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
+\end{itemize}
+
+
+\section{Qubit characterization and initial tune-up}
+
+
+\section{Calibration routines}
+
+
+\section{Randomized benchmarking}
+
+\end{document}
