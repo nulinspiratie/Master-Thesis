@@ -21,6 +21,7 @@
 
 \newcommand{\Ec}{$E_\text{c}$}
 \newcommand{\Ej}{$E_\text{J}$}
+\newcommand{\fbare}{$f_\text{bare}$}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 % \onehalfspacing
@@ -98,7 +99,11 @@ Dr.~Alessandro Bruno
 
 \part{Deep-reactive ion etched resonators}
 
-
+\textbf{TODO:}
+\begin{itemize}
+  \item Explain heterodyne detection
+  \item Explain VNA
+\end{itemize}
 
 
 
@@ -195,14 +200,49 @@ Dr.~Alessandro Bruno
     For superconducting transmon qubits, however, finding the right dimensions that correspond to the desired parameters is a much more complicated process.
     The qubit's frequency, for instance, depends on the qubit's coupling energy \Ec and Josephson energy \Ej. The coupling energy \Ec can be reasonably estimated from classical simulations. Finding the right dimensions for the Josephson junction that result in the desired Josephson energy \Ej, however, is difficult, and usually physically testing different junctions is necessary to determine an accurate conversion from the desired \Ej to the Josephson junction dimensions.
 
-    Nevertheless, the actual parameters of the sample are almost never where one expects them to be. Once the sample is cooled in the dilution refrigerator, an inevitable hide-and-seek game follows with the goal of finding the frequency of the resonators and qubits, and subsequently determining their properties. This section aims to describe the necessary operations to follow once a cQED sample is cooled down and ready to be characterized.
+    Nevertheless, the actual parameters of the sample are almost never where one expects them to be. Once the sample is cooled in the dilution refrigerator, an inevitable hide-and-seek game follows with the goal of finding the frequency of the resonators and qubits, and subsequently determining their properties. This chapter describes the measurements that were performed to characterize the MuxMon samples.
 
-    \section{Part I: Continuous wave measurements}
+    \section{Part I: Continuous-wave measurements}
 
-     Once a sample is properly cooled down it is ready to be measured. At this stage the sample is still unknown terrain, where the experimenter only has a crude map, containing the sample's targeted parameters, and the specific properties of the resonators and qubits.
+      Once a sample is properly cooled down it is ready to be measured. At this stage the sample is still an unknown terrain, where the experimenter only has a rough map, containing the sample's targeted parameters, and the specific properties of the resonators and qubits.
 
-     Since the qubits
+      The first step is to look for signs of life. These manifest themselves as resonance frequencies of the resonators and the qubits that are coupled to them. As we are not yet interested in the properties of the resonators and qubits which can only be obtained through measurements with accurately timed pulses, we send continuous tones through the feedline, and measure deviations in the transmission. These measurements are known as continuous-wave measurements
 
+      \subsection{Scanning for resonators}
+        Since communication with the qubits is mediated through their coupling to resonators, the first step is to find these resonators. This is done using heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
+
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Explain why using a high power is good.
+          \item Explain that the quality factor is low because the resonator is coupled strongly to the qubit
+        \end{itemize}
+
+        \textbf{Figures:}
+        \begin{itemize}
+          \item Figure of transmission showing all three Muxmon0 resonators
+        \end{itemize}
+
+      \subsection{Powersweeping the resonators}
+        Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Due to this capacitive coupling the frequency of the resonator experiences a shift dependent on the state of the qubit. This shift disappears when the resonator is driven with sufficient power, in which case its resonance frequency shifts to the bare cavity frequency \fbare. If this frequency shift is observed, it indicates that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
+
+
+        A powersweep additionally provides information about at what power the resonator enters the \textbf{TODO:} nonlinear? regime. For measurements involving the qubit the readout power must be below this threshold power.
+
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Explain better theory behind resonator shift $\chi$
+          \item Explain theory behind transition to bare cavity frequency
+          \item Refer to thesis for more info on frequency shifts
+        \end{itemize}
+
+        \textbf{Figures:}
+        \begin{itemize}
+          \item Powersweep of ancilla qubit
+        \end{itemize}
+
+      \subsection{Scanning for qubits}
+
+    \section{Part II: Time-domain measurements}
 
 
 
