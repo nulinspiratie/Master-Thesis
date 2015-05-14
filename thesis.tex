@@ -18,6 +18,7 @@
 \usepackage{siunitx}
 \usepackage{subcaption}
 \usepackage[space]{grffile}
+\usepackage[toc, page]{appendix}
 
 \newcommand{\Ec}{$E_\text{c}$}
 \newcommand{\Ej}{$E_\text{J}$}
@@ -214,7 +215,7 @@ Dr.~Alessandro Bruno
         \textbf{TODO:}
         \begin{itemize}
           \item Explain why using a high power is good.
-          \item Explain that the quality factor is low because the resonator is coupled strongly to the qubit
+          \item Explain that the quality factor is low because the resonator is coupled strongly to the qubit (equation including coupling to qubit?)
         \end{itemize}
 
         \textbf{Figures:}
@@ -226,19 +227,29 @@ Dr.~Alessandro Bruno
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Due to this capacitive coupling the frequency of the resonator experiences a shift dependent on the state of the qubit. This shift disappears when the resonator is driven with sufficient power, in which case its resonance frequency shifts to the bare cavity frequency \fbare. If this frequency shift is observed, it indicates that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
 
 
-        A powersweep additionally provides information about at what power the resonator enters the \textbf{TODO:} nonlinear? regime. For measurements involving the qubit the readout power must be below this threshold power.
+        A powersweep additionally provides information about at what power the resonator enters the \textbf{TODO:} nonlinear? regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, it is possible to estimate the amount of detuning between the qubit and the resonator. This is done through the relation: \textbf{TODO:} insert relation
+
+        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the resonance frequency of the qubit is sufficiently far away from that of the resonator, and as a result the frequency shift cannot be discerned. At this point it is too early to draw conclusions, and we may almost draw the analogy with Schr\"odinger's cat in a box.
 
         \textbf{TODO:}
         \begin{itemize}
           \item Explain better theory behind resonator shift $\chi$
           \item Explain theory behind transition to bare cavity frequency
-          \item Refer to thesis for more info on frequency shifts
+          \item Refer to thesis Reed for more info on frequency shifts
         \end{itemize}
 
         \textbf{Figures:}
         \begin{itemize}
           \item Powersweep of ancilla qubit
         \end{itemize}
+
+      \subsection{Scan for sweet-spots}
+        Some of the qubits are flux-tunable. This
+
+      \subsection{Scanning for qubits}
+        \textbf{Mention what to do if qubit is close to or far away from resonator}
+
+
 
       \subsection{Scanning for qubits}
 
@@ -255,5 +266,18 @@ Dr.~Alessandro Bruno
 
 
   \chapter{Randomized benchmarking}
+
+\begin{appendices}
+
+  \chapter{Additional notes}
+    \section{Qubit characterization}
+      \subsection{Part I: Continuous-wave measurements}
+        \subsubsection{Powersweep}
+          \begin{itemize}
+            \item If the resonator seems to disappear after the transition from dressed frequency to bare frequency (or vice versa), this is likely due to the qubit being extremely close to the resonator, and so the frequency shift is large.
+          \end{itemize}
+
+
+\end{appendices}
 
 \end{document}
