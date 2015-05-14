@@ -265,6 +265,7 @@ Dr.~Alessandro Bruno
 
         \textbf{TODO:}
         \begin{itemize}
+          \item Explain avoided crossing?
           \item Give detailed information on SQUID loop
           \begin{itemize}
             \item Why does the qubit frequency change in a SQUID loop
@@ -286,13 +287,22 @@ Dr.~Alessandro Bruno
         \end{itemize}
 
       \subsection{Scanning for qubits}
-        Once the preliminary measurements have been performed
+        Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find its frequency.
+
+        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit. If the amount of detuning is small (less than $\pm \SI{100}{\mega \hertz}$), the frequencies of the qubit and resonator are close to the avoided crossing. The resonator and qubit are strongly coupled. In this case one should use a single-tone measurement. If the detuning between the resonator and qubit is sufficiently large
+
+
+        If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
+
+        There are several options. The first option is to choose zero DAC voltage. In most cases this is alright, but there are cases when this is a bad choice. For instance, due to trapped magnetic fields during cool-down the qubit could be positioned at the anti-sweet-spot for zero DAC voltage, in which case finding the qubit will be next to impossible.
+
+        A better option is to choose a DAC voltage depending on the amount of detuning previously measured. Ideally either a few hundred megahertz or zero.
+
+
         \textbf{Mention what to do if qubit is close to or far away from resonator}
 
 
 
-
-      \subsection{Scanning for qubits}
 
     \section{Part II: Time-domain measurements}
 
