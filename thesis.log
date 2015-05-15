@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.12)  14 MAY 2015 18:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.12)  15 MAY 2015 17:52
 entering extended mode
 **K:/ns/qt/Transmon/Personal*Folders/Serwan/Master-Thesis/thesis.tex
 ("K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/thesis.tex"
@@ -1041,22 +1041,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 Chapter 2.
 [10
 
-] [11] [12] [13]
+] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+[13] [14]
 Chapter 3.
-[14
+[15
 
 ]
 Chapter 4.
-[15
+[16
 
-] [16
+] [17
 
 
 ]
 Appendix A.
+[18
+
+]
+Appendix B.
 
 AED: lastpage setting LastPage
-[17
+[19
 
 ]
 
@@ -1065,22 +1074,25 @@ See the caption package documentation for explanation.
 
 ("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\thesis.aux") ) 
 Here is how much of TeX's memory you used:
- 15476 strings out of 493921
- 304437 string characters out of 3147312
+ 15535 strings out of 493921
+ 305504 string characters out of 3147312
  441377 words of memory out of 3000000
- 18381 multiletter control sequences out of 15000+200000
- 127774 words of font info for 225 fonts, out of 3000000 for 9000
+ 18431 multiletter control sequences out of 15000+200000
+ 151947 words of font info for 255 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  42i,10n,43p,10452b,883s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/TUD277449/AppDa
-ta/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (18 pages, 81105 bytes).
+ta/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mex.pfb><D:/TUD277449/AppData/
+MiKTeX/2.9/fonts/type1/public/fourier/fourier-ml.pfb><D:/TUD277449/AppData/MiKT
+eX/2.9/fonts/type1/public/fourier/fourier-mlit.pfb><D:/TUD277449/AppData/MiKTeX
+/2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/a
+dobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (20 pages, 96406 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 40449 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 44033 words of extra memory for PDF output out of 51595 (max. 10000000)
 

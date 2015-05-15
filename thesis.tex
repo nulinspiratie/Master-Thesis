@@ -289,7 +289,38 @@ Dr.~Alessandro Bruno
       \subsection{Scanning for qubits}
         Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find its frequency.
 
-        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit. If the amount of detuning is small (less than $\pm \SI{100}{\mega \hertz}$), the frequencies of the qubit and resonator are close to the avoided crossing. The resonator and qubit are strongly coupled. In this case one should use a single-tone measurement. If the detuning between the resonator and qubit is sufficiently large
+        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is small ($ < \sim \SI{100}{\mega \hertz}$), the frequencies of the qubit and resonator are close to the avoided crossing, resulting in a strong coupling between the two. In this case the qubit can be seen in a simple transmission measurement. If the detuning between the resonator and qubit is sufficiently large ($> \sim \SI{100}{\mega \hertz}$), the qubit can be found using two-tone spectroscopy
+
+        \subsubsection{Avoided crossing}
+          When the qubit's frequency is close to that of the resonator, the two experience a strong coupling \textbf{TODO:} Why?
+
+          \textbf{Avoided crossing info:}
+          \begin{itemize}
+             \item The coupling strength $g$ is the minimum distance between the splitting
+             \item From Reed's thesis p.63 explanation of this avoided crossing is given\\
+             \begin{align}
+               E_0 = & -\frac{\hbar \Delta}{2}\\
+               E_1 = & n \hbar\omega_r \pm \frac{\hbar}{2}\sqrt{4g^2n + \Delta^2}
+             \end{align}\\
+             Joining $E_0 + E_1$ results in a qubit approaching a resonator from the top.\\
+             When the frequency of the qubit equals that of the resonator, the energy difference reaches a minimum, and is equal to $2g$.
+           \end{itemize}
+          \textbf{TODO:}
+          \begin{itemize}
+            \item Explain the quton fobit behaviour near the avoided crossing
+            \item Explain how one can extract coupling from avoided crossing
+          \end{itemize}
+
+          \textbf{figures:}
+          \begin{itemize}
+            \item Figure of avoided crossing
+          \end{itemize}
+
+        \subsection{Spectroscopy}
+          An increase in the detuning between the resonator and qubit increases is accompanied by a
+           in their coupling. Therefore, when driving at the qubit's frequency, the deviation in the transmission becomes less, and at a certain amount of detuning it is not measurable anymore.
+
+          When this is the case, an
 
 
         If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
@@ -298,8 +329,11 @@ Dr.~Alessandro Bruno
 
         A better option is to choose a DAC voltage depending on the amount of detuning previously measured. Ideally either a few hundred megahertz or zero.
 
-
-        \textbf{Mention what to do if qubit is close to or far away from resonator}
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Mention what to do if qubit is close to or far away from resonator
+          \item Mention the term transmission measurement earlier on.
+        \end{itemize}
 
 
 
@@ -327,7 +361,14 @@ Dr.~Alessandro Bruno
           \begin{itemize}
             \item If the resonator seems to disappear after the transition from dressed frequency to bare frequency (or vice versa), this is likely due to the qubit being extremely close to the resonator, and so the frequency shift is large.
           \end{itemize}
-
+        \subsubsection{Spectroscopy}
+          \begin{itemize}
+            \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
+          \end{itemize}
+  \chapter{Algorithms}
+    \section{Tracked spectroscopy}
+    \section{Peak finding}
+    \section{Compiled RB?}
 
 \end{appendices}
 
