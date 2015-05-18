@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="FA84D8C6-B4EA-4064-B2F2-E267F7592B5E" Version="1.1">
+   <Notes>
+      <Note Width="175.781" FontSize="12" ID="1" Position="867.2,230.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>g > gamma, kappa
+Strong coupling regime</String>
+      </Note>
+      <Note Width="136.707" FontSize="12" ID="2" Position="867.2,277.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>delta >> g
+Dispersive regime</String>
+      </Note>
+      <Note Width="187.5" FontSize="12" ID="3" Position="867.2,325.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>chi > gamma, kappa
+Strong dispersive regime</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="4" Position="590.6,102.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <String>Scanning for resonators</String>
+      </Note>
+      <Note Width="124.243" FontSize="12" ID="5" Position="328.1,220.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Need to explain:</String>
+      </Note>
+      <Note Width="153.76" FontSize="12" ID="6" Position="328.1,249.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Coupling between qubit and resonator</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="7" Position="328.1,297.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Jaynes-Cummings Hamiltonian</String>
+         <ConnectedNoteIDs>9-10</ConnectedNoteIDs>
+         <PointsToNoteIDs>9-10</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="8" Position="524.2,435.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Dispersive Jaynes-Cummings Hamiltonian</String>
+         <ConnectedNoteIDs>11-12</ConnectedNoteIDs>
+         <PointsToNoteIDs>11-12</PointsToNoteIDs>
+      </Note>
+      <Note Width="170.312" FontSize="12" ID="9" Position="200.8,403.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Non-dispersive regime</String>
+         <ConnectedNoteIDs>7</ConnectedNoteIDs>
+      </Note>
+      <Note Width="136.707" FontSize="12" ID="10" Position="524.2,406.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Dispersive regime</String>
+         <ConnectedNoteIDs>7</ConnectedNoteIDs>
+      </Note>
+      <Note Width="210.938" FontSize="12" ID="11" Position="603.1,545.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Dispersive coupling chi_ij</String>
+         <ConnectedNoteIDs>8</ConnectedNoteIDs>
+      </Note>
+      <Note Width="117.041" FontSize="12" ID="12" Position="443.0,544.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Dispersive shift</String>
+         <ConnectedNoteIDs>8</ConnectedNoteIDs>
+      </Note>
+      <Note Width="86.9995" FontSize="12" ID="13" Position="443.0,573.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>chi or 2*chi</String>
+      </Note>
+      <Note Width="167.969" FontSize="12" ID="14" Position="443.0,602.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>chi=chi_01 - chi_12/2</String>
+      </Note>
+      <Note Width="197.656" FontSize="12" ID="15" Position="443.0,630.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Can be approximated as:</String>
+         <ConnectedNoteIDs>16-17</ConnectedNoteIDs>
+         <PointsToNoteIDs>16-17</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="16" Position="282.8,694.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>g^2/delta * Ec/(h*delta - Ec)
+(Reed p. 64)</String>
+         <ConnectedNoteIDs>15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="17" Position="570.3,702.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>g^2/delta * alpha/(delta-alpha)
+(Reed p. 64)</String>
+         <ConnectedNoteIDs>15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="118.86" FontSize="12" ID="18" Position="982.0,564.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Left to mention:</String>
+      </Note>
+      <Note Width="84.436" FontSize="12" ID="19" Position="982.0,593.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>alpha ~ Ec</String>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="A53DE288-9B45-4784-A2B7-DA69162DCF92" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="79C1C056-E302-4949-88B3-B68F6B4B8912" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="EF4DEA80-F6F1-4557-B8AF-35FFF6985DAB" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="1CBE3680-E328-4A9B-8679-F85F7E551986" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="33E13838-88C3-49F1-96F4-A9C77D4271FB" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C48AD1D0-7791-4777-8AD7-99199DC5F898" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="77C89AF5-6BD3-4C0A-9A27-A8E99A6B469D" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>

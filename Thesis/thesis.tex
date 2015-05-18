@@ -29,6 +29,7 @@
 \newcommand{\wres}{\omega_\text{r}}
 \newcommand{\fqub}{f_\text{q}}
 \newcommand{\wqub}{\omega_\text{q}}
+\newcommand{\wdrive}{\omega_\text{d}}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 % \onehalfspacing
@@ -119,7 +120,17 @@ Dr.~Alessandro Bruno
 
 \part{Muxmon experiment}
 
-  \textbf{TODO:} Explain surface code architecture
+  \textbf{TODO:}
+  \begin{itemize}
+    \item Explain surface code architecture
+    \item Explain the general structure of a chip:
+    \begin{itemize}
+      \item Feedline through which signal is sent and measured
+      \item CPW resonators, capacitively coupled to feedline
+      \item Single qubit coupled to resonators (coupling location?)
+      \item Resonator buses
+    \end{itemize}
+  \end{itemize}
 
 
 
@@ -219,6 +230,7 @@ Dr.~Alessandro Bruno
       The first step is to look for signs of life. These manifest themselves as resonance frequencies of the resonators and the qubits that are coupled to them. As we are not yet interested in the properties of the resonators and qubits which can only be obtained through measurements with accurately timed pulses, we send continuous tones through the feedline, and measure deviations in the transmission. These measurements are known as continuous-wave measurements
 
       \subsection{Scanning for resonators}
+      \label{sec:resonator-scan}
         Since communication with the qubits is mediated through their coupling to resonators, the first step is to find these resonators. This is done using a transmission measurement, in combination with heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
 
         There is one difference in measuring a resonator when there is a qubit coupled to it. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{Reed}:
@@ -325,9 +337,31 @@ Dr.~Alessandro Bruno
         \end{itemize}
 
       \subsection{Scanning for qubits}
-        Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find its frequency.
+        Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find the qubit.
 
-        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is small ($ < \sim \SI{100}{\mega \hertz}$), the frequencies of the qubit and resonator are close to the avoided crossing, resulting in a strong coupling between the two. In this case the qubit can be seen in a simple transmission measurement. If the detuning between the resonator and qubit is sufficiently large ($> \sim \SI{100}{\mega \hertz}$), the qubit can be found using two-tone spectroscopy
+        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency.
+
+        \subsubsection{Spectroscopy}
+          As was explained in section~\ref{sec:resonator-scan} the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is swapped. The transmission at the resonator's dip when the qubit is in the ground state will be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited state). This is the property exploited in a two-tone spectroscopy measurement.
+
+          In a two-tone spectroscopy measurement two tones are sent through the feedline.
+          \begin{enumerate}
+            \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
+            \item A drive tone with varying frequency $\wdrive$.
+          \end{enumerate}
+
+          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground and excited state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth.
+
+          \textbf{TODO:} Spectroscopy section
+          \begin{itemize}
+              \item Detuning
+              \item Spectroscopy tone or drive tone?
+              \item Drive strength (see Reed's thesis p115)
+              \item Is power broadening really due to stimulated emission?
+              \item Explain optimal RF power
+              \item tracked spectroscopy?
+          \end{itemize}
+
 
         \subsubsection{Avoided crossing}
           When the qubit's frequency is close to that of the resonator, the two experience a strong coupling \textbf{TODO:} Why?
@@ -355,13 +389,9 @@ Dr.~Alessandro Bruno
             \item Figure of avoided crossing
           \end{itemize}
 
-        \subsubsection{Spectroscopy}
-          An increase in the detuning between the resonator and qubit is accompanied by a . Therefore, when driving at the qubit's frequency, the deviation in the transmission becomes less, and at a certain amount of detuning it is not measurable anymore.
 
-          Explain in this Spectroscopy section:
-          \begin{itemize}
-              \item
-          \end{itemize}
+
+
 
 
         If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
@@ -375,9 +405,10 @@ Dr.~Alessandro Bruno
           \item Use relatively high source power, results in power broadening
           \item Mention what to do if qubit is close to or far away from resonator
           \item Mention the term transmission measurement earlier on.
+          \item Pulsed spectroscopy
         \end{itemize}
 
-
+        \subsubsection{Tracked spectroscopy}
 
 
     \section{Part II: Time-domain measurements}
