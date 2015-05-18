@@ -19,12 +19,16 @@
 \usepackage{subcaption}
 \usepackage[space]{grffile}
 \usepackage[toc, page]{appendix}
+\usepackage{braket}
 
-\newcommand{\Ec}{$E_\text{c}$}
-\newcommand{\Ej}{$E_\text{J}$}
-\newcommand{\fbare}{$f_\text{bare}$}
-\newcommand{\fres}{$f_\text{r}$}
-\newcommand{\fqub}{$f_\text{q}$}
+\newcommand{\Ec}{E_\text{c}}
+\newcommand{\Ej}{E_\text{J}}
+\newcommand{\fbare}{f_\text{bare}}
+\newcommand{\wbare}{\omega_\text{bare}}
+\newcommand{\fres}{f_\text{r}}
+\newcommand{\wres}{\omega_\text{r}}
+\newcommand{\fqub}{f_\text{q}}
+\newcommand{\wqub}{\omega_\text{q}}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 % \onehalfspacing
@@ -106,7 +110,7 @@ Dr.~Alessandro Bruno
 \begin{itemize}
   \item Explain heterodyne detection
   \item Explain VNA
-  \item Explain that resonance frequency \fres is not necessarily at the transmission minimum when the resonator exhibits asymmetry.
+  \item Explain that resonance frequency $\fres$ is not necessarily at the transmission minimum when the resonator exhibits asymmetry.
 \end{itemize}
 
 
@@ -204,7 +208,7 @@ Dr.~Alessandro Bruno
     In the design of cQED chips, the parameters of the qubits and resonators are always targeted which are ideal for the experiment.
     For coplanar waveguide resonators one can already obtain relatively good parameters for the required dimensions from simple formulae \textbf{TODO:} refer to formula.
     For superconducting transmon qubits, however, finding the right dimensions that correspond to the desired parameters is a much more complicated process.
-    The qubit's frequency, for instance, depends on the qubit's coupling energy \Ec and Josephson energy \Ej. The coupling energy \Ec can be reasonably estimated from classical simulations. Finding the right dimensions for the Josephson junction that result in the desired Josephson energy \Ej, however, is difficult, and usually physically testing different junctions is necessary to determine an accurate conversion from the desired \Ej to the Josephson junction dimensions.
+    The qubit's frequency, for instance, depends on the qubit's coupling energy $\Ec$ and Josephson energy $\Ej$. The coupling energy $\Ec$ can be reasonably estimated from classical simulations. Finding the right dimensions for the Josephson junction that result in the desired Josephson energy $\Ej$, however, is difficult, and usually physically testing different junctions is necessary to determine an accurate conversion from the desired $\Ej$ to the Josephson junction dimensions.
 
     Nevertheless, the actual parameters of the resonators and qubits are almost never where one expects them to be. Once the sample is cooled in the dilution refrigerator, an inevitable game of hide-and-seek follows with the goal of finding the frequency of the resonators and qubits, and subsequently determining their properties. This chapter describes the measurements that were performed to characterize the MuxMon samples.
 
@@ -217,18 +221,46 @@ Dr.~Alessandro Bruno
       \subsection{Scanning for resonators}
         Since communication with the qubits is mediated through their coupling to resonators, the first step is to find these resonators. This is done using a transmission measurement, in combination with heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
 
-        There is one difference in measuring a resonator when there is a qubit coupled to it. In this case the resonance frequency of the resonator, which henceforth shall be known as the resonator's frequency \fres, is shifted from its bare resonance frequency \fbare(its frequency in the absence of a coupled qubit). The amount by which \fres is shifted from \fbare depends on how much the ground to excited state transition frequency of the qubit, which shall be mentioned as the qubit's frequency \fqub, differs from the resonator's bare frequency \fbare. This difference is known as the detuning $\Delta = f_\text{qub} - f_\text{bare}$.
+        There is one difference in measuring a resonator when there is a qubit coupled to it. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{Reed}:
 
-         $2 \chi$
-        the resonance frequency of the qubit's ground to excited state transition, which henceforth shall be denoted as the qubit's frequency \fqub
+        \begin{equation}
+          \hat{H} = \hbar \wres\left(\hat{a}^\dagger \hat{a} + \frac{1}{2} \right) + \frac{\hbar \wqub}{2}\hat{\sigma}_z + \hbar g \left(\hat{a}^\dagger \sigma_{-} + \hat{a}\sigma_{+}\right)
+          \label{eq:Jaynes-Cummings}
+        \end{equation}
 
-        There is one additional constraint on transmission measurements in the case where a resonator is coupled to a qubit.
+        where $\wres$ is the bare resonance frequency of the resonator, $\wqub$ is the resonance frequency of the qubit's ground to excited state transition, and the qubit's two states are in the spin-representation. This Hamiltonian consists of three terms. The first term corresponds to the energy level of the resonator, the second to the energy level of the transmon, and the third is a coupling term between the two with coupling strength $g$.
+
+        The difference between the resonator's frequency $\wres$ and the qubit's frequency $\wqub$ is given by the detuning $\Delta = \wqub - \wres$. If the magnitude of the detuning is large compared to the coupling strength $g$, the system is in the dispersive regime. In this case the Hamiltonian can be approximated by the dispersive Jaynes-Cummings Hamiltonian:
+
+        \begin{equation}
+          \hat{H} = \frac{\hbar \wqub^{'}}{2} \hat{\sigma}_z +  \left(\hbar \wres^{'} + \hbar \chi \hat{\sigma}_z\right) \hat{a}^\dagger \hat{a}
+          \label{eq:dispersive-Jaynes-Cummings}
+        \end{equation}
+
+        The coupling between the qubit and resonator causes both qubit's frequency and the resonator's frequency to shift: $\wqub^{'} = \wqub + \chi_{01}$, $\wres^{'}=\wres - \chi_{12}/2$.
+
+        Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited state. The parameter $\chi$ is the dispersive shift, and is given by:
+
+        \begin{equation}
+          \chi = \chi_{01} - \chi_{12}/2 \approx \frac{g^2}{\Delta}\frac{\Ec}{\hbar \Delta - \Ec}
+          \label{eq:dispersive-shift}
+        \end{equation}
+
+        where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_c}$ are the partial dispersive shifts.
+
+        Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a certain point, this coupling will result in the resonator experiencing nonlinear effects. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
+
 
 
         \textbf{TODO:}
         \begin{itemize}
-          \item Explain why using a high power is good.
+          \item In the strong coupling regime (Leads to hybridization of qubit and resonator states: quton and fobit
           \item Explain that the quality factor is low because the resonator is coupled strongly to the qubit (equation including coupling to qubit?)
+          \item Doesn't $\chi$ diverge when $\Delta \rightarrow \Ec$?
+          \item explain concept of anharmonicity, and that $\alpha \approx E_c$
+          \item Maybe explain concept of number splitting in dispersive Jaynes-Cummings. Number splitting is the phenomenon that the qubit's frequency shifts by an amount $2 \chi$ for every photon in the resonator.\\
+                Alternatively mention this in another section.
+          \item Mention that $g_{12}=\sqrt{g}$, and that other coupling strengths are exponentially suppressed in the transmon
         \end{itemize}
 
         \textbf{Figures:}
@@ -239,18 +271,15 @@ Dr.~Alessandro Bruno
       \subsection{Powersweeping the resonators}
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Instead of directly scanning the entire frequency spectrum in search of the qubit, it is relatively straightforward to perform some initial measurements aimed at gaining information about our resonator and qubit, which will allow us to search for our qubit with much greater accuracy.
 
-        The capacitive coupling between the resonator and qubit results in a shift of the resonator frequency dependent on the state of the qubit. This shift disappears when the resonator is driven with sufficient power, in which case its resonance frequency shifts to the bare cavity frequency \fbare. If this frequency shift is observed, it indicates that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
+        As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. If this frequency shift is observed, it indicates that the resonator's frequency was shifted, and hence that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
 
+        A powersweep additionally provides information about at what power the resonator enters the nonlinear regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, the amount of detuning between the qubit and the resonator can be estimated using Equation~\ref{eq:dispersive-shift}.
 
-        A powersweep additionally provides information about at what power the resonator enters the \textbf{TODO:} nonlinear? regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, it is possible to estimate the amount of detuning between the qubit and the resonator. This is done through the relation: \textbf{TODO:} insert relation
-
-        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the resonance frequency of the qubit is sufficiently far away from that of the resonator, and as a result the frequency shift cannot be discerned. At this point it is too early to draw conclusions, and we may almost draw the analogy with Schr\"odinger's cat in a box.
+        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned. At this point it is too early to draw conclusions, and we may almost draw the analogy with Schr\"odinger's cat in a box.
 
         \textbf{TODO:}
         \begin{itemize}
-          \item Explain better theory behind dispersive shift $2 \chi$
-          \item Explain theory behind transition to bare cavity frequency
-          \item Refer to thesis Reed for more info on frequency shifts
+          \item Explain theory behind transition to bare cavity frequency (Reed's thesis has some information)
         \end{itemize}
 
         \textbf{Figures:}
@@ -261,20 +290,19 @@ Dr.~Alessandro Bruno
       \subsection{Scan for qubit sweet-spots}
         Some of the qubits have a tunable resonance frequency. This is done through a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. The SQUID loop is sensitive to the amount of flux passing through the loop. The amount of flux going through the SQUID loop can be changed by changing the surrounding magnetic field. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, and hence changes the amount of flux through the SQUID loop. A digital-to-analog converter is used to specify the amount of current that is sent through the flux bias line. Depending on the amount of flux through the SQUID loop, the resonance frequency of the qubit changes accordingly. these qubits are therefore called flux-tunable.
 
-        For qubits that are flux-tunable, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the resonator shift \textbf{TODO:} $\chi$? also varies. At the sweet-spot of the qubit, the resonator's frequency \fres is at a maximu,. This is irrespective of whether the qubit's frequency \fqub is above or below the resonator's frequency.
+        For qubits that are flux-tunable, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the dispersive shift $\chi$, and therefore the resonator's frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
 
         The accurate way to measure the sweet-spot is to perform resonator scans as the DAC voltage is varied. The result is a 2D scan shown in \textbf{TODO:} Figure.
 
-        A faster second approach for finding the qubit sweet-spot, at the cost of providing less information, is by choosing a fixed frequency close to the resonator's frequency \fres (preferrably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of \textbf{TODO:} Figure. The idea this measurement is that if the qubit's frequency \fqub decreases, the resonator's frequency also decreases, resulting in a decrease in transmission (closer to \fres). Likewise, if the qubit's frequency \fqub increases, the resonator's frequency increases \textbf{TODO:} Why?, resulting in an increase in transmission (further away from \fres).
+        A faster second approach for finding the qubit sweet-spot, at the cost of providing less information, is by choosing a fixed frequency close to the resonator's frequency $\wres$ (preferrably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of \textbf{TODO:} Figure. The idea this measurement is that if the qubit's frequency $\fqub$ decreases, the resonator's frequency also decreases, resulting in a decrease in transmission (closer to $\wres$). Likewise, if the qubit's frequency $\wqub$ increases, the resonator's frequency increases \textbf{TODO:} Why?, resulting in an increase in transmission (further away from $\wres$).
 
-        At the qubit's sweet-spot, the resonator's frequency \fres is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the amount of detuning only depends on the deviation from the flux sweet-spot \textbf{TODO:} improve, the transmission should be symmetric with respect to the DAC voltage sweet-spot. If the resonator's frequency \fres shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases it works like a charm.
+        At the qubit's sweet-spot, the resonator's frequency $\wres$ is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the amount of detuning only depends on the deviation from the flux sweet-spot \textbf{TODO:} improve, the transmission should be symmetric with respect to the DAC voltage sweet-spot. If the resonator's frequency $\wres$ shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases it works like a charm.
 
         In the case where the powersweep showed no measurable frequency shift, these two measurements are also useful in discerning whether or not the qubit is actually dead, or whether it was simply far detuned from the resonator.
 
 
         \textbf{TODO:}
         \begin{itemize}
-          \item Explain avoided crossing?
           \item Explain how qubit's frequency has a cosine dependence on DAC
           \item Give detailed information on SQUID loop
           \begin{itemize}
@@ -307,7 +335,7 @@ Dr.~Alessandro Bruno
           \textbf{Avoided crossing info:}
           \begin{itemize}
             \item Actually the threshold is determined by the ratio between detuning and coupling strength
-            \item The coupling strength $g$ is the minimum distance between the splitting
+            \item The coupling strength $g$ is the minimum distance be~tween the splitting
             \item From Reed's thesis p.63 explanation of this avoided crossing is given\\
             \begin{align}
              E_0 = & -\frac{\hbar \Delta}{2}\\
@@ -385,5 +413,9 @@ Dr.~Alessandro Bruno
     \section{Compiled RB?}
 
 \end{appendices}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
 
 \end{document}

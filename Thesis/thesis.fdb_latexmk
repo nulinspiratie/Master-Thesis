@@ -1,5 +1,13 @@
 # Fdb version 3
-["pdflatex"] 1431791101 "thesis.tex" "thesis.pdf" "thesis" 1431791102
+["bibtex thesis"] 1431957401 "thesis.aux" "thesis.bbl" "thesis" 1431958806
+  "bibliography.bib" 1431952994 5922 f7712ae5511e2e01d18e2d5f11e239ff ""
+  "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "thesis.aux" 1431958805 2993 b55e1378ebbf58e4d333c977f9d89b3b ""
+  "thesis.bcf" 0 -1 0 ""
+  (generated)
+  "thesis.blg"
+  "thesis.bbl"
+["pdflatex"] 1431958803 "thesis.tex" "thesis.pdf" "thesis" 1431958806
   "c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1419361929 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf" 1419358435 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "c:/texlive/2014/texmf-dist/tex/generic/babel/babel.def" 1419358412 49725 b40154b767b0073ee42b35911042b793 ""
@@ -31,6 +39,7 @@
   "c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex" 1419358620 5067 f1bb98f63e0761f897f48a159127fbb6 ""
   "c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty" 1419358620 3824 9ccc2efa439cf13750315a0f20d4f691 ""
   "c:/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty" 1419358970 6375 989ecfb545a13610facc71ae7e40ced1 ""
+  "c:/texlive/2014/texmf-dist/tex/latex/braket/braket.sty" 1419358987 3601 193635d942bc4777a5acaaeeffdce692 ""
   "c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty" 1419359045 65148 c61accbd2b9a5316d9be0887ec48d722 ""
   "c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty" 1419359045 62748 b02c0dc118f5f35146d37cec569e83b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty" 1419359045 4351 ee16013c18d101f9ecb20e53efde17b4 ""
@@ -75,11 +84,12 @@
   "c:/texlive/2014/texmf-dist/tex/latex/tools/array.sty" 1419363480 13073 1e5f0a9efb6e2cd49dc0240ce96b276c ""
   "c:/texlive/2014/texmf-dist/tex/latex/url/url.sty" 1419363722 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "thesis.aux" 1431791102 2784 1f2c3ddc09ec6a8d01c5750b6e9ecb93 ""
-  "thesis.tex" 1431791097 23034 3c17efb6bfe24fb86baf141a114d5e1a ""
-  "thesis.toc" 1431791102 1671 494922f4355b4719468feff027bc9926 ""
+  "thesis.aux" 1431958805 2993 b55e1378ebbf58e4d333c977f9d89b3b ""
+  "thesis.bbl" 1431957402 202 b0f8847a42541e53f92fdaa500db1585 "bibtex thesis"
+  "thesis.tex" 1431958801 25901 e571d46bc48f6b0fee40116d6ab5a573 ""
+  "thesis.toc" 1431958805 1671 8a4559abf9c18dd14ff75bc0a462bcdf ""
   (generated)
-  "thesis.log"
-  "thesis.aux"
   "thesis.pdf"
+  "thesis.aux"
+  "thesis.log"
   "thesis.toc"
