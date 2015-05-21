@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="221EE239-5559-46D8-8A2A-F1D9D87AFA4C" Version="1.1">
+   <Notes>
+      <Note Width="130.2" FontSize="12" ID="1" Position="194.5,310.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.912963 0.894118 0.644541</Fill>
+            <Border Weight="1">0.769436 0.762219 0.390143</Border>
+         </Appearance>
+         <String>Avoided crossing</String>
+         <ConnectedNoteIDs>2-3, 5, 8-9, 11, 13</ConnectedNoteIDs>
+         <PointsToNoteIDs>2-3, 5, 9, 11, 13</PointsToNoteIDs>
+      </Note>
+      <Note Width="180.469" FontSize="12" ID="2" Position="570.3,349.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Vacuum Rabi oscillation
+strength g</String>
+         <ConnectedNoteIDs>1, 10</ConnectedNoteIDs>
+         <PointsToNoteIDs>10</PointsToNoteIDs>
+      </Note>
+      <Note Width="181.25" FontSize="12" ID="3" Position="570.3,444.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Extract coupling strengh</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="173.438" FontSize="12" ID="4" Position="570.3,473.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Minimum distance 2g</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="124.207" FontSize="12" ID="5" Position="570.3,559.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Number splitting</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="112.781" FontSize="12" ID="6" Position="570.3,588.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Low RF power</String>
+      </Note>
+      <Note Width="203.906" FontSize="12" ID="7" Position="570.3,617.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Multiple peaks - photons</String>
+      </Note>
+      <Note Width="105.469" FontSize="12" ID="8" Position="206.2,237.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Vacuum-Rabi splitting curve</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="9" Position="570.3,153.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Cavity shifts away as qubit approaches</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="125" FontSize="12" ID="10" Position="837.5,304.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Undressed state would oscillate</String>
+         <ConnectedNoteIDs>2, 11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="154.626" FontSize="12" ID="11" Position="570.3,288.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Dressed eigenstates</String>
+         <ConnectedNoteIDs>1, 10, 12</ConnectedNoteIDs>
+         <PointsToNoteIDs>10, 12</PointsToNoteIDs>
+      </Note>
+      <Note Width="173.438" FontSize="12" ID="12" Position="1031.2,250.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Energies:
+E0=-h*delta/2
+En+- = n*h*omega +- sqrt(4g^2*n+delta^2)</String>
+         <ConnectedNoteIDs>0, 4, 11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="13" Position="570.3,226.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Jaynes-Cummings Hamiltonian</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="0" Position="1032.8,162.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Energies split by 2g*sqrt(n)</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="A53DE288-9B45-4784-A2B7-DA69162DCF92" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="79C1C056-E302-4949-88B3-B68F6B4B8912" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="EF4DEA80-F6F1-4557-B8AF-35FFF6985DAB" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="1CBE3680-E328-4A9B-8679-F85F7E551986" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="33E13838-88C3-49F1-96F4-A9C77D4271FB" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C48AD1D0-7791-4777-8AD7-99199DC5F898" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="77C89AF5-6BD3-4C0A-9A27-A8E99A6B469D" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>

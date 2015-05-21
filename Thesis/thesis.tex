@@ -342,21 +342,21 @@ Dr.~Alessandro Bruno
         The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency.
 
         \subsubsection{Spectroscopy}
-          As was explained in section~\ref{sec:resonator-scan} the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is swapped. The transmission at the resonator's dip when the qubit is in the ground state will be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited state). This is the property exploited in a two-tone spectroscopy measurement.
+          As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited state). This is the property exploited in a two-tone spectroscopy measurement.
 
           In a two-tone spectroscopy measurement two tones are sent through the feedline.
           \begin{enumerate}
-            \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
             \item A drive tone with varying frequency $\wdrive$.
+            \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
           \end{enumerate}
 
-          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground and excited state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth.
+          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground and excited state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
+
+          The dispersive shift $2 \chi$ is also dependent on the amount of detuning $\Delta$ between the qubit and resonator. If the detuning is large, the dispersive shift will be very small, and so the difference in
 
           \textbf{TODO:} Spectroscopy section
           \begin{itemize}
               \item Detuning
-              \item Spectroscopy tone or drive tone?
-              \item Drive strength (see Reed's thesis p115)
               \item Is power broadening really due to stimulated emission?
               \item Explain optimal RF power
               \item tracked spectroscopy?
@@ -364,11 +364,12 @@ Dr.~Alessandro Bruno
 
 
         \subsubsection{Avoided crossing}
-          When the qubit's frequency is close to that of the resonator, the two experience a strong coupling \textbf{TODO:} Why?
+          When the detuning $\Delta$ between the qubit and resonator is not large compared to their coupling strength $g$, the qubit and resonator experience an avoided crossing. Because all of the qubits in the Muxmon chips are considerably lower in frequency compared to their resonators, the system is always in the dispersive regime. Nevertheless it is worth mentioning the avoided crossing briefly, as it is a breeding ground for interesting physics.
+
+          At the avoided crossing the system is not in the dispersive regime, and so the dispersive Jaynes-Cummings Hamiltonian no longer applies. In this case the resonator and qubit are hybridized, and one can no longer speak of a qubit and resonator as separate entities. Instead, this hybridization is known as a so-called quton and phobit.
 
           \textbf{Avoided crossing info:}
           \begin{itemize}
-            \item Actually the threshold is determined by the ratio between detuning and coupling strength
             \item The coupling strength $g$ is the minimum distance be~tween the splitting
             \item From Reed's thesis p.63 explanation of this avoided crossing is given\\
             \begin{align}
@@ -378,10 +379,12 @@ Dr.~Alessandro Bruno
             Joining $E_0 + E_1$ results in a qubit approaching a resonator from the top.\\
             When the frequency of the qubit equals that of the resonator, the energy difference reaches a minimum, and is equal to $2g$.
           \end{itemize}
-          \textbf{TODO:}
+
+          \textbf{TODO:} Avoided crossing
           \begin{itemize}
             \item Explain the quton fobit behaviour near the avoided crossing
             \item Explain how one can extract coupling from avoided crossing
+            \item Explain that for the Muxmon qubit this effect is not present
           \end{itemize}
 
           \textbf{figures:}
