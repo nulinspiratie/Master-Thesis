@@ -339,7 +339,13 @@ Dr.~Alessandro Bruno
       \subsection{Scanning for qubits}
         Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find the qubit.
 
-        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency.
+        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency. If, on the other hand, the detuning is comparable to the coupling strength ($\Delta \sim g$), the qubit and resonator are hybridized, and experience an avoided crossing. In such cases a normal transmission measurement suffices.
+
+        If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
+
+        One option is to choose zero DAC voltage. In most cases this is alright, but there are cases when this is a bad choice. For instance, trapped magnetic fields during cool-down could position the qubit near the anti-sweet-spot for zero DAC voltage, in which case finding the qubit will be next to impossible.
+
+        A better option is to choose a DAC voltage that results in a detuning $\Delta$ that is large compared to coupling strength $g$, such that the system is in the disperisive regime. However, the detuning $\Delta$ should not be too high, as it would otherwise result in a negligible dispersive shift $\chi$.The optimum value is usually around a few hundred megahertz, although this is dependent on the device-specific parameters. The detuning can be approximated using powersweeps.
 
         \subsubsection{Spectroscopy}
           As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited state). This is the property exploited in a two-tone spectroscopy measurement.
@@ -365,9 +371,9 @@ Dr.~Alessandro Bruno
 
 
         \subsubsection{Avoided crossing}
-          When the detuning $\Delta$ between the qubit and resonator is not large compared to their coupling strength $g$, the qubit and resonator experience an avoided crossing. Because all of the qubits in the Muxmon chips are considerably lower in frequency compared to their resonators, the system is always in the dispersive regime. Nevertheless it is worth mentioning the avoided crossing briefly, as it is a breeding ground for interesting physics.
+          When the detuning $\Delta$ between the qubit and resonator is not large compared to their coupling strength $g$, the qubit and resonator experience an avoided crossing. Because all of the qubits in the Muxmon chips are considerably lower in frequency compared to their resonators, the system is always in the dispersive regime, and so the system never approaches the avoided crossing. Nevertheless it is worth mentioning the avoided crossing briefly, as it is a breeding ground for interesting physics.
 
-          At the avoided crossing the system is not in the dispersive regime, and so the dispersive Jaynes-Cummings Hamiltonian no longer applies. In this case the resonator and qubit are hybridized, and one can no longer speak of a qubit and resonator as separate entities. Instead, this hybridization is known as a so-called quton and phobit.
+          At the avoided crossing the system is not in the dispersive regime, and so the dispersive Jaynes-Cummings Hamiltonian no longer applies. In this case the resonator and qubit are hybridized, and one can no longer speak of a qubit and resonator as separate entities. Instead, this hybridization results in a so-called quton and phobit.
 
           \textbf{Avoided crossing info:}
           \begin{itemize}
@@ -394,16 +400,6 @@ Dr.~Alessandro Bruno
           \end{itemize}
 
 
-
-
-
-
-        If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
-
-        There are several options. The first option is to choose zero DAC voltage. In most cases this is alright, but there are cases when this is a bad choice. For instance, due to trapped magnetic fields during cool-down the qubit could be positioned at the anti-sweet-spot for zero DAC voltage, in which case finding the qubit will be next to impossible.
-
-        A better option is to choose a DAC voltage depending on the amount of detuning previously measured. Ideally either a few hundred megahertz or zero.
-
         \textbf{TODO:}
         \begin{itemize}
           \item Use relatively high source power, results in power broadening
@@ -412,7 +408,8 @@ Dr.~Alessandro Bruno
           \item Pulsed spectroscopy
         \end{itemize}
 
-        \subsubsection{Tracked spectroscopy}
+      \subsubsection{Tracked spectroscopy}
+
 
 
     \section{Part II: Time-domain measurements}
