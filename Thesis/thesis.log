@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  18 MAY 2015 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  21 MAY 2015 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,33 +1044,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 Chapter 2.
 [10
 
-] [11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+] [11] [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
-[15] [16]
+[16] [17]
 Chapter 3.
-[17
+[18
 
 ]
 Chapter 4.
-[18
+[19
 
-] [19
+] [20
 
 
 ]
 Appendix A.
-[20
+[21
 
 ]
 Appendix B.
-(./thesis.bbl [21
+(./thesis.bbl [22
 
 ]) 
 AED: lastpage setting LastPage
-[22
+[23
 
 ]
 
@@ -1093,10 +1093,10 @@ ist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fon
 ts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
 adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/pu
 tr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (23 pages, 100094 bytes).
+Output written on thesis.pdf (24 pages, 101888 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46593 words of extra memory for PDF output out of 51595 (max. 10000000)
 

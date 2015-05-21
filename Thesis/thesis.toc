@@ -9,18 +9,18 @@
 \contentsline {subsection}{\numberline {2.1.3}Scan for qubit sweet-spots}{13}
 \contentsline {subsection}{\numberline {2.1.4}Scanning for qubits}{14}
 \contentsline {subsubsection}{\numberline {2.1.4.1}Spectroscopy}{14}
-\contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{15}
-\contentsline {subsubsection}{\numberline {2.1.4.3}Tracked spectroscopy}{16}
-\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{16}
-\contentsline {chapter}{\numberline {3}Calibration routines}{17}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{18}
-\contentsline {chapter}{Appendices}{19}
-\contentsline {chapter}{\numberline {A}Additional notes}{20}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{20}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{20}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{20}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{20}
-\contentsline {chapter}{\numberline {B}Algorithms}{21}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{21}
-\contentsline {section}{\numberline {B.2}Peak finding}{21}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{21}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{16}
+\contentsline {subsubsection}{\numberline {2.1.4.3}Tracked spectroscopy}{17}
+\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{17}
+\contentsline {chapter}{\numberline {3}Calibration routines}{18}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{19}
+\contentsline {chapter}{Appendices}{20}
+\contentsline {chapter}{\numberline {A}Additional notes}{21}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{21}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{21}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{21}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{21}
+\contentsline {chapter}{\numberline {B}Algorithms}{22}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{22}
+\contentsline {section}{\numberline {B.2}Peak finding}{22}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{22}
