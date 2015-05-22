@@ -120,7 +120,7 @@ Dr.~Alessandro Bruno
 
 \part{Muxmon experiment}
 
-  \textbf{TODO:}
+  \textbf{large TODO:}
   \begin{itemize}
     \item Explain surface code architecture
     \item Explain the general structure of a chip:
@@ -130,7 +130,12 @@ Dr.~Alessandro Bruno
       \item Single qubit coupled to resonators (coupling location?)
       \item Resonator buses
     \end{itemize}
+  \end{itemize}
+
+  \textbf{small TODO:}
+  \begin{itemize}
     \item Rename DAC voltage to flux, and mention early on that this renaming will be used
+    \item flux-bias line or flux bias line?
   \end{itemize}
 
 
@@ -432,20 +437,26 @@ Dr.~Alessandro Bruno
           \item Tracked spectroscopy of qubit and resonator
         \end{itemize}
 
-
-
-      \subsection{Second excited state}
-
-
-
-
-
       \subsection{Flux matrix}
+        When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. The effect that the current passing through flux-bias lines has on the frequencies of the different qubits can be decoupled by correcting the flux cross-coupling effects. This is done by implementing a flux matrix.
+
+        A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left{f_{i1}, \dots, f_{in}\right}$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, whilst the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
+
+        Creating a flux matrix is done by first determining for each qubit how much every flux-bias-line affects its frequency.
+
+
+
+
+
+
+
       \textbf{TODO:}
       \begin{itemize}
         \item Conversion slope matrix to flux matrix
         \item Show that under current model there is a one-to-one correspondence between dac and flux
         \item mention that flux used previously is not the whole story, due to cross-coupling flux effects
+        \item The diagonal elements of the matrices should be much greater than the off-diagonal elements
+        \item Flux sweet-spot
       \end{itemize}
 
     \section{Part II: Time-domain measurements}
@@ -461,6 +472,10 @@ Dr.~Alessandro Bruno
 
 
   \chapter{Randomized benchmarking}
+
+    \section{Second excited state}
+
+
 
 \begin{appendices}
 
