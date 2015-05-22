@@ -398,6 +398,7 @@ Dr.~Alessandro Bruno
             \item Explain the quton fobit behaviour near the avoided crossing
             \item Explain how one can extract coupling from avoided crossing
             \item Explain that for the Muxmon qubit this effect is not present
+            \item Explain multiple lines near avoided crossing
           \end{itemize}
 
           \textbf{figures:}
@@ -437,17 +438,22 @@ Dr.~Alessandro Bruno
           \item Tracked spectroscopy of qubit and resonator
         \end{itemize}
 
+      \subsubsection{Simultaneous sweet-spot}
+
+
       \subsection{Flux matrix}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. The effect that the current passing through flux-bias lines has on the frequencies of the different qubits can be decoupled by correcting the flux cross-coupling effects. This is done by implementing a flux matrix.
 
-        A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left{f_{i1}, \dots, f_{in}\right}$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, whilst the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
+        A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left[f_{i1}, \dots, f_{in}\right]$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, whilst the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
 
-        Creating a flux matrix is done by first determining for each qubit how much every flux-bias-line affects its frequency.
+        Creating a flux matrix is done by first determining for each qubit separately how much every flux-bias line affects its frequency. For a given qubit $i$ this can be found by tuning the qubit away from its sweet-spot using its main flux-bias line, to a point where the slope $\partial f_i/\partial V_i$ of the qubit frequency $f_i$ as a function of DAC voltage $V_i$ is steep. This is the region where we are sensitive to changes in qubit frequency. For the main flux-bias line we already know from tracked spectroscopy what the slope $\partial f_i / \partial V_i$ is at this point. For each of the remaining flux-bias lines we measure the slope $\partial f_i / \partial V_j$ as we vary the DAC voltage $V_j$ and measure the response of the qubit frequency $f_i$. The slope $\partial f_i / \partial V_j$ is a measure for the amount of flux cross-coupling, which should be considerably less than for the main flux-bias line. Finally dividing all the slopes by the slope $\partial f_i / \partial V_j$ of our main flux-bias line, results in the ratio's of the frequency response of qubit $i$ for each of the flux-bias lines. Performing this measurement for all the qubits results in a matrix $\boldsymbol{M}$, where each element $M_{ij}=\partial f_i / \partial V_j$ is the normalized frequency response of qubit $i$ when varying the DAC voltage of the flux-bias line corresponding to qubit $j$. The diagonal elements of matrix $\boldsymbol{M}$ should be equal to one.
+
+        The flux matrix $\boldsymbol{F}$ can be found by inverting matrix $\boldsymbol{M}$. As mentioned earlier, each row of matrix $\boldsymbol{F}$ corresponds to the ratio by which the DAC voltages of the flux-bias lines need to be varied, such that the frequency of only one qubit is changed. We may therefore multiply each row by a different constant, as long as the ratio between the elements in each row stays constant. One can normalizing each row such that the main flux-bias line is equal to one. This has the advantage that there is a one-to-one correspondence between DAC voltage and flux, and as a result the tracked spectroscopy will look identical (\textbf{TODO:} Except for sweet-spot). Additionally, after the normalization each row can be multiplied by a factor such that the virtual flux is equal to the flux quanta present in the SQUID loop. This conversion factor can be obtained by fitting the qubit frequency curve obtained from tracked spectroscopy.
+
+        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual flux vectors should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $F_2$ can then simply be multiplied with the first flux matrix, resulting in an even more accurate flux matrix.
 
 
-
-
-
+        Simultaneous sweet-spot by calculating $\boldsymbol{M} \cdot \vec{V_0} = \vec{V}$
 
 
       \textbf{TODO:}

@@ -12,19 +12,19 @@
 \contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{17}
 \contentsline {subsection}{\numberline {2.1.5}Tracking the qubits}{18}
 \contentsline {subsection}{\numberline {2.1.6}Flux matrix}{19}
-\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{19}
-\contentsline {chapter}{\numberline {3}Calibration routines}{20}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{21}
-\contentsline {section}{\numberline {4.1}Second excited state}{21}
-\contentsline {chapter}{Appendices}{22}
-\contentsline {chapter}{\numberline {A}Additional notes}{23}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{23}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{23}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{23}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{23}
-\contentsline {chapter}{\numberline {B}Algorithms}{24}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{24}
-\contentsline {section}{\numberline {B.2}Peak finding}{24}
-\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{24}
-\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{24}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{24}
+\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{20}
+\contentsline {chapter}{\numberline {3}Calibration routines}{21}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{22}
+\contentsline {section}{\numberline {4.1}Second excited state}{22}
+\contentsline {chapter}{Appendices}{23}
+\contentsline {chapter}{\numberline {A}Additional notes}{24}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{24}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{24}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{24}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{24}
+\contentsline {chapter}{\numberline {B}Algorithms}{25}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{25}
+\contentsline {section}{\numberline {B.2}Peak finding}{25}
+\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{25}
+\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{25}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{25}

@@ -1,13 +1,5 @@
 # Fdb version 3
-["bibtex thesis"] 1432309974 "thesis.aux" "thesis.bbl" "thesis" 1432310868
-  "bibliography.bib" 1431952994 5922 f7712ae5511e2e01d18e2d5f11e239ff ""
-  "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1432310867 3522 c37b01def9d9a4b9895476756af5b498 ""
-  "thesis.bcf" 0 -1 0 ""
-  (generated)
-  "thesis.bbl"
-  "thesis.blg"
-["pdflatex"] 1432310863 "thesis.tex" "thesis.pdf" "thesis" 1432310868
+["pdflatex"] 1432326367 "thesis.tex" "thesis.pdf" "thesis" 1432326401
   "c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii" 1419361929 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf" 1419358435 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "c:/texlive/2014/texmf-dist/tex/generic/babel/babel.def" 1419358412 49725 b40154b767b0073ee42b35911042b793 ""
@@ -52,7 +44,6 @@
   "c:/texlive/2014/texmf-dist/tex/latex/fourier/fourier-orns.sty" 1419360518 1677 589eddc75f98c1b83abe9d1f1007ef8c ""
   "c:/texlive/2014/texmf-dist/tex/latex/fourier/fourier.sty" 1419360518 14587 5ab3db6bde809931d7e61b01babd4b61 ""
   "c:/texlive/2014/texmf-dist/tex/latex/fourier/t1futs.fd" 1419360518 1110 49fc682812e5bf3bf06c16254f321544 ""
-  "c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd" 1419360518 787 c175f3f067e9cf9e9a081d17f0c93490 ""
   "c:/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty" 1419360573 40502 e003406220954b0716679d7928aedd8a ""
   "c:/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty" 1419360674 14189 66438d186cddf9823e0cb45858daca8c ""
   "c:/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty" 1419360674 7911 1cba3b04e7ab1f8ace99b431fca372ac ""
@@ -84,12 +75,10 @@
   "c:/texlive/2014/texmf-dist/tex/latex/tools/array.sty" 1419363480 13073 1e5f0a9efb6e2cd49dc0240ce96b276c ""
   "c:/texlive/2014/texmf-dist/tex/latex/url/url.sty" 1419363722 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "thesis.aux" 1432310867 3522 c37b01def9d9a4b9895476756af5b498 ""
-  "thesis.bbl" 1432309976 202 b0f8847a42541e53f92fdaa500db1585 "bibtex thesis"
-  "thesis.tex" 1432310862 35734 fb6e27d336560fc06a77fd03412b6766 ""
-  "thesis.toc" 1432310867 2016 38a0970d3b5e0bee10b74a67b3a9f25d ""
+  "thesis.aux" 1432326369 8 a94a2480d3289e625eea47cd1b285758 ""
+  "thesis.tex" 1432326384 39175 ddae22fcc856f62dfa1d7faa183a45e8 ""
   (generated)
-  "thesis.pdf"
-  "thesis.toc"
   "thesis.log"
+  "thesis.toc"
   "thesis.aux"
+  "thesis.pdf"

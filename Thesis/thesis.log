@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  22 MAY 2015 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  22 MAY 2015 22:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,159 +993,24 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 71.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 71.
- [1
 
-{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 94.
- (./thesis.toc
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
- [1
-
-])
-\tf@toc=\write3
-\openout3 = `thesis.toc'.
-
- [2]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 106.
-LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/sc' tried instead on input line 106.
- [3]
-[4
-
-]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 112
-.
- (c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `futs' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [5] [6
-
-] [7]
-[8
-
-]
-Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-[9
-
-] [10]
-Chapter 2.
-[11
-
-] [12] [13] [14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-[17] [18]
-! Missing delimiter (. inserted).
+! I can't write on file `thesis.pdf'.
+(Press Enter to retry, or Control-Z to exit; default file extension is `.pdf')
+Please type another file name for output
+! Emergency stop.
 <to be read again> 
-                   {
-l.443 ...preted as follows: in a row $F_i = \left{
-                                                  f_{i1}, \dots, f_{in}\righ...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
+                   \endgroup \set@typeset@protect 
+l.82 \end{titlepage}
+                    
+*** (job aborted, file error in nonstop mode)
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.443 ... $F_i = \left{f_{i1}, \dots, f_{in}\right
-                                                  }$ each element $F_{ij}$ c...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   }
-l.443 ...$F_i = \left{f_{i1}, \dots, f_{in}\right}
-                                                  $ each element $F_{ij}$ co...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.443 ...$F_i = \left{f_{i1}, \dots, f_{in}\right}
-                                                  $ each element $F_{ij}$ co...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-[19]
-Chapter 3.
-[20
-
-]
-Chapter 4.
-[21
-
-] [22
-
-
-]
-Appendix A.
-[23
-
-]
-Appendix B.
-(./thesis.bbl [24
-
-]) 
-AED: lastpage setting LastPage
-[25
-
-]
-
-Package caption Warning: Unused \captionsetup[sub] on input line 20.
-See the caption package documentation for explanation.
-
-(./thesis.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 15840 strings out of 493109
- 308233 string characters out of 6138586
- 452640 words of memory out of 5000000
- 18842 multiletter control sequences out of 15000+600000
- 153434 words of font info for 279 fonts, out of 8000000 for 9000
+ 15522 strings out of 493109
+ 304406 string characters out of 6138586
+ 446611 words of memory out of 5000000
+ 18771 multiletter control sequences out of 15000+600000
+ 80634 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,10406b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/tex
-live/2014/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fon
-ts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
-adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/pu
-tbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/t
-exlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (26 pages, 116756 bytes).
-PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 47617 words of extra memory for PDF output out of 51595 (max. 10000000)
-
+ 42i,4n,43p,10406b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
