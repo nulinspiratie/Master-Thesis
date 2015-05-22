@@ -130,6 +130,7 @@ Dr.~Alessandro Bruno
       \item Single qubit coupled to resonators (coupling location?)
       \item Resonator buses
     \end{itemize}
+    \item Rename DAC voltage to flux, and mention early on that this renaming will be used
   \end{itemize}
 
 
@@ -366,7 +367,7 @@ Dr.~Alessandro Bruno
           \begin{itemize}
               \item Is power broadening really due to stimulated emission?
               \item Explain optimal RF power
-              \item tracked spectroscopy?
+              \item Is the gradual increase really due to partial population? Is it then an average of the partial population? Or do you get other effects as well?
           \end{itemize}
 
 
@@ -408,9 +409,44 @@ Dr.~Alessandro Bruno
           \item Pulsed spectroscopy
         \end{itemize}
 
-      \subsubsection{Tracked spectroscopy}
+      \subsection{Tracking the qubits}
+        For flux-tunable qubits one is usually not interested in finding the frequency at one specific flux value. More important is finding how this frequency changes with varying flux. A naive approach would be to perform a two-dimensional scan of a fixed frequency range versus flux. At a certain flux the qubit crosses the boundary of the chosen frequency window. Every time this happens a new two-dimensional scan has to be performed with an updated frequency window. The larger the chosen frequency window, the less often this has to be updated. On the other hand, choosing a large window also means that a larger portion of the scan is spent not measuring the qubit. There is therefore a trade-off between measurement time and degree of human intervention. Furthermore, the resonator frequency also depends on the amount of detuning. Therefore the frequency of the measurement tone must also be updated every now and then.
+
+        As an alternative approach I have created a modified version of the spectroscopy versus flux scan, known as tracked spectroscopy. In this approach after every spectroscopy scan the qubit frequency is extracted through fitting. From the qubit frequencies measured in previous scans the expected frequency at the next flux value is extrapolated. The frequency window of the next spectroscopy scan are then centered around the expected qubit frequency. The qubit is therefore tracked as its frequency changes. The same method is applied to update the resonator frequency.
+
+        Tracked spectroscopy has several advantages over the two-dimensional spectroscopy versus flux scans. First of all, since the qubit's frequency follows a smooth curve (see Equation~\textbf{TODO:} Refer to eqn), the qubit's frequency can be estimated quite accurately. The frequency windows can therefore be narrow. This greatly reduces the measurement time. Secondly, tracked spectroscopy does not need any human intervention, as the frequency window is automatically updated after every spectroscopy scan. Therefore measuring the flux-dependence of the qubit frequencies is an automatized process (provided that the qubit frequency can correctly be extracted).
+
+        For more information on the tracked spectroscopy algorithm see appendix~\ref{sec:app-Tracked spectroscopy}.
+
+        \textbf{Improvements}
+        \begin{itemize}
+          \item Avoided crossing
+          \item Variable RF and drive power
+        \end{itemize}
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Maybe mention possible improvements
+        \end{itemize}
+        \textbf{Figures:}
+        \begin{itemize}
+          \item Tracked spectroscopy of qubit and resonator
+        \end{itemize}
 
 
+
+      \subsection{Second excited state}
+
+
+
+
+
+      \subsection{Flux matrix}
+      \textbf{TODO:}
+      \begin{itemize}
+        \item Conversion slope matrix to flux matrix
+        \item Show that under current model there is a one-to-one correspondence between dac and flux
+        \item mention that flux used previously is not the whole story, due to cross-coupling flux effects
+      \end{itemize}
 
     \section{Part II: Time-domain measurements}
 
@@ -441,7 +477,13 @@ Dr.~Alessandro Bruno
           \end{itemize}
   \chapter{Algorithms}
     \section{Tracked spectroscopy}
+    \label{sec:app-Tracked spectroscopy}
+      \begin{itemize}
+        \item Information may lie in amplitude or in phase, or in a combination of the two. For most accurate measure, calculate distance from ground state.
+      \end{itemize}
     \section{Peak finding}
+      \subsection{Normal peak finder}
+      \subsection{Derivative peak finder}
     \section{Compiled RB?}
 
 \end{appendices}

@@ -1,26 +1,30 @@
 \select@language {english}
-\contentsline {part}{I\hspace {1em}Deep-reactive ion etched resonators}{3}
-\contentsline {part}{II\hspace {1em}Muxmon experiment}{5}
-\contentsline {chapter}{\numberline {1}Muxmon chip architecture}{8}
-\contentsline {chapter}{\numberline {2}Qubit characterization}{10}
-\contentsline {section}{\numberline {2.1}Part I: Continuous-wave measurements}{10}
-\contentsline {subsection}{\numberline {2.1.1}Scanning for resonators}{11}
-\contentsline {subsection}{\numberline {2.1.2}Powersweeping the resonators}{12}
-\contentsline {subsection}{\numberline {2.1.3}Scan for qubit sweet-spots}{13}
-\contentsline {subsection}{\numberline {2.1.4}Scanning for qubits}{14}
-\contentsline {subsubsection}{\numberline {2.1.4.1}Spectroscopy}{14}
-\contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{16}
-\contentsline {subsubsection}{\numberline {2.1.4.3}Tracked spectroscopy}{17}
-\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{17}
-\contentsline {chapter}{\numberline {3}Calibration routines}{18}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{19}
-\contentsline {chapter}{Appendices}{20}
-\contentsline {chapter}{\numberline {A}Additional notes}{21}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{21}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{21}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{21}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{21}
-\contentsline {chapter}{\numberline {B}Algorithms}{22}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{22}
-\contentsline {section}{\numberline {B.2}Peak finding}{22}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{22}
+\contentsline {part}{I\hspace {1em}Deep-reactive ion etched resonators}{4}
+\contentsline {part}{II\hspace {1em}Muxmon experiment}{6}
+\contentsline {chapter}{\numberline {1}Muxmon chip architecture}{9}
+\contentsline {chapter}{\numberline {2}Qubit characterization}{11}
+\contentsline {section}{\numberline {2.1}Part I: Continuous-wave measurements}{11}
+\contentsline {subsection}{\numberline {2.1.1}Scanning for resonators}{12}
+\contentsline {subsection}{\numberline {2.1.2}Powersweeping the resonators}{13}
+\contentsline {subsection}{\numberline {2.1.3}Scan for qubit sweet-spots}{14}
+\contentsline {subsection}{\numberline {2.1.4}Scanning for qubits}{15}
+\contentsline {subsubsection}{\numberline {2.1.4.1}Spectroscopy}{16}
+\contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{17}
+\contentsline {subsection}{\numberline {2.1.5}Tracking the qubits}{18}
+\contentsline {subsection}{\numberline {2.1.6}Second excited state}{19}
+\contentsline {subsection}{\numberline {2.1.7}Flux matrix}{19}
+\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{19}
+\contentsline {chapter}{\numberline {3}Calibration routines}{20}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{21}
+\contentsline {chapter}{Appendices}{22}
+\contentsline {chapter}{\numberline {A}Additional notes}{23}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{23}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{23}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{23}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{23}
+\contentsline {chapter}{\numberline {B}Algorithms}{24}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{24}
+\contentsline {section}{\numberline {B.2}Peak finding}{24}
+\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{24}
+\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{24}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{24}
