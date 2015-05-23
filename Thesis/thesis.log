@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  23 MAY 2015 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  23 MAY 2015 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,28 +1050,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-[17] [18] [19] [20] [21] [22]
+[17] [18] [19] [20] [21] [22] [23]
 Chapter 3.
-[23
+[24
 
 ]
 Chapter 4.
-[24
+[25
 
-] [25
+] [26
 
 
 ]
 Appendix A.
-[26
+[27
 
 ]
 Appendix B.
-(./thesis.bbl [27
+(./thesis.bbl [28
 
 ]) 
 AED: lastpage setting LastPage
-[28
+[29
 
 ]
 
@@ -1080,10 +1080,10 @@ See the caption package documentation for explanation.
 
 (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15853 strings out of 493109
- 308371 string characters out of 6138586
- 453651 words of memory out of 5000000
- 18843 multiletter control sequences out of 15000+600000
+ 15854 strings out of 493109
+ 308389 string characters out of 6138586
+ 453655 words of memory out of 5000000
+ 18844 multiletter control sequences out of 15000+600000
  154244 words of font info for 288 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,10406b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1095,10 +1095,10 @@ ts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
 adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/pu
 tbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/t
 exlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (29 pages, 131670 bytes).
+Output written on thesis.pdf (30 pages, 135840 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 133 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  47617 words of extra memory for PDF output out of 51595 (max. 10000000)
 

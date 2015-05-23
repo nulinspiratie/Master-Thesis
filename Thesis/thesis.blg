@@ -9,45 +9,45 @@ I was expecting a `,' or a `}'---line 91 of file bibliography.bib
 I'm skipping whatever remains of this entry
 Warning--empty school in Reed
 Warning--empty year in Reed
-You've used 1 entry,
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            501 strings with 4097 characters,
-and the built_in function-call counts, 219 in all, are:
-= -- 19
-> -- 7
+            510 strings with 4286 characters,
+and the built_in function-call counts, 592 in all, are:
+= -- 53
+> -- 30
 < -- 0
-+ -- 3
-- -- 2
-* -- 15
-:= -- 47
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 3
++ -- 12
+- -- 10
+* -- 48
+:= -- 112
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 10
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 9
-empty$ -- 15
-format.name$ -- 2
-if$ -- 37
+cite$ -- 4
+duplicate$ -- 20
+empty$ -- 41
+format.name$ -- 10
+if$ -- 111
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 2
-pop$ -- 6
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 11
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 9
 quote$ -- 0
-skip$ -- 5
+skip$ -- 12
 stack$ -- 0
-substring$ -- 5
-swap$ -- 1
+substring$ -- 28
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 2
-while$ -- 2
-width$ -- 2
-write$ -- 11
+while$ -- 5
+width$ -- 3
+write$ -- 22
 (There was 1 error message)

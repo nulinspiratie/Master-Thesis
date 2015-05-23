@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{motzoi2009simple}
+F~Motzoi, JM~Gambetta, P~Rebentrost, and Frank~K Wilhelm.
+\newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
+\newblock {\em Physical review letters}, 103(11):110501, 2009.
+
 \bibitem{Reed}
 Matthew~D. Reed.
 \newblock {\em Entanglement and Quantum Error Correction with Superconducting
