@@ -16,26 +16,26 @@
 \contentsline {subsection}{\numberline {2.2.1}Qubit control}{20}
 \contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{22}
 \contentsline {subsection}{\numberline {2.2.3}Tuning qubit frequency}{23}
-\contentsline {subsection}{\numberline {2.2.4}T1 measurement}{23}
-\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{23}
-\contentsline {subsection}{\numberline {2.2.6}Motzoi parameter}{23}
-\contentsline {subsection}{\numberline {2.2.7}AllXY measurement}{23}
-\contentsline {subsection}{\numberline {2.2.8}Measuring single shots}{23}
-\contentsline {chapter}{\numberline {3}Calibration routines}{24}
-\contentsline {section}{\numberline {3.1}Mixer calibration}{24}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{25}
-\contentsline {section}{\numberline {4.1}Second excited state}{25}
-\contentsline {chapter}{Appendices}{26}
-\contentsline {chapter}{\numberline {A}Additional notes}{27}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{27}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{27}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{27}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{27}
-\contentsline {subsection}{\numberline {A.1.2}Part I: Time-domain measurements}{27}
-\contentsline {subsubsection}{\numberline {A.1.2.1}AllXY}{27}
-\contentsline {chapter}{\numberline {B}Algorithms}{28}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{28}
-\contentsline {section}{\numberline {B.2}Peak finding}{28}
-\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{28}
-\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{28}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{28}
+\contentsline {subsection}{\numberline {2.2.4}T1 measurement}{24}
+\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{24}
+\contentsline {subsection}{\numberline {2.2.6}Motzoi parameter}{24}
+\contentsline {subsection}{\numberline {2.2.7}AllXY measurement}{24}
+\contentsline {subsection}{\numberline {2.2.8}Measuring single shots}{24}
+\contentsline {chapter}{\numberline {3}Calibration routines}{25}
+\contentsline {section}{\numberline {3.1}Mixer calibration}{25}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{26}
+\contentsline {section}{\numberline {4.1}Second excited state}{26}
+\contentsline {chapter}{Appendices}{27}
+\contentsline {chapter}{\numberline {A}Additional notes}{28}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{28}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{28}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{28}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{28}
+\contentsline {subsection}{\numberline {A.1.2}Part I: Time-domain measurements}{28}
+\contentsline {subsubsection}{\numberline {A.1.2.1}AllXY}{28}
+\contentsline {chapter}{\numberline {B}Algorithms}{29}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{29}
+\contentsline {section}{\numberline {B.2}Peak finding}{29}
+\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{29}
+\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{29}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{29}
