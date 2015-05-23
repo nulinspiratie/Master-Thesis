@@ -3,7 +3,7 @@
 \contentsline {part}{II\hspace {1em}Muxmon experiment}{6}
 \contentsline {chapter}{\numberline {1}Muxmon chip architecture}{9}
 \contentsline {chapter}{\numberline {2}Qubit characterization}{11}
-\contentsline {section}{\numberline {2.1}Part I: Continuous-wave measurements}{11}
+\contentsline {section}{\numberline {2.1}Continuous-wave measurements}{11}
 \contentsline {subsection}{\numberline {2.1.1}Scanning for resonators}{12}
 \contentsline {subsection}{\numberline {2.1.2}Powersweeping the resonators}{13}
 \contentsline {subsection}{\numberline {2.1.3}Scan for qubit sweet-spots}{14}
@@ -12,27 +12,30 @@
 \contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{17}
 \contentsline {subsection}{\numberline {2.1.5}Tracking the qubits}{18}
 \contentsline {subsection}{\numberline {2.1.6}Flux matrix}{19}
-\contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{20}
+\contentsline {section}{\numberline {2.2}Time-domain measurements}{20}
 \contentsline {subsection}{\numberline {2.2.1}Qubit control}{20}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Motzoi parameter}{21}
-\contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{21}
-\contentsline {subsection}{\numberline {2.2.3}Tuning qubit frequency}{21}
-\contentsline {subsection}{\numberline {2.2.4}T1 measurement}{21}
-\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{21}
-\contentsline {subsection}{\numberline {2.2.6}AllXY measurement}{21}
-\contentsline {subsection}{\numberline {2.2.7}Measuring single shots}{21}
-\contentsline {chapter}{\numberline {3}Calibration routines}{22}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{23}
-\contentsline {section}{\numberline {4.1}Second excited state}{23}
-\contentsline {chapter}{Appendices}{24}
-\contentsline {chapter}{\numberline {A}Additional notes}{25}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{25}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{25}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{25}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{25}
-\contentsline {chapter}{\numberline {B}Algorithms}{26}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{26}
-\contentsline {section}{\numberline {B.2}Peak finding}{26}
-\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{26}
-\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{26}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{26}
+\contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{22}
+\contentsline {subsection}{\numberline {2.2.3}Tuning qubit frequency}{22}
+\contentsline {subsection}{\numberline {2.2.4}T1 measurement}{22}
+\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{22}
+\contentsline {subsection}{\numberline {2.2.6}Motzoi parameter}{22}
+\contentsline {subsection}{\numberline {2.2.7}AllXY measurement}{22}
+\contentsline {subsection}{\numberline {2.2.8}Measuring single shots}{22}
+\contentsline {chapter}{\numberline {3}Calibration routines}{23}
+\contentsline {section}{\numberline {3.1}Mixer calibration}{23}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{24}
+\contentsline {section}{\numberline {4.1}Second excited state}{24}
+\contentsline {chapter}{Appendices}{25}
+\contentsline {chapter}{\numberline {A}Additional notes}{26}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{26}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{26}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{26}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{26}
+\contentsline {subsection}{\numberline {A.1.2}Part I: Time-domain measurements}{26}
+\contentsline {subsubsection}{\numberline {A.1.2.1}AllXY}{26}
+\contentsline {chapter}{\numberline {B}Algorithms}{27}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{27}
+\contentsline {section}{\numberline {B.2}Peak finding}{27}
+\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{27}
+\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{27}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{27}
