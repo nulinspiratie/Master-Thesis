@@ -13,18 +13,26 @@
 \contentsline {subsection}{\numberline {2.1.5}Tracking the qubits}{18}
 \contentsline {subsection}{\numberline {2.1.6}Flux matrix}{19}
 \contentsline {section}{\numberline {2.2}Part II: Time-domain measurements}{20}
-\contentsline {chapter}{\numberline {3}Calibration routines}{21}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{22}
-\contentsline {section}{\numberline {4.1}Second excited state}{22}
-\contentsline {chapter}{Appendices}{23}
-\contentsline {chapter}{\numberline {A}Additional notes}{24}
-\contentsline {section}{\numberline {A.1}Qubit characterization}{24}
-\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{24}
-\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{24}
-\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{24}
-\contentsline {chapter}{\numberline {B}Algorithms}{25}
-\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{25}
-\contentsline {section}{\numberline {B.2}Peak finding}{25}
-\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{25}
-\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{25}
-\contentsline {section}{\numberline {B.3}Compiled RB?}{25}
+\contentsline {subsection}{\numberline {2.2.1}Qubit control}{20}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Motzoi parameter}{21}
+\contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{21}
+\contentsline {subsection}{\numberline {2.2.3}Tuning qubit frequency}{21}
+\contentsline {subsection}{\numberline {2.2.4}T1 measurement}{21}
+\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{21}
+\contentsline {subsection}{\numberline {2.2.6}AllXY measurement}{21}
+\contentsline {subsection}{\numberline {2.2.7}Measuring single shots}{21}
+\contentsline {chapter}{\numberline {3}Calibration routines}{22}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{23}
+\contentsline {section}{\numberline {4.1}Second excited state}{23}
+\contentsline {chapter}{Appendices}{24}
+\contentsline {chapter}{\numberline {A}Additional notes}{25}
+\contentsline {section}{\numberline {A.1}Qubit characterization}{25}
+\contentsline {subsection}{\numberline {A.1.1}Part I: Continuous-wave measurements}{25}
+\contentsline {subsubsection}{\numberline {A.1.1.1}Powersweep}{25}
+\contentsline {subsubsection}{\numberline {A.1.1.2}Spectroscopy}{25}
+\contentsline {chapter}{\numberline {B}Algorithms}{26}
+\contentsline {section}{\numberline {B.1}Tracked spectroscopy}{26}
+\contentsline {section}{\numberline {B.2}Peak finding}{26}
+\contentsline {subsection}{\numberline {B.2.1}Normal peak finder}{26}
+\contentsline {subsection}{\numberline {B.2.2}Derivative peak finder}{26}
+\contentsline {section}{\numberline {B.3}Compiled RB?}{26}

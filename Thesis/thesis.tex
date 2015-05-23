@@ -457,7 +457,7 @@ Dr.~Alessandro Bruno
 
         By adding the simultaneous sweet-spot DAC voltages $\vec{V}^{ss}$, we obtain the additional property that the sweet-spot of the virtual fluxes is set to zero.
 
-        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $F_2$ can then simply be multiplied with the first flux matri
+        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
 
 
 
@@ -465,10 +465,64 @@ Dr.~Alessandro Bruno
 
 
     \section{Part II: Time-domain measurements}
+      \subsection{Qubit control}
+        So far the measurements described have all dealt with continuous tones being applied and measuring the response in the transmission. These are crude measurements, that are nevertheless able to determine some properties of the qubit and resonator, such as their frequencies. However, to find more detailed properties of the qubits, such as their coherence times, one cannot apply a continuous tone, that drives some incoherent qubit population. Instead well-calibrated pulses are required, which modify the state of the qubit in a precise manner, corresponding to gates being applied to the qubit. These types of measurements are called time-domain measurements, as they require precise pulse timing.
+
+        A simple time-domain measurement usually consists of two parts. The first part consists of controlling the qubit. P are sent which modify the state of the qubit. The second part consists of measuring the state of the qubit.
+
+        Z projection
 
 
 
 
+
+
+        \subsubsection{Motzoi parameter}
+      \subsection{Calibrating drive amplitude}
+      \subsection{Tuning qubit frequency}
+      \subsection{T1 measurement}
+      \subsection{Echo measurement}
+      \subsection{AllXY measurement}
+      \subsection{Measuring single shots}
+
+
+
+
+  * [ ]Explanation of gates
+  * [ ]Motzoi parameter
+  * [ ]Calibrating drive amplitude using Rabi
+  * [ ]Calibrating frequency using Ramsey
+  *
+    * Conflict with next section on accurate tune-up?
+
+  * [ ]Measuring decoherence
+  *
+    * Relaxation
+    *
+      * T1 measurement
+
+    * Dephasing
+    *
+      * Ramsey measurement (all noise)
+      * Echo measurement (fast noise)
+
+    * Change with frequency
+    *
+      * Ideally T2 is 2*T1
+      * T2 rapidly decreases as moving away from sweet-spot
+
+
+  * [ ]Single-shot measurements
+  *
+    * Able to see relaxation and thermal excitation
+
+  * [ ]Second excited state
+  *
+    * Similar to three-tone spectroscopy
+    * Nearly identical position in IQ-plane as first excited state, but less relaxation into ground state
+    * Since time-trace is averaged, the final signal is therefore further away from the ground state in the IQ-plane
+
+  * [ ]Crosstalk / cross-coupling?
 
 
 
