@@ -42,6 +42,11 @@ Benjamin~A. Mazin.
 \newblock {\em Microwave Kinetic Inductance Detectors}.
 \newblock PhD thesis, California Institute of Technology, 2004.
 
+\bibitem{motzoi2009simple}
+F~Motzoi, JM~Gambetta, P~Rebentrost, and Frank~K Wilhelm.
+\newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
+\newblock {\em Physical review letters}, 103(11):110501, 2009.
+
 \bibitem{nsanzineza2014trapping}
 I~Nsanzineza and BLT Plourde.
 \newblock Trapping a single vortex and reducing quasiparticles in a
@@ -54,11 +59,23 @@ Britton Plourde, C~Song, TW~Heitmann, MP~DeFeo, and Kang Yu.
   and al.
 \newblock 2009.
 
+\bibitem{Reed}
+Matthew~D. Reed.
+\newblock {\em Entanglement and Quantum Error Correction with Superconducting
+  Qubits, year =}.
+\newblock PhD thesis.
+
 \bibitem{sage2011study}
 Jeremy~M Sage, Vladimir Bolkhovsky, William~D Oliver, Benjamin Turek, and
   Paul~B Welander.
 \newblock Study of loss in superconducting coplanar waveguide resonators.
 \newblock {\em Journal of Applied Physics}, 109(6):063915, 2011.
+
+\bibitem{Sears}
+Adam~P. Sears.
+\newblock {\em Extending Coherence in Superconducting Qubits: from microseconds
+  to milliseconds}.
+\newblock PhD thesis, Yale University, 2013.
 
 \bibitem{vasilescu2006electronic}
 Gabriel Vasilescu.

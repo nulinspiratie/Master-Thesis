@@ -8,45 +8,47 @@ I was expecting a `,' or a `}'---line 91 of file bibliography.bib
  :             2013",
 I'm skipping whatever remains of this entry
 Warning--empty journal in plourde2009microwave
-You've used 12 entries,
+Warning--empty school in Reed
+Warning--empty year in Reed
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            566 strings with 6292 characters,
-and the built_in function-call counts, 4031 in all, are:
-= -- 364
-> -- 287
+            581 strings with 6678 characters,
+and the built_in function-call counts, 4800 in all, are:
+= -- 438
+> -- 324
 < -- 0
-+ -- 114
-- -- 102
-* -- 315
-:= -- 751
-add.period$ -- 36
-call.type$ -- 12
-change.case$ -- 82
++ -- 129
+- -- 114
+* -- 370
+:= -- 894
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 95
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 119
-empty$ -- 238
-format.name$ -- 102
-if$ -- 770
+cite$ -- 18
+duplicate$ -- 148
+empty$ -- 292
+format.name$ -- 114
+if$ -- 918
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 9
-newline$ -- 63
-num.names$ -- 24
-pop$ -- 80
+int.to.str$ -- 15
+missing$ -- 10
+newline$ -- 78
+num.names$ -- 30
+pop$ -- 94
 preamble$ -- 1
-purify$ -- 74
+purify$ -- 86
 quote$ -- 0
-skip$ -- 79
+skip$ -- 97
 stack$ -- 0
-substring$ -- 157
-swap$ -- 10
+substring$ -- 190
+swap$ -- 13
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
-warning$ -- 1
-while$ -- 29
-width$ -- 14
-write$ -- 127
+type$ -- 58
+warning$ -- 3
+while$ -- 36
+width$ -- 17
+write$ -- 158
 (There was 1 error message)

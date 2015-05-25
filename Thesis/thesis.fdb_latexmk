@@ -1,15 +1,16 @@
 # Fdb version 3
-["bibtex thesis"] 1432547185 "thesis.aux" "thesis.bbl" "thesis" 1432547188
+["bibtex thesis"] 1432548651 "thesis.aux" "thesis.bbl" "thesis" 1432548678
   "bibliography.bib" 1432545188 6445 9313fa50d8c5d0c98d6ba10489e77657 ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1432547188 12008 e7e78b58ead87a31cbe5a71661987f96 ""
+  "thesis.aux" 1432548677 15043 50bf6df21d7f261999574985b0565ac8 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
-  "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1432547185 "thesis.tex" "thesis.pdf" "thesis" 1432547188
-  "Chapters/DRIE.tex" 1432546318 35496 fb3c01d94fd16b73f4a2f787e235d2de ""
-  "Chapters/appendix.tex" 1432547146 21038 29f7002c529667ee6b7ad385bd1ae21a ""
+  "thesis.blg"
+["pdflatex"] 1432548674 "thesis.tex" "thesis.pdf" "thesis" 1432548678
+  "Chapters/DRIE.tex" 1432548050 35516 73e65214c84285c5eaf478686fce87ad ""
+  "Chapters/Muxmon.tex" 1432548668 49877 763f13bc70d615108f3aa51a6cd50666 ""
+  "Chapters/appendix.tex" 1432547667 21046 87adad0c998c3be6265e00895307bc39 ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
   "Figures/DRIE/Qi_vs_n_photon.png" 1420647387 47310 0b125d1859ff55801a48bceab7a0581f ""
@@ -101,14 +102,16 @@
   "c:/texlive/2014/texmf-dist/tex/latex/tools/xr.sty" 1419363480 2165 ec2dc270a356b7003d83fea365368895 ""
   "c:/texlive/2014/texmf-dist/tex/latex/url/url.sty" 1419363722 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "thesis.aux" 1432547188 12008 e7e78b58ead87a31cbe5a71661987f96 ""
-  "thesis.bbl" 1432547185 2847 ac28ced1eac2dae6d387faf68ba53d10 "bibtex thesis"
-  "thesis.tex" 1432547177 4104 10b13cdca0d6d31691c482cb08635761 ""
-  "thesis.toc" 1432547188 3183 1344f9351dbc85b59b4c584b06d7885e ""
+  "thesis.aux" 1432548677 15043 50bf6df21d7f261999574985b0565ac8 ""
+  "thesis.bbl" 1432548652 3404 9c5b9b18a934829c8b682c3998bf8119 "bibtex thesis"
+  "thesis.tex" 1432548144 4110 29a6935a9703b1268b727bade32d185f ""
+  "thesis.toc" 1432548677 5012 b111a0e567a4a2a17cc1be0dfe410443 ""
   (generated)
-  "thesis.pdf"
-  "Chapters/Muxmon.aux"
-  "Chapters/Muxmon.tex.aux"
-  "thesis.log"
   "thesis.aux"
+  "Chapters/DRIE.tex.aux"
   "thesis.toc"
+  "Chapters/Muxmon.aux"
+  "Chapters/appendix.tex.aux"
+  "Chapters/Muxmon.tex.aux"
+  "thesis.pdf"
+  "thesis.log"

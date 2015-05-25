@@ -303,7 +303,7 @@
 
         Tracked spectroscopy has several advantages over the two-dimensional spectroscopy versus flux scans. First of all, since the qubit's frequency follows a smooth curve (see Equation~\textbf{TODO:} Refer to eqn), the qubit's frequency can be estimated quite accurately. The frequency windows can therefore be narrow. This greatly reduces the measurement time. Secondly, tracked spectroscopy does not need any human intervention, as the frequency window is automatically updated after every spectroscopy scan. Therefore measuring the flux-dependence of the qubit frequencies is an automatized process (provided that the qubit frequency can correctly be extracted).
 
-        For more information on the tracked spectroscopy algorithm see appendix~\ref{A-sec:Tracked spectroscopy}.
+        For more information on the tracked spectroscopy algorithm see appendix~\ref{sec:Tracked spectroscopy}.
 
         \textbf{Improvements}
         \begin{itemize}
@@ -401,55 +401,65 @@
           \item Refer to equation showing that rotation depends on time duration (Reed's thesis)
         \end{itemize}
 
-      \subsection{Qubit relaxation}
-        Once a pi-pulse has been tuned it is possible to excite the qubit. However, once the qubit is excited, it will not remain so indefinitely. Instead, the excitation will slowly leak away
+      \subsection{Qubit decoherence}
 
-        \begin{itemize}
-          \item Purcell limit
-        \end{itemize}
+        \subsubsection{Qubit relaxation}
+          Once a pi-pulse has been tuned it is possible to excite the qubit. However, once the qubit is excited, it will not remain so indefinitely. Instead, the excitation will slowly leak away to different relaxation sources, some of which have been discussed in \ref{sec:Losses}. These sources of relaxation lead to an exponential decay of the qubit's excitation, with a relaxation time $T_1$. A typical measurement to characterize the relaxation time $T_1$ is performed by first applying a pi-pulse, and the waiting for a monotonically increasing wait time $\tau$, after which the state of the qubit is measured.
 
+          relaxation time $T_1$,
 
-      \subsection{Tuning qubit frequency}
-        Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate. A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain wait time $\tau$, an $X_{-\pi/2}$ pulse is applied to the qubit.
-
-        At the moment we ignore effects such as decoherence and gate errors. If there were no precession, the qubit should be pulsed back exactly to its ground state. However, any detuning $\Delta$ causes the state of the qubit to deviate from its original position on the Bloch sphere, and so the second pulse does not exactly cancel the effect of the first pulse. in fact, after half a period the second pulse results in the qubit being in the excited state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will yet again return the qubit to the ground state. In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$.
-
-        In reality however, the qubit does suffer from decoherence. Especially phase noise, characterized by the dephasing time $T_2^*$, is noticeable in a Ramsey measurement. Phase noise can be seen as fluctuations in the qubit frequency. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p.~126]{Sears}. The result of dephasing is that the oscillations will decrease in amplitude as the wait time is increased. For a Ramsey measurement the excited-state population as a function of wait time is given by:
-
-        \begin{equation}
-          f(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
-          \label{eq:Ramsey}
-        \end{equation}
+          \begin{itemize}
+            \item Purcell limit
+          \end{itemize}
 
 
+        \subsubsection{Qubit dephasing}
+          Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate. A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain wait time $\tau$, an $X_{-\pi/2}$ pulse is applied to the qubit.
 
-        \begin{itemize}
-          \item Relation between precession rate and detuning.
-          \item Artificial detuning
-          \item coherence time, drive amplitude
-          \item Accuracy of calibrating the frequency depends on the dephasing time $T_2^*$
-          \item Two $T_2^*$ values, one for exponential? noise, one for Gaussian noise
-          \item dephasing is maximum twice relaxation
-        \end{itemize}
+          At the moment we ignore effects such as decoherence and gate errors. If there were no precession, the qubit should be pulsed back exactly to its ground state. However, any detuning $\Delta$ causes the state of the qubit to deviate from its original position on the Bloch sphere, and so the second pulse does not exactly cancel the effect of the first pulse. in fact, after half a period the second pulse results in the qubit being in the excited state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will yet again return the qubit to the ground state. In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$.
 
-        \textbf{Questions:}
-        \begin{itemize}
-          \item How is the Rabi rate $\Omega_R$ related to the detuning?
-          \item Where does exponential noise and Gaussian noise come from? As I understand it Gaussian noise is due to flux
-          \item Is $T_1$ not noticeable in a Ramsey measurement?
-          \item Dephasing results in a mixed state, and therefore shrinks towards the Z-axis on the Bloch sphere?
-        \end{itemize}
+          In reality however, the qubit does suffer from decoherence. Especially phase noise, characterized by the dephasing time $T_2^*$, is noticeable in a Ramsey measurement. Phase noise can be seen as fluctuations in the qubit frequency. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p.~126]{Sears}. The result of dephasing is that the oscillations will decrease in amplitude as the wait time is increased. For a Ramsey measurement the excited-state population $P_1$ as a function of wait time is given by:
 
-        \textbf{Figures:}
-        \begin{itemize}
-          \item Ramsey measurement
-          \item $T_2^*$ vs. frequency?
-        \end{itemize}
+          \begin{equation}
+            P_1(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
+            \label{eq:Ramsey}
+          \end{equation}
 
-      \subsection{Echo measurement}
-        \begin{itemize}
-          \item Refocusing
-        \end{itemize}
+          Usually in a Ramsey measurement artificial detunining is added to the pulse, such that if there were no real detuning, one would see around three to four oscillations. There are several reasons for this artificial detuning. One reason is that estimating the detuning using Equation~\ref{eq:Ramsey} is more accurate once there are several oscillations present. Another reason is that if the real detuning is reasonably small compared to the artificial detuning, it is possible to estimate if the qubit's frequency is higher or lower than the drive, as this would result in a higher or lower oscillation frequency.
+
+
+
+          \begin{itemize}
+            \item coherence time, drive amplitude
+            \item Accuracy of calibrating the frequency depends on the dephasing time $T_2^*$
+            \item Two $T_2^*$ values, one for exponential? noise, one for Gaussian noise
+            \item dephasing is maximum twice relaxation
+          \end{itemize}
+
+          \textbf{Questions:}
+          \begin{itemize}
+            \item How is the Rabi rate $\Omega_R$ related to the detuning?
+            \item Where does exponential noise and Gaussian noise come from? As I understand it Gaussian noise is due to flux
+            \item Is $T_1$ not noticeable in a Ramsey measurement?
+            \item Dephasing results in a mixed state, and therefore shrinks towards the Z-axis on the Bloch sphere?
+          \end{itemize}
+
+          \textbf{TODO:}
+          \begin{itemize}
+            \item Remove parts about frequency tuning, add that in calibration section
+          \end{itemize}
+
+          \textbf{Figures:}
+          \begin{itemize}
+            \item Ramsey measurement
+            \item $T_2^*$ vs. frequency?
+          \end{itemize}
+
+        \subsubsection{Echo measurement}
+
+          \begin{itemize}
+            \item Refocusing
+          \end{itemize}
 
 
       \subsection{Motzoi parameter}
