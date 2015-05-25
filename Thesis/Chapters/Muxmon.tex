@@ -408,7 +408,7 @@
             \item Gaussian pulse with derivative
           \end{itemize}
 
-      \subsection{Calibrating drive amplitude}
+      \subsection{Drive amplitude calibration}
         Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. To rotate the qubit by a specific angle, either the pulse duration can be varied, keeping the amplitude fixed, or the pulse amplitude can be varied, keeping the pulse duration fixed. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. On the other hand, pulses with a small rotation angle have a very small duration, and so their bandwidth will be large, which may lead to increased leakage. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, whilst the pulse duration is kept fixed.
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which depends on the pulse amplitude.
@@ -509,7 +509,7 @@
         \item What is the resolution of the IVVI? To what qubit frequency difference does this correspond for the top qubit?
       \end{itemize}
     \section{Drive amplitude calibration}
-      To test the performance
+      To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section
 
       \begin{itemize}
         \item High fidelity gates required
@@ -521,6 +521,7 @@
         \item Pi/2 pulse at start of sequence instead of at end
         \item If at end, T2 effects are less
         \item If at start, T1 effects are less
+        \item Additional performance increase could be achieved by individually calibrating other pulses
       \end{itemize}
 
     \section{Readout calibration}

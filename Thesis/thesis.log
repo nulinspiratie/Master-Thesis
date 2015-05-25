@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 17:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,7 +1009,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 24.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
  [1
 
 ] [2])
@@ -1024,8 +1024,9 @@ LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 2.
  [4] [5
 
-]
-<Figures/DRIE/CPW.png, id=24, 339.669pt x 158.5122pt>
+] [6]
+Chapter 1.
+<Figures/DRIE/CPW.png, id=28, 339.669pt x 158.5122pt>
 File: Figures/DRIE/CPW.png Graphic file (type png)
 
 <use Figures/DRIE/CPW.png>
@@ -1033,8 +1034,17 @@ Package pdftex.def Info: Figures/DRIE/CPW.png used on input line 41.
 (pdftex.def)             Requested size: 181.18439pt x 84.55527pt.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
- [6 <./Figures/DRIE/CPW.png>] [7] [8] [9]
-<Figures/DRIE/All_set4.png, id=44, 725.109pt x 311.2428pt>
+
+Underfull \hbox (badness 1259) in paragraph at lines 43--43
+[]\T1/futs/b/n/10.95 Figure 1.1: |\T1/futs/m/n/10.95 (+20) Schematic of a copla
+-nar
+ []
+
+[7
+
+ <./Figures/DRIE/CPW.png>] [8] [9] [10] [11] [12]
+Chapter 2.
+<Figures/DRIE/All_set4.png, id=54, 725.109pt x 311.2428pt>
 File: Figures/DRIE/All_set4.png Graphic file (type png)
 
 <use Figures/DRIE/All_set4.png>
@@ -1052,8 +1062,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 223.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 223.
- [10]
-<Figures/DRIE/resonator_amplitude.png, id=48, 433.62pt x 289.08pt>
+ [13
+
+ <./Figures/DRIE/All_set4.png>]
+Chapter 3.
+<Figures/DRIE/resonator_amplitude.png, id=59, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_amplitude.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_amplitude.png>
@@ -1061,7 +1074,7 @@ Package pdftex.def Info: Figures/DRIE/resonator_amplitude.png used on input lin
 e 244.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/resonator_complex.png, id=49, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_complex.png, id=60, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_complex.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_complex.png>
@@ -1069,18 +1082,18 @@ Package pdftex.def Info: Figures/DRIE/resonator_complex.png used on input line
 248.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Figures/DRIE/Qi_vs_n_photon.png, id=50, 433.62pt x 289.08pt>
+<Figures/DRIE/Qi_vs_n_photon.png, id=61, 433.62pt x 289.08pt>
 File: Figures/DRIE/Qi_vs_n_photon.png Graphic file (type png)
 
 <use Figures/DRIE/Qi_vs_n_photon.png>
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon.png used on input line 264
 .
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
- [11 <./Figures/DRIE/All_set4.png>]
-<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=55, 433.62pt x 289.
+ [14
+
+ <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex.png
+>]
+<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=67, 433.62pt x 289.
 08pt>
 File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
  png)
@@ -1088,11 +1101,8 @@ File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png
  used on input line 286.
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
- [12 <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex
-.png>]
-[13 <./Figures/DRIE/Qi_vs_n_photon.png> <./Figures/DRIE/Qi_vs_n_photon_temperat
-ure_dependence.png>]
-<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=67, 433.62pt x 289.08
+ [15 <./Figures/DRIE/Qi_vs_n_photon.png>]
+<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=72, 433.62pt x 289.08
 pt>
 File: Figures/DRIE/Temperature tracking drop - Qi vs T.png Graphic file (type p
 ng)
@@ -1101,7 +1111,7 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking drop - Qi vs T.png u
 sed on input line 307.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=68, 433.62pt x 2
+<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=73, 433.62pt x 2
 89.08pt>
 File: Figures/DRIE/Temperature tracking - no drop - Qi vs T.png Graphic file (t
 ype png)
@@ -1110,17 +1120,21 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking - no drop - Qi vs T.
 png used on input line 311.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-[14 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
-mperature tracking - no drop - Qi vs T.png>]
-<Figures/DRIE/Temperature tracking - f0 vs T.png, id=74, 505.89pt x 361.35pt>
+[16 <./Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>]
+<Figures/DRIE/Temperature tracking - f0 vs T.png, id=78, 505.89pt x 361.35pt>
 File: Figures/DRIE/Temperature tracking - f0 vs T.png Graphic file (type png)
 
 <use Figures/DRIE/Temperature tracking - f0 vs T.png>
 Package pdftex.def Info: Figures/DRIE/Temperature tracking - f0 vs T.png used o
 n input line 323.
 (pdftex.def)             Requested size: 326.13744pt x 232.96144pt.
- [15 <./Figures/DRIE/Temperature tracking - f0 vs T.png>]
-<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=79, 505.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
+mperature tracking - no drop - Qi vs T.png>]
+<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=84, 505.
 89pt x 361.35pt>
 File: Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png Graphic
  file (type png)
@@ -1130,8 +1144,15 @@ Package pdftex.def Info: Figures/DRIE/Temperature increase tracking - f0 vs T w
 ith fit.png used on input line 337.
 (pdftex.def)             Requested size: 317.07614pt x 226.4883pt.
 
-[16 <./Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png>])
-(./Chapters/Muxmon.tex [17] [18
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18 <./Figures/DRIE/Temperature tracking - f0 vs T.png>] [19 <./Figures/DRIE/Te
+mperature increase tracking - f0 vs T with fit.png>]
+Chapter 4.
+) (./Chapters/Muxmon.tex [20
+
+] [21
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 6.
@@ -1143,59 +1164,81 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19] [20
+ [22] [23
 
 ]
-Chapter 1.
+Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-[21
+[24
 
-] [22]
-Chapter 2.
-[23
+] [25]
+Chapter 6.
+[26
 
-] [24] [25] [26] [27] [28]
+] [27] [28] [29] [30] [31]
 Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
-[29] [30] [31] [32] [33] [34] [35] [36] [37] [38]
-Chapter 3.
-[39
+[32] [33] [34] [35] [36] [37] [38] [39] [40] [41]
+Chapter 7.
+[42
 
 ]
-Chapter 4.
-[40
+Chapter 8.
+! Undefined control sequence.
+\kilo ->\ERROR 
+               
+l.505 ...uld be determined to within \si{10}{\kilo
+                                                   \hertz}, and the two freq...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [41]
-Chapter 5.
-) [42
+! Undefined control sequence.
+\hertz ->\ERROR 
+                
+l.505 ...determined to within \si{10}{\kilo \hertz
+                                                  }, and the two frequencies...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-] [43
+[43
+
+] [44]
+Chapter 9.
+) [45
+
+] [46
 
 
 ] (./Chapters/appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 44 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 47 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 44 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 47 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=171, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=180, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=172, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=181, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1205,25 +1248,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44
+[47
 
-] [45 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=179, 1118.9805pt x 420.3705pt>
+] [48 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=189, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [46 <./Figures/Noise/Noise model.png>]
-[47] [48]
-<Figures/Noise/noise_temperature_versus_power.png, id=191, 433.62pt x 289.08pt>
+ [49 <./Figures/Noise/Noise model.png>]
+[50] [51]
+<Figures/Noise/noise_temperature_versus_power.png, id=201, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [49 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=197, 433.62pt x 
+ [52 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=206, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1232,29 +1275,29 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[50 <./Figures/Noise/noise_temperature_versus_power_detailed.png>] [51]
+[53 <./Figures/Noise/noise_temperature_versus_power_detailed.png>] [54]
 Appendix B.
-[52
+[55
 
 ]
 Appendix C.
-) (./thesis.bbl [53
+) (./thesis.bbl [56
 
-] [54
+] [57
 
 ]) 
 AED: lastpage setting LastPage
-[55] (./thesis.aux)
+[58] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16201 strings out of 493109
- 315735 string characters out of 6138586
- 455689 words of memory out of 5000000
- 19090 multiletter control sequences out of 15000+600000
- 203364 words of font info for 391 fonts, out of 8000000 for 9000
+ 16208 strings out of 493109
+ 315848 string characters out of 6138586
+ 454747 words of memory out of 5000000
+ 19093 multiletter control sequences out of 15000+600000
+ 203634 words of font info for 394 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,54p,10406b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1265,10 +1308,10 @@ c/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
 texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
 xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (56 pages, 2471117 bytes).
+Output written on thesis.pdf (59 pages, 2473936 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 152 compressed objects within 2 object streams
+ 257 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61004 words of extra memory for PDF output out of 61914 (max. 10000000)
 
