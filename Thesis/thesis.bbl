@@ -12,6 +12,11 @@ Rami Barends.
 \newblock {\em Photon-detecting superconducting resonators}.
 \newblock PhD thesis, Delft University of Technology, 2009.
 
+\bibitem{Bishop}
+Lev~Samuel Bishop.
+\newblock {\em Circuit Quantum Electrodynamics}.
+\newblock PhD thesis, Yale University, 2010.
+
 \bibitem{DRIE}
 A.~Bruno, G.~de~Lange, K.~van~der Enden, S.~Asaad, N.~Langford, and L.~DiCarlo.
 \newblock Extending single-photon relaxation time in superconducting resonators
@@ -62,8 +67,8 @@ Britton Plourde, C~Song, TW~Heitmann, MP~DeFeo, and Kang Yu.
 \bibitem{Reed}
 Matthew~D. Reed.
 \newblock {\em Entanglement and Quantum Error Correction with Superconducting
-  Qubits, year =}.
-\newblock PhD thesis.
+  Qubits}.
+\newblock PhD thesis, Yale University, 2013.
 
 \bibitem{sage2011study}
 Jeremy~M Sage, Vladimir Bolkhovsky, William~D Oliver, Benjamin Turek, and

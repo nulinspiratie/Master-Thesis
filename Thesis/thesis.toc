@@ -44,9 +44,13 @@
 \contentsline {subsection}{\numberline {2.3.1}Measuring single shots}{38}
 \contentsline {chapter}{\numberline {3}Calibration routines}{39}
 \contentsline {section}{\numberline {3.1}Accurate frequency estimation}{39}
-\contentsline {section}{\numberline {3.2}Motzoi parameter}{39}
-\contentsline {section}{\numberline {3.3}AllXY measurement}{39}
-\contentsline {section}{\numberline {3.4}Mixer calibration}{39}
+\contentsline {section}{\numberline {3.2}Drive amplitude calibration}{39}
+\contentsline {section}{\numberline {3.3}Readout calibration}{39}
+\contentsline {section}{\numberline {3.4}Drag amplitude calibration}{39}
+\contentsline {section}{\numberline {3.5}Motzoi parameter}{39}
+\contentsline {section}{\numberline {3.6}AllXY measurement}{39}
+\contentsline {section}{\numberline {3.7}Mixer calibration}{39}
+\contentsline {section}{\numberline {3.8}Duplexer phase calibration}{39}
 \contentsline {chapter}{\numberline {4}Randomized benchmarking}{40}
 \contentsline {section}{\numberline {4.1}Second excited state}{40}
 \contentsline {chapter}{Appendices}{41}

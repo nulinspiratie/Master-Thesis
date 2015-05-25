@@ -3,52 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: bibliography.bib
-I was expecting a `,' or a `}'---line 91 of file bibliography.bib
- :     year = "
- :             2013",
-I'm skipping whatever remains of this entry
 Warning--empty journal in plourde2009microwave
-Warning--empty school in Reed
-Warning--empty year in Reed
-You've used 15 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            581 strings with 6678 characters,
-and the built_in function-call counts, 4800 in all, are:
-= -- 438
-> -- 324
+            586 strings with 6734 characters,
+and the built_in function-call counts, 4995 in all, are:
+= -- 461
+> -- 331
 < -- 0
-+ -- 129
-- -- 114
-* -- 370
-:= -- 894
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 95
++ -- 132
+- -- 116
+* -- 375
+:= -- 936
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 98
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 148
-empty$ -- 292
-format.name$ -- 114
-if$ -- 918
+cite$ -- 17
+duplicate$ -- 157
+empty$ -- 306
+format.name$ -- 116
+if$ -- 958
 int.to.chr$ -- 0
-int.to.str$ -- 15
+int.to.str$ -- 16
 missing$ -- 10
-newline$ -- 78
-num.names$ -- 30
+newline$ -- 83
+num.names$ -- 32
 pop$ -- 94
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 89
 quote$ -- 0
-skip$ -- 97
+skip$ -- 104
 stack$ -- 0
-substring$ -- 190
-swap$ -- 13
+substring$ -- 195
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 3
-while$ -- 36
-width$ -- 17
-write$ -- 158
-(There was 1 error message)
+type$ -- 62
+warning$ -- 1
+while$ -- 38
+width$ -- 18
+write$ -- 171
+(There was 1 warning)
