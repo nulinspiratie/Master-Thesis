@@ -409,6 +409,7 @@
           \end{itemize}
 
       \subsection{Drive amplitude calibration}
+        \label{ssec:Rabi}
         Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. To rotate the qubit by a specific angle, either the pulse duration can be varied, keeping the amplitude fixed, or the pulse amplitude can be varied, keeping the pulse duration fixed. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. On the other hand, pulses with a small rotation angle have a very small duration, and so their bandwidth will be large, which may lead to increased leakage. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, whilst the pulse duration is kept fixed.
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which depends on the pulse amplitude.
@@ -502,35 +503,44 @@
 
       A Ramsey measurement provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Therefore tiny differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$. This is because the dephasing time $T_2^*$ corresponds to the fluctuation in the qubit frequency.
 
-      The main goal of the Muxmon experiment is to measure the performance of space-division multiplexing using the Duplexer. One requirement for space-division multiplexing is that the top and bottom qubit are at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, since only a single frequency will be used, any detuning will lead to a decrease in qubit performance. To this end the top qubit has been detuned from its sweet-spot, to match the bottom qubit, while both the bottom and ancilla qubit are kept at their respective sweet-spots. This process is greatly simplified through use of a flux matrix, as described in section~\ref{ssec:Flux matrix}. Initial top qubit frequency tuning was done using spectroscopy, which is a much faster measurement. After the initial frequency tuning, accurate frequency tuning was performed using Ramsey measurements. First the bottom qubit frequency $\omega_q^B$ was determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. This process has been fully automatized. Using this method the inidividual frequencies could be determined to within \si{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The reason the frequencies could not be tuned more accurately is due to the IVVI having a finite DAC voltage stepsize.
+      The main goal of the Muxmon experiment is to measure the performance of space-division multiplexing using the Duplexer. One requirement for space-division multiplexing is that the top and bottom qubit are at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, since only a single frequency will be used, any detuning will lead to a decrease in qubit performance. To this end the top qubit has been detuned from its sweet-spot, to match the bottom qubit, while both the bottom and ancilla qubit are kept at their respective sweet-spots. This process is greatly simplified through use of a flux matrix, as described in section~\ref{ssec:Flux matrix}. Initial top qubit frequency tuning was done using spectroscopy, which is a much faster measurement. After the initial frequency tuning, accurate frequency tuning was performed using Ramsey measurements. First the bottom qubit frequency $\omega_q^B$ was determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. This process has been fully automatized. Using this method the inidividual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The reason the frequencies could not be tuned more accurately is due to the IVVI having a finite DAC voltage stepsize.
 
       \textbf{Questions:}
       \begin{itemize}
         \item What is the resolution of the IVVI? To what qubit frequency difference does this correspond for the top qubit?
       \end{itemize}
-    \section{Drive amplitude calibration}
-      To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section
+    \section{Accurate drive amplitude calibration}
+      \label{sec:PiX360}
+      To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
 
+      In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
+
+      % The $X_{\pi/2}$ pulse at the start of the sequence provides two benefits. The first is that any slope is clearly visible, since the final state is projected onto the Z-axis. Secondly, relaxation effects are to a certain extent
+      % \begin{itemize}
+      %   \item Accurate drive amplitude calibration using PiX360
+      %   \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
+      %   \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
+      %   \item PiX180 however can be performed at larger detuning, due to slower oscillations
+      %   \item Much better accuracy than Rabi
+      %   \item Pi/2 pulse at start of sequence instead of at end
+      %   \item If at end, T2 effects are less
+      %   \item If at start, T1 effects are less
+      %   \item Additional performance increase could be achieved by individually calibrating other pulses
+      % \end{itemize}
+
+      \textbf{Figures:}
       \begin{itemize}
-        \item High fidelity gates required
-        \item Accurate drive amplitude calibration using PiX360
-        \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
-        \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
-        \item PiX180 however can be performed at larger detuning, due to slower oscillations
-        \item Much better accuracy than Rabi
-        \item Pi/2 pulse at start of sequence instead of at end
-        \item If at end, T2 effects are less
-        \item If at start, T1 effects are less
-        \item Additional performance increase could be achieved by individually calibrating other pulses
+        \item PiX360 with positive, normal, negative slope
       \end{itemize}
 
-    \section{Readout calibration}
     \section{Drag amplitude calibration}
+
     \section{Motzoi parameter}
     \section{AllXY measurement}
     \section{Mixer calibration}
       \label{sec:Mixer calibration}
     \section{Duplexer phase calibration}
+    \section{Readout calibration}
 
   \chapter{Randomized benchmarking}
 

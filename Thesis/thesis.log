@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1190,55 +1190,33 @@ Chapter 7.
 
 ]
 Chapter 8.
-! Undefined control sequence.
-\kilo ->\ERROR 
-               
-l.505 ...uld be determined to within \si{10}{\kilo
-                                                   \hertz}, and the two freq...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\hertz ->\ERROR 
-                
-l.505 ...determined to within \si{10}{\kilo \hertz
-                                                  }, and the two frequencies...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [43
 
-] [44]
+] [44] [45]
 Chapter 9.
-) [45
+) [46
 
-] [46
+] [47
 
 
 ] (./Chapters/appendix.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 47 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 48 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 47 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 48 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=180, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=183, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=181, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=184, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1248,25 +1226,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47
+[48
 
-] [48 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=189, 1118.9805pt x 420.3705pt>
+] [49 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=193, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [49 <./Figures/Noise/Noise model.png>]
-[50] [51]
-<Figures/Noise/noise_temperature_versus_power.png, id=201, 433.62pt x 289.08pt>
+ [50 <./Figures/Noise/Noise model.png>]
+[51] [52]
+<Figures/Noise/noise_temperature_versus_power.png, id=204, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [52 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=206, 433.62pt x 
+ [53 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=209, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1275,28 +1253,28 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[53 <./Figures/Noise/noise_temperature_versus_power_detailed.png>] [54]
+[54 <./Figures/Noise/noise_temperature_versus_power_detailed.png>] [55]
 Appendix B.
-[55
+[56
 
 ]
 Appendix C.
-) (./thesis.bbl [56
+) (./thesis.bbl [57
 
-] [57
+] [58
 
 ]) 
 AED: lastpage setting LastPage
-[58] (./thesis.aux)
+[59] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16208 strings out of 493109
- 315848 string characters out of 6138586
- 454747 words of memory out of 5000000
- 19093 multiletter control sequences out of 15000+600000
+ 16210 strings out of 493109
+ 315871 string characters out of 6138586
+ 454771 words of memory out of 5000000
+ 19095 multiletter control sequences out of 15000+600000
  203634 words of font info for 394 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,54p,10406b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1308,10 +1286,10 @@ c/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
 texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
 xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (59 pages, 2473936 bytes).
+Output written on thesis.pdf (60 pages, 2475717 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  61004 words of extra memory for PDF output out of 61914 (max. 10000000)
 
