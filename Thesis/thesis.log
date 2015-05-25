@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -804,53 +804,68 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@ppsavesec=\count163
 \c@@ppsaveapp=\count164
 )
-(c:/texlive/2014/texmf-dist/tex/latex/braket/braket.sty) (./thesis.aux)
+(c:/texlive/2014/texmf-dist/tex/latex/braket/braket.sty)
+(c:/texlive/2014/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 1994/05/28 v5.02 eXternal References (DPC)
+)
+
+Package xr Warning: 
+No file Chapters/DRIE.tex.aux
+LABELS NOT IMPORTED.
+ on input line 25.
+
+
+Package xr Warning: 
+No file Chapters/appendix.tex.aux
+LABELS NOT IMPORTED.
+ on input line 26.
+
+(./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 52.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 73.
 
-
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
+ (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 52.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 73.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 52.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 73.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 52.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 73.
 
 (c:/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 52.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 73.
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -895,7 +910,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 52.
+(lastpage)             ! on input line 73.
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count165
@@ -929,7 +944,7 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 52.
+LaTeX Info: Redefining \microtypecontext on input line 73.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -952,24 +967,24 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count171
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 52
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 73
 .
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 52.
+(Font)              scaled to size 11.03998pt on input line 73.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 52.
+(Font)              scaled to size 8.27998pt on input line 73.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 52.
+(Font)              scaled to size 6.43999pt on input line 73.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 52.
+(Font)              scaled to size 11.03998pt on input line 73.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 52.
+(Font)              scaled to size 8.27998pt on input line 73.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 52.
+(Font)              scaled to size 6.43999pt on input line 73.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -980,29 +995,29 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 61.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 71.
+(Font)              scaled to size 19.08076pt on input line 91.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 71.
+(Font)              scaled to size 13.24796pt on input line 91.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 71.
+(Font)              scaled to size 9.19998pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 71.
+(Font)              scaled to size 19.08076pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 71.
+(Font)              scaled to size 13.24796pt on input line 91.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 71.
+(Font)              scaled to size 9.19998pt on input line 91.
  [1
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 94.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 114.
  (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 23.
  [1
 
 ])
@@ -1011,94 +1026,209 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 
  [2]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 106.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/futs/b/sc' tried instead on input line 106.
- [3]
-[4
+(Font)              Font shape `T1/futs/b/sc' tried instead on input line 126.
+
+(./Chapters/DRIE.tex [3] [4
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 112
+<Figures/DRIE/CPW.png, id=21, 339.669pt x 158.5122pt>
+File: Figures/DRIE/CPW.png Graphic file (type png)
+
+<use Figures/DRIE/CPW.png>
+Package pdftex.def Info: Figures/DRIE/CPW.png used on input line 40.
+(pdftex.def)             Requested size: 181.18439pt x 84.55527pt.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 42.
+ [5 <./Figures/DRIE/CPW.png>] [6] [7] [8]
+<Figures/DRIE/All_set4.png, id=41, 725.109pt x 311.2428pt>
+File: Figures/DRIE/All_set4.png Graphic file (type png)
+
+<use Figures/DRIE/All_set4.png>
+Package pdftex.def Info: Figures/DRIE/All_set4.png used on input line 219.
+(pdftex.def)             Requested size: 181.18439pt x 77.76776pt.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 221.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 221.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 221.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 221.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 221.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 221.
+ [9]
+<Figures/DRIE/resonator_amplitude.png, id=45, 433.62pt x 289.08pt>
+File: Figures/DRIE/resonator_amplitude.png Graphic file (type png)
+
+<use Figures/DRIE/resonator_amplitude.png>
+Package pdftex.def Info: Figures/DRIE/resonator_amplitude.png used on input lin
+e 242.
+(pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
+
+<Figures/DRIE/resonator_complex.png, id=46, 433.62pt x 289.08pt>
+File: Figures/DRIE/resonator_complex.png Graphic file (type png)
+
+<use Figures/DRIE/resonator_complex.png>
+Package pdftex.def Info: Figures/DRIE/resonator_complex.png used on input line 
+246.
+(pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/DRIE/Qi_vs_n_photon.png, id=47, 433.62pt x 289.08pt>
+File: Figures/DRIE/Qi_vs_n_photon.png Graphic file (type png)
+
+<use Figures/DRIE/Qi_vs_n_photon.png>
+Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon.png used on input line 262
 .
- (c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd
+(pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
+ [10 <./Figures/DRIE/All_set4.png>]
+<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=52, 433.62pt x 289.
+08pt>
+File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
+ png)
+ <use Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>
+Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png
+ used on input line 284.
+(pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
+ [11 <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex
+.png>]
+[12 <./Figures/DRIE/Qi_vs_n_photon.png> <./Figures/DRIE/Qi_vs_n_photon_temperat
+ure_dependence.png>]
+<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=64, 433.62pt x 289.08
+pt>
+File: Figures/DRIE/Temperature tracking drop - Qi vs T.png Graphic file (type p
+ng)
+ <use Figures/DRIE/Temperature tracking drop - Qi vs T.png>
+Package pdftex.def Info: Figures/DRIE/Temperature tracking drop - Qi vs T.png u
+sed on input line 305.
+(pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
+
+<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=65, 433.62pt x 2
+89.08pt>
+File: Figures/DRIE/Temperature tracking - no drop - Qi vs T.png Graphic file (t
+ype png)
+ <use Figures/DRIE/Temperature tracking - no drop - Qi vs T.png>
+Package pdftex.def Info: Figures/DRIE/Temperature tracking - no drop - Qi vs T.
+png used on input line 309.
+(pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
+
+[13 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
+mperature tracking - no drop - Qi vs T.png>]
+<Figures/DRIE/Temperature tracking - f0 vs T.png, id=71, 505.89pt x 361.35pt>
+File: Figures/DRIE/Temperature tracking - f0 vs T.png Graphic file (type png)
+
+<use Figures/DRIE/Temperature tracking - f0 vs T.png>
+Package pdftex.def Info: Figures/DRIE/Temperature tracking - f0 vs T.png used o
+n input line 321.
+(pdftex.def)             Requested size: 326.13744pt x 232.96144pt.
+ [14 <./Figures/DRIE/Temperature tracking - f0 vs T.png>]
+<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=76, 505.
+89pt x 361.35pt>
+File: Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png Graphic
+ file (type png)
+
+<use Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png>
+Package pdftex.def Info: Figures/DRIE/Temperature increase tracking - f0 vs T w
+ith fit.png used on input line 335.
+(pdftex.def)             Requested size: 317.07614pt x 226.4883pt.
+
+[15 <./Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png>])
+[16] [17
+
+
+] (./Chapters/appendix.tex
+Appendix A.
+<Figures/Noise/thevenin.png, id=87, 495.65175pt x 345.08925pt>
+File: Figures/Noise/thevenin.png Graphic file (type png)
+
+<use Figures/Noise/thevenin.png>
+Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
+(pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
+
+<Figures/Noise/norton.png, id=88, 552.8655pt x 280.6485pt>
+File: Figures/Noise/norton.png Graphic file (type png)
+
+<use Figures/Noise/norton.png>
+Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
+(pdftex.def)             Requested size: 221.95676pt x 112.6685pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18
+
+] [19 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=96, 1118.9805pt x 420.3705pt>
+File: Figures/Noise/Noise model.png Graphic file (type png)
+
+<use Figures/Noise/Noise model.png>
+Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
+(pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
+ [20 <./Figures/Noise/Noise model.png>]
+[21] [22]
+<Figures/Noise/noise_temperature_versus_power.png, id=107, 433.62pt x 289.08pt>
+File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
+<use Figures/Noise/noise_temperature_versus_power.png>
+Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
+on input line 188.
+(pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
+ [23 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=112, 433.62pt x 
+289.08pt>
+File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
+ype png)
+ <use Figures/Noise/noise_temperature_versus_power_detailed.png>
+Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
+png used on input line 201.
+(pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
+
+[24 <./Figures/Noise/noise_temperature_versus_power_detailed.png>] [25]
+Appendix B.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 233
+.
+(c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [5] [6
-
-] [7]
-[8
+ [26
 
 ]
-Chapter 1.
+Appendix C.
+) (./thesis.bbl [27
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
-
- []
-
-[9
-
-] [10]
-Chapter 2.
-[11
-
-] [12] [13] [14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
-
- []
-
-[17] [18] [19] [20] [21] [22] [23] [24]
-Chapter 3.
-[25
-
-]
-Chapter 4.
-[26
-
-] [27
-
-
-]
-Appendix A.
-[28
-
-]
-Appendix B.
-(./thesis.bbl [29
+] [28
 
 ]) 
 AED: lastpage setting LastPage
-[30
-
-]
-
-Package caption Warning: Unused \captionsetup[sub] on input line 20.
-See the caption package documentation for explanation.
-
-(./thesis.aux) ) 
+[29] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15858 strings out of 493109
- 308426 string characters out of 6138586
- 453655 words of memory out of 5000000
- 18844 multiletter control sequences out of 15000+600000
- 154514 words of font info for 291 fonts, out of 8000000 for 9000
+ 16154 strings out of 493109
+ 314987 string characters out of 6138586
+ 455563 words of memory out of 5000000
+ 19059 multiletter control sequences out of 15000+600000
+ 186995 words of font info for 373 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,43p,10406b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/tex
-live/2014/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/201
-4/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fon
-ts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
-adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/pu
-tbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/t
-exlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (31 pages, 141347 bytes).
+ 50i,13n,54p,10406b,1186s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c
+:/texlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texliv
+e/2014/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2014/te
+xmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dis
+t/fonts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/t
+ype1/adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utop
+ia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (30 pages, 2388019 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 158 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 47617 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 59980 words of extra memory for PDF output out of 61914 (max. 10000000)
 

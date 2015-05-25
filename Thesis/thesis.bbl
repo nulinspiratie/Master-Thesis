@@ -1,14 +1,76 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{motzoi2009simple}
-F~Motzoi, JM~Gambetta, P~Rebentrost, and Frank~K Wilhelm.
-\newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
-\newblock {\em Physical review letters}, 103(11):110501, 2009.
+\bibitem{barends2008contribution}
+R~Barends, HL~Hortensius, T~Zijlstra, JJA Baselmans, SJC Yates, JR~Gao, and
+  TM~Klapwijk.
+\newblock Contribution of dielectrics to frequency and noise of nbtin
+  superconducting resonators.
+\newblock {\em Applied Physics Letters}, 92(22):223502, 2008.
 
-\bibitem{Reed}
-Matthew~D. Reed.
-\newblock {\em Entanglement and Quantum Error Correction with Superconducting
-  Qubits, year =}.
-\newblock PhD thesis.
+\bibitem{Barends}
+Rami Barends.
+\newblock {\em Photon-detecting superconducting resonators}.
+\newblock PhD thesis, Delft University of Technology, 2009.
+
+\bibitem{DRIE}
+A.~Bruno, G.~de~Lange, K.~van~der Enden, S.~Asaad, N.~Langford, and L.~DiCarlo.
+\newblock Extending single-photon relaxation time in superconducting resonators
+  by surface treatment and deep etching of silicon substrates.
+\newblock Unpublished.
+
+\bibitem{gao2008experimental}
+Jiansong Gao, Miguel Daal, Anastasios Vayonakis, Shwetank Kumar, Jonas
+  Zmuidzinas, Bernard Sadoulet, Benjamin~A Mazin, Peter~K Day, and Henry~G
+  Leduc.
+\newblock Experimental evidence for a surface distribution of two-level systems
+  in superconducting lithographed microwave resonators.
+\newblock {\em Applied Physics Letters}, 92(15):152505--152505, 2008.
+
+\bibitem{Geerlings}
+Kurtis~L. Geerlings.
+\newblock {\em Improving Coherence of Superconducting Qubits and Resonators}.
+\newblock PhD thesis, Yale University, 2013.
+
+\bibitem{martinis2014ucsb}
+John~M Martinis and A~Megrant.
+\newblock Ucsb final report for the csq program: Review of decoherence and
+  materials physics for superconducting qubits.
+\newblock {\em arXiv preprint arXiv:1410.5793}, 2014.
+
+\bibitem{Mazin}
+Benjamin~A. Mazin.
+\newblock {\em Microwave Kinetic Inductance Detectors}.
+\newblock PhD thesis, California Institute of Technology, 2004.
+
+\bibitem{nsanzineza2014trapping}
+I~Nsanzineza and BLT Plourde.
+\newblock Trapping a single vortex and reducing quasiparticles in a
+  superconducting resonator.
+\newblock {\em arXiv preprint arXiv:1405.0256}, 2014.
+
+\bibitem{plourde2009microwave}
+Britton Plourde, C~Song, TW~Heitmann, MP~DeFeo, and Kang Yu.
+\newblock Microwave response of vortices in superconducting thin films of re
+  and al.
+\newblock 2009.
+
+\bibitem{sage2011study}
+Jeremy~M Sage, Vladimir Bolkhovsky, William~D Oliver, Benjamin Turek, and
+  Paul~B Welander.
+\newblock Study of loss in superconducting coplanar waveguide resonators.
+\newblock {\em Journal of Applied Physics}, 109(6):063915, 2011.
+
+\bibitem{vasilescu2006electronic}
+Gabriel Vasilescu.
+\newblock {\em Electronic noise and interfering signals: principles and
+  applications}.
+\newblock Springer, 2006.
+
+\bibitem{wenner2011surface}
+J~Wenner, R~Barends, RC~Bialczak, Yu~Chen, J~Kelly, Erik Lucero, Matteo
+  Mariantoni, A~Megrant, PJJ O’Malley, D~Sank, et~al.
+\newblock Surface loss simulations of superconducting coplanar waveguide
+  resonators.
+\newblock {\em Applied Physics Letters}, 99(11):113513, 2011.
 
 \end{thebibliography}
