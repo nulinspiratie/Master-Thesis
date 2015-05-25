@@ -64,7 +64,7 @@ One end is usually capacitively coupled to a feedline and has an open end, while
 % Explain why one wants a quality factor that is as high as possible
 The quality of a resonator can be quantified through its quality factor. Generally speaking, the quality factor of a resonator determines the ratio between energy stored in a resonator and the energy leaking away from the resonator. For cQED resonators this corresponds to the rate at which photons dissipate from the resonator. A high quality factor corresponds to a low dissipation rate.
 
-The quality factor can also be defined in two different ways \cite[p.~23-24]{Mazin}:
+The quality factor can also be defined in two different ways \cite[pp.23-24]{Mazin}:
 
 \begin{equation}
     Q = \omega_0 \tau_1 = \omega_0 / \Delta \omega
@@ -87,7 +87,7 @@ The total quality factor of the resonator is known as the loaded quality factor 
 From equation \ref{eq:Q_l} it can be seen that if the difference between $Q_c$ and $Q_i$ is large, then the loaded quality factor $Q_l$ will be approximately equal to the minimum of the two.
 
 
-For a quarter wave resonator the amplitude of transmission has a minimum $S_{21}^{min}$, given by \cite[p.~29]{Mazin}:
+For a quarter wave resonator the amplitude of transmission has a minimum $S_{21}^{min}$, given by \cite[p29]{Mazin}:
 \begin{equation}
     S_{21}^{min} = \frac{Q_c}{Q_c + Q_i}
     \label{eq:S21min}
@@ -95,7 +95,7 @@ For a quarter wave resonator the amplitude of transmission has a minimum $S_{21}
 
 With knowledge of the resonant frequency $\omega_0$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the intrinsic quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors,to get an accurate estimate of both quality factors, they should have a comparable value.
 
-One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. This qubit therefore experiences dissipation due to its coupling to the resonator, known as the Purcell effect. The result of dissipation is that when the qubit is in its excited state, it will relax to its ground state. The amount of relaxation due to the Purcell effect can be quantified through its relaxation time $T_1^\text{Purcell}$. The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor \cite[p.~22]{Geerlings}. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
+One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. This qubit therefore experiences dissipation due to its coupling to the resonator, known as the Purcell effect. The result of dissipation is that when the qubit is in its excited state, it will relax to its ground state. The amount of relaxation due to the Purcell effect can be quantified through its relaxation time $T_1^\text{Purcell}$. The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor \cite[p~22]{Geerlings}. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
 
 
 
@@ -127,9 +127,9 @@ In the low power, low temperature regime, TLS reside mostly in their ground stat
 
 \subsubsection{Quasiparticles}
 
-Another source of dissipation for resonators is due to quasiparticles being present in the superconducting layer. When a Cooper-pair is broken up, Bogoliubov quasiparticles are formed \cite[p.~16]{Barends}. Once formed, the quasiparticles have a finite lifetime, depending on the temperature of the system. These quasiparticles can have either electron-like or hole-like properties. They are a source of dissipation for resonators, since they are non-superconducting and therefore cause the surface impedance to be slightly resistive \cite[p.~18]{Mazin}.
+Another source of dissipation for resonators is due to quasiparticles being present in the superconducting layer. When a Cooper-pair is broken up, Bogoliubov quasiparticles are formed \cite[p16]{Barends}. Once formed, the quasiparticles have a finite lifetime, depending on the temperature of the system. These quasiparticles can have either electron-like or hole-like properties. They are a source of dissipation for resonators, since they are non-superconducting and therefore cause the surface impedance to be slightly resistive \cite[p18]{Mazin}.
 
-The breaking up of Cooper-pairs is due to excitations. These excitations can either be thermal, or due to photon absorption. Therefore an increase in temperature or an increase in photon density will result in a higher density of quasiparticles. The quasiparticle density increases exponentially with increasing temperature \cite[p.~44]{Mazin}.
+The breaking up of Cooper-pairs is due to excitations. These excitations can either be thermal, or due to photon absorption. Therefore an increase in temperature or an increase in photon density will result in a higher density of quasiparticles. The quasiparticle density increases exponentially with increasing temperature \cite[p44]{Mazin}.
 
 % \begin{itemize}
 %     \item Quasiparticle excitation energy $E = \xi^2 + \Delta ^2$,
@@ -140,7 +140,7 @@ The breaking up of Cooper-pairs is due to excitations. These excitations can eit
 %         This technique is used to create MKID detectors \cite{Gao}
 %     \item "[Surface impedance] change is caused by quasiparticles blocking
 %         the Cooper pairs from occupying some of the electron states (through the exclusion principle), which
-%         modifies the effective pairing energy and reduces the density of pairs."\cite[p.~3]{Mazin}
+%         modifies the effective pairing energy and reduces the density of pairs."\cite[p3]{Mazin}
 %     \item A lot of information in thesis by Lutchyn \cite{Lutchyn}
 % \end{itemize}
 
@@ -251,7 +251,7 @@ Unless stated otherwise, all measurements were performed with the fridge at base
     \label{fig:resonator}
 \end{figure}
 
- In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. As one can see, the resonator has a shape similar to a Lorentzian dip. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p.~192]{Geerlings}. This could be caused by impedance mismatching.
+ In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. As one can see, the resonator has a shape similar to a Lorentzian dip. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p192]{Geerlings}. This could be caused by impedance mismatching.
 
  % TODO
  % Say something about complex data
@@ -330,7 +330,7 @@ Aside from the internal quality factor, another quantity of interest is the reso
 
 Between the cooldown and warm-up the resonance frequency seems to have shifted by roughly \SI{500}{Hz}. As the sample was kept at \SI{15}{\milli \kelvin}, it is unlikely that this decrease in resonance frequency is due to degradation of the sample. One possible explanation is that this change in resonance frequency is due to phase noise, which is known to shift the resonance frequency of the resonator. Further measurements are, however, required to determine if this is the case.
 
-The decrease in resonance frequency at higher temperatures can be explained by the presence of quasiparticles, which increase the kinetic inductance \cite[p.~91]{Geerlings}. The resonance frequency is inversely proportional to the square root of the total conductance \cite{barends2008contribution}, and so an increase in kinetic inductance leads to a decrease in resonance frequency. For measurements done by Barends et al. \cite{barends2008contribution}, the change in resonance frequency due to changes in the kinetic inductance seem to roughly correspond with the decrease in center frequency measured in Figure~\ref{fig:temperature_tracking_f0}.
+The decrease in resonance frequency at higher temperatures can be explained by the presence of quasiparticles, which increase the kinetic inductance \cite[p91]{Geerlings}. The resonance frequency is inversely proportional to the square root of the total conductance \cite{barends2008contribution}, and so an increase in kinetic inductance leads to a decrease in resonance frequency. For measurements done by Barends et al. \cite{barends2008contribution}, the change in resonance frequency due to changes in the kinetic inductance seem to roughly correspond with the decrease in center frequency measured in Figure~\ref{fig:temperature_tracking_f0}.
 
 \begin{figure}[h]
     \centering

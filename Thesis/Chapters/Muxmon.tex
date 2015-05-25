@@ -367,11 +367,6 @@
 
         After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
 
-
-
-
-
-
     \section{Time-domain measurements}
       \subsection{Qubit control}
         So far the measurements described have all dealt with continuous tones being applied and measuring the response in the transmission. These are crude measurements, that are nevertheless able to determine some properties of the qubit and resonator, such as their frequencies. However, to find more detailed properties of the qubits, such as their coherence times, one cannot apply a continuous tone, that drives some incoherent qubit population. Instead well-calibrated pulses are required, which modify the state of the qubit in a precise manner, corresponding to gates being applied to the qubit. These types of measurements are called time-domain measurements, as they require precise pulse timing.
@@ -389,6 +384,7 @@
 
         \textbf{TODO:}
         \begin{itemize}
+          \item Explain about the measurement process, and that many averages need to be performed to get an accurate estimate of the qubit state $\sqrt{N}$. This is important for single-shot measurements later on
           \item Explain more on Z projection
           \item Explain more on non-demolition.
           \item Signal quadrature determines the rotation angle
@@ -441,11 +437,15 @@
 
 
         \subsubsection{Qubit dephasing}
-          Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate. A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit.
+
+
+          Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
+
+          A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit.
 
           At the moment we ignore effects such as decoherence and gate errors. The first pulse results in the qubit being at the equator. If there were no precession, the result of the second pulse is that the qubit is in its excited-state. However, any detuning $\Delta$ causes the state of the qubit to deviate from the excited-state. In fact, after half a period the second pulse results in the qubit being in its ground-state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will result yet again in the qubit being in its excited-state. In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$.
 
-          In reality however, the qubit does suffer from decoherence. Especially phase noise, characterized by the dephasing time $T_2^*$, is noticeable in a Ramsey measurement. Phase noise can be seen as fluctuations in the qubit frequency. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p.~126]{Sears}. The result of dephasing is that the oscillations will decrease in amplitude as the wait time is increased. For a Ramsey measurement the excited-state population $P_1$ as a function of wait time is given by:
+          In reality however, the qubit does suffer from decoherence. Especially phase noise, characterized by the dephasing time $T_2^*$, is noticeable in a Ramsey measurement. Phase noise can be seen as fluctuations in the qubit frequency. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$ \cite[pp56-58]{Bishop}, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}. The result of dephasing is that the oscillations will decrease in amplitude as the wait time is increased. For a Ramsey measurement the excited-state population $P_1$ as a function of wait time is given by:
 
           \begin{equation}
             P_1(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
@@ -503,20 +503,22 @@
 
         \section{}
 
-
       \subsection{Measuring single shots}
 
 
 
-
-
   \chapter{Calibration routines}
-
+    \textbf{TODO:} Introduction
     \section{Accurate frequency estimation}
+
+    \section{Drive amplitude calibration}
+    \section{Readout calibration}
+    \section{Drag amplitude calibration}
     \section{Motzoi parameter}
     \section{AllXY measurement}
     \section{Mixer calibration}
       \label{sec:Mixer calibration}
+    \section{Duplexer phase calibration}
 
   \chapter{Randomized benchmarking}
 

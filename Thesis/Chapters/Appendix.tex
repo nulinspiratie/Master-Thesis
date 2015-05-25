@@ -16,7 +16,7 @@
 
 When performing measurements one is faced with the reality that no component is ideal. When a signal passes through the different parts of a set-up, noise is constantly being added. Noise is the term given for all the random fluctuations that are added to the signal. These fluctuations are the cumulative result of several noise source contributions.
 
-Thermal noise is one of the most common sources of noise. It is the result of the random thermal fluctuations of electrons. It is an example of frequency-independent noise, also known as white noise. Noise sources can also be frequency-dependent, such as TLS, as discussed in Chapter~\ref{RES-chapter:Resonators}. This is an example of $1/f$-noise: the amount of noise added increases with decreasing frequency. In fact, truly frequency-independent noise does not exist, as even white noise has been observed to decrease at extremely high frequencies (\SI{\sim e15}{\hertz}). At these frequencies a quantum correction needs to be added \cite[p.~50]{vasilescu2006electronic}.
+Thermal noise is one of the most common sources of noise. It is the result of the random thermal fluctuations of electrons. It is an example of frequency-independent noise, also known as white noise. Noise sources can also be frequency-dependent, such as TLS, as discussed in Chapter~\ref{RES-chapter:Resonators}. This is an example of $1/f$-noise: the amount of noise added increases with decreasing frequency. In fact, truly frequency-independent noise does not exist, as even white noise has been observed to decrease at extremely high frequencies (\SI{\sim e15}{\hertz}). At these frequencies a quantum correction needs to be added \cite[p50]{vasilescu2006electronic}.
 
 When performing measurements one important question to ask is how much noise is being contributed to the signal. In this chapter a model is presented for the general set-up used for measuring superconducting resonators and qubits. Using this model it is possible to characterize the amount of noise by determining its associated noise temperature. Finally, this model is applied to the set-up used to characterize the resonators presented in Chapter~\ref{RES-chapter:Resonators}.
 
@@ -96,7 +96,7 @@ We can include the noise added by the amplifier in the noise voltage source, in 
 
 We can associate an effective noise temperature to the noise voltage source. The noise temperature is defined as the temperature at which a resistor would produce an equal amount of noise. Note that, since we are comparing the system to a resistor, the noise needs to have an (approximately) white spectrum.
 
-According to Nyquist's theorem \cite[p.~47]{vasilescu2006electronic}, if the system experiences white noise, and is in thermal equilibrium, the root-mean square noise voltage $\vrms$ is given by:
+According to Nyquist's theorem \cite[p47]{vasilescu2006electronic}, if the system experiences white noise, and is in thermal equilibrium, the root-mean square noise voltage $\vrms$ is given by:
 
 \begin{equation}
     \vrms = \sqrt{\vsq} = 4 k_B T R \Delta f
@@ -134,7 +134,7 @@ During amplification not only the signal is amplified with gain G: the noise is 
 
 Note that in Equation~\ref{eqn:noise power spectral density amplification}, the gain $G$ is squared. This is due to the fact that the noise power spectral density depends quadratically on the root-mean square noise voltage (Equation~\ref{eqn:noise spectral density definition}).
 
-In our actual set-up the amplification occurs in multiple stages. Aside from amplifying the signal and its noise, at each stage additional noise, originating from the amplifier itself, is added as well. This added noise is then also amplified in the next amplification stage.   Therefore it is always best to have the amplifier with highest gain and lowest noise temperature as the first amplifier in the chain. For more information see Friis formula \cite[p.~103]{vasilescu2006electronic}.
+In our actual set-up the amplification occurs in multiple stages. Aside from amplifying the signal and its noise, at each stage additional noise, originating from the amplifier itself, is added as well. This added noise is then also amplified in the next amplification stage.   Therefore it is always best to have the amplifier with highest gain and lowest noise temperature as the first amplifier in the chain. For more information see Friis formula \cite[p103]{vasilescu2006electronic}.
 
 
 
@@ -154,7 +154,7 @@ As can be seen from Equation~\ref{eqn:mixer}, the output signal contains both th
 
 In the case of homodyne detection the signal at the frequency of interest is downconverted to DC. However, the signal at other frequencies have not disappeared; in the mixer these have also shifted in frequency. Since the signal of interest is at DC, a low-pass filter can be used to filter out signal above a certain frequency.
 
-The frequency above which a low-pass filter will filter out the signal is defined by its cut-off frequency $f_\text{c}$. The cut-off frequency $f_\text{c}$ is the frequency at which the signal is attenuated by \SI{3}{\decibel}. For first-order low-pass filters the noise bandwidth $\Delta f$ is related to the filter cut-off frequency $f_\text{c}$ by \cite[p.~81]{vasilescu2006electronic}:
+The frequency above which a low-pass filter will filter out the signal is defined by its cut-off frequency $f_\text{c}$. The cut-off frequency $f_\text{c}$ is the frequency at which the signal is attenuated by \SI{3}{\decibel}. For first-order low-pass filters the noise bandwidth $\Delta f$ is related to the filter cut-off frequency $f_\text{c}$ by \cite[p81]{vasilescu2006electronic}:
 
 \begin{equation}
     \Delta f = \frac{\pi}{2} f_\text{c}
