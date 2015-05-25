@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 13:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1159,7 +1159,7 @@ Chapter 2.
 [23
 
 ] [24] [25] [26] [27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
@@ -1246,10 +1246,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16198 strings out of 493109
- 315697 string characters out of 6138586
- 455656 words of memory out of 5000000
- 19087 multiletter control sequences out of 15000+600000
+ 16199 strings out of 493109
+ 315715 string characters out of 6138586
+ 455669 words of memory out of 5000000
+ 19088 multiletter control sequences out of 15000+600000
  203364 words of font info for 391 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,54p,10406b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1261,7 +1261,7 @@ c/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
 texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
 xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (54 pages, 2464557 bytes).
+Output written on thesis.pdf (54 pages, 2464597 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams

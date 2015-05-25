@@ -117,7 +117,7 @@
       The first step is to look for signs of life. These manifest themselves as resonance frequencies of the resonators and the qubits that are coupled to them. As we are not yet interested in the properties of the resonators and qubits which can only be obtained through measurements with accurately timed pulses, we send continuous tones through the feedline, and measure deviations in the transmission. These measurements are known as continuous-wave measurements
 
       \subsection{Scanning for resonators}
-      \label{sec:resonator-scan}
+        \label{sec:resonator-scan}
         Since communication with the qubits is mediated through their coupling to resonators, the first step is to find these resonators. This is done using a transmission measurement, in combination with heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
 
         There is one difference in measuring a resonator when there is a qubit coupled to it. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{Reed}:
@@ -224,6 +224,7 @@
         \end{itemize}
 
       \subsection{Scanning for qubits}
+        \label{sec:spectroscopy}
         Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find the qubit.
 
         The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency. If, on the other hand, the detuning is comparable to the coupling strength ($\Delta \sim g$), the qubit and resonator are hybridized, and experience an avoided crossing. In such cases a normal transmission measurement suffices.
@@ -318,6 +319,23 @@
         \begin{itemize}
           \item Tracked spectroscopy of qubit and resonator
         \end{itemize}
+
+      \subsection{Finding the qubit's second transition}
+        Once the qubit's grequency is known, it is possible to find the qubit's excited-state to second-excited-state transition $\omega_q^{12}$, which shall be referred to as the 12-transition. The anharmonicity $\alpha$ is then given by the difference in transition frequencies: $\alpha = \omega_q^{12} - \omega_q$.
+
+        The 12-transition can be found using three-tone spectroscopy, in a manner similar to two-tone spectropscopy measurement explained in section~\ref{sec:spectroscopy}. The following three tones are used in three-tone-spectroscopy:
+
+        \begin{enumerate}
+          \item A drive tone with varying frequency frequency $\omega_\text{drive}^{12}$
+          \item A second drive tone with fixed frequency at the qubit frequency $\omega_\text{drive}^{01} = \omega_\text{drive}$
+          \item A hird tone at the resonator frequency when the qubit is in the ground-state
+        \end{enumerate}
+
+
+
+        \begin{itemize}
+           \item Coupling energy.
+         \end{itemize}
 
       \subsection{Flux matrix}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. The effect that the current passing through flux-bias lines has on the frequencies of the different qubits can be decoupled by correcting the flux cross-coupling effects. This is done by implementing a flux matrix.
@@ -474,52 +492,17 @@
             \item Echo measurement.
           \end{itemize}
 
+        \section{}
+
 
       \subsection{Measuring single shots}
 
 
 
 
-  * [ ]Explanation of gates
-  * [ ]Motzoi parameter
-  * [ ]Calibrating drive amplitude using Rabi
-  * [ ]Calibrating frequency using Ramsey
-  *
-    * Conflict with next section on accurate tune-up?
-
-  * [ ]Measuring decoherence
-  *
-    * Relaxation
-    *
-      * T1 measurement
-
-    * Dephasing
-    *
-      * Ramsey measurement (all noise)
-      * Echo measurement (fast noise)
-
-    * Change with frequency
-    *
-      * Ideally T2 is 2*T1
-      * T2 rapidly decreases as moving away from sweet-spot
-
-
-  * [ ]Single-shot measurements
-  *
-    * Able to see relaxation and thermal excitation
-
-  * [ ]Second excited state
-  *
-    * Similar to three-tone spectroscopy
-    * Nearly identical position in IQ-plane as first excited state, but less relaxation into ground state
-    * Since time-trace is averaged, the final signal is therefore further away from the ground state in the IQ-plane
-
-  * [ ]Crosstalk / cross-coupling?
-
-
-
 
   \chapter{Calibration routines}
+
     \section{Accurate frequency estimation}
     \section{Motzoi parameter}
     \section{AllXY measurement}
