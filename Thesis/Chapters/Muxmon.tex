@@ -456,14 +456,22 @@
           \end{itemize}
 
         \subsubsection{Echo measurement}
+          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, whilst others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
 
+          An Echo measurement is performed by sending two $X_{\pi/2}$ pulses separated by a wait time $\tau$. In the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. An Echo measurement is quite similar to a Ramsey measurement, but the crucial difference is the refocusing $X_{\pi}$ pulse. This has th
+
+           that in the middle of this wait time, at $\tau/2$, an $_{\pi}$ pulse is applied, and the final pulse is an $X_{\pi/2}$ pulse instead of an $X_{-\pi/2}$.
+
+
+is quite similar to a Ramsey measurement, where an $X_{\pi/2}$ pulse is sent, and after a wait time $\tau$ an $X_{-\pi/2}$ pulse is sent.
           \begin{itemize}
+            \item How to distinguish both effects? Echo measures fast, is everything else slow? How is this quantified?
             \item Refocusing
+            \item quasi-static noise
+            \item can also use multiple refocusing pulses
           \end{itemize}
 
 
-      \subsection{Motzoi parameter}
-      \subsection{AllXY measurement}
       \subsection{Measuring single shots}
 
 
@@ -510,6 +518,8 @@
 
   \chapter{Calibration routines}
     \section{Accurate frequency estimation}
+    \section{Motzoi parameter}
+    \section{AllXY measurement}
     \section{Mixer calibration}
       \label{sec:Mixer calibration}
 
