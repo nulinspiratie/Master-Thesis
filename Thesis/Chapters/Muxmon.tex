@@ -1,4 +1,4 @@
-
+%!TEX root = ../thesis.tex
 \part{Muxmon experiment}
 
   \textbf{large TODO:}
@@ -321,21 +321,30 @@
         \end{itemize}
 
       \subsection{Finding the qubit's second transition}
-        Once the qubit's grequency is known, it is possible to find the qubit's excited-state to second-excited-state transition $\omega_q^{12}$, which shall be referred to as the 12-transition. The anharmonicity $\alpha$ is then given by the difference in transition frequencies: $\alpha = \omega_q^{12} - \omega_q$.
+        Once the qubit's grequency is known, it is possible to find the qubit's excited-state to second-excited-state transition $\omega_q^{12}$, which shall be referred to as the 12-transition. For consistent notation we shall temporarily denote the qubit's ground-state to excited-state transition frequency as $\omega_q^{01}$. The anharmonicity $\alpha$ is then given by the difference in transition frequencies: $\alpha = \omega_q^{12} - \omega_q^{01}$. Knowledge of the anharmonicity $\alpha$ allows determination of the coupling energy $E_c$ through \textbf{TODO:}.
 
         The 12-transition can be found using three-tone spectroscopy, in a manner similar to two-tone spectropscopy measurement explained in section~\ref{sec:spectroscopy}. The following three tones are used in three-tone-spectroscopy:
 
         \begin{enumerate}
-          \item A drive tone with varying frequency frequency $\omega_\text{drive}^{12}$
-          \item A second drive tone with fixed frequency at the qubit frequency $\omega_\text{drive}^{01} = \omega_\text{drive}$
-          \item A hird tone at the resonator frequency when the qubit is in the ground-state
+          \item A drive tone with fixed frequency $\omega_\text{drive}^{01}$ at the qubit frequency $\omega_q^{01}$.
+          \item A drive tone with varying frequency $\omega_\text{drive}^{12}$ to scan for the 12-transition.
+          \item A third tone at the resonator frequency when the qubit is in the excited-state.
         \end{enumerate}
 
+        The first drive tone with frequency $\omega_\text{drive}^{01}$ is used the drive the qubit to the excited-state. Since the first drive tone results in the excited-state being (partially) populated, the second tone with frequency $\omega_\text{drive}^{12}$ is then able to drive the qubit from the excited-state to the second-excited-state. The transmission should therefore change when $\omega_\text{drive}^{12}$ is on resonance with $\omega_q^{12}$.
+
+        In principle the first drive tone with frequency $\omega_\text{drive}^{01}$ can be kept fixed at the 01-transition frequency $\omega_q^{01}$. However, by performing a two-dimensional scan, where $\omega_\text{drive}^{01}$ is also varied in a small region around $\omega_q^{01}$, the 12-transition becomes much clearer. This can be seen in \textbf{TODO:} Figure. Here a shift in transmission is observed when $\omega_\text{drive}^{01} = \omega_q^{01}$. This corresponds to the 12-transmission frequency $\oemg_q^{12}$. Additionally, a transmission shift is observed at a line crossing $\omega_q^{12}$. At this line $\omega_q^{01} + \omega_q^{12} = \omega_q^{02}$, resulting in some population in the second-excited state.
+
+        Once the 12-transition transition is found, and hence the qubit's anharmonicity $\alpha$, it is the possible to calculate the coupling energy $E_c$. \textbf{TODO:}.
+
+        Finding the resonator frequency when the qubit is in the excited-state can be tricky, as pulsed spectroscopy is usually required. Nevertheless a rough estimation can be found using a modified version of spectroscopy, where the drive tone $\omega_\text{drive}$ is kept fixed, whilst the resonator frequency is swept. The lower peak will be a rough estimation of the resonator frequency when the qubit is in the excited-state. Alternatively it is also possible to use the resonator frequency when the qubit is in the ground-state, although this will reduce the contrast between driving on-resonance and driving off-resonance.
+
+        It is worthwhile to note that three-tone spectroscopy produces much more accurate results when using pulsed spectroscopy, as the difference in transmission is generally small compared to two-tone spectroscopy.
 
 
         \begin{itemize}
-           \item Coupling energy.
-         \end{itemize}
+           \item Coupling energy through solving Hamiltonian (see \cite{Reed}) .
+        \end{itemize}
 
       \subsection{Flux matrix}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. The effect that the current passing through flux-bias lines has on the frequencies of the different qubits can be decoupled by correcting the flux cross-coupling effects. This is done by implementing a flux matrix.

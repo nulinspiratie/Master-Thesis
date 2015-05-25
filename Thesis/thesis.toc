@@ -32,14 +32,14 @@
 \contentsline {subsubsection}{\numberline {2.1.4.2}Avoided crossing}{29}
 \contentsline {subsection}{\numberline {2.1.5}Tracking the qubits}{30}
 \contentsline {subsection}{\numberline {2.1.6}Finding the qubit's second transition}{31}
-\contentsline {subsection}{\numberline {2.1.7}Flux matrix}{31}
+\contentsline {subsection}{\numberline {2.1.7}Flux matrix}{32}
 \contentsline {section}{\numberline {2.2}Time-domain measurements}{33}
 \contentsline {subsection}{\numberline {2.2.1}Qubit control}{33}
 \contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{35}
-\contentsline {subsection}{\numberline {2.2.3}Qubit decoherence}{35}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Qubit relaxation}{35}
+\contentsline {subsection}{\numberline {2.2.3}Qubit decoherence}{36}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Qubit relaxation}{36}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Qubit dephasing}{36}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Echo measurement}{37}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Echo measurement}{38}
 \contentsline {section}{\numberline {2.3}}{38}
 \contentsline {subsection}{\numberline {2.3.1}Measuring single shots}{38}
 \contentsline {chapter}{\numberline {3}Calibration routines}{39}
