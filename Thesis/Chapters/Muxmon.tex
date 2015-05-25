@@ -437,23 +437,13 @@
 
 
         \subsubsection{Qubit dephasing}
-
-
-          Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
-
-          \textbf{TODO:} Say something about dephasing
           Aside from relaxation, the qubit also experiences another form of decoherence, namely dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency. It is characterized by the dephasing time $T_2^*$. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$ \cite[pp56-58]{Bishop}, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}. Qubit dephasing results in a random phase being added to the qubit, and can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
 
-          One method of measuring the dephasing time $T_2^*$ is by performing a Ramsey measurement. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit.
+          One method of measuring the dephasing time $T_2^*$ is by performing a Ramsey measurement. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
-          The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
+          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. At the moment we ignore effects such as decoherence and gate errors. The first pulse results in the qubit being at the equator. If there were no precession, the result of the second pulse is that the qubit is in its excited-state. However, any detuning $\Delta$ causes the state of the qubit to deviate from the excited-state. In fact, after half a period the second pulse results in the qubit being in its ground-state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will result yet again in the qubit being in its excited-state.
 
-          In a Ramsey measurement, aside from experiencing an exponential decay,
-The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$.
-
-          At the moment we ignore effects such as decoherence and gate errors. The first pulse results in the qubit being at the equator. If there were no precession, the result of the second pulse is that the qubit is in its excited-state. However, any detuning $\Delta$ causes the state of the qubit to deviate from the excited-state. In fact, after half a period the second pulse results in the qubit being in its ground-state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will result yet again in the qubit being in its excited-state. In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$.
-
-          For a Ramsey measurement the excited-state population $P_1$ as a function of wait time is given by:
+          In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$. Furthermore, dephasing causes this oscillation to decay exponentially, at a rate $1/T_2^*$. The excited-state population $P_1$ as a function of wait time is given by:
 
           \begin{equation}
             P_1(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
@@ -464,24 +454,11 @@ The state of the qubit then starts to precess around the equator, with a rate de
 
 
 
-          \begin{itemize}
-            \item coherence time, drive amplitude
-            \item Accuracy of calibrating the frequency depends on the dephasing time $T_2^*$
-            \item Two $T_2^*$ values, one for exponential? noise, one for Gaussian noise
-            \item dephasing is maximum twice relaxation
-          \end{itemize}
-
           \textbf{Questions:}
           \begin{itemize}
-            \item How is the Rabi rate $\Omega_R$ related to the detuning?
             \item Where does exponential noise and Gaussian noise come from? As I understand it Gaussian noise is due to flux
             \item Is $T_1$ not noticeable in a Ramsey measurement?
-            \item Dephasing results in a mixed state, and therefore shrinks towards the Z-axis on the Bloch sphere?
-          \end{itemize}
-
-          \textbf{TODO:}
-          \begin{itemize}
-            \item Remove parts about frequency tuning, add that in calibration section
+            \item Why is maximally $T_2^*=2T_1$?
           \end{itemize}
 
           \textbf{Figures:}
@@ -518,7 +495,11 @@ The state of the qubit then starts to precess around the equator, with a rate de
   \chapter{Calibration routines}
     \textbf{TODO:} Introduction
     \section{Accurate frequency estimation}
+      Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
 
+      \begin{itemize}
+        \item Accuracy of calibrating the frequency depends on the dephasing time $T_2^*$
+      \end{itemize}
     \section{Drive amplitude calibration}
     \section{Readout calibration}
     \section{Drag amplitude calibration}
