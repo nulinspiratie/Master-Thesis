@@ -35,15 +35,16 @@
 \contentsline {section}{\numberline {2.2}Time-domain measurements}{32}
 \contentsline {subsection}{\numberline {2.2.1}Qubit control}{32}
 \contentsline {subsection}{\numberline {2.2.2}Calibrating drive amplitude}{34}
-\contentsline {subsection}{\numberline {2.2.3}Qubit relaxation}{35}
-\contentsline {subsection}{\numberline {2.2.4}Tuning qubit frequency}{35}
-\contentsline {subsection}{\numberline {2.2.5}Echo measurement}{37}
-\contentsline {subsection}{\numberline {2.2.6}Motzoi parameter}{37}
-\contentsline {subsection}{\numberline {2.2.7}AllXY measurement}{37}
-\contentsline {subsection}{\numberline {2.2.8}Measuring single shots}{37}
+\contentsline {subsection}{\numberline {2.2.3}Qubit decoherence}{35}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Qubit relaxation}{35}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Qubit dephasing}{35}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Echo measurement}{37}
+\contentsline {subsection}{\numberline {2.2.4}Measuring single shots}{37}
 \contentsline {chapter}{\numberline {3}Calibration routines}{38}
 \contentsline {section}{\numberline {3.1}Accurate frequency estimation}{38}
-\contentsline {section}{\numberline {3.2}Mixer calibration}{38}
+\contentsline {section}{\numberline {3.2}Motzoi parameter}{38}
+\contentsline {section}{\numberline {3.3}AllXY measurement}{38}
+\contentsline {section}{\numberline {3.4}Mixer calibration}{38}
 \contentsline {chapter}{\numberline {4}Randomized benchmarking}{39}
 \contentsline {section}{\numberline {4.1}Second excited state}{39}
 \contentsline {chapter}{Appendices}{40}
