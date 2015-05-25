@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  23 MAY 2015 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  25 MAY 2015 10:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,11 +1080,11 @@ See the caption package documentation for explanation.
 
 (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 15854 strings out of 493109
- 308389 string characters out of 6138586
+ 15858 strings out of 493109
+ 308426 string characters out of 6138586
  453655 words of memory out of 5000000
  18844 multiletter control sequences out of 15000+600000
- 154244 words of font info for 288 fonts, out of 8000000 for 9000
+ 154514 words of font info for 291 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,10406b,883s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/tex
@@ -1095,7 +1095,7 @@ ts/type1/public/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/
 adobe/utopia/putb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/pu
 tbi8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/t
 exlive/2014/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (31 pages, 138932 bytes).
+Output written on thesis.pdf (31 pages, 141347 bytes).
 PDF statistics:
  137 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream

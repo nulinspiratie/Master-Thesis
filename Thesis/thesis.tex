@@ -505,7 +505,9 @@ Dr.~Alessandro Bruno
         Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. To rotate the qubit by a specific angle, either the pulse duration can be varied, keeping the amplitude fixed, or the pulse amplitude can be varied, keeping the pulse duration fixed. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. On the other hand, pulses with a small rotation angle have a very small duration, and so their bandwidth will be large, which may lead to increased leakage. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, whilst the pulse duration is kept fixed.
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which depends on the pulse amplitude.
-        % Since the Rabi rate $\Omega_R$ is proportional to the pulse amplitude. After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wavefunction will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. After a measurement the qubit will be in the excited state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}.
+
+        After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wavefunction will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. After a measurement the qubit will be in the excited state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}. The Rabi rate $\Omega_R$ is proportional to the pulse amplitude.
+
         In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Figure \textbf{TODO}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground-state of the qubit. At the other peaks, where the deviation from the ground-state is the largest, the qubit is in the excited-state. The amplitude of the left peak corresponds to a negative pi-pulse, and the right peak to a positive pi-pulse. Usually the amplitude step between successive segments is tuned such that the excited-state peaks are at specific segments.
 
         \textbf{Questions:}
@@ -517,22 +519,48 @@ Dr.~Alessandro Bruno
           \item time variation or amplitude variation
           \item Refer to equation showing that rotation depends on time duration (Reed's thesis)
         \end{itemize}
+
+      \subsection{Qubit relaxation}
+
+
+
       \subsection{Tuning qubit frequency}
-        Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the result is that the qubit precesses around the Z-axis, with a rate depending on the detuning $\Delta = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate. A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain delay time $\tau$, an $X_{-\pi/2}$ pulse is applied to the qubit.
+        Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. This property is exploited in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate. A Ramsey measurement is performed by first applying a $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. The state of the qubit then starts to precess around the equator, with a rate determined by the amount of detuning $\Delta$. After a certain wait time $\tau$, an $X_{-\pi/2}$ pulse is applied to the qubit.
 
-        Ignoring effects such as decoherence and gate errors for the moment, if there were no precession, the qubit should be pulsed back exactly to its ground state. However, any detuning $\Delta$ causes the state of the qubit to deviate from its original position on the Bloch sphere, and so the second pulse does not exactly cancel the effect of the first pulse. in fact, after half a period the second pulse results in the qubit being in the excited state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will yet again return the qubit to the ground state.
+        At the moment we ignore effects such as decoherence and gate errors. If there were no precession, the qubit should be pulsed back exactly to its ground state. However, any detuning $\Delta$ causes the state of the qubit to deviate from its original position on the Bloch sphere, and so the second pulse does not exactly cancel the effect of the first pulse. in fact, after half a period the second pulse results in the qubit being in the excited state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will yet again return the qubit to the ground state. In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$.
 
-        In a Ramsey measurement the delay time $\tau$ between the two pulses is swept, and the result should exhibit an oscillatory behaviour. The frequen
+        In reality however, the qubit does suffer from decoherence. Especially phase noise, characterized by the dephasing time $T_2^*$, is noticeable in a Ramsey measurement. Phase noise can be seen as fluctuations in the qubit frequency. The result is that the oscillations will decrease in amplitude as the wait time is increased.
+
+
 
         \begin{itemize}
-          \item Driving with detuning causes the qubit to precess.
           \item Relation between precession rate and detuning.
           \item Artificial detuning
           \item coherence time, drive amplitude
+          \item Accuracy of calibrating the frequency depends on the dephasing time $T_2^*$
+          \item Two $T_2^*$ values, one for exponential? noise, one for Gaussian noise
+          \item Explain dephasing rate
+          \item dephasing is maximum twice relaxation
         \end{itemize}
 
-      \subsection{T1 measurement}
+        \textbf{Questions:}
+        \begin{itemize}
+          \item How is the Rabi rate $\Omega_R$ related to the detuning?
+          \item Where does exponential noise and Gaussian noise come from? As I understand it Gaussian noise is due to flux
+        \end{itemize}
+
+        \textbf{Figures:}
+        \begin{itemize}
+          \item Ramsey measurement
+          \item $T_2^*$ vs. frequency?
+        \end{itemize}
+
       \subsection{Echo measurement}
+        \begin{itemize}
+          \item Refocusing
+        \end{itemize}
+
+
       \subsection{Motzoi parameter}
       \subsection{AllXY measurement}
       \subsection{Measuring single shots}
