@@ -40,36 +40,36 @@
 \contentsline {subsubsection}{\numberline {2.2.3.2}Qubit dephasing}{35}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Echo measurement}{37}
 \contentsline {subsection}{\numberline {2.2.4}Measuring single shots}{37}
-\contentsline {chapter}{\numberline {3}Calibration routines}{38}
-\contentsline {section}{\numberline {3.1}Accurate frequency estimation}{38}
-\contentsline {section}{\numberline {3.2}Motzoi parameter}{38}
-\contentsline {section}{\numberline {3.3}AllXY measurement}{38}
-\contentsline {section}{\numberline {3.4}Mixer calibration}{38}
-\contentsline {chapter}{\numberline {4}Randomized benchmarking}{39}
-\contentsline {section}{\numberline {4.1}Second excited state}{39}
-\contentsline {chapter}{Appendices}{40}
-\contentsline {chapter}{\numberline {A}Noise}{41}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{41}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{41}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{42}
-\contentsline {section}{\numberline {A.2}The model}{43}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{43}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{44}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{44}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{45}
-\contentsline {section}{\numberline {A.3}Noise temperature}{45}
-\contentsline {section}{\numberline {A.4}Results}{46}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{47}
-\contentsline {chapter}{\numberline {B}Additional notes}{49}
-\contentsline {section}{\numberline {B.1}Qubit characterization}{49}
-\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{49}
-\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{49}
-\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{49}
-\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{49}
-\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{49}
-\contentsline {chapter}{\numberline {C}Algorithms}{50}
-\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{50}
-\contentsline {section}{\numberline {C.2}Peak finding}{50}
-\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{50}
-\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{50}
-\contentsline {section}{\numberline {C.3}Compiled RB?}{50}
+\contentsline {chapter}{\numberline {3}Calibration routines}{39}
+\contentsline {section}{\numberline {3.1}Accurate frequency estimation}{39}
+\contentsline {section}{\numberline {3.2}Motzoi parameter}{39}
+\contentsline {section}{\numberline {3.3}AllXY measurement}{39}
+\contentsline {section}{\numberline {3.4}Mixer calibration}{39}
+\contentsline {chapter}{\numberline {4}Randomized benchmarking}{40}
+\contentsline {section}{\numberline {4.1}Second excited state}{40}
+\contentsline {chapter}{Appendices}{41}
+\contentsline {chapter}{\numberline {A}Noise}{42}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{42}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{42}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{43}
+\contentsline {section}{\numberline {A.2}The model}{44}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{44}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{45}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{45}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{46}
+\contentsline {section}{\numberline {A.3}Noise temperature}{46}
+\contentsline {section}{\numberline {A.4}Results}{47}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{48}
+\contentsline {chapter}{\numberline {B}Additional notes}{50}
+\contentsline {section}{\numberline {B.1}Qubit characterization}{50}
+\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{50}
+\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{50}
+\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{50}
+\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{50}
+\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{50}
+\contentsline {chapter}{\numberline {C}Algorithms}{51}
+\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{51}
+\contentsline {section}{\numberline {C.2}Peak finding}{51}
+\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{51}
+\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{51}
+\contentsline {section}{\numberline {C.3}Compiled RB?}{51}

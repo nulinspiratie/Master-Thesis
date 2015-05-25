@@ -458,16 +458,20 @@
         \subsubsection{Echo measurement}
           The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, whilst others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
 
-          An Echo measurement is performed by sending two $X_{\pi/2}$ pulses separated by a wait time $\tau$. In the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The Echo sequence is quite similar to the Ramsey sequence, but the crucial difference is the refocusing $X_{\pi}$ pulse. This has the effect that the state of the qubit is essentially flipped on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing.
+          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. This has the effect that the state of the qubit is essentially flipped on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
 
-          An Echo measurement is performed by monotonically increasing the wait-time
+          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, whilst keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled. This inhibits the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, such that the result is an oscillation in qubit state.
+
+          There are more complicated Echo sequences, involving multiple refocusing pulses. By placing these at specific times the different frequency contributions of the phase noise can be characterized. Furthermore, by repeatedly applying a refocusing pulse, the state of the qubit can be preserved much longer than the limit imposed by $T_2^*$.
 
 
           \begin{itemize}
-            \item How to distinguish both effects? Echo measures fast, is everything else slow? How is this quantified?
-            \item Refocusing
-            \item quasi-static noise
-            \item can also use multiple refocusing pulses
+            \item $T_2^E$ Should be larger than $T_2^*$
+          \end{itemize}
+
+          \textbf{Figures:}
+          \begin{itemize}
+            \item Echo measurement.
           \end{itemize}
 
 
