@@ -509,9 +509,18 @@
         \item What is the resolution of the IVVI? To what qubit frequency difference does this correspond for the top qubit?
       \end{itemize}
     \section{Drive amplitude calibration}
+      To test the performance
 
       \begin{itemize}
-        \item Accurate drive amplitude calibration for
+        \item High fidelity gates required
+        \item Accurate drive amplitude calibration using PiX360
+        \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
+        \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
+        \item PiX180 however can be performed at larger detuning, due to slower oscillations
+        \item Much better accuracy than Rabi
+        \item Pi/2 pulse at start of sequence instead of at end
+        \item If at end, T2 effects are less
+        \item If at start, T1 effects are less
       \end{itemize}
 
     \section{Readout calibration}
