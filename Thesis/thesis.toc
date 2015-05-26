@@ -46,12 +46,11 @@
 \contentsline {chapter}{\numberline {8}Calibration routines}{43}
 \contentsline {section}{\numberline {8.1}Accurate frequency estimation}{43}
 \contentsline {section}{\numberline {8.2}Accurate drive amplitude calibration}{44}
-\contentsline {section}{\numberline {8.3}Readout calibration}{45}
-\contentsline {section}{\numberline {8.4}Drag amplitude calibration}{45}
-\contentsline {section}{\numberline {8.5}Motzoi parameter}{45}
-\contentsline {section}{\numberline {8.6}AllXY measurement}{45}
-\contentsline {section}{\numberline {8.7}Mixer calibration}{45}
-\contentsline {section}{\numberline {8.8}Duplexer phase calibration}{45}
+\contentsline {section}{\numberline {8.3}DRAG parameter calibration}{44}
+\contentsline {section}{\numberline {8.4}IQ mixer calibration}{44}
+\contentsline {section}{\numberline {8.5}Duplexer phase calibration}{45}
+\contentsline {section}{\numberline {8.6}Readout calibration}{45}
+\contentsline {section}{\numberline {8.7}AllXY measurement}{45}
 \contentsline {chapter}{\numberline {9}Randomized benchmarking}{46}
 \contentsline {section}{\numberline {9.1}Second excited state}{46}
 \contentsline {chapter}{Appendices}{47}
