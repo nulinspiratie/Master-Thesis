@@ -49,33 +49,33 @@
 \contentsline {section}{\numberline {8.3}DRAG parameter calibration}{44}
 \contentsline {section}{\numberline {8.4}IQ mixer calibration}{44}
 \contentsline {section}{\numberline {8.5}Duplexer phase calibration}{45}
-\contentsline {section}{\numberline {8.6}Readout calibration}{45}
-\contentsline {section}{\numberline {8.7}AllXY measurement}{45}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{46}
-\contentsline {section}{\numberline {9.1}Second excited state}{46}
-\contentsline {chapter}{Appendices}{47}
-\contentsline {chapter}{\numberline {A}Noise}{48}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{48}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{48}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{49}
-\contentsline {section}{\numberline {A.2}The model}{50}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{50}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{51}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{51}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{52}
-\contentsline {section}{\numberline {A.3}Noise temperature}{52}
-\contentsline {section}{\numberline {A.4}Results}{53}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{54}
-\contentsline {chapter}{\numberline {B}Additional notes}{56}
-\contentsline {section}{\numberline {B.1}Qubit characterization}{56}
-\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{56}
-\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{56}
-\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{56}
-\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{56}
-\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{56}
-\contentsline {chapter}{\numberline {C}Algorithms}{57}
-\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{57}
-\contentsline {section}{\numberline {C.2}Peak finding}{57}
-\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{57}
-\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{57}
-\contentsline {section}{\numberline {C.3}Compiled RB?}{57}
+\contentsline {section}{\numberline {8.6}Readout calibration}{46}
+\contentsline {section}{\numberline {8.7}AllXY}{46}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{47}
+\contentsline {section}{\numberline {9.1}Second excited state}{47}
+\contentsline {chapter}{Appendices}{48}
+\contentsline {chapter}{\numberline {A}Noise}{49}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{49}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{49}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{50}
+\contentsline {section}{\numberline {A.2}The model}{51}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{51}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{52}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{52}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{53}
+\contentsline {section}{\numberline {A.3}Noise temperature}{53}
+\contentsline {section}{\numberline {A.4}Results}{54}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{55}
+\contentsline {chapter}{\numberline {B}Additional notes}{57}
+\contentsline {section}{\numberline {B.1}Qubit characterization}{57}
+\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{57}
+\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{57}
+\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{57}
+\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{57}
+\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{57}
+\contentsline {chapter}{\numberline {C}Algorithms}{58}
+\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{58}
+\contentsline {section}{\numberline {C.2}Peak finding}{58}
+\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{58}
+\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{58}
+\contentsline {section}{\numberline {C.3}Compiled RB?}{58}

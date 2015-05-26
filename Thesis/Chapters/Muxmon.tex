@@ -1,6 +1,8 @@
 %!TEX root = ../thesis.tex
-\part{Muxmon experiment}
+\externaldocument[A-]{Chapters/appendix.tex}
 
+\part{Muxmon experiment}
+  \ref{A-ssec:AllXY}
   \textbf{large TODO:}
   \begin{itemize}
     \item Explain surface code architecture
@@ -536,6 +538,10 @@
     \section{DRAG parameter calibration}
       The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, whilst the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
 
+      \textbf{Questions:}
+      \begin{itemize}
+        \item Why does this produce errors in opposite direction?
+      \end{itemize}
     \section{IQ mixer calibration}
       \label{sec:Mixer calibration}
       An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
@@ -545,8 +551,25 @@
       Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
 
     \section{Duplexer phase calibration}
+      \label{sec:Duplexer phase calibration}
+      The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
+
+      Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
+
     \section{Readout calibration}
-    \section{AllXY measurement}
+      \label{sec:Readout calibration}
+      Should I include this?
+
+    \section{AllXY}
+      \label{sec:AllXY}
+        There is a good measurement to test how well the qubit has been tuned, namely the AlllXY measurement. This measurement consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App~\ref{ssec:AllXY}.
+
+        The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
+
+        \textbf{Figures:}
+        \begin{itemize}
+          \item AllXY sequence with drive detuning
+        \end{itemize}
 
   \chapter{Randomized benchmarking}
 
