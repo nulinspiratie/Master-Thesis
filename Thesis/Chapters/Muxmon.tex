@@ -27,77 +27,14 @@
 
     At this moment circuit QED is at the stage where multi-qubit experiments are being realized.
 
-
-
-  \chapter{Muxmon chip architecture}
-
-    \textbf{Topics that should be explained in this section:}
     \begin{itemize}
-      \item The Muxmon0 and Muxmon1 chip are designed with two purposes
-      \begin{enumerate}
-        \item Testing multiplexing using the Duplexer
-        \item Explore qubit frequency re-use
-      \end{enumerate}
-
-      \item Explain similarities of chips
-      \begin{itemize}
-        \item Three qubits per chip
-        \item All three qubits have individual flux tuning
-        \item Air bridges are used, not only for connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
-      \end{itemize}
-
-      \item Explain differences between Muxmon0 and Muxmon1.
-      \begin{itemize}
-        \item The Muxmon0 chip has a driving line connected to each of the qubits. \\
-            It has two resonator buses at \SI{4.9}{\giga \hertz} and \SI{5.0}{\giga \hertz}. \\
-            These could also be used for two-qubit gates.
-        \begin{description}
-          \item[Advantage] Able to fully control each qubit individually, even when multiple qubits share the same frequency.
-          \item[Advantage] Less coupling between data qubits.
-          \item[Disadvantage] Requires more driving lines.
-          \item[Disadvantage] Adds extra source of dissipation for the qubits.
-        \end{description}
-        \item The Muxmon1 chip has two driving lines, each capacitively coupled to one of the two data qubits, and to the ancilla qubit.
-        \begin{description}
-          \item[Advantage] Less driving lines required
-          \item[Advantage] Less dissipation due to capacitive coupling
-          \item[Disadvantage] Cannot individually control data qubit and ancilla qubit when they share the same frequency
-          \item[Disadvantage] More coupling between qubits
-        \end{description}
-        \item Simplified model of the surface code
-      \end{itemize}
-
-      \item Explain concepts of cross-coupling and readout cross-talk
-      \begin{description}
-        \item[Cross-coupling] The coupling between qubits. \\
-                    Cross-coupling leads to transfer of excitation.\\
-                    An associated coupling strength \textbf{g} can be associated to cross-coupling.\\
-                    Can be determined by driving one qubit extremely hard, and measuring signal from other qubit.\\
-                    \textbf{TODO:} Show values of cross-coupling found, or do this in characterization section \\
-                    \textbf{TODO:} Leads to coherent errors? \\
-                    \textbf{TODO:} Two types of cross-coupling? Direct leakage of pulse pulse, and transfer of excitation? cross-driving?
-        \item[Readout cross-talk] Coupling between a qubit and a resonator that are not directly coupled.\\
-                      A part of the signal measured from one resonator is then due to the state of another qubit \\
-                      \textbf{TODO:} Understand more behind readout cross-talk
-      \end{description}
-
+        \item Scaling up
+        \item Challenges involved in scaling
+        \item Frequency re-use, Duplexer intro
     \end{itemize}
 
-    \textbf{Left to think about:}
-    \begin{itemize}
-      \item Should I already include items such as coherence times, the fact that Muxmon0 performs better than Muxmon 1?
-      \item Where should I include coherence times versus frequency?
-      \item Should the part on cross-coupling and readout cross-talk not be in characterization section?
-      \item Should the section on the Duplexer go in here?
-    \end{itemize}
 
-    \textbf{Figures that need to be included:}
-    \begin{itemize}
-      \item Muxmon0 and Muxmon1 chip, preferably optical microscopy
-      \item SEM image of air-bridges such that coplanar wave-guides cross without intersecting
-      \item schematic of cross-coupling and readout cross-talk \\
-          It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
-    \end{itemize}
+
 
 
   \chapter{Qubit characterization}
@@ -570,6 +507,83 @@
         \begin{itemize}
           \item AllXY sequence with drive detuning
         \end{itemize}
+\chapter{Muxmon chip architecture}
+  \label{ch:Muxmon chip architecture}
+
+  \section{Direct driving versus capacitive driving}
+    \label{sec:Muxmon0 vs Muxmon1}
+    To study frequency re-use two chips were created, the Muxmon0 and the Muxmon 1. Both chips have three transmon qubits connected to them, are flux-tunable
+
+
+
+  \textbf{Topics that should be explained in this section:}
+  \begin{itemize}
+    \item The Muxmon0 and Muxmon1 chip are designed with two purposes
+    \begin{enumerate}
+      \item Testing multiplexing using the Duplexer
+      \item Explore qubit frequency re-use
+    \end{enumerate}
+
+    \item Explain similarities of chips
+    \begin{itemize}
+      \item Three qubits per chip
+      \item All three qubits have individual flux tuning
+      \item Air bridges are used, not only for connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
+    \end{itemize}
+
+    \item Explain differences between Muxmon0 and Muxmon1.
+    \begin{itemize}
+      \item The Muxmon0 chip has a driving line connected to each of the qubits. \\
+          It has two resonator buses at \SI{4.9}{\giga \hertz} and \SI{5.0}{\giga \hertz}. \\
+          These could also be used for two-qubit gates.
+      \begin{description}
+        \item[Advantage] Able to fully control each qubit individually, even when multiple qubits share the same frequency.
+        \item[Advantage] Less coupling between data qubits.
+        \item[Disadvantage] Requires more driving lines.
+        \item[Disadvantage] Adds extra source of dissipation for the qubits.
+      \end{description}
+      \item The Muxmon1 chip has two driving lines, each capacitively coupled to one of the two data qubits, and to the ancilla qubit.
+      \begin{description}
+        \item[Advantage] Less driving lines required
+        \item[Advantage] Less dissipation due to capacitive coupling
+        \item[Disadvantage] Cannot individually control data qubit and ancilla qubit when they share the same frequency
+        \item[Disadvantage] More coupling between qubits
+      \end{description}
+      \item Simplified model of the surface code
+    \end{itemize}
+
+    \item Explain concepts of cross-coupling and readout cross-talk
+    \begin{description}
+      \item[Cross-coupling] The coupling between qubits. \\
+                  Cross-coupling leads to transfer of excitation.\\
+                  An associated coupling strength \textbf{g} can be associated to cross-coupling.\\
+                  Can be determined by driving one qubit extremely hard, and measuring signal from other qubit.\\
+                  \textbf{TODO:} Show values of cross-coupling found, or do this in characterization section \\
+                  \textbf{TODO:} Leads to coherent errors? \\
+                  \textbf{TODO:} Two types of cross-coupling? Direct leakage of pulse pulse, and transfer of excitation? cross-driving?
+      \item[Readout cross-talk] Coupling between a qubit and a resonator that are not directly coupled.\\
+                    A part of the signal measured from one resonator is then due to the state of another qubit \\
+                    \textbf{TODO:} Understand more behind readout cross-talk
+    \end{description}
+
+  \end{itemize}
+
+  \textbf{Left to think about:}
+  \begin{itemize}
+    \item Should I already include items such as coherence times, the fact that Muxmon0 performs better than Muxmon 1?
+    \item Where should I include coherence times versus frequency?
+    \item Should the part on cross-coupling and readout cross-talk not be in characterization section?
+    \item Should the section on the Duplexer go in here?
+  \end{itemize}
+
+  \textbf{Figures that need to be included:}
+  \begin{itemize}
+    \item Muxmon0 and Muxmon1 chip, preferably optical microscopy
+    \item SEM image of air-bridges such that coplanar wave-guides cross without intersecting
+    \item schematic of cross-coupling and readout cross-talk \\
+        It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
+  \end{itemize}
+
 
   \chapter{Randomized benchmarking}
 
