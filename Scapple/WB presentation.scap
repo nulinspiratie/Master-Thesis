@@ -1,0 +1,727 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="4AFBA5FB-17D5-4D4F-81BE-048B32F209C9" Version="1.1">
+   <Notes>
+      <Note Width="263.078" FontSize="22" ID="0" Position="436.3,44.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.808835 0.872419 0.801343</Fill>
+            <Border Weight="1">0.399100 0.583322 0.354864</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,15</FormatRange>
+         </Formatting>
+         <String>WB presentation</String>
+      </Note>
+      <Note Width="84.8877" FontSize="14" ID="1" Position="265.9,139.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,9</FormatRange>
+         </Formatting>
+         <String>Cliffords</String>
+         <ConnectedNoteIDs>4, 12</ConnectedNoteIDs>
+         <PointsToNoteIDs>4, 12</PointsToNoteIDs>
+      </Note>
+      <Note Width="253.821" FontSize="14" ID="2" Position="479.3,513.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,23</FormatRange>
+         </Formatting>
+         <String>Randomized benchmarking</String>
+         <ConnectedNoteIDs>22, 33-34</ConnectedNoteIDs>
+         <PointsToNoteIDs>22, 33-34</PointsToNoteIDs>
+      </Note>
+      <Note Width="88.0615" FontSize="14" ID="3" Position="772.9,133.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,8</FormatRange>
+         </Formatting>
+         <String>Duplexer</String>
+         <ConnectedNoteIDs>5-6, 16</ConnectedNoteIDs>
+         <PointsToNoteIDs>5-6, 16</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="4" Position="391.5,184.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Any rotations on Bloch sphere</String>
+         <ConnectedNoteIDs>1, 11</ConnectedNoteIDs>
+         <PointsToNoteIDs>11</PointsToNoteIDs>
+      </Note>
+      <Note Width="169.055" FontSize="12" ID="5" Position="1057.8,132.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Selective broadcasting</String>
+         <ConnectedNoteIDs>3</ConnectedNoteIDs>
+      </Note>
+      <Note Width="99.1943" FontSize="12" ID="6" Position="898.9,300.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Components</String>
+         <ConnectedNoteIDs>3, 7-10</ConnectedNoteIDs>
+         <PointsToNoteIDs>7-10</PointsToNoteIDs>
+      </Note>
+      <Note Width="70.5444" FontSize="12" ID="7" Position="1096.0,240.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Amplifier</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="142.737" FontSize="12" ID="8" Position="1104.7,281.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Variable attenuator</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.855" FontSize="12" ID="9" Position="1126.2,330.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Phase shifter</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="10" Position="1080.6,374.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Digital nanosecond switch</String>
+         <ConnectedNoteIDs>6</ConnectedNoteIDs>
+      </Note>
+      <Note Width="101.89" FontSize="12" ID="11" Position="457.2,258.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Animate with vertices or tetrahedron</String>
+         <ConnectedNoteIDs>4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="114.392" FontSize="12" ID="12" Position="166.9,232.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Decomposition</String>
+         <ConnectedNoteIDs>1, 13-14</ConnectedNoteIDs>
+         <PointsToNoteIDs>13-14</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="13" Position="22.1,287.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Between 1 and 3 gates required</String>
+         <ConnectedNoteIDs>12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="98.8159" FontSize="12" ID="14" Position="201.1,391.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>NCL method</String>
+         <ConnectedNoteIDs>12, 15, 17-18</ConnectedNoteIDs>
+         <PointsToNoteIDs>18</PointsToNoteIDs>
+      </Note>
+      <Note Width="131.055" FontSize="12" ID="15" Position="280.9,337.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Cliffords revisited</String>
+         <ConnectedNoteIDs>14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="16" Position="688.4,299.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Independent parameter tune-up</String>
+         <ConnectedNoteIDs>3, 17, 19-20</ConnectedNoteIDs>
+         <PointsToNoteIDs>19-20</PointsToNoteIDs>
+      </Note>
+      <Note Width="80.4077" FontSize="12" ID="17" Position="427.0,392.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scalability</String>
+         <ConnectedNoteIDs>14, 16</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="18" Position="302.3,457.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Modifying markers instead of pulses</String>
+         <ConnectedNoteIDs>14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="42.8345" FontSize="12" ID="19" Position="742.7,395.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Drag</String>
+         <ConnectedNoteIDs>16, 21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="45.5078" FontSize="12" ID="20" Position="863.4,375.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Drive</String>
+         <ConnectedNoteIDs>16, 21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="48.4131" FontSize="12" ID="21" Position="812.4,463.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>AllXY</String>
+         <ConnectedNoteIDs>19-20, 22</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="22" Position="795.7,530.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Gate error minimalization</String>
+         <ConnectedNoteIDs>2, 21, 23</ConnectedNoteIDs>
+         <PointsToNoteIDs>21, 23</PointsToNoteIDs>
+      </Note>
+      <Note Width="109.937" FontSize="12" ID="23" Position="1018.9,484.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>How detailed?</String>
+         <ConnectedNoteIDs>22</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="24" Position="801.0,723.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Comparison gate errors</String>
+         <ConnectedNoteIDs>25-27, 34</ConnectedNoteIDs>
+         <PointsToNoteIDs>25-27</PointsToNoteIDs>
+      </Note>
+      <Note Width="140.515" FontSize="12" ID="25" Position="653.6,932.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>5P Performs worst</String>
+         <ConnectedNoteIDs>24, 31, 38</ConnectedNoteIDs>
+         <PointsToNoteIDs>31</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="26" Position="896.2,904.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Alternating performs medium</String>
+         <ConnectedNoteIDs>24, 30</ConnectedNoteIDs>
+         <PointsToNoteIDs>30</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="27" Position="1069.8,658.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Compiled performs best</String>
+         <ConnectedNoteIDs>24, 28-29</ConnectedNoteIDs>
+         <PointsToNoteIDs>28-29</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="28" Position="1179.8,882.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Always in principle best method</String>
+         <ConnectedNoteIDs>27</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="29" Position="1231.4,731.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Computational cost is enormous for large N</String>
+         <ConnectedNoteIDs>27</ConnectedNoteIDs>
+      </Note>
+      <Note Width="108.984" FontSize="12" ID="30" Position="992.1,1034.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scales terribly</String>
+         <ConnectedNoteIDs>26</ConnectedNoteIDs>
+      </Note>
+      <Note Width="133.179" FontSize="12" ID="31" Position="697.8,1065.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scales beautifully</String>
+         <ConnectedNoteIDs>25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="32" Position="61.0,607.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>99.9% fidelity both qubits</String>
+         <ConnectedNoteIDs>33</ConnectedNoteIDs>
+      </Note>
+      <Note Width="119.971" FontSize="12" ID="33" Position="235.3,586.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Single seed RB</String>
+         <ConnectedNoteIDs>2, 32, 35-36</ConnectedNoteIDs>
+         <PointsToNoteIDs>32, 36</PointsToNoteIDs>
+      </Note>
+      <Note Width="130.688" FontSize="12" ID="34" Position="576.5,664.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Multiple seed RB</String>
+         <ConnectedNoteIDs>2, 24, 35, 38</ConnectedNoteIDs>
+         <PointsToNoteIDs>24, 38</PointsToNoteIDs>
+      </Note>
+      <Note Width="69.7021" FontSize="12" ID="35" Position="402.9,692.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Leakage</String>
+         <ConnectedNoteIDs>33-34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="146.582" FontSize="12" ID="36" Position="133.4,532.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Coherence limited?</String>
+         <ConnectedNoteIDs>33</ConnectedNoteIDs>
+      </Note>
+      <Note Width="115.259" FontSize="12" ID="37" Position="257.4,847.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Cross-coupling</String>
+         <ConnectedNoteIDs>38-40</ConnectedNoteIDs>
+      </Note>
+      <Note Width="85.498" FontSize="12" ID="38" Position="461.2,815.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>5P method</String>
+         <ConnectedNoteIDs>25, 34, 37, 40</ConnectedNoteIDs>
+         <PointsToNoteIDs>37</PointsToNoteIDs>
+      </Note>
+      <Note Width="195.465" FontSize="14" ID="39" Position="208.1,933.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,17</FormatRange>
+         </Formatting>
+         <String>Muxmon Experiment</String>
+         <ConnectedNoteIDs>37, 41-43, 46</ConnectedNoteIDs>
+         <PointsToNoteIDs>37, 41-43, 46</PointsToNoteIDs>
+      </Note>
+      <Note Width="89.0625" FontSize="12" ID="40" Position="321.1,759.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>5P inverted</String>
+         <ConnectedNoteIDs>37-38</ConnectedNoteIDs>
+      </Note>
+      <Note Width="102.71" FontSize="12" ID="41" Position="77.1,928.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Cross-driving</String>
+         <ConnectedNoteIDs>39</ConnectedNoteIDs>
+      </Note>
+      <Note Width="83.0811" FontSize="12" ID="42" Position="91.2,1042.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Muxmon 0</String>
+         <ConnectedNoteIDs>39, 44</ConnectedNoteIDs>
+         <PointsToNoteIDs>44</PointsToNoteIDs>
+      </Note>
+      <Note Width="83.0811" FontSize="12" ID="43" Position="273.5,1042.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Muxmon 1</String>
+         <ConnectedNoteIDs>39, 45</ConnectedNoteIDs>
+         <PointsToNoteIDs>45</PointsToNoteIDs>
+      </Note>
+      <Note Width="101.831" FontSize="12" ID="44" Position="52.3,1130.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Direct driving</String>
+         <ConnectedNoteIDs>42</ConnectedNoteIDs>
+      </Note>
+      <Note Width="134.949" FontSize="12" ID="45" Position="237.3,1136.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Capacitive driving</String>
+         <ConnectedNoteIDs>43</ConnectedNoteIDs>
+      </Note>
+      <Note Width="102.759" FontSize="12" ID="46" Position="439.1,1011.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Surface code</String>
+         <ConnectedNoteIDs>39</ConnectedNoteIDs>
+      </Note>
+      <Note Width="127.979" FontSize="35" ID="47" Position="1459.5,137.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <TextColor>1.0 0.0 0.0</TextColor>
+            <Fill>0.898329 0.817472 0.865339</Fill>
+            <Border Weight="1">0.690303 0.407263 0.550912</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,5</FormatRange>
+         </Formatting>
+         <String>Story</String>
+      </Note>
+      <Note Width="185.73" FontSize="12" ID="48" Position="1459.5,206.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Explanation of Transmon</String>
+         <ConnectedNoteIDs>53</ConnectedNoteIDs>
+         <PointsToNoteIDs>53</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="49" Position="1459.5,264.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Two problems in scaling up</String>
+         <ConnectedNoteIDs>50-51</ConnectedNoteIDs>
+         <PointsToNoteIDs>50-51</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="50" Position="1733.4,281.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>1. Frequency crowding</String>
+         <ConnectedNoteIDs>49</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.396" FontSize="12" ID="51" Position="1733.4,328.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>2. Instrument scaling</String>
+         <ConnectedNoteIDs>49</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="52" Position="1459.5,312.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Solutions to problems</String>
+      </Note>
+      <Note Width="83.1055" FontSize="12" ID="53" Position="1741.2,181.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scaling up</String>
+         <ConnectedNoteIDs>48</ConnectedNoteIDs>
+      </Note>
+      <Note Width="170.318" FontSize="12" ID="54" Position="1459.5,360.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>1. Frequency Re-use</String>
+         <ConnectedNoteIDs>55</ConnectedNoteIDs>
+         <PointsToNoteIDs>55</PointsToNoteIDs>
+      </Note>
+      <Note Width="146.57" FontSize="12" ID="55" Position="1719.1,364.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Same surface code
+with four numbers</String>
+         <ConnectedNoteIDs>54</ConnectedNoteIDs>
+      </Note>
+      <Note Width="83.1055" FontSize="12" ID="56" Position="1459.5,235.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scaling up</String>
+         <ConnectedNoteIDs>57</ConnectedNoteIDs>
+         <PointsToNoteIDs>57</PointsToNoteIDs>
+      </Note>
+      <Note Width="102.759" FontSize="12" ID="57" Position="1706.9,230.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Surface code</String>
+         <ConnectedNoteIDs>56</ConnectedNoteIDs>
+      </Note>
+      <Note Width="110.815" FontSize="12" ID="58" Position="1459.5,388.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>2. Multiplexing</String>
+         <ConnectedNoteIDs>59</ConnectedNoteIDs>
+         <PointsToNoteIDs>59</PointsToNoteIDs>
+      </Note>
+      <Note Width="72.3511" FontSize="12" ID="59" Position="1746.6,418.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Duplexer</String>
+         <ConnectedNoteIDs>58</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="60" Position="1459.5,417.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Explanation of MuxMon experiment</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="61" Position="1459.5,465.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Muxmon0 vs Muxmon1</String>
+         <ConnectedNoteIDs>62</ConnectedNoteIDs>
+         <PointsToNoteIDs>62</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="62" Position="1722.9,470.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Muxmon0 has better coherence</String>
+         <ConnectedNoteIDs>61</ConnectedNoteIDs>
+      </Note>
+      <Note Width="166.504" FontSize="12" ID="63" Position="1459.5,513.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Combination of Duplexer, Muxmon and frequency re-use</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="64" Position="1459.5,579.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show individual tune-up</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="65" Position="1459.5,627.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Explain randomized benchmarking</String>
+         <ConnectedNoteIDs>67</ConnectedNoteIDs>
+         <PointsToNoteIDs>67</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="66" Position="1459.5,674.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show 1 seed randomized benchmarking results</String>
+         <ConnectedNoteIDs>68</ConnectedNoteIDs>
+         <PointsToNoteIDs>68</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="67" Position="1690.9,617.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Explanation of Cliffords</String>
+         <ConnectedNoteIDs>65</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="68" Position="1700.0,691.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>No difference driving single or driving both</String>
+         <ConnectedNoteIDs>66</ConnectedNoteIDs>
+      </Note>
+      <Note Width="163.454" FontSize="12" ID="69" Position="1459.5,760.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Explain simultaneous qubit contol</String>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="70" Position="1459.5,807.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Three different schemes</String>
+      </Note>
+      <Note Width="129.822" FontSize="12" ID="71" Position="1459.5,855.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>1. Alternating RB</String>
+         <ConnectedNoteIDs>74</ConnectedNoteIDs>
+         <PointsToNoteIDs>74</PointsToNoteIDs>
+      </Note>
+      <Note Width="121.741" FontSize="12" ID="72" Position="1459.5,884.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>2. Compiled RB</String>
+         <ConnectedNoteIDs>75</ConnectedNoteIDs>
+         <PointsToNoteIDs>75</PointsToNoteIDs>
+      </Note>
+      <Note Width="134.57" FontSize="12" ID="73" Position="1459.5,913.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>3. 5 primitives RB</String>
+         <ConnectedNoteIDs>76</ConnectedNoteIDs>
+         <PointsToNoteIDs>76</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="74" Position="1693.9,814.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show one case of two Cliffords</String>
+         <ConnectedNoteIDs>71</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="75" Position="1693.9,861.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show same case with compiled</String>
+         <ConnectedNoteIDs>72</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="76" Position="1693.9,909.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show same case with 5 primitives</String>
+         <ConnectedNoteIDs>73</ConnectedNoteIDs>
+      </Note>
+      <Note Width="83.1055" FontSize="12" ID="77" Position="1459.5,942.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scaling up</String>
+         <ConnectedNoteIDs>78</ConnectedNoteIDs>
+         <PointsToNoteIDs>78</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="78" Position="1693.9,956.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Show superiority of 5 primitives</String>
+         <ConnectedNoteIDs>77</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="A53DE288-9B45-4784-A2B7-DA69162DCF92" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="79C1C056-E302-4949-88B3-B68F6B4B8912" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="EF4DEA80-F6F1-4557-B8AF-35FFF6985DAB" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="1CBE3680-E328-4A9B-8679-F85F7E551986" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="33E13838-88C3-49F1-96F4-A9C77D4271FB" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C48AD1D0-7791-4777-8AD7-99199DC5F898" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="77C89AF5-6BD3-4C0A-9A27-A8E99A6B469D" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>

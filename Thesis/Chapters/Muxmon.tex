@@ -2,7 +2,6 @@
 \externaldocument[A-]{Chapters/appendix.tex}
 
 \part{Muxmon experiment}
-  \ref{A-ssec:AllXY}
   \textbf{large TODO:}
   \begin{itemize}
     \item Explain surface code architecture
@@ -27,7 +26,9 @@
 
     At this moment circuit QED is at the stage where multi-qubit experiments are being realized.
 
-
+    \begin{itemize}
+      \item DRIE transmon
+    \end{itemize}
 
   \chapter{Muxmon chip architecture}
 
@@ -43,7 +44,7 @@
       \begin{itemize}
         \item Three qubits per chip
         \item All three qubits have individual flux tuning
-        \item Air bridges are used, not only for connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
+        \item Air bridges are used, not only to connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
       \end{itemize}
 
       \item Explain differences between Muxmon0 and Muxmon1.
@@ -511,6 +512,7 @@
       \begin{itemize}
         \item What is the resolution of the IVVI? To what qubit frequency difference does this correspond for the top qubit?
       \end{itemize}
+
     \section{Accurate drive amplitude calibration}
       \label{sec:PiX360}
       To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
@@ -542,6 +544,7 @@
       \begin{itemize}
         \item Why does this produce errors in opposite direction?
       \end{itemize}
+
     \section{IQ mixer calibration}
       \label{sec:Mixer calibration}
       An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
@@ -574,3 +577,5 @@
   \chapter{Randomized benchmarking}
 
     \section{Second excited state}
+
+  \chapter{Conclusions and outlook}
