@@ -22,60 +22,64 @@
 \contentsline {section}{\numberline {3.4}Temperature tracking}{17}
 \contentsline {chapter}{\numberline {4}Conclusion and future work}{20}
 \contentsline {part}{II\hspace {1em}Muxmon experiment}{21}
-\contentsline {chapter}{\numberline {5}Muxmon chip architecture}{24}
-\contentsline {chapter}{\numberline {6}Qubit characterization}{26}
-\contentsline {section}{\numberline {6.1}Continuous-wave measurements}{26}
-\contentsline {subsection}{\numberline {6.1.1}Scanning for resonators}{27}
-\contentsline {subsection}{\numberline {6.1.2}Powersweeping the resonators}{28}
-\contentsline {subsection}{\numberline {6.1.3}Scan for qubit sweet-spots}{29}
-\contentsline {subsection}{\numberline {6.1.4}Scanning for qubits}{30}
-\contentsline {subsubsection}{\numberline {6.1.4.1}Spectroscopy}{31}
-\contentsline {subsubsection}{\numberline {6.1.4.2}Avoided crossing}{32}
-\contentsline {subsection}{\numberline {6.1.5}Tracking the qubits}{33}
-\contentsline {subsection}{\numberline {6.1.6}Finding the qubit's second transition}{34}
-\contentsline {subsection}{\numberline {6.1.7}Flux matrix}{35}
-\contentsline {section}{\numberline {6.2}Time-domain measurements}{36}
-\contentsline {subsection}{\numberline {6.2.1}Qubit control}{36}
-\contentsline {subsection}{\numberline {6.2.2}Drive amplitude calibration}{38}
-\contentsline {subsection}{\numberline {6.2.3}Qubit decoherence}{39}
-\contentsline {subsubsection}{\numberline {6.2.3.1}Qubit relaxation: T1}{39}
-\contentsline {subsubsection}{\numberline {6.2.3.2}Qubit dephasing: Ramsey}{39}
-\contentsline {subsubsection}{\numberline {6.2.3.3}Fast frequency qubit dephasing: Echo}{41}
-\contentsline {subsection}{\numberline {6.2.4}Measuring single shots}{41}
-\contentsline {chapter}{\numberline {7}Muxmon experiment}{42}
-\contentsline {chapter}{\numberline {8}Calibration routines}{43}
-\contentsline {section}{\numberline {8.1}Accurate frequency estimation}{43}
-\contentsline {section}{\numberline {8.2}Accurate drive amplitude calibration}{44}
-\contentsline {section}{\numberline {8.3}DRAG parameter calibration}{44}
-\contentsline {section}{\numberline {8.4}IQ mixer calibration}{44}
-\contentsline {section}{\numberline {8.5}Duplexer phase calibration}{45}
-\contentsline {section}{\numberline {8.6}Readout calibration}{46}
-\contentsline {section}{\numberline {8.7}AllXY}{46}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{47}
-\contentsline {section}{\numberline {9.1}Second excited state}{47}
-\contentsline {chapter}{Appendices}{48}
-\contentsline {chapter}{\numberline {A}Noise}{49}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{49}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{49}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{50}
-\contentsline {section}{\numberline {A.2}The model}{51}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{51}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{52}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{52}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{53}
-\contentsline {section}{\numberline {A.3}Noise temperature}{53}
-\contentsline {section}{\numberline {A.4}Results}{54}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{55}
-\contentsline {chapter}{\numberline {B}Additional notes}{57}
-\contentsline {section}{\numberline {B.1}Qubit characterization}{57}
-\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{57}
-\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{57}
-\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{57}
-\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{57}
-\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{57}
-\contentsline {chapter}{\numberline {C}Algorithms}{58}
-\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{58}
-\contentsline {section}{\numberline {C.2}Peak finding}{58}
-\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{58}
-\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{58}
-\contentsline {section}{\numberline {C.3}Compiled RB?}{58}
+\contentsline {chapter}{\numberline {5}Qubit characterization}{24}
+\contentsline {section}{\numberline {5.1}Continuous-wave measurements}{24}
+\contentsline {subsection}{\numberline {5.1.1}Scanning for resonators}{25}
+\contentsline {subsection}{\numberline {5.1.2}Powersweeping the resonators}{26}
+\contentsline {subsection}{\numberline {5.1.3}Scan for qubit sweet-spots}{27}
+\contentsline {subsection}{\numberline {5.1.4}Scanning for qubits}{28}
+\contentsline {subsubsection}{\numberline {5.1.4.1}Spectroscopy}{29}
+\contentsline {subsubsection}{\numberline {5.1.4.2}Avoided crossing}{30}
+\contentsline {subsection}{\numberline {5.1.5}Tracking the qubits}{31}
+\contentsline {subsection}{\numberline {5.1.6}Finding the qubit's second transition}{32}
+\contentsline {subsection}{\numberline {5.1.7}Flux matrix}{33}
+\contentsline {section}{\numberline {5.2}Time-domain measurements}{34}
+\contentsline {subsection}{\numberline {5.2.1}Qubit control}{34}
+\contentsline {subsection}{\numberline {5.2.2}Drive amplitude calibration}{36}
+\contentsline {subsection}{\numberline {5.2.3}Qubit decoherence}{37}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Qubit relaxation: T1}{37}
+\contentsline {subsubsection}{\numberline {5.2.3.2}Qubit dephasing: Ramsey}{37}
+\contentsline {subsubsection}{\numberline {5.2.3.3}Fast frequency qubit dephasing: Echo}{39}
+\contentsline {subsection}{\numberline {5.2.4}Measuring single shots}{39}
+\contentsline {chapter}{\numberline {6}Muxmon experiment}{40}
+\contentsline {chapter}{\numberline {7}Calibration routines}{41}
+\contentsline {section}{\numberline {7.1}Accurate frequency estimation}{41}
+\contentsline {section}{\numberline {7.2}Accurate drive amplitude calibration}{42}
+\contentsline {section}{\numberline {7.3}DRAG parameter calibration}{42}
+\contentsline {section}{\numberline {7.4}IQ mixer calibration}{42}
+\contentsline {section}{\numberline {7.5}Duplexer phase calibration}{43}
+\contentsline {section}{\numberline {7.6}Readout calibration}{44}
+\contentsline {section}{\numberline {7.7}AllXY}{44}
+\contentsline {chapter}{\numberline {8}Exploring frequency re-use}{45}
+\contentsline {section}{\numberline {8.1}Frequency re-use in the Surface Code}{45}
+\contentsline {section}{\numberline {8.2}Direct driving versus capacitive driving}{45}
+\contentsline {section}{\numberline {8.3}Properties of the Muxmon0 chip}{46}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{50}
+\contentsline {section}{\numberline {9.1}Second excited state}{50}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{51}
+\contentsline {chapter}{Appendices}{52}
+\contentsline {chapter}{\numberline {A}Noise}{53}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{53}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{53}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{54}
+\contentsline {section}{\numberline {A.2}The model}{55}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{55}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{56}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{56}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{57}
+\contentsline {section}{\numberline {A.3}Noise temperature}{57}
+\contentsline {section}{\numberline {A.4}Results}{58}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{59}
+\contentsline {chapter}{\numberline {B}Additional notes}{61}
+\contentsline {section}{\numberline {B.1}Qubit characterization}{61}
+\contentsline {subsection}{\numberline {B.1.1}Part I: Continuous-wave measurements}{61}
+\contentsline {subsubsection}{\numberline {B.1.1.1}Powersweep}{61}
+\contentsline {subsubsection}{\numberline {B.1.1.2}Spectroscopy}{61}
+\contentsline {subsection}{\numberline {B.1.2}Part I: Time-domain measurements}{61}
+\contentsline {subsubsection}{\numberline {B.1.2.1}AllXY}{61}
+\contentsline {chapter}{\numberline {C}Algorithms}{62}
+\contentsline {section}{\numberline {C.1}Tracked spectroscopy}{62}
+\contentsline {section}{\numberline {C.2}Peak finding}{62}
+\contentsline {subsection}{\numberline {C.2.1}Normal peak finder}{62}
+\contentsline {subsection}{\numberline {C.2.2}Derivative peak finder}{62}
+\contentsline {section}{\numberline {C.3}Compiled RB?}{62}
