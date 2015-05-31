@@ -512,6 +512,30 @@
   \chapter{Exploring frequency re-use}
     \label{ch:Muxmon chip architecture}
 
+    \section{frequency re-use}
+      \begin{wrapfigure}[8]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/bandwidth_broadening.png}
+        \end{center}
+        \vspace{-5pt}
+        \caption{The frequency bandwidth corresponding to Gaussian pulses with different widths $\sigma$.}
+        \label{fig:bandwidth broadening}
+        \vspace{-10pt}
+      \end{wrapfigure}
+
+      Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=0.6\textwidth]{../Figures/Exploring frequency re-use/surface_code_frequency re-use.jpg}
+        \caption{A surface code architecture with the implementation of frequency re-use. The different digits correspond to distinct frequencies. }
+        \label{fig:surface code frequency re-use}
+      \end{figure}
+      If the qubits are not connected to the same drive line, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture. One possible implementation of frequency re-use in the surface code is shown in Figure~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
+
+      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Section~\ref{sec:cross-coupling}. The second effect is cross-driving, where a pulse partially leaks through the components, and will . This leakage of a pulse is always present, but does not pose a problem as long as the frequency of the pulse is sufficiently separated from the frequency of the other qubits.
+
 
     \begin{itemize}
       \item The Muxmon0 and Muxmon1 chip are designed with two purposes
@@ -521,11 +545,10 @@
       \end{enumerate}
     \end{itemize}
 
-    \section{Frequency re-use in the Surface Code}
-      \label{sec:Frequency re-use in the Surface Code}
-      \begin{itemize}
-        \item Frequency crowding
-      \end{itemize}
+    \textbf{Ideas:}
+    \begin{itemize}
+      \item Title could be frequency re-use and multiplexing / selective broadcasting
+    \end{itemize}
 
     \section{Direct driving versus capacitive driving}
       \label{sec:Muxmon0 vs Muxmon1}
@@ -591,7 +614,7 @@
 
 
     \section{Cross-coupling}
-
+      \label{sec:cross-coupling}
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
