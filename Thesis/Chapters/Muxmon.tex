@@ -557,21 +557,51 @@
         \label{fig:coherence times Muxmon0}
       \end{figure}
 
-      \begin{tabular}{l || c | r}
-        Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) \\
+      \begin{tabular}{l || c | c | c}
+        Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
         \hline
-        Top    & 6.277                & 6.700 \\
-        Ancilla& 6.551                & 6.733 \\
-        Bottom & 6.220                & 6.800
+        Top    & 6.277                & 6.700                & ?\\
+        Ancilla& 6.551                & 6.733                & ? \\
+        Bottom & 6.220                & 6.800                & ?
+        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $\f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
+        \label{tab:Muxmon0 qubit properties}
       \end{tabular}
 
-      In the Muxmon0 chip the top and bottom qubits are coupled to the ancilla qubit via a resonator bus.
+      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger that the coupling strength for all qubits.
+
+      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their sweet-spots. Under these conditions the coherence times of the three qubits are shown in Figure~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
 
       \textbf{TODO:}
       \begin{itemize}
         \item explain top ancilla and bottom qubit
-        \item Add third decimal top and ancilla qubit frequencies
+        \item find coupling strengths
+        \item  The fit to $T_2^*$ of the top qubit has been performed using a Gaussian noise model.
       \end{itemize}
+
+    \section{Cross-coupling}
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
+        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
+        \label{fig:excitation swap}
+      \end{figure}
+
+      The top qubit is coupled to the botom qubit via the following three components:
+
+      \begin{enumerate}
+        \item The resonator bus coupling the top qubit to the ancilla qubit.
+        \item The ancilla qubit.
+        \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
+      \end{enumerate}
+
+      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. Because of this interaction an excitation in one qubit can travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
+
+    \section{Readout cross-talk}
+      \label{sec:readout cross-talk}
+
+
+
 
 
     \textbf{Topics that should be explained in this section:}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 MAY 2015 12:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 MAY 2015 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -814,20 +814,7 @@ Package: gensymb 2003/07/02 v1.0 (WaS)
 Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 26.
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 27.
- (./thesis.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.244 g
-       eHy{}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-)
+ (./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -845,7 +832,8 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 74.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 74.
 
- (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
+
+(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 74.
@@ -1023,9 +1011,6 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [1{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1040,7 +1025,9 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 92.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 92.
- [1]
+ [1
+
+{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 115.
  (./thesis.toc
@@ -1050,21 +1037,12 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
  [1
 
-] [2]
-! Extra }, or forgotten \endgroup.
-l.86 ?}
-       {62}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-)
+] [2])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [3] (./Chapters/DRIE.tex
+ [3]
+(./Chapters/DRIE.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
@@ -1073,7 +1051,7 @@ LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
 
 ] [6]
 Chapter 1.
-<Figures/DRIE/CPW.png, id=32, 339.669pt x 158.5122pt>
+<Figures/DRIE/CPW.png, id=28, 339.669pt x 158.5122pt>
 File: Figures/DRIE/CPW.png Graphic file (type png)
 
 <use Figures/DRIE/CPW.png>
@@ -1087,70 +1065,11 @@ Underfull \hbox (badness 1259) in paragraph at lines 43--43
 -nar
  []
 
-
-LaTeX Warning: Citation `Mazin' on page 7 undefined on input line 67.
-
 [7
 
- <./Figures/DRIE/CPW.png>]
-
-LaTeX Warning: Citation `Mazin' on page 8 undefined on input line 90.
-
-
-LaTeX Warning: Citation `Geerlings' on page 8 undefined on input line 98.
-
-[8]
-
-LaTeX Warning: Citation `martinis2014ucsb' on page 9 undefined on input line 11
-5.
-
-
-LaTeX Warning: Citation `wenner2011surface' on page 9 undefined on input line 1
-15.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 9 undefined on input line
- 119.
-
-
-LaTeX Warning: Citation `Barends' on page 9 undefined on input line 130.
-
-
-LaTeX Warning: Citation `Mazin' on page 9 undefined on input line 130.
-
-
-LaTeX Warning: Citation `Mazin' on page 9 undefined on input line 132.
-
-[9]
-
-LaTeX Warning: Citation `sage2011study' on page 10 undefined on input line 154.
-
-
-
-LaTeX Warning: Citation `Mazin' on page 10 undefined on input line 154.
-
-
-LaTeX Warning: Citation `plourde2009microwave' on page 10 undefined on input li
-ne 169.
-
-
-LaTeX Warning: Citation `nsanzineza2014trapping' on page 10 undefined on input 
-line 171.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 10 undefined on input lin
-e 186.
-
-[10]
-
-LaTeX Warning: Citation `DRIE' on page 11 undefined on input line 188.
-
-
-LaTeX Warning: Citation `DRIE' on page 11 undefined on input line 199.
-
-[11] [12]
+ <./Figures/DRIE/CPW.png>] [8] [9] [10] [11] [12]
 Chapter 2.
-<Figures/DRIE/All_set4.png, id=58, 725.109pt x 311.2428pt>
+<Figures/DRIE/All_set4.png, id=54, 725.109pt x 311.2428pt>
 File: Figures/DRIE/All_set4.png Graphic file (type png)
 
 <use Figures/DRIE/All_set4.png>
@@ -1172,7 +1091,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
  <./Figures/DRIE/All_set4.png>]
 Chapter 3.
-<Figures/DRIE/resonator_amplitude.png, id=63, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_amplitude.png, id=59, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_amplitude.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_amplitude.png>
@@ -1180,7 +1099,7 @@ Package pdftex.def Info: Figures/DRIE/resonator_amplitude.png used on input lin
 e 244.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/resonator_complex.png, id=64, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_complex.png, id=60, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_complex.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_complex.png>
@@ -1188,29 +1107,18 @@ Package pdftex.def Info: Figures/DRIE/resonator_complex.png used on input line
 248.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-
-LaTeX Warning: Citation `Geerlings' on page 14 undefined on input line 254.
-
-<Figures/DRIE/Qi_vs_n_photon.png, id=65, 433.62pt x 289.08pt>
+<Figures/DRIE/Qi_vs_n_photon.png, id=61, 433.62pt x 289.08pt>
 File: Figures/DRIE/Qi_vs_n_photon.png Graphic file (type png)
 
 <use Figures/DRIE/Qi_vs_n_photon.png>
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon.png used on input line 264
 .
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
-
-
-LaTeX Warning: Citation `DRIE' on page 14 undefined on input line 268.
-
-[14
+ [14
 
  <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex.png
 >]
-
-LaTeX Warning: Citation `DRIE' on page 15 undefined on input line 272.
-
-
-<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=71, 433.62pt x 289.
+<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=67, 433.62pt x 289.
 08pt>
 File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
  png)
@@ -1219,7 +1127,7 @@ Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png
  used on input line 286.
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
  [15 <./Figures/DRIE/Qi_vs_n_photon.png>]
-<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=76, 433.62pt x 289.08
+<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=72, 433.62pt x 289.08
 pt>
 File: Figures/DRIE/Temperature tracking drop - Qi vs T.png Graphic file (type p
 ng)
@@ -1228,7 +1136,7 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking drop - Qi vs T.png u
 sed on input line 307.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=77, 433.62pt x 2
+<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=73, 433.62pt x 2
 89.08pt>
 File: Figures/DRIE/Temperature tracking - no drop - Qi vs T.png Graphic file (t
 ype png)
@@ -1238,7 +1146,7 @@ png used on input line 311.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
 [16 <./Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>]
-<Figures/DRIE/Temperature tracking - f0 vs T.png, id=82, 505.89pt x 361.35pt>
+<Figures/DRIE/Temperature tracking - f0 vs T.png, id=78, 505.89pt x 361.35pt>
 File: Figures/DRIE/Temperature tracking - f0 vs T.png Graphic file (type png)
 
 <use Figures/DRIE/Temperature tracking - f0 vs T.png>
@@ -1251,19 +1159,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [17 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
 mperature tracking - no drop - Qi vs T.png>]
-
-LaTeX Warning: Citation `Geerlings' on page 18 undefined on input line 333.
-
-
-LaTeX Warning: Citation `barends2008contribution' on page 18 undefined on input
- line 333.
-
-
-LaTeX Warning: Citation `barends2008contribution' on page 18 undefined on input
- line 333.
-
-
-<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=89, 505.
+<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=84, 505.
 89pt x 361.35pt>
 File: Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png Graphic
  file (type png)
@@ -1274,30 +1170,11 @@ ith fit.png used on input line 337.
 (pdftex.def)             Requested size: 317.07614pt x 226.4883pt.
 
 
-LaTeX Warning: Citation `gao2008experimental' on page 18 undefined on input lin
-e 338.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 18 undefined on input lin
-e 338.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 18 undefined on input lin
-e 342.
 
 [18 <./Figures/DRIE/Temperature tracking - f0 vs T.png>] [19 <./Figures/DRIE/Te
 mperature increase tracking - f0 vs T with fit.png>]
 Chapter 4.
-
-LaTeX Warning: Citation `gao2008experimental' on page 20 undefined on input lin
-e 348.
-
-
-LaTeX Warning: Citation `DRIE' on page 20 undefined on input line 350.
-
 ) (./Chapters/Muxmon.tex
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 2.
@@ -1311,42 +1188,19 @@ Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line
 Chapter 5.
 [24
 
-]
-
-LaTeX Warning: Citation `Reed' on page 25 undefined on input line 61.
-
-[25] [26] [27] [28] [29]
+] [25] [26] [27] [28] [29]
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [30] [31] [32]
-
-LaTeX Warning: Citation `Reed' on page 33 undefined on input line 286.
-
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <12> not available
 (Font)              Font shape `TS1/futs/b/n' tried instead on input line 293.
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <9> not available
 (Font)              Font shape `TS1/futs/b/n' tried instead on input line 293.
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <7> not available
 (Font)              Font shape `TS1/futs/b/n' tried instead on input line 293.
-[33] [34]
-
-LaTeX Warning: Citation `motzoi2009simple' on page 35 undefined on input line 3
-24.
-
-[35]
-
-LaTeX Warning: Citation `Reed' on page 36 undefined on input line 355.
-
-[36]
-
-LaTeX Warning: Citation `Bishop' on page 37 undefined on input line 383.
-
-
-LaTeX Warning: Citation `Sears' on page 37 undefined on input line 383.
-
-[37] [38] [39]
+ [33] [34] [35] [36] [37] [38] [39]
 Chapter 6.
 [40
 
@@ -1354,20 +1208,16 @@ Chapter 6.
 Chapter 7.
 [41
 
-] [42] [43]
-
-LaTeX Warning: Citation `Reed' on page 44 undefined on input line 505.
-
-[44]
+] [42] [43] [44]
 Chapter 8.
-<../Figures/MUX_0.jpg, id=178, 5161.2825pt x 1519.6775pt>
+<../Figures/MUX_0.jpg, id=174, 5161.2825pt x 1519.6775pt>
 File: ../Figures/MUX_0.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_0.jpg>
 Package pdftex.def Info: ../Figures/MUX_0.jpg used on input line 528.
 (pdftex.def)             Requested size: 407.66833pt x 120.02306pt.
 
-<../Figures/MUX_1.jpg, id=179, 5440.325pt x 1524.69624pt>
+<../Figures/MUX_1.jpg, id=175, 5440.325pt x 1524.69624pt>
 File: ../Figures/MUX_1.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_1.jpg>
@@ -1385,7 +1235,7 @@ t line 542.
 [45
 
  <../Figures/MUX_0.jpg> <../Figures/MUX_1.jpg>]
-<../Figures/Exploring frequency re-use/coherence_times.png, id=183, 722.7pt x 5
+<../Figures/Exploring frequency re-use/coherence_times.png, id=179, 722.7pt x 5
 78.16pt>
 File: ../Figures/Exploring frequency re-use/coherence_times.png Graphic file (t
 ype png)
@@ -1394,44 +1244,66 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/coherence_times.
 png used on input line 555.
 (pdftex.def)             Requested size: 452.9679pt x 362.37247pt.
 
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.566         \caption
+                      {Sweet-spot frequencies $f_\text{max}$, resonator freq...
+
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 589--590
+<../Figures/Exploring frequency re-use/excitation_swap.png, id=183, 722.7pt x 3
+61.35pt>
+File: ../Figures/Exploring frequency re-use/excitation_swap.png Graphic file (t
+ype png)
+ <use ../Figures/Exploring frequency re-use/excitation_swap.png>
+Package pdftex.def Info: ../Figures/Exploring frequency re-use/excitation_swap.
+png used on input line 585.
+(pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
+
+[47 <../Figures/Exploring frequency re-use/coherence_times.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
 
  []
 
-[47 <../Figures/Exploring frequency re-use/coherence_times.png>] [48] [49]
+[48 <../Figures/Exploring frequency re-use/excitation_swap.png>] [49] [50]
 Chapter 9.
-[50
+[51
 
 ]
 Chapter 10.
-) [51
+) [52
 
-] [52
+] [53
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 53 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 54 undefined on input
  line 19.
 
 
-LaTeX Warning: Citation `vasilescu2006electronic' on page 53 undefined on input
- line 19.
-
-
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 53 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 54 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=208, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=209, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=209, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=210, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1441,39 +1313,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53
+[54
 
-] [54 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=217, 1118.9805pt x 420.3705pt>
+] [55 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=218, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
-
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 55 undefined on input
- line 99.
-
-[55 <./Figures/Noise/Noise model.png>]
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 56 undefined on input
- line 137.
-
-[56]
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 57 undefined on input
- line 157.
-
-[57]
-<Figures/Noise/noise_temperature_versus_power.png, id=228, 433.62pt x 289.08pt>
+ [56 <./Figures/Noise/Noise model.png>]
+[57] [58]
+<Figures/Noise/noise_temperature_versus_power.png, id=229, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [58 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=233, 433.62pt x 
+ [59 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=234, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1482,48 +1340,43 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[59 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [60]
+[60 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [61]
 Appendix B.
-[61
+[62
 
 ]
 Appendix C.
-) (./thesis.bbl [62
+) (./thesis.bbl [63
 
-] [63
+] [64
 
 ]) 
 AED: lastpage setting LastPage
-[64] (./thesis.aux)
+[65] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 16309 strings out of 493109
- 317809 string characters out of 6138586
- 456178 words of memory out of 5000000
- 19186 multiletter control sequences out of 15000+600000
+ 16317 strings out of 493109
+ 318141 string characters out of 6138586
+ 456238 words of memory out of 5000000
+ 19194 multiletter control sequences out of 15000+600000
  207820 words of font info for 407 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,13n,54p,10406b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2014/texm
-f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2014/texmf-dist/fon
-ts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2014/texmf-dist/fonts/type1
-/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/f
-ourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/
-fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb>
-<c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/20
-14/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/f
-onts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb>
-Output written on thesis.pdf (66 pages, 7893825 bytes).
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
+f-dist/fonts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2014/texmf-dist/f
+onts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-dist/fonts/type
+1/public/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publi
+c/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/p
+utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
+texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
+xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
+Output written on thesis.pdf (66 pages, 7947848 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 67675 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 67680 words of extra memory for PDF output out of 74296 (max. 10000000)
 
