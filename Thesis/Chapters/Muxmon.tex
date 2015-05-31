@@ -277,7 +277,7 @@
 
         Once the 12-transition transition is found, and hence the qubit's anharmonicity $\alpha$, it is the possible to calculate the coupling energy $E_c$. \textbf{TODO:}.
 
-        Finding the resonator frequency when the qubit is in the excited-state can be tricky, as pulsed spectroscopy is usually required. Nevertheless a rough estimation can be found using a modified version of spectroscopy, where the drive tone $\omega_\text{drive}$ is kept fixed, whilst the resonator frequency is swept. The lower peak will be a rough estimation of the resonator frequency when the qubit is in the excited-state. Alternatively it is also possible to use the resonator frequency when the qubit is in the ground-state, although this will reduce the contrast between driving on-resonance and driving off-resonance.
+        Finding the resonator frequency when the qubit is in the excited-state can be tricky, as pulsed spectroscopy is usually required. Nevertheless a rough estimation can be found using a modified version of spectroscopy, where the drive tone $\omega_\text{drive}$ is kept fixed, while the resonator frequency is swept. The lower peak will be a rough estimation of the resonator frequency when the qubit is in the excited-state. Alternatively it is also possible to use the resonator frequency when the qubit is in the ground-state, although this will reduce the contrast between driving on-resonance and driving off-resonance.
 
         It is worthwhile to note that three-tone spectroscopy produces much more accurate results when using pulsed spectroscopy, as the difference in transmission is generally small compared to two-tone spectroscopy.
 
@@ -290,7 +290,7 @@
         \label{ssec:Flux matrix}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. For the Muxmon experiment the frequencies of the three qubits have to be individually tuned to very specific frequencies, and so the frequency responses of the qubits have to be decoupled. This is done by implementing a flux matrix, which corrects for the flux cross-coupling effects.
 
-        A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left[f_{i1}, \dots, f_{in}\right]$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, whilst the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
+        A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left[f_{i1}, \dots, f_{in}\right]$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, while the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
 
         Creating a flux matrix is done by first determining for each qubit separately how much every flux-bias line affects its frequency. For a given qubit $i$ this can be found by tuning the qubit away from its sweet-spot using its main flux-bias line, to a point where the slope $\partial f_i/\partial V_i$ of the qubit frequency $f_i$ as a function of DAC voltage $V_i$ is steep. This is the region where we are sensitive to changes in qubit frequency. For the main flux-bias line we already know from tracked spectroscopy what the slope $\partial f_i / \partial V_i$ is at this point. For each of the remaining flux-bias lines we measure the slope $\partial f_i / \partial V_j$ as we vary the DAC voltage $V_j$ and measure the response of the qubit frequency $f_i$. The slope $\partial f_i / \partial V_j$ is a measure for the amount of flux cross-coupling, which should be considerably less than for the main flux-bias line. Finally dividing all the slopes by the slope $\partial f_i / \partial V_j$ of our main flux-bias line, results in the ratio's of the frequency response of qubit $i$ for each of the flux-bias lines. Performing this measurement for all the qubits results in a matrix $\boldsymbol{M}$, where each element $M_{ij}=\partial f_i / \partial V_j$ is the normalized frequency response of qubit $i$ when varying the DAC voltage of the flux-bias line corresponding to qubit $j$. The diagonal elements of matrix $\boldsymbol{M}$ should be equal to one.
 
@@ -348,7 +348,7 @@
 
       \subsection{Drive amplitude calibration}
         \label{ssec:Rabi}
-        Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. To rotate the qubit by a specific angle, either the pulse duration can be varied, keeping the amplitude fixed, or the pulse amplitude can be varied, keeping the pulse duration fixed. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. On the other hand, pulses with a small rotation angle have a very small duration, and so their bandwidth will be large, which may lead to increased leakage. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, whilst the pulse duration is kept fixed.
+        Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. To rotate the qubit by a specific angle, either the pulse duration can be varied, keeping the amplitude fixed, or the pulse amplitude can be varied, keeping the pulse duration fixed. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. On the other hand, pulses with a small rotation angle have a very small duration, and so their bandwidth will be large, which may lead to increased leakage. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, while the pulse duration is kept fixed.
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which depends on the pulse amplitude.
 
@@ -411,11 +411,11 @@
           \end{itemize}
 
         \subsubsection{Fast frequency qubit dephasing: Echo}
-          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, whilst others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
+          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
 
           An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. This has the effect that the state of the qubit is essentially flipped on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
 
-          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, whilst keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled. This inhibits the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, such that the result is an oscillation in qubit state.
+          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled. This inhibits the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, such that the result is an oscillation in qubit state.
 
           There are more complicated Echo sequences, involving multiple refocusing pulses. By placing these at specific times the different frequency contributions of the phase noise can be characterized. Furthermore, by repeatedly applying a refocusing pulse, the state of the qubit can be preserved much longer than the limit imposed by $T_2^*$.
 
@@ -473,7 +473,7 @@
       \end{itemize}
 
     \section{DRAG parameter calibration}
-      The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, whilst the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
+      The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, while the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
 
       \textbf{Questions:}
       \begin{itemize}
@@ -511,6 +511,8 @@
 
   \chapter{Exploring frequency re-use}
     \label{ch:Muxmon chip architecture}
+
+
     \begin{itemize}
       \item The Muxmon0 and Muxmon1 chip are designed with two purposes
       \begin{enumerate}
@@ -532,27 +534,29 @@
       \centering
         \begin{subfigure}[b]{0.9\textwidth}
           \includegraphics[width=1\linewidth]{../Figures/MUX_0.jpg}
-          \caption{Muxmon0}
+          \caption{The Muxmon0 chip, in which the qubit drive lines are directly coupled}
           \label{fig:Muxmon0 image}
         \end{subfigure}
 
         \begin{subfigure}[b]{0.9\textwidth}
           \includegraphics[width=1\linewidth]{../Figures/MUX_1.jpg}
-          \caption{Muxmon1}
+          \caption{The Muxmon1 chip, in which the qubit drive lines are capacitively coupled}
           \label{fig:Muxmon1 image}
         \end{subfigure}
-        % \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, whilst the }
+        \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, while the }
         \label{fig:Muxmon0 and Muxmon1}
       \end{figure}
 
-      The Muxmon0 and the Muxmon 1 chips were designed to study pulse multiplexing and frequency re-use. The two chips are shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
+      % \begin{figure}[tb]
+      %   \centering
+      %   \includegraphics[width=.5\textwidth]{../Figures/}
+      %   \caption{Caption here}
+      %   \label{fig:figure1}
+      % \end{figure}
 
-      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0.
+      The Muxmon0 and the Muxmon 1 chips were designed to study pulse multiplexing and frequency re-use. The two chips are shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feed line can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
 
-      \textbf{TODO:}
-      \begin{itemize}
-        \item Mention correct coherence times.
-      \end{itemize}
+      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 coherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0.
 
     \section{Properties of the Muxmon0 chip}
 
@@ -574,7 +578,7 @@
         \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
         \label{tab:Muxmon0 qubit properties}
       \end{table}
-      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger that the coupling strength for all qubits.
+      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger than the coupling strength for all qubits. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}. These buses can be used for multi-qubit operations, such as excitation swapping.
 
       To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the coherence times of the three qubits are shown in Figure~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
 
@@ -584,6 +588,7 @@
         \item find coupling strengths
         \item  The fit to $T_2^*$ of the top qubit has been performed using a Gaussian noise model.
       \end{itemize}
+
 
     \section{Cross-coupling}
 
@@ -626,7 +631,7 @@
           \begin{tabular}{c | c}
             qubit & cross-driving (\%) \\
             \hline
-            Top & $100$ \\
+            Top & $-$ \\
             Ancilla &$ 0.79$ \\
             Bottom & $0.57$
           \label{tab:cross-driving top}
@@ -638,7 +643,7 @@
             \hline
             Top & $0.23$ \\
             Ancilla &$ 0.66$ \\
-            Bottom & $100$
+            Bottom & $-$
           \end{tabular}
           \captionof{table}{Driving through bottom qubit drive line}
           \label{tab:cross-driving bottom}
@@ -661,7 +666,18 @@
 
     \section{Duplexer}
       \label{sec:Duplexer}
-      The Duplexer is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Each of the input-output port combinations has the following successive components:
+      \begin{wrapfigure}[8]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
+        \end{center}
+        \vspace{-5pt}
+        \caption{The Duplexer}
+        \label{fig:Duplexer picture}
+        \vspace{-10pt}
+      \end{wrapfigure}
+
+      The Duplexer shown in Figure~\ref{fig:Duplexer picture} is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Each of the input-output port combinations has the following successive components:
 
       \begin{enumerate}
         \item Digital switch
@@ -690,37 +706,19 @@
 
       The result of these components is that the signal of each input-output port combination can be individually modified. In the Muxmon set-up two of the four input ports are used. One input port receives the main pulse, the other receives the DRAG pulse. These are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit separately.
 
-      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two qubits, or to both qubits simultaneously. This allows for selective broadcasting
+      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two qubits, or to both qubits simultaneously. This allows for selective broadcasting. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
 
-      \textbf{Figures:}
-      \begin{itemize}
-        \item Figure of Duplexer
-      \end{itemize}
 
-    \textbf{Topics that should be explained in this section:}
-    \begin{itemize}
-      \item Air bridges are used, not only for connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
-      \item The Muxmon0 chip has a driving line connected to each of the qubits. \\
-            It has two resonator buses at \SI{4.9}{\giga \hertz} and \SI{5.0}{\giga \hertz}. \\
-            These could also be used for two-qubit gates.
-      \item More coupling between qubits in Muxmon1
-      \item Also show cross-coupling of Muxmon1 in Appendix
-    \end{itemize}
-
-    \textbf{Left to think about:}
-    \begin{itemize}
-      \item Where should I include coherence times versus frequency?
-    \end{itemize}
 
     \textbf{Figures that need to be included:}
     \begin{itemize}
-      \item SEM image of air-bridges such that coplanar wave-guides cross without intersecting
       \item schematic of cross-coupling and readout cross-talk \\
           It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
     \end{itemize}
 
 
   \chapter{Randomized benchmarking}
+    \label{ch:randomized benchmarking}
 
     \section{Second excited state}
 
