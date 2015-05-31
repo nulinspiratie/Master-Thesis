@@ -33,8 +33,88 @@
     \end{itemize}
 
 
+  \chapter{Challenges in scaling up}
+    \label{ch:Muxmon chip architecture}
 
+    \section{frequency re-use}
+      \begin{wrapfigure}[16]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/bandwidth_broadening.png}
+        \end{center}
+        \caption{The frequency bandwidth corresponding to Gaussian pulses with different widths $\sigma$.}
+        \label{fig:bandwidth broadening}
+        \vspace{-20pt}
+      \end{wrapfigure}
 
+      Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
+
+      If the qubits are not connected to the same drive line, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture. One possible implementation of frequency re-use in the surface code is shown in Figure~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
+
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=.6\textwidth]{../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jpg}
+        \caption{A surface code architecture with the implementation of frequency re-use. The different digits correspond to distinct frequencies. }
+        \label{fig:surface code frequency re-use}
+      \end{figure}
+
+      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Section~\ref{sec:cross-coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Section~\ref{sec:cross-driving}.
+
+    \section{Selective broadcasting}
+      \label{sec:selective broadcasting using the Duplexer}
+      \begin{wrapfigure}[13]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
+        \end{center}
+        \vspace{-5pt}
+        \caption{The Duplexer}
+        \label{fig:Duplexer picture}
+        \vspace{-10pt}
+      \end{wrapfigure}
+
+      A second challenge that exists when scaling up is that as the number of qubits grow, so do the instruments needed to control them. When thinking of a large-scale quantum computer, it is unrealistic to think that each qubit will have its own RF generator, AWG, and other necessary instruments. Therefore, alternatives have to be devised to combat this scaling of instruments. One such device is the Duplexer, shown in Figure~\ref{fig:Duplexer picture}. The Duplexer is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Signals going through each of the input-output port combinations pass through the following successive components:
+
+      \begin{enumerate}
+        \item Digital switch
+        \item Variable phase-shifter
+        \item Variable attenuator
+        \item Amplifier
+      \end{enumerate}
+
+      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two output ports, or to both output ports simultaneously. This allows for selective broadcasting, where pulses are routed to either or both of the two output ports at the nanosecond scale. When the output ports are connected to drive lines that are connected to qubits sharing the same frequency, the result is that two qubits can be controlled using a single generator and AWG. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
+
+    \section{The Muxmon experiment}
+      \label{sec: the Muxmon experiment}
+      \begin{figure}[h]
+      \centering
+        \begin{subfigure}[b]{0.9\textwidth}
+          \includegraphics[width=1\linewidth]{../Figures/MUX_0.jpg}
+          \caption{The Muxmon0 chip, in which the qubit drive lines are directly coupled}
+          \label{fig:Muxmon0 image}
+        \end{subfigure}
+
+        \begin{subfigure}[b]{0.9\textwidth}
+          \includegraphics[width=1\linewidth]{../Figures/MUX_1.jpg}
+          \caption{The Muxmon1 chip, in which the qubit drive lines are capacitively coupled}
+          \label{fig:Muxmon1 image}
+        \end{subfigure}
+        \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, while the qubits of Muxmon1 have drive lines capacitively coupled to the resonator buses.}
+        \label{fig:Muxmon0 and Muxmon1}
+      \end{figure}
+
+      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feed line can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
+
+      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 coherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0.
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\textwidth]{../Figures/Muxmon set-up.pdf}
+        \caption{The Muxmon set-up}
+        \label{fig:Muxmon set-up}
+      \end{figure}
+
+      The Muxmon experiment set-up is shown in Figure~\ref{fig:Muxmon set-up}. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Section~\ref{ssec:qubit control} for more info). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
 
   \chapter{Qubit characterization}
     \begin{description}
@@ -310,6 +390,7 @@
 
     \section{Time-domain measurements}
       \subsection{Qubit control}
+        \label{ssec:qubit control}
         So far the measurements described have all dealt with continuous tones being applied and measuring the response in the transmission. These are crude measurements, that are nevertheless able to determine some properties of the qubit and resonator, such as their frequencies. However, to find more detailed properties of the qubits, such as their coherence times, one cannot apply a continuous tone, that drives some incoherent qubit population. Instead well-calibrated pulses are required, which modify the state of the qubit in a precise manner, corresponding to gates being applied to the qubit. These types of measurements are called time-domain measurements, as they require precise pulse timing.
 
         A simple time-domain measurement usually consists of two parts. The first part consists of controlling the qubit. Here pulses are sent which modify the state of the qubit. The second part consists of measuring the state of the qubit. This is done through a readout tone, similar to spectroscopy measurements. This readout tone projects the state of the qubit onto the Z-axis. From the response in the transmission the state of the qubit can be inferred. More complicated experiments may involve some sort of feedback loop, where additional qubit control can be applied depending on the measurement outcome. These measurements require the qubit readout to be quantum non-demolition, i.e. the state of the qubit is not destroyed in the process of qubit readout. This usually involves extremely low-noise amplification, such as through a Josephson parametric amplifier. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
@@ -431,9 +512,6 @@
 
       \subsection{Measuring single shots}
 
-  \chapter{Muxmon experiment}
-    \textbf{TODO:} Details about Muxmon experiment and possibly also Duplexer
-
   \chapter{Calibration routines}
     \textbf{TODO:} Introduction
     \section{Accurate frequency estimation}
@@ -525,64 +603,6 @@
       \end{figure}
 
 
-  \chapter{Exploring frequency re-use}
-    \label{ch:Muxmon chip architecture}
-
-    \section{frequency re-use}
-      \begin{wrapfigure}[16]{r}{0.45\textwidth}
-        \begin{center}
-        \vspace{-30pt}
-          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/bandwidth_broadening.png}
-        \end{center}
-        \caption{The frequency bandwidth corresponding to Gaussian pulses with different widths $\sigma$.}
-        \label{fig:bandwidth broadening}
-        \vspace{-20pt}
-      \end{wrapfigure}
-
-      Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
-
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=0.6\textwidth]{../Figures/Exploring frequency re-use/surface_code_frequency re-use.jpg}
-        \caption{A surface code architecture with the implementation of frequency re-use. The different digits correspond to distinct frequencies. }
-        \label{fig:surface code frequency re-use}
-      \end{figure}
-      If the qubits are not connected to the same drive line, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture. One possible implementation of frequency re-use in the surface code is shown in Figure~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
-
-      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Section~\ref{sec:cross-coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Section~\ref{sec:cross-driving}.
-
-    \section{Selective broadcasting}
-      \label{sec:selective broadcasting}
-      A second challenge that exists when scaling up is that as the number of qubits grow, so do the instruments needed to control them. It is unlikely
-
-    \section{Duplexer}
-      \label{sec:Duplexer}
-      \begin{wrapfigure}[8]{r}{0.45\textwidth}
-        \begin{center}
-        \vspace{-30pt}
-          \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
-        \end{center}
-        \vspace{-5pt}
-        \caption{The Duplexer}
-        \label{fig:Duplexer picture}
-        \vspace{-10pt}
-      \end{wrapfigure}
-
-      The Duplexer shown in Figure~\ref{fig:Duplexer picture} is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Each of the input-output port combinations has the following successive components:
-
-      \begin{enumerate}
-        \item Digital switch
-        \item Variable phase-shifter
-        \item Variable attenuator
-        \item Amplifier
-      \end{enumerate}
-
-In the Muxmon set-up two of the four input ports are used. One input port receives the main pulse, the other receives the DRAG pulse. These are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
-
-      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two qubits, or to both qubits simultaneously. This allows for selective broadcasting. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
-
-
-
 
     \begin{itemize}
       \item The Muxmon0 and Muxmon1 chip are designed with two purposes
@@ -597,30 +617,7 @@ In the Muxmon set-up two of the four input ports are used. One input port receiv
       \item Title could be frequency re-use and multiplexing / selective broadcasting
     \end{itemize}
 
-    \section{Direct driving versus capacitive driving}
-      \label{sec:Muxmon0 vs Muxmon1}
-
-      \begin{figure}[h]
-      \centering
-        \begin{subfigure}[b]{0.9\textwidth}
-          \includegraphics[width=1\linewidth]{../Figures/MUX_0.jpg}
-          \caption{The Muxmon0 chip, in which the qubit drive lines are directly coupled}
-          \label{fig:Muxmon0 image}
-        \end{subfigure}
-
-        \begin{subfigure}[b]{0.9\textwidth}
-          \includegraphics[width=1\linewidth]{../Figures/MUX_1.jpg}
-          \caption{The Muxmon1 chip, in which the qubit drive lines are capacitively coupled}
-          \label{fig:Muxmon1 image}
-        \end{subfigure}
-        \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, while the qubits of Muxmon1 have drive lines capacitively coupled to the resonator buses.}
-        \label{fig:Muxmon0 and Muxmon1}
-      \end{figure}
-
-      The Muxmon0 and the Muxmon 1 chips were designed to study pulse multiplexing and frequency re-use. The two chips are shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feed line can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
-
-      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 coherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0.
-
+  \chapter{Exploring the Muxmon chip}
     \section{Properties of the Muxmon0 chip}
 
       \begin{figure}[tb]
