@@ -511,13 +511,19 @@
 
   \chapter{Exploring frequency re-use}
     \label{ch:Muxmon chip architecture}
+    \begin{itemize}
+      \item The Muxmon0 and Muxmon1 chip are designed with two purposes
+      \begin{enumerate}
+        \item Testing multiplexing using the Duplexer
+        \item Explore qubit frequency re-use
+      \end{enumerate}
+    \end{itemize}
 
     \section{Frequency re-use in the Surface Code}
       \label{sec:Frequency re-use in the Surface Code}
       \begin{itemize}
         \item Frequency crowding
       \end{itemize}
-
 
     \section{Direct driving versus capacitive driving}
       \label{sec:Muxmon0 vs Muxmon1}
@@ -597,8 +603,15 @@
 
       When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. Because of this interaction an excitation in one qubit can travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
 
-    \section{Readout cross-talk}
-      \label{sec:readout cross-talk}
+    \section{Cross-driving}
+      \label{sec:cross-driving}
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+        \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
+        \label{fig:Drive}
+      \end{figure}
 
 
 
@@ -606,16 +619,8 @@
 
     \textbf{Topics that should be explained in this section:}
     \begin{itemize}
-      \item The Muxmon0 and Muxmon1 chip are designed with two purposes
-      \begin{enumerate}
-        \item Testing multiplexing using the Duplexer
-        \item Explore qubit frequency re-use
-      \end{enumerate}
-
       \item Explain similarities of chips
       \begin{itemize}
-        \item Three qubits per chip
-        \item All three qubits have individual flux tuning
         \item Air bridges are used, not only for connect the ground planes, but also such that the feed line can pass over other coplanar waveguides without contact \\
       \end{itemize}
 
