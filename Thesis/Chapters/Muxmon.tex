@@ -563,19 +563,20 @@
         \label{fig:coherence times Muxmon0}
       \end{figure}
 
-      \begin{tabular}{l || c | c | c}
-        Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
-        \hline
-        Top    & 6.277                & 6.700                & ?\\
-        Ancilla& 6.551                & 6.733                & ? \\
-        Bottom & 6.220                & 6.800                & ?
-        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $\f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
+      \begin{table}
+        \begin{tabular}{l || c | c | c}
+          Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
+          \hline
+          Top    & 6.277                & 6.700                & ?\\
+          Ancilla& 6.551                & 6.733                & ? \\
+          Bottom & 6.220                & 6.800                & ?
+        \end{tabular}
+        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
         \label{tab:Muxmon0 qubit properties}
-      \end{tabular}
-
+      \end{table}
       In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger that the coupling strength for all qubits.
 
-      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their sweet-spots. Under these conditions the coherence times of the three qubits are shown in Figure~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
+      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the coherence times of the three qubits are shown in Figure~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
 
       \textbf{TODO:}
       \begin{itemize}
@@ -593,7 +594,7 @@
         \label{fig:excitation swap}
       \end{figure}
 
-      The top qubit is coupled to the botom qubit via the following three components:
+      The top qubit is coupled to the botom qubit via the following three successive components:
 
       \begin{enumerate}
         \item The resonator bus coupling the top qubit to the ancilla qubit.
@@ -601,19 +602,62 @@
         \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
       \end{enumerate}
 
-      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. Because of this interaction an excitation in one qubit can travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
+      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
 
     \section{Cross-driving}
       \label{sec:cross-driving}
+
+      {\centering
+        \begin{minipage}{0.65\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+          \captionof{figure}{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+          \label{fig:cross-driving Rabi}
+        \end{minipage}
+        \begin{minipage}{0.35\textwidth}
+          \centering
+          \begin{tabular}{c | c}
+            qubit & cross-driving (\%) \\
+            \hline
+            Top & $100$ \\
+            Ancilla &$ 0.79$ \\
+            Bottom & $0.57$
+          \label{tab:cross-driving top}
+          \end{tabular}
+          \captionof{table}{Driving through top qubit drive line}
+          \vspace{2cm}
+          \begin{tabular}{c | c}
+            qubit & cross-driving (\%) \\
+            \hline
+            Top & $0.23$ \\
+            Ancilla &$ 0.66$ \\
+            Bottom & $100$
+          \end{tabular}
+          \captionof{table}{Driving through bottom qubit drive line}
+          \label{tab:cross-driving bottom}
+        \end{minipage}
+      \vspace{1cm}
+      }
+
+      When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits.
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=.8\textwidth]{../Figures/Exploring frequency re-use/cross-driving_setup.jpg}
+        \caption{Schematic for measuring the amount of cross-driving using the direct drive lines of the top and bottom qubit.}
+        \label{fig:cross-driving schematic}
+      \end{figure}
+
+      The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Tables~\ref{tab:cross-driving top} and ~\ref{tab:cross-driving bottom}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
 
       \begin{figure}[tb]
         \centering
         \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
         \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
-        \label{fig:Drive}
+        \label{fig:cross-driving versus top frequency}
       \end{figure}
 
-
+      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
 
 
 
