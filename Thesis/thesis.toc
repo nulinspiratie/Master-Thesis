@@ -52,44 +52,43 @@
 \contentsline {section}{\numberline {7.7}AllXY}{44}
 \contentsline {chapter}{\numberline {8}Exploring frequency re-use}{45}
 \contentsline {section}{\numberline {8.1}frequency re-use}{45}
-\contentsline {section}{\numberline {8.2}Frequency re-use in the Surface Code}{45}
-\contentsline {section}{\numberline {8.3}Direct driving versus capacitive driving}{46}
-\contentsline {section}{\numberline {8.4}Properties of the Muxmon0 chip}{47}
-\contentsline {section}{\numberline {8.5}Cross-coupling}{49}
-\contentsline {section}{\numberline {8.6}Cross-driving}{50}
-\contentsline {section}{\numberline {8.7}Duplexer}{52}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{54}
-\contentsline {section}{\numberline {9.1}Second excited state}{54}
-\contentsline {chapter}{\numberline {10}Conclusions and outlook}{55}
-\contentsline {chapter}{Appendices}{56}
-\contentsline {chapter}{\numberline {A}Noise}{57}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{57}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{57}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{58}
-\contentsline {section}{\numberline {A.2}The model}{59}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{59}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{60}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{60}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{61}
-\contentsline {section}{\numberline {A.3}Noise temperature}{61}
-\contentsline {section}{\numberline {A.4}Results}{62}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{63}
-\contentsline {chapter}{\numberline {B}Duplexer characterization}{65}
-\contentsline {section}{\numberline {B.1}Duplexer isolation}{65}
-\contentsline {chapter}{\numberline {C}Chip characterization}{66}
-\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{66}
-\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{66}
-\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{66}
-\contentsline {chapter}{\numberline {D}Additional notes}{67}
-\contentsline {section}{\numberline {D.1}Qubit characterization}{67}
-\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{67}
-\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{67}
-\contentsline {subsubsection}{\numberline {D.1.1.2}Spectroscopy}{67}
-\contentsline {subsection}{\numberline {D.1.2}Part I: Time-domain measurements}{67}
-\contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{67}
-\contentsline {chapter}{\numberline {E}Algorithms}{68}
-\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{68}
-\contentsline {section}{\numberline {E.2}Peak finding}{68}
-\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{68}
-\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{68}
-\contentsline {section}{\numberline {E.3}Compiled RB?}{68}
+\contentsline {section}{\numberline {8.2}Direct driving versus capacitive driving}{46}
+\contentsline {section}{\numberline {8.3}Properties of the Muxmon0 chip}{48}
+\contentsline {section}{\numberline {8.4}Cross-coupling}{49}
+\contentsline {section}{\numberline {8.5}Cross-driving}{51}
+\contentsline {section}{\numberline {8.6}Duplexer}{52}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{55}
+\contentsline {section}{\numberline {9.1}Second excited state}{55}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{56}
+\contentsline {chapter}{Appendices}{57}
+\contentsline {chapter}{\numberline {A}Noise}{58}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{58}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{58}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{59}
+\contentsline {section}{\numberline {A.2}The model}{60}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{60}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{61}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{61}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{62}
+\contentsline {section}{\numberline {A.3}Noise temperature}{62}
+\contentsline {section}{\numberline {A.4}Results}{63}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{64}
+\contentsline {chapter}{\numberline {B}Duplexer characterization}{66}
+\contentsline {section}{\numberline {B.1}Duplexer isolation}{66}
+\contentsline {chapter}{\numberline {C}Chip characterization}{67}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{67}
+\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{67}
+\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{67}
+\contentsline {chapter}{\numberline {D}Additional notes}{68}
+\contentsline {section}{\numberline {D.1}Qubit characterization}{68}
+\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{68}
+\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{68}
+\contentsline {subsubsection}{\numberline {D.1.1.2}Spectroscopy}{68}
+\contentsline {subsection}{\numberline {D.1.2}Part I: Time-domain measurements}{68}
+\contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{68}
+\contentsline {chapter}{\numberline {E}Algorithms}{69}
+\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{69}
+\contentsline {section}{\numberline {E.2}Peak finding}{69}
+\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{69}
+\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{69}
+\contentsline {section}{\numberline {E.3}Compiled RB?}{69}

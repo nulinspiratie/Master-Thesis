@@ -504,24 +504,39 @@
 
         The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
 
-        \textbf{Figures:}
-        \begin{itemize}
-          \item AllXY sequence with drive detuning
-        \end{itemize}
+      The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
+
+      \begin{figure}
+      \centering
+         \begin{subfigure}[b]{\textwidth}
+         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drive_top.png}
+         \caption{}
+         \label{fig:AllXY drive top}
+      \end{subfigure}
+
+      \begin{subfigure}[b]{\textwidth}
+         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drag_top.png}
+         \caption{}
+         \label{fig:AllXY DRAG top}
+      \end{subfigure}
+
+      \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top quibt are varied.}
+      \label{fig:AllXY individual control}
+      \end{figure}
+
 
   \chapter{Exploring frequency re-use}
     \label{ch:Muxmon chip architecture}
 
     \section{frequency re-use}
-      \begin{wrapfigure}[8]{r}{0.45\textwidth}
+      \begin{wrapfigure}[16]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
-          \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/bandwidth_broadening.png}
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/bandwidth_broadening.png}
         \end{center}
-        \vspace{-5pt}
         \caption{The frequency bandwidth corresponding to Gaussian pulses with different widths $\sigma$.}
         \label{fig:bandwidth broadening}
-        \vspace{-10pt}
+        \vspace{-20pt}
       \end{wrapfigure}
 
       Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
@@ -534,7 +549,39 @@
       \end{figure}
       If the qubits are not connected to the same drive line, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture. One possible implementation of frequency re-use in the surface code is shown in Figure~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
 
-      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Section~\ref{sec:cross-coupling}. The second effect is cross-driving, where a pulse partially leaks through the components, and will . This leakage of a pulse is always present, but does not pose a problem as long as the frequency of the pulse is sufficiently separated from the frequency of the other qubits.
+      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Section~\ref{sec:cross-coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Section~\ref{sec:cross-driving}.
+
+    \section{Selective broadcasting}
+      \label{sec:selective broadcasting}
+      A second challenge that exists when scaling up is that as the number of qubits grow, so do the instruments needed to control them. It is unlikely
+
+    \section{Duplexer}
+      \label{sec:Duplexer}
+      \begin{wrapfigure}[8]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
+        \end{center}
+        \vspace{-5pt}
+        \caption{The Duplexer}
+        \label{fig:Duplexer picture}
+        \vspace{-10pt}
+      \end{wrapfigure}
+
+      The Duplexer shown in Figure~\ref{fig:Duplexer picture} is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Each of the input-output port combinations has the following successive components:
+
+      \begin{enumerate}
+        \item Digital switch
+        \item Variable phase-shifter
+        \item Variable attenuator
+        \item Amplifier
+      \end{enumerate}
+
+In the Muxmon set-up two of the four input ports are used. One input port receives the main pulse, the other receives the DRAG pulse. These are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
+
+      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two qubits, or to both qubits simultaneously. This allows for selective broadcasting. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
+
+
 
 
     \begin{itemize}
@@ -566,16 +613,9 @@
           \caption{The Muxmon1 chip, in which the qubit drive lines are capacitively coupled}
           \label{fig:Muxmon1 image}
         \end{subfigure}
-        \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, while the }
+        \caption[Muxmon chips]{The Muxmon0 and Muxmon1 chips. The qubits of Muxmon0 have direct drive lines, while the qubits of Muxmon1 have drive lines capacitively coupled to the resonator buses.}
         \label{fig:Muxmon0 and Muxmon1}
       \end{figure}
-
-      % \begin{figure}[tb]
-      %   \centering
-      %   \includegraphics[width=.5\textwidth]{../Figures/}
-      %   \caption{Caption here}
-      %   \label{fig:figure1}
-      % \end{figure}
 
       The Muxmon0 and the Muxmon 1 chips were designed to study pulse multiplexing and frequency re-use. The two chips are shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feed line can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
 
@@ -678,59 +718,17 @@
 
       The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Tables~\ref{tab:cross-driving top} and ~\ref{tab:cross-driving bottom}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
-        \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
-        \label{fig:cross-driving versus top frequency}
-      \end{figure}
-
-      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
-
-    \section{Duplexer}
-      \label{sec:Duplexer}
-      \begin{wrapfigure}[8]{r}{0.45\textwidth}
+      \begin{wrapfigure}[12]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
-          \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
         \end{center}
-        \vspace{-5pt}
-        \caption{The Duplexer}
-        \label{fig:Duplexer picture}
-        \vspace{-10pt}
+        \vspace{-20 pt}
+        \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
+        \label{fig:cross-driving versus top frequency}
       \end{wrapfigure}
 
-      The Duplexer shown in Figure~\ref{fig:Duplexer picture} is a patented vector switch matrix designed by Duije Deurloo, who is working at TNO. It has four input ports and two ouput ports. Each of the input-output port combinations has the following successive components:
-
-      \begin{enumerate}
-        \item Digital switch
-        \item Variable phase-shifter
-        \item Variable attenuator
-        \item Amplifier
-      \end{enumerate}
-
-      \begin{figure}
-      \centering
-         \begin{subfigure}[b]{\textwidth}
-         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drive_top.png}
-         \caption{}
-         \label{fig:AllXY drive top}
-      \end{subfigure}
-
-      \begin{subfigure}[b]{\textwidth}
-         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drag_top.png}
-         \caption{}
-         \label{fig:AllXY DRAG top}
-      \end{subfigure}
-
-      \caption[Two numerical solutions]{(a) drive amplitude, (b) DRAG amplitude}
-      \label{fig:AllXY individual control}
-      \end{figure}
-
-      The result of these components is that the signal of each input-output port combination can be individually modified. In the Muxmon set-up two of the four input ports are used. One input port receives the main pulse, the other receives the DRAG pulse. These are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit separately.
-
-      The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two qubits, or to both qubits simultaneously. This allows for selective broadcasting. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
-
+      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
 
 
     \textbf{Figures that need to be included:}
