@@ -56,34 +56,38 @@
 \contentsline {section}{\numberline {8.3}Properties of the Muxmon0 chip}{46}
 \contentsline {section}{\numberline {8.4}Cross-coupling}{48}
 \contentsline {section}{\numberline {8.5}Cross-driving}{49}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{53}
-\contentsline {section}{\numberline {9.1}Second excited state}{53}
-\contentsline {chapter}{\numberline {10}Conclusions and outlook}{54}
-\contentsline {chapter}{Appendices}{55}
-\contentsline {chapter}{\numberline {A}Noise}{56}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{56}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{56}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{57}
-\contentsline {section}{\numberline {A.2}The model}{58}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{58}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{59}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{59}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{60}
-\contentsline {section}{\numberline {A.3}Noise temperature}{60}
-\contentsline {section}{\numberline {A.4}Results}{61}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{62}
-\contentsline {chapter}{\numberline {B}Duplexer characterization}{64}
-\contentsline {section}{\numberline {B.1}Duplexer isolation}{64}
-\contentsline {chapter}{\numberline {C}Additional notes}{65}
-\contentsline {section}{\numberline {C.1}Qubit characterization}{65}
-\contentsline {subsection}{\numberline {C.1.1}Part I: Continuous-wave measurements}{65}
-\contentsline {subsubsection}{\numberline {C.1.1.1}Powersweep}{65}
-\contentsline {subsubsection}{\numberline {C.1.1.2}Spectroscopy}{65}
-\contentsline {subsection}{\numberline {C.1.2}Part I: Time-domain measurements}{65}
-\contentsline {subsubsection}{\numberline {C.1.2.1}AllXY}{65}
-\contentsline {chapter}{\numberline {D}Algorithms}{66}
-\contentsline {section}{\numberline {D.1}Tracked spectroscopy}{66}
-\contentsline {section}{\numberline {D.2}Peak finding}{66}
-\contentsline {subsection}{\numberline {D.2.1}Normal peak finder}{66}
-\contentsline {subsection}{\numberline {D.2.2}Derivative peak finder}{66}
-\contentsline {section}{\numberline {D.3}Compiled RB?}{66}
+\contentsline {section}{\numberline {8.6}Duplexer}{51}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{54}
+\contentsline {section}{\numberline {9.1}Second excited state}{54}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{55}
+\contentsline {chapter}{Appendices}{56}
+\contentsline {chapter}{\numberline {A}Noise}{57}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{57}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{57}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{58}
+\contentsline {section}{\numberline {A.2}The model}{59}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{59}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{60}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{60}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{61}
+\contentsline {section}{\numberline {A.3}Noise temperature}{61}
+\contentsline {section}{\numberline {A.4}Results}{62}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{63}
+\contentsline {chapter}{\numberline {B}Duplexer characterization}{65}
+\contentsline {section}{\numberline {B.1}Duplexer isolation}{65}
+\contentsline {chapter}{\numberline {C}Chip characterization}{66}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{66}
+\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{66}
+\contentsline {chapter}{\numberline {D}Additional notes}{67}
+\contentsline {section}{\numberline {D.1}Qubit characterization}{67}
+\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{67}
+\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{67}
+\contentsline {subsubsection}{\numberline {D.1.1.2}Spectroscopy}{67}
+\contentsline {subsection}{\numberline {D.1.2}Part I: Time-domain measurements}{67}
+\contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{67}
+\contentsline {chapter}{\numberline {E}Algorithms}{68}
+\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{68}
+\contentsline {section}{\numberline {E.2}Peak finding}{68}
+\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{68}
+\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{68}
+\contentsline {section}{\numberline {E.3}Compiled RB?}{68}
