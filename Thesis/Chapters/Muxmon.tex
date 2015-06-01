@@ -165,7 +165,7 @@
           \label{eq:dispersive-shift}
         \end{equation}
 
-        where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_c}$ are the partial dispersive shifts.
+        where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_r}$ are the partial dispersive shifts.
 
         Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a certain point, this coupling will result in the resonator experiencing nonlinear effects. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
 
@@ -188,6 +188,15 @@
         \end{itemize}
 
       \subsection{Powersweeping the resonators}
+        \label{ssec:powersweep}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=0.6\textwidth]{../Figures/Qubit characterization/Powersweep.png}
+          \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}}
+          \label{fig:powersweep}
+        \end{figure}
+
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Instead of directly scanning the entire frequency spectrum in search of the qubit, it is relatively straightforward to perform some initial measurements aimed at gaining information about our resonator and qubit, which will allow us to search for our qubit with much greater accuracy.
 
         As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. If this frequency shift is observed, it indicates that the resonator's frequency was shifted, and hence that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
@@ -207,6 +216,13 @@
         \end{itemize}
 
       \subsection{Scan for qubit sweet-spots}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.6\linewidth]{../Figures/Qubit characterization/Resonator vs DAC linecut.png}
+          \caption{Fixed frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet-spot of the ancilla qubit.}
+          \label{fig:figure1}
+        \end{figure}
         Some of the qubits have a tunable resonance frequency. This is done through a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. The SQUID loop is sensitive to the amount of flux passing through the loop. The amount of flux going through the SQUID loop can be changed by changing the surrounding magnetic field. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, and hence changes the amount of flux through the SQUID loop. A digital-to-analog converter is used to specify the amount of current that is sent through the flux bias line. Depending on the amount of flux through the SQUID loop, the resonance frequency of the qubit changes accordingly. these qubits are therefore called flux-tunable.
 
         For qubits that are flux-tunable, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the dispersive shift $\chi$, and therefore the resonator's frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
@@ -562,6 +578,21 @@
 
     \section{IQ mixer calibration}
       \label{sec:Mixer calibration}
+
+      \begin{figure}[tb]
+        \centering
+        \begin{subfigure}[h]{0.49\textwidth}
+          \caption{}
+          \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
+        \end{subfigure}
+        \begin{subfigure}[h]{0.49\textwidth}
+          \caption{}
+          \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer skewness.png}
+        \end{subfigure}
+        \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
+        \label{fig:Mixer calibrations 2D}
+      \end{figure}
+
       An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
 
       For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
@@ -752,6 +783,7 @@
 
       \begin{itemize}
         \item uniform sampling on bloch sphere
+        \item Process tomography shows the type of error
       \end{itemize}
 
     \section{Clifford group}
@@ -765,6 +797,7 @@
         \label{fig:Clifford tetrahedron}
       \end{figure}
 
+      The set of Pauli operators
       The Clifford group
 
       For $n$ qubits the Clifford group is generated by $\{H_i, P_i, CNOT_{ij}\}, i, j \in (1, \dots, n)$, where:
@@ -815,7 +848,7 @@
 
       Randomized benchmarking is a method to characterize the performance on qubits. It is based on repeated application of operations on the system, and measuring the fidelity to the ideal final state. The operations are randomly chosen from a set of unitary operations.
 
-      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment, depiced in Figure~\ref{fig:RB schematic}, is as follows:
+      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment, depicted in Figure~\ref{fig:RB schematic}, is as follows:
 
       \begin{enumerate}
         \item Initialize the qubit in the ground state
@@ -835,7 +868,7 @@
       \begin{figure}[tb]
         \centering
         \includegraphics[width=.6\textwidth]{../Figures/Randomized benchmarking/RB_single_seed.png}
-        \caption{Randomized benchmarking results using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include errorbars, obtained from three separate measurements.}
+        \caption{Randomized benchmarking results using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include errorbars, determined by the spread of three separate measurements.}
         \label{fig:RB single seed}
       \end{figure}
 
@@ -849,6 +882,15 @@
 
     \section{Driving a single qubit versus driving both qubits}
       \label{sec:Driving a single qubit versus driving both qubits}
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_driving_single_both.png}
+        \caption{Randomized benchmarking results when driving a single qubit versus driving both qubits simultaneously. As can be seen there is no noticeable difference between driving only one qubit versus driving both qubits simultaneously. A total of 50 different seeds were used.}
+        \label{fig:RB normal single vs both}
+      \end{figure}
+
+
 
     \section{Interleaved randomized benchmarking}
       \label{sec:interleaved randomized benchmarking}
