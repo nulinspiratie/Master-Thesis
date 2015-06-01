@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433164530 "thesis.aux" "thesis.bbl" "thesis" 1433164912
+["bibtex thesis"] 1433170138 "thesis.aux" "thesis.bbl" "thesis" 1433170144
   "bibliography.bib" 1433162945 7176 a3fdb415d4ed913bfd0f3f72872535db ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433164911 23200 c77ca1ad35875dd958f9029e2673f70a ""
+  "thesis.aux" 1433170143 23968 6b3a675cf88a52764fc42f1aad5c5af2 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433164905 "thesis.tex" "thesis.pdf" "thesis" 1433164912
+["pdflatex"] 1433170138 "thesis.tex" "thesis.pdf" "thesis" 1433170144
   "../Figures/Duplexer_with_background.png" 1433082110 829884 da82763bc6f5de8c943b24f1f897b231 ""
   "../Figures/Exploring frequency re-use/AllXY_drag_top.png" 1433078944 70155 467a68b527800f127acbb60eb9c05510 ""
   "../Figures/Exploring frequency re-use/AllXY_drive_top.png" 1433078999 65689 ee98f69e1fcc1fac2877058aa8a9a024 ""
@@ -22,8 +22,10 @@
   "../Figures/MUX_1.jpg" 1432971845 2730831 a0809dccd61a3324dee9d83bcd01c78a ""
   "../Figures/Muxmon set-up.pdf" 1433106425 8624707 c744c40b6f903887995122f533b1811d ""
   "../Figures/Randomized benchmarking/Bloch sphere octahedron.png" 1433155876 49776 61ba420c532b123abe670034315ea48b ""
+  "../Figures/Randomized benchmarking/RB schematic.jpg" 1432736554 582983 b2c005af71c2630d7ca6f62018a596df ""
+  "../Figures/Randomized benchmarking/RB_single_seed.png" 1433170056 40125 72c66dcb8191a26772ffcf6c5d0b3abb ""
   "Chapters/DRIE.tex" 1433084150 35527 29fb0578b026aa3ab0ea869b28bea197 ""
-  "Chapters/Muxmon.tex" 1433164897 90569 68a9734332d18e779b98a9e6050b7066 ""
+  "Chapters/Muxmon.tex" 1433170130 93277 2495f4d5124d5b46ab8c06e498f7851f ""
   "Chapters/appendix.tex" 1433084499 1635 181d506543b84d5b735ef2921ad061bf ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
@@ -123,16 +125,16 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1432639947 19835 819dbcd81415d2af8309aaf77b6a35ba ""
-  "thesis.aux" 1433164911 23200 c77ca1ad35875dd958f9029e2673f70a ""
-  "thesis.bbl" 1433164531 4045 1d914d40fcbd0781ae1667fbc1435379 "bibtex thesis"
+  "thesis.aux" 1433170143 23968 6b3a675cf88a52764fc42f1aad5c5af2 ""
+  "thesis.bbl" 1433170138 4045 1d914d40fcbd0781ae1667fbc1435379 "bibtex thesis"
   "thesis.tex" 1433164693 4204 2f68b59faec355a01580311f3674945e ""
-  "thesis.toc" 1433164911 6699 62da290a3689ea42021fa6874b300af2 ""
+  "thesis.toc" 1433170143 6795 808d76cb71f41605fd9e09bd734b1e57 ""
   (generated)
-  "thesis.pdf"
-  "Chapters/Muxmon.aux"
+  "thesis.toc"
   "Chapters/Muxmon.tex.aux"
+  "Chapters/Muxmon.aux"
+  "thesis.aux"
+  "thesis.pdf"
+  "Chapters/appendix.tex.aux"
   "Chapters/DRIE.tex.aux"
   "thesis.log"
-  "Chapters/appendix.tex.aux"
-  "thesis.aux"
-  "thesis.toc"

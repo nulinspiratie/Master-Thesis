@@ -802,9 +802,20 @@
 
     \section{The randomized benchmarking protocol}
       \label{sec:randomized benchmarking protocol}
+
+      \begin{wrapfigure}[7]{r}{0.4\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=.8\textwidth]{../Figures/Randomized benchmarking/RB schematic.jpg}
+        \end{center}
+        \vspace{-20 pt}
+        \caption{Schematic of the randomized benchmarking protocol}
+        \label{fig:RB schematic}
+      \end{wrapfigure}
+
       Randomized benchmarking is a method to characterize the performance on qubits. It is based on repeated application of operations on the system, and measuring the fidelity to the ideal final state. The operations are randomly chosen from a set of unitary operations.
 
-      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment is as follows:
+      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment, depiced in Figure~\ref{fig:RB schematic}, is as follows:
 
       \begin{enumerate}
         \item Initialize the qubit in the ground state
@@ -817,16 +828,27 @@
 
       \textbf{TODO:} Something about exponential decay
       \begin{equation}
-        P=?
+        P= A p^n + B
         \label{eq:RB exponential decay}
       \end{equation}
 
-      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. The randomized benchamrking results using a single seed are shown in Figure~\textbf{TODO:}. Twenty points are chosen between $n=0$ and $n=800$ Cliffords. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=.6\textwidth]{../Figures/Randomized benchmarking/RB_single_seed.png}
+        \caption{Randomized benchmarking results using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include errorbars, obtained from three separate measurements.}
+        \label{fig:RB single seed}
+      \end{figure}
+
+      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. The randomized benchmarking results using a single seed are shown in Figure~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
 
       \begin{itemize}
         \item Clifford group can be efficiently simulated on a classical computer. Gottesman-Knill theorem (\cite{gottesman1998heisenberg})
         \item Explain the formula relating $n$ to an exponential curve.
+        \item Coherence limit of RB
       \end{itemize}
+
+    \section{Driving a single qubit versus driving both qubits}
+      \label{sec:Driving a single qubit versus driving both qubits}
 
     \section{Interleaved randomized benchmarking}
       \label{sec:interleaved randomized benchmarking}
