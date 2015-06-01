@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  1 JUN 2015 12:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  1 JUN 2015 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,56 +851,56 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 (c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 28.
+Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 29.
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
-29.
+30.
  (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 76.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 77.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 77.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 77.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 77.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
 
 (c:/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 77.
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -945,7 +945,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 76.
+(lastpage)             ! on input line 77.
 (c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count172
@@ -982,7 +982,7 @@ Package caption Info: floatrow package is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 76.
+LaTeX Info: Redefining \microtypecontext on input line 77.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1006,16 +1006,16 @@ File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 )
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 76.
-Package gensymb Info: Math companion symbols declared on input line 76.
-LaTeX Info: Redefining \degree on input line 76.
-LaTeX Info: Redefining \celsius on input line 76.
+(Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 77.
+Package gensymb Info: Math companion symbols declared on input line 77.
+LaTeX Info: Redefining \degree on input line 77.
+LaTeX Info: Redefining \celsius on input line 77.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 76.
-LaTeX Info: Redefining \ohm on input line 76.
-Package gensymb Info: Using \textohm for \ohm on input line 76.
-LaTeX Info: Redefining \micro on input line 76.
-Package gensymb Info: Using \textmu for \micro on input line 76.
+erthousand on input line 77.
+LaTeX Info: Redefining \ohm on input line 77.
+Package gensymb Info: Using \textohm for \ohm on input line 77.
+LaTeX Info: Redefining \micro on input line 77.
+Package gensymb Info: Using \textmu for \micro on input line 77.
 
 (c:/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -1027,25 +1027,25 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 Package color Info: Driver file: pdftex.def on input line 137.
 )
 \c__siunitx_mathsf_int=\count178
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 76
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 77
 .
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 76.
+(Font)              scaled to size 8.27998pt on input line 77.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
+(Font)              scaled to size 6.43999pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 76.
+(Font)              scaled to size 8.27998pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 76.
+(Font)              scaled to size 6.43999pt on input line 77.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 77.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd
@@ -1065,24 +1065,24 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 84.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 94.
+(Font)              scaled to size 19.08076pt on input line 95.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 94.
+(Font)              scaled to size 13.24796pt on input line 95.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 94.
+(Font)              scaled to size 9.19998pt on input line 95.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 19.08076pt on input line 94.
+(Font)              scaled to size 19.08076pt on input line 95.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 94.
+(Font)              scaled to size 13.24796pt on input line 95.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 94.
+(Font)              scaled to size 9.19998pt on input line 95.
  [1
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 117.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 118.
  (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
@@ -1247,7 +1247,7 @@ le (type png)
 
 <use ../Figures/Exploring frequency re-use/bandwidth_broadening.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/bandwidth_broade
-ning.png used on input line 43.
+ning.png used on input line 45.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jpg, i
@@ -1258,7 +1258,7 @@ pg Graphic file (type jpg)
 <use ../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jp
 g>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/surface_code_fre
-quency re-use_cut.jpg used on input line 56.
+quency re-use_cut.jpg used on input line 58.
 (pdftex.def)             Requested size: 271.7835pt x 227.741pt.
 
 
@@ -1272,7 +1272,7 @@ File: ../Figures/Duplexer_with_background.png Graphic file (type png)
 
 <use ../Figures/Duplexer_with_background.png>
 Package pdftex.def Info: ../Figures/Duplexer_with_background.png used on input 
-line 68.
+line 70.
 (pdftex.def)             Requested size: 203.83417pt x 157.8234pt.
  [25 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.j
 pg> <../Figures/Duplexer_with_background.png>] <../Figures/MUX_0.jpg, id=117, 5
@@ -1280,47 +1280,47 @@ pg> <../Figures/Duplexer_with_background.png>] <../Figures/MUX_0.jpg, id=117, 5
 File: ../Figures/MUX_0.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_0.jpg>
-Package pdftex.def Info: ../Figures/MUX_0.jpg used on input line 92.
+Package pdftex.def Info: ../Figures/MUX_0.jpg used on input line 94.
 (pdftex.def)             Requested size: 407.66833pt x 120.02306pt.
 
 <../Figures/MUX_1.jpg, id=118, 5440.325pt x 1524.69624pt>
 File: ../Figures/MUX_1.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_1.jpg>
-Package pdftex.def Info: ../Figures/MUX_1.jpg used on input line 98.
+Package pdftex.def Info: ../Figures/MUX_1.jpg used on input line 100.
 (pdftex.def)             Requested size: 407.66833pt x 114.23096pt.
 
 
 LaTeX Warning: Reference `sec:Frequency re-use in the Surface Code' on page 26 
-undefined on input line 106.
+undefined on input line 108.
 
 [26 <../Figures/MUX_0.jpg> <../Figures/MUX_1.jpg>]
 <../Figures/Muxmon set-up.pdf, id=122, 597.51233pt x 845.0471pt>
 File: ../Figures/Muxmon set-up.pdf Graphic file (type pdf)
 
 <use ../Figures/Muxmon set-up.pdf>
-Package pdftex.def Info: ../Figures/Muxmon set-up.pdf used on input line 112.
+Package pdftex.def Info: ../Figures/Muxmon set-up.pdf used on input line 114.
 (pdftex.def)             Requested size: 452.9679pt x 640.63068pt.
 
 
-LaTeX Warning: Float too large for page by 30.7238pt on input line 115.
+LaTeX Warning: Float too large for page by 30.7238pt on input line 117.
 
 [27] [28 <../Figures/Muxmon set-up.pdf>]
 Chapter 6.
 [29
 
 ] [30] [31] [32] [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 [35] [36] [37]
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <12> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 373.
+(Font)              Font shape `TS1/futs/b/n' tried instead on input line 375.
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <9> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 373.
+(Font)              Font shape `TS1/futs/b/n' tried instead on input line 375.
 LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <7> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 373.
+(Font)              Font shape `TS1/futs/b/n' tried instead on input line 375.
  [38] [39] [40] [41] [42] [43] [44]
 Chapter 7.
 [45
@@ -1332,7 +1332,7 @@ File: ../Figures/Exploring frequency re-use/AllXY_drive_top.png Graphic file (t
 ype png)
  <use ../Figures/Exploring frequency re-use/AllXY_drive_top.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drive_top.
-png used on input line 590.
+png used on input line 592.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 <../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=452, 722.7pt x 36
@@ -1341,7 +1341,7 @@ File: ../Figures/Exploring frequency re-use/AllXY_drag_top.png Graphic file (ty
 pe png)
  <use ../Figures/Exploring frequency re-use/AllXY_drag_top.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drag_top.p
-ng used on input line 596.
+ng used on input line 598.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
  [48]
 [49 <../Figures/Exploring frequency re-use/AllXY_drive_top.png> <../Figures/Exp
@@ -1354,7 +1354,7 @@ File: ../Figures/Exploring frequency re-use/coherence_times.png Graphic file (t
 ype png)
  <use ../Figures/Exploring frequency re-use/coherence_times.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/coherence_times.
-png used on input line 625.
+png used on input line 627.
 (pdftex.def)             Requested size: 452.9679pt x 362.37247pt.
 
 [50
@@ -1366,7 +1366,7 @@ File: ../Figures/Exploring frequency re-use/excitation_swap.png Graphic file (t
 ype png)
  <use ../Figures/Exploring frequency re-use/excitation_swap.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/excitation_swap.
-png used on input line 657.
+png used on input line 659.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 [51 <../Figures/Exploring frequency re-use/coherence_times.png>]
@@ -1377,7 +1377,7 @@ e (type jpg)
 
 <use ../Figures/Exploring frequency re-use/cross-driving_setup.jpg>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_se
-tup.jpg used on input line 677.
+tup.jpg used on input line 679.
 (pdftex.def)             Requested size: 362.37569pt x 113.1064pt.
 
 <../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=472, 433.62pt
@@ -1387,15 +1387,15 @@ File: ../Figures/Exploring frequency re-use/cross-driving_Rabi.png Graphic file
 
 <use ../Figures/Exploring frequency re-use/cross-driving_Rabi.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_Ra
-bi.png used on input line 685.
+bi.png used on input line 687.
 (pdftex.def)             Requested size: 294.42636pt x 343.51433pt.
 
-Underfull \hbox (badness 2635) in paragraph at lines 699--699
+Underfull \hbox (badness 2635) in paragraph at lines 701--701
 []\T1/futs/b/n/10.95 Table 8.2: |\T1/futs/m/n/10.95 (+20) Driv-ing through top
  []
 
 
-Overfull \hbox (1.88399pt too wide) in paragraph at lines 683--713
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 685--715
 $[]$ $[]$
  []
 
@@ -1413,38 +1413,68 @@ Graphic file (type png)
 
 <use ../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_vs
-_top_frequency.png used on input line 721.
+_top_frequency.png used on input line 723.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
 [53 <../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>]
 Chapter 9.
 [54
 
-] [55]
-Chapter 10.
-) [56
+]
+<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=487, 289.08
+pt x 289.08pt>
+File: ../Figures/Randomized benchmarking/Bloch sphere octahedron.png Graphic fi
+le (type png)
 
-] [57
+<use ../Figures/Randomized benchmarking/Bloch sphere octahedron.png>
+Package pdftex.def Info: ../Figures/Randomized benchmarking/Bloch sphere octahe
+dron.png used on input line 762.
+(pdftex.def)             Requested size: 226.48395pt x 226.48277pt.
+ [55 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
+LaTeX Font Info:    Try loading font information for OT1+pzc on input line 807.
+
+
+(c:/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pzc.fd
+File: ot1pzc.fd 2001/06/04 font definitions for OT1/pzc.
+)
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <12> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 807.
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pzc' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 807.
+
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 807.
+
+ [56]
+Chapter 10.
+) [57
+
+] [58
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 58 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 59 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 58 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 59 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=496, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=502, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=497, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=503, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1454,25 +1484,31 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[58
+[59
 
-] [59 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=504, 1118.9805pt x 420.3705pt>
+] [60 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=511, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [60 <./Figures/Noise/Noise model.png>]
-[61] [62]
-<Figures/Noise/noise_temperature_versus_power.png, id=516, 433.62pt x 289.08pt>
+ [61 <./Figures/Noise/Noise model.png>]
+[62] [63]
+<Figures/Noise/noise_temperature_versus_power.png, id=522, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [63 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=521, 433.62pt x 
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 189.
+
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 189.
+
+ [64 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=527, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1481,37 +1517,37 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[64 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [65]
+[65 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [66]
 Appendix B.
-[66
-
-]
-Appendix C.
 [67
 
 ]
-Appendix D.
+Appendix C.
 [68
 
 ]
-Appendix E.
-) (./thesis.bbl [69
+Appendix D.
+[69
 
-] [70
+]
+Appendix E.
+) (./thesis.bbl [70
+
+] [71
 
 ]) 
 AED: lastpage setting LastPage
-[71] (./thesis.aux)
+[72] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 16969 strings out of 493109
- 329687 string characters out of 6138586
- 468524 words of memory out of 5000000
- 19814 multiletter control sequences out of 15000+600000
- 209170 words of font info for 422 fonts, out of 8000000 for 9000
+ 17024 strings out of 493109
+ 330875 string characters out of 6138586
+ 468647 words of memory out of 5000000
+ 19858 multiletter control sequences out of 15000+600000
+ 214550 words of font info for 434 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1521,11 +1557,12 @@ onts/type1/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-dist/fonts/type
 c/fourier/fourier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/p
 utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
 texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
-xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on thesis.pdf (72 pages, 19034965 bytes).
+xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts
+/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on thesis.pdf (73 pages, 19082680 bytes).
 PDF statistics:
- 579 PDF objects out of 1000 (max. 8388607)
- 227 compressed objects within 3 object streams
+ 590 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 67725 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 71826 words of extra memory for PDF output out of 74296 (max. 10000000)
 

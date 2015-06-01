@@ -41,6 +41,11 @@ Kurtis~L. Geerlings.
 \newblock {\em Improving Coherence of Superconducting Qubits and Resonators}.
 \newblock PhD thesis, Yale University, 2013.
 
+\bibitem{gottesman1998heisenberg}
+Daniel Gottesman.
+\newblock The heisenberg representation of quantum computers.
+\newblock {\em arXiv preprint quant-ph/9807006}, 1998.
+
 \bibitem{martinis2014ucsb}
 John~M Martinis and A~Megrant.
 \newblock Ucsb final report for the csq program: Review of decoherence and
@@ -56,6 +61,11 @@ Benjamin~A. Mazin.
 F~Motzoi, JM~Gambetta, P~Rebentrost, and Frank~K Wilhelm.
 \newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
 \newblock {\em Physical review letters}, 103(11):110501, 2009.
+
+\bibitem{nielsen2010quantum}
+Michael~A Nielsen and Isaac~L Chuang.
+\newblock {\em Quantum computation and quantum information}.
+\newblock Cambridge university press, 2010.
 
 \bibitem{nsanzineza2014trapping}
 I~Nsanzineza and BLT Plourde.
