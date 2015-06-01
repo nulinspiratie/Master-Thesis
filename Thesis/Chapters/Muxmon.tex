@@ -795,6 +795,8 @@
 
       \begin{itemize}
         \item Single-qubit Clifford group consists of 24 elements.
+        \item Explain Cliffod decomposition into gates
+        \item Matimum of 3 gates, on average 1.875
         \item The Clifford group does not form a universal set of gates. This is because the rotations only map cardinal states onto themselves. Since single qubit gates and CNOT is universal (\cite{nielsen2010quantum}), the Clifford group combined with the T-gate ($\pi/4$ rotation) constitute a set of universal quantum gates.
       \end{itemize}
 
@@ -811,11 +813,19 @@
         \item Measure the state of the qubit
       \end{enumerate}
 
-      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state deviating from the ground-state. Upon measurement, the qubit will therefore sometimes be in the excited-state. The probability of measuring the qubit in the excited-state increases as the number of Cliffords $n$ is increased.
+      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state deviating from the ground-state. The qubit will therefore be in the excited-state with a nonzero probability. This probability increases as the number of Cliffords $n$ is increased.
 
+      \textbf{TODO:} Something about exponential decay
+      \begin{equation}
+        P=?
+        \label{eq:RB exponential decay}
+      \end{equation}
+
+      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. The randomized benchamrking results using a single seed are shown in Figure~\textbf{TODO:}. Twenty points are chosen between $n=0$ and $n=800$ Cliffords. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some
 
       \begin{itemize}
         \item Clifford group can be efficiently simulated on a classical computer. Gottesman-Knill theorem (\cite{gottesman1998heisenberg})
+        \item Explain the formula relating $n$ to an exponential curve.
       \end{itemize}
 
     \section{Interleaved randomized benchmarking}
