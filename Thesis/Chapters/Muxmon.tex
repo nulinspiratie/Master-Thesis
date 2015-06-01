@@ -2,6 +2,7 @@
 \externaldocument[A-]{Chapters/appendix.tex}
 
 \part{Muxmon experiment}
+
   \textbf{large TODO:}
   \begin{itemize}
     \item Explain surface code architecture
@@ -12,6 +13,7 @@
       \item Single qubit coupled to resonators (coupling location?)
       \item Resonator buses
     \end{itemize}
+    \item Explain multiplexed readout
   \end{itemize}
 
   \textbf{small TODO:}
@@ -598,7 +600,7 @@
          \label{fig:AllXY DRAG top}
       \end{subfigure}
 
-      \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top quibt are varied.}
+      \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
       \label{fig:AllXY individual control}
       \end{figure}
 
@@ -737,6 +739,29 @@
 
   \chapter{Randomized benchmarking}
     \label{ch:randomized benchmarking}
+
+    \section{Introduction}
+      \label{sec:RB introduction}
+      When preparing the qubits for a quantum algorithm it is important to know what the performance is of the qubits, which can be characterized by its gate errors. One method has already been discussed in Section~\ref{sec:AllXY}, namely the AllXY method. Although the AllXY is good at detecting specific errors, it is a crude method, which is unable to characterize gate errors with high accuracy. Another method used for gate characterization is quantum process tomography. Quantum process tomography measures the output density matrix resulting from the application of a specific to each of the system's basis states. Due to linear superposition of quantum states, the full effect of a gate is thereby characterized.
+
+      Quantum process tomography suffers from some important drawbacks. The first is that it is sensitive to state preparation and measurement errors, which make it difficult to distinguish whether the gate errors originate from the actual gate being characterized, or from the gates used for preparation and measurement. Another related drawback is that it is unable to measure small gate errors, which are required for fault-tolerant quantum computing. Additionally, quantum process tomography suffers from an exponential scaling in measurement with the number of qubits. These drawbacks result in quantum process tomography being an inadequate gate characterization method for gates with small errors.
+
+      An alternative method to quantum process tomography is randomized benchmarking. It is based on repeated application of gates drawn randomly from a set of unitary operations, after which the fidelity to the final state in absence of errors is measured. The set of unitaries used in randomized benchmarking may be single-qubit or multi-qubit operations. Randomized benchmarking has the advantage that it is insensitive to state preparation and measurement errors, and is a relatively fast measurement, which is able to accurately determine the average unitary operation error.
+
+      In the Muxmon experiment the set of unitary operations is the single-qubit Clifford group, which will be discussed in Section~\ref{sec:Clifford group}. Randomized benchmarking will be used to characterize the performance of the qubits when using the Duplexer, and using selective broadcasting. By interleaving the unitary operations with a fixed gate the performance of that specific gate can be measured. This is known as interleaved randomized benchmarking, and will be discussed in Section~\ref{sec:interleaved randomized benchmarking}.
+
+      \begin{itemize}
+        \item uniform sampling on bloch sphere
+      \end{itemize}
+
+    \section{Clifford group}
+      \label{sec:Clifford group}
+
+    \section{The randomized benchmarking protocol}
+      \label{sec:randomized benchmarking protocol}
+
+    \section{Interleaved randomized benchmarking}
+      \label{sec:interleaved randomized benchmarking}
 
     \section{Second excited state}
 

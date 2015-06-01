@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="0C81EC5C-9C2B-4A80-8724-DC62413F8749" Version="1.1">
+   <Notes>
+      <Note Width="363.454" FontSize="20" ID="0" Position="816.2,459.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <TextColor>1.0 0.0 0.0</TextColor>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,23</FormatRange>
+         </Formatting>
+         <String>Randomized Benchmarking</String>
+         <ConnectedNoteIDs>4, 15, 20, 26</ConnectedNoteIDs>
+         <PointsToNoteIDs>4, 15, 20, 26</PointsToNoteIDs>
+      </Note>
+      <Note Width="161.879" FontSize="12" ID="1" Position="878.1,724.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Driving single vs both</String>
+         <ConnectedNoteIDs>2, 9, 21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="72.3511" FontSize="12" ID="2" Position="727.2,677.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Duplexer</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="148.376" FontSize="12" ID="3" Position="975.4,658.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Multiplexed readout</String>
+         <ConnectedNoteIDs>6, 21</ConnectedNoteIDs>
+      </Note>
+      <Note Width="271.573" FontSize="12" ID="4" Position="979.2,519.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Types of Randomized Benchmarking</String>
+         <ConnectedNoteIDs>0, 5-6, 21</ConnectedNoteIDs>
+         <PointsToNoteIDs>5-6, 21</PointsToNoteIDs>
+      </Note>
+      <Note Width="115.479" FontSize="12" ID="5" Position="1313.8,575.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Interleaved RB</String>
+         <ConnectedNoteIDs>4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="105.664" FontSize="12" ID="6" Position="1154.2,628.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Two-qubit RB</String>
+         <ConnectedNoteIDs>3-4, 7-9</ConnectedNoteIDs>
+         <PointsToNoteIDs>7-9</PointsToNoteIDs>
+      </Note>
+      <Note Width="84.8755" FontSize="12" ID="7" Position="1380.3,693.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Alternating</String>
+         <ConnectedNoteIDs>6, 23</ConnectedNoteIDs>
+      </Note>
+      <Note Width="75.9399" FontSize="12" ID="8" Position="1310.1,783.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Compiled</String>
+         <ConnectedNoteIDs>6, 14, 23</ConnectedNoteIDs>
+         <PointsToNoteIDs>14</PointsToNoteIDs>
+      </Note>
+      <Note Width="91.1011" FontSize="12" ID="9" Position="1140.3,800.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>5 Primitives</String>
+         <ConnectedNoteIDs>1, 6, 10-13, 23</ConnectedNoteIDs>
+         <PointsToNoteIDs>10-13</PointsToNoteIDs>
+      </Note>
+      <Note Width="111.003" FontSize="12" ID="10" Position="812.0,780.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Clifford decomposition</String>
+         <ConnectedNoteIDs>9</ConnectedNoteIDs>
+      </Note>
+      <Note Width="104.553" FontSize="12" ID="11" Position="860.5,920.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Fixed 5 gates</String>
+         <ConnectedNoteIDs>9</ConnectedNoteIDs>
+      </Note>
+      <Note Width="47.6318" FontSize="12" ID="12" Position="1019.1,926.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>smart</String>
+         <ConnectedNoteIDs>9, 18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="59.2773" FontSize="12" ID="13" Position="1149.4,929.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>inverse</String>
+         <ConnectedNoteIDs>9, 18</ConnectedNoteIDs>
+      </Note>
+      <Note Width="146.57" FontSize="12" ID="14" Position="1381.4,864.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Compiled algorithm</String>
+         <ConnectedNoteIDs>8</ConnectedNoteIDs>
+      </Note>
+      <Note Width="104.248" FontSize="12" ID="15" Position="700.4,561.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Clifford group</String>
+         <ConnectedNoteIDs>0, 16-17</ConnectedNoteIDs>
+         <PointsToNoteIDs>16-17</PointsToNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="16" Position="515.0,668.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Rotations on Bloch sphere</String>
+         <ConnectedNoteIDs>15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="89.0503" FontSize="12" ID="17" Position="522.5,530.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>24 Cliffords</String>
+         <ConnectedNoteIDs>15</ConnectedNoteIDs>
+      </Note>
+      <Note Width="102.71" FontSize="12" ID="18" Position="1077.6,1035.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Cross-driving</String>
+         <ConnectedNoteIDs>12-13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="136.755" FontSize="12" ID="19" Position="1261.5,363.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Three populations</String>
+         <ConnectedNoteIDs>20, 22</ConnectedNoteIDs>
+      </Note>
+      <Note Width="69.7021" FontSize="12" ID="20" Position="1135.1,329.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Leakage</String>
+         <ConnectedNoteIDs>0, 19, 22, 24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="120.85" FontSize="12" ID="21" Position="853.6,631.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Single-qubit RB</String>
+         <ConnectedNoteIDs>1, 3-4</ConnectedNoteIDs>
+      </Note>
+      <Note Width="83.9722" FontSize="12" ID="22" Position="1324.8,252.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Asymptote</String>
+         <ConnectedNoteIDs>19-20, 24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="94.7021" FontSize="12" ID="23" Position="1201.2,731.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Comparison</String>
+         <ConnectedNoteIDs>7-9</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="24" Position="1126.6,195.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Second excited-state</String>
+         <ConnectedNoteIDs>20, 22, 25</ConnectedNoteIDs>
+      </Note>
+      <Note Width="95.6177" FontSize="12" ID="25" Position="1305.3,154.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Single shots</String>
+         <ConnectedNoteIDs>24</ConnectedNoteIDs>
+      </Note>
+      <Note Width="201.449" FontSize="12" ID="26" Position="741.4,324.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Characterizing qubits</String>
+         <ConnectedNoteIDs>0, 27, 30</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="27" Position="594.8,262.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Quantum process tomography</String>
+         <ConnectedNoteIDs>26, 28-29</ConnectedNoteIDs>
+         <PointsToNoteIDs>28-29</PointsToNoteIDs>
+      </Note>
+      <Note Width="54.0527" FontSize="12" ID="28" Position="575.6,165.1">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>SPAM</String>
+         <ConnectedNoteIDs>27, 31</ConnectedNoteIDs>
+      </Note>
+      <Note Width="146.606" FontSize="12" ID="29" Position="402.9,213.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Exponential scaling</String>
+         <ConnectedNoteIDs>27</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="30" Position="901.7,232.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Randomized Benchmarking</String>
+         <ConnectedNoteIDs>26, 31</ConnectedNoteIDs>
+         <PointsToNoteIDs>31</PointsToNoteIDs>
+      </Note>
+      <Note Width="152.966" FontSize="12" ID="31" Position="764.7,136.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Insensitive to SPAM</String>
+         <ConnectedNoteIDs>28, 30, 32</ConnectedNoteIDs>
+      </Note>
+      <Note Width="49.0967" FontSize="12" ID="32" Position="885.3,18.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Why?</String>
+         <ConnectedNoteIDs>31</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="A53DE288-9B45-4784-A2B7-DA69162DCF92" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="79C1C056-E302-4949-88B3-B68F6B4B8912" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="EF4DEA80-F6F1-4557-B8AF-35FFF6985DAB" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="1CBE3680-E328-4A9B-8679-F85F7E551986" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="33E13838-88C3-49F1-96F4-A9C77D4271FB" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C48AD1D0-7791-4777-8AD7-99199DC5F898" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="77C89AF5-6BD3-4C0A-9A27-A8E99A6B469D" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Red Title" ID="03E001C7-902A-4B1F-BA8F-5DF793F503CA" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSticky="Yes" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+         <TextColor>1.0 0.0 0.0</TextColor>
+         <Sticky>Yes</Sticky>
+         <IsBold>Yes</IsBold>
+         <FontSize>20.0</FontSize>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>
