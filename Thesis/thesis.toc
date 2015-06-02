@@ -45,6 +45,7 @@
 \contentsline {subsubsection}{\numberline {6.2.3.2}Qubit dephasing: Ramsey}{43}
 \contentsline {subsubsection}{\numberline {6.2.3.3}Fast frequency qubit dephasing: Echo}{45}
 \contentsline {subsection}{\numberline {6.2.4}Measuring single shots}{45}
+\contentsline {subsection}{\numberline {6.2.5}Second excited-state}{45}
 \contentsline {chapter}{\numberline {7}Calibration routines}{46}
 \contentsline {section}{\numberline {7.1}Accurate frequency estimation}{46}
 \contentsline {section}{\numberline {7.2}Accurate drive amplitude calibration}{47}
@@ -64,41 +65,42 @@
 \contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{60}
 \contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{60}
 \contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{61}
-\contentsline {section}{\numberline {9.5}Interleaved randomized benchmarking}{62}
-\contentsline {section}{\numberline {9.6}Second excited state}{62}
-\contentsline {chapter}{\numberline {10}Conclusions and outlook}{63}
-\contentsline {chapter}{Appendices}{64}
-\contentsline {chapter}{\numberline {A}Noise}{65}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{65}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{65}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{66}
-\contentsline {section}{\numberline {A.2}The model}{67}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{67}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{68}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{68}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{69}
-\contentsline {section}{\numberline {A.3}Noise temperature}{69}
-\contentsline {section}{\numberline {A.4}Results}{70}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{71}
-\contentsline {chapter}{\numberline {B}Duplexer characterization}{73}
-\contentsline {section}{\numberline {B.1}Duplexer isolation}{73}
-\contentsline {chapter}{\numberline {C}Chip characterization}{74}
-\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{74}
-\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{74}
-\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{74}
-\contentsline {chapter}{\numberline {D}Additional notes}{75}
-\contentsline {section}{\numberline {D.1}Qubit characterization}{75}
-\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{75}
-\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{75}
-\contentsline {subsubsection}{\numberline {D.1.1.2}Spectroscopy}{75}
-\contentsline {subsection}{\numberline {D.1.2}Part I: Time-domain measurements}{75}
-\contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{75}
-\contentsline {section}{\numberline {D.2}Randomized benchmarking}{75}
-\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{75}
-\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{75}
-\contentsline {chapter}{\numberline {E}Algorithms}{76}
-\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{76}
-\contentsline {section}{\numberline {E.2}Peak finding}{76}
-\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{76}
-\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{76}
-\contentsline {section}{\numberline {E.3}Compiled RB?}{76}
+\contentsline {section}{\numberline {9.5}Interleaved randomized benchmarking}{63}
+\contentsline {section}{\numberline {9.6}Second excited state}{63}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{64}
+\contentsline {chapter}{Appendices}{65}
+\contentsline {chapter}{\numberline {A}Noise}{66}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{66}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{66}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{67}
+\contentsline {section}{\numberline {A.2}The model}{68}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{68}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{69}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{69}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{70}
+\contentsline {section}{\numberline {A.3}Noise temperature}{70}
+\contentsline {section}{\numberline {A.4}Results}{71}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{72}
+\contentsline {chapter}{\numberline {B}Duplexer characterization}{74}
+\contentsline {section}{\numberline {B.1}Duplexer isolation}{74}
+\contentsline {chapter}{\numberline {C}Chip characterization}{75}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{75}
+\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{75}
+\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{75}
+\contentsline {chapter}{\numberline {D}Additional notes}{76}
+\contentsline {section}{\numberline {D.1}Qubit characterization}{76}
+\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{76}
+\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{76}
+\contentsline {subsubsection}{\numberline {D.1.1.2}Spectroscopy}{76}
+\contentsline {subsection}{\numberline {D.1.2}Part I: Time-domain measurements}{76}
+\contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{76}
+\contentsline {section}{\numberline {D.2}Randomized benchmarking}{76}
+\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{76}
+\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{76}
+\contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{76}
+\contentsline {chapter}{\numberline {E}Algorithms}{78}
+\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{78}
+\contentsline {section}{\numberline {E.2}Peak finding}{78}
+\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{78}
+\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{78}
+\contentsline {section}{\numberline {E.3}Compiled RB?}{78}

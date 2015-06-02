@@ -147,7 +147,7 @@
           \label{eq:Jaynes-Cummings}
         \end{equation}
 
-        where $\wres$ is the bare resonance frequency of the resonator, $\wqub$ is the resonance frequency of the qubit's ground to excited state transition, and the qubit's two states are in the spin-representation. This Hamiltonian consists of three terms. The first term corresponds to the energy level of the resonator, the second to the energy level of the transmon, and the third is a coupling term between the two with coupling strength $g$.
+        where $\wres$ is the bare resonance frequency of the resonator, $\wqub$ is the resonance frequency of the qubit's ground-to-excited-state transition, and the qubit's two states are in the spin-representation. This Hamiltonian consists of three terms. The first term corresponds to the energy level of the resonator, the second to the energy level of the transmon, and the third is a coupling term between the two with coupling strength $g$.
 
         The difference between the resonator's frequency $\wres$ and the qubit's frequency $\wqub$ is given by the detuning $\Delta = \wqub - \wres$. If the magnitude of the detuning is large compared to the coupling strength $g$, the system is in the dispersive regime. In this case the Hamiltonian can be approximated by the dispersive Jaynes-Cummings Hamiltonian:
 
@@ -158,7 +158,7 @@
 
         The coupling between the qubit and resonator causes both qubit's frequency and the resonator's frequency to shift: $\wqub^{'} = \wqub + \chi_{01}$, $\wres^{'}=\wres - \chi_{12}/2$.
 
-        Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited state. The parameter $\chi$ is the dispersive shift, and is given by:
+        Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited-state. The parameter $\chi$ is the dispersive shift, and is given by:
 
         \begin{equation}
           \chi = \chi_{01} - \chi_{12}/2 \approx \frac{g^2}{\Delta}\frac{\Ec}{\hbar \Delta - \Ec}
@@ -272,7 +272,7 @@
         A better option is to choose a DAC voltage that results in a detuning $\Delta$ that is large compared to coupling strength $g$, such that the system is in the disperisive regime. However, the detuning $\Delta$ should not be too high, as it would otherwise result in a negligible dispersive shift $\chi$.The optimum value is usually around a few hundred megahertz, although this is dependent on the device-specific parameters. The detuning can be approximated using powersweeps.
 
         \subsubsection{Spectroscopy}
-          As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited state). This is the property exploited in a two-tone spectroscopy measurement.
+          As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited-state). This is the property exploited in a two-tone spectroscopy measurement.
 
           In a two-tone spectroscopy measurement two tones are sent through the feedline.
           \begin{enumerate}
@@ -280,7 +280,7 @@
             \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
           \end{enumerate}
 
-          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to a dip being present. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground and excited state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited state, resulting in a shift of the resonator frequency, dependent on the population in the excited state. This is measured as an increase in transmission.
+          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to a dip being present. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground- and excited-state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. This is measured as an increase in transmission.
 
           The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
 
@@ -371,7 +371,7 @@
 
         The first drive tone with frequency $\omega_\text{drive}^{01}$ is used the drive the qubit to the excited-state. Since the first drive tone results in the excited-state being (partially) populated, the second tone with frequency $\omega_\text{drive}^{12}$ is then able to drive the qubit from the excited-state to the second-excited-state. The transmission should therefore change when $\omega_\text{drive}^{12}$ is on resonance with $\omega_q^{12}$.
 
-        In principle the first drive tone with frequency $\omega_\text{drive}^{01}$ can be kept fixed at the 01-transition frequency $\omega_q^{01}$. However, by performing a two-dimensional scan, where $\omega_\text{drive}^{01}$ is also varied in a small region around $\omega_q^{01}$, the 12-transition becomes much clearer. This can be seen in \textbf{TODO:} Figure. Here a shift in transmission is observed when $\omega_\text{drive}^{01} = \omega_q^{01}$. This corresponds to the 12-transmission frequency $\omega_q^{12}$. Additionally, a transmission shift is observed at a line crossing $\omega_q^{12}$. At this line $\omega_q^{01} + \omega_q^{12} = \omega_q^{02}$, resulting in some population in the second-excited state.
+        In principle the first drive tone with frequency $\omega_\text{drive}^{01}$ can be kept fixed at the 01-transition frequency $\omega_q^{01}$. However, by performing a two-dimensional scan, where $\omega_\text{drive}^{01}$ is also varied in a small region around $\omega_q^{01}$, the 12-transition becomes much clearer. This can be seen in \textbf{TODO:} Figure. Here a shift in transmission is observed when $\omega_\text{drive}^{01} = \omega_q^{01}$. This corresponds to the 12-transmission frequency $\omega_q^{12}$. Additionally, a transmission shift is observed at a line crossing $\omega_q^{12}$. At this line $\omega_q^{01} + \omega_q^{12} = \omega_q^{02}$, resulting in some population in the second-excited-state.
 
         Once the 12-transition transition is found, and hence the qubit's anharmonicity $\alpha$, it is the possible to calculate the coupling energy $E_c$. \textbf{TODO:}.
 
@@ -420,7 +420,7 @@
         The length of the pulse is an important consideration. Shorter pulses allow for more qubit operations within its coherence time. On the other hand, the shorter a pulse is in time, the larger its frequency spectrum will be. At a certain point the spectrum will be so broad that there will be a nonnegligible signal at the qubit's excited-state to second excited-state transtion frequency. This will cause leakage to the second excited-state, thereby leaving the two-state Hilbert space.
         Furthermore, the finite resolution of the AWG causes the pulses to be discretized, resulting in the pulses being slightly distorted. The shorter the length of the pulse, the more discretization, and therefore distortion, will occur. This can cause further leakage to the second excited-state. It is therefore desirable to have a bandwidth, which is the inverse of the width $\sigma$ of the Gaussian pulse, that is small compared to the anharmonicity of the qubit.
 
-        A second pulse, known as the Derivative Removal by Adiabatic Gate (DRAG) pulse \cite{motzoi2009simple}, can be applied along with the main pulse, to reduce the amount of leakage. The DRAG pulse is the derivative of the main Gaussian pulse, and adiabaticaly populates the second excited state during the pulse, and subsequently withdraws this population back to the two-state Hilbert space. Using the DRAG pulse can reduce the amount of leakage by orders of magnitude.
+        A second pulse, known as the Derivative Removal by Adiabatic Gate (DRAG) pulse \cite{motzoi2009simple}, can be applied along with the main pulse, to reduce the amount of leakage. The DRAG pulse is the derivative of the main Gaussian pulse, and adiabaticaly populates the second excited-state during the pulse, and subsequently withdraws this population back to the two-state Hilbert space. Using the DRAG pulse can reduce the amount of leakage by orders of magnitude.
 
         \textbf{TODO:}
         \begin{itemize}
@@ -451,7 +451,7 @@
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which depends on the pulse amplitude.
 
-        After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wavefunction will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. After a measurement the qubit will be in the excited state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}. The Rabi rate $\Omega_R$ is proportional to the pulse amplitude.
+        After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wavefunction will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. After a measurement the qubit will be in the excited-state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}. The Rabi rate $\Omega_R$ is proportional to the pulse amplitude.
 
         In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Figure \textbf{TODO}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground-state of the qubit. At the other peaks, where the deviation from the ground-state is the largest, the qubit is in the excited-state. The amplitude of the left peak corresponds to a negative pi-pulse, and the right peak to a positive pi-pulse. Usually the amplitude step between successive segments is tuned such that the excited-state peaks are at specific segments.
 
@@ -529,6 +529,9 @@
           \end{itemize}
 
       \subsection{Measuring single shots}
+
+      \subsection{Second excited-state}
+        \label{ssec:Second excited-state}
 
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
@@ -909,21 +912,39 @@
 
       \subsection{Second-state leakage}
         \label{ssec:Second-state leakage}
-        The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being foud with equal probability in the ground-state and in the excited-state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second excited-state.
+        The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being foud with equal probability in the ground-state and in the excited-state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second excited-state, which would shift the measured signal.
 
+        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final pi pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited-state.
 
+        If we assume there is no further leakage into states higher than the second-state, these two measurements result in the following set of equations:
+
+        \begin{align}
+          p_0 V_0 + p_1 V_1 + p_2 V_2 = S_0 \notag\\
+          p_1 V_1 + p_0 V_1 + p_2 V_2 = S_1 \notag\\
+          p_0 + p_1 + p_2 = 1
+          \label{eq:three populations equations}
+        \end{align}
+
+        where $p_i$ is the final population of state $\ket{i}$, $V_i$ is the measured signal corresponding to state $\ket{i}$, and $S_i$ is the signal measured for a fixed number of Cliffords $n$ where the qubit's final state should ideally by $\ket{i}$. If the signals corresponding to all three states are known, the three populations can be extracted (see Appendix~\ref{ssec:Determining population in three states} for details).
 
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_state_populations.png}
-          \caption{Caption here}
+          \caption{The populations of the first three states of the qubit during randomized benchmarking. Populations are extracted by comparing randomized benchmakring results with and without a final pi pulse (see Appendix~\ref{ssec:Determining population in three states}). As can be seen, both qubits suffer from a small amount of leakage to the second-state. The leakage rate for the top qubit is higher than for the bottom qubit.}
           \label{fig:RB normal state populations}
         \end{figure}
 
+        Using the methods explained in Section~\ref{ssec:Second-state}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Figure~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit. Increasing the pulse length would result in a smaller frequency bandwidth, and is therefore expected to lower the leakage rate. This has, however, not yet been tested.
+
+        \begin{itemize}
+          \item Mention that drag can be optimized for leakage, although this would result in a higher gate error
+        \end{itemize}
 
     \section{Interleaved randomized benchmarking}
       \label{sec:interleaved randomized benchmarking}
+      Maybe I should put this in the appendix
 
-    \section{Second excited state}
+    \section{Two qubit randomized benchmarking}
+      \label{Two qubit randomized benchmarking}
 
   \chapter{Conclusions and outlook}

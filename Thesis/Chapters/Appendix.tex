@@ -34,8 +34,60 @@
   \subsection{Clifford gate decomposition}
     \label{ssec:Clifford gate decomposition}
   \subsection{Individual randomized benchmarking measurements}
-    \label{ssec:Individual randomized benchmarking measrurements}
+    \label{ssec:Individual randomized benchmarking measurements}
 
+  \subsection{Determining population in three states}
+    \label{ssec:Determining population in three states}
+    If there were no leakage present during randomized benchmarking, the full information about the state populations can be extracted from the randomized benchmarking results. However, if leakage to the second-excited state is present, the full information about the populations of the three states can be extracted using two versions of randomized benchmarking, one without a final pi pulse, and one with a final pi pulse. The final pi pulse swaps the populations in the ground and excited state. We assume that the population of the second excited-state remains unaffected by this single final pulse.
+
+    Using these two randomized benchmarking sequences, two different signals $S_0$ and $S_1$ are measured, corresponding to a measurement without a final pi pulse, and a measurement with a final pi pulse, respectively. This leads to the following three equations:
+
+    \begin{align}
+      p_0 V_0 + p_1 V_1 + p_2 V_2 = & S_0 \notag\\
+      p_1 V_1 + p_0 V_1 + p_2 V_2 = & S_1 \notag\\
+      p_0 + p_1 + p_2 = &   1
+      \label{eq:three populations equations App}
+    \end{align}
+
+    where $p_i$ corresponds to the final population in state $\ket{i}$, and $V_i$ is the signal of state $\ket{i}$.  Filling in $p_2 = 1 - p_0 - p_1$ into the first two equations of \ref{eq:three populations equations App}, we are left with the following set of equations:
+
+    \begin{align}
+      \begin{bmatrix}
+        V_0 - V_2 & V_1 - V_2 \\
+        V_1 - V_2 & V_0 - V_2
+      \end{bmatrix}
+      \begin{bmatrix}
+        p_0 \\
+        p_1
+      \end{bmatrix}
+      =
+      \begin{bmatrix}
+        S_0 - V_2 \\
+        S_1 - V_2
+      \end{bmatrix}
+    \end{align}
+
+    This set of equations can be easily solved by matrix inversion, resulting in the following three populations:
+
+    \begin{align}
+      \begin{bmatrix}
+        p_0 \\
+        p_1
+      \end{bmatrix}
+      = &
+      \left((V_0-V_2)^2 - (V_1 - V_2)^2\right)^{-1}
+      \begin{bmatrix}
+        V_0 - V_2 & -V_1 + V_2 \\
+        -V_1 + V_2 & V_0 + V_2
+      \end{bmatrix}
+      \begin{bmatrix}
+        S_0 - V_2 \\
+        S_1 - V_2
+      \end{bmatrix} \notag\\
+      p_2 = & 1 - p_0 - p_1
+      \label{eq:RB populations using final pi}
+    \end{align}
+    If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
 
 \chapter{Algorithms}
 \section{Tracked spectroscopy}
