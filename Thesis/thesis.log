@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  1 JUN 2015 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  2 JUN 2015 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1465,51 +1465,51 @@ le (type png)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Bloch sphere octahe
 dron.png used on input line 794.
 (pdftex.def)             Requested size: 226.48395pt x 226.48277pt.
- [57 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
-<../Figures/Randomized benchmarking/RB schematic.jpg, id=506, 771.88374pt x 257
-.96375pt>
-File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
-g)
- <use ../Figures/Randomized benchmarking/RB schematic.jpg>
-Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
-ed on input line 842.
-(pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
-LaTeX Font Info:    Try loading font information for OT1+pzc on input line 855.
+LaTeX Font Info:    Try loading font information for OT1+pzc on input line 800.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pzc.fd
 File: ot1pzc.fd 2001/06/04 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <12> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 855.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 800.
 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `pzc' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 855.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 800.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 855.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 800.
 
+ [57 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
+<../Figures/Randomized benchmarking/RB schematic.jpg, id=507, 771.88374pt x 257
+.96375pt>
+File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
+g)
+ <use ../Figures/Randomized benchmarking/RB schematic.jpg>
+Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
+ed on input line 837.
+(pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
 
-<../Figures/Randomized benchmarking/RB_single_seed.png, id=507, 433.62pt x 289.
+<../Figures/Randomized benchmarking/RB_single_seed.png, id=508, 433.62pt x 289.
 08pt>
 File: ../Figures/Randomized benchmarking/RB_single_seed.png Graphic file (type 
 png)
  <use ../Figures/Randomized benchmarking/RB_single_seed.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_single_seed.png 
-used on input line 870.
+used on input line 865.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 871.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 866.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 871.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 866.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <6> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 871.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 866.
 
  [58 <../Figures/Randomized benchmarking/RB schematic.jpg>]
 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=512, 
@@ -1519,35 +1519,59 @@ hic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_driving_s
-ingle_both.png used on input line 888.
+ingle_both.png used on input line 883.
+(pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
+
+<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=513, 722.7p
+t x 361.35pt>
+File: ../Figures/Randomized benchmarking/RB_normal_cross-driving.png Graphic fi
+le (type png)
+
+<use ../Figures/Randomized benchmarking/RB_normal_cross-driving.png>
+Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
+ving.png used on input line 891.
+(pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
+
+<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=514, 72
+2.7pt x 361.35pt>
+File: ../Figures/Randomized benchmarking/RB_normal_state_populations.png Graphi
+c file (type png)
+
+<use ../Figures/Randomized benchmarking/RB_normal_state_populations.png>
+Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_state_pop
+ulations.png used on input line 898.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 [59 <../Figures/Randomized benchmarking/RB_single_seed.png>] [60 <../Figures/Ra
-ndomized benchmarking/RB_normal_driving_single_both.png>]
-Chapter 10.
-) [61
+ndomized benchmarking/RB_normal_driving_single_both.png> <../Figures/Randomized
+ benchmarking/RB_normal_cross-driving.png>] [61 <../Figures/Randomized benchmar
+king/RB_normal_state_populations.png>] [62
 
-] [62
+]
+Chapter 10.
+) [63
+
+] [64
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 63 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 65 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 63 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 65 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=528, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=538, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=529, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=539, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1557,25 +1581,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[63
+[65
 
-] [64 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=536, 1118.9805pt x 420.3705pt>
+] [66 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=547, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [65 <./Figures/Noise/Noise model.png>]
-[66] [67]
-<Figures/Noise/noise_temperature_versus_power.png, id=548, 433.62pt x 289.08pt>
+ [67 <./Figures/Noise/Noise model.png>]
+[68] [69]
+<Figures/Noise/noise_temperature_versus_power.png, id=558, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [68 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=553, 433.62pt x 
+ [70 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=563, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1584,37 +1608,37 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[69 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [70]
+[71 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [72]
 Appendix B.
-[71
-
-]
-Appendix C.
-[72
-
-]
-Appendix D.
 [73
 
 ]
-Appendix E.
-) (./thesis.bbl [74
+Appendix C.
+[74
 
-] [75
+]
+Appendix D.
+[75
+
+]
+Appendix E.
+) (./thesis.bbl [76
+
+] [77
 
 ]) 
 AED: lastpage setting LastPage
-[76] (./thesis.aux)
+[78] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17077 strings out of 493109
- 332937 string characters out of 6138586
- 469748 words of memory out of 5000000
- 19895 multiletter control sequences out of 15000+600000
- 215630 words of font info for 446 fonts, out of 8000000 for 9000
+ 17092 strings out of 493109
+ 333631 string characters out of 6138586
+ 469783 words of memory out of 5000000
+ 19906 multiletter control sequences out of 15000+600000
+ 215900 words of font info for 449 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1626,10 +1650,10 @@ utb8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/
 texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/te
 xmf-dist/fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts
 /type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (77 pages, 19842999 bytes).
+Output written on thesis.pdf (79 pages, 19935581 bytes).
 PDF statistics:
- 615 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 626 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 71861 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 71871 words of extra memory for PDF output out of 74296 (max. 10000000)
 
