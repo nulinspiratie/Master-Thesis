@@ -93,6 +93,7 @@
 \contentsline {subsubsection}{\numberline {D.1.2.1}AllXY}{75}
 \contentsline {section}{\numberline {D.2}Randomized benchmarking}{75}
 \contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{75}
+\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{75}
 \contentsline {chapter}{\numberline {E}Algorithms}{76}
 \contentsline {section}{\numberline {E.1}Tracked spectroscopy}{76}
 \contentsline {section}{\numberline {E.2}Peak finding}{76}

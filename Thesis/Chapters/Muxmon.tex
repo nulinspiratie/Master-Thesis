@@ -531,6 +531,7 @@
       \subsection{Measuring single shots}
 
   \chapter{Calibration routines}
+    \label{ch:Calibration routines}
     \textbf{TODO:} Introduction
     \section{Accurate frequency estimation}
       Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. As explained in Section~\ref{sssec:Ramsey}, this detuning is measured in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
@@ -854,10 +855,15 @@
 
       After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state deviating from the ground-state. The qubit will therefore be in the excited-state with a nonzero probability. This probability increases as the number of Cliffords $n$ is increased.
 
-      \textbf{TODO:} Something about exponential decay
+      \textbf{TODO:} Something about exponential decay, T1 fidelity limit
       \begin{equation}
         P= A p^n + B
         \label{eq:RB exponential decay}
+      \end{equation}
+
+      \begin{equation}
+        F_{max} = 1/6\left(3 + 2 \exp{-t_g/(2*T_1)} + \exp{-t_g/T_1}\right)
+        \label{eq:RB T1 fidelity limit}
       \end{equation}
 
       \begin{figure}[tb]
@@ -873,12 +879,11 @@
         \item Clifford group can be efficiently simulated on a classical computer. Gottesman-Knill theorem (\cite{gottesman1998heisenberg})
         \item Explain the formula relating $n$ to an exponential curve.
         \item Coherence limit of RB
+        \item Clifford fidelity to gate fidelity
       \end{itemize}
 
     \section{Driving a single qubit versus driving both qubits}
       \label{sec:Driving a single qubit versus driving both qubits}
-
-
 
       \begin{figure}[tb]
         \centering
@@ -887,6 +892,9 @@
         \label{fig:RB normal single vs both}
       \end{figure}
 
+      After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a duration of \SI{30}{\micro \second}.
+
+      The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by the instruments including the AWG and Duplexer.
 
       \begin{figure}[tb]
         \centering
@@ -894,6 +902,9 @@
         \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross-driving and is considerably stronger for the top qubit than for the bottom qubit.}
         \label{fig:RB normal cross-driving}
       \end{figure}
+
+      In Figure~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance when driving a single qubit versus driving both qubits. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. However, Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied. However, one can see that in both cases application of pulses on one qubit also affects the qubit not being driven.
+
 
       \begin{figure}[tb]
         \centering
