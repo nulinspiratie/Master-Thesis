@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  2 JUN 2015 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  2 JUN 2015 16:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1532,8 +1532,8 @@ le (type png)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
 ving.png used on input line 901.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
-
-<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=518, 72
+ [60 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
+<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=524, 72
 2.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_state_populations.png Graphi
 c file (type png)
@@ -1543,11 +1543,8 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_state_pop
 ulations.png used on input line 911.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[60 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
-[61 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png> <../Figure
-s/Randomized benchmarking/RB_normal_state_populations.png>] [62
-
-]
+[61 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>] [62 <../F
+igures/Randomized benchmarking/RB_normal_state_populations.png>]
 Chapter 10.
 ) [63
 
@@ -1638,11 +1635,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17142 strings out of 493109
- 334813 string characters out of 6138586
+ 17146 strings out of 493109
+ 334854 string characters out of 6138586
  469833 words of memory out of 5000000
  19956 multiletter control sequences out of 15000+600000
- 232438 words of font info for 467 fonts, out of 8000000 for 9000
+ 232708 words of font info for 470 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1655,7 +1652,7 @@ b><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/
 2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/u
 rw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (79 pages, 19935721 bytes).
+Output written on thesis.pdf (79 pages, 19906343 bytes).
 PDF statistics:
  630 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams

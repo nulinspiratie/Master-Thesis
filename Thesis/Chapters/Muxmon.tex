@@ -862,7 +862,7 @@
       \end{equation}
 
       \begin{equation}
-        F_{max} = 1/6\left(3 + 2 \exp{-t_g/(2*T_1)} + \exp{-t_g/T_1}\right)
+        F_{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right)
         \label{eq:RB T1 fidelity limit}
       \end{equation}
 
@@ -888,7 +888,7 @@
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_driving_single_both.png}
-        \caption{Randomized benchmarking results when driving a single qubit versus driving both qubits simultaneously. As can be seen there is no noticeable difference between driving only one qubit versus driving both qubits simultaneously. A total of 50 different seeds were used.}
+        \caption{Randomized benchmarking results when driving a single qubit versus driving both qubits simultaneously. As can be seen there is no noticeable difference between driving only one qubit versus driving both qubits simultaneously. A total of 50 different seeds were used. T1 limits are calculated using Equation~\ref{eq:RB T1 fidelity limit}.}
         \label{fig:RB normal single vs both}
       \end{figure}
 
@@ -903,7 +903,7 @@
         \label{fig:RB normal cross-driving}
       \end{figure}
 
-      In Figure~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance when driving a single qubit versus driving both qubits. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. However, Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied. However, one can see that in both cases application of pulses on one qubit also affects the qubit not being driven.
+      In Figure~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. Figure~\ref{fig:RB normal cross-driving}, however, shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Section~\ref{sec:cross-driving}, inidicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equl to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
 
 
       \begin{figure}[tb]
