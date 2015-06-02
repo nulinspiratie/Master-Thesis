@@ -882,36 +882,43 @@
         \item Clifford fidelity to gate fidelity
       \end{itemize}
 
-    \section{Driving a single qubit versus driving both qubits}
-      \label{sec:Driving a single qubit versus driving both qubits}
+    \section{Single qubit randomized benchmarking}
+      \label{sec:Single qubit randomized benchmarking}
+      \subsection{Driving a single qubit versus driving both qubits}
+        \label{ssec:Driving a single qubit versus driving both qubits}
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_driving_single_both.png}
-        \caption{Randomized benchmarking results when driving a single qubit versus driving both qubits simultaneously. As can be seen there is no noticeable difference between driving only one qubit versus driving both qubits simultaneously. A total of 50 different seeds were used. T1 limits are calculated using Equation~\ref{eq:RB T1 fidelity limit}.}
-        \label{fig:RB normal single vs both}
-      \end{figure}
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_driving_single_both.png}
+          \caption{Randomized benchmarking results when driving a single qubit versus driving both qubits simultaneously. As can be seen there is no noticeable difference between driving only one qubit versus driving both qubits simultaneously. A total of 50 different seeds were used. T1 limits are calculated using Equation~\ref{eq:RB T1 fidelity limit}.}
+          \label{fig:RB normal single vs both}
+        \end{figure}
 
-      After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a duration of \SI{30}{\micro \second}.
+        After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a duration of \SI{30}{\micro \second}.
 
-      The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by the instruments including the AWG and Duplexer.
+        The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by the instruments including the AWG and Duplexer.
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_cross-driving.png}
-        \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross-driving and is considerably stronger for the top qubit than for the bottom qubit.}
-        \label{fig:RB normal cross-driving}
-      \end{figure}
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_cross-driving.png}
+          \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross-driving and is considerably stronger for the top qubit than for the bottom qubit.}
+          \label{fig:RB normal cross-driving}
+        \end{figure}
 
-      In Figure~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. Figure~\ref{fig:RB normal cross-driving}, however, shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Section~\ref{sec:cross-driving}, inidicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equl to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
+        In Figure~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. Figure~\ref{fig:RB normal cross-driving}, however, shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Section~\ref{sec:cross-driving}, inidicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equl to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
+
+      \subsection{Second-state leakage}
+        \label{ssec:Second-state leakage}
+        The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being foud with equal probability in the ground-state and in the excited-state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second excited-state.
 
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_state_populations.png}
-        \caption{Caption here}
-        \label{fig:RB normal state populations}
-      \end{figure}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_normal_state_populations.png}
+          \caption{Caption here}
+          \label{fig:RB normal state populations}
+        \end{figure}
 
 
     \section{Interleaved randomized benchmarking}

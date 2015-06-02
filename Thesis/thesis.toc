@@ -61,7 +61,9 @@
 \contentsline {section}{\numberline {9.1}Introduction}{56}
 \contentsline {section}{\numberline {9.2}Clifford group}{57}
 \contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{58}
-\contentsline {section}{\numberline {9.4}Driving a single qubit versus driving both qubits}{59}
+\contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{60}
+\contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{60}
+\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{61}
 \contentsline {section}{\numberline {9.5}Interleaved randomized benchmarking}{62}
 \contentsline {section}{\numberline {9.6}Second excited state}{62}
 \contentsline {chapter}{\numberline {10}Conclusions and outlook}{63}
