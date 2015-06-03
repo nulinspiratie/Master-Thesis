@@ -1021,14 +1021,17 @@
           \end{figure}
 
       \begin{table}
-        \begin{tabular}{l || c | c || c | c}
-          RB method     & \multicolumn{2}{c||}{Clifford fidelity} & \multicolumn{2}{c}{gate fidelity}\\
-          \hline
+        \begin{tabular}{l c c c c}
+          \toprule
+          RB method     & \multicolumn{2}{c}{Clifford fidelity} & \multicolumn{2}{c}{gate fidelity}\\
+          \cmidrule(lr){2-3}
+          \cmidrule(lr){4-5}
                         & top qubit & bottom qubit & top qubit & bottom qubit \\
-          \hline
+          \midrule
           Alternating   & 0.9962 & 0.9972 & 0.9990 & 0.9992 \\
           Compiled      & 0.9970 & 0.9978 & 0.9990 & 0.9992 \\
           5 primitives  & 0.9947 & 0.9964 & 0.9990 & 0.9993 \\
+          \bottomrule
         \end{tabular}
         \caption{Corresponding gate fidelities of top and bottom qubit using three randomized benchmarking methods. The gate fidelities are obtained using the corresponding average gates per Clifford.}
         \label{tab:RB 2Q converted gate fidelities}
