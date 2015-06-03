@@ -876,7 +876,7 @@
         \label{fig:RB single seed}
       \end{figure}
 
-      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. The randomized benchmarking results using a single seed are shown in Figure~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
+      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. Each set of random Cliffords is known as a seed. The randomized benchmarking results using a single seed are shown in Figure~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
 
       \begin{itemize}
         \item Clifford group can be efficiently simulated on a classical computer. Gottesman-Knill theorem (\cite{gottesman1998heisenberg})
@@ -937,7 +937,7 @@
         Using the methods explained in Section~\ref{ssec:Second-state}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Figure~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit. Increasing the pulse length would result in a smaller frequency bandwidth, and is therefore expected to lower the leakage rate. This has, however, not yet been tested.
 
         \begin{itemize}
-          \item Mention that drag can be optimized for leakage, although this would result in a higher gate error
+          \item Mention that drag can be optimized for leakage, although this would result in a higher gate error. Must find paper
         \end{itemize}
 
     \section{Interleaved randomized benchmarking}
@@ -946,5 +946,53 @@
 
     \section{Two qubit randomized benchmarking}
       \label{Two qubit randomized benchmarking}
+      So far randomized benchmarking on two qubits has only been performed in the case where both qubits receive the same pulses. In a more realistic scenario one would like to be able to control both qubits individually. The Duplexer, in combination with frequency re-use, offers this possibility. The switches of the Duplexer are able to route pulses at nanosecond-scale. Using a single sequence of pulses, these switches allow each individual pulse to be sent to either of the two qubits, or both qubits simultaneously. This is known as selective broadcasting, and enables individual control of both qubits simultaneously.
+
+      The performance of controlling both qubits simultaneously using selective broadcasting has been studied using randomized benchmarking. In this case each of the two qubits has an individual seed composed of $n$ randomly chosen Cliffords. There are many different ways in which randomized benchmarking on two qubits can be performed. Three methods have been explored: alternating randomized benchmarking, compiled randomized benchmarking, and 5 primitives randomized benchmarking. These will be explained in the following sections.
+
+      \begin{itemize}
+        \item Additionally since the qubits are driven by the same pulses, their states should be identical.
+      \end{itemize}
+
+      \subsection{Alternating randomized benchmarking}
+        \label{ssec:alternating randomized benchmarking}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/alternating RB.jpg}
+          \caption{Alternating randomized benchmarking}
+          \label{fig:alternating RB schematic}
+        \end{figure}
+
+        The first method explored is alternating randomized benchmarking. In this method the Cliffords of the two qubits are applied alternatingly, as shown in Figure~\ref{fig:alternating RB schematic}. When a Clifford of the top qubit is applied, the switches of the top qubit are on, while the switches of the bottom qubit are off, and vice versa. If each qubit has a seed composed of $n$ Cliffords, the total duration of the sequence will be twice as long as in single qubit randomized benchmarking. Therefore the average duration of a pair of Clifford is equal to $2 \times 1.875 = 3.75$ gates.
+
+
+      \subsection{Compiled randomized benchmarking}
+        \label{ssec:compiled randomized benchmarking}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/compiled RB.jpg}
+          \caption{Compiled randomized benchmarking}
+          \label{fig:compiled RB schematic}
+        \end{figure}
+
+
+
+
+      \subsection{5 primitives randomized benchmarking}
+        \label{ssec:5 primitives randomized benchmarking}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/5 primitives RB.jpg}
+          \caption{5 primitives randomized benchmarking}
+          \label{fig:5 primitives RB schematic}
+        \end{figure}
+
+        The first and simplest method explored is alternating randomized benchmarking. In this method the Cliffords of the two qubits are applied alternatingly,
+
+
+
 
   \chapter{Conclusions and outlook}
