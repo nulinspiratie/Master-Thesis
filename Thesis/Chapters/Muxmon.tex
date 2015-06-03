@@ -727,7 +727,7 @@
         \end{minipage}
         \begin{minipage}{0.35\textwidth}
           \centering
-          \begin{tabular}{label c}
+          \begin{tabular}{l c}
             \toprule
             qubit & cross-driving (\%) \\
             \midrule
@@ -1054,12 +1054,24 @@
 
           In Figure~\ref{fig:cross driving two qubit randomized benchmarking} we can see the effect of cross-driving during two qubit randomized benchmarking. In this case the switches corresponding to one qubit are continuously closed, while the other qubit is being driven. As can be seen the bottom qubit experiences much more cross-driving than the top qubit. We see, however, that this cross-driving is greatly reduced when using the $5$ primitives method. This is due to the fact that the pulses in the $5$ primitives method are chosen such that the cross-driving effects for idle qubits are reduced (see Section~\ref{ssec:5 primitives randomized benchmarking}).
 
+        \section{Scaling of multi qubit randomized benchmarking}
+          \label{sec:scaling of multi qubit randomized benchmarking}
+
           \begin{figure}[tb]
             \centering
             \includegraphics[width=.8\textwidth]{../Figures/Randomized benchmarking/Clifford_comparison.png}
-            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi qubit randomized benchmarking methods.}
+            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi qubit randomized benchmarking methods. The oval indicates the gates per Clifford at two qubits}
             \label{fig:gate per Clifford versus qubits comparison}
           \end{figure}
 
+          So far it has been found that for two qubits compiled randomized benchmarking clearly performs best, while $5$ primitives method performs worst. The performance is directly related to the average number of gates per Clifford set. Figure~\ref{fig:gate per Clifford versus qubits comparison} shows how the average number of gates per Clifford scale a function of the number of qubits for all three randomized benchmarking methods. At two qubits the $5$ primitives method performs worst of all three methods. However, at three qubits the $5$ primitives method already outperforms alternating randomized benchmarking. This is because the $5$ primitives method has $5$ gates per Clifford, irrespective of the number of qubits, whereas alternating randomized benchmarking scales linearly with the number of qubits.
+
+          Compiled randomized benchmarking always performs the best, as it per definition finds the least amount of gates required to perform a set of Cliffords on the qubits. However, compiled randomized benchmarking has a clear disadvantage, which is that the required time for finding the optimal compilation scales exponentially with the number of qubits. Each Clifford on average has $38$ different decompositions, and so for eight qubits this would already result in $38^8\approx 4.3 * 10^{12}$ different combinations for each infividual set of Cliffords. As shown in Appendix~\ref{sec:compiled randomized benchmarking algorithm}, there are many different tricks to reduce the amount of computations required by several orders of magnitude. Nevertheless it is still computationally intensive to find the optimal gate compilation, even for a modest amount of qubits.
+
+          In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see Appendix~\ref{sec:5 primitives decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$, and so unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best and by far easiest of the three randomized benchmarking methods.
+
 
   \chapter{Conclusions and outlook}
+    \begin{itemize}
+      \item Talk about how the $5$ primitives method could be used for easy Clifford generation for an arbitrarily large quantum computer.
+    \end{itemize}

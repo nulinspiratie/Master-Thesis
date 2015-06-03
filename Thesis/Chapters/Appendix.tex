@@ -13,99 +13,101 @@
     \label{sec:Resonator buses}
 
 \chapter{Additional notes}
-\section{Qubit characterization}
-  \subsection{Part I: Continuous-wave measurements}
-    \subsubsection{Powersweep}
-      \begin{itemize}
-        \item If the resonator seems to disappear after the transition from dressed frequency to bare frequency (or vice versa), this is likely due to the qubit being extremely close to the resonator, and so the frequency shift is large.
-      \end{itemize}
-    \subsubsection{Spectroscopy}
-      \begin{itemize}
-        \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
-      \end{itemize}
-  \subsection{Part I: Time-domain measurements}
-    \subsubsection{AllXY}
-      \label{ssec:AllXY}
-      \textbf{TODO:}
-      \begin{itemize}
-        \item Table of AllXY pulses
-      \end{itemize}
-\section{Randomized benchmarking}
-  \subsection{Clifford gate decomposition}
-    \label{ssec:Clifford gate decomposition}
+  \section{Qubit characterization}
+    \subsection{Part I: Continuous-wave measurements}
+      \subsubsection{Powersweep}
+        \begin{itemize}
+          \item If the resonator seems to disappear after the transition from dressed frequency to bare frequency (or vice versa), this is likely due to the qubit being extremely close to the resonator, and so the frequency shift is large.
+        \end{itemize}
+      \subsubsection{Spectroscopy}
+        \begin{itemize}
+          \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
+        \end{itemize}
+    \subsection{Part I: Time-domain measurements}
+      \subsubsection{AllXY}
+        \label{ssec:AllXY}
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Table of AllXY pulses
+        \end{itemize}
+  \section{Randomized benchmarking}
+    \subsection{Clifford gate decomposition}
+      \label{ssec:Clifford gate decomposition}
 
-    \begin{figure}[tb]
-      \centering
-      \includegraphics[width=\textwidth]{../Figures/Clifford decomposition.png}
-      \caption{Decomposition of all $24$ Cliffords into X and Y rotations}
-      \label{fig:Clifford decomposition}
-    \end{figure}
-    \textbf{TODO:} Cite
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\textwidth]{../Figures/Clifford decomposition.png}
+        \caption{Decomposition of all $24$ Cliffords into X and Y rotations}
+        \label{fig:Clifford decomposition}
+      \end{figure}
+      \textbf{TODO:} Cite
 
-  \subsection{Individual randomized benchmarking measurements}
-    \label{ssec:Individual randomized benchmarking measurements}
+    \subsection{Individual randomized benchmarking measurements}
+      \label{ssec:Individual randomized benchmarking measurements}
 
-  \subsection{Determining population in three states}
-    \label{ssec:Determining population in three states}
-    If there were no leakage present during randomized benchmarking, the full information about the state populations can be extracted from the randomized benchmarking results. However, if leakage to the second-excited state is present, the full information about the populations of the three states can be extracted using two versions of randomized benchmarking, one without a final pi pulse, and one with a final pi pulse. The final pi pulse swaps the populations in the ground and excited state. We assume that the population of the second excited-state remains unaffected by this single final pulse.
+    \subsection{Determining population in three states}
+      \label{ssec:Determining population in three states}
+      If there were no leakage present during randomized benchmarking, the full information about the state populations can be extracted from the randomized benchmarking results. However, if leakage to the second-excited state is present, the full information about the populations of the three states can be extracted using two versions of randomized benchmarking, one without a final pi pulse, and one with a final pi pulse. The final pi pulse swaps the populations in the ground and excited state. We assume that the population of the second excited-state remains unaffected by this single final pulse.
 
-    Using these two randomized benchmarking sequences, two different signals $S_0$ and $S_1$ are measured, corresponding to a measurement without a final pi pulse, and a measurement with a final pi pulse, respectively. This leads to the following three equations:
+      Using these two randomized benchmarking sequences, two different signals $S_0$ and $S_1$ are measured, corresponding to a measurement without a final pi pulse, and a measurement with a final pi pulse, respectively. This leads to the following three equations:
 
-    \begin{align}
-      p_0 V_0 + p_1 V_1 + p_2 V_2 = & S_0 \notag\\
-      p_1 V_1 + p_0 V_1 + p_2 V_2 = & S_1 \notag\\
-      p_0 + p_1 + p_2 = &   1
-      \label{eq:three populations equations App}
-    \end{align}
+      \begin{align}
+        p_0 V_0 + p_1 V_1 + p_2 V_2 = & S_0 \notag\\
+        p_1 V_1 + p_0 V_1 + p_2 V_2 = & S_1 \notag\\
+        p_0 + p_1 + p_2 = &   1
+        \label{eq:three populations equations App}
+      \end{align}
 
-    where $p_i$ corresponds to the final population in state $\ket{i}$, and $V_i$ is the signal of state $\ket{i}$.  Filling in $p_2 = 1 - p_0 - p_1$ into the first two equations of \ref{eq:three populations equations App}, we are left with the following set of equations:
+      where $p_i$ corresponds to the final population in state $\ket{i}$, and $V_i$ is the signal of state $\ket{i}$.  Filling in $p_2 = 1 - p_0 - p_1$ into the first two equations of \ref{eq:three populations equations App}, we are left with the following set of equations:
 
-    \begin{align}
-      \begin{bmatrix}
-        V_0 - V_2 & V_1 - V_2 \\
-        V_1 - V_2 & V_0 - V_2
-      \end{bmatrix}
-      \begin{bmatrix}
-        p_0 \\
-        p_1
-      \end{bmatrix}
-      =
-      \begin{bmatrix}
-        S_0 - V_2 \\
-        S_1 - V_2
-      \end{bmatrix}
-    \end{align}
+      \begin{align}
+        \begin{bmatrix}
+          V_0 - V_2 & V_1 - V_2 \\
+          V_1 - V_2 & V_0 - V_2
+        \end{bmatrix}
+        \begin{bmatrix}
+          p_0 \\
+          p_1
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+          S_0 - V_2 \\
+          S_1 - V_2
+        \end{bmatrix}
+      \end{align}
 
-    This set of equations can be easily solved by matrix inversion, resulting in the following three populations:
+      This set of equations can be easily solved by matrix inversion, resulting in the following three populations:
 
-    \begin{align}
-      \begin{bmatrix}
-        p_0 \\
-        p_1
-      \end{bmatrix}
-      = &
-      \left((V_0-V_2)^2 - (V_1 - V_2)^2\right)^{-1}
-      \begin{bmatrix}
-        V_0 - V_2 & -V_1 + V_2 \\
-        -V_1 + V_2 & V_0 + V_2
-      \end{bmatrix}
-      \begin{bmatrix}
-        S_0 - V_2 \\
-        S_1 - V_2
-      \end{bmatrix} \notag\\
-      p_2 = & 1 - p_0 - p_1
-      \label{eq:RB populations using final pi}
-    \end{align}
-    If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
+      \begin{align}
+        \begin{bmatrix}
+          p_0 \\
+          p_1
+        \end{bmatrix}
+        = &
+        \left((V_0-V_2)^2 - (V_1 - V_2)^2\right)^{-1}
+        \begin{bmatrix}
+          V_0 - V_2 & -V_1 + V_2 \\
+          -V_1 + V_2 & V_0 + V_2
+        \end{bmatrix}
+        \begin{bmatrix}
+          S_0 - V_2 \\
+          S_1 - V_2
+        \end{bmatrix} \notag\\
+        p_2 = & 1 - p_0 - p_1
+        \label{eq:RB populations using final pi}
+      \end{align}
+      If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
+    \section{$5$ primitives decomposition}
+      \label{sec:5 primitives decomposition}
 
 \chapter{Algorithms}
-\section{Tracked spectroscopy}
-\label{sec:Tracked spectroscopy}
-  \begin{itemize}
-    \item Information may lie in amplitude or in phase, or in a combination of the two. For most accurate measure, calculate distance from ground state.
-  \end{itemize}
-\section{Peak finding}
-  \subsection{Normal peak finder}
-  \subsection{Derivative peak finder}
-\section{Compiled randomized benchmarking}
-  \label{sec:compiled randomized benchmarking algorithm}
+  \section{Tracked spectroscopy}
+  \label{sec:Tracked spectroscopy}
+    \begin{itemize}
+      \item Information may lie in amplitude or in phase, or in a combination of the two. For most accurate measure, calculate distance from ground state.
+    \end{itemize}
+  \section{Peak finding}
+    \subsection{Normal peak finder}
+    \subsection{Derivative peak finder}
+  \section{Compiled randomized benchmarking}
+    \label{sec:compiled randomized benchmarking algorithm}

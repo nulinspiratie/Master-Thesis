@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1425,19 +1425,6 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_Ra
 bi.png used on input line 724.
 (pdftex.def)             Requested size: 294.42636pt x 343.51433pt.
 
-
-! Package array Error:  Illegal pream-token (a): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730           \begin{tabular}{label c}
-                                        
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
 Underfull \hbox (badness 2635) in paragraph at lines 740--740
 []\T1/futs/b/n/10.95 Table 8.2: |\T1/futs/m/n/10.95 (+20) Driv-ing through top
  []
@@ -1622,42 +1609,42 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_driving_singl
 e_vs_both.png used on input line 1050.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Randomized benchmarking/Clifford_comparison.png, id=555, 578.16pt x
+[68 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
+<../Figures/Randomized benchmarking/Clifford_comparison.png, id=559, 578.16pt x
  361.35pt>
 File: ../Figures/Randomized benchmarking/Clifford_comparison.png Graphic file (
 type png)
  <use ../Figures/Randomized benchmarking/Clifford_comparison.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Clifford_comparison
-.png used on input line 1059.
+.png used on input line 1062.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
 
-[68 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
-[69 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png> <../F
-igures/Randomized benchmarking/Clifford_comparison.png>]
+[69 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
+[70 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
 Chapter 10.
-) [70
+) [71
 
-] [71
+] [72
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 72 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 72 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=571, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=575, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=572, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=576, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1667,25 +1654,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[72
+[73
 
-] [73 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=580, 1118.9805pt x 420.3705pt>
+] [74 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=583, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [74 <./Figures/Noise/Noise model.png>]
-[75] [76]
-<Figures/Noise/noise_temperature_versus_power.png, id=591, 433.62pt x 289.08pt>
+ [75 <./Figures/Noise/Noise model.png>]
+[76] [77]
+<Figures/Noise/noise_temperature_versus_power.png, id=594, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [77 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=596, 433.62pt x 
+ [78 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=600, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1694,34 +1681,34 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[78 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [79]
+[79 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [80]
 Appendix B.
-[80
-
-]
-Appendix C.
 [81
 
 ]
+Appendix C.
+[82
+
+]
 Appendix D.
-<../Figures/Clifford decomposition.png, id=612, 683.46771pt x 166.45795pt>
+<../Figures/Clifford decomposition.png, id=615, 683.46771pt x 166.45795pt>
 File: ../Figures/Clifford decomposition.png Graphic file (type png)
 
 <use ../Figures/Clifford decomposition.png>
 Package pdftex.def Info: ../Figures/Clifford decomposition.png used on input li
 ne 39.
 (pdftex.def)             Requested size: 452.9679pt x 110.3223pt.
- [82
+ [83
 
-] [83 <../Figures/Clifford decomposition.png>] [84]
+] [84 <../Figures/Clifford decomposition.png>] [85]
 Appendix E.
-) (./thesis.bbl [85
+) (./thesis.bbl [86
 
-] [86
+] [87
 
 ]) 
 AED: lastpage setting LastPage
-[87] (./thesis.aux)
+[88] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1731,10 +1718,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17213 strings out of 493109
- 337743 string characters out of 6138586
- 470094 words of memory out of 5000000
- 20011 multiletter control sequences out of 15000+600000
+ 17214 strings out of 493109
+ 337795 string characters out of 6138586
+ 470105 words of memory out of 5000000
+ 20012 multiletter control sequences out of 15000+600000
  233518 words of font info for 479 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1748,10 +1735,10 @@ b><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/
 2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/u
 rw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (88 pages, 24028520 bytes).
+Output written on thesis.pdf (89 pages, 24034358 bytes).
 PDF statistics:
- 670 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
+ 673 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  76007 words of extra memory for PDF output out of 89155 (max. 10000000)
 
