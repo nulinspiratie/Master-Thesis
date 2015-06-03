@@ -1013,4 +1013,14 @@
         \section{Two qubit randomized benchmarking results}
           \label{Two qubit randomized benchmarking results}
 
+          \begin{figure}[tb]
+            \centering
+            \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/RB_2Q_state_populations.png}
+            \caption{State populations using three different two qubit randomized benchmarking sequences. Number of Cliffords correspond to each qubit. A total of $50$ seeds was used. The measurements were performed with and without a final pi pulse, from which the populations of the first thee states of the qubit were determined.}
+            \label{fig:RB 2Q state populations}
+          \end{figure}
+
+          The three different two qubit randomized benchmarking methods have been performed. By performing the measurements both with and without a final pi pulse, the populations of the first three states of the qubit have been determined (see Appendix~\ref{ssec:Determining population in three states}). The results are shown in Figure~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$, and so the gate errors are also well above $99\%$. These results show that simultaneous control of two qubits can be achieved with an error rate below the suface code fault tolerant threshold.
+
+
   \chapter{Conclusions and outlook}
