@@ -977,8 +977,11 @@
           \label{fig:compiled RB schematic}
         \end{figure}
 
+        In alternating randomized benchmarking pulses are never simultaneously applied to both qubits. However, it is quite possible that a pair of Cliffords has one or more gates in common. Compiled randomized benchmarking is a more efficient alternative to alternating randomized benchmarking, where pairs of Cliffords are compiled into the least amount of physical gates required to perform both Cliffords. The schematic is shown in Figure~\ref{fig:compiled RB schematic}, where the same Clifford combination is shown as in the schematic of alternating randomized benchmarking (Figure~\ref{fig:alternating RB schematic}). As can be seen both Clifford decompositions share the $Y_{\pi/2}$ gate, and so can be combined into a single pulse sent to both qubits simultaneously. The result is that the total number of gates is reduced from four to three.
 
+        Compiled randomized benchmarking even goes one step further. The Clifford decomposition shown in Appendix~\ref{fig:Clifford decomposition} is one way in which the $24$ Cliffords can be decomposed. There are, however, many other possible decompositions for each of the Cliffords into rotations along the X and Y axis. It is not at all obvious which decompositions of the two Cliffords would result in the optimal gate compilation for a given Clifford pair, i.e. the least amount of physical gates required to perform the pair of Cliffords on the two qubits.
 
+        If we ignore decompositions where successive gates cancel, such as $X_{\pi/2}$, followed by $X_{-\pi/2}$, and only look at decompositions up to $4$ gates, there are $903$ possible combinations of gates, resulting in an average of approximately $38$ possible decompositions per Clifford. This corresponds to $38^2=1444$ possible pairs of decompositions. In compiled randomized benchmarking the optimal compilation from all these possible decomposition pairs is found (see Appendix~\ref{sec:compiled randomized benchmarking algorithm} for details on the algorithm used). The result of this compilation is that on average the duration of a pair of Cliffords is equal to $2.925$ gates. This is $22\%$ less than alternating randomized benchmarking ($3.75$ gates per Clifford pair).
 
       \subsection{5 primitives randomized benchmarking}
         \label{ssec:5 primitives randomized benchmarking}
@@ -990,8 +993,7 @@
           \label{fig:5 primitives RB schematic}
         \end{figure}
 
-        The first and simplest method explored is alternating randomized benchmarking. In this method the Cliffords of the two qubits are applied alternatingly,
-
+        A final two qubit randomized benchmarking method which has been studied
 
 
 
