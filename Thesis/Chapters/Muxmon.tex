@@ -981,7 +981,7 @@
 
         Compiled randomized benchmarking even goes one step further. The Clifford decomposition shown in Appendix~\ref{fig:Clifford decomposition} is one way in which the $24$ Cliffords can be decomposed. There are, however, many other possible decompositions for each of the Cliffords into rotations along the X and Y axis. It is not at all obvious which decompositions of the two Cliffords would result in the optimal gate compilation for a given Clifford pair, i.e. the least amount of physical gates required to perform the pair of Cliffords on the two qubits.
 
-        If we ignore decompositions where successive gates cancel, such as $X_{\pi/2}$, followed by $X_{-\pi/2}$, and only look at decompositions up to $4$ gates, there are $903$ possible combinations of gates, resulting in an average of approximately $38$ possible decompositions per Clifford. This corresponds to $38^2=1444$ possible pairs of decompositions. In compiled randomized benchmarking the optimal compilation from all these possible decomposition pairs is found (see Appendix~\ref{sec:compiled randomized benchmarking algorithm} for details on the algorithm used). The result of this compilation is that on average the duration of a pair of Cliffords is equal to $2.925$ gates. This is $22\%$ less than alternating randomized benchmarking ($3.75$ gates per Clifford pair).
+        If we ignore decompositions where successive gates cancel, such as $X_{\pi/2}$, followed by $X_{-\pi/2}$, and only look at decompositions up to $4$ gates, there are $903$ possible combinations of gates, resulting in an average of approximately $38$ possible decompositions per Clifford. This corresponds to $38^2=1444$ possible pairs of decompositions. In compiled randomized benchmarking the optimal compilation from all these possible decomposition pairs is found (see Appendix~\ref{sec:compiled randomized benchmarking algorithm} for details on the algorithm used). The result of this compilation is that on average the duration of a pair of Cliffords is equal to $2.925$ gates, which is $22\%$ less than alternating randomized benchmarking ($3.75$ gates per Clifford pair).
 
       \subsection{5 primitives randomized benchmarking}
         \label{ssec:5 primitives randomized benchmarking}
@@ -993,8 +993,30 @@
           \label{fig:5 primitives RB schematic}
         \end{figure}
 
-        A final two qubit randomized benchmarking method which has been studied
+        When exploring different two qubit randomized benchmarking methods, one very interesting property of the Clifford group was discovered. It was found that each of the $24$ Cliffords can be decomposed into a subset of $5$ primitive gates, while retaining the gate order of the $5$ primitives. The $5$ primitive gates are:
 
+        \begin{figure}[h!]
+          \centering
+          \includegraphics[width=.5\textwidth]{../Figures/Randomized benchmarking/5 primitive gates.jpg}
+          \caption{The 5 primitive gates, in order of application in time.}
+          \label{5 primitive gates}
+        \end{figure}
+
+        Using the fixed set of $5$ primitive gates, and by selectively routing the pulses to each of the qubits, arbitrary Cliffords can simultaneously be applied both qubits. The Cliffords applied to the two qubits need not be equal. In the $5$ primitives method the gate sequence stays fixed, and could even be continuously repeated. The markers corresponding to the state of the switches determine the Clifford operations of the qubits.
+
+        There is another advantage of the $5$ primitive gates, which is that it decreases the amount of cross-driving when one of the two qubits is not being driven. The first three gates composing the $5$ primitives are positive $\pi/2$ gates along the X and Y axes. The final two gates are negative $\pi$ gates along the X and Y axes. Cross-driving corresponds to rotations where the angle is a fraction of the full rotation angle. After one full $5$ primitive gates cycle the state of the idle qubit should therefore return close to its initial position. Even if not all $5$ gates are applied, the cross-driving effects should still decrease. This is because the cross-driving rotations are small, and in randomized benchmarking a large number of random Cliffords are applied, and so over the course of an entire randomized benchmarking run these cross-driving effects will still partially cancel out.
+
+        An even better approach to eliminating cross-driving is to alternate between a cycle of the $5$ primitive gates, and a cycle where the $5$ primitive gates are inverted, i.e. negative $\pi/2$ rotations and positive $\pi$ rotations, and switching of the gate order. Since the Clifford set is a group, each Clifford has a unique inverse which is also a Clifford. Inverting a Clifford is equal to inverting the gates of its $5$ primitives decomposition (including reversal of the gate order). Since all the inverted gates are elements of the inverted $5$ primitive gates, we see that we can indeed also decompose all $24$ Cliffords using the inverted $5$ primitive gates. Alternating between the $5$ primitive gates and the inverted $5$ primitive gates is expected to reduce the effects of cross-driving even further,
+
+         Even if not all pulses are applied to the m
+
+        The $5$ primitives randomized benchmarking repeatedly applies the fix
+
+
+        \begin{itemize}
+          \item smart 5P
+          \item inverse 5P
+        \end{itemize}
 
 
   \chapter{Conclusions and outlook}
