@@ -1006,17 +1006,11 @@
 
         There is another advantage of the $5$ primitive gates, which is that it decreases the amount of cross-driving when one of the two qubits is not being driven. The first three gates composing the $5$ primitives are positive $\pi/2$ gates along the X and Y axes. The final two gates are negative $\pi$ gates along the X and Y axes. Cross-driving corresponds to rotations where the angle is a fraction of the full rotation angle. After one full $5$ primitive gates cycle the state of the idle qubit should therefore return close to its initial position. Even if not all $5$ gates are applied, the cross-driving effects should still decrease. This is because the cross-driving rotations are small, and in randomized benchmarking a large number of random Cliffords are applied, and so over the course of an entire randomized benchmarking run these cross-driving effects will still partially cancel out.
 
-        An even better approach to eliminating cross-driving is to alternate between a cycle of the $5$ primitive gates, and a cycle where the $5$ primitive gates are inverted, i.e. negative $\pi/2$ rotations and positive $\pi$ rotations, and switching of the gate order. Since the Clifford set is a group, each Clifford has a unique inverse which is also a Clifford. Inverting a Clifford is equal to inverting the gates of its $5$ primitives decomposition (including reversal of the gate order). Since all the inverted gates are elements of the inverted $5$ primitive gates, we see that we can indeed also decompose all $24$ Cliffords using the inverted $5$ primitive gates. Alternating between the $5$ primitive gates and the inverted $5$ primitive gates is expected to reduce the effects of cross-driving even further,
+        An even better approach to eliminating cross-driving is to alternate between a cycle of the $5$ primitive gates, and a cycle where the $5$ primitive gates are inverted, i.e. negative $\pi/2$ rotations and positive $\pi$ rotations, and switching of the gate order. Since the Clifford set is a group, each Clifford has a unique inverse which is also a Clifford. Inverting a Clifford is equal to inverting the gates of its $5$ primitives decomposition (including reversal of the gate order). Since all the inverted gates are elements of the inverted $5$ primitive gates, we see that we can indeed also decompose all $24$ Cliffords using the inverted $5$ primitive gates. Alternating between the $5$ primitive gates and the inverted $5$ primitive gates is expected to reduce the effects of cross-driving even further, as any deviation from returning to the original position in the first $5$ primitives cycle is compensated for by the inverted cycle.
 
-         Even if not all pulses are applied to the m
+        The $5$ primitives randomized benchmarking method alternates between the $5$ primitives cycle and the inverted $5$ primitives cycle. The $5$ primitives randomized benchmarking requires $5$ gates per Clifford pair, which is considerably more than compiled randomized benchmarking ($2.925$ gates per Clifford pair) and alternating randomized benchmarking ($3.75$ gates per Clifford pair).
 
-        The $5$ primitives randomized benchmarking repeatedly applies the fix
-
-
-        \begin{itemize}
-          \item smart 5P
-          \item inverse 5P
-        \end{itemize}
-
+        \section{Two qubit randomized benchmarking results}
+          \label{Two qubit randomized benchmarking results}
 
   \chapter{Conclusions and outlook}

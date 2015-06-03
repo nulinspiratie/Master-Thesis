@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,7 +1082,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 {c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 119.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 120.
  (./thesis.toc
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
@@ -1587,31 +1587,31 @@ pg used on input line 1000.
 (pdftex.def)             Requested size: 226.48395pt x 32.66418pt.
 
 [66 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
-ized benchmarking/5 primitive gates.jpg>]
+ized benchmarking/5 primitive gates.jpg>] [67]
 Chapter 10.
-) [67
+) [68
 
-] [68
+] [69
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 69 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 70 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 69 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 70 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=556, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=559, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=557, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=560, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1621,25 +1621,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69
+[70
 
-] [70 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=564, 1118.9805pt x 420.3705pt>
+] [71 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=567, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [71 <./Figures/Noise/Noise model.png>]
-[72] [73]
-<Figures/Noise/noise_temperature_versus_power.png, id=576, 433.62pt x 289.08pt>
+ [72 <./Figures/Noise/Noise model.png>]
+[73] [74]
+<Figures/Noise/noise_temperature_versus_power.png, id=579, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [74 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=581, 433.62pt x 
+ [75 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=584, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1648,34 +1648,34 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[75 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [76]
+[76 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [77]
 Appendix B.
-[77
-
-]
-Appendix C.
 [78
 
 ]
+Appendix C.
+[79
+
+]
 Appendix D.
-<../Figures/Clifford decomposition.png, id=596, 683.46771pt x 166.45795pt>
+<../Figures/Clifford decomposition.png, id=600, 683.46771pt x 166.45795pt>
 File: ../Figures/Clifford decomposition.png Graphic file (type png)
 
 <use ../Figures/Clifford decomposition.png>
 Package pdftex.def Info: ../Figures/Clifford decomposition.png used on input li
 ne 39.
 (pdftex.def)             Requested size: 452.9679pt x 110.3223pt.
- [79
+ [80
 
-] [80 <../Figures/Clifford decomposition.png>] [81]
+] [81 <../Figures/Clifford decomposition.png>] [82]
 Appendix E.
-) (./thesis.bbl [82
+) (./thesis.bbl [83
 
-] [83
+] [84
 
 ]) 
 AED: lastpage setting LastPage
-[84] (./thesis.aux)
+[85] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1685,10 +1685,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17188 strings out of 493109
- 336610 string characters out of 6138586
- 470036 words of memory out of 5000000
- 19994 multiletter control sequences out of 15000+600000
+ 17189 strings out of 493109
+ 336653 string characters out of 6138586
+ 470047 words of memory out of 5000000
+ 19995 multiletter control sequences out of 15000+600000
  232978 words of font info for 473 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1702,10 +1702,10 @@ b><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/
 2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/u
 rw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (85 pages, 23854778 bytes).
+Output written on thesis.pdf (86 pages, 23858342 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
+ 658 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  75992 words of extra memory for PDF output out of 89155 (max. 10000000)
 
