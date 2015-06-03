@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,7 +1401,7 @@ File: ../Figures/Exploring frequency re-use/excitation_swap.png Graphic file (t
 ype png)
  <use ../Figures/Exploring frequency re-use/excitation_swap.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/excitation_swap.
-png used on input line 694.
+png used on input line 696.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 [54 <../Figures/Exploring frequency re-use/coherence_times.png>]
@@ -1412,7 +1412,7 @@ e (type jpg)
 
 <use ../Figures/Exploring frequency re-use/cross-driving_setup.jpg>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_se
-tup.jpg used on input line 714.
+tup.jpg used on input line 716.
 (pdftex.def)             Requested size: 362.37569pt x 113.1064pt.
 
 <../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=490, 433.62pt
@@ -1422,15 +1422,28 @@ File: ../Figures/Exploring frequency re-use/cross-driving_Rabi.png Graphic file
 
 <use ../Figures/Exploring frequency re-use/cross-driving_Rabi.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_Ra
-bi.png used on input line 722.
+bi.png used on input line 724.
 (pdftex.def)             Requested size: 294.42636pt x 343.51433pt.
 
-Underfull \hbox (badness 2635) in paragraph at lines 736--736
+
+! Package array Error:  Illegal pream-token (a): `c' used.
+
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.730           \begin{tabular}{label c}
+                                        
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 740--740
 []\T1/futs/b/n/10.95 Table 8.2: |\T1/futs/m/n/10.95 (+20) Driv-ing through top
  []
 
 
-Overfull \hbox (1.88399pt too wide) in paragraph at lines 720--750
+Overfull \hbox (1.88399pt too wide) in paragraph at lines 722--756
 $[]$ $[]$
  []
 
@@ -1448,7 +1461,7 @@ Graphic file (type png)
 
 <use ../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_vs
-_top_frequency.png used on input line 758.
+_top_frequency.png used on input line 764.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
 [56 <../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>]
@@ -1463,26 +1476,26 @@ le (type png)
 
 <use ../Figures/Randomized benchmarking/Bloch sphere octahedron.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Bloch sphere octahe
-dron.png used on input line 798.
+dron.png used on input line 804.
 (pdftex.def)             Requested size: 226.48395pt x 226.48277pt.
-LaTeX Font Info:    Try loading font information for OT1+pzc on input line 804.
+LaTeX Font Info:    Try loading font information for OT1+pzc on input line 810.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pzc.fd
 File: ot1pzc.fd 2001/06/04 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <12> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 804.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 810.
 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `pzc' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 804.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 810.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 804.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 810.
 
  [58 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
 <../Figures/Randomized benchmarking/RB schematic.jpg, id=510, 771.88374pt x 257
@@ -1491,7 +1504,7 @@ File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
 g)
  <use ../Figures/Randomized benchmarking/RB schematic.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
-ed on input line 841.
+ed on input line 847.
 (pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
 
 <../Figures/Randomized benchmarking/RB_single_seed.png, id=511, 433.62pt x 289.
@@ -1500,16 +1513,16 @@ File: ../Figures/Randomized benchmarking/RB_single_seed.png Graphic file (type
 png)
  <use ../Figures/Randomized benchmarking/RB_single_seed.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_single_seed.png 
-used on input line 874.
+used on input line 880.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 875.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 881.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 875.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 881.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <6> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 875.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 881.
 
  [59 <../Figures/Randomized benchmarking/RB schematic.jpg>]
 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=515, 
@@ -1519,7 +1532,7 @@ hic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_driving_s
-ingle_both.png used on input line 895.
+ingle_both.png used on input line 901.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 [60 <../Figures/Randomized benchmarking/RB_single_seed.png>]
@@ -1530,7 +1543,7 @@ le (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_cross-driving.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
-ving.png used on input line 906.
+ving.png used on input line 912.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
  [61 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>] [6
 2 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
@@ -1541,12 +1554,12 @@ c file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_state_populations.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_state_pop
-ulations.png used on input line 932.
+ulations.png used on input line 938.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 
 LaTeX Warning: Reference `ssec:Second-state' on page 63 undefined on input line
- 937.
+ 943.
 
 [63]
 <../Figures/Randomized benchmarking/alternating RB.jpg, id=535, 4529.92375pt x 
@@ -1555,7 +1568,7 @@ File: ../Figures/Randomized benchmarking/alternating RB.jpg Graphic file (type
 jpg)
  <use ../Figures/Randomized benchmarking/alternating RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/alternating RB.jpg 
-used on input line 962.
+used on input line 968.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
  [64 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
 <../Figures/Randomized benchmarking/compiled RB.jpg, id=540, 4529.92375pt x 120
@@ -1564,7 +1577,7 @@ File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 )
  <use ../Figures/Randomized benchmarking/compiled RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/compiled RB.jpg use
-d on input line 975.
+d on input line 981.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
  [65 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Random
 ized benchmarking/compiled RB.jpg>]
@@ -1574,7 +1587,7 @@ File: ../Figures/Randomized benchmarking/5 primitives RB.jpg Graphic file (type
  jpg)
  <use ../Figures/Randomized benchmarking/5 primitives RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitives RB.jpg
- used on input line 991.
+ used on input line 997.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
 
 <../Figures/Randomized benchmarking/5 primitive gates.jpg, id=545, 1969.3575pt 
@@ -1583,7 +1596,7 @@ File: ../Figures/Randomized benchmarking/5 primitive gates.jpg Graphic file (ty
 pe jpg)
  <use ../Figures/Randomized benchmarking/5 primitive gates.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitive gates.j
-pg used on input line 1000.
+pg used on input line 1006.
 (pdftex.def)             Requested size: 226.48395pt x 32.66418pt.
 
 [66 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
@@ -1595,7 +1608,7 @@ aphic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_state_populat
-ions_notable.png used on input line 1018.
+ions_notable.png used on input line 1024.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 [67]
@@ -1606,7 +1619,7 @@ ic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_driving_singl
-e_vs_both.png used on input line 1044.
+e_vs_both.png used on input line 1050.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 <../Figures/Randomized benchmarking/Clifford_comparison.png, id=555, 578.16pt x
@@ -1615,7 +1628,7 @@ File: ../Figures/Randomized benchmarking/Clifford_comparison.png Graphic file (
 type png)
  <use ../Figures/Randomized benchmarking/Clifford_comparison.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Clifford_comparison
-.png used on input line 1053.
+.png used on input line 1059.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
 
 [68 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
@@ -1735,7 +1748,7 @@ b><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/
 2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/u
 rw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (88 pages, 24028738 bytes).
+Output written on thesis.pdf (88 pages, 24028520 bytes).
 PDF statistics:
  670 PDF objects out of 1000 (max. 8388607)
  269 compressed objects within 3 object streams

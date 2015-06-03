@@ -665,12 +665,14 @@
       \end{figure}
 
       \begin{table}
-        \begin{tabular}{l || c | c | c}
+        \begin{tabular}{l c c c}
+          \toprule
           Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
-          \hline
+          \midrule
           Top    & 6.277                & 6.700                & ?\\
           Ancilla& 6.551                & 6.733                & ? \\
-          Bottom & 6.220                & 6.800                & ?
+          Bottom & 6.220                & 6.800                & ? \\
+          \bottomrule
         \end{tabular}
         \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
         \label{tab:Muxmon0 qubit properties}
@@ -725,22 +727,26 @@
         \end{minipage}
         \begin{minipage}{0.35\textwidth}
           \centering
-          \begin{tabular}{c | c}
+          \begin{tabular}{label c}
+            \toprule
             qubit & cross-driving (\%) \\
-            \hline
+            \midrule
             Top & $-$ \\
             Ancilla &$ 0.79$ \\
-            Bottom & $0.57$
+            Bottom & $0.57$ \\
+            \bottomrule
           \label{tab:cross-driving top}
           \end{tabular}
           \captionof{table}{Driving through top qubit drive line}
           \vspace{2cm}
-          \begin{tabular}{c | c}
+          \begin{tabular}{l c}
+            \toprule
             qubit & cross-driving (\%) \\
-            \hline
+            \midrule
             Top & $0.23$ \\
             Ancilla &$ 0.66$ \\
-            Bottom & $-$
+            Bottom & $-$ \\
+            \bottomrule
           \end{tabular}
           \captionof{table}{Driving through bottom qubit drive line}
           \label{tab:cross-driving bottom}
