@@ -120,7 +120,7 @@
 
       \begin{enumerate}
         \item Start with an empty sequence of gates $G_\text{seq}$ and gate indices $\bm{\beta} = \left(\beta_1, ..., \beta_n\right) = \left(1, ..., 1\right)$
-        \item Determine the set of distinct gates in $G_\bm{\beta}$.
+        \item Determine the set of distinct gates in $G_{\bm{\beta}}$.
         \item For each gate $g$ in the set of distinct gates perform the following steps:
         \begin{enumerate}
           \item Append $g$ to $G_\text{seq}$.
@@ -129,7 +129,7 @@
           \item For all indices $i$ for which $G_{\beta_i}^i=g$, increase the gate index $\beta_i^\text{new} = \beta_i+1$.
           \item Go to step two using the new gate indices $\bm{\beta}^\text{new}$.
         \end{enumerate}
-        \item If $G_\bm{\beta}$ is empty, then $G_\text{seq}$ is a particular sequence of pulses that would result in all Cliffords being applied.
+        \item If $G_{\bm{\beta}}$ is empty, then $G_\text{seq}$ is a particular sequence of pulses that would result in all Cliffords being applied.
         \item When all possible sequences are combined, choose the sequence with the minimum number of gates in $G_\text{seq}$
       \end{enumerate}
 
@@ -138,9 +138,9 @@
     \subsection{Optimizing the gate compilation algorithm}
       Determining the average gates per Clifford tuple for $n=5$ qubits would initially result in $6.3*10^{14}$ different combinations of Clifford decompositions. For each of these combinations the algorithm must find the least amount of gates necessary to perform all gates in that particular set of Clifford decompositions. It is clear that this is computationally not viable. Luckily several optimizations can be performed which can drastically reduce this number by many orders of magnitude. These optimizations will be discussed in this section.
 
-      The first and simplest optimization is from the simple observation that the optimal gate compilation for a certain tuple of Cliffords $\left(C_1, \dots, \C_n$ is the same as any permutation of those Cliffords. Therefore we only have to determine the optimal compilations for the tuples $\left(C_{\beta_1}^1, \dots, C_{\beta_n}^n\right)$ where $\beta_1 \leq \beta_2 \leq \dots \leq \beta_n$. This already reduces the amount of calculations by an exponential amount (a factor $81$ times less computations when $n=5$.
+      The first and simplest optimization is from the simple observation that the optimal gate compilation for a certain tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$ is the same as any permutation of those Cliffords. Therefore we only have to determine the optimal compilations for the tuples $\left(C_{\beta_1}^1, \dots, C_{\beta_n}^n\right)$ where $\beta_1 \leq \beta_2 \leq \dots \leq \beta_n$. This already reduces the amount of calculations by an exponential amount (a factor $81$ times less computations when $n=5$.
 
-      The second optimization is to keep track of the minimum number of gates so far found that can compile a given tuple of Cliffords. At each stage of the algorith it checks if the gates that are so far in $G_\text{seq}$ plus all the distinct gates left in $G_\bm{\beta}$ is equal to or greater than the minimum number of gates found so far. If this is the case, it will know that it cannot find a better combination of gates using the sequence $G_\text{seq}$. It can therefore stop this sequence and start with the next sequence. The minimum number of gates can initially be placed at $5$ gates, as the $5$ primitives method proves that there is always a decomposition of an arbitrary number of Cliffords into $5$ gates. This optimization places an upper bound on the number of gates, and results in a massive decrease in computation time. This is especially the case because as the minimum number of gates decreases, so does the frequency at which the algorithm stops its current sequence increase.
+      The second optimization is to keep track of the minimum number of gates so far found that can compile a given tuple of Cliffords. At each stage of the algorith it checks if the gates that are so far in $G_\text{seq}$ plus all the distinct gates left in $G_{\bm{\beta}}$ is equal to or greater than the minimum number of gates found so far. If this is the case, it will know that it cannot find a better combination of gates using the sequence $G_\text{seq}$. It can therefore stop this sequence and start with the next sequence. The minimum number of gates can initially be placed at $5$ gates, as the $5$ primitives method proves that there is always a decomposition of an arbitrary number of Cliffords into $5$ gates. This optimization places an upper bound on the number of gates, and results in a massive decrease in computation time. This is especially the case because as the minimum number of gates decreases, so does the frequency at which the algorithm stops its current sequence increase.
 
       A third optimization relies on the fact that it is more likely that decompositions with fewer gates result in an optimal gate compilation. Therefore the decompositions of all Cliffords have been arranged in ascending number of gates. When comparing the decompositions of the Cliffords the first decompositions compared are those with the fewest gates. The probability of finding the optimal gate compilation is therefore high, and even if it did not find the optimal gate compilation, it is likely that the minimum gate length found so far will be low. This optimization is especially effective when combined with the second optimization.
 
@@ -156,14 +156,14 @@
           1 & 1.875 \\
           2 & 2.925 \\
           3 & 3.521 \\
-          4 & 3.
+          4 & 3. \\
           \bottomrule
         \end{tabular}
         \caption{The average gates per Clifford after compilation. Values up to n=5 have been calculated exact, while values starting from n=6 have been determined using random sampling.}
         \label{tab:gates per Clifford}
       \end{table}
 
-      Using these $5$ optimizations the average gates per Clifford tuple has been calculated exactly for $n=5$ qubits within two hours. Furthermore, the average gates per Clifford has been approximated for up to $n=10$ Cliffords using random sampling. The results are shown in Figure~\ref{tab:gates per Clifford}.
+      Using these $5$ optimizations the average gates per Clifford tuple has been calculated exactly for $n=5$ qubits within two hours. Furthermore, the average gates per Clifford has been approximated for up to $n=10$ Cliffords using random sampling. The results are shown in Table~\ref{tab:gates per Clifford}.
 
     \begin{itemize}
       \item Change set to the correct term

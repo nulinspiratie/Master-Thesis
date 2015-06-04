@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  4 JUN 2015 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  4 JUN 2015 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,13 +848,52 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip82
 \flrow@types=\toks26
 )
+(c:/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldotherletters=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
+LaTeX Info: Redefining \bm on input line 203.
+)
 (c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 30.
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 31.
- (./thesis.aux)
+ (./thesis.aux
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.392 6
+       }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra }, or forgotten \endgroup.
+l.392 6}
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Label `vasilescu2006electronic' multiply defined.
+
+
+LaTeX Warning: Label `wenner2011surface' multiply defined.
+
+
+LaTeX Warning: Label `LastPage' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -872,8 +911,7 @@ LaTeX Font Info:    ... okay on input line 79.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 79.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 79.
 
-
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
+ (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 79.
@@ -1004,7 +1042,7 @@ Dictionary: translator-basic-dictionary, Language: English
 (c:/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
 )
-\symgns@font=\mathgroup6
+\symgns@font=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/futs/m/n --> TS1/futs/bx/n on input line 79.
 Package gensymb Info: Math companion symbols declared on input line 79.
@@ -1064,6 +1102,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [1{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 87.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1078,39 +1119,31 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 13.24796pt on input line 97.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 97.
- [1
-
-{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+ [1]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 121.
- (./thesis.toc)
+ (./thesis.toc
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
+ [1
+
+] [2] [3])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [1
 
-]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 136.
-
-(./Chapters/DRIE.tex
+[4] (./Chapters/DRIE.tex
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 2.
+ [5] [6
 
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 12.
-
-[2] [3
-
-]
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 35.
-
-[4]
+] [7]
 Chapter 1.
-<Figures/DRIE/CPW.png, id=21, 339.669pt x 158.5122pt>
+<Figures/DRIE/CPW.png, id=35, 339.669pt x 158.5122pt>
 File: Figures/DRIE/CPW.png Graphic file (type png)
 
 <use Figures/DRIE/CPW.png>
@@ -1124,88 +1157,11 @@ Underfull \hbox (badness 1259) in paragraph at lines 43--43
 -nar
  []
 
+[8
 
-LaTeX Warning: Citation `Mazin' on page 5 undefined on input line 67.
-
-[5
-
- <./Figures/DRIE/CPW.png>]
-
-LaTeX Warning: Citation `Mazin' on page 6 undefined on input line 90.
-
-
-LaTeX Warning: Citation `Geerlings' on page 6 undefined on input line 98.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 107.
-
-[6]
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 110.
-
-
-LaTeX Warning: Citation `martinis2014ucsb' on page 7 undefined on input line 11
-5.
-
-
-LaTeX Warning: Citation `wenner2011surface' on page 7 undefined on input line 1
-15.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 7 undefined on input line
- 119.
-
-
-LaTeX Warning: Citation `Barends' on page 7 undefined on input line 130.
-
-
-LaTeX Warning: Citation `Mazin' on page 7 undefined on input line 130.
-
-
-LaTeX Warning: Citation `Mazin' on page 7 undefined on input line 132.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 133.
-
-[7]
-
-LaTeX Warning: Citation `sage2011study' on page 8 undefined on input line 154.
-
-
-LaTeX Warning: Citation `Mazin' on page 8 undefined on input line 154.
-
-
-LaTeX Warning: Citation `plourde2009microwave' on page 8 undefined on input lin
-e 169.
-
-
-LaTeX Warning: Citation `nsanzineza2014trapping' on page 8 undefined on input l
-ine 171.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 8 undefined on input line
- 186.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 187.
-
-[8]
-
-LaTeX Warning: Citation `DRIE' on page 9 undefined on input line 188.
-
-
-LaTeX Warning: Citation `DRIE' on page 9 undefined on input line 199.
-
-
-LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 211.
-
-[9]
-
-LaTeX Warning: Reference `LastPage' on page 10 undefined on input line 216.
-
-[10]
+ <./Figures/DRIE/CPW.png>] [9] [10] [11] [12] [13]
 Chapter 2.
-<Figures/DRIE/All_set4.png, id=47, 725.109pt x 311.2428pt>
+<Figures/DRIE/All_set4.png, id=61, 725.109pt x 311.2428pt>
 File: Figures/DRIE/All_set4.png Graphic file (type png)
 
 <use Figures/DRIE/All_set4.png>
@@ -1223,11 +1179,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 223.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 223.
- [11
+ [14
 
  <./Figures/DRIE/All_set4.png>]
 Chapter 3.
-<Figures/DRIE/resonator_amplitude.png, id=52, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_amplitude.png, id=66, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_amplitude.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_amplitude.png>
@@ -1235,7 +1191,7 @@ Package pdftex.def Info: Figures/DRIE/resonator_amplitude.png used on input lin
 e 244.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/resonator_complex.png, id=53, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_complex.png, id=67, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_complex.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_complex.png>
@@ -1243,29 +1199,18 @@ Package pdftex.def Info: Figures/DRIE/resonator_complex.png used on input line
 248.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-
-LaTeX Warning: Citation `Geerlings' on page 12 undefined on input line 254.
-
-<Figures/DRIE/Qi_vs_n_photon.png, id=54, 433.62pt x 289.08pt>
+<Figures/DRIE/Qi_vs_n_photon.png, id=68, 433.62pt x 289.08pt>
 File: Figures/DRIE/Qi_vs_n_photon.png Graphic file (type png)
 
 <use Figures/DRIE/Qi_vs_n_photon.png>
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon.png used on input line 264
 .
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
-
-
-LaTeX Warning: Citation `DRIE' on page 12 undefined on input line 268.
-
-[12
+ [15
 
  <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex.png
 >]
-
-LaTeX Warning: Citation `DRIE' on page 13 undefined on input line 272.
-
-
-<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=61, 433.62pt x 289.
+<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=74, 433.62pt x 289.
 08pt>
 File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
  png)
@@ -1273,12 +1218,8 @@ File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png
  used on input line 286.
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 13 undefined on input line 289.
-
-[13 <./Figures/DRIE/Qi_vs_n_photon.png>]
-<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=66, 433.62pt x 289.08
+ [16 <./Figures/DRIE/Qi_vs_n_photon.png>]
+<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=79, 433.62pt x 289.08
 pt>
 File: Figures/DRIE/Temperature tracking drop - Qi vs T.png Graphic file (type p
 ng)
@@ -1287,7 +1228,7 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking drop - Qi vs T.png u
 sed on input line 307.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=67, 433.62pt x 2
+<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=80, 433.62pt x 2
 89.08pt>
 File: Figures/DRIE/Temperature tracking - no drop - Qi vs T.png Graphic file (t
 ype png)
@@ -1296,11 +1237,8 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking - no drop - Qi vs T.
 png used on input line 311.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 14 undefined on input line 315.
-
-[14 <./Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>]
-<Figures/DRIE/Temperature tracking - f0 vs T.png, id=72, 505.89pt x 361.35pt>
+[17 <./Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>]
+<Figures/DRIE/Temperature tracking - f0 vs T.png, id=86, 505.89pt x 361.35pt>
 File: Figures/DRIE/Temperature tracking - f0 vs T.png Graphic file (type png)
 
 <use Figures/DRIE/Temperature tracking - f0 vs T.png>
@@ -1311,24 +1249,9 @@ n input line 323.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `LastPage' on page 15 undefined on input line 332.
-
-[15 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
+[18 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
 mperature tracking - no drop - Qi vs T.png>]
-
-LaTeX Warning: Citation `Geerlings' on page 16 undefined on input line 333.
-
-
-LaTeX Warning: Citation `barends2008contribution' on page 16 undefined on input
- line 333.
-
-
-LaTeX Warning: Citation `barends2008contribution' on page 16 undefined on input
- line 333.
-
-
-<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=78, 505.
+<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=92, 505.
 89pt x 361.35pt>
 File: Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png Graphic
  file (type png)
@@ -1339,53 +1262,24 @@ ith fit.png used on input line 337.
 (pdftex.def)             Requested size: 317.07614pt x 226.4883pt.
 
 
-LaTeX Warning: Citation `gao2008experimental' on page 16 undefined on input lin
-e 338.
-
-
-LaTeX Warning: Citation `gao2008experimental' on page 16 undefined on input lin
-e 338.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `gao2008experimental' on page 16 undefined on input lin
-e 342.
-
-
-LaTeX Warning: Reference `LastPage' on page 16 undefined on input line 346.
-
-[16 <./Figures/DRIE/Temperature tracking - f0 vs T.png>]
-
-LaTeX Warning: Reference `LastPage' on page 17 undefined on input line 346.
-
-[17 <./Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png>]
+[19 <./Figures/DRIE/Temperature tracking - f0 vs T.png>] [20 <./Figures/DRIE/Te
+mperature increase tracking - f0 vs T with fit.png>]
 Chapter 4.
-
-LaTeX Warning: Citation `gao2008experimental' on page 18 undefined on input lin
-e 348.
-
-
-LaTeX Warning: Citation `DRIE' on page 18 undefined on input line 350.
-
 ) (./Chapters/Muxmon.tex
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 2.
- [18
+ [21
 
-] [19
+] [22
 
-]
-
-LaTeX Warning: Reference `LastPage' on page 20 undefined on input line 27.
-
-[20] [21
+] [23] [24
 
 ]
 Chapter 5.
 
-<../Figures/Exploring frequency re-use/bandwidth_broadening.png, id=100, 433.62
+<../Figures/Exploring frequency re-use/bandwidth_broadening.png, id=114, 433.62
 pt x 361.35pt>
 File: ../Figures/Exploring frequency re-use/bandwidth_broadening.png Graphic fi
 le (type png)
@@ -1396,7 +1290,7 @@ ning.png used on input line 45.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jpg, i
-d=101, 383.5128pt x 321.3606pt>
+d=115, 383.5128pt x 321.3606pt>
 File: ../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.j
 pg Graphic file (type jpg)
 
@@ -1409,30 +1303,26 @@ quency re-use_cut.jpg used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[22
+[25
 
  <../Figures/Exploring frequency re-use/bandwidth_broadening.png>]
-<../Figures/Duplexer_with_background.png, id=106, 613.69275pt x 475.17525pt>
+<../Figures/Duplexer_with_background.png, id=120, 613.69275pt x 475.17525pt>
 File: ../Figures/Duplexer_with_background.png Graphic file (type png)
 
 <use ../Figures/Duplexer_with_background.png>
 Package pdftex.def Info: ../Figures/Duplexer_with_background.png used on input 
 line 70.
 (pdftex.def)             Requested size: 203.83417pt x 157.8234pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 23 undefined on input line 82.
-
-[23 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jp
-g> <../Figures/Duplexer_with_background.png>]
-<../Figures/MUX_0.jpg, id=110, 5161.2825pt x 1519.6775pt>
+ [26 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.j
+pg> <../Figures/Duplexer_with_background.png>] <../Figures/MUX_0.jpg, id=124, 5
+161.2825pt x 1519.6775pt>
 File: ../Figures/MUX_0.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_0.jpg>
 Package pdftex.def Info: ../Figures/MUX_0.jpg used on input line 94.
 (pdftex.def)             Requested size: 407.66833pt x 120.02306pt.
 
-<../Figures/MUX_1.jpg, id=111, 5440.325pt x 1524.69624pt>
+<../Figures/MUX_1.jpg, id=125, 5440.325pt x 1524.69624pt>
 File: ../Figures/MUX_1.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_1.jpg>
@@ -1440,14 +1330,11 @@ Package pdftex.def Info: ../Figures/MUX_1.jpg used on input line 100.
 (pdftex.def)             Requested size: 407.66833pt x 114.23096pt.
 
 
-LaTeX Warning: Reference `sec:Frequency re-use in the Surface Code' on page 24 
+LaTeX Warning: Reference `sec:Frequency re-use in the Surface Code' on page 27 
 undefined on input line 108.
 
-
-LaTeX Warning: Reference `LastPage' on page 24 undefined on input line 109.
-
-[24 <../Figures/MUX_0.jpg> <../Figures/MUX_1.jpg>]
-<../Figures/Muxmon set-up.pdf, id=116, 597.51233pt x 845.0471pt>
+[27 <../Figures/MUX_0.jpg> <../Figures/MUX_1.jpg>]
+<../Figures/Muxmon set-up.pdf, id=129, 597.51233pt x 845.0471pt>
 File: ../Figures/Muxmon set-up.pdf Graphic file (type pdf)
 
 <use ../Figures/Muxmon set-up.pdf>
@@ -1457,37 +1344,23 @@ Package pdftex.def Info: ../Figures/Muxmon set-up.pdf used on input line 114.
 
 LaTeX Warning: Float too large for page by 30.7238pt on input line 117.
 
-
-LaTeX Warning: Reference `LastPage' on page 25 undefined on input line 121.
-
-[25]
-
-LaTeX Warning: Reference `LastPage' on page 26 undefined on input line 121.
-
-[26 <../Figures/Muxmon set-up.pdf>]
+[28] [29 <../Figures/Muxmon set-up.pdf>]
 Chapter 6.
-[27
+[30
 
 ]
 
-LaTeX Warning: Citation `Reed' on page 28 undefined on input line 143.
+LaTeX Warning: Citation `Reed' on page 31 undefined on input line 143.
 
-
-LaTeX Warning: Reference `LastPage' on page 28 undefined on input line 178.
-
-[28]
-<../Figures/Qubit characterization/Powersweep.png, id=389, 433.62pt x 289.08pt>
+[31]
+<../Figures/Qubit characterization/Powersweep.png, id=404, 433.62pt x 289.08pt>
 File: ../Figures/Qubit characterization/Powersweep.png Graphic file (type png)
 <use ../Figures/Qubit characterization/Powersweep.png>
 Package pdftex.def Info: ../Figures/Qubit characterization/Powersweep.png used 
 on input line 195.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 29 undefined on input line 203.
-
-[29 <../Figures/Qubit characterization/Powersweep.png>]
-<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=395, 433.62
+ [32 <../Figures/Qubit characterization/Powersweep.png>]
+<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=409, 433.62
 pt x 289.08pt>
 File: ../Figures/Qubit characterization/Resonator vs DAC linecut.png Graphic fi
 le (type png)
@@ -1496,102 +1369,42 @@ le (type png)
 Package pdftex.def Info: ../Figures/Qubit characterization/Resonator vs DAC lin
 ecut.png used on input line 222.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 30 undefined on input line 227.
-
-[30 <../Figures/Qubit characterization/Resonator vs DAC linecut.png>]
-
-LaTeX Warning: Reference `LastPage' on page 31 undefined on input line 244.
-
-[31]
-
-LaTeX Warning: Reference `LastPage' on page 32 undefined on input line 276.
-
-[32]
-
-LaTeX Warning: Reference `LastPage' on page 33 undefined on input line 293.
-
-[33]
+ [33 <../Figures/Qubit characterization/Resonator vs DAC linecut.png>] [34] [35
+] [36]
 Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
+[37] [38]
 
-LaTeX Warning: Reference `LastPage' on page 34 undefined on input line 333.
+LaTeX Warning: Citation `Reed' on page 39 undefined on input line 384.
 
-[34]
+[39] [40] [41]
 
-LaTeX Warning: Reference `LastPage' on page 35 undefined on input line 358.
-
-[35]
-
-LaTeX Warning: Citation `Reed' on page 36 undefined on input line 384.
-
-
-LaTeX Warning: Reference `LastPage' on page 36 undefined on input line 385.
-
-[36]
-LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <12> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <9> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 391.
-LaTeX Font Info:    Font shape `TS1/futs/bx/n' in size <7> not available
-(Font)              Font shape `TS1/futs/b/n' tried instead on input line 391.
-
-
-LaTeX Warning: Reference `LastPage' on page 37 undefined on input line 396.
-
-[37]
-
-LaTeX Warning: Reference `LastPage' on page 38 undefined on input line 415.
-
-[38]
-
-LaTeX Warning: Citation `motzoi2009simple' on page 39 undefined on input line 4
+LaTeX Warning: Citation `motzoi2009simple' on page 42 undefined on input line 4
 23.
-
-
-LaTeX Warning: Reference `LastPage' on page 39 undefined on input line 429.
-
-[39]
-
-LaTeX Warning: Citation `Reed' on page 40 undefined on input line 454.
-
-
-LaTeX Warning: Reference `LastPage' on page 40 undefined on input line 457.
-
-[40]
-
-LaTeX Warning: Citation `Bishop' on page 41 undefined on input line 482.
-
-
-LaTeX Warning: Citation `Sears' on page 41 undefined on input line 482.
-
-
-LaTeX Warning: Reference `LastPage' on page 41 undefined on input line 485.
-
-[41]
-
-LaTeX Warning: Reference `LastPage' on page 42 undefined on input line 514.
 
 [42]
 
-LaTeX Warning: Reference `LastPage' on page 43 undefined on input line 536.
+LaTeX Warning: Citation `Reed' on page 43 undefined on input line 454.
 
 [43]
+
+LaTeX Warning: Citation `Bishop' on page 44 undefined on input line 482.
+
+[44] [45] [46]
 Chapter 7.
-[44
+[47
 
 ]
-<../Figures/Calibration routines/Mixer offset.png, id=446, 433.62pt x 289.08pt>
+<../Figures/Calibration routines/Mixer offset.png, id=460, 433.62pt x 289.08pt>
 File: ../Figures/Calibration routines/Mixer offset.png Graphic file (type png)
 <use ../Figures/Calibration routines/Mixer offset.png>
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer offset.png used 
 on input line 590.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<../Figures/Calibration routines/Mixer skewness.png, id=447, 433.62pt x 289.08p
+<../Figures/Calibration routines/Mixer skewness.png, id=461, 433.62pt x 289.08p
 t>
 File: ../Figures/Calibration routines/Mixer skewness.png Graphic file (type png
 )
@@ -1599,24 +1412,13 @@ File: ../Figures/Calibration routines/Mixer skewness.png Graphic file (type png
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer skewness.png use
 d on input line 594.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
+ [48] [49 <../Figures/Calibration routines/Mixer offset.png> <../Figures/Calibr
+ation routines/Mixer skewness.png>]
 
+LaTeX Warning: Citation `Reed' on page 50 undefined on input line 620.
 
-LaTeX Warning: Reference `LastPage' on page 45 undefined on input line 603.
-
-[45]
-
-LaTeX Warning: Reference `LastPage' on page 46 undefined on input line 606.
-
-[46 <../Figures/Calibration routines/Mixer offset.png> <../Figures/Calibration 
-routines/Mixer skewness.png>]
-
-LaTeX Warning: Citation `Reed' on page 47 undefined on input line 620.
-
-
-LaTeX Warning: Reference `LastPage' on page 47 undefined on input line 623.
-
-[47]
-<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=459, 722.7pt x 3
+[50]
+<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=473, 722.7pt x 3
 61.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drive_top.png Graphic file (t
 ype png)
@@ -1625,7 +1427,7 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drive_top.
 png used on input line 627.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=460, 722.7pt x 36
+<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=474, 722.7pt x 36
 1.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drag_top.png Graphic file (ty
 pe png)
@@ -1633,19 +1435,12 @@ pe png)
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drag_top.p
 ng used on input line 633.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 48 undefined on input line 657.
-
-[48]
-
-LaTeX Warning: Reference `LastPage' on page 49 undefined on input line 657.
-
-[49 <../Figures/Exploring frequency re-use/AllXY_drive_top.png> <../Figures/Exp
+ [51]
+[52 <../Figures/Exploring frequency re-use/AllXY_drive_top.png> <../Figures/Exp
 loring frequency re-use/AllXY_drag_top.png>]
 Chapter 8.
 
-<../Figures/Exploring frequency re-use/coherence_times.png, id=470, 722.7pt x 5
+<../Figures/Exploring frequency re-use/coherence_times.png, id=483, 722.7pt x 5
 78.16pt>
 File: ../Figures/Exploring frequency re-use/coherence_times.png Graphic file (t
 ype png)
@@ -1654,10 +1449,10 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/coherence_times.
 png used on input line 662.
 (pdftex.def)             Requested size: 452.9679pt x 362.37247pt.
 
-[50
+[53
 
 ]
-<../Figures/Exploring frequency re-use/excitation_swap.png, id=474, 722.7pt x 3
+<../Figures/Exploring frequency re-use/excitation_swap.png, id=488, 722.7pt x 3
 61.35pt>
 File: ../Figures/Exploring frequency re-use/excitation_swap.png Graphic file (t
 ype png)
@@ -1667,13 +1462,10 @@ png used on input line 696.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 
-LaTeX Warning: Citation `Chow' on page 51 undefined on input line 709.
+LaTeX Warning: Citation `Chow' on page 54 undefined on input line 709.
 
-
-LaTeX Warning: Reference `LastPage' on page 51 undefined on input line 711.
-
-[51 <../Figures/Exploring frequency re-use/coherence_times.png>]
-<../Figures/Exploring frequency re-use/cross-driving_setup.jpg, id=479, 2337.73
+[54 <../Figures/Exploring frequency re-use/coherence_times.png>]
+<../Figures/Exploring frequency re-use/cross-driving_setup.jpg, id=493, 2337.73
 375pt x 729.72626pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_setup.jpg Graphic fil
 e (type jpg)
@@ -1683,7 +1475,7 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_se
 tup.jpg used on input line 716.
 (pdftex.def)             Requested size: 362.37569pt x 113.1064pt.
 
-<../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=480, 433.62pt
+<../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=494, 433.62pt
  x 505.89pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_Rabi.png Graphic file
  (type png)
@@ -1706,14 +1498,11 @@ $[]$ $[]$
 Overfull \vbox (273.81837pt too high) has occurred while \output is active []
 
 
-
-LaTeX Warning: Reference `LastPage' on page 52 undefined on input line 756.
-
-[52 <../Figures/Exploring frequency re-use/excitation_swap.png> <../Figures/Exp
+[55 <../Figures/Exploring frequency re-use/excitation_swap.png> <../Figures/Exp
 loring frequency re-use/cross-driving_Rabi.png> <../Figures/Exploring frequency
  re-use/cross-driving_setup.jpg>]
-<../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png, id=4
-86, 433.62pt x 361.35pt>
+<../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png, id=5
+00, 433.62pt x 361.35pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png 
 Graphic file (type png)
 
@@ -1722,15 +1511,12 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_vs
 _top_frequency.png used on input line 764.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 53 undefined on input line 781.
-
-[53 <../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>]
+[56 <../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png>]
 Chapter 9.
-[54
+[57
 
 ]
-<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=495, 289.08
+<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=508, 289.08
 pt x 289.08pt>
 File: ../Figures/Randomized benchmarking/Bloch sphere octahedron.png Graphic fi
 le (type png)
@@ -1758,17 +1544,13 @@ LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
 (Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 810.
 
+ [58 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
 
-
-LaTeX Warning: Reference `LastPage' on page 55 undefined on input line 836.
-
-[55 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
-
-LaTeX Warning: Citation `nielsen2010quantum' on page 56 undefined on input line
+LaTeX Warning: Citation `nielsen2010quantum' on page 59 undefined on input line
  839.
 
 
-<../Figures/Randomized benchmarking/RB schematic.jpg, id=501, 771.88374pt x 257
+<../Figures/Randomized benchmarking/RB schematic.jpg, id=514, 771.88374pt x 257
 .96375pt>
 File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
 g)
@@ -1777,7 +1559,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
 ed on input line 847.
 (pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
 
-<../Figures/Randomized benchmarking/RB_single_seed.png, id=502, 433.62pt x 289.
+<../Figures/Randomized benchmarking/RB_single_seed.png, id=515, 433.62pt x 289.
 08pt>
 File: ../Figures/Randomized benchmarking/RB_single_seed.png Graphic file (type 
 png)
@@ -1794,17 +1576,13 @@ LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <6> not available
 (Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 881.
 
+ [59 <../Figures/Randomized benchmarking/RB schematic.jpg>]
 
-
-LaTeX Warning: Reference `LastPage' on page 56 undefined on input line 886.
-
-[56 <../Figures/Randomized benchmarking/RB schematic.jpg>]
-
-LaTeX Warning: Citation `gottesman1998heisenberg' on page 57 undefined on input
+LaTeX Warning: Citation `gottesman1998heisenberg' on page 60 undefined on input
  line 888.
 
 
-<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=506, 
+<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=520, 
 722.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png Grap
 hic file (type png)
@@ -1814,11 +1592,8 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_driving_s
 ingle_both.png used on input line 901.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 57 undefined on input line 907.
-
-[57 <../Figures/Randomized benchmarking/RB_single_seed.png>]
-<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=511, 722.7p
+[60 <../Figures/Randomized benchmarking/RB_single_seed.png>]
+<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=525, 722.7p
 t x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_cross-driving.png Graphic fi
 le (type png)
@@ -1827,16 +1602,9 @@ le (type png)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
 ving.png used on input line 912.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 58 undefined on input line 915.
-
-[58 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
-
-LaTeX Warning: Reference `LastPage' on page 59 undefined on input line 922.
-
-[59 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
-<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=521, 72
+ [61 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>] [6
+2 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
+<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=535, 72
 2.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_state_populations.png Graphi
 c file (type png)
@@ -1847,14 +1615,11 @@ ulations.png used on input line 938.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 
-LaTeX Warning: Reference `ssec:Second-state' on page 60 undefined on input line
+LaTeX Warning: Reference `ssec:Second-state' on page 63 undefined on input line
  943.
 
-
-LaTeX Warning: Reference `LastPage' on page 60 undefined on input line 949.
-
-[60]
-<../Figures/Randomized benchmarking/alternating RB.jpg, id=526, 4529.92375pt x 
+[63]
+<../Figures/Randomized benchmarking/alternating RB.jpg, id=539, 4529.92375pt x 
 1204.5pt>
 File: ../Figures/Randomized benchmarking/alternating RB.jpg Graphic file (type 
 jpg)
@@ -1862,12 +1627,8 @@ jpg)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/alternating RB.jpg 
 used on input line 968.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 61 undefined on input line 971.
-
-[61 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
-<../Figures/Randomized benchmarking/compiled RB.jpg, id=531, 4529.92375pt x 120
+ [64 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
+<../Figures/Randomized benchmarking/compiled RB.jpg, id=544, 4529.92375pt x 120
 4.5pt>
 File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 )
@@ -1875,13 +1636,9 @@ File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 Package pdftex.def Info: ../Figures/Randomized benchmarking/compiled RB.jpg use
 d on input line 981.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 62 undefined on input line 989.
-
-[62 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Randomi
-zed benchmarking/compiled RB.jpg>]
-<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=535, 4529.92375pt x
+ [65 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Random
+ized benchmarking/compiled RB.jpg>]
+<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=549, 4529.92375pt x
  1204.5pt>
 File: ../Figures/Randomized benchmarking/5 primitives RB.jpg Graphic file (type
  jpg)
@@ -1890,7 +1647,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitives RB.jpg
  used on input line 997.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
 
-<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=536, 1969.3575pt 
+<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=550, 1969.3575pt 
 x 284.06125pt>
 File: ../Figures/Randomized benchmarking/5 primitive gates.jpg Graphic file (ty
 pe jpg)
@@ -1899,12 +1656,9 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitive gates.j
 pg used on input line 1006.
 (pdftex.def)             Requested size: 226.48395pt x 32.66418pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 63 undefined on input line 1014.
-
-[63 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
+[66 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
 ized benchmarking/5 primitive gates.jpg>]
-<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=540
+<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=554
 , 867.24pt x 433.62pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png Gr
 aphic file (type png)
@@ -1914,11 +1668,8 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_state_populat
 ions_notable.png used on input line 1024.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 64 undefined on input line 1047.
-
-[64]
-<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=544, 7
+[67]
+<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=558, 7
 22.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png Graph
 ic file (type png)
@@ -1928,11 +1679,8 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_driving_singl
 e_vs_both.png used on input line 1050.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 65 undefined on input line 1057.
-
-[65 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
-<../Figures/Randomized benchmarking/Clifford_comparison.png, id=549, 578.16pt x
+[68 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
+<../Figures/Randomized benchmarking/Clifford_comparison.png, id=563, 578.16pt x
  361.35pt>
 File: ../Figures/Randomized benchmarking/Clifford_comparison.png Graphic file (
 type png)
@@ -1941,42 +1689,32 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/Clifford_comparison
 .png used on input line 1062.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 66 undefined on input line 1072.
-
-[66 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
-
-LaTeX Warning: Reference `LastPage' on page 67 undefined on input line 1074.
-
-[67 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
+[69 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
+[70 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
 Chapter 10.
-) [68
+) [71
 
-] [69
+] [72
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 70 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
  line 19.
 
 
-LaTeX Warning: Citation `vasilescu2006electronic' on page 70 undefined on input
- line 19.
-
-
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 70 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=565, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=579, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=566, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=580, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1986,56 +1724,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[70
+[73
 
-]
-
-LaTeX Warning: Reference `LastPage' on page 71 undefined on input line 69.
-
-[71 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=573, 1118.9805pt x 420.3705pt>
+] [74 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=587, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
-
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 72 undefined on input
- line 99.
-
-
-LaTeX Warning: Reference `LastPage' on page 72 undefined on input line 108.
-
-[72 <./Figures/Noise/Noise model.png>]
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 73 undefined on input
- line 137.
-
-
-LaTeX Warning: Reference `LastPage' on page 73 undefined on input line 149.
-
-[73]
-
-LaTeX Warning: Citation `vasilescu2006electronic' on page 74 undefined on input
- line 157.
-
-
-LaTeX Warning: Reference `LastPage' on page 74 undefined on input line 177.
-
-[74]
-<Figures/Noise/noise_temperature_versus_power.png, id=585, 433.62pt x 289.08pt>
+ [75 <./Figures/Noise/Noise model.png>]
+[76] [77]
+<Figures/Noise/noise_temperature_versus_power.png, id=599, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
-
-
-LaTeX Warning: Reference `LastPage' on page 75 undefined on input line 198.
-
-[75 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=590, 433.62pt x 
+ [78 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=605, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -2044,37 +1751,26 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-
-LaTeX Warning: Reference `LastPage' on page 76 undefined on input line 215.
-
-[76 <./Figures/Noise/noise_temperature_versus_power_detailed.png>])
-
-LaTeX Warning: Reference `LastPage' on page 77 undefined on input line 4.
-
-[77]
+[79 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [80]
 Appendix B.
-[78
+[81
 
 ]
 Appendix C.
-[79
+[82
 
 ]
 Appendix D.
-<../Figures/Clifford decomposition.png, id=606, 683.46771pt x 166.45795pt>
+<../Figures/Clifford decomposition.png, id=619, 683.46771pt x 166.45795pt>
 File: ../Figures/Clifford decomposition.png Graphic file (type png)
 
 <use ../Figures/Clifford decomposition.png>
 Package pdftex.def Info: ../Figures/Clifford decomposition.png used on input li
 ne 39.
 (pdftex.def)             Requested size: 452.9679pt x 110.3223pt.
- [80
+ [83
 
-]
-
-LaTeX Warning: Reference `LastPage' on page 81 undefined on input line 100.
-
-[81 <../Figures/Clifford decomposition.png>]
+] [84 <../Figures/Clifford decomposition.png>]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 15.89755pt on input line 100.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
@@ -2082,1072 +1778,50 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <17.28> not available
 (Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 100.
 
-
-
-LaTeX Warning: Reference `LastPage' on page 82 undefined on input line 103.
-
-[82]
+ [85]
 Appendix E.
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.119 ...xplain this algorithm, let us denote $\bm
-                                                  {\beta}=\left(\beta_1, \do...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[86
 
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.119 ...The corresponding gates are given by $\bm
-                                                  {G_\bm{\beta}}=\left( G_{\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+] [87] [88]) (./thesis.bbl [89] [90
 
-! Undefined control sequence.
-l.119 ...rresponding gates are given by $\bm{G_\bm
-                                                  {\beta}}=\left( G_{\beta_1...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+]) 
+AED: lastpage setting LastPage
+[91] (./thesis.aux)
 
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.119 ...not exist and should not be added to $\bm
-                                                  {G_\bm{\beta}}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.43996pt have occurred.
 
-! Undefined control sequence.
-l.119 ...ist and should not be added to $\bm{G_\bm
-                                                  {\beta}}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.122 ...ates $G_\text{seq}$ and gate indices $\bm
-                                                  {\beta} = \left(\beta_1, ....
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: There were undefined references.
 
-[83
 
-]
-! Undefined control sequence.
-l.123 ...rmine the set of distinct gates in $G_\bm
-                                                  {\beta}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+LaTeX Warning: There were multiply-defined labels.
 
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.128           \item Copy gate indices $\bm
-                                            {\beta}$ to $\bm{\beta}^\text{ne...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.128 ...em Copy gate indices $\bm{\beta}$ to $\bm
-                                                  {\beta}^\text{new}=\left(\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-<recently read> \bm 
-                    
-l.130 ... step two using the new gate indices $\bm
-                                                  {\beta}^\text{new}$.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.132         \item If $G_\bm
-                             {\beta}$ is empty, then $G_\text{seq}$ is a par...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.141 ... tuple of Cliffords $\left(C_1, \dots, \C
-                                                  _n$ is the same as any per...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.141 ...ple of Cliffords $\left(C_1, \dots, \C_n$
-                                                   is the same as any permut...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-l.143 ...lus all the distinct gates left in $G_\bm
-                                                  {\beta}$ is equal to or gr...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Reference `LastPage' on page 84 undefined on input line 144.
-
-[84]
-
-LaTeX Warning: Reference `LastPage' on page 85 undefined on input line 150.
-
-[85]
-! Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.160           \bottomrule
-                           
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.161         \end
-                  {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.161         \end
-                  {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.161         \end
-                  {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.161         \end
-                  {tabular}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.161         \end
-                  {tabular}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.161         \end
-                  {tabular}
-(That makes 100 errors; please try again.) 
+ ) 
 Here is how much of TeX's memory you used:
- 17196 strings out of 493109
- 337776 string characters out of 6138586
- 470060 words of memory out of 5000000
- 20028 multiletter control sequences out of 15000+600000
- 231261 words of font info for 467 fonts, out of 8000000 for 9000
+ 17354 strings out of 493109
+ 340224 string characters out of 6138586
+ 471369 words of memory out of 5000000
+ 20146 multiletter control sequences out of 15000+600000
+ 288790 words of font info for 518 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2014/texm
+f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2014/texmf-dist/fon
+ts/type1/public/fourier/fourier-alt.pfb><c:/texlive/2014/texmf-dist/fonts/type1
+/public/fourier/fourier-mex.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/
+fourier/fourier-ml.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/f
+ourier-mlit.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-
+mlitb.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
+><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/texlive/20
+14/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2014/texmf-dist/
+fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/ado
+be/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
+frm1200.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
+Output written on thesis.pdf (93 pages, 24053053 bytes).
+PDF statistics:
+ 695 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 80103 words of extra memory for PDF output out of 89155 (max. 10000000)
 
-!  ==> Fatal error occurred, no output PDF file produced!
