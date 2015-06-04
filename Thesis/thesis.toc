@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {5.1}frequency re-use}{25}
 \contentsline {section}{\numberline {5.2}Selective broadcasting}{26}
 \contentsline {section}{\numberline {5.3}The Muxmon experiment}{27}
-\contentsline {chapter}{\numberline {6}Qubit characterization}{30}
+\contentsline {chapter}{\numberline {6}Muxmon chip characterization}{30}
 \contentsline {section}{\numberline {6.1}Continuous-wave measurements}{30}
 \contentsline {subsection}{\numberline {6.1.1}Scanning for resonators}{31}
 \contentsline {subsection}{\numberline {6.1.2}Powersweeping the resonators}{32}
