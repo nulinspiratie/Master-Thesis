@@ -103,9 +103,12 @@
 \contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{83}
 \contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{84}
 \contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{84}
+\contentsline {section}{\numberline {D.3}$5$ primitives decomposition}{85}
 \contentsline {chapter}{\numberline {E}Algorithms}{86}
 \contentsline {section}{\numberline {E.1}Tracked spectroscopy}{86}
 \contentsline {section}{\numberline {E.2}Peak finding}{86}
 \contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{86}
 \contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{86}
 \contentsline {section}{\numberline {E.3}Compiled randomized benchmarking}{86}
+\contentsline {subsection}{\numberline {E.3.1}Finding the optimal gate sequence}{86}
+\contentsline {subsection}{\numberline {E.3.2}Optimizing the gate compilation algorithm}{87}

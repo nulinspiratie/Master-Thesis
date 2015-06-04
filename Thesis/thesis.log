@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  3 JUN 2015 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  4 JUN 2015 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1700,15 +1700,115 @@ ne 39.
 (pdftex.def)             Requested size: 452.9679pt x 110.3223pt.
  [83
 
-] [84 <../Figures/Clifford decomposition.png>] [85]
-Appendix E.
-) (./thesis.bbl [86
+] [84 <../Figures/Clifford decomposition.png>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 100.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 15.89755pt on input line 100.
+LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <17.28> not available
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 100.
 
-] [87
+ [85]
+Appendix E.
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.117 ...ates $G_\text{seq}$ and gate indices $\bm
+                                                  {\beta} = \left(\beta_1, ....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.118 ...rmine the set of distinct gates in $G_\bm
+                                                  {\beta}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.123           \item Copy gate indices $\bm
+                                            {\beta}$ to $\bm{\beta}^\text{ne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.123 ...em Copy gate indices $\bm{\beta}$ to $\bm
+                                                  {\beta}^\text{new}=\left(\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \bm 
+                    
+l.125 ... step two using the new gate indices $\bm
+                                                  {\beta}^\text{new}$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.127         \item If $G_\bm
+                             {\beta}$ is empty, then $G_\text{seq}$ is a par...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[86
+
+]
+! Undefined control sequence.
+l.136 ... tuple of Cliffords $\left(C_1, \dots, \C
+                                                  _n$ is the same as any per...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.136 ...ple of Cliffords $\left(C_1, \dots, \C_n$
+                                                   is the same as any permut...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.138 ...lus all the distinct gates left in $G_\bm
+                                                  {\beta}$ is equal to or gr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[87]) (./thesis.bbl [88] [89
 
 ]) 
 AED: lastpage setting LastPage
-[88] (./thesis.aux)
+[90] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -1718,11 +1818,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17214 strings out of 493109
- 337795 string characters out of 6138586
- 470105 words of memory out of 5000000
- 20012 multiletter control sequences out of 15000+600000
- 233518 words of font info for 479 fonts, out of 8000000 for 9000
+ 17235 strings out of 493109
+ 338255 string characters out of 6138586
+ 470116 words of memory out of 5000000
+ 20033 multiletter control sequences out of 15000+600000
+ 237806 words of font info for 488 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,13n,56p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1735,10 +1835,10 @@ b><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/
 2014/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist
 /fonts/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/u
 rw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (89 pages, 24034358 bytes).
+Output written on thesis.pdf (91 pages, 24042417 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
+ 680 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 76007 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 78055 words of extra memory for PDF output out of 89155 (max. 10000000)
 
