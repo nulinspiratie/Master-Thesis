@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433518317 "thesis.aux" "thesis.bbl" "thesis" 1433518811
+["bibtex thesis"] 1433531431 "thesis.aux" "thesis.bbl" "thesis" 1433531494
   "bibliography.bib" 1433501788 9037 eb97a2b42ef25c729fb80110c7c4714c ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433518810 33965 7672847d1a9c27d0ee6cccccfdad1707 ""
+  "thesis.aux" 1433531494 33935 e62bd13f08d734ec601b22b3373fac2d ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433518801 "thesis.tex" "thesis.pdf" "thesis" 1433518811
+["pdflatex"] 1433531485 "thesis.tex" "thesis.pdf" "thesis" 1433531494
   "../Figures/20150512_Muxmon_Setup.jpg" 1433429705 2965934 6a63ac317e9a24b41b855caf14f8d1b1 ""
   "../Figures/Calibration routines/Mixer skewness.png" 1433185697 31845 c739dae0df8a6f88c86a7ac1c2329daf ""
   "../Figures/Clifford decomposition.png" 1432740405 85437 0de832dd039fbf0e2190c63c249adfa6 ""
@@ -26,7 +26,8 @@
   "../Figures/Qubit characterization/Flux_matrix.png" 1433511109 116273 824ca1d3a222a83a8a410644840eeb25 ""
   "../Figures/Qubit characterization/Resonator scans.png" 1433183798 24399 f9d6e05e77f6dbe147cb4a34e63f608f ""
   "../Figures/Qubit characterization/Resonator vs DAC linecut.png" 1433187857 21785 5a47d015d26d35ce0505822e5497f2ca ""
-  "../Figures/Qubit characterization/Tracked_spectroscopy.png" 1433511565 56859 a1e48a14a29514b0c8eb217a45ea0432 ""
+  "../Figures/Qubit characterization/Tracked_spectroscopy.png" 1433526911 55901 abfd1113361bc1d01597a7f89e5ec4dc ""
+  "../Figures/Qubit characterization/dispersive shift.png" 1433531477 30989 646952ad8e32a111cddc7c8c59cbe42c ""
   "../Figures/Randomized benchmarking/5 primitive gates.jpg" 1433330693 674556 cb7feffa5ef2f2e63bb1995c7dcc3c88 ""
   "../Figures/Randomized benchmarking/5 primitives RB.jpg" 1433330706 1087011 9ed347b49ca3d2f53c705765cb62725b ""
   "../Figures/Randomized benchmarking/Bloch sphere octahedron.png" 1433155876 49776 61ba420c532b123abe670034315ea48b ""
@@ -41,7 +42,7 @@
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
   "Chapters/DRIE.tex" 1433497727 35691 56d0e1bc663a7992f07c36acfd362e44 ""
-  "Chapters/Muxmon.tex" 1433518800 124419 7072eaee2942e9bdddcf33ac513ab9b9 ""
+  "Chapters/Muxmon.tex" 1433531420 124034 2ce7760cb1b6ac1ff8cfebcf164ea6cb ""
   "Chapters/appendix.tex" 1433518279 19027 38308b49966b57df845cbc3a0f5fe31f ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
@@ -142,16 +143,16 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1432639947 19835 819dbcd81415d2af8309aaf77b6a35ba ""
-  "thesis.aux" 1433518810 33965 7672847d1a9c27d0ee6cccccfdad1707 ""
-  "thesis.bbl" 1433518317 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
+  "thesis.aux" 1433531494 33935 e62bd13f08d734ec601b22b3373fac2d ""
+  "thesis.bbl" 1433531431 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
   "thesis.tex" 1433418024 4299 4039c57e9f98f53328b2f537dae82179 ""
-  "thesis.toc" 1433518810 8209 0c60753a4071d76141609dfde62f1d05 ""
+  "thesis.toc" 1433531494 8066 741e590c3899c43c3a2305ca7dadbdd0 ""
   (generated)
   "Chapters/Muxmon.tex.aux"
-  "thesis.log"
-  "thesis.pdf"
-  "thesis.toc"
   "Chapters/Muxmon.aux"
+  "thesis.pdf"
+  "thesis.log"
   "thesis.aux"
   "Chapters/appendix.tex.aux"
   "Chapters/DRIE.tex.aux"
+  "thesis.toc"
