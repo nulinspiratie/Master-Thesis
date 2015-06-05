@@ -1,6 +1,6 @@
 \begin{thebibliography}{10}
 
-\bibitem{TransmonKoch}
+\bibitem{koch2007Transmon}
 
 
 \bibitem{barends2008contribution}
@@ -19,6 +19,11 @@ Rami Barends.
 Lev~Samuel Bishop.
 \newblock {\em Circuit Quantum Electrodynamics}.
 \newblock PhD thesis, Yale University, 2010.
+
+\bibitem{bouchiat1998CooperPairBox}
+V~Bouchiat, D~Vion, P~Joyez, D~Esteve, and M~H Devoret.
+\newblock Quantum coherence with a single cooper pair.
+\newblock {\em Physica Scripta}, 1998(T76):165, 1998.
 
 \bibitem{DRIE}
 A.~Bruno, G.~de~Lange, K.~van~der Enden, S.~Asaad, N.~Langford, and L.~DiCarlo.

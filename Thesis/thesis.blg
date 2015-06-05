@@ -8,51 +8,51 @@ I was expecting a `,' or a `}'---line 411 of file bibliography.bib
  :   title = {Charge-insensitive qubit design derived from the Cooper pair box},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in TransmonKoch
-Warning--empty author in TransmonKoch
-Warning--empty title in TransmonKoch
-Warning--empty journal in TransmonKoch
-Warning--empty year in TransmonKoch
+Warning--to sort, need author or key in koch2007Transmon
+Warning--empty author in koch2007Transmon
+Warning--empty title in koch2007Transmon
+Warning--empty journal in koch2007Transmon
+Warning--empty year in koch2007Transmon
 Warning--empty journal in plourde2009microwave
-You've used 20 entries,
+You've used 21 entries,
             2118 wiz_defined-function locations,
-            601 strings with 7087 characters,
-and the built_in function-call counts, 5804 in all, are:
-= -- 534
-> -- 359
+            608 strings with 7271 characters,
+and the built_in function-call counts, 6181 in all, are:
+= -- 567
+> -- 387
 < -- 0
-+ -- 145
-- -- 124
-* -- 421
-:= -- 1074
-add.period$ -- 58
-call.type$ -- 20
-change.case$ -- 111
++ -- 156
+- -- 134
+* -- 455
+:= -- 1142
+add.period$ -- 61
+call.type$ -- 21
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 198
-empty$ -- 377
-format.name$ -- 124
-if$ -- 1120
+cite$ -- 27
+duplicate$ -- 209
+empty$ -- 400
+format.name$ -- 134
+if$ -- 1193
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 14
-newline$ -- 101
-num.names$ -- 38
-pop$ -- 120
+int.to.str$ -- 21
+missing$ -- 15
+newline$ -- 106
+num.names$ -- 40
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 108
 quote$ -- 0
-skip$ -- 131
+skip$ -- 138
 stack$ -- 0
-substring$ -- 216
-swap$ -- 17
+substring$ -- 230
+swap$ -- 18
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 80
 warning$ -- 6
-while$ -- 44
-width$ -- 22
-write$ -- 206
+while$ -- 47
+width$ -- 23
+write$ -- 217
 (There was 1 error message)
