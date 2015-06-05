@@ -130,7 +130,12 @@
 
     Here $E_C$ is charging energy, $E_J$ is the Josephson energy, $n$ is the operator corresponding to the number of Cooper pairs on the island, $n_g$ is a charge offset, and $\phi$ is the Josephson phase operator. The Cooper-pair box operates in the regime where $E_C \gg E_J$, resulting in well-defined number of Cooper pairs on the island, which determine its energy levels. The Cooper-pair box is therefore known as a charge qubit. The Josephson junction is a nonlinear inductor, resulting in an anharmonicity between the energy levels of the Cooper-pair box. Due to tihs anhamonicity the different energy levels can be individually addressed, which is crucial for a qubit. The qubit states in a Cooper-pair box qubit are the two states having the lowest energy $\ket{n}$ and $\ket{n+1}$. The number of Cooper pairs $n$ having the lowest energy is determined by an applied gate voltage, corresponding to $n_g$.
 
-    The Cooper-pair box qubit suffers from being sensitive to fluctuations in the charge offset $n_g$, which result in fluctuations in its energy levels. The transmon qubit is a modification to the Cooper-pair box, which is insensitive to charge fluctuations by operating the regime where $E_J \gg E_C$ \cite{koch2007Transmon}. This is achieved by adding a large shunting capacitor to the Cooper-pair box, which increases its capacitance to ground, thereby reducing $E_C$. The charge sensitivity decreases exponentially with increasing $E_J/E_C$ ratio. The cost of increasing $E_J/E_C$ is that the anharmonicity between the energy levels decreases, albeit with a polynomial depence. The transmon usually operates in the regime where $E_J/E_C$ is somewhere between $20$ and $100$, where the charge sensitivity is largely suppressed, while still having sufficient anharmonicity.
+    The Cooper-pair box qubit suffers from being sensitive to fluctuations in the charge offset $n_g$, which result in fluctuations in its energy levels. The transmon qubit is a modification to the Cooper-pair box, which is insensitive to charge fluctuations by operating the regime where $E_J \gg E_C$ \cite{koch2007Transmon}. This is achieved by adding a large shunting capacitor to the Cooper-pair box, which increases its capacitance to ground, thereby reducing $E_C$. The charge sensitivity decreases exponentially with increasing $E_J/E_C$ ratio. The cost of increasing $E_J/E_C$ is that the anharmonicity between the energy levels decreases, albeit with a polynomial depence. The transmon usually operates in the regime where $E_J/E_C$ is somewhere between $20$ and $100$, where the charge sensitivity is largely suppressed, while still having sufficient anharmonicity. In the transmon regime the transition frequency from the ground-state to the excited-state of the qubit is given to good approximation by \cite[p.52]{Reed}:
+
+    \begin{equation}
+      \hbar \omega_q = \sqrt{8 E_J E_C} - E_C
+      \label{eq:transmon frequency}
+    \end{equation}
 
     The performance of a qubit is determined by its ability to retain information, which are quantified by its coherence times. The more isolated a qubit is from its environment, the less decay channels it will have, and the longer its coherence times will be. On the other hand it is also necessary to interact with the qubit. In a cQED chip a signal is sent through a feedline. Directly connecting a qubit to this feedline would result in a strong decay channel. The connection between a transmon and the feedline is therefore mediated by a capacitive coupling to a resonator, in this case a coplanar waveguide (see Part I). The resonator acts as a filter, thereby limiting the decay channel. Nevertheless due to the Purcell effect the resonator is still a decay channel for the qubit, the rate of which depends on the quality factor of the resonator.
 
@@ -189,17 +194,17 @@
             \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Powersweep.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}}
+          \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}.}
           \label{fig:powersweep}
         \end{wrapfigure}
 
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. First some initial measurements are performed aimed at gaining information about our resonator and qubit, which will allow us to search for the qubit frequencies with more focus.
 
-        As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. For more information see Reed's thesis~\cite{Reed}. Observing this frequency shift reveals that a qubit is coupled to the resonator. This frequency shift is commonly measured in a powersweep, where a resonator scan is performed for a range of powers.
+        As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. For more information see Reed's thesis~\cite{Reed}. Observing this frequency shift reveals that a qubit is coupled to the resonator. This frequency shift is commonly measured in a powersweep, where a resonator scan is performed for a range of powers. In Figure~\ref{fig:powersweep} a powersweep is shown of the ancilla qubit. As can be seen the resonator frequency shifts during the transition from the low-power regime to the high-power regime. Since the resonator frequency shifts downwards when entering the high-power regime it can be concluded that the ancilla qubit frequency lies below the resonator frequency.
 
         A powersweep additionally provides information about at what power the resonator enters the nonlinear regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, the amount of detuning between the qubit and the resonator can be estimated using Equation~\ref{eq:dispersive-shift}.
 
-        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned.
+        If no shift is observed, it could mean that the qubit is dead, due to an open or shorted Josephson junction. However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned.
 
       \subsection{Scan for qubit sweet-spots}
 
@@ -209,9 +214,19 @@
           \caption{Fixed frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet-spot of the ancilla qubit.}
           \label{fig:figure1}
         \end{figure}
-        Some of the qubits have a tunable resonance frequency. This is done through a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. The SQUID loop is sensitive to the amount of flux passing through the loop. The amount of flux going through the SQUID loop can be changed by changing the surrounding magnetic field. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, and hence changes the amount of flux through the SQUID loop. A digital-to-analog converter is used to specify the amount of current that is sent through the flux bias line. Depending on the amount of flux through the SQUID loop, the resonance frequency of the qubit changes accordingly. these qubits are therefore called flux-tunable.
 
-        For qubits that are flux-tunable, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the dispersive shift $\chi$, and therefore the resonator's frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
+        All qubits in the Muxmon device have a tunable resonance frequency. This is achieved by replacing the Josephson junction with a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. If the two Josephson junctions in a SQUID loop have the same Josephson energy $E_J=E_{J1}=E_{J2}$, this results in an effective Josephson energy~\cite[pp.54-56]{Reed}:
+
+        \begin{equation}
+          E_J^\text{eff}=2E_J*\cos{\left( \frac{\Phi}{\Phi_0} \right)}
+          \label{eq:Josephson energy}
+        \end{equation}
+
+        where $\Phi_0=h/2e$ is the magnetic flux quantum and $\Phi$ is the flux passing through the SQUID loop.
+
+        The effective Josephson energy $E_J^\text{eff}$ of a SQUID loop can therefore be controlled by changing the flux through the SQUID loop. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, thereby changing the amount of flux through the SQUID loop. A fixed current from a digital-to-analog (DAC) converter is used to set the flux through the SQUID loop, thereby changing the effective Josephson energy $E_J^\text{eff}$. According to Equation~\ref{eq:transmon frequency} the qubit frequency depends on the Josephson energy, and so changing the magnetic flux through the SQUID loop changes the qubit frequency. Qubits having a SQUID loop are therefore called flux-tunable.
+
+        For flux-tunable qubits, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the dispersive shift $\chi$, and therefore the resonator's frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
 
         The accurate way to measure the sweet-spot is to perform resonator scans as the DAC voltage is varied. The result is a 2D scan shown in \textbf{TODO:} Figure.
 
@@ -230,6 +245,7 @@
             \item Why does the qubit frequency change in a SQUID loop
             \item Sweet-spot
           \end{itemize}
+          \item Cosine potential
           \item Mention flux-noise?
           \begin{itemize}
             \item 1/f noise
@@ -387,7 +403,7 @@
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Flux_matrix.png}
-          \caption{Frequency responses of each qubit to each flux-bias line. Each qubit has been tuned away from its sweet-spot such that the frequency-response is higher. The frequency response slopes determine the coefficients of matrix $\boldsymbol{M}$, used for creating the flux matrix \boldsymbol{F}.}
+          \caption{Frequency responses of each qubit to each flux-bias line. Each qubit has been tuned away from its sweet-spot such that the frequency-response is higher. The frequency response slopes determine the coefficients of matrix $\boldsymbol{M}$, used for creating the flux matrix $\boldsymbol{F}$.}
           \label{fig:flux matrix}
         \end{figure}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. For the Muxmon experiment the frequencies of the three qubits have to be individually tuned to very specific frequencies, and so the frequency responses of the qubits have to be decoupled. This is done by implementing a flux matrix, which corrects for the flux cross-coupling effects.

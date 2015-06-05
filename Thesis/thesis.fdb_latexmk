@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433511888 "thesis.aux" "thesis.bbl" "thesis" 1433511988
+["bibtex thesis"] 1433516155 "thesis.aux" "thesis.bbl" "thesis" 1433516234
   "bibliography.bib" 1433501788 9037 eb97a2b42ef25c729fb80110c7c4714c ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433511987 33366 ed25a5d16c9ad9409c7e43fe068dc240 ""
+  "thesis.aux" 1433516233 33504 cdcd0c60f3c5bdec588d467fe281e754 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433511980 "thesis.tex" "thesis.pdf" "thesis" 1433511988
+["pdflatex"] 1433516226 "thesis.tex" "thesis.pdf" "thesis" 1433516234
   "../Figures/20150512_Muxmon_Setup.jpg" 1433429705 2965934 6a63ac317e9a24b41b855caf14f8d1b1 ""
   "../Figures/Calibration routines/Mixer skewness.png" 1433185697 31845 c739dae0df8a6f88c86a7ac1c2329daf ""
   "../Figures/Clifford decomposition.png" 1432740405 85437 0de832dd039fbf0e2190c63c249adfa6 ""
@@ -41,7 +41,7 @@
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
   "Chapters/DRIE.tex" 1433497727 35691 56d0e1bc663a7992f07c36acfd362e44 ""
-  "Chapters/Muxmon.tex" 1433511979 125954 3284008ac067f3350885aa9c534d7487 ""
+  "Chapters/Muxmon.tex" 1433516224 126070 86ad0c13feab3ff49fab5bc852708e32 ""
   "Chapters/appendix.tex" 1433420488 16524 4a16dc055d5a5e67e7a1e27774a902a9 ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
@@ -142,16 +142,16 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1432639947 19835 819dbcd81415d2af8309aaf77b6a35ba ""
-  "thesis.aux" 1433511987 33366 ed25a5d16c9ad9409c7e43fe068dc240 ""
-  "thesis.bbl" 1433511888 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
+  "thesis.aux" 1433516233 33504 cdcd0c60f3c5bdec588d467fe281e754 ""
+  "thesis.bbl" 1433516156 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
   "thesis.tex" 1433418024 4299 4039c57e9f98f53328b2f537dae82179 ""
-  "thesis.toc" 1433511987 8100 fdf7b9bae193ba4674edaedbc04fa913 ""
+  "thesis.toc" 1433516233 8100 2fad0ac44da13e6b6dde4b5ee3102bea ""
   (generated)
-  "Chapters/appendix.tex.aux"
-  "thesis.aux"
+  "thesis.toc"
   "thesis.pdf"
   "Chapters/Muxmon.aux"
-  "thesis.toc"
+  "Chapters/appendix.tex.aux"
   "Chapters/Muxmon.tex.aux"
-  "Chapters/DRIE.tex.aux"
+  "thesis.aux"
   "thesis.log"
+  "Chapters/DRIE.tex.aux"

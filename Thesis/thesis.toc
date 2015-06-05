@@ -29,14 +29,14 @@
 \contentsline {chapter}{\numberline {6}Muxmon chip characterization}{30}
 \contentsline {section}{\numberline {6.1}Continuous-wave measurements}{31}
 \contentsline {subsection}{\numberline {6.1.1}Scanning for resonators}{31}
-\contentsline {subsection}{\numberline {6.1.2}Powersweeping the resonators}{33}
+\contentsline {subsection}{\numberline {6.1.2}Powersweeping the resonators}{32}
 \contentsline {subsection}{\numberline {6.1.3}Scan for qubit sweet-spots}{34}
 \contentsline {subsection}{\numberline {6.1.4}Scanning for qubits}{36}
 \contentsline {subsubsection}{\numberline {6.1.4.1}Spectroscopy}{36}
 \contentsline {subsubsection}{\numberline {6.1.4.2}Avoided crossing}{37}
 \contentsline {subsection}{\numberline {6.1.5}Tracking the qubits}{38}
-\contentsline {subsection}{\numberline {6.1.6}Finding the qubit's second transition}{39}
-\contentsline {subsection}{\numberline {6.1.7}Flux matrix}{40}
+\contentsline {subsection}{\numberline {6.1.6}Finding the qubit's second transition}{40}
+\contentsline {subsection}{\numberline {6.1.7}Flux matrix}{41}
 \contentsline {section}{\numberline {6.2}Time-domain measurements}{44}
 \contentsline {subsection}{\numberline {6.2.1}Qubit control}{44}
 \contentsline {subsection}{\numberline {6.2.2}Drive amplitude calibration}{46}
