@@ -244,33 +244,25 @@
         \begin{figure}[tb]
           \centering
           \includegraphics[width=.5\textwidth]{../Figures/Qubit characterization/dispersive shift.png}
-          \caption{The dispersive shift}
+          \caption{The resonator frequency shifts by an amount $2\chi$ dependent on the state of the qubit, where $\chi$ is the dispersive shift. In a two-tone spectroscopy measurement the readout frequency is fixed at the resonant frequency of the top qubit, while a second tone is swept with varying frequency. The transmission is low when the second tone is off-resonant with the qubit frequency and high if the second tone is resonant with the qubit frequency.}
           \label{fig:dispersive shift}
         \end{figure}
-        As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. For a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator frequency, which shifts when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited-state). This is the property exploited in a two-tone spectroscopy measurement.
+
+        As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. This is shown in Figure~\ref{fig:dispersive shift}. For a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator frequency, which shifts when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited-state). This is the property exploited in a two-tone spectroscopy measurement.
 
         In a two-tone spectroscopy measurement two tones are sent through the feedline.
         \begin{enumerate}
           \item A drive tone with varying frequency $\wdrive$.
-          \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
+          \item A readout tone at the resonator frequency when the qubit is in the ground state.
         \end{enumerate}
 
-        The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to a dip being present. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground- and excited-state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. This is measured as an increase in transmission.
+        When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to the readout tone being at the resonator frequency. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$ the qubit will start to oscillate between its ground- and excited-state, at a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. The result is an increase in transmission
 
         The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T_2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening, and can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
 
-        The dispersive shift $2 \chi$ is also dependent on the amount of detuning $\Delta$ between the qubit and resonator. If the detuning $\Delta$ is large, the dispersive shift will be very small, and so the difference in transmission will also decrease. Since the resonator has a Lorentzian lineshape, at the resonance frequency this Lorentzian is flat, and so is insensitive to small deviations. To increase the contrast between the on-resonant and off-resonant transmission, it is usually advantageous to measure at a slight detuning $\delta$ away from the resonance frequency, where the transmission slope is high. Since the resonator frequency shifts down when the qubit is excited, it is better to have a positive detuning $\delta$ to ensure that the transmission increases as the drive frequence $\wdrive$ approaches the qubit frequency $\wqub$ and decreases as it leaves the qubit frequency.
+        The dispersive shift $2 \chi$ is also dependent on the amount of detuning $\Delta$ between the qubit and resonator. If the detuning $\Delta$ is large, the dispersive shift will be very small, and so the difference in transmission will also decrease. Since the resonator has a Lorentzian lineshape, at the resonance frequency this Lorentzian is flat, and so is insensitive to small deviations. To increase the contrast between the resonant and off-resonant transmission, it is usually advantageous to measure at a slight detuning $\delta$ away from the resonance frequency, where the transmission slope is high. Since the resonator frequency shifts down when the qubit is excited, it is better to have a positive detuning $\delta$ to ensure that the transmission increases as the drive frequence $\wdrive$ approaches the qubit frequency $\wqub$ and decreases as it leaves the qubit frequency.
 
-        \textbf{TODO:} Spectroscopy section
-        \begin{itemize}
-          \item Is power broadening really due to stimulated emission?
-          \item Explain optimal RF power
-          \item Is the gradual increase really due to partial population? Is it then an average of the partial population? Or do you get other effects as well?
-          \item Use relatively high source power, results in power broadening
-          \item Mention what to do if qubit is close to or far away from resonator
-          \item Mention the term transmission measurement earlier on.
-          \item Pulsed spectroscopy
-        \end{itemize}
+        A better approach to a two-tone spectroscopy measurement is to separate the drive tone and the readout tone in time. This is known as pulsed spectroscopy, and has the advantage that during readout the photon population in the resonator will be low, resulting in a more accurate measurement. This does, however, require a more complicated set-up, where the pulses need to be accurately timed.
 
         % \subsubsection{Avoided crossing}
         %   When the detuning $\Delta$ between the qubit and resonator is not large compared to their coupling strength $g$, the qubit and resonator experience an avoided crossing. Because all of the qubits in the Muxmon chips are considerably lower in frequency compared to their resonators, the system is always in the dispersive regime, and so the system never approaches the avoided crossing. Nevertheless it is worth mentioning the avoided crossing briefly, as it is a breeding ground for interesting physics.
