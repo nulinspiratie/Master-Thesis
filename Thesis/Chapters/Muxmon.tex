@@ -189,12 +189,22 @@
       \subsection{Powersweeping the resonators}
         \label{ssec:powersweep}
 
-        \begin{figure}[tb]
-          \centering
-          \includegraphics[width=0.6\textwidth]{../Figures/Qubit characterization/Powersweep.png}
+        \begin{wrapfigure}[15]{r}{0.55\textwidth}
+          \begin{center}
+          \vspace{-30pt}
+            \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Powersweep.png}
+          \end{center}
+          \vspace{-20 pt}
           \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}}
           \label{fig:powersweep}
-        \end{figure}
+        \end{wrapfigure}
+
+        % \begin{figure}[tb]
+        %   \centering
+        %   \includegraphics[width=0.6\textwidth]{../Figures/Qubit characterization/Powersweep.png}
+        %   \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}}
+        %   \label{fig:powersweep}
+        % \end{figure}
 
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Instead of directly scanning the entire frequency spectrum in search of the qubit, it is relatively straightforward to perform some initial measurements aimed at gaining information about our resonator and qubit, which will allow us to search for our qubit with much greater accuracy.
 
@@ -334,6 +344,17 @@
 
       \subsection{Tracking the qubits}
         \label{ssec:tracked spectroscopy}
+
+        \begin{wrapfigure}[20]{r}{0.45\textwidth}
+          \begin{center}
+          \vspace{-30pt}
+            \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Tracked_spectroscopy.png}
+          \end{center}
+          \vspace{-20 pt}
+          \caption{Tracked spectroscopy of the ancilla qubit}
+          \label{fig:tracked spectroscopy}
+        \end{wrapfigure}
+
         For flux-tunable qubits one is usually not interested in finding the frequency at one specific flux value. More important is finding how this frequency changes with varying flux. A naive approach would be to perform a two-dimensional scan of a fixed frequency range versus flux. At a certain flux the qubit crosses the boundary of the chosen frequency window. Every time this happens a new two-dimensional scan has to be performed with an updated frequency window. The larger the chosen frequency window, the less often this has to be updated. On the other hand, choosing a large window also means that a larger portion of the scan is spent not measuring the qubit. There is therefore a trade-off between measurement time and degree of human intervention. Furthermore, the resonator frequency also depends on the amount of detuning. Therefore the frequency of the measurement tone must also be updated every now and then.
 
         As an alternative approach I have created a modified version of the spectroscopy versus flux scan, known as tracked spectroscopy. In this approach after every spectroscopy scan the qubit frequency is extracted through fitting. From the qubit frequencies measured in previous scans the expected frequency at the next flux value is extrapolated. The frequency window of the next spectroscopy scan are then centered around the expected qubit frequency. The qubit is therefore tracked as its frequency changes. The same method is applied to update the resonator frequency.
@@ -385,6 +406,13 @@
 
       \subsection{Flux matrix}
         \label{ssec:Flux matrix}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Flux_matrix.png}
+          \caption{Frequency responses of each qubit to each flux-bias line. Each qubit has been tuned away from its sweet-spot such that the frequency-response is higher. The frequency response slopes determine the coefficients of matrix $\boldsymbol{M}$, used for creating the flux matrix \boldsymbol{F}.}
+          \label{fig:flux matrix}
+        \end{figure}
         When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the flux through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. For the Muxmon experiment the frequencies of the three qubits have to be individually tuned to very specific frequencies, and so the frequency responses of the qubits have to be decoupled. This is done by implementing a flux matrix, which corrects for the flux cross-coupling effects.
 
         A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row corresponds to a virtual flux, and can be interpreted as follows: in a row $F_i = \left[f_{i1}, \dots, f_{in}\right]$ each element $F_{ij}$ corresponds to the relative amount by which the flux-bias line of qubit $j$ should be changed, such that only the frequency of qubit $i$ changes, while the frequencies of the other qubits remain fixed. This results in $n$ decoupled virtual flux parameters.
