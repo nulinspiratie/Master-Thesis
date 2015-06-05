@@ -120,7 +120,18 @@
 
   \chapter{Muxmon chip characterization}
     \label{ch:Muxmon chip characterization}
-    The qubits on the
+    The qubits on the Muxmon chip are all transmon qubits, which are modified versions of the Cooper-pair box qubit \cite{bouchiat1998CooperPairBox}. The Cooper-pair box qubit consists of a superconducting island separated from a superconducting bulk by a Josephson junction. The Josephson junction allows Cooper-pairs to travel between the island and the bulk. The Hamiltonian describing the Cooper-pair box is given by:
+
+    \begin{equation}
+      H=4 E_C (n - n_g)^2-E_J \cos \phi
+      label{eq:Cooper-pair box Hamiltonian}
+    \end{equation}
+
+    Here $E_C$ is charging energy, $E_J$ is the Josephson energy, $n$ is the operator corresponding to the number of Cooper pairs on the island, $n_g$ is a charge offset, and $\phi$ is the Josephson phase operator. The Cooper-pair box operates in the regime where $E_C \gg E_J$, resulting in well-defined number of Cooper pairs on the island, which determine its energy levels. The Cooper-pair box is therefore known as a charge qubit. The Josephson junction is a nonlinear inductor, resulting in an anharmonicity between the energy levels of the Cooper-pair box. Due to tihs anhamonicity the different energy levels can be individually addressed, which is crucial for a qubit. The qubit states in a Cooper-pair box qubit are the two states having the lowest energy $\ket{n}$ and $\ket{n+1}$. The number of Cooper pairs $n$ having the lowest energy is determined by an applied gate voltage, corresponding to $n_g$.
+
+    The Cooper-pair box qubit suffers from being sensitive to fluctuations in the charge offset $n_g$, which result in fluctuations in its energy levels. The transmon qubit is a modification to the Cooper-pair box, which is insensitive to charge fluctuations by operating the regime where $E_J \gg E_C$ \cite{koch2007Transmon}. This is achieved by adding a large shunting capacitor to the Cooper-pair box, which increases its capacitance to ground, thereby reducing $E_C$. The charge sensitivity decreases exponentially with increasing $E_J/E_C$ ratio. The cost of increasing $E_J/E_C$ is that the anharmonicity between the energy levels decreases, albeit with a polynomial depence. The transmon usually operates in the regime where $E_J/E_C$ is somewhere between $20$ and $100$, where the charge sensitivity is largely suppressed, while still having sufficient anharmonicity.
+
+    The Josephson energy can be accurately estimated by measuring its resistance at room temperature.
 
     In the design of cQED chips, the parameters of the qubits and resonators are always targeted which are ideal for the experiment.
     For coplanar waveguide resonators one can already obtain relatively good parameters for the required dimensions from simple formulae \textbf{TODO:} refer to formula.
