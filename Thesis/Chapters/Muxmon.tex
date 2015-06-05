@@ -217,7 +217,6 @@
 
         where $\Phi_0=h/2e$ is the magnetic flux quantum and $\Phi$ is the flux passing through the SQUID loop.
 
-
         As can be seen in Equation~\ref{eq:Josephson energy}, the effective Josephson energy $E_J^\text{eff}$ of a SQUID loop can be controlled by the flux through the SQUID loop. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, thereby changing the amount of flux through the SQUID loop. A fixed current from a digital-to-analog (DAC) converter is used to set the flux through the SQUID loop, thereby changing the effective Josephson energy $E_J^\text{eff}$. According to Equation~\ref{eq:transmon frequency} the qubit frequency depends on the Josephson energy, and so changing the magnetic flux through the SQUID loop changes the qubit frequency. Qubits having a SQUID loop are therefore called flux-tunable. Since the effective Josephson energy $E_J^\text{eff}$ has a cosine-dependence on the flux, the qubit frequency is periodic with respect to the flux. It- has a maximum when $\Phi$ is a multiple of $\Phi_0$, in which case the qubit is said to be at its sweet-spot.
 
         \begin{wrapfigure}[14]{r}{0.45\textwidth}
@@ -231,56 +230,37 @@
         \end{wrapfigure}
         For flux-tunable qubits, flux corresponding to the sweet-spot of the qubit can be found without knowledge of the qubit frequency. This can be done by sweeping the DAC current and measuring the shift in the resonator frequency. Because the qubit frequency varies as the current through the flux-bias line changes, the detuning between the qubit and the resonator changes. As a result the dispersive shift $\chi$, and therefore the resonator frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
 
-        Finding the sweet-spot can be done by performing a series of resonator scans as the DAC voltage is varied. The result of such a 2D scan shown in Figure~\ref{fig:tracked spectroscopy}. There is an alternative, faster measurement which can be performed, and is explained in Appendix~\ref
+        Finding the sweet-spot can be done by performing a series of resonator scans as the DAC voltage is varied. The result of such a 2D scan shown in Figure~\ref{fig:tracked spectroscopy}. There is an alternative, faster measurement which can be performed, and is explained in Appendix~\ref{Finding the qubit sweet-spot using a one-dimensional scan}. It is not necessarily the case that the qubit sweet-spot is at zero DAC current, as trapped magnetic flux may result in a flux offset.
 
-
-
-        In the case where the powersweep showed no measurable frequency shift, these two measurements are also useful in discerning whether or not the qubit is actually dead, or whether it was simply far detuned from the resonator.
-
-
-        \textbf{TODO:}
-        \begin{itemize}
-          \item Mention flux-noise?
-          \begin{itemize}
-            \item 1/f noise
-            \item usually not limiting, as it is very slow
-            \item This noise can be seen as occasional jumps (every few hours?) It would mean that every few hours the frequency must be recalibrated.
-          \end{itemize}
-        \end{itemize}
+        In the case where the powersweep showed no measurable frequency shift, these measurements are also useful in discerning whether or not the qubit actually has broken junctions, or whether it was simply far detuned from the resonator.
 
       \subsection{Scanning for qubits}
         \label{sec:spectroscopy}
-        Once the preliminary measurements have been performed that characterize the resonators and provide hints about the whereabouts of the qubit it is time to actually find the qubit.
 
-        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency. If, on the other hand, the detuning is comparable to the coupling strength ($\Delta \sim g$), the qubit and resonator are hybridized, and experience an avoided crossing. In such cases a normal transmission measurement suffices.
+        The measurement to perform in order to find the qubit depends on the amount of detuning between the resonator and qubit, which can be estimated from powersweep measurements. If the amount of detuning is large compared to the coupling strength ($\Delta \gg  g$), the system is in the dispersive regime. In this case one commonly performs a two-tone spectroscopy to find the qubit's frequency. If the detuning is comparable to the coupling strength ($\Delta \sim g$), the qubit and resonator are hybridized, and experience an avoided crossing. In such cases a normal transmission measurement suffices. In the Muxmon device the sweet-spot frequencies of all qubits were considerably lower than their corresponding resonator frequencies, and so the qubits were always in the dispersive regime. Therefore two-tone spectroscopy was performed to find the qubit frequencies.
 
-        If the qubit is flux-tunable, one important question to ask is: at what DAC voltage should the qubit be searched?
+        When finding the qubits the DAC currents were chosen such that the qubits were close to their sweet-spots. It is important that the qubit is not close to its anti-sweet-spot, which would make it difficult, if not impossible to find.
 
-        One option is to choose zero DAC voltage. In most cases this is alright, but there are cases when this is a bad choice. For instance, trapped magnetic fields during cool-down could position the qubit near the anti-sweet-spot for zero DAC voltage, in which case finding the qubit will be next to impossible.
+        As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited-state). This is the property exploited in a two-tone spectroscopy measurement.
 
-        A better option is to choose a DAC voltage that results in a detuning $\Delta$ that is large compared to coupling strength $g$, such that the system is in the disperisive regime. However, the detuning $\Delta$ should not be too high, as it would otherwise result in a negligible dispersive shift $\chi$.The optimum value is usually around a few hundred megahertz, although this is dependent on the device-specific parameters. The detuning can be approximated using powersweeps.
+        In a two-tone spectroscopy measurement two tones are sent through the feedline.
+        \begin{enumerate}
+          \item A drive tone with varying frequency $\wdrive$.
+          \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
+        \end{enumerate}
 
-        \subsubsection{Spectroscopy}
-          As was explained in section~\ref{sec:resonator-scan}, in the dispersive regime the resonator experiences a $2 \chi$ frequency shift dependent on the state of the qubit. In the case of a resonator capacitively coupled to the feedline, the transmission experiences a dip at the resonator's frequency. This dip will correspondingly shift when the qubit's state is switched. The transmission at the resonator's dip when the qubit is in the ground state will therefore be dependent on the state of the qubit (low when the qubit is in the ground state, high when the qubit is in the excited-state). This is the property exploited in a two-tone spectroscopy measurement.
+        The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to a dip being present. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground- and excited-state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. This is measured as an increase in transmission.
 
-          In a two-tone spectroscopy measurement two tones are sent through the feedline.
-          \begin{enumerate}
-            \item A drive tone with varying frequency $\wdrive$.
-            \item A measurement tone at the resonator's frequency when the qubit is in the ground state.
-          \end{enumerate}
+        The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
 
-          The transmission through the feedline is measured while the frequency of the drive tone $\wdrive$ is swept. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to a dip being present. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$, then the qubit will start to oscillate between its ground- and excited-state, with a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. This is measured as an increase in transmission.
+        The dispersive shift $2 \chi$ is also dependent on the amount of detuning $\Delta$ between the qubit and resonator. If the detuning $\Delta$ is large, the dispersive shift will be very small, and so the difference in transmission will also decrease. Since the resonator has a Lorentzian lineshape, at the resonance frequency this Lorentzian is flat, and so is insensitive to small deviations. To increase the contrast between the on-resonant and off-resonant transmission, it is usually advantageous to measure at a slight detuning $\delta$ away from the resonance frequency, where the transmission slope is high. Since the resonator frequency shifts down when the qubit is excited, it is better to have a positive detuning $\delta$ to ensure that the transmission increases as the drive frequence $\wdrive$ approaches the qubit frequency $\wqub$ and decreases as it leaves the qubit frequency.
 
-          The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T^2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening. This effect can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
-
-          The dispersive shift $2 \chi$ is also dependent on the amount of detuning $\Delta$ between the qubit and resonator. If the detuning $\Delta$ is large, the dispersive shift will be very small, and so the difference in transmission will also decrease. Since the resonator has a Lorentzian lineshape, at the resonance frequency this Lorentzian is flat, and so is insensitive to small deviations. To increase the contrast between the on-resonant and off-resonant transmission, it is usually advantageous to measure at a slight detuning $\delta$ away from the resonance frequency, where the transmission slope is high. Since the resonator frequency shifts down when the qubit is excited, it is better to have a positive detuning $\delta$ to ensure that the transmission increases as the drive frequence $\wdrive$ approaches the qubit frequency $\wqub$ and decreases as it leaves the qubit frequency.
-
-          \textbf{TODO:} Spectroscopy section
-          \begin{itemize}
-              \item Is power broadening really due to stimulated emission?
-              \item Explain optimal RF power
-              \item Is the gradual increase really due to partial population? Is it then an average of the partial population? Or do you get other effects as well?
-          \end{itemize}
+        \textbf{TODO:} Spectroscopy section
+        \begin{itemize}
+            \item Is power broadening really due to stimulated emission?
+            \item Explain optimal RF power
+            \item Is the gradual increase really due to partial population? Is it then an average of the partial population? Or do you get other effects as well?
+        \end{itemize}
 
 
         \subsubsection{Avoided crossing}
@@ -502,6 +482,16 @@
           Usually in a Ramsey measurement artificial detunining is added to the pulse, such that if there were no real detuning, one would see around three to four oscillations. There are several reasons for this artificial detuning. One reason is that estimating the detuning using Equation~\ref{eq:Ramsey} is more accurate once there are several oscillations present. Another reason is that if the real detuning is reasonably small compared to the artificial detuning, it is possible to estimate if the qubit's frequency is higher or lower than the drive, as this would result in a higher or lower oscillation frequency.
 
 
+
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Mention flux-noise?
+          \begin{itemize}
+            \item 1/f noise
+            \item usually not limiting, as it is very slow
+            \item This noise can be seen as occasional jumps (every few hours?) It would mean that every few hours the frequency must be recalibrated.
+          \end{itemize}
+        \end{itemize}
 
           \textbf{Questions:}
           \begin{itemize}
