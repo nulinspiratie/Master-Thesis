@@ -1,8 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{koch2007Transmon}
-
-
 \bibitem{barends2008contribution}
 R~Barends, HL~Hortensius, T~Zijlstra, JJA Baselmans, SJC Yates, JR~Gao, and
   TM~Klapwijk.
@@ -53,6 +50,12 @@ Kurtis~L. Geerlings.
 Daniel Gottesman.
 \newblock The heisenberg representation of quantum computers.
 \newblock {\em arXiv preprint quant-ph/9807006}, 1998.
+
+\bibitem{koch2007Transmon}
+Jens Koch, Terri~M. Yu, Jay Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
+  Alexandre Blais, M.~H. Devoret, S.~M. Girvin, and R.~J. Schoelkopf.
+\newblock Charge-insensitive qubit design derived from the cooper pair box.
+\newblock {\em Phys. Rev. A}, 76:042319, Oct 2007.
 
 \bibitem{martinis2014ucsb}
 John~M Martinis and A~Megrant.

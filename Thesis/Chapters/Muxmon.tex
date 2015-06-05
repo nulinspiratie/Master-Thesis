@@ -20,6 +20,7 @@
   \begin{itemize}
     \item Rename DAC voltage to flux, and mention early on that this renaming will be used
     \item flux-bias line or flux bias line?
+    \item second state -> second excited-state
   \end{itemize}
 
 
@@ -137,29 +138,29 @@
 
     \section{Continuous-wave measurements}
 
-      The first step in the characterization of a chip is to look for signs of life, which are the energy levels of the resonators and qubits. These manifest themselves as resonance frequencies of the resonators and of the qubits that are coupled to them. To determine the energy levels we send continuous tones through the feedline, and measure response in the transmission $S_{21}$. These measurements are known as continuous-wave measurements
+      The first step in the characterization of a chip is to look for signs of life, which are the energy levels of the resonators and qubits. These manifest themselves as resonance frequencies of the resonators and of the qubits that are coupled to them. To determine the energy levels we send continuous tones through the feedline, and measure response in the transmission $S_{21}$. These measurements are known as continuous-wave measurements.
 
       \subsection{Scanning for resonators}
         \label{sec:resonator-scan}
-        Since communication with the qubits is mediated through their coupling to resonators, the first step is to find the resonator frequencies. This is done using a transmission measurement, in combination with heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
+        Since communication with the qubits is mediated through their capacitive coupling to resonators, the first step is to find the resonator frequencies. This is done using a transmission measurement of the feedline, in combination with heterodyne detection, and has been explained in section \textbf{TODO:} Create section in Resonator chapter.
 
-        There is one difference in measuring a resonator when there is a qubit coupled to it. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{Reed}:
+        There is one difference in measuring a resonator when there is a qubit coupled to it. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{koch2007Transmon}:
 
         \begin{equation}
           \hat{H} = \hbar \wres\left(\hat{a}^\dagger \hat{a} + \frac{1}{2} \right) + \frac{\hbar \wqub}{2}\hat{\sigma}_z + \hbar g \left(\hat{a}^\dagger \sigma_{-} + \hat{a}\sigma_{+}\right)
           \label{eq:Jaynes-Cummings}
         \end{equation}
 
-        where $\wres$ is the bare resonance frequency of the resonator, $\wqub$ is the resonance frequency of the qubit's ground-to-excited-state transition, and the qubit's two states are in the spin-representation. This Hamiltonian consists of three terms. The first term corresponds to the energy level of the resonator, the second to the energy level of the transmon, and the third is an interaction term between the two with coupling strength $g$.
+        where $\wres$ is the bare resonance frequency of the resonator, $\wqub$ is the resonance frequency of the qubit's ground-to-excited-state transition, and the qubit's two states are in the spin-representation. This Hamiltonian consists of three terms. The first term corresponds to the energy level of the resonator, the second to the energy level of the transmon, and the third is an interaction term between the two with coupling strength $g$. The coupling strength $g$ determines the rate at which the qubit and resonator exchange excitation. If $g$ is larger than the decay rates of both the resonator and qubit, the system is in the strong-coupling regime, and so an excitation can travel multiple times between the resonator and qubit before decaying.
 
-        The difference between the resonator's frequency $\wres$ and the qubit's frequency $\wqub$ is given by the detuning $\Delta = \wqub - \wres$. If the magnitude of the detuning is large compared to the coupling strength $g$, the system is in the dispersive regime. In this case the Hamiltonian can be approximated by the dispersive Jaynes-Cummings Hamiltonian:
+        The difference between the resonator frequency $\wres$ and the qubit frequency $\wqub$ is given by the detuning $\Delta = \wqub - \wres$. If the magnitude of the detuning is large compared to the coupling strength $g$, the system is in the dispersive regime. In this case the Hamiltonian can be approximated by the dispersive Jaynes-Cummings Hamiltonian:
 
         \begin{equation}
           \hat{H} = \frac{\hbar \wqub^{'}}{2} \hat{\sigma}_z +  \left(\hbar \wres^{'} + \hbar \chi \hat{\sigma}_z\right) \hat{a}^\dagger \hat{a}
           \label{eq:dispersive-Jaynes-Cummings}
         \end{equation}
 
-        The coupling between the qubit and resonator causes both qubit's frequency and the resonator's frequency to shift: $\wqub^{'} = \wqub + \chi_{01}$, $\wres^{'}=\wres - \chi_{12}/2$.
+        The coupling between the qubit and resonator causes both the qubit frequency and the resonator frequency to shift: $\wqub^{'} = \wqub + \chi_{01}$, $\wres^{'}=\wres - \chi_{12}/2$, where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_r}$ are the partial dispersive shifts. We see that in this approximation we must not only take into account the lowest two states of the transmon, but also the second excited-state of the transmon. The difference between the first excited-state to second excited-state transition frequency $\omega_{12}$ and the ground-state to first excited-state transition frequency $\omega_{01}$ is given by the anharmonicity $\alpha=\omega_{12} - \omega_{01} \simeq E_C$ \cite{koch2007Transmon}. The anharmonicity $\alpha$ determines the degree in which the transmon behaves as a qubit, without experiences excitations to higher excited-states.
 
         Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited-state. The parameter $\chi$ is the dispersive shift, and is given by:
 
@@ -168,27 +169,22 @@
           \label{eq:dispersive-shift}
         \end{equation}
 
-        where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_r}$ are the partial dispersive shifts.
-
         Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a certain point, this coupling will result in the resonator experiencing nonlinear effects. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
 
-
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.7\textwidth]{../Figures/Qubit characterization/Resonator scans.png}
+          \caption{The three resonators coupled to the top, ancilla, and bottom qubits in ascending frequency.}
+          \label{fig:Three resonators}
+        \end{figure}
 
         \textbf{TODO:}
         \begin{itemize}
-          \item In the strong coupling regime (Leads to hybridization of qubit and resonator states: quton and fobit
-          \item Explain that the quality factor is low because the resonator is coupled strongly to the qubit (equation including coupling to qubit?)
-          \item Doesn't $\chi$ diverge when $\Delta \rightarrow \Ec$?
-          \item explain concept of anharmonicity, and that $\alpha \approx E_c$
           \item Maybe explain concept of number splitting in dispersive Jaynes-Cummings. Number splitting is the phenomenon that the qubit's frequency shifts by an amount $2 \chi$ for every photon in the resonator.\\
                 Alternatively mention this in another section.
           \item Mention that $g_{12}=\sqrt{g}$, and that other coupling strengths are exponentially suppressed in the transmon
         \end{itemize}
 
-        \textbf{Figures:}
-        \begin{itemize}
-          \item Figure of transmission showing all three Muxmon0 resonators
-        \end{itemize}
 
       \subsection{Powersweeping the resonators}
         \label{ssec:powersweep}

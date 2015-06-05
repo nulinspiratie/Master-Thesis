@@ -3,56 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: bibliography.bib
-I was expecting a `,' or a `}'---line 411 of file bibliography.bib
- :   
- :   title = {Charge-insensitive qubit design derived from the Cooper pair box},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in koch2007Transmon
-Warning--empty author in koch2007Transmon
-Warning--empty title in koch2007Transmon
-Warning--empty journal in koch2007Transmon
-Warning--empty year in koch2007Transmon
 Warning--empty journal in plourde2009microwave
 You've used 21 entries,
             2118 wiz_defined-function locations,
-            608 strings with 7271 characters,
-and the built_in function-call counts, 6181 in all, are:
-= -- 567
-> -- 387
+            616 strings with 7563 characters,
+and the built_in function-call counts, 6582 in all, are:
+= -- 603
+> -- 439
 < -- 0
-+ -- 156
-- -- 134
-* -- 455
-:= -- 1142
-add.period$ -- 61
++ -- 176
+- -- 154
+* -- 494
+:= -- 1228
+add.period$ -- 63
 call.type$ -- 21
-change.case$ -- 119
+change.case$ -- 130
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 209
-empty$ -- 400
-format.name$ -- 134
-if$ -- 1193
+cite$ -- 22
+duplicate$ -- 210
+empty$ -- 407
+format.name$ -- 154
+if$ -- 1266
 int.to.chr$ -- 0
 int.to.str$ -- 21
 missing$ -- 15
-newline$ -- 106
-num.names$ -- 40
-pop$ -- 126
+newline$ -- 108
+num.names$ -- 42
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 118
 quote$ -- 0
 skip$ -- 138
 stack$ -- 0
-substring$ -- 230
-swap$ -- 18
+substring$ -- 248
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 80
-warning$ -- 6
-while$ -- 47
+warning$ -- 1
+while$ -- 50
 width$ -- 23
-write$ -- 217
-(There was 1 error message)
+write$ -- 224
+(There was 1 warning)
