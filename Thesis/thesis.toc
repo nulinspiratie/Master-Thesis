@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {6.1.3}Scan for qubit sweet-spots}{34}
 \contentsline {subsection}{\numberline {6.1.4}Qubit spectroscopy}{35}
 \contentsline {subsection}{\numberline {6.1.5}Tracking the qubits}{37}
-\contentsline {subsection}{\numberline {6.1.6}Finding the qubit's second transition}{38}
+\contentsline {subsection}{\numberline {6.1.6}Finding the qubit's second transition}{37}
 \contentsline {subsection}{\numberline {6.1.7}Flux matrix}{39}
 \contentsline {section}{\numberline {6.2}Time-domain measurements}{42}
 \contentsline {subsection}{\numberline {6.2.1}Qubit control}{42}
