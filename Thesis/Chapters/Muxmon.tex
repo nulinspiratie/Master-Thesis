@@ -169,7 +169,7 @@
           \label{eq:dispersive-shift}
         \end{equation}
 
-        Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a certain point, this coupling will result in the resonator experiencing nonlinear effects. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
+        Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a critical photon number, this coupling will result in the resonator experiencing nonlinear effects. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
 
         \begin{figure}[tb]
           \centering
@@ -178,13 +178,7 @@
           \label{fig:Three resonators}
         \end{figure}
 
-        \textbf{TODO:}
-        \begin{itemize}
-          \item Maybe explain concept of number splitting in dispersive Jaynes-Cummings. Number splitting is the phenomenon that the qubit's frequency shifts by an amount $2 \chi$ for every photon in the resonator.\\
-                Alternatively mention this in another section.
-          \item Mention that $g_{12}=\sqrt{g}$, and that other coupling strengths are exponentially suppressed in the transmon
-        \end{itemize}
-
+        In Figure~\ref{fig:Three resonators} the three resonators belonging to the top, ancilla, and bottom qubit are shown, with resonator frequencies \SI{6.700}{\giga \hertz}, \SI{6.733}{\giga \hertz}, and \SI{6.800}{\giga \hertz} respectively.
 
       \subsection{Powersweeping the resonators}
         \label{ssec:powersweep}
@@ -199,30 +193,13 @@
           \label{fig:powersweep}
         \end{wrapfigure}
 
-        % \begin{figure}[tb]
-        %   \centering
-        %   \includegraphics[width=0.6\textwidth]{../Figures/Qubit characterization/Powersweep.png}
-        %   \caption{A powersweep of the resonator coupled to the ancilla qubit. The dispersive shift found is equal to $\chi\approx$\SI{30}{\mega \hertz}}
-        %   \label{fig:powersweep}
-        % \end{figure}
+        Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. First some initial measurements are performed aimed at gaining information about our resonator and qubit, which will allow us to search for the qubit frequencies with more focus.
 
-        Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. Instead of directly scanning the entire frequency spectrum in search of the qubit, it is relatively straightforward to perform some initial measurements aimed at gaining information about our resonator and qubit, which will allow us to search for our qubit with much greater accuracy.
-
-        As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. If this frequency shift is observed, it indicates that the resonator's frequency was shifted, and hence that the qubit is alive. Measuring this frequency shift is commonly done in a powersweep. A powersweep is a measurement in which a resonator scan is performed for a range of powers.
+        As explained previously, the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. For more information see Reed's thesis~\cite{Reed}. Observing this frequency shift reveals that a qubit is coupled to the resonator. This frequency shift is commonly measured in a powersweep, where a resonator scan is performed for a range of powers.
 
         A powersweep additionally provides information about at what power the resonator enters the nonlinear regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, the amount of detuning between the qubit and the resonator can be estimated using Equation~\ref{eq:dispersive-shift}.
 
-        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned. At this point it is too early to draw conclusions, and we may almost draw the analogy with Schr\"odinger's cat in a box.
-
-        \textbf{TODO:}
-        \begin{itemize}
-          \item Explain theory behind transition to bare cavity frequency (Reed's thesis has some information)
-        \end{itemize}
-
-        \textbf{Figures:}
-        \begin{itemize}
-          \item Powersweep of ancilla qubit
-        \end{itemize}
+        If no shift is observed, it could mean that the qubit is dead (e.g. because the Josephson junction is shorted). However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned.
 
       \subsection{Scan for qubit sweet-spots}
 
