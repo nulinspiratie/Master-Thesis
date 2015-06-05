@@ -207,58 +207,45 @@
         If no shift is observed, it could mean that the qubit is dead, due to an open or shorted Josephson junction. However, this is not necessarily the case. An alternative possibility is that the detuning between qubit and resonator is very large, and as a result the frequency shift cannot be discerned.
 
       \subsection{Scan for qubit sweet-spots}
-
-        \begin{figure}[tb]
-          \centering
-          \includegraphics[width=.6\linewidth]{../Figures/Qubit characterization/Resonator vs DAC linecut.png}
-          \caption{Fixed frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet-spot of the ancilla qubit.}
-          \label{fig:figure1}
-        \end{figure}
-
+        \label{Scan for qubit sweet-spots}
         All qubits in the Muxmon device have a tunable resonance frequency. This is achieved by replacing the Josephson junction with a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. If the two Josephson junctions in a SQUID loop have the same Josephson energy $E_J=E_{J1}=E_{J2}$, this results in an effective Josephson energy~\cite[pp.54-56]{Reed}:
 
         \begin{equation}
-          E_J^\text{eff}=2E_J*\cos{\left( \frac{\Phi}{\Phi_0} \right)}
+          E_J^\text{eff}=2E_J*\cos{\left( \pi \frac{\Phi}{\Phi_0} \right)}
           \label{eq:Josephson energy}
         \end{equation}
 
         where $\Phi_0=h/2e$ is the magnetic flux quantum and $\Phi$ is the flux passing through the SQUID loop.
 
-        The effective Josephson energy $E_J^\text{eff}$ of a SQUID loop can therefore be controlled by changing the flux through the SQUID loop. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, thereby changing the amount of flux through the SQUID loop. A fixed current from a digital-to-analog (DAC) converter is used to set the flux through the SQUID loop, thereby changing the effective Josephson energy $E_J^\text{eff}$. According to Equation~\ref{eq:transmon frequency} the qubit frequency depends on the Josephson energy, and so changing the magnetic flux through the SQUID loop changes the qubit frequency. Qubits having a SQUID loop are therefore called flux-tunable.
 
-        For flux-tunable qubits, finding the sweet-spot of the qubit can be done without knowledge of the qubit's frequency. This can be done by sweeping the DAC voltage and measuring the shift in the resonance frequency. Because the frequency of the qubit varies as the amount of current through the flux-bias line changes, the detuning between the qubit and the resonator consequently changes. As a result the dispersive shift $\chi$, and therefore the resonator's frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
+        As can be seen in Equation~\ref{eq:Josephson energy}, the effective Josephson energy $E_J^\text{eff}$ of a SQUID loop can be controlled by the flux through the SQUID loop. This is commonly done by having a flux bias line in close proximity to the SQUID loop. Current flowing through the flux-bias line alters the magnetic field in the vicinity of the SQUID loop, thereby changing the amount of flux through the SQUID loop. A fixed current from a digital-to-analog (DAC) converter is used to set the flux through the SQUID loop, thereby changing the effective Josephson energy $E_J^\text{eff}$. According to Equation~\ref{eq:transmon frequency} the qubit frequency depends on the Josephson energy, and so changing the magnetic flux through the SQUID loop changes the qubit frequency. Qubits having a SQUID loop are therefore called flux-tunable. Since the effective Josephson energy $E_J^\text{eff}$ has a cosine-dependence on the flux, the qubit frequency is periodic with respect to the flux. It- has a maximum when $\Phi$ is a multiple of $\Phi_0$, in which case the qubit is said to be at its sweet-spot.
 
-        The accurate way to measure the sweet-spot is to perform resonator scans as the DAC voltage is varied. The result is a 2D scan shown in \textbf{TODO:} Figure.
+        \begin{wrapfigure}[14]{r}{0.45\textwidth}
+          \begin{center}
+          \vspace{-30pt}
+            \includegraphics[width=\textwidth]{../Figures/Muxmon SQUID loop w annotation.png}
+          \end{center}
+          \vspace{-20 pt}
+          \caption{A SQUID loop (1) in close proximity to a flux-bias line (2).}
+          \label{fig:SQUID loop}
+        \end{wrapfigure}
+        For flux-tunable qubits, flux corresponding to the sweet-spot of the qubit can be found without knowledge of the qubit frequency. This can be done by sweeping the DAC current and measuring the shift in the resonator frequency. Because the qubit frequency varies as the current through the flux-bias line changes, the detuning between the qubit and the resonator changes. As a result the dispersive shift $\chi$, and therefore the resonator frequency, also varies. At the sweet-spot of the qubit, the resonator's frequency $\wres$ is at a maximum. This is irrespective of whether the qubit's frequency $\wqub$ is above or below the resonator's frequency.
 
-        A faster second approach for finding the qubit sweet-spot, at the cost of providing less information, is by choosing a fixed frequency close to the resonator's frequency $\wres$ (preferrably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of \textbf{TODO:} Figure. The idea this measurement is that if the qubit's frequency $\fqub$ decreases, the resonator's frequency also decreases, resulting in a decrease in transmission (closer to $\wres$). Likewise, if the qubit's frequency $\wqub$ increases, the resonator's frequency increases \textbf{TODO:} Why?, resulting in an increase in transmission (further away from $\wres$).
+        Finding the sweet-spot can be done by performing a series of resonator scans as the DAC voltage is varied. The result of such a 2D scan shown in Figure~\ref{fig:tracked spectroscopy}. There is an alternative, faster measurement which can be performed, and is explained in Appendix~\ref
 
-        At the qubit's sweet-spot, the resonator's frequency $\wres$ is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the amount of detuning only depends on the deviation from the flux sweet-spot \textbf{TODO:} improve, the transmission should be symmetric with respect to the DAC voltage sweet-spot. If the resonator's frequency $\wres$ shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases it works like a charm.
+
 
         In the case where the powersweep showed no measurable frequency shift, these two measurements are also useful in discerning whether or not the qubit is actually dead, or whether it was simply far detuned from the resonator.
 
 
         \textbf{TODO:}
         \begin{itemize}
-          \item Explain how qubit's frequency has a cosine dependence on DAC
-          \item Give detailed information on SQUID loop
-          \begin{itemize}
-            \item Why does the qubit frequency change in a SQUID loop
-            \item Sweet-spot
-          \end{itemize}
-          \item Cosine potential
           \item Mention flux-noise?
           \begin{itemize}
             \item 1/f noise
             \item usually not limiting, as it is very slow
             \item This noise can be seen as occasional jumps (every few hours?) It would mean that every few hours the frequency must be recalibrated.
           \end{itemize}
-        \end{itemize}
-
-        \textbf{Figures:}
-        \begin{itemize}
-          \item SEM picture of SQUID loop, including flux-bias line
-          \item Figure of 2D resonator scan vs DAC voltage
-          \item Figure of 1D resonator fixed frequency DAC voltage scan
         \end{itemize}
 
       \subsection{Scanning for qubits}

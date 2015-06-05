@@ -19,6 +19,22 @@
         \begin{itemize}
           \item If the resonator seems to disappear after the transition from dressed frequency to bare frequency (or vice versa), this is likely due to the qubit being extremely close to the resonator, and so the frequency shift is large.
         \end{itemize}
+      \subsection{Finding the qubit sweet-spot using a one-dimensional scan}
+        \label{Finding the qubit sweet-spot using a one-dimensional scan}
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.6\linewidth]{../Figures/Qubit characterization/Resonator vs DAC linecut.png}
+          \caption{Fixed frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet-spot of the ancilla qubit.}
+          \label{fig:resonator vs dac linecut}
+        \end{figure}
+
+        As explained in Section~\ref{Scan for qubit sweet-spots}, the sweet-spot of a qubit can be found by performing a series of resonator scans while varying the DAC current. There is however, a faster approach for finding the qubit sweet-spot, at the cost of providing less information. This is done by choosing a fixed frequency close to the resonator's frequency $\wres$ (preferrably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of the 2D scan. The idea this measurement is that if the qubit frequency $\fqub$ decreases, so does resonator frequency, resulting in a decrease in transmission (closer to $\wres$). Likewise, if the qubit frequency $\wqub$ increases, so does the resonator frequency, resulting in an increase in transmission (further away from $\wres$).
+
+        At the qubit's sweet-spot, the resonator's frequency $\wres$ is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the qubit frequency is symmetric with respect to its sweet-spot, so should the transmission. The sweet-spot can therefore be determined by finding the symmetric point in the transmission. In Figure~\ref{fig:resonator vs dac linecut} one such linecut is shown. The transmission is clearly symmetric, and the symmetric point is equal to the qubit sweet-spot.
+
+        If the resonator's frequency $\wres$ shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases does provide sufficient information to determine the sweet-spot.
+
+
       \subsubsection{Spectroscopy}
         \begin{itemize}
           \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
