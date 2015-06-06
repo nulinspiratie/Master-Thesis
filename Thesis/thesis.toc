@@ -47,13 +47,14 @@
 \contentsline {subsection}{\numberline {6.3.1}Cross-coupling}{47}
 \contentsline {subsection}{\numberline {6.3.2}Cross-driving}{49}
 \contentsline {chapter}{\numberline {7}Calibration routines}{51}
-\contentsline {section}{\numberline {7.1}Accurate frequency estimation}{51}
-\contentsline {section}{\numberline {7.2}Accurate drive amplitude calibration}{52}
-\contentsline {section}{\numberline {7.3}DRAG parameter calibration}{52}
-\contentsline {section}{\numberline {7.4}IQ mixer calibration}{52}
-\contentsline {section}{\numberline {7.5}Duplexer phase calibration}{54}
-\contentsline {section}{\numberline {7.6}Readout calibration}{54}
-\contentsline {section}{\numberline {7.7}AllXY}{54}
+\contentsline {section}{\numberline {7.1}Qubit calibrations}{51}
+\contentsline {subsection}{\numberline {7.1.1}Accurate frequency estimation}{51}
+\contentsline {subsection}{\numberline {7.1.2}Accurate drive amplitude calibration}{52}
+\contentsline {subsection}{\numberline {7.1.3}DRAG parameter calibration}{52}
+\contentsline {subsection}{\numberline {7.1.4}AllXY}{52}
+\contentsline {section}{\numberline {7.2}Instrument calibrations}{55}
+\contentsline {subsection}{\numberline {7.2.1}IQ mixer calibration}{55}
+\contentsline {subsection}{\numberline {7.2.2}Duplexer phase calibration}{55}
 \contentsline {chapter}{\numberline {8}Randomized benchmarking}{57}
 \contentsline {section}{\numberline {8.1}Introduction}{57}
 \contentsline {section}{\numberline {8.2}Clifford group}{58}

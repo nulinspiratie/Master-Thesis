@@ -567,7 +567,7 @@
         \label{tab:Muxmon0 qubit properties}
       \end{table}
 
-      The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}.
+      The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}).
 
       To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the decoherence times of the three qubits are shown in Figure~\ref{fig:decoherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than of the ancilla and bottom qubit. The reason is that the top qubit is tuned away from its sweet-spot to match the frequency of the bottom qubit. As a result its frequency response to flux is higher, and so it is more susceptible to flux noise.
 
@@ -666,110 +666,108 @@
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
     \textbf{TODO:} Introduction
-    \section{Accurate frequency estimation}
-      \label{sec:Accurate frequency estimation}
-      Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. As explained in Section~\ref{sssec:Ramsey}, this detuning is measured in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
 
-      A Ramsey measurement provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Therefore tiny differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$. This is because the dephasing time $T_2^*$ corresponds to the fluctuation in the qubit frequency.
+    \section{Qubit calibrations}
+      \label{Qubit calibrations}
 
-      The main goal of the Muxmon experiment is to measure the performance of space-division multiplexing using the Duplexer. One requirement for space-division multiplexing is that the top and bottom qubit are at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, since only a single frequency will be used, any detuning will lead to a decrease in qubit performance. To this end the top qubit has been detuned from its sweet-spot, to match the bottom qubit, while both the bottom and ancilla qubit are kept at their respective sweet-spots. This process is greatly simplified through use of a flux matrix, as described in section~\ref{ssec:Flux matrix}. Initial top qubit frequency tuning was done using spectroscopy, which is a much faster measurement. After the initial frequency tuning, accurate frequency tuning was performed using Ramsey measurements. First the bottom qubit frequency $\omega_q^B$ was determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. This process has been fully automatized. Using this method the inidividual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The reason the frequencies could not be tuned more accurately is due to the IVVI having a finite DAC voltage stepsize.
+      \subsection{Accurate frequency estimation}
+        \label{ssec:Accurate frequency estimation}
+        Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to about \SI{1}{\mega \hertz}. As explained in Section~\ref{sssec:Ramsey}, any difference between a drive frequency $\omega_d$ and qubit frequency $\omega_q$ will result in the qubit precessing around the Z-axis.
 
-      \textbf{Questions:}
-      \begin{itemize}
-        \item What is the resolution of the IVVI? To what qubit frequency difference does this correspond for the top qubit?
-      \end{itemize}
+        In a Ramsey measurement this precession can be measured, from which the qubit frequency can be inferred. This provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Small differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$, because it corresponds to the inherent fluctuation in the qubit frequency.
 
-    \section{Accurate drive amplitude calibration}
-      \label{sec:PiX360}
-      To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
+        The main goal of the Muxmon experiment is to determine the performance of selective broadcasting combined with frequency re-use, which requires the top and bottom qubit to be at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, any frequency detuning from the drive frequency $\omega_d$ will lead to a decrease in qubit performance. The top qubit frequency was initially tuned using spectroscopy. Accurate frequency tuning was then performed using Ramsey measurements. The bottom qubit frequency $\omega_q^B$ was first determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. Using Ramsey measurements the inidividual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The limit to tuning the frequencies was not determined by the Ramsey measurement accuracy, but due to the IVVI having a finite DAC voltage stepsize.
 
-      In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
+      \subsection{Accurate drive amplitude calibration}
+        \label{ssec:PiX360}
+        To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
 
-      % The $X_{\pi/2}$ pulse at the start of the sequence provides two benefits. The first is that any slope is clearly visible, since the final state is projected onto the Z-axis. Secondly, relaxation effects are to a certain extent
-      % \begin{itemize}
-      %   \item Accurate drive amplitude calibration using PiX360
-      %   \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
-      %   \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
-      %   \item PiX180 however can be performed at larger detuning, due to slower oscillations
-      %   \item Much better accuracy than Rabi
-      %   \item Pi/2 pulse at start of sequence instead of at end
-      %   \item If at end, T2 effects are less
-      %   \item If at start, T1 effects are less
-      %   \item Additional performance increase could be achieved by individually calibrating other pulses
-      % \end{itemize}
+        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
 
-      \textbf{Figures:}
-      \begin{itemize}
-        \item PiX360 with positive, normal, negative slope
-      \end{itemize}
+        % The $X_{\pi/2}$ pulse at the start of the sequence provides two benefits. The first is that any slope is clearly visible, since the final state is projected onto the Z-axis. Secondly, relaxation effects are to a certain extent
+        % \begin{itemize}
+        %   \item Accurate drive amplitude calibration using PiX360
+        %   \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
+        %   \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
+        %   \item PiX180 however can be performed at larger detuning, due to slower oscillations
+        %   \item Much better accuracy than Rabi
+        %   \item Pi/2 pulse at start of sequence instead of at end
+        %   \item If at end, T2 effects are less
+        %   \item If at start, T1 effects are less
+        %   \item Additional performance increase could be achieved by individually calibrating other pulses
+        % \end{itemize}
 
-    \section{DRAG parameter calibration}
-      \label{DRAG parameter calibration}
-      The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, while the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
+        \textbf{Figures:}
+        \begin{itemize}
+          \item PiX360 with positive, normal, negative slope
+        \end{itemize}
 
-      \textbf{Questions:}
-      \begin{itemize}
-        \item Why does this produce errors in opposite direction?
-      \end{itemize}
+      \subsection{DRAG parameter calibration}
+        \label{ssec:DRAG parameter calibration}
+        The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, while the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
 
-    \section{IQ mixer calibration}
-      \label{sec:Mixer calibration}
+        \textbf{Questions:}
+        \begin{itemize}
+          \item Why does this produce errors in opposite direction?
+        \end{itemize}
 
-      \begin{figure}[tb]
+      \subsection{AllXY}
+        \label{ssec:AllXY}
+          There is a good measurement to test how well the qubit has been tuned, namely the AlllXY measurement. This measurement consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App~\ref{ssec:AllXY}.
+
+          The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
+
+        The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
+
+        \begin{figure}
         \centering
-        \begin{subfigure}[h]{0.49\textwidth}
-          \caption{}
-          \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
+           \begin{subfigure}[b]{\textwidth}
+           \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drive_top.png}
+           \caption{}
+           \label{fig:AllXY drive top}
         \end{subfigure}
-        \begin{subfigure}[h]{0.49\textwidth}
-          \caption{}
-          \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer skewness.png}
+
+        \begin{subfigure}[b]{\textwidth}
+           \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drag_top.png}
+           \caption{}
+           \label{fig:AllXY DRAG top}
         \end{subfigure}
-        \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
-        \label{fig:Mixer calibrations 2D}
-      \end{figure}
 
-      An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
+        \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
+        \label{fig:AllXY individual control}
+        \end{figure}
 
-      For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
+    \section{Instrument calibrations}
+      \label{Instrument calibrations}
 
-      Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
+      \subsection{IQ mixer calibration}
+        \label{ssec:Mixer calibration}
 
-    \section{Duplexer phase calibration}
-      \label{sec:Duplexer phase calibration}
-      The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
+        \begin{figure}[tb]
+          \centering
+          \begin{subfigure}[h]{0.49\textwidth}
+            \caption{}
+            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
+          \end{subfigure}
+          \begin{subfigure}[h]{0.49\textwidth}
+            \caption{}
+            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer skewness.png}
+          \end{subfigure}
+          \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
+          \label{fig:Mixer calibrations 2D}
+        \end{figure}
 
-      Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
+        An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
 
-    \section{Readout calibration}
-      \label{sec:Readout calibration}
-      Should I include this?
+        For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
 
-    \section{AllXY}
-      \label{sec:AllXY}
-        There is a good measurement to test how well the qubit has been tuned, namely the AlllXY measurement. This measurement consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App~\ref{ssec:AllXY}.
+        Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
 
-        The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
+      \subsection{Duplexer phase calibration}
+        \label{ssec:Duplexer phase calibration}
+        The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
 
-      The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
-
-      \begin{figure}
-      \centering
-         \begin{subfigure}[b]{\textwidth}
-         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drive_top.png}
-         \caption{}
-         \label{fig:AllXY drive top}
-      \end{subfigure}
-
-      \begin{subfigure}[b]{\textwidth}
-         \includegraphics[width=1\linewidth]{../Figures/Exploring frequency re-use/AllXY_drag_top.png}
-         \caption{}
-         \label{fig:AllXY DRAG top}
-      \end{subfigure}
-
-      \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
-      \label{fig:AllXY individual control}
-      \end{figure}
+        Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
 
 
   \chapter{Randomized benchmarking}
