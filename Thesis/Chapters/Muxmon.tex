@@ -50,7 +50,7 @@
         \vspace{-20pt}
       \end{wrapfigure}
 
-      Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
+      Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Figure~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the decoherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
 
       If the qubits are not connected to the same drive line, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture. One possible implementation of frequency re-use in the surface code is shown in Figure~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
 
@@ -108,7 +108,7 @@
 
       The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
 
-      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 coherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
+      During initial characterization of the qubits on both chips it was found that the decoherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 decoherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower decoherence times are simply due to some error in the chip fabrication process. Due to the lower decoherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
 
       \begin{figure}[tb]
         \centering
@@ -137,9 +137,9 @@
       \label{eq:transmon frequency}
     \end{equation}
 
-    The performance of a qubit is determined by its ability to retain information, which are quantified by its coherence times. The more isolated a qubit is from its environment, the less decay channels it will have, and the longer its coherence times will be. On the other hand it is also necessary to interact with the qubit. In a cQED chip a signal is sent through a feedline. Directly connecting a qubit to this feedline would result in a strong decay channel. The connection between a transmon and the feedline is therefore mediated by a capacitive coupling to a resonator, in this case a coplanar waveguide (see Part I). The resonator acts as a filter, thereby limiting the decay channel. Nevertheless due to the Purcell effect the resonator is still a decay channel for the qubit, the rate of which depends on the quality factor of the resonator.
+    The performance of a qubit is determined by its ability to retain information, which are quantified by its decoherence times. The more isolated a qubit is from its environment, the less decay channels it will have, and the longer its decoherence times will be. On the other hand it is also necessary to interact with the qubit. In a cQED chip a signal is sent through a feedline. Directly connecting a qubit to this feedline would result in a strong decay channel. The connection between a transmon and the feedline is therefore mediated by a capacitive coupling to a resonator, in this case a coplanar waveguide (see Part I). The resonator acts as a filter, thereby limiting the decay channel. Nevertheless due to the Purcell effect the resonator is still a decay channel for the qubit, the rate of which depends on the quality factor of the resonator.
 
-    This chapter describes the measurements performed to characterize the Muxmon chip. The first section describes continuous-wave measurements, which are measurements used to find properties such as the energy levels of the resonators and qubits. The second section describes time-domain measurements, which are used to characterize specific properties of the qubits, such as their coherence times.
+    This chapter describes the measurements performed to characterize the Muxmon chip. The first section describes continuous-wave measurements, which are measurements used to find properties such as the energy levels of the resonators and qubits. The second section describes time-domain measurements, which are used to characterize specific properties of the qubits, such as their decoherence times.
 
     \section{Continuous-wave measurements}
 
@@ -398,7 +398,7 @@
     \section{Time-domain measurements}
       \subsection{Qubit control}
         \label{ssec:qubit control}
-        The measurements described so far are able to determine the energy levels of the qubits and resonators using continuous tones. However, for qubit properties such as their coherence times, time-domain measurements are required. Here well-calibrated pulses accurately control the state of the qubit, and correspond to gates being applied to the qubit.
+        The measurements described so far are able to determine the energy levels of the qubits and resonators using continuous tones. However, for qubit properties such as their decoherence times, time-domain measurements are required. Here well-calibrated pulses accurately control the state of the qubit, and correspond to gates being applied to the qubit.
 
         A simple time-domain measurement usually consists of two parts: qubit control, and qubit readout. During qubit control precisely timed pulses modify the state of the qubit. During qubit readout a readout tone is applied in a manner similar to spectroscopy. The state of the qubit can be inferred from the response in transmission. More complicated measurements involve feedback, where additional qubit control can be applied depending on the measurement outcome. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
 
@@ -418,7 +418,7 @@
 
         The carrier signal is sent through the LO port of the mixer, where it is modulated by the AWG. In the Muxmon experiment IQ-modulation is used, and so two AWG channels are used to independently modulate the in-phase and quadrature components of the signal in an IQ-mixer. This allows for single sideband modulation, which shifts the frequency of the signal. Single sideband modulation has the advantage that the carrier frequency $\omega_c$ is shifted away from mixer leakage. For more information on mixer leakage, see section~\ref{sec:Mixer calibration}. A schematic representation of a Gaussian pulse with single sideband modulation is shown in Figure~\ref{fig:gaussian and DRAG pulses}.
 
-        An important consideration is the duration of a pulse, also known as the pulse length. Shorter pulses allow for more qubit operations within its coherence time. However, the pulse length is inversely proportional to its frequency bandwidth. If the frequency bandwidth is too broad, there will be a nonnegligible signal at the qubit's excited-state to second excited-state transtion frequency. This will cause leakage to the second excited-state, thereby leaving the two-state Hilbert space. It is therefore desirable to have a bandwidth, which is the inverse of the width $\sigma$ of the Gaussian pulse, that is small compared to the anharmonicity of the qubit.
+        An important consideration is the duration of a pulse, also known as the pulse length. Shorter pulses allow for more qubit operations within its decoherence time. However, the pulse length is inversely proportional to its frequency bandwidth. If the frequency bandwidth is too broad, there will be a nonnegligible signal at the qubit's excited-state to second excited-state transtion frequency. This will cause leakage to the second excited-state, thereby leaving the two-state Hilbert space. It is therefore desirable to have a bandwidth, which is the inverse of the width $\sigma$ of the Gaussian pulse, that is small compared to the anharmonicity of the qubit.
 
         Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. Rotating the qubit by a specific angle can be achieved by either varying the pulse duration or the pulse amplitude. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, while the pulse duration is kept fixed.
 
@@ -454,7 +454,7 @@
 
         \subsubsection{Qubit relaxation: $T_1$}
 
-          \begin{wrapfigure}[8]{r}{0.3\textwidth}
+          \begin{wrapfigure}[9]{r}{0.3\textwidth}
             \begin{center}
             \vspace{-30pt}
               \includegraphics[width=\textwidth]{../Figures/Qubit characterization/T1 decoherence.png}
@@ -489,41 +489,14 @@
 
           Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Figure~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
-          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. At the moment we ignore effects such as decoherence and gate errors. The first pulse results in the qubit being at the equator. If there were no precession, the result of the second pulse is that the qubit is in its excited-state. However, any detuning $\Delta$ causes the state of the qubit to deviate from the excited-state. In fact, after half a period the second pulse results in the qubit being in its ground-state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will result yet again in the qubit being in its excited-state.
-
-          In a Ramsey measurement the final state of the qubit is measured as the wait time $\tau$ between the two pulses is monotonically increased. The result should exhibit an oscillatory behaviour, the frequency of which being equal to the Rabi rate $\Omega_R$. Furthermore, dephasing causes this oscillation to decay exponentially, at a rate $1/T_2^*$. The excited-state population $P_1$ as a function of wait time is given by:
+          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Section~\ref{sec:Accurate frequency estimation}). The excited-state population $P_1$ as a function of wait time is given by:
 
           \begin{equation}
             P_1(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
             \label{eq:Ramsey}
           \end{equation}
 
-          Usually in a Ramsey measurement artificial detunining is added to the pulse, such that if there were no real detuning, one would see around three to four oscillations. There are several reasons for this artificial detuning. One reason is that estimating the detuning using Equation~\ref{eq:Ramsey} is more accurate once there are several oscillations present. Another reason is that if the real detuning is reasonably small compared to the artificial detuning, it is possible to estimate if the qubit's frequency is higher or lower than the drive, as this would result in a higher or lower oscillation frequency.
-
-
-
-        \textbf{TODO:}
-        \begin{itemize}
-          \item Mention flux-noise?
-          \begin{itemize}
-            \item 1/f noise
-            \item usually not limiting, as it is very slow
-            \item This noise can be seen as occasional jumps (every few hours?) It would mean that every few hours the frequency must be recalibrated.
-          \end{itemize}
-        \end{itemize}
-
-          \textbf{Questions:}
-          \begin{itemize}
-            \item Where does exponential noise and Gaussian noise come from? As I understand it Gaussian noise is due to flux
-            \item Is $T_1$ not noticeable in a Ramsey measurement?
-            \item Why is maximally $T_2^*=2T_1$?
-          \end{itemize}
-
-          \textbf{Figures:}
-          \begin{itemize}
-            \item Ramsey measurement
-            \item $T_2^*$ vs. frequency?
-          \end{itemize}
+          In Figure~\ref{fig:decoherence times Muxmon0} the dephasing times $T_2^*$ of the three qubits in the Muxmon device can be seen. One important observation is that the dephasing time $T_2^*$ of the top qubit is considerably lower than the other two qubits. The reason is that the top qubit is tuned away from its sweet-spot to match the frequency of the bottom qubit. As a result its frequency response to flux is higher, and so it is more susceptible to flux noise.
 
         \subsubsection{Fast frequency qubit dephasing: Echo}
 
@@ -537,18 +510,11 @@
             \label{fig:T2echo schematic}
           \end{wrapfigure}
 
-          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
+          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement, and its schematic is shown in Figure~\ref{fig:T2echo schematic}.
 
-          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. This has the effect that the state of the qubit is essentially flipped on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
+          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
 
-          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled. This inhibits the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, such that the result is an oscillation in qubit state.
-
-          There are more complicated Echo sequences, involving multiple refocusing pulses. By placing these at specific times the different frequency contributions of the phase noise can be characterized. Furthermore, by repeatedly applying a refocusing pulse, the state of the qubit can be preserved much longer than the limit imposed by $T_2^*$.
-
-
-          \begin{itemize}
-            \item $T_2^E$ Should be larger than $T_2^*$
-          \end{itemize}
+          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation.
 
           \textbf{Figures:}
           \begin{itemize}
@@ -560,10 +526,136 @@
       \subsection{Second excited-state}
         \label{ssec:Second excited-state}
 
+    \section{Properties of the Muxmon0 chip}
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/coherence_times.png}
+        \caption{Decoherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}).}
+        \label{fig:decoherence times Muxmon0}
+      \end{figure}
+
+      \begin{table}
+        \begin{tabular}{l c c c}
+          \toprule
+          Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
+          \midrule
+          Top    & 6.277                & 6.700                & ?\\
+          Ancilla& 6.551                & 6.733                & ? \\
+          Bottom & 6.220                & 6.800                & ? \\
+          \bottomrule
+        \end{tabular}
+        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
+        \label{tab:Muxmon0 qubit properties}
+      \end{table}
+      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger than the coupling strength for all qubits. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}. These buses can be used for multi-qubit operations, such as excitation swapping.
+
+      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the decoherence times of the three qubits are shown in Figure~\ref{fig:decoherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
+
+      \textbf{TODO:}
+      \begin{itemize}
+        \item explain top ancilla and bottom qubit
+        \item find coupling strengths
+        \item  The fit to $T_2^*$ of the top qubit has been performed using a Gaussian noise model.
+      \end{itemize}
+
+
+
+    \section{Cross-coupling}
+      \label{sec:cross-coupling}
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
+        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
+        \label{fig:excitation swap}
+      \end{figure}
+
+      The top qubit is coupled to the botom qubit via the following three successive components:
+
+      \begin{enumerate}
+        \item The resonator bus coupling the top qubit to the ancilla qubit.
+        \item The ancilla qubit.
+        \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
+      \end{enumerate}
+
+      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
+
+    \section{Cross-driving}
+      \label{sec:cross-driving}
+
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=.8\textwidth]{../Figures/Exploring frequency re-use/cross-driving_setup.jpg}
+        \caption{Schematic for measuring the amount of cross-driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a range range of drive strengths.}
+        \label{fig:cross-driving schematic}
+      \end{figure}
+
+      {\centering
+        \begin{minipage}{0.65\textwidth}
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+          \captionof{figure}{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+          \label{fig:cross-driving Rabi}
+        \end{minipage}
+        \begin{minipage}{0.35\textwidth}
+          \centering
+          \begin{tabular}{l c}
+            \toprule
+            qubit & cross-driving (\%) \\
+            \midrule
+            Top & $-$ \\
+            Ancilla &$ 0.79$ \\
+            Bottom & $0.57$ \\
+            \bottomrule
+          \label{tab:cross-driving top}
+          \end{tabular}
+          \captionof{table}{Driving through top qubit drive line}
+          \vspace{2cm}
+          \begin{tabular}{l c}
+            \toprule
+            qubit & cross-driving (\%) \\
+            \midrule
+            Top & $0.23$ \\
+            Ancilla &$ 0.66$ \\
+            Bottom & $-$ \\
+            \bottomrule
+          \end{tabular}
+          \captionof{table}{Driving through bottom qubit drive line}
+          \label{tab:cross-driving bottom}
+        \end{minipage}
+      \vspace{1cm}
+      }
+
+      When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits. Cross-driving effects affect the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are in resonance, as is the case with the Muxmon experiment.
+
+      The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Tables~\ref{tab:cross-driving top} and ~\ref{tab:cross-driving bottom}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
+
+      \begin{wrapfigure}[12]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+        \end{center}
+        \vspace{-20 pt}
+        \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
+        \label{fig:cross-driving versus top frequency}
+      \end{wrapfigure}
+
+      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
+
+
+    \textbf{Figures that need to be included:}
+    \begin{itemize}
+      \item schematic of cross-coupling and readout cross-talk \\
+          It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
+    \end{itemize}
+
+
+
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
     \textbf{TODO:} Introduction
     \section{Accurate frequency estimation}
+      \label{sec:Accurate frequency estimation}
       Spectroscopy provides an estimate for the frequency of the qubit. However, even with pulsed spectroscopy, the accuracy is limited to roughly a megahertz. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess around the Z-axis with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. As explained in Section~\ref{sssec:Ramsey}, this detuning is measured in a Ramsey measurement, where the qubit frequency can be inferred from the precession rate.
 
       A Ramsey measurement provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Therefore tiny differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$. This is because the dephasing time $T_2^*$ corresponds to the fluctuation in the qubit frequency.
@@ -665,144 +757,6 @@
       \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
       \label{fig:AllXY individual control}
       \end{figure}
-
-
-
-    \begin{itemize}
-      \item The Muxmon0 and Muxmon1 chip are designed with two purposes
-      \begin{enumerate}
-        \item Testing multiplexing using the Duplexer
-        \item Explore qubit frequency re-use
-      \end{enumerate}
-    \end{itemize}
-
-    \textbf{Ideas:}
-    \begin{itemize}
-      \item Title could be frequency re-use and multiplexing / selective broadcasting
-    \end{itemize}
-
-  \chapter{Exploring the Muxmon chip}
-    \section{Properties of the Muxmon0 chip}
-
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/coherence_times.png}
-        \caption{Coherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}).}
-        \label{fig:coherence times Muxmon0}
-      \end{figure}
-
-      \begin{table}
-        \begin{tabular}{l c c c}
-          \toprule
-          Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
-          \midrule
-          Top    & 6.277                & 6.700                & ?\\
-          Ancilla& 6.551                & 6.733                & ? \\
-          Bottom & 6.220                & 6.800                & ? \\
-          \bottomrule
-        \end{tabular}
-        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
-        \label{tab:Muxmon0 qubit properties}
-      \end{table}
-      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger than the coupling strength for all qubits. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}. These buses can be used for multi-qubit operations, such as excitation swapping.
-
-      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the coherence times of the three qubits are shown in Figure~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
-
-      \textbf{TODO:}
-      \begin{itemize}
-        \item explain top ancilla and bottom qubit
-        \item find coupling strengths
-        \item  The fit to $T_2^*$ of the top qubit has been performed using a Gaussian noise model.
-      \end{itemize}
-
-
-    \section{Cross-coupling}
-      \label{sec:cross-coupling}
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
-        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
-        \label{fig:excitation swap}
-      \end{figure}
-
-      The top qubit is coupled to the botom qubit via the following three successive components:
-
-      \begin{enumerate}
-        \item The resonator bus coupling the top qubit to the ancilla qubit.
-        \item The ancilla qubit.
-        \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
-      \end{enumerate}
-
-      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
-
-    \section{Cross-driving}
-      \label{sec:cross-driving}
-
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=.8\textwidth]{../Figures/Exploring frequency re-use/cross-driving_setup.jpg}
-        \caption{Schematic for measuring the amount of cross-driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a range range of drive strengths.}
-        \label{fig:cross-driving schematic}
-      \end{figure}
-
-      {\centering
-        \begin{minipage}{0.65\textwidth}
-          \centering
-          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
-          \captionof{figure}{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
-          \label{fig:cross-driving Rabi}
-        \end{minipage}
-        \begin{minipage}{0.35\textwidth}
-          \centering
-          \begin{tabular}{l c}
-            \toprule
-            qubit & cross-driving (\%) \\
-            \midrule
-            Top & $-$ \\
-            Ancilla &$ 0.79$ \\
-            Bottom & $0.57$ \\
-            \bottomrule
-          \label{tab:cross-driving top}
-          \end{tabular}
-          \captionof{table}{Driving through top qubit drive line}
-          \vspace{2cm}
-          \begin{tabular}{l c}
-            \toprule
-            qubit & cross-driving (\%) \\
-            \midrule
-            Top & $0.23$ \\
-            Ancilla &$ 0.66$ \\
-            Bottom & $-$ \\
-            \bottomrule
-          \end{tabular}
-          \captionof{table}{Driving through bottom qubit drive line}
-          \label{tab:cross-driving bottom}
-        \end{minipage}
-      \vspace{1cm}
-      }
-
-      When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits. Cross-driving effects affect the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are in resonance, as is the case with the Muxmon experiment.
-
-      The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Tables~\ref{tab:cross-driving top} and ~\ref{tab:cross-driving bottom}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
-
-      \begin{wrapfigure}[12]{r}{0.45\textwidth}
-        \begin{center}
-        \vspace{-30pt}
-          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
-        \end{center}
-        \vspace{-20 pt}
-        \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
-        \label{fig:cross-driving versus top frequency}
-      \end{wrapfigure}
-
-      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
-
-
-    \textbf{Figures that need to be included:}
-    \begin{itemize}
-      \item schematic of cross-coupling and readout cross-talk \\
-          It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
-    \end{itemize}
 
 
   \chapter{Randomized benchmarking}
@@ -932,7 +886,7 @@
 
         After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a duration of \SI{30}{\micro \second}.
 
-        The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by the instruments including the AWG and Duplexer.
+        The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its decoherence times, and not by the instruments including the AWG and Duplexer.
 
         \begin{figure}[tb]
           \centering
@@ -1070,7 +1024,7 @@
         \label{tab:RB 2Q converted gate fidelities}
       \end{table}
 
-          The three different two qubit randomized benchmarking methods have been performed for a total of $50$ seeds. By performing the measurements both with and without a final pi pulse, the populations of the first three states of the qubit have been determined (see Appendix~\ref{ssec:Determining population in three states}). The results are shown in Figure~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$. The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This shows that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit suface code fault tolerant threshold.
+          The three different two qubit randomized benchmarking methods have been performed for a total of $50$ seeds. By performing the measurements both with and without a final pi pulse, the populations of the first three states of the qubit have been determined (see Appendix~\ref{ssec:Determining population in three states}). The results are shown in Figure~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the decoherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$. The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This shows that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit suface code fault tolerant threshold.
 
           \begin{figure}[tb]
             \centering
