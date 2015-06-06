@@ -39,6 +39,8 @@
         \begin{itemize}
           \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
         \end{itemize}
+      \subsubsection{Flux matrix}
+        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
     \subsection{Part I: Time-domain measurements}
       \subsubsection{AllXY}
         \label{ssec:AllXY}

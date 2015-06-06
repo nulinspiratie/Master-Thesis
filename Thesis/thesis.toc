@@ -96,18 +96,19 @@
 \contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{84}
 \contentsline {subsection}{\numberline {D.1.2}Finding the qubit sweet-spot using a one-dimensional scan}{84}
 \contentsline {subsubsection}{\numberline {D.1.2.1}Spectroscopy}{85}
+\contentsline {subsubsection}{\numberline {D.1.2.2}Flux matrix}{85}
 \contentsline {subsection}{\numberline {D.1.3}Part I: Time-domain measurements}{85}
 \contentsline {subsubsection}{\numberline {D.1.3.1}AllXY}{85}
-\contentsline {section}{\numberline {D.2}Randomized benchmarking}{85}
-\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{85}
-\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{85}
-\contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{85}
-\contentsline {section}{\numberline {D.3}$5$ primitives decomposition}{86}
-\contentsline {chapter}{\numberline {E}Algorithms}{87}
-\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{87}
-\contentsline {section}{\numberline {E.2}Peak finding}{87}
-\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{87}
-\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{87}
-\contentsline {section}{\numberline {E.3}Compiled randomized benchmarking}{87}
-\contentsline {subsection}{\numberline {E.3.1}Finding the optimal gate sequence}{87}
-\contentsline {subsection}{\numberline {E.3.2}Optimizing the gate compilation algorithm}{88}
+\contentsline {section}{\numberline {D.2}Randomized benchmarking}{86}
+\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{86}
+\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{86}
+\contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{86}
+\contentsline {section}{\numberline {D.3}$5$ primitives decomposition}{87}
+\contentsline {chapter}{\numberline {E}Algorithms}{88}
+\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{88}
+\contentsline {section}{\numberline {E.2}Peak finding}{88}
+\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{88}
+\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{88}
+\contentsline {section}{\numberline {E.3}Compiled randomized benchmarking}{88}
+\contentsline {subsection}{\numberline {E.3.1}Finding the optimal gate sequence}{88}
+\contentsline {subsection}{\numberline {E.3.2}Optimizing the gate compilation algorithm}{89}

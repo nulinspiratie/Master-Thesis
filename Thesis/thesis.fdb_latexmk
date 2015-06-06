@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433582359 "thesis.aux" "thesis.bbl" "thesis" 1433582773
+["bibtex thesis"] 1433583553 "thesis.aux" "thesis.bbl" "thesis" 1433583563
   "bibliography.bib" 1433501788 9037 eb97a2b42ef25c729fb80110c7c4714c ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433582772 35273 7fdacf59e3a94a11efb95f6c6717d523 ""
+  "thesis.aux" 1433583563 35359 a43ce3a0f185b59ff4ec9f4bfe68bfba ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433582763 "thesis.tex" "thesis.pdf" "thesis" 1433582773
+["pdflatex"] 1433583554 "thesis.tex" "thesis.pdf" "thesis" 1433583563
   "../Figures/20150512_Muxmon_Setup.jpg" 1433429705 2965934 6a63ac317e9a24b41b855caf14f8d1b1 ""
   "../Figures/Calibration routines/Mixer skewness.png" 1433185697 31845 c739dae0df8a6f88c86a7ac1c2329daf ""
   "../Figures/Clifford decomposition.png" 1432740405 85437 0de832dd039fbf0e2190c63c249adfa6 ""
@@ -44,8 +44,8 @@
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
   "Chapters/DRIE.tex" 1433497727 35691 56d0e1bc663a7992f07c36acfd362e44 ""
-  "Chapters/Muxmon.tex" 1433582762 124043 bcaca854947a82537e45e7180c1ebe55 ""
-  "Chapters/appendix.tex" 1433518279 19027 38308b49966b57df845cbc3a0f5fe31f ""
+  "Chapters/Muxmon.tex" 1433583540 123134 dc193f2f02c851e413f96313a5b4fd15 ""
+  "Chapters/appendix.tex" 1433583536 19739 aafd34e9544bc57a744cb852ef1e2ad7 ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
   "Figures/DRIE/Qi_vs_n_photon.png" 1420647387 47310 0b125d1859ff55801a48bceab7a0581f ""
@@ -145,16 +145,16 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1432639947 19835 819dbcd81415d2af8309aaf77b6a35ba ""
-  "thesis.aux" 1433582772 35273 7fdacf59e3a94a11efb95f6c6717d523 ""
-  "thesis.bbl" 1433582359 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
+  "thesis.aux" 1433583563 35359 a43ce3a0f185b59ff4ec9f4bfe68bfba ""
+  "thesis.bbl" 1433583554 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
   "thesis.tex" 1433418024 4299 4039c57e9f98f53328b2f537dae82179 ""
-  "thesis.toc" 1433582772 8066 0538c3dd6715a21a78e03fe33395062b ""
+  "thesis.toc" 1433583563 8134 92500f9412e1063e44c701ebeeaa133c ""
   (generated)
-  "Chapters/Muxmon.aux"
-  "Chapters/Muxmon.tex.aux"
-  "thesis.pdf"
   "thesis.log"
+  "thesis.pdf"
   "thesis.toc"
-  "Chapters/DRIE.tex.aux"
   "thesis.aux"
   "Chapters/appendix.tex.aux"
+  "Chapters/DRIE.tex.aux"
+  "Chapters/Muxmon.aux"
+  "Chapters/Muxmon.tex.aux"
