@@ -450,22 +450,44 @@
         In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Figure~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground-state of the qubit. At the other peaks, where the deviation from the ground-state is maximal, the qubit is in the excited-state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse.
 
       \subsection{Qubit decoherence}
+        Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However due to the qubit's interaction with its environment the qubit will experience decoherence. Decoherence can be viewed as the qubit experiencing random interactions with its environment, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
 
-        \subsubsection{Qubit relaxation: T1}
-          Once a pi-pulse has been tuned it is possible to excite the qubit. However, once the qubit is excited, it will not remain so indefinitely. Instead, the excitation will slowly leak away to different relaxation sources, some of which have been discussed in \ref{sec:Losses}. These sources of relaxation lead to an exponential decay of the qubit's excitation, with a relaxation time $T_1$. This relaxation can be visualized on the Bloch sphere as the stateA typical measurement to characterize the relaxation time $T_1$ is performed by first applying a pi-pulse, and the waiting for a monotonically increasing wait time $\tau$, after which the state of the qubit is measured.
+        \subsubsection{Qubit relaxation: $T_1$}
 
-          relaxation time $T_1$,
+          \begin{wrapfigure}[8]{r}{0.3\textwidth}
+            \begin{center}
+            \vspace{-30pt}
+              \includegraphics[width=\textwidth]{../Figures/Qubit characterization/T1 decoherence.png}
+            \end{center}
+            \vspace{-20 pt}
+            \caption{Schematic of a T1 sequence. An $X_\pi$ pulse is applied to the qubit, and after a waiting time $\tau$ the qubit is measured.}
+            \label{fig:T1 schematic}
+          \end{wrapfigure}
+
+          One type of decoherence is relaxation, which results in the excitation of the qubit slowly leaking away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in \ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Figure~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi-pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding decay time $T_1$.
 
           \begin{itemize}
             \item Purcell limit
           \end{itemize}
 
-
         \subsubsection{Qubit dephasing: Ramsey}
           \label{sssec:Ramsey}
-          Aside from relaxation, the qubit also experiences another form of decoherence, namely dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency. It is characterized by the dephasing time $T_2^*$. The dephasing time $T_2^*$ has an upper bound equal to $2\;T_1$ \cite[pp56-58]{Bishop}, but can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}. Qubit dephasing results in a random phase being added to the qubit, and can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
 
-          One method of measuring the dephasing time $T_2^*$ is by performing a Ramsey measurement. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
+          \begin{wrapfigure}[8]{r}{0.4\textwidth}
+            \begin{center}
+            \vspace{-30pt}
+              \includegraphics[width=\textwidth]{../Figures/Qubit characterization/T2 decoherence.png}
+            \end{center}
+            \vspace{-20 pt}
+            \caption{Schematic of a $T_2^*$ sequence.}
+            \label{fig:T2star schematic}
+          \end{wrapfigure}
+
+          Aside from relaxation, the qubit also experiences dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency, and results in a random phase being added to the qubit. It can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
+
+          The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\;T_1$ \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
+
+          Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Figure~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
           During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the Rabi rate $\Omega_R = \omega_d - \omega_q$. At the moment we ignore effects such as decoherence and gate errors. The first pulse results in the qubit being at the equator. If there were no precession, the result of the second pulse is that the qubit is in its excited-state. However, any detuning $\Delta$ causes the state of the qubit to deviate from the excited-state. In fact, after half a period the second pulse results in the qubit being in its ground-state. After one full period, however, the qubit has returned to its original position on the equator, and so the second pulse will result yet again in the qubit being in its excited-state.
 
@@ -504,6 +526,17 @@
           \end{itemize}
 
         \subsubsection{Fast frequency qubit dephasing: Echo}
+
+          \begin{wrapfigure}[8]{r}{0.4\textwidth}
+            \begin{center}
+            \vspace{-30pt}
+              \includegraphics[width=\textwidth]{../Figures/Qubit characterization/T2echo decoherence.png}
+            \end{center}
+            \vspace{-20 pt}
+            \caption{Schematic of a $T_2^E$ sequence.}
+            \label{fig:T2echo schematic}
+          \end{wrapfigure}
+
           The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement.
 
           An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. This has the effect that the state of the qubit is essentially flipped on the Bloch sphere around the X-axis. Any slow phase noise, which we can view to be quasi-static, is thereby cancelled. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
