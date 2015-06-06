@@ -21,6 +21,7 @@
     \item Rename DAC voltage to flux, and mention early on that this renaming will be used
     \item flux-bias line or flux bias line?
     \item second state -> second excited-state
+    \item second excited-state make sure you don't mention its a qubit.
   \end{itemize}
 
 
@@ -106,7 +107,17 @@
         \label{fig:Muxmon0 and Muxmon1}
       \end{figure}
 
-      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines. The key difference between the two chips is the approach used to drive the qubits In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
+      \begin{wrapfigure}[7]{r}{0.3\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Qubit names.jpg}
+        \end{center}
+        \vspace{-20 pt}
+        \caption{Naming of the three qubits.}
+        \label{fig:Qubit names}
+      \end{wrapfigure}
+
+      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits connected to them, all three of which are flux-tunable. For convenience, these qubits are named top, ancilla, and bottom qubit, as shown in Figure~\ref{Qubit names}. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines. The key difference between the two chips is the approach used to drive the qubits. In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that they are an added decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section\ref{sec:Frequency re-use in the Surface Code}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore there would be one decoherence channel less. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options.
 
       During initial characterization of the qubits on both chips it was found that the decoherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 decoherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower decoherence times are simply due to some error in the chip fabrication process. Due to the lower decoherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
 
@@ -119,8 +130,8 @@
 
       The Muxmon experiment set-up is shown in Figure~\ref{fig:Muxmon set-up}. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Section~\ref{ssec:qubit control} for more info). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
 
-  \chapter{Muxmon chip characterization}
-    \label{ch:Muxmon chip characterization}
+  \chapter{Muxmon device characterization}
+    \label{ch:Muxmon device characterization}
     The qubits on the Muxmon chip are all transmon qubits, which are modified versions of the Cooper-pair box qubit \cite{bouchiat1998CooperPairBox}. The Cooper-pair box qubit consists of a superconducting island separated from a superconducting bulk by a Josephson junction. The Josephson junction allows Cooper-pairs to travel between the island and the bulk. The Hamiltonian describing the Cooper-pair box is given by:
 
     \begin{equation}
@@ -325,7 +336,7 @@
 
         In Figure~\ref{fig:tracked spectroscopy} the results of tracked spectroscopy are shown for the ancilla frequency. As can be seen the qubit is tracked over a wide range of frequencies, while the frequency window in each scan is relatively small. As the qubit frequency approaches the resonator frequency, the dispersive shift $\chi$ increases, and so the resonator frequency shifts upwards. InIn this scan one can clearly see the sweet-spot of the qubit, and the curve has the shape of the square root of a cosine, consistent with Equations~\ref{eq:transmon frequency} and~\ref{eq:Josephson energy}.
 
-      \subsection{Finding the qubit's second transition}
+      \subsection{Second transition of the qubit}
         \label{ssec:12-transition spectroscopy}
         Once the qubit's grequency is known, it is possible to find the qubit's excited-state to second-excited-state transition $\omega_q^{12}$, which shall be referred to as the 12-transition. For consistent notation we shall temporarily denote the qubit's ground-state to excited-state transition frequency as $\omega_q^{01}$. The anharmonicity $\alpha$ is then given by the difference in transition frequencies: $\alpha = \omega_q^{12} - \omega_q^{01}$. Knowledge of the anharmonicity $\alpha$ allows determination of the coupling energy $E_c$ through \textbf{TODO:}.
 
@@ -449,6 +460,11 @@
 
         In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Figure~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground-state of the qubit. At the other peaks, where the deviation from the ground-state is maximal, the qubit is in the excited-state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse.
 
+        \textbf{TODO:}
+        \begin{itemize}
+          \item Mention calibration points
+        \end{itemize}
+
       \subsection{Qubit decoherence}
         Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However due to the qubit's interaction with its environment the qubit will experience decoherence. Decoherence can be viewed as the qubit experiencing random interactions with its environment, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
 
@@ -489,14 +505,7 @@
 
           Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Figure~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
-          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Section~\ref{sec:Accurate frequency estimation}). The excited-state population $P_1$ as a function of wait time is given by:
-
-          \begin{equation}
-            P_1(t) = e^{t/T_2^*} * \cos{\left( 2 \, \pi \, \Omega_R \, t \right) + 1/2}
-            \label{eq:Ramsey}
-          \end{equation}
-
-          In Figure~\ref{fig:decoherence times Muxmon0} the dephasing times $T_2^*$ of the three qubits in the Muxmon device can be seen. One important observation is that the dephasing time $T_2^*$ of the top qubit is considerably lower than the other two qubits. The reason is that the top qubit is tuned away from its sweet-spot to match the frequency of the bottom qubit. As a result its frequency response to flux is higher, and so it is more susceptible to flux noise.
+          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Section~\ref{sec:Accurate frequency estimation}).
 
         \subsubsection{Fast frequency qubit dephasing: Echo}
 
@@ -516,53 +525,56 @@
 
           An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. To be able to better estimate the Echo dephasing time $T_2^E$, the phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation.
 
-          \textbf{Figures:}
-          \begin{itemize}
-            \item Echo measurement.
-          \end{itemize}
-
-      \subsection{Measuring single shots}
-
       \subsection{Second excited-state}
         \label{ssec:Second excited-state}
+        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second excited-state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Section~\ref{DRAG parameter calibration} for calibration of the DRAG parameter). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second excited-state. This can be done by first exciting the transmon to its first excited-state, and then applying a second pulse at the second transition frequency of the transmon. Measuring this frequency has been explained in Section~\ref{ssec:12-transition spectroscopy}.
 
-    \section{Properties of the Muxmon0 chip}
+        \begin{wrapfigure}[18]{r}{0.4\textwidth}
+          \begin{center}
+          \vspace{-30pt}
+            \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Rabi12.png}
+          \end{center}
+          \vspace{-20 pt}
+          \caption{A second transition Rabi measurement of the second excited-state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground-state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first excited-state.}
+          \label{fig:Rabi12}
+        \end{wrapfigure}
+
+        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
+
+        The pulse-amplitude required to pulse to the second excited-state has been calibrated for both the top and bottom qubit. In Figure~\ref{fig:Rabi12} a second transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first excited-state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the signal at the second excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first excited-state, and that indeed the transmon is fully excited to the second excited-state.
+
+
+    \section{Exploring Frequency re-use}
 
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/coherence_times.png}
-        \caption{Decoherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}).}
+        \caption{Decoherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
         \label{fig:decoherence times Muxmon0}
       \end{figure}
 
       \begin{table}
-        \begin{tabular}{l c c c}
+        \begin{tabular}{l c c}
           \toprule
-          Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz) & coupling strength $g$ \\
+          Qubit  & $f_\text{max}$ (GHz) & $f_\text{res}$ (GHz)\\
           \midrule
-          Top    & 6.277                & 6.700                & ?\\
-          Ancilla& 6.551                & 6.733                & ? \\
-          Bottom & 6.220                & 6.800                & ? \\
+          Top    & 6.277                & 6.700 \\
+          Ancilla& 6.551                & 6.733 \\
+          Bottom & 6.220                & 6.800 \\
           \bottomrule
         \end{tabular}
-        \caption{Sweet-spot frequencies $f_\text{max}$, resonator frequencies $f_\text{res}$ and coupling strengths $g$ of the three qubits in the Muxmon0 chip}
+        \caption{Sweet-spot frequencies $f_\text{max}$, and resonator frequencies $f_\text{res}$ of the three qubits in the Muxmon0 chip}
         \label{tab:Muxmon0 qubit properties}
       \end{table}
-      In the Muxmon0 chip the top and bottom qubits are each coupled to the ancilla qubit via a resonator bus. The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. All three qubits are operating in the dispersive regime, as the minimum detuning is considerably larger than the coupling strength for all qubits. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}. These buses can be used for multi-qubit operations, such as excitation swapping.
 
-      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the decoherence times of the three qubits are shown in Figure~\ref{fig:decoherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably worse than of the ancilla and bottom qubit. This is because the top qubit has been tuned away from its sweet-spot, and so is more susceptible to flux noise.
+      The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see Appendix~\ref{sec:Resonator buses}.
 
-      \textbf{TODO:}
-      \begin{itemize}
-        \item explain top ancilla and bottom qubit
-        \item find coupling strengths
-        \item  The fit to $T_2^*$ of the top qubit has been performed using a Gaussian noise model.
-      \end{itemize}
+      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet-spots. Under these conditions the decoherence times of the three qubits are shown in Figure~\ref{fig:decoherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than of the ancilla and bottom qubit. The reason is that the top qubit is tuned away from its sweet-spot to match the frequency of the bottom qubit. As a result its frequency response to flux is higher, and so it is more susceptible to flux noise.
 
+      Having the top and bottom qubit at the same frequency gives rise to cross-coupling and cross-driving effects. It is important to characterize these effects, as they can potentially result in gate errors.
 
-
-    \section{Cross-coupling}
-      \label{sec:cross-coupling}
+    \subsection{Cross-coupling}
+      \label{ssec:cross-coupling}
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
@@ -578,10 +590,10 @@
         \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
       \end{enumerate}
 
-      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to travel to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
+      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to transfer to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
 
-    \section{Cross-driving}
-      \label{sec:cross-driving}
+    \subsection{Cross-driving}
+      \label{ssec:cross-driving}
 
       \begin{figure}[tb]
         \centering
@@ -692,6 +704,7 @@
       \end{itemize}
 
     \section{DRAG parameter calibration}
+      \label{DRAG parameter calibration}
       The DRAG parameter has been calibrated by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, an incorrectly tuned DRAG parameter would result in the first pulse to rotate the qubit slightly toward the excited-state, while the second pulse would rotate the qubit slightly toward the ground state. The DRAG parameter is found by minimizing this difference.
 
       \textbf{Questions:}
