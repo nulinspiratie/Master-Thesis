@@ -13,13 +13,16 @@
   \begin{itemize}
     \item second state -> second excited-state
     \item second excited-state make sure you don't mention its a qubit.
+    \item coherence/decoherence
   \end{itemize}
 
 
 
   \chapter*{Introduction}
 
-    Quantum circuits based on circuit quantum electrodynamics (cQED) have experience rapid development of the past few years. Especially transmon qubits, and variations thereof, have flourished up to the point where they are used to perform multi-qubit algorithms. There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to hundreds, possibly even thousands of qubits. One of the most promising quantum computing architecture is the surface code. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
+    Quantum circuits based on circuit quantum electrodynamics (cQED) have experience rapid development of the past few years. Especially transmon qubits, and variations thereof, have flourished up to the point where they are used to perform multi-qubit algorithms. Fedorov et al.~\cite{fedorov2011implementation} first demonstrated implementation of the Toffoli gate, a key ingredient for error detection schemes. The Grover's search algorithm, and the Deutsch-Josza algorithm have been demonstrated for two qubits by DiCarlo et al.~\cite{dicarlo2009demonstration}. Furthermore, the first quantum error detection algorithms have been implemented by C\'orcoles et al.~\cite{corcoles2015demonstration}, and by Rist\`e et al.~\cite{riste2014detecting}.
+
+    There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to hundreds, possibly even thousands of qubits. One of the most promising quantum computing architecture is the surface code. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
 
     That being said, even in an architecture such as the surface code, the challenges in scaling up are tremendous. Qubits are required to have long coherence times, high fidelity gates with a short duration, and must be arranged such that it is compatible with the architecture. Aside from on-chip challenges strong requirements are placed on supporting equipment. The chip must be cooled down to the milikelvin temperature range, and each of the qubits must be individually controlled.
 
@@ -1048,9 +1051,20 @@
 
   \chapter{Conclusions and outlook}
 
-    Using
+    When the top and bottom qubit are tuned to the same frequency, cross-coupling and cross-driving effects do become noticeable. This could potentially be a problem, as it results in correlated errors. The fact that the cross-driving effects in the Muxmon1 experiment are stronger than in the Muxmon0 device suggest that they dependent on the amount of components separating same-frequency qubits. The same holds for cross-coupling effects. Therefore, if it turns out that in the surface code architecture these effects must be reduced, a modified frequency re-use structure could be implemented. For instance, by using a total of eight frequencies instead of four, qubits sharing the same frequency can be separated by more components, thereby reducing these adverse effects.
+
+    When the top and bottom qubit share the same frequency, it has been shown that they can be simultaneously controlled by a single generator in combination with the Duplexer. Through randomized benchmarking it has been shown that for both qubits the gate fidelity reaches $99.9$ per cent, thereby meeting the surface code fault-tolerant threshold. The gate fidelity is within a factor of two of limit imposed by its relaxation time $T_1$, indicating that the qubit performance is in fact decoherence limited.
+
+    It has furthermore been shown that there is no change in performance when driving a single qubit versus driving both qubits simultaneously. It is interesting to note that the gate fidelities exceed the maximum one would expect considering the cross-driving measured. One possible explanation is that the cross-driving measurements were performed at high power, and since the transmon is a nonlinear system, it is possible that the cross-driving is lower at low drive powers.
+
+    Furthermore, it has been shown individual control of both qubits simultaneously is possible through selective broadcasting. This has been demonstrated using randomized benchmarking using a different seed for each qubit. Three different randomized benchmarking schemes have been implemented, namely alternating, compiled, and 5 primitives randomized benchmarking. It has been shown that all three methods exceed $99$ per cent Clifford fidelity, thereby also meeting the surface code fault-tolerant threshold.
+
+
 
     \begin{itemize}
       \item Talk about how the $5$ primitives method could be used for easy Clifford generation for an arbitrarily large quantum computer.
       \item Duplexer turns into a multiplexer
+      \item If cross-coupling and cross-driving effects prove to be too severe, an alternative scheme based on eight distinct frequencies can be used in the surface code architecture.
+
+
     \end{itemize}

@@ -33,6 +33,25 @@ Jerry~M. Chow.
 \newblock {\em Quantum Information Processing with Superconducting Qubits}.
 \newblock PhD thesis, Yale University, 2010.
 
+\bibitem{corcoles2015demonstration}
+AD~C{\'o}rcoles, Easwar Magesan, Srikanth~J Srinivasan, Andrew~W Cross,
+  M~Steffen, Jay~M Gambetta, and Jerry~M Chow.
+\newblock Demonstration of a quantum error detection code using a square
+  lattice of four superconducting qubits.
+\newblock {\em Nature communications}, 6, 2015.
+
+\bibitem{dicarlo2009demonstration}
+L~DiCarlo, JM~Chow, JM~Gambetta, Lev~S Bishop, BR~Johnson, DI~Schuster,
+  J~Majer, A~Blais, L~Frunzio, SM~Girvin, et~al.
+\newblock Demonstration of two-qubit algorithms with a superconducting quantum
+  processor.
+\newblock {\em Nature}, 460(7252):240--244, 2009.
+
+\bibitem{fedorov2011implementation}
+Arkady Fedorov, Lars Steffen, Matthias Baur, MP~Da~Silva, and Andreas Wallraff.
+\newblock Implementation of a toffoli gate with superconducting circuits.
+\newblock {\em Nature}, 481(7380):170--172, 2011.
+
 \bibitem{gao2008experimental}
 Jiansong Gao, Miguel Daal, Anastasios Vayonakis, Shwetank Kumar, Jonas
   Zmuidzinas, Bernard Sadoulet, Benjamin~A Mazin, Peter~K Day, and Henry~G
@@ -123,6 +142,13 @@ Matthew~D. Reed.
 \newblock {\em Entanglement and Quantum Error Correction with Superconducting
   Qubits}.
 \newblock PhD thesis, Yale University, 2013.
+
+\bibitem{riste2014detecting}
+D~Rist{\`e}, S~Poletto, M-Z Huang, A~Bruno, V~Vesterinen, O-P Saira, and
+  L~DiCarlo.
+\newblock Detecting bit-flip errors in a logical qubit using stabilizer
+  measurements.
+\newblock {\em arXiv preprint arXiv:1411.5542}, 2014.
 
 \bibitem{sage2011study}
 Jeremy~M Sage, Vladimir Bolkhovsky, William~D Oliver, Benjamin Turek, and
