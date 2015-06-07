@@ -770,19 +770,15 @@
 
     \section{Introduction}
       \label{sec:RB introduction}
-      When preparing the qubits for a quantum algorithm it is important to know what the performance is of the qubits, which can be characterized by its gate errors. One method has already been discussed in Section~\ref{sec:AllXY}, namely the AllXY method. Although the AllXY is good at detecting specific errors, it is a crude method, which is unable to characterize gate errors with high accuracy. Another method used for gate characterization is quantum process tomography. Quantum process tomography measures the output density matrix resulting from the application of a specific to each of the system's basis states. Due to linear superposition of quantum states, the full effect of a gate is thereby characterized.
+      When preparing the qubits for a quantum algorithm it is important to know what the performance is of the qubits, which can be characterized by its gate errors. One method has already been discussed in Section~\ref{ssec:AllXY}, namely the AllXY method. Although the AllXY is good at detecting specific errors, it is a crude method, which is unable to characterize gate errors with high accuracy. Another method used for gate characterization is quantum process tomography. Quantum process tomography measures the output density matrix resulting from the application of a specific to each of the system's basis states. Due to linear superposition of quantum states, the full effect of a gate is thereby characterized, including the different types of gate errors.
 
       Quantum process tomography suffers from some important drawbacks. The first is that it is sensitive to state preparation and measurement errors, which make it difficult to distinguish whether the gate errors originate from the actual gate being characterized, or from the gates used for preparation and measurement. Another related drawback is that it is unable to measure small gate errors, which are required for fault-tolerant quantum computing. Additionally, quantum process tomography suffers from an exponential scaling in measurement with the number of qubits. These drawbacks result in quantum process tomography being an inadequate gate characterization method for gates with small errors.
 
-      An alternative method to quantum process tomography is randomized benchmarking. It is based on repeated application of gates drawn randomly from a set of unitary operations, after which the fidelity to the final state in absence of errors is measured. The set of unitaries used in randomized benchmarking may be single-qubit or multi-qubit operations. Randomized benchmarking has the advantage that it is insensitive to state preparation and measurement errors, and is a relatively fast measurement, which is able to accurately determine the average unitary operation error.
+      An alternative method to quantum process tomography is randomized benchmarking, described by Knill et al.~\cite{knill2008randomized}. It is based on repeated application of operations drawn randomly from a set of unitary operations, after which the qubit fidelity to the theoretical final state (in the absense of errors) is measured. This fidelity can then be translated to an average unitary operation error. The set of unitaries used in randomized benchmarking may be single-qubit or multi-qubit operations. Randomized benchmarking has the advantage that it is insensitive to state preparation and measurement errors, and is a relatively fast measurement, which is able to accurately determine the average unitary operation error. Compared to quantum process tomography the drawback of randomized benchmarking is that it does not provide additional information about the type of gate error. However, randomized benchmarking has been used to distinguish unitary gate errors, such as overrotations, from non-unitary gate errors, such as decoherence effects~\cite{sheldon2015characterizing}.
 
-      In the Muxmon experiment the set of unitary operations is the single-qubit Clifford group, which will be discussed in Section~\ref{sec:Clifford group}. Randomized benchmarking will be used to characterize the performance of the qubits when using the Duplexer, and using selective broadcasting. By interleaving the unitary operations with a fixed gate the performance of that specific gate can be measured. This is known as interleaved randomized benchmarking, and will be discussed in Section~\ref{sec:interleaved randomized benchmarking}.
+      Modifications of the randomized benchmarking protocol have resulted in a versatile range of applications. Interleaved randomized benchmarking~\cite{magesan2012efficient}, a variation to the randomized benchmarking method, is able to characterize the performance of a single gate or unitary operation. This is done by interleaving the specific operation with the randomized benchmarking unitary operations, resulting in a uniform sampling of the targeted operation. Another variation of the randomized benchmarking scheme has furthermore been used as a metrological tool to study phase noise at very low timescales~\cite{omalley2015qubit}. In a more recent work, Johnson et al.~\cite{johnson2015demonstration} demonstrated a quantum gate tomography scheme based on randomized benchmarking. This method has the advantage of being insensitive to state preparation and measurement errors.
 
-      \begin{itemize}
-        \item uniform sampling on bloch sphere
-        \item Process tomography shows the type of error
-      \end{itemize}
-
+      In the Muxmon experiment randomized benchmarking is used to characterize the performance of the qubits when using the Duplexer, and using selective broadcasting. The set of unitary operations is the single-qubit Clifford group, which will be discussed in Section~\ref{sec:Clifford group}.
     \section{Clifford group}
       \label{sec:Clifford group}
 
@@ -821,7 +817,7 @@
 
       Each of the Cliffords in the single qubit Clifford group $\mathpzc{C}_1$ can be decomposed into rotations along the X and Y axis, as is shown in Appendix~\ref{ssec:Clifford gate decomposition}. Each Clifford can be decomposed into a minimum of zero (identity) gates and a maximum of three gates. If one includes the identity as a gate, a Clifford requires on average 1.875 gates.
 
-      The Clifford group does not form a universal set of gates. This is because the rotations only map cardinal states onto themselves. Since single qubit gates and CNOT is universal (\cite{nielsen2010quantum}), the Clifford group combined with the T-gate ($\pi/4$ rotation) constitute a set of universal quantum gates.
+      The Clifford group does not form a universal set of gates. This is because the rotations only map cardinal states onto themselves. Since single qubit gates and CNOT is universal~\cite{nielsen2010quantum}, the Clifford group combined with the T-gate ($\pi/4$ rotation) constitute a set of universal quantum gates.
 
     \section{The randomized benchmarking protocol}
       \label{sec:randomized benchmarking protocol}
@@ -1057,6 +1053,9 @@
 
 
   \chapter{Conclusions and outlook}
+
+    Using
+
     \begin{itemize}
       \item Talk about how the $5$ primitives method could be used for easy Clifford generation for an arbitrarily large quantum computer.
     \end{itemize}

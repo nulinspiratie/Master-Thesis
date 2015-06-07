@@ -51,11 +51,32 @@ Daniel Gottesman.
 \newblock The heisenberg representation of quantum computers.
 \newblock {\em arXiv preprint quant-ph/9807006}, 1998.
 
+\bibitem{johnson2015demonstration}
+Blake~R Johnson, Marcus~P da~Silva, Colm~A Ryan, Shelby Kimmel, Jerry~M Chow,
+  and Thomas~A Ohki.
+\newblock Demonstration of robust quantum gate tomography via randomized
+  benchmarking.
+\newblock {\em arXiv preprint arXiv:1505.06686}, 2015.
+
+\bibitem{knill2008randomized}
+E~Knill, D~Leibfried, R~Reichle, J~Britton, RB~Blakestad, JD~Jost, C~Langer,
+  R~Ozeri, S~Seidelin, and DJ~Wineland.
+\newblock Randomized benchmarking of quantum gates.
+\newblock {\em Physical Review A}, 77(1):012307, 2008.
+
 \bibitem{koch2007Transmon}
 Jens Koch, Terri~M. Yu, Jay Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
   Alexandre Blais, M.~H. Devoret, S.~M. Girvin, and R.~J. Schoelkopf.
 \newblock Charge-insensitive qubit design derived from the cooper pair box.
 \newblock {\em Phys. Rev. A}, 76:042319, Oct 2007.
+
+\bibitem{magesan2012efficient}
+Easwar Magesan, Jay~M Gambetta, Blake~R Johnson, Colm~A Ryan, Jerry~M Chow,
+  Seth~T Merkel, Marcus~P da~Silva, George~A Keefe, Mary~B Rothwell, Thomas~A
+  Ohki, et~al.
+\newblock Efficient measurement of quantum gate error by interleaved randomized
+  benchmarking.
+\newblock {\em Physical review letters}, 109(8):080505, 2012.
 
 \bibitem{martinis2014ucsb}
 John~M Martinis and A~Megrant.
@@ -107,6 +128,13 @@ Adam~P. Sears.
 \newblock {\em Extending Coherence in Superconducting Qubits: from microseconds
   to milliseconds}.
 \newblock PhD thesis, Yale University, 2013.
+
+\bibitem{sheldon2015characterizing}
+Sarah Sheldon, Lev~S Bishop, Easwar Magesan, Stefan Filipp, Jerry~M Chow, and
+  Jay~M Gambetta.
+\newblock Characterizing errors on qubit operations via iterative randomized
+  benchmarking.
+\newblock {\em arXiv preprint arXiv:1504.06597}, 2015.
 
 \bibitem{vasilescu2006electronic}
 Gabriel Vasilescu.

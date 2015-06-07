@@ -12,8 +12,8 @@
             <FormatRange Bold="Yes">0,23</FormatRange>
          </Formatting>
          <String>Randomized Benchmarking</String>
-         <ConnectedNoteIDs>4, 15, 20, 26, 34</ConnectedNoteIDs>
-         <PointsToNoteIDs>4, 15, 20, 26, 34</PointsToNoteIDs>
+         <ConnectedNoteIDs>4, 15, 20, 26, 34, 40</ConnectedNoteIDs>
+         <PointsToNoteIDs>4, 15, 20, 26, 34, 40</PointsToNoteIDs>
       </Note>
       <Note Width="161.879" FontSize="12" ID="1" Position="488.9,793.2">
          <Appearance>
@@ -285,15 +285,15 @@
          </Appearance>
          <String>New Note</String>
       </Note>
-      <Note Width="86.6211" FontSize="12" ID="34" Position="1413.6,641.9">
+      <Note Width="86.6211" FontSize="12" ID="34" Position="1174.9,641.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
          <String>Other work</String>
-         <ConnectedNoteIDs>0, 35-37</ConnectedNoteIDs>
+         <ConnectedNoteIDs>0, 35-39</ConnectedNoteIDs>
       </Note>
-      <Note Width="156.25" FontSize="12" ID="35" Position="1567.8,484.8">
+      <Note Width="156.25" FontSize="12" ID="35" Position="1352.3,627.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -301,7 +301,7 @@
          <String>Able to measure noise at short timescales (O’Malley)</String>
          <ConnectedNoteIDs>34</ConnectedNoteIDs>
       </Note>
-      <Note Width="156.25" FontSize="12" ID="36" Position="1613.4,688.7">
+      <Note Width="156.25" FontSize="12" ID="36" Position="1350.0,732.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -309,7 +309,7 @@
          <String>Interleaved randomized benchmarking</String>
          <ConnectedNoteIDs>34</ConnectedNoteIDs>
       </Note>
-      <Note Width="156.25" FontSize="12" ID="37" Position="1245.4,665.6">
+      <Note Width="156.25" FontSize="12" ID="37" Position="1249.4,814.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -317,12 +317,29 @@
          <String>Distinguish unitary from non-unitary errors (Sheldon)</String>
          <ConnectedNoteIDs>34</ConnectedNoteIDs>
       </Note>
-      <Note Width="156.25" FontSize="12" ID="38" Position="1391.5,845.2">
+      <Note Width="156.25" FontSize="12" ID="38" Position="1118.4,758.2">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
          </Appearance>
          <String>Tomography (IBM 2015)</String>
+         <ConnectedNoteIDs>34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="126.001" FontSize="12" ID="39" Position="1070.5,704.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Multi-qubit gates</String>
+         <ConnectedNoteIDs>34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="40" Position="1642.9,450.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Uniform sampling Bloch sphere</String>
+         <ConnectedNoteIDs>0</ConnectedNoteIDs>
       </Note>
    </Notes>
    <BackgroundShapes/>
