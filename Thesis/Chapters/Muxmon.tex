@@ -6,20 +6,11 @@
   \textbf{large TODO:}
   \begin{itemize}
     \item Explain surface code architecture
-    \item Explain the general structure of a chip:
-    \begin{itemize}
-      \item Feedline through which signal is sent and measured
-      \item CPW resonators, capacitively coupled to feedline
-      \item Single qubit coupled to resonators (coupling location?)
-      \item Resonator buses
-    \end{itemize}
     \item Explain multiplexed readout
   \end{itemize}
 
   \textbf{small TODO:}
   \begin{itemize}
-    \item Rename DAC voltage to flux, and mention early on that this renaming will be used
-    \item flux-bias line or flux bias line?
     \item second state -> second excited-state
     \item second excited-state make sure you don't mention its a qubit.
   \end{itemize}
@@ -28,17 +19,20 @@
 
   \chapter*{Introduction}
 
-    At this moment circuit QED is at the stage where multi-qubit experiments are being realized.
+    Quantum circuits based on circuit quantum electrodynamics (cQED) have experience rapid development of the past few years. Especially transmon qubits, and variations thereof, have flourished up to the point where they are used to perform multi-qubit algorithms. There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to hundreds, possibly even thousands of qubits. One of the most promising quantum computing architecture is the surface code. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
 
-    \begin{itemize}
-        \item Scaling up
-        \item Challenges involved in scaling
-        \item Frequency re-use, Duplexer intro
-    \end{itemize}
+    That being said, even in an architecture such as the surface code, the challenges in scaling up are tremendous. Qubits are required to have long coherence times, high fidelity gates with a short duration, and must be arranged such that it is compatible with the architecture. Aside from on-chip challenges strong requirements are placed on supporting equipment. The chip must be cooled down to the milikelvin temperature range, and each of the qubits must be individually controlled.
 
+    In this experiment two of the challenges in scaling up are addressed, namely frequency crowding and instrument scaling. To combat these challenges the Duplexer was invented by Duije Deurloo. The Duplexer is a vector switch matrix having four input channels and two output channels. It can control the signal through each of the input-output combinations, thereby selectively directing qubit pulses. This allows for selective broadcasting, which enables the control of two qubits simultaneously, consequently reducing the amount of instruments required. These subjects are discussed in Chapter~\ref{ch:Challenges in scaling up}.
+
+    To test the concept of selective broadcasting the Muxmon chip was created. This chip consists of three qubits, two of which will be tuned to the same frequency, so that they can be controlled via the Duplexer. Chapter~\ref{ch:Muxmon device characterization} is devoted to the measurements performed to characterize the Muxmon chip.
+
+    Since we want to know the best attainable qubit performance under these conditions the qubits must be accurately tuned. In Chapter~\ref{ch:Calibration routines} the calibrations used to tune the qubits are explained.
+
+    Measuring the performance of the qubits is done through randomized benchmarking. This is a method based on repeated application of unitary operations on the qubit, from which the gate performance can be extracted. Randomized benchmarking will be discussed in Chapter~\ref{ch:randomized benchmarking}.
 
   \chapter{Challenges in scaling up}
-    \label{ch:Muxmon chip architecture}
+    \label{ch:Challenges in scaling up}
 
     \section{frequency re-use}
       \begin{wrapfigure}[16]{r}{0.45\textwidth}
@@ -1058,4 +1052,5 @@
 
     \begin{itemize}
       \item Talk about how the $5$ primitives method could be used for easy Clifford generation for an arbitrarily large quantum computer.
+      \item Duplexer turns into a multiplexer
     \end{itemize}
