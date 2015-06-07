@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  6 JUN 2015 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  7 JUN 2015 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,11 +862,7 @@ Package: placeins 2005/04/18  v 2.2
 Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 30.
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 31.
- (./thesis.aux
-
-LaTeX Warning: Label `ssec:AllXY' multiply defined.
-
-)
+ (./thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -884,7 +880,8 @@ LaTeX Font Info:    ... okay on input line 79.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 79.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 79.
 
- (c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
+
+(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 79.
@@ -1566,244 +1563,274 @@ _top_frequency.png used on input line 648.
 Chapter 7.
 [51
 
-] [52]
-<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=245, 722.7pt x 3
+]
+<../Figures/Calibration routines/Drive calibration.png, id=242, 361.35pt x 289.
+08pt>
+File: ../Figures/Calibration routines/Drive calibration.png Graphic file (type 
+png)
+ <use ../Figures/Calibration routines/Drive calibration.png>
+Package pdftex.def Info: ../Figures/Calibration routines/Drive calibration.png 
+used on input line 687.
+(pdftex.def)             Requested size: 271.7835pt x 217.427pt.
+ [52 <../Figures/Calibration routines/Drive calibration.png>]
+Overfull \hbox (14.86629pt too wide) in paragraph at lines 705--706
+\T1/futs/m/n/12 (-20) lXY mea-sure-ment, and con-sists of all 21 pos-si-ble two
+-gate com-bi-na-tions of $[]$.
+ []
+
+
+<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=247, 722.7pt x 3
 61.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drive_top.png Graphic file (t
 ype png)
  <use ../Figures/Exploring frequency re-use/AllXY_drive_top.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drive_top.
-png used on input line 725.
+png used on input line 714.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=246, 722.7pt x 36
+<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=248, 722.7pt x 36
 1.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drag_top.png Graphic file (ty
 pe png)
  <use ../Figures/Exploring frequency re-use/AllXY_drag_top.png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drag_top.p
-ng used on input line 731.
+ng used on input line 720.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
  [53]
 [54 <../Figures/Exploring frequency re-use/AllXY_drive_top.png> <../Figures/Exp
 loring frequency re-use/AllXY_drag_top.png>]
-<../Figures/Calibration routines/Mixer offset.png, id=256, 433.62pt x 289.08pt>
+<../Figures/Calibration routines/Mixer leakage schematic.png, id=258, 433.62pt 
+x 289.08pt>
+File: ../Figures/Calibration routines/Mixer leakage schematic.png Graphic file 
+(type png)
+ <use ../Figures/Calibration routines/Mixer leakage schematic.png>
+Package pdftex.def Info: ../Figures/Calibration routines/Mixer leakage schemati
+c.png used on input line 737.
+(pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
+
+<../Figures/Calibration routines/Mixer offset.png, id=259, 433.62pt x 289.08pt>
 File: ../Figures/Calibration routines/Mixer offset.png Graphic file (type png)
 <use ../Figures/Calibration routines/Mixer offset.png>
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer offset.png used 
-on input line 750.
+on input line 746.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<../Figures/Calibration routines/Mixer skewness.png, id=257, 433.62pt x 289.08p
+<../Figures/Calibration routines/Mixer skewness.png, id=260, 433.62pt x 289.08p
 t>
 File: ../Figures/Calibration routines/Mixer skewness.png Graphic file (type png
 )
  <use ../Figures/Calibration routines/Mixer skewness.png>
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer skewness.png use
-d on input line 754.
+d on input line 750.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
- [55] [56 <../Figures/Calibration routines/Mixer offset.png> <../Figures/Calibr
-ation routines/Mixer skewness.png>]
+ [55] [56 <../Figures/Calibration routines/Mixer leakage schematic.png>] [57 <.
+./Figures/Calibration routines/Mixer offset.png> <../Figures/Calibration routin
+es/Mixer skewness.png>]
 Chapter 8.
 
-LaTeX Warning: Reference `sec:AllXY' on page 57 undefined on input line 778.
+LaTeX Warning: Reference `sec:AllXY' on page 58 undefined on input line 774.
 
-[57
+[58
 
 ]
-<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=269, 289.08
+<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=276, 289.08
 pt x 289.08pt>
 File: ../Figures/Randomized benchmarking/Bloch sphere octahedron.png Graphic fi
 le (type png)
 
 <use ../Figures/Randomized benchmarking/Bloch sphere octahedron.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Bloch sphere octahe
-dron.png used on input line 796.
+dron.png used on input line 792.
 (pdftex.def)             Requested size: 226.48395pt x 226.48277pt.
-LaTeX Font Info:    Try loading font information for OT1+pzc on input line 802.
+LaTeX Font Info:    Try loading font information for OT1+pzc on input line 798.
 
 
 (c:/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pzc.fd
 File: ot1pzc.fd 2001/06/04 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <12> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 802.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 798.
 
 Package microtype Info: Loading generic settings for font family
 (microtype)             `pzc' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 802.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 798.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 802.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 798.
 
- [58 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
-<../Figures/Randomized benchmarking/RB schematic.jpg, id=275, 771.88374pt x 257
+ [59 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
+<../Figures/Randomized benchmarking/RB schematic.jpg, id=282, 771.88374pt x 257
 .96375pt>
 File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
 g)
  <use ../Figures/Randomized benchmarking/RB schematic.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
-ed on input line 839.
+ed on input line 833.
 (pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
 
-<../Figures/Randomized benchmarking/RB_single_seed.png, id=276, 433.62pt x 289.
+<../Figures/Randomized benchmarking/RB_single_seed.png, id=283, 433.62pt x 289.
 08pt>
 File: ../Figures/Randomized benchmarking/RB_single_seed.png Graphic file (type 
 png)
  <use ../Figures/Randomized benchmarking/RB_single_seed.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_single_seed.png 
-used on input line 872.
+used on input line 866.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 873.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 867.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 873.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 867.
 
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <6> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 873.
+(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 867.
 
- [59 <../Figures/Randomized benchmarking/RB schematic.jpg>]
-<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=280, 
+ [60 <../Figures/Randomized benchmarking/RB schematic.jpg>]
+<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=288, 
 722.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png Grap
 hic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_driving_s
-ingle_both.png used on input line 893.
+ingle_both.png used on input line 887.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[60 <../Figures/Randomized benchmarking/RB_single_seed.png>]
-<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=286, 722.7p
+[61 <../Figures/Randomized benchmarking/RB_single_seed.png>]
+<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=293, 722.7p
 t x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_cross-driving.png Graphic fi
 le (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_cross-driving.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
-ving.png used on input line 904.
+ving.png used on input line 898.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
- [61 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
+ [62 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
 
-LaTeX Warning: Reference `sec:cross-driving' on page 62 undefined on input line
- 909.
+LaTeX Warning: Reference `sec:cross-driving' on page 63 undefined on input line
+ 903.
 
-[62 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
-<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=296, 72
+[63 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
+<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=303, 72
 2.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_state_populations.png Graphi
 c file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_normal_state_populations.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_state_pop
-ulations.png used on input line 930.
+ulations.png used on input line 924.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 
-LaTeX Warning: Reference `ssec:Second-state' on page 63 undefined on input line
- 935.
+LaTeX Warning: Reference `ssec:Second-state' on page 64 undefined on input line
+ 929.
 
-[63]
-<../Figures/Randomized benchmarking/alternating RB.jpg, id=300, 4529.92375pt x 
+[64]
+<../Figures/Randomized benchmarking/alternating RB.jpg, id=307, 4529.92375pt x 
 1204.5pt>
 File: ../Figures/Randomized benchmarking/alternating RB.jpg Graphic file (type 
 jpg)
  <use ../Figures/Randomized benchmarking/alternating RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/alternating RB.jpg 
-used on input line 960.
+used on input line 954.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
- [64 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
-<../Figures/Randomized benchmarking/compiled RB.jpg, id=305, 4529.92375pt x 120
+ [65 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
+<../Figures/Randomized benchmarking/compiled RB.jpg, id=312, 4529.92375pt x 120
 4.5pt>
 File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 )
  <use ../Figures/Randomized benchmarking/compiled RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/compiled RB.jpg use
-d on input line 973.
+d on input line 967.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
- [65 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Random
-ized benchmarking/compiled RB.jpg>]
-<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=309, 4529.92375pt x
+
+
+LaTeX Warning: Reference `fig:Clifford decomposition' on page 66 undefined on i
+nput line 974.
+
+[66 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Randomi
+zed benchmarking/compiled RB.jpg>]
+<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=317, 4529.92375pt x
  1204.5pt>
 File: ../Figures/Randomized benchmarking/5 primitives RB.jpg Graphic file (type
  jpg)
  <use ../Figures/Randomized benchmarking/5 primitives RB.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitives RB.jpg
- used on input line 989.
+ used on input line 983.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
 
-<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=310, 1969.3575pt 
+<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=318, 1969.3575pt 
 x 284.06125pt>
 File: ../Figures/Randomized benchmarking/5 primitive gates.jpg Graphic file (ty
 pe jpg)
  <use ../Figures/Randomized benchmarking/5 primitive gates.jpg>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitive gates.j
-pg used on input line 998.
+pg used on input line 992.
 (pdftex.def)             Requested size: 226.48395pt x 32.66418pt.
 
-[66 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
+[67 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
 ized benchmarking/5 primitive gates.jpg>]
-<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=315
+<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=322
 , 867.24pt x 433.62pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png Gr
 aphic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_state_populat
-ions_notable.png used on input line 1016.
+ions_notable.png used on input line 1010.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[67]
-<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=319, 7
+[68]
+<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=326, 7
 22.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png Graph
 ic file (type png)
 
 <use ../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_driving_singl
-e_vs_both.png used on input line 1042.
+e_vs_both.png used on input line 1036.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[68 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
-<../Figures/Randomized benchmarking/Clifford_comparison.png, id=324, 578.16pt x
+[69 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
+<../Figures/Randomized benchmarking/Clifford_comparison.png, id=331, 578.16pt x
  361.35pt>
 File: ../Figures/Randomized benchmarking/Clifford_comparison.png Graphic file (
 type png)
  <use ../Figures/Randomized benchmarking/Clifford_comparison.png>
 Package pdftex.def Info: ../Figures/Randomized benchmarking/Clifford_comparison
-.png used on input line 1054.
+.png used on input line 1048.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
 
-[69 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
-[70 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
+[70 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
+[71 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
 Chapter 9.
-) [71
+) [72
 
-] [72
+] [73
 
 
 ] (./Chapters/appendix.tex (./noise.tex
 Appendix A.
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 74 undefined on input
  line 19.
 
 
-LaTeX Warning: Reference `RES-chapter:Resonators' on page 73 undefined on input
+LaTeX Warning: Reference `RES-chapter:Resonators' on page 74 undefined on input
  line 21.
 
-<Figures/Noise/thevenin.png, id=340, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=347, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 31.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=341, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=348, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1813,25 +1840,25 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[73
+[74
 
-] [74 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=348, 1118.9805pt x 420.3705pt>
+] [75 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=355, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 74.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [75 <./Figures/Noise/Noise model.png>]
-[76] [77]
-<Figures/Noise/noise_temperature_versus_power.png, id=359, 433.62pt x 289.08pt>
+ [76 <./Figures/Noise/Noise model.png>]
+[77] [78]
+<Figures/Noise/noise_temperature_versus_power.png, id=367, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 188.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [78 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=365, 433.62pt x 
+ [79 <./Figures/Noise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=372, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1840,18 +1867,18 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 201.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[79 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [80]
+[80 <./Figures/Noise/noise_temperature_versus_power_detailed.png>]) [81]
 Appendix B.
-[81
+[82
 
 ]
 Appendix C.
-[82
+[83
 
 ]
 Appendix D.
 
-<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=379, 433.62
+<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=386, 433.62
 pt x 289.08pt>
 File: ../Figures/Qubit characterization/Resonator vs DAC linecut.png Graphic fi
 le (type png)
@@ -1860,39 +1887,24 @@ le (type png)
 Package pdftex.def Info: ../Figures/Qubit characterization/Resonator vs DAC lin
 ecut.png used on input line 26.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
- [83
+ [84
 
 ]
-<../Figures/Clifford decomposition.png, id=383, 683.46771pt x 166.45795pt>
-File: ../Figures/Clifford decomposition.png Graphic file (type png)
-
-<use ../Figures/Clifford decomposition.png>
-Package pdftex.def Info: ../Figures/Clifford decomposition.png used on input li
-ne 57.
-(pdftex.def)             Requested size: 452.9679pt x 110.3223pt.
- [84 <../Figures/Qubit characterization/Resonator vs DAC linecut.png>] [85 <../
-Figures/Clifford decomposition.png>]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 118.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 15.89755pt on input line 118.
-LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <17.28> not available
-(Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 118.
-
-[86]
+[85 <../Figures/Qubit characterization/Resonator vs DAC linecut.png>] [86]
+[87]
 Appendix E.
-[87
+[88
 
-] [88] [89]
-Overfull \hbox (138.9551pt too wide) in paragraph at lines 188--192
+] [89] [90]
+Overfull \hbox (138.9551pt too wide) in paragraph at lines 219--223
  [][] 
  []
 
-) (./thesis.bbl [90] [91
+) (./thesis.bbl [91] [92
 
 ]) 
 AED: lastpage setting LastPage
-[92] (./thesis.aux)
+[93] (./thesis.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.01195pt have occurred.
@@ -1900,16 +1912,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 17602 strings out of 493109
- 347828 string characters out of 6138586
- 472689 words of memory out of 5000000
- 20382 multiletter control sequences out of 15000+600000
- 373059 words of font info for 589 fonts, out of 8000000 for 9000
+ 17584 strings out of 493109
+ 347634 string characters out of 6138586
+ 473663 words of memory out of 5000000
+ 20364 multiletter control sequences out of 15000+600000
+ 366781 words of font info for 578 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,16n,57p,10406b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -1923,10 +1932,10 @@ texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2014/t
 exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zap
 fchan/uzcmi8a.pfb>
-Output written on thesis.pdf (93 pages, 25171330 bytes).
+Output written on thesis.pdf (94 pages, 25142995 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 462 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 89389 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 87346 words of extra memory for PDF output out of 89155 (max. 10000000)
 

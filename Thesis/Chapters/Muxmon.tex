@@ -682,25 +682,14 @@
         \label{ssec:PiX360}
         To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
 
-        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.6\linewidth]{../Figures/Calibration routines/Drive calibration.png}
+          \caption{Accurate drive calibration using repeated pi-pulses. The initial slope determines if the system is overdriving (positive slope), or underdriving (negative slope)}
+          \label{fig:PiX360}
+        \end{figure}
 
-        % The $X_{\pi/2}$ pulse at the start of the sequence provides two benefits. The first is that any slope is clearly visible, since the final state is projected onto the Z-axis. Secondly, relaxation effects are to a certain extent
-        % \begin{itemize}
-        %   \item Accurate drive amplitude calibration using PiX360
-        %   \item PiX180 is also possible, but PiX360 has added benefit of having all points in a continuous line
-        %   \item PiX360 furthermore achieves higher accuracy, as there are fewer pulses
-        %   \item PiX180 however can be performed at larger detuning, due to slower oscillations
-        %   \item Much better accuracy than Rabi
-        %   \item Pi/2 pulse at start of sequence instead of at end
-        %   \item If at end, T2 effects are less
-        %   \item If at start, T1 effects are less
-        %   \item Additional performance increase could be achieved by individually calibrating other pulses
-        % \end{itemize}
-
-        \textbf{Figures:}
-        \begin{itemize}
-          \item PiX360 with positive, normal, negative slope
-        \end{itemize}
+        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. Three such examples are shown in Figure~\ref{fig:PiX360}. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
 
       \subsection{DRAG parameter calibration}
         \label{ssec:DRAG parameter calibration}
@@ -713,11 +702,11 @@
 
       \subsection{AllXY}
         \label{ssec:AllXY}
-          There is a good measurement to test how well the qubit has been tuned, namely the AlllXY measurement. This measurement consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App~\ref{ssec:AllXY}.
+        There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in Appendix~\ref{ssec:AllXY app}.
 
-          The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
+        The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
 
-        The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as the drive amplitude and DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
+        The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Figure~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as either the drive amplitude or DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
 
         \begin{figure}
         \centering
@@ -745,6 +734,13 @@
 
         \begin{figure}[tb]
           \centering
+          \includegraphics[width=.7\textwidth]{../Figures/Calibration routines/Mixer leakage schematic.png}
+          \caption{Schematic showing spurious signals resulting from mixer leakage and mixer skewness,when using single sideband modulation with frequency $\omega_{sb}$.}
+          \label{fig:mixer imperfections schematic}
+        \end{figure}
+
+        \begin{figure}[tb]
+          \centering
           \begin{subfigure}[h]{0.49\textwidth}
             \caption{}
             \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
@@ -757,7 +753,7 @@
           \label{fig:Mixer calibrations 2D}
         \end{figure}
 
-        An important calibration routine which must not be forgotten is correcting for mixer imperfections. there are mainly two \textbf{TODO:} that must be calibrated in an IQ mixer: the mixer carrier leakage, and the mixer skewness.
+        An important calibration routine which must not be forgotten is correcting for mixer imperfections. An IQ mixer must be calibrated for two types of mixer imperfections: the mixer carrier leakage, and the mixer skewness. These imperfections result in two spurious signals, which are shown in Figure~\ref{fig:mixer imperfections schematic}.
 
         For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
 
@@ -809,13 +805,11 @@
           1 & 1
         \end{pmatrix}, \qquad
         P =
-        \frac{1}{\sqrt{2}}
         \begin{pmatrix}
           1 & 0 \\
           0 & i
         \end{pmatrix}, \qquad
         CNOT =
-        \frac{1}{\sqrt{2}}
         \begin{pmatrix}
           1 & 0 & 0 & 0 \\
           0 & 1 & 0 & 0 \\
@@ -849,7 +843,7 @@
 
       \begin{enumerate}
         \item Initialize the qubit in the ground state
-        \item Apply $n$ consecutive Cliffords $\{C_1, \dots, C_n\}$, where $C_i \in \mathpzc{C}_1 \; \forall \; i \in \left[1, \dots, n\right]$
+        \item Apply $n$ consecutive Cliffords $\left(C_1, \dots, C_n\right)$, where $C_i \in \mathpzc{C}_1 \; \forall \; i \in \left[1, \dots, n\right]$
         \item apply final inverting Clifford $C_\text{inv}=\left( C_n \dots C_1 \right)^{-1}$
         \item Measure the state of the qubit
       \end{enumerate}
@@ -1060,7 +1054,7 @@
 
           Compiled randomized benchmarking always performs the best, as it per definition finds the least amount of gates required to perform a set of Cliffords on the qubits. However, compiled randomized benchmarking has a clear disadvantage, which is that the required time for finding the optimal compilation scales exponentially with the number of qubits. Each Clifford on average has $38$ different decompositions, and so for five qubits this would already result in $38^5\approx 7.9 * 10^{7}$ different combinations for each individual set of Cliffords. Furthermore, finding the average gates per Clifford requires knowledge of the gates per Clifford for all different combinations of Cliffords, and so for five qubits this would result in $6.3*10^{14}$ different combinations of decompositions. Using several optimization methods, which are discussed in Appendix~\ref{Optimizing the gate compilation algorithm}, the average gates per Clifford has been determined exactly for up to five qubits, and approximated up to ten qubits using random sampling. Nevertheless it is still computationally intensive to find the optimal gate compilation, even for a modest amount of qubits.
 
-          In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see Appendix~\ref{sec:5 primitives decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$, and so unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best and by far easiest of the three randomized benchmarking methods.
+          In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see Appendix~\ref{ssec:Clifford gate decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$, and so unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best and by far easiest of the three randomized benchmarking methods.
 
 
   \chapter{Conclusions and outlook}

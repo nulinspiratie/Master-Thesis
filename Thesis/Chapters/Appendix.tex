@@ -43,7 +43,7 @@
         After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
     \subsection{Part I: Time-domain measurements}
       \subsubsection{AllXY}
-        \label{ssec:AllXY}
+        \label{ssec:AllXY app}
         \textbf{TODO:}
         \begin{itemize}
           \item Table of AllXY pulses
@@ -52,13 +52,45 @@
     \subsection{Clifford gate decomposition}
       \label{ssec:Clifford gate decomposition}
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=\textwidth]{../Figures/Clifford decomposition.png}
-        \caption{Decomposition of all $24$ Cliffords into X and Y rotations}
-        \label{fig:Clifford decomposition}
-      \end{figure}
-      \textbf{TODO:} Cite
+
+        \begin{tabular}{c c c }
+          \toprule
+          Clifford nbr     & gate decomposition & \begin{tabular}{@{}c@{}}5 primitives decomposition \\\noalign{\smallskip} $X_{\pi/2} \quad Y_{\pi/2} \quad X_{\pi/2} \quad X_{-\pi} \quad Y_{-\pi}$ \end{tabular}\\
+          \midrule
+          1 & $ I$ & 0\quad\quad\;0\quad\quad\;0\quad\quad\;0\quad\quad\;0 \\
+          2 & $ Y_{\pi/2} -  X_{\pi/2}$ & 0\quad\quad\;1\quad\quad\;1\quad\quad\;0\quad\quad\;0 \\
+          3 & $ X_{-\pi/2} -  Y_{-\pi/2}$ & 1\quad\quad\;1\quad\quad\;0\quad\quad\;1\quad\quad\;0 \\
+          4 & $ X_\pi$ & 0\quad\quad\;0\quad\quad\;0\quad\quad\;1\quad\quad\;0 \\
+          5 & $ Y_{-\pi/2} -  X_{-\pi/2}$ & 0\quad\quad\;1\quad\quad\;1\quad\quad\;0\quad\quad\;1 \\
+          6 & $ X_{\pi/2} -  Y_{-\pi/2}$ & 1\quad\quad\;1\quad\quad\;0\quad\quad\;0\quad\quad\;1 \\
+          7 & $ Y_\pi$ & 0\quad\quad\;0\quad\quad\;0\quad\quad\;0\quad\quad\;1 \\
+          8 & $ Y_{-\pi/2} -  X_{\pi/2}$ & 0\quad\quad\;1\quad\quad\;1\quad\quad\;1\quad\quad\;1 \\
+          9 & $ X_{\pi/2} -  Y_{\pi/2}$ & 1\quad\quad\;1\quad\quad\;0\quad\quad\;0\quad\quad\;0 \\
+          10 & $ X_\pi -  Y_\pi$ & 0\quad\quad\;0\quad\quad\;0\quad\quad\;1\quad\quad\;1 \\
+          11 & $ Y_{\pi/2} -  X_{-\pi/2}$ & 0\quad\quad\;1\quad\quad\;1\quad\quad\;1\quad\quad\;0 \\
+          12 & $ X_{-\pi/2} -  Y_{\pi/2}$ & 1\quad\quad\;1\quad\quad\;0\quad\quad\;1\quad\quad\;1 \\
+          13 & $ Y_{\pi/2} -  X_\pi$ & 0\quad\quad\;1\quad\quad\;0\quad\quad\;1\quad\quad\;0 \\
+          14 & $ X_{-\pi/2}$ & 0\quad\quad\;0\quad\quad\;1\quad\quad\;1\quad\quad\;0 \\
+          15 & $ X_{\pi/2} -  Y_{-\pi/2} -  X_{-\pi/2}$ & 1\quad\quad\;1\quad\quad\;1\quad\quad\;0\quad\quad\;1 \\
+          16 & $ Y_{-\pi/2}$ & 0\quad\quad\;1\quad\quad\;0\quad\quad\;0\quad\quad\;1 \\
+          17 & $ X_{\pi/2}$ & 0\quad\quad\;0\quad\quad\;1\quad\quad\;0\quad\quad\;0 \\
+          18 & $ X_{\pi/2} -  Y_{\pi/2} -  X_{\pi/2}$ & 1\quad\quad\;1\quad\quad\;1\quad\quad\;0\quad\quad\;0 \\
+          19 & $ Y_{-\pi/2} -  X_\pi$ & 0\quad\quad\;1\quad\quad\;0\quad\quad\;1\quad\quad\;1 \\
+          20 & $ X_{\pi/2} -  Y_\pi$ & 1\quad\quad\;0\quad\quad\;0\quad\quad\;0\quad\quad\;1 \\
+          21 & $ X_{\pi/2} -  Y_{-\pi/2} -  X_{\pi/2}$ & 1\quad\quad\;1\quad\quad\;1\quad\quad\;1\quad\quad\;1 \\
+          22 & $ Y_{\pi/2}$ & 0\quad\quad\;1\quad\quad\;0\quad\quad\;0\quad\quad\;0 \\
+          23 & $ X_{-\pi/2} -  Y_\pi$ & 1\quad\quad\;0\quad\quad\;0\quad\quad\;1\quad\quad\;1 \\
+          24 & $ X_{\pi/2} -  Y_{\pi/2} -  X_{-\pi/2}$ & 1\quad\quad\;1\quad\quad\;1\quad\quad\;1\quad\quad\;0 \\
+          \bottomrule
+        \end{tabular}
+
+      % \begin{figure}[tb]
+      %   \centering
+      %   \includegraphics[width=\textwidth]{../Figures/Clifford decomposition.png}
+      %   \caption{Decomposition of all $24$ Cliffords into X and Y rotations}
+      %   \label{fig:Clifford decomposition}
+      % \end{figure}
+      % \textbf{TODO:} Cite
 
     \subsection{Individual randomized benchmarking measurements}
       \label{ssec:Individual randomized benchmarking measurements}
@@ -115,8 +147,7 @@
         \label{eq:RB populations using final pi}
       \end{align}
       If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
-    \section{$5$ primitives decomposition}
-      \label{sec:5 primitives decomposition}
+
 
 \chapter{Algorithms}
   \section{Tracked spectroscopy}

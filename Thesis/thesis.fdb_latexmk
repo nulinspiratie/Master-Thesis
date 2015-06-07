@@ -1,16 +1,17 @@
 # Fdb version 3
-["bibtex thesis"] 1433620597 "thesis.aux" "thesis.bbl" "thesis" 1433620608
+["bibtex thesis"] 1433673626 "thesis.aux" "thesis.bbl" "thesis" 1433673693
   "bibliography.bib" 1433501788 9037 eb97a2b42ef25c729fb80110c7c4714c ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433620607 37336 2ae25e093ffbb1465ac878dd819d2de5 ""
+  "thesis.aux" 1433673692 37575 f00888512f218520398b852d72acc039 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1433620597 "thesis.tex" "thesis.pdf" "thesis" 1433620608
+["pdflatex"] 1433673682 "thesis.tex" "thesis.pdf" "thesis" 1433673693
   "../Figures/20150512_Muxmon_Setup.jpg" 1433429705 2965934 6a63ac317e9a24b41b855caf14f8d1b1 ""
+  "../Figures/Calibration routines/Drive calibration.png" 1433622317 32576 69ed9aa20fe9d9360a254f4bb827771a ""
+  "../Figures/Calibration routines/Mixer leakage schematic.png" 1433622909 18845 b2d5adc5dc6af789b2d4b42bb460dfee ""
   "../Figures/Calibration routines/Mixer skewness.png" 1433185697 31845 c739dae0df8a6f88c86a7ac1c2329daf ""
-  "../Figures/Clifford decomposition.png" 1432740405 85437 0de832dd039fbf0e2190c63c249adfa6 ""
   "../Figures/Duplexer_with_background.png" 1433082110 829884 da82763bc6f5de8c943b24f1f897b231 ""
   "../Figures/Exploring frequency re-use/AllXY_drag_top.png" 1433078944 70155 467a68b527800f127acbb60eb9c05510 ""
   "../Figures/Exploring frequency re-use/AllXY_drive_top.png" 1433078999 65689 ee98f69e1fcc1fac2877058aa8a9a024 ""
@@ -50,8 +51,8 @@
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
   "Chapters/DRIE.tex" 1433497727 35691 56d0e1bc663a7992f07c36acfd362e44 ""
-  "Chapters/Muxmon.tex" 1433620585 122775 2720cfc70a6da8a437a1a642c343570b ""
-  "Chapters/appendix.tex" 1433583536 19739 aafd34e9544bc57a744cb852ef1e2ad7 ""
+  "Chapters/Muxmon.tex" 1433673612 122570 77132a5ba95f9a79798c6777e2256274 ""
+  "Chapters/appendix.tex" 1433673681 22359 12bf48da43c7a0d06b42dc7faa85d6a1 ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
   "Figures/DRIE/Qi_vs_n_photon.png" 1420647387 47310 0b125d1859ff55801a48bceab7a0581f ""
@@ -151,12 +152,12 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1432639947 19835 819dbcd81415d2af8309aaf77b6a35ba ""
-  "thesis.aux" 1433620607 37336 2ae25e093ffbb1465ac878dd819d2de5 ""
-  "thesis.bbl" 1433620597 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
+  "thesis.aux" 1433673692 37575 f00888512f218520398b852d72acc039 ""
+  "thesis.bbl" 1433673626 4549 5c6dd82da9d1fba597292e7733ffbcd6 "bibtex thesis"
   "thesis.tex" 1433418024 4299 4039c57e9f98f53328b2f537dae82179 ""
-  "thesis.toc" 1433620607 8092 f8cc42a623a0e2780eafdfd9f9f6e63b ""
+  "thesis.toc" 1433673692 8017 17635ed30795c5eb56bd47446ea078ab ""
   (generated)
-  "thesis.pdf"
   "thesis.aux"
-  "thesis.toc"
   "thesis.log"
+  "thesis.pdf"
+  "thesis.toc"
