@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <ScappleDocument ID="0C81EC5C-9C2B-4A80-8724-DC62413F8749" Version="1.1">
    <Notes>
-      <Note Width="363.454" FontSize="20" ID="0" Position="816.2,459.3">
+      <Note Width="363.454" FontSize="20" ID="0" Position="812.2,457.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <TextColor>1.0 0.0 0.0</TextColor>
@@ -12,10 +12,10 @@
             <FormatRange Bold="Yes">0,23</FormatRange>
          </Formatting>
          <String>Randomized Benchmarking</String>
-         <ConnectedNoteIDs>4, 15, 20, 26</ConnectedNoteIDs>
-         <PointsToNoteIDs>4, 15, 20, 26</PointsToNoteIDs>
+         <ConnectedNoteIDs>4, 15, 20, 26, 34</ConnectedNoteIDs>
+         <PointsToNoteIDs>4, 15, 20, 26, 34</PointsToNoteIDs>
       </Note>
-      <Note Width="161.879" FontSize="12" ID="1" Position="878.1,724.7">
+      <Note Width="161.879" FontSize="12" ID="1" Position="488.9,793.2">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -23,7 +23,7 @@
          <String>Driving single vs both</String>
          <ConnectedNoteIDs>2, 9, 21</ConnectedNoteIDs>
       </Note>
-      <Note Width="72.3511" FontSize="12" ID="2" Position="727.2,677.6">
+      <Note Width="72.3511" FontSize="12" ID="2" Position="338.0,746.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -31,7 +31,7 @@
          <String>Duplexer</String>
          <ConnectedNoteIDs>1</ConnectedNoteIDs>
       </Note>
-      <Note Width="148.376" FontSize="12" ID="3" Position="975.4,658.6">
+      <Note Width="148.376" FontSize="12" ID="3" Position="586.2,727.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -39,7 +39,7 @@
          <String>Multiplexed readout</String>
          <ConnectedNoteIDs>6, 21</ConnectedNoteIDs>
       </Note>
-      <Note Width="271.573" FontSize="12" ID="4" Position="979.2,519.6">
+      <Note Width="271.573" FontSize="12" ID="4" Position="590.0,588.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -48,7 +48,7 @@
          <ConnectedNoteIDs>0, 5-6, 21</ConnectedNoteIDs>
          <PointsToNoteIDs>5-6, 21</PointsToNoteIDs>
       </Note>
-      <Note Width="115.479" FontSize="12" ID="5" Position="1313.8,575.1">
+      <Note Width="115.479" FontSize="12" ID="5" Position="924.6,643.6">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -56,7 +56,7 @@
          <String>Interleaved RB</String>
          <ConnectedNoteIDs>4</ConnectedNoteIDs>
       </Note>
-      <Note Width="105.664" FontSize="12" ID="6" Position="1154.2,628.3">
+      <Note Width="105.664" FontSize="12" ID="6" Position="765.0,696.8">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -65,7 +65,7 @@
          <ConnectedNoteIDs>3-4, 7-9</ConnectedNoteIDs>
          <PointsToNoteIDs>7-9</PointsToNoteIDs>
       </Note>
-      <Note Width="84.8755" FontSize="12" ID="7" Position="1380.3,693.6">
+      <Note Width="84.8755" FontSize="12" ID="7" Position="991.1,762.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -73,7 +73,7 @@
          <String>Alternating</String>
          <ConnectedNoteIDs>6, 23</ConnectedNoteIDs>
       </Note>
-      <Note Width="75.9399" FontSize="12" ID="8" Position="1310.1,783.6">
+      <Note Width="75.9399" FontSize="12" ID="8" Position="920.9,852.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -82,7 +82,7 @@
          <ConnectedNoteIDs>6, 14, 23</ConnectedNoteIDs>
          <PointsToNoteIDs>14</PointsToNoteIDs>
       </Note>
-      <Note Width="91.1011" FontSize="12" ID="9" Position="1140.3,800.8">
+      <Note Width="91.1011" FontSize="12" ID="9" Position="751.1,869.3">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -91,7 +91,7 @@
          <ConnectedNoteIDs>1, 6, 10-13, 23</ConnectedNoteIDs>
          <PointsToNoteIDs>10-13</PointsToNoteIDs>
       </Note>
-      <Note Width="111.003" FontSize="12" ID="10" Position="812.0,780.9">
+      <Note Width="111.003" FontSize="12" ID="10" Position="422.8,849.4">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -99,7 +99,7 @@
          <String>Clifford decomposition</String>
          <ConnectedNoteIDs>9</ConnectedNoteIDs>
       </Note>
-      <Note Width="104.553" FontSize="12" ID="11" Position="860.5,920.6">
+      <Note Width="104.553" FontSize="12" ID="11" Position="471.3,989.1">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -107,7 +107,7 @@
          <String>Fixed 5 gates</String>
          <ConnectedNoteIDs>9</ConnectedNoteIDs>
       </Note>
-      <Note Width="47.6318" FontSize="12" ID="12" Position="1019.1,926.0">
+      <Note Width="47.6318" FontSize="12" ID="12" Position="629.9,994.5">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -115,7 +115,7 @@
          <String>smart</String>
          <ConnectedNoteIDs>9, 18</ConnectedNoteIDs>
       </Note>
-      <Note Width="59.2773" FontSize="12" ID="13" Position="1149.4,929.7">
+      <Note Width="59.2773" FontSize="12" ID="13" Position="760.2,998.2">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -123,7 +123,7 @@
          <String>inverse</String>
          <ConnectedNoteIDs>9, 18</ConnectedNoteIDs>
       </Note>
-      <Note Width="146.57" FontSize="12" ID="14" Position="1381.4,864.2">
+      <Note Width="146.57" FontSize="12" ID="14" Position="992.2,932.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -131,7 +131,7 @@
          <String>Compiled algorithm</String>
          <ConnectedNoteIDs>8</ConnectedNoteIDs>
       </Note>
-      <Note Width="104.248" FontSize="12" ID="15" Position="700.4,561.8">
+      <Note Width="104.248" FontSize="12" ID="15" Position="663.4,465.9">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -140,7 +140,7 @@
          <ConnectedNoteIDs>0, 16-17</ConnectedNoteIDs>
          <PointsToNoteIDs>16-17</PointsToNoteIDs>
       </Note>
-      <Note Width="156.25" FontSize="12" ID="16" Position="515.0,668.0">
+      <Note Width="156.25" FontSize="12" ID="16" Position="405.4,518.6">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -148,7 +148,7 @@
          <String>Rotations on Bloch sphere</String>
          <ConnectedNoteIDs>15</ConnectedNoteIDs>
       </Note>
-      <Note Width="89.0503" FontSize="12" ID="17" Position="522.5,530.8">
+      <Note Width="89.0503" FontSize="12" ID="17" Position="467.7,404.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -156,7 +156,7 @@
          <String>24 Cliffords</String>
          <ConnectedNoteIDs>15</ConnectedNoteIDs>
       </Note>
-      <Note Width="102.71" FontSize="12" ID="18" Position="1077.6,1035.2">
+      <Note Width="102.71" FontSize="12" ID="18" Position="688.4,1103.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -180,7 +180,7 @@
          <String>Leakage</String>
          <ConnectedNoteIDs>0, 19, 22, 24</ConnectedNoteIDs>
       </Note>
-      <Note Width="120.85" FontSize="12" ID="21" Position="853.6,631.0">
+      <Note Width="120.85" FontSize="12" ID="21" Position="464.4,699.5">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -196,7 +196,7 @@
          <String>Asymptote</String>
          <ConnectedNoteIDs>19-20, 24</ConnectedNoteIDs>
       </Note>
-      <Note Width="94.7021" FontSize="12" ID="23" Position="1201.2,731.2">
+      <Note Width="94.7021" FontSize="12" ID="23" Position="812.0,799.7">
          <Appearance>
             <Alignment>Left</Alignment>
             <Border Weight="0" Style="Rounded"/>
@@ -277,6 +277,52 @@
          </Appearance>
          <String>Why?</String>
          <ConnectedNoteIDs>31</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="33" Position="1345.7,383.0">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>New Note</String>
+      </Note>
+      <Note Width="86.6211" FontSize="12" ID="34" Position="1413.6,641.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Other work</String>
+         <ConnectedNoteIDs>0, 35-37</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="35" Position="1567.8,484.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Able to measure noise at short timescales (O’Malley)</String>
+         <ConnectedNoteIDs>34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="36" Position="1613.4,688.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Interleaved randomized benchmarking</String>
+         <ConnectedNoteIDs>34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="37" Position="1245.4,665.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Distinguish unitary from non-unitary errors (Sheldon)</String>
+         <ConnectedNoteIDs>34</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="38" Position="1391.5,845.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Tomography (IBM 2015)</String>
       </Note>
    </Notes>
    <BackgroundShapes/>

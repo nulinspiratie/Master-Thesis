@@ -602,41 +602,40 @@
         \label{fig:cross-driving schematic}
       \end{figure}
 
-      {\centering
-        \begin{minipage}{0.65\textwidth}
-          \centering
-          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
-          \captionof{figure}{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
-          \label{fig:cross-driving Rabi}
-        \end{minipage}
-        \begin{minipage}{0.35\textwidth}
-          \centering
-          \begin{tabular}{l c}
-            \toprule
-            qubit & cross-driving (\%) \\
-            \midrule
-            Top & $-$ \\
-            Ancilla &$ 0.79$ \\
-            Bottom & $0.57$ \\
-            \bottomrule
-          \label{tab:cross-driving top}
-          \end{tabular}
-          \captionof{table}{Driving through top qubit drive line}
-          \vspace{2cm}
-          \begin{tabular}{l c}
-            \toprule
-            qubit & cross-driving (\%) \\
-            \midrule
-            Top & $0.23$ \\
-            Ancilla &$ 0.66$ \\
-            Bottom & $-$ \\
-            \bottomrule
-          \end{tabular}
-          \captionof{table}{Driving through bottom qubit drive line}
-          \label{tab:cross-driving bottom}
-        \end{minipage}
-      \vspace{1cm}
-      }
+      \begin{figure}[tb]
+        \centering
+        \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+        \captionof{figure}{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+        \label{fig:cross-driving Rabi}
+      \end{figure}
+      \begin{table}
+        \begin{tabular}{l c c}
+          \toprule
+          qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
+          \cmidrule(lr){2-3}
+               & top drive line & bottom drive line \\
+          \midrule
+          Top     & $-$    & $0.23$ \\
+          Ancilla & $0.79$ & $0.66$ \\
+          Bottom  & $0.57$ & $-$    \\
+          \bottomrule
+        \end{tabular}
+        \label{tab:cross-driving}
+      \end{table}
+        % \captionof{table}{Driving through top qubit drive line}
+        %   \vspace{2cm}
+        %   \begin{tabular}{l c}
+        %     \toprule
+        %     qubit & cross-driving (\%) \\
+        %     \midrule
+        %     Top & $0.23$ \\
+        %     Ancilla &$ 0.66$ \\
+        %     Bottom & $-$ \\
+        %     \bottomrule
+        %   \end{tabular}
+        %   \captionof{table}{Driving through bottom qubit drive line}
+        %   \label{tab:cross-driving bottom}
+        % \end{minipage}
 
       When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits. Cross-driving effects affect the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are in resonance, as is the case with the Muxmon experiment.
 

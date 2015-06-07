@@ -45,7 +45,7 @@
 \contentsline {subsection}{\numberline {6.2.4}Second excited-state}{46}
 \contentsline {section}{\numberline {6.3}Exploring Frequency re-use}{46}
 \contentsline {subsection}{\numberline {6.3.1}Cross-coupling}{47}
-\contentsline {subsection}{\numberline {6.3.2}Cross-driving}{49}
+\contentsline {subsection}{\numberline {6.3.2}Cross-driving}{48}
 \contentsline {chapter}{\numberline {7}Calibration routines}{51}
 \contentsline {section}{\numberline {7.1}Qubit calibrations}{51}
 \contentsline {subsection}{\numberline {7.1.1}Accurate frequency estimation}{51}
