@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433792517 "thesis.aux" "thesis.bbl" "thesis" 1433792529
+["bibtex thesis"] 1433793265 "thesis.aux" "thesis.bbl" "thesis" 1433793280
   "bibliography.bib" 1433789472 14437 d5129cc3f2ed82a16c70419c21957e9e ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433792528 40382 bb8b40078d72932acbe44231a8ead37c ""
+  "thesis.aux" 1433793279 40382 e67ce79c536593ba3be9136bff3bca6d ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
-  "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433792517 "thesis.tex" "thesis.pdf" "thesis" 1433792529
+  "thesis.bbl"
+["pdflatex"] 1433793266 "thesis.tex" "thesis.pdf" "thesis" 1433793280
   "../Figures/20150512_Muxmon_Setup.jpg" 1433765716 5637603 078509a03629a46a2b04ef42f65fbd41 ""
   "../Figures/Calibration routines/Drive calibration.png" 1433680601 21565 70c0b2e848ae4b2da4c4f9ddc53ce66d ""
   "../Figures/Calibration routines/Mixer leakage schematic.png" 1433622909 18845 b2d5adc5dc6af789b2d4b42bb460dfee ""
@@ -55,7 +55,7 @@
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
   "Chapters/DRIE.tex" 1433767916 33705 8d52012491b2cec83dc36de3816c873f ""
-  "Chapters/Muxmon.tex" 1433792468 134568 fb9735ea37634d6c1a0a431bac0a8b4c ""
+  "Chapters/Muxmon.tex" 1433793251 134626 9e65d1f0ae98482cfcd85bdfae3c521f ""
   "Chapters/appendix.tex" 1433765226 22933 5877ffd9e6502f758996cc9218ade39f ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
@@ -156,12 +156,12 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1433767994 19827 7921cc1f459087b5973100f05793d51b ""
-  "thesis.aux" 1433792528 40382 bb8b40078d72932acbe44231a8ead37c ""
-  "thesis.bbl" 1433792517 8069 a8ea351677fa7a89e0d4692df5eb8927 "bibtex thesis"
+  "thesis.aux" 1433793279 40382 e67ce79c536593ba3be9136bff3bca6d ""
+  "thesis.bbl" 1433793266 8069 a8ea351677fa7a89e0d4692df5eb8927 "bibtex thesis"
   "thesis.tex" 1433780737 8814 8f65089ac2e54cdb30b456513cfef9cb ""
-  "thesis.toc" 1433792528 8246 3a0ab04683abfb6ab83d68f7ef1cef12 ""
+  "thesis.toc" 1433793279 8246 3a0ab04683abfb6ab83d68f7ef1cef12 ""
   (generated)
-  "thesis.toc"
   "thesis.log"
   "thesis.pdf"
+  "thesis.toc"
   "thesis.aux"

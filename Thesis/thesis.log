@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  8 JUN 2015 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  8 JUN 2015 21:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,17 +1378,17 @@ File: ../Figures/Qubit characterization/dispersive shift.png Graphic file (type
 Package pdftex.def Info: ../Figures/Qubit characterization/dispersive shift.png
  used on input line 228.
 (pdftex.def)             Requested size: 226.48395pt x 150.98851pt.
-
-<../Figures/Qubit characterization/Spectroscopy.png, id=150, 361.35pt x 289.08p
+ [33]
+<../Figures/Qubit characterization/Spectroscopy.png, id=153, 361.35pt x 289.08p
 t>
 File: ../Figures/Qubit characterization/Spectroscopy.png Graphic file (type png
 )
  <use ../Figures/Qubit characterization/Spectroscopy.png>
 Package pdftex.def Info: ../Figures/Qubit characterization/Spectroscopy.png use
-d on input line 244.
+d on input line 246.
 (pdftex.def)             Requested size: 203.83417pt x 163.06583pt.
- [33 <../Figures/Qubit characterization/Spectroscopy.png>] [34 <../Figures/Qubi
-t characterization/dispersive shift.png>]
+ [34 <../Figures/Qubit characterization/dispersive shift.png> <../Figures/Qubit
+ characterization/Spectroscopy.png>]
 <../Figures/Qubit characterization/Tracked_spectroscopy.png, id=159, 361.35pt x
  433.62pt>
 File: ../Figures/Qubit characterization/Tracked_spectroscopy.png Graphic file (
@@ -1966,7 +1966,7 @@ texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2014/t
 exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zap
 fchan/uzcmi8a.pfb>
-Output written on thesis.pdf (98 pages, 27916536 bytes).
+Output written on thesis.pdf (98 pages, 27874250 bytes).
 PDF statistics:
  481 PDF objects out of 1000 (max. 8388607)
  253 compressed objects within 3 object streams
