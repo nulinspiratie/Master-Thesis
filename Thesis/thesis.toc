@@ -23,72 +23,73 @@
 \contentsline {section}{\numberline {4.4}Temperature tracking}{19}
 \contentsline {chapter}{\numberline {5}Conclusion and future work}{22}
 \contentsline {part}{II\hspace {1em}Muxmon experiment}{23}
-\contentsline {chapter}{\numberline {6}Challenges in scaling up}{25}
-\contentsline {section}{\numberline {6.1}Frequency re-use}{25}
-\contentsline {section}{\numberline {6.2}Selective broadcasting}{26}
-\contentsline {section}{\numberline {6.3}The Muxmon experiment}{27}
-\contentsline {chapter}{\numberline {7}Muxmon device characterization}{30}
-\contentsline {section}{\numberline {7.1}Continuous-wave measurements}{31}
-\contentsline {subsection}{\numberline {7.1.1}Scanning for resonators}{31}
-\contentsline {subsection}{\numberline {7.1.2}Powersweeping the resonators}{32}
-\contentsline {subsection}{\numberline {7.1.3}Scan for qubit sweet-spots}{34}
-\contentsline {subsection}{\numberline {7.1.4}Qubit spectroscopy}{35}
-\contentsline {subsection}{\numberline {7.1.5}Tracking the qubits}{37}
-\contentsline {subsection}{\numberline {7.1.6}Second transition of the qubit}{37}
-\contentsline {subsection}{\numberline {7.1.7}Flux matrix}{39}
-\contentsline {section}{\numberline {7.2}Time-domain measurements}{42}
-\contentsline {subsection}{\numberline {7.2.1}Qubit control}{42}
-\contentsline {subsection}{\numberline {7.2.2}Drive amplitude calibration}{43}
-\contentsline {subsection}{\numberline {7.2.3}Qubit decoherence}{44}
-\contentsline {subsubsection}{\numberline {7.2.3.1}Qubit relaxation: $T_1$}{44}
-\contentsline {subsubsection}{\numberline {7.2.3.2}Qubit dephasing: Ramsey}{44}
-\contentsline {subsubsection}{\numberline {7.2.3.3}Fast frequency qubit dephasing: Echo}{45}
-\contentsline {subsection}{\numberline {7.2.4}Second excited-state}{46}
-\contentsline {section}{\numberline {7.3}Exploring Frequency re-use}{46}
-\contentsline {subsection}{\numberline {7.3.1}Cross-coupling}{47}
-\contentsline {subsection}{\numberline {7.3.2}Cross-driving}{48}
-\contentsline {chapter}{\numberline {8}Calibration routines}{51}
-\contentsline {section}{\numberline {8.1}Qubit calibrations}{51}
-\contentsline {subsection}{\numberline {8.1.1}Accurate frequency estimation}{51}
-\contentsline {subsection}{\numberline {8.1.2}Accurate drive amplitude calibration}{52}
-\contentsline {subsection}{\numberline {8.1.3}DRAG parameter calibration}{52}
-\contentsline {subsection}{\numberline {8.1.4}AllXY}{53}
-\contentsline {section}{\numberline {8.2}Instrument calibrations}{55}
-\contentsline {subsection}{\numberline {8.2.1}IQ mixer calibration}{55}
-\contentsline {subsection}{\numberline {8.2.2}Duplexer phase calibration}{55}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{58}
-\contentsline {section}{\numberline {9.1}Introduction}{58}
-\contentsline {section}{\numberline {9.2}Clifford group}{59}
-\contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{60}
-\contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{62}
-\contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{62}
-\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{63}
-\contentsline {section}{\numberline {9.5}Two qubit randomized benchmarking}{65}
-\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{65}
-\contentsline {subsection}{\numberline {9.5.2}Compiled randomized benchmarking}{66}
-\contentsline {subsection}{\numberline {9.5.3}5 primitives randomized benchmarking}{67}
-\contentsline {section}{\numberline {9.6}Two qubit randomized benchmarking results}{68}
-\contentsline {section}{\numberline {9.7}Scaling of multi qubit randomized benchmarking}{70}
-\contentsline {chapter}{\numberline {10}Conclusions and outlook}{72}
-\contentsline {chapter}{Appendices}{75}
-\contentsline {chapter}{\numberline {A}Noise}{76}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{76}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{76}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{77}
-\contentsline {section}{\numberline {A.2}The model}{78}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{78}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{79}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{79}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{80}
-\contentsline {section}{\numberline {A.3}Noise temperature}{80}
-\contentsline {section}{\numberline {A.4}Results}{81}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{82}
-\contentsline {chapter}{\numberline {B}Duplexer characterization}{84}
-\contentsline {section}{\numberline {B.1}Duplexer isolation}{84}
-\contentsline {chapter}{\numberline {C}Chip characterization}{85}
-\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{85}
-\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{85}
-\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{85}
+\contentsline {chapter}{\numberline {6}Challenges in scaling up}{24}
+\contentsline {section}{\numberline {6.1}Frequency re-use}{24}
+\contentsline {section}{\numberline {6.2}Selective broadcasting}{25}
+\contentsline {section}{\numberline {6.3}The Muxmon experiment}{26}
+\contentsline {chapter}{\numberline {7}Muxmon device characterization}{29}
+\contentsline {section}{\numberline {7.1}Continuous-wave measurements}{30}
+\contentsline {subsection}{\numberline {7.1.1}Scanning for resonators}{30}
+\contentsline {subsection}{\numberline {7.1.2}Powersweeping the resonators}{31}
+\contentsline {subsection}{\numberline {7.1.3}Scan for qubit sweet-spots}{33}
+\contentsline {subsection}{\numberline {7.1.4}Qubit spectroscopy}{34}
+\contentsline {subsection}{\numberline {7.1.5}Tracking the qubits}{36}
+\contentsline {subsection}{\numberline {7.1.6}Second transition of the qubit}{36}
+\contentsline {subsection}{\numberline {7.1.7}Flux matrix}{38}
+\contentsline {section}{\numberline {7.2}Time-domain measurements}{41}
+\contentsline {subsection}{\numberline {7.2.1}Qubit control}{41}
+\contentsline {subsection}{\numberline {7.2.2}Drive amplitude calibration}{42}
+\contentsline {subsection}{\numberline {7.2.3}Qubit decoherence}{43}
+\contentsline {subsubsection}{\numberline {7.2.3.1}Qubit relaxation: $T_1$}{43}
+\contentsline {subsubsection}{\numberline {7.2.3.2}Qubit dephasing: Ramsey}{43}
+\contentsline {subsubsection}{\numberline {7.2.3.3}Fast frequency qubit dephasing: Echo}{44}
+\contentsline {subsection}{\numberline {7.2.4}Second excited-state}{45}
+\contentsline {section}{\numberline {7.3}Exploring Frequency re-use}{45}
+\contentsline {subsection}{\numberline {7.3.1}Cross-coupling}{46}
+\contentsline {subsection}{\numberline {7.3.2}Cross-driving}{47}
+\contentsline {chapter}{\numberline {8}Calibration routines}{50}
+\contentsline {section}{\numberline {8.1}Qubit calibrations}{50}
+\contentsline {subsection}{\numberline {8.1.1}Accurate frequency estimation}{50}
+\contentsline {subsection}{\numberline {8.1.2}Accurate drive amplitude calibration}{51}
+\contentsline {subsection}{\numberline {8.1.3}DRAG parameter calibration}{51}
+\contentsline {subsection}{\numberline {8.1.4}AllXY}{52}
+\contentsline {section}{\numberline {8.2}Instrument calibrations}{54}
+\contentsline {subsection}{\numberline {8.2.1}IQ mixer calibration}{54}
+\contentsline {subsection}{\numberline {8.2.2}Duplexer phase calibration}{54}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{57}
+\contentsline {section}{\numberline {9.1}Introduction}{57}
+\contentsline {section}{\numberline {9.2}Clifford group}{58}
+\contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{59}
+\contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{61}
+\contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{61}
+\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{62}
+\contentsline {section}{\numberline {9.5}Two qubit randomized benchmarking}{64}
+\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{64}
+\contentsline {subsection}{\numberline {9.5.2}Compiled randomized benchmarking}{65}
+\contentsline {subsection}{\numberline {9.5.3}5 primitives randomized benchmarking}{66}
+\contentsline {section}{\numberline {9.6}Two qubit randomized benchmarking results}{67}
+\contentsline {section}{\numberline {9.7}Scaling of multi qubit randomized benchmarking}{69}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{71}
+\contentsline {chapter}{Appendices}{74}
+\contentsline {chapter}{\numberline {A}Noise}{75}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{75}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{75}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{76}
+\contentsline {section}{\numberline {A.2}The model}{77}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{77}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{78}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{78}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{79}
+\contentsline {section}{\numberline {A.3}Noise temperature}{79}
+\contentsline {section}{\numberline {A.4}Results}{80}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{81}
+\contentsline {chapter}{\numberline {B}Duplexer characterization}{83}
+\contentsline {section}{\numberline {B.1}Duplexer isolation}{83}
+\contentsline {chapter}{\numberline {C}Chip characterization}{84}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{84}
+\contentsline {section}{\numberline {C.2}Muxmon1 decoherence times}{84}
+\contentsline {section}{\numberline {C.3}Muxmon1 cross-driving}{84}
+\contentsline {section}{\numberline {C.4}Muxmon0 resonator buses}{85}
 \contentsline {chapter}{\numberline {D}Additional notes}{86}
 \contentsline {section}{\numberline {D.1}Qubit characterization}{86}
 \contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{86}

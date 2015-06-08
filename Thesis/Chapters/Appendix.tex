@@ -7,8 +7,29 @@
 
 \chapter{Chip characterization}
   \section{qubit coherence times versus frequency}
-  \section{Muxmon1 coherence times}
-    \label{sec:Muxmon1 coherence times}
+
+  \section{Muxmon1 decoherence times}
+    \label{sec:Muxmon1 decoherence times}
+
+
+
+  \section{Muxmon1 cross-driving}
+    \label{sec:Muxmon1 cross-driving}
+      \begin{table}
+        \begin{tabular}{l c c}
+          \toprule
+          qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
+          \cmidrule(lr){2-3}
+               & top-ancilla drive line & bottom-ancilla drive line \\
+          \midrule
+          Top     & $100$    & $5.22$ \\
+          Ancilla & $75$ & $62.5$ \\
+          Bottom  & $1.05$ & $100$    \\
+          \bottomrule
+        \end{tabular}
+        \label{tab:Muxmon1 cross-driving}
+      \end{table}
+
   \section{Muxmon0 resonator buses}
     \label{sec:Resonator buses}
 
