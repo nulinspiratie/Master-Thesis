@@ -19,22 +19,6 @@
 
 
 
-  \chapter*{Introduction}
-
-    Quantum circuits based on circuit quantum electrodynamics (cQED) have experience rapid development of the past few years. Especially transmon qubits, and variations thereof, have flourished up to the point where they are used to perform multi-qubit algorithms. Fedorov et al.~\cite{fedorov2011implementation} first demonstrated implementation of the Toffoli gate, a key ingredient for error detection schemes. The Grover's search algorithm, and the Deutsch-Josza algorithm have been demonstrated for two qubits by DiCarlo et al.~\cite{dicarlo2009demonstration}. Furthermore, the first quantum error detection algorithms have been implemented by C\'orcoles et al.~\cite{corcoles2015demonstration}, and by Rist\`e et al.~\cite{riste2014detecting}.
-
-    There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to hundreds, possibly even thousands of qubits. One of the most promising quantum computing architecture is the surface code. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
-
-    That being said, even in an architecture such as the surface code, the challenges in scaling up are tremendous. Qubits are required to have long coherence times, high fidelity gates with a short duration, and must be arranged such that it is compatible with the architecture. Aside from on-chip challenges strong requirements are placed on supporting equipment. The chip must be cooled down to the milikelvin temperature range, and each of the qubits must be individually controlled.
-
-    In this experiment two of the challenges in scaling up are addressed, namely frequency crowding and instrument scaling. To combat these challenges the Duplexer was invented by Duije Deurloo. The Duplexer is a vector switch matrix having four input channels and two output channels. It can control the signal through each of the input-output combinations, thereby selectively directing qubit pulses. This allows for selective broadcasting, which enables the control of two qubits simultaneously, consequently reducing the amount of instruments required. These subjects are discussed in Chapter~\ref{ch:Challenges in scaling up}.
-
-    To test the concept of selective broadcasting the Muxmon chip was created. This chip consists of three qubits, two of which will be tuned to the same frequency, so that they can be controlled via the Duplexer. Chapter~\ref{ch:Muxmon device characterization} is devoted to the measurements performed to characterize the Muxmon chip.
-
-    Since we want to know the best attainable qubit performance under these conditions the qubits must be accurately tuned. In Chapter~\ref{ch:Calibration routines} the calibrations used to tune the qubits are explained.
-
-    Measuring the performance of the qubits is done through randomized benchmarking. This is a method based on repeated application of unitary operations on the qubit, from which the gate performance can be extracted. Randomized benchmarking will be discussed in Chapter~\ref{ch:randomized benchmarking}.
-
   \chapter{Challenges in scaling up}
     \label{ch:Challenges in scaling up}
 
@@ -547,7 +531,7 @@
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/coherence_times.png}
-        \caption{Decoherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
+        \caption{Decoherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). When measuring the coherence times of either the top or bottom qubit the other qubit was detuned by \SI{50}{\mega \hertz} to suppress cross-coupling effects. The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
         \label{fig:decoherence times Muxmon0}
       \end{figure}
 
@@ -924,10 +908,6 @@
         \begin{itemize}
           \item Mention that drag can be optimized for leakage, although this would result in a higher gate error. Must find paper
         \end{itemize}
-
-    \section{Interleaved randomized benchmarking}
-      \label{sec:interleaved randomized benchmarking}
-      Maybe I should put this in the appendix
 
     \section{Two qubit randomized benchmarking}
       \label{Two qubit randomized benchmarking}
