@@ -22,11 +22,11 @@ V~Bouchiat, D~Vion, P~Joyez, D~Esteve, and M~H Devoret.
 \newblock Quantum coherence with a single cooper pair.
 \newblock {\em Physica Scripta}, 1998(T76):165, 1998.
 
-\bibitem{DRIE}
-A.~Bruno, G.~de~Lange, K.~van~der Enden, S.~Asaad, N.~Langford, and L.~DiCarlo.
-\newblock Extending single-photon relaxation time in superconducting resonators
-  by surface treatment and deep etching of silicon substrates.
-\newblock Unpublished.
+\bibitem{bruno2015reducing}
+A~Bruno, G~de~Lange, S~Asaad, KL~van~der Enden, NK~Langford, and L~DiCarlo.
+\newblock Reducing intrinsic loss in superconducting resonators by surface
+  treatment and deep etching of silicon substrates.
+\newblock {\em Applied Physics Letters}, 106(18):182601, 2015.
 
 \bibitem{Chow}
 Jerry~M. Chow.

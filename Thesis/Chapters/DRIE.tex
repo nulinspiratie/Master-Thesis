@@ -1,6 +1,7 @@
 %!TEX root = ../thesis.tex
 \label{part:DRIE}
 
+
 % \newpage
 
 
@@ -12,17 +13,8 @@
 
 
 
-\part{Deep-reactive ion etched resonators}
+\part{Deep-reactive ion etched resonators\protect\blfootnote{This experiment has been published in Applied Physics Letters \textbf{106} 18 (2015).}}
 \label{chapter:Resonators}
-
-
-When a signal enters a fridge it is attenuated in several stages and eventually reaches the sample being measured. In the sample the signal travels through a feedline. One or more resonators can then be capacitively coupled to the feedline. Qubits can then also be capacitively coupled to the resonators, and a resonator can even be used to connect qubits, in which case the resonator is known as a 'bus'. However in this report only resonators connected to a central feedline will be discussed.
-
-
-
-
-
-
 
 \chapter{Theory}
   \label{ch:theory}
@@ -170,7 +162,7 @@ When a signal enters a fridge it is attenuated in several stages and eventually 
 
   Previous research has determined that for resonators, TLS are mostly present at the surfaces \cite{gao2008experimental}. These oxides may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
 
-  Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this report, before depositing the metal on the substrate, an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS can possibly mediate this lattice mismatch. See \cite{DRIE} for more information.
+  Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this report, before depositing the metal on the substrate, an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS can possibly mediate this lattice mismatch. See \cite{bruno2015reducing} for more information.
 
 
   \subsubsection{Infrared shielding}
@@ -181,7 +173,7 @@ When a signal enters a fridge it is attenuated in several stages and eventually 
 
   \subsubsection{Deep-reactive ion etching}
 
-  Another technique applied to the resonators studied in this report is deep-reactive ion etching (DRIE), which is a type of Bosch process \cite{DRIE}. In this technique two alternating steps are performed:
+  Another technique applied to the resonators studied in this report is deep-reactive ion etching (DRIE), which is a type of Bosch process \cite{bruno2015reducing}. In this technique two alternating steps are performed:
 
   \begin{enumerate}
       \item An etching step in which an $\chem{SF_6}$ plasma is used to etch the substrate layer.
@@ -254,11 +246,11 @@ When a signal enters a fridge it is attenuated in several stages and eventually 
     \caption{Intrinsic quality factor of resonators as a function of mean number of photons present in the resonator. Measurements were performed at \SI{15}{\milli \kelvin}.}
     \label{fig:Qi_vs_n_photon}
 \end{figure}
-To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator \cite{DRIE}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
+To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator \cite{bruno2015reducing}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
 
 As can be seen, the internal quality factor $Q_i$ of all resonators decrease with decreasing photon number. One explanation for this phenomenon is that the dissipation dissipation is mainly due to TLS. Since measurements were performed at \SI{\sim15}{mK}, the TLS are not saturated since the rate of thermal excitation is low. As discussed in section~\ref{sec:TLS}, the relative loss due to TLS is highest at low power, in the regime where they are not saturated. Therefore the fact that the internal quality factor $Q_i$ rises with the mean number of photons present in the resonator can be attributed to a larger amount of TLS being satured. This would suggest that, even with HMDS and DRIE treatment of the sample, at low power and temperature, the internal quality factor is still limited by TLS being present.
 
-The mean photon number of a resonator is inversely proportional to the square of frequency \cite{DRIE}, so for resonators with a low frequency a lower input power is required than with a high frequency. At high photon numbers this is not a concern, as the transmitted signal is high enough to be accurately measured in a short period of time. For the single-photon powers, however, which is the region of interest for quantum computation, acquiring enough signal took up to five hours for the lowest frequencies. The reason that for the resonator with a resonance frequency at \SI{1.83}{\giga \hertz} has large error bars at low powers can be partly attributed to this, but as we will see in section \ref{sec:noise_results}, the main reason is that its frequency lies outside the bandwidth of the amplifiers and circulators of the set-up, resulting in a large amount of additional noise.
+The mean photon number of a resonator is inversely proportional to the square of frequency \cite{bruno2015reducing}, so for resonators with a low frequency a lower input power is required than with a high frequency. At high photon numbers this is not a concern, as the transmitted signal is high enough to be accurately measured in a short period of time. For the single-photon powers, however, which is the region of interest for quantum computation, acquiring enough signal took up to five hours for the lowest frequencies. The reason that for the resonator with a resonance frequency at \SI{1.83}{\giga \hertz} has large error bars at low powers can be partly attributed to this, but as we will see in section \ref{sec:noise_results}, the main reason is that its frequency lies outside the bandwidth of the amplifiers and circulators of the set-up, resulting in a large amount of additional noise.
 
 % \begin{itemize}
 %     \item Quality factor depends on frequency?
@@ -336,6 +328,6 @@ The decrease in resonance frequency at lower temperatures can be explained due t
 
 Since the quality factor of all resonators is found to decrease with decreasing input power, this indicates that at low temperatures and powers the limiting factor is still due to TLS. The fact that the quality factor initially increases with higher temperatures, supports this claim. By also measuring  the resonance frequency as a function of temperature, the curve obtained is in good agreement with a model describing the resonance frequency shift due to TLS \cite{gao2008experimental}. The curve even shows an increase in resonance frequency at the lowest temperatures, which was also predicted by the model. These results suggest that even after HMDS surface treatment and deep-reactive ion etching was applied, the internal quality factor of the resonator at low temperatures and power is still limited by the presence of TLS.
 
-Nevertheless, As shown by Bruno et al. \cite{DRIE}, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. More research must be done to determine at what interface the dissipation due to TLS is greatest after these two treatments.
+Nevertheless, As shown by Bruno et al. \cite{bruno2015reducing}, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. More research must be done to determine at what interface the dissipation due to TLS is greatest after these two treatments.
 
 The next step is to perform the same treatments (HMDS and DRIE) on transmon qubits, to study what the influence will be on coherence times.

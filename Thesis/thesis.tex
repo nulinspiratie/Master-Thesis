@@ -58,7 +58,12 @@
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \newcommand{\figureinset}[3]{\llap{\parbox[b]{#2in}{#1\\\rule{0ex}{#3in}}}}
-
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
 % \onehalfspacing
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
