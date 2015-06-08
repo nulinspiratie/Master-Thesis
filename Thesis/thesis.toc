@@ -63,9 +63,9 @@
 \contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{58}
 \contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{60}
 \contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{60}
-\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{61}
+\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{62}
 \contentsline {section}{\numberline {9.5}Two qubit randomized benchmarking}{63}
-\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{63}
+\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{64}
 \contentsline {subsection}{\numberline {9.5.2}Compiled randomized benchmarking}{64}
 \contentsline {subsection}{\numberline {9.5.3}5 primitives randomized benchmarking}{65}
 \contentsline {section}{\numberline {9.6}Two qubit randomized benchmarking results}{66}

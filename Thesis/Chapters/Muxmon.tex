@@ -105,7 +105,7 @@
 
     \section{The transmon}
       \label{sec:The transmon}
-      The qubits on the Muxmon chip are all transmon qubits, which are modified versions of the Cooper-pair box qubit \cite{bouchiat1998CooperPairBox}. The Cooper-pair box qubit consists of a superconducting island separated from a superconducting bulk by a Josephson junction. The Josephson junction allows Cooper-pairs to travel between the island and the bulk. The Hamiltonian describing the Cooper-pair box is given by:
+      The qubits on the Muxmon chip are all transmon qubits, which are modified versions of the Cooper-pair box qubit \cite{bouchiat1998CooperPairBox,nakamura1999coherent}. The Cooper-pair box qubit consists of a superconducting island separated from a superconducting bulk by a Josephson junction. The Josephson junction allows Cooper-pairs to travel between the island and the bulk. The Hamiltonian describing the Cooper-pair box is given by:
 
       \begin{equation}
         H=4 E_C (n - n_g)^2-E_J \cos \phi
@@ -114,7 +114,7 @@
 
       Here $E_C$ is charging energy, $E_J$ is the Josephson energy, $n$ is the operator corresponding to the number of Cooper pairs on the island, $n_g$ is a charge offset, and $\phi$ is the Josephson phase operator. The Cooper-pair box operates in the regime where $E_C \gg E_J$, resulting in well-defined number of Cooper pairs on the island, which determine its energy levels. The Cooper-pair box is therefore known as a charge qubit. The Josephson junction is a nonlinear inductor, resulting in an anharmonicity between the energy levels of the Cooper-pair box. Due to tihs anhamonicity the different energy levels can be individually addressed, which is crucial for a qubit. The qubit states in a Cooper-pair box qubit are the two states having the lowest energy $\ket{n}$ and $\ket{n+1}$. The number of Cooper pairs $n$ having the lowest energy is determined by an applied gate voltage, corresponding to $n_g$.
 
-      The Cooper-pair box qubit suffers from being sensitive to fluctuations in the charge offset $n_g$, which result in fluctuations in its energy levels. The transmon qubit is a modification to the Cooper-pair box, which is insensitive to charge fluctuations by operating the regime where $E_J \gg E_C$ \cite{koch2007Transmon}. This is achieved by adding a large shunting capacitor to the Cooper-pair box, which increases its capacitance to ground, thereby reducing $E_C$. The charge sensitivity decreases exponentially with increasing $E_J/E_C$ ratio. The cost of increasing $E_J/E_C$ is that the anharmonicity between the energy levels decreases, albeit with a polynomial depence. The transmon usually operates in the regime where $E_J/E_C$ is somewhere between $20$ and $100$, where the charge sensitivity is largely suppressed, while still having sufficient anharmonicity. In the transmon regime the transition frequency from the ground-state to the excited-state of the qubit is given to good approximation by \cite[p.52]{Reed}:
+      The Cooper-pair box qubit suffers from being sensitive to fluctuations in the charge offset $n_g$, which result in fluctuations in its energy levels. The transmon qubit is a modification to the Cooper-pair box, which is insensitive to charge fluctuations by operating the regime where $E_J \gg E_C$ \cite{koch2007Transmon,schreier2008suppressing}. This is achieved by adding a large shunting capacitor to the Cooper-pair box, which increases its capacitance to ground, thereby reducing $E_C$. The charge sensitivity decreases exponentially with increasing $E_J/E_C$ ratio. The cost of increasing $E_J/E_C$ is that the anharmonicity between the energy levels decreases, albeit with a polynomial depence. The transmon usually operates in the regime where $E_J/E_C$ is somewhere between $20$ and $100$, where the charge sensitivity is largely suppressed, while still having sufficient anharmonicity. In the transmon regime the transition frequency from the ground-state to the excited-state of the qubit is given to good approximation by \cite[p.52]{Reed}:
 
       \begin{equation}
         \hbar \omega_q = \sqrt{8 E_J E_C} - E_C
@@ -473,7 +473,7 @@
 
           Aside from relaxation, the qubit also experiences dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency, and results in a random phase being added to the qubit. It can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
 
-          The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\;T_1$ \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
+          The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\;T_1$ due to dissipation \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
 
           Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Figure~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
@@ -815,18 +815,33 @@
         \item Measure the state of the qubit
       \end{enumerate}
 
-      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state deviating from the ground-state. The qubit will therefore be in the excited-state with a nonzero probability. This probability increases as the number of Cliffords $n$ is increased.
+      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state having a nonzero population in the excited-state. The final population in the ground-state $P_0$ decreases exponentially as the number of Cliffords $n$ is increased. In the limiting case where all information about the qubit is lost the qubit has equal population in the ground- and in the excited-state. The final ground-state population follows an exponential curve  given by~\cite{knill2008randomized}:
 
-      \textbf{TODO:} Something about exponential decay, T1 fidelity limit
       \begin{equation}
-        P= A p^n + B
+        P_0= \frac{1}{2} p^n + \frac{1}{2}
         \label{eq:RB exponential decay}
       \end{equation}
 
+      where $p$ is the decay parameter, related to the average fidelity per operation $F_0$ by~\cite{magesan2011scalable}:
+
       \begin{equation}
-        F_{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right)
+        F_o = \frac{1+p}{2}
+      \end{equation}
+
+      With knowledge of the average number of gates $n_g$ per operation, the average fidelity per operation can be translated to an average fidelity per gate $F_g$ via:
+
+      \begin{equation}
+        F_g = F_o^{1/n_g}
+      \end{equation}
+
+      Qubit relaxation places an upper limit on the number of gates that can be performed, and therefore on the fidelity per gate. This upper limit $F_\text{max}$ is given by:~\cite{knill2008randomized}:
+
+      \begin{equation}
+        F_\text{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right)
         \label{eq:RB T1 fidelity limit}
       \end{equation}
+
+      where $t_g$ is the duration per gate, including any buffer between successive gates. As is expected this upper limit increases with shorter gates.
 
       \begin{figure}[tb]
         \centering
@@ -835,7 +850,7 @@
         \label{fig:RB single seed}
       \end{figure}
 
-      To characterize the shape of the exponential decay, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. Each set of random Cliffords is known as a seed. The randomized benchmarking results using a single seed are shown in Figure~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
+      To characterize the shape of the exponential decay in randomized benchmarking measurements, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. Each set of random Cliffords is known as a seed. The randomized benchmarking results using a single seed are shown in Figure~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Formula~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
 
       \begin{itemize}
         \item Clifford group can be efficiently simulated on a classical computer. Gottesman-Knill theorem (\cite{gottesman1998heisenberg})

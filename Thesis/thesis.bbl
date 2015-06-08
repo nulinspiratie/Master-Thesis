@@ -89,6 +89,11 @@ Jens Koch, Terri~M. Yu, Jay Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
 \newblock Charge-insensitive qubit design derived from the cooper pair box.
 \newblock {\em Phys. Rev. A}, 76:042319, Oct 2007.
 
+\bibitem{magesan2011scalable}
+Easwar Magesan, Jay~M Gambetta, and Joseph Emerson.
+\newblock Scalable and robust randomized benchmarking of quantum processes.
+\newblock {\em Physical review letters}, 106(18):180504, 2011.
+
 \bibitem{magesan2012efficient}
 Easwar Magesan, Jay~M Gambetta, Blake~R Johnson, Colm~A Ryan, Jerry~M Chow,
   Seth~T Merkel, Marcus~P da~Silva, George~A Keefe, Mary~B Rothwell, Thomas~A
@@ -112,6 +117,12 @@ Benjamin~A. Mazin.
 F~Motzoi, JM~Gambetta, P~Rebentrost, and Frank~K Wilhelm.
 \newblock Simple pulses for elimination of leakage in weakly nonlinear qubits.
 \newblock {\em Physical review letters}, 103(11):110501, 2009.
+
+\bibitem{nakamura1999coherent}
+Yu~Nakamura, Yu~A Pashkin, and JS~Tsai.
+\newblock Coherent control of macroscopic quantum states in a
+  single-cooper-pair box.
+\newblock {\em Nature}, 398(6730):786--788, 1999.
 
 \bibitem{nielsen2010quantum}
 Michael~A Nielsen and Isaac~L Chuang.
