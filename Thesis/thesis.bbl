@@ -65,11 +65,6 @@ Kurtis~L. Geerlings.
 \newblock {\em Improving Coherence of Superconducting Qubits and Resonators}.
 \newblock PhD thesis, Yale University, 2013.
 
-\bibitem{gottesman1998heisenberg}
-Daniel Gottesman.
-\newblock The heisenberg representation of quantum computers.
-\newblock {\em arXiv preprint quant-ph/9807006}, 1998.
-
 \bibitem{johnson2015demonstration}
 Blake~R Johnson, Marcus~P da~Silva, Colm~A Ryan, Shelby Kimmel, Jerry~M Chow,
   and Thomas~A Ohki.
@@ -166,6 +161,13 @@ Jeremy~M Sage, Vladimir Bolkhovsky, William~D Oliver, Benjamin Turek, and
   Paul~B Welander.
 \newblock Study of loss in superconducting coplanar waveguide resonators.
 \newblock {\em Journal of Applied Physics}, 109(6):063915, 2011.
+
+\bibitem{schreier2008suppressing}
+JA~Schreier, Andrew~A Houck, Jens Koch, David~I Schuster, BR~Johnson, JM~Chow,
+  Jay~M Gambetta, J~Majer, L~Frunzio, Michel~H Devoret, et~al.
+\newblock Suppressing charge noise decoherence in superconducting charge
+  qubits.
+\newblock {\em Physical Review B}, 77(18):180502, 2008.
 
 \bibitem{Sears}
 Adam~P. Sears.

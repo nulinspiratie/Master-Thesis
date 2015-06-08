@@ -6,43 +6,43 @@ Database file #1: bibliography.bib
 Warning--empty journal in plourde2009microwave
 You've used 32 entries,
             2118 wiz_defined-function locations,
-            676 strings with 10161 characters,
-and the built_in function-call counts, 11683 in all, are:
-= -- 1046
-> -- 872
+            677 strings with 10334 characters,
+and the built_in function-call counts, 12064 in all, are:
+= -- 1074
+> -- 923
 < -- 0
-+ -- 347
-- -- 314
-* -- 972
-:= -- 2145
++ -- 366
+- -- 334
+* -- 1024
+:= -- 2213
 add.period$ -- 96
 call.type$ -- 32
-change.case$ -- 240
+change.case$ -- 249
 chr.to.int$ -- 0
 cite$ -- 33
-duplicate$ -- 332
-empty$ -- 675
-format.name$ -- 314
-if$ -- 2234
+duplicate$ -- 333
+empty$ -- 684
+format.name$ -- 334
+if$ -- 2302
 int.to.chr$ -- 0
 int.to.str$ -- 32
 missing$ -- 27
 newline$ -- 163
 num.names$ -- 64
-pop$ -- 220
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 217
+purify$ -- 226
 quote$ -- 0
-skip$ -- 222
+skip$ -- 223
 stack$ -- 0
-substring$ -- 468
+substring$ -- 485
 swap$ -- 31
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 124
 warning$ -- 1
-while$ -- 83
+while$ -- 84
 width$ -- 34
-write$ -- 344
+write$ -- 345
 (There was 1 warning)
