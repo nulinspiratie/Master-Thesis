@@ -70,43 +70,43 @@
 \contentsline {section}{\numberline {8.7}Two qubit randomized benchmarking results}{69}
 \contentsline {section}{\numberline {8.8}Scaling of multi qubit randomized benchmarking}{71}
 \contentsline {chapter}{\numberline {9}Conclusions and outlook}{73}
-\contentsline {chapter}{Appendices}{74}
-\contentsline {chapter}{\numberline {A}Noise}{75}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{75}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{75}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{76}
-\contentsline {section}{\numberline {A.2}The model}{77}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{77}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{78}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{78}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{79}
-\contentsline {section}{\numberline {A.3}Noise temperature}{79}
-\contentsline {section}{\numberline {A.4}Results}{80}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{81}
-\contentsline {chapter}{\numberline {B}Duplexer characterization}{83}
-\contentsline {section}{\numberline {B.1}Duplexer isolation}{83}
-\contentsline {chapter}{\numberline {C}Chip characterization}{84}
-\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{84}
-\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{84}
-\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{84}
-\contentsline {chapter}{\numberline {D}Additional notes}{85}
-\contentsline {section}{\numberline {D.1}Qubit characterization}{85}
-\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{85}
-\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{85}
-\contentsline {subsection}{\numberline {D.1.2}Finding the qubit sweet-spot using a one-dimensional scan}{85}
-\contentsline {subsubsection}{\numberline {D.1.2.1}Spectroscopy}{86}
-\contentsline {subsubsection}{\numberline {D.1.2.2}Flux matrix}{86}
-\contentsline {subsection}{\numberline {D.1.3}Part I: Time-domain measurements}{86}
-\contentsline {subsubsection}{\numberline {D.1.3.1}AllXY}{86}
-\contentsline {section}{\numberline {D.2}Randomized benchmarking}{87}
-\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{87}
-\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{87}
-\contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{87}
-\contentsline {chapter}{\numberline {E}Algorithms}{89}
-\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{89}
-\contentsline {section}{\numberline {E.2}Peak finding}{89}
-\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{89}
-\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{89}
-\contentsline {section}{\numberline {E.3}Compiled randomized benchmarking}{89}
-\contentsline {subsection}{\numberline {E.3.1}Finding the optimal gate sequence}{89}
-\contentsline {subsection}{\numberline {E.3.2}Optimizing the gate compilation algorithm}{90}
+\contentsline {chapter}{Appendices}{75}
+\contentsline {chapter}{\numberline {A}Noise}{76}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{76}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{76}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{77}
+\contentsline {section}{\numberline {A.2}The model}{78}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{78}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{79}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{79}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{80}
+\contentsline {section}{\numberline {A.3}Noise temperature}{80}
+\contentsline {section}{\numberline {A.4}Results}{81}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{82}
+\contentsline {chapter}{\numberline {B}Duplexer characterization}{84}
+\contentsline {section}{\numberline {B.1}Duplexer isolation}{84}
+\contentsline {chapter}{\numberline {C}Chip characterization}{85}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{85}
+\contentsline {section}{\numberline {C.2}Muxmon1 coherence times}{85}
+\contentsline {section}{\numberline {C.3}Muxmon0 resonator buses}{85}
+\contentsline {chapter}{\numberline {D}Additional notes}{86}
+\contentsline {section}{\numberline {D.1}Qubit characterization}{86}
+\contentsline {subsection}{\numberline {D.1.1}Part I: Continuous-wave measurements}{86}
+\contentsline {subsubsection}{\numberline {D.1.1.1}Powersweep}{86}
+\contentsline {subsection}{\numberline {D.1.2}Finding the qubit sweet-spot using a one-dimensional scan}{86}
+\contentsline {subsubsection}{\numberline {D.1.2.1}Spectroscopy}{87}
+\contentsline {subsubsection}{\numberline {D.1.2.2}Flux matrix}{87}
+\contentsline {subsection}{\numberline {D.1.3}Part I: Time-domain measurements}{87}
+\contentsline {subsubsection}{\numberline {D.1.3.1}AllXY}{87}
+\contentsline {section}{\numberline {D.2}Randomized benchmarking}{88}
+\contentsline {subsection}{\numberline {D.2.1}Clifford gate decomposition}{88}
+\contentsline {subsection}{\numberline {D.2.2}Individual randomized benchmarking measurements}{88}
+\contentsline {subsection}{\numberline {D.2.3}Determining population in three states}{88}
+\contentsline {chapter}{\numberline {E}Algorithms}{90}
+\contentsline {section}{\numberline {E.1}Tracked spectroscopy}{90}
+\contentsline {section}{\numberline {E.2}Peak finding}{90}
+\contentsline {subsection}{\numberline {E.2.1}Normal peak finder}{90}
+\contentsline {subsection}{\numberline {E.2.2}Derivative peak finder}{90}
+\contentsline {section}{\numberline {E.3}Compiled randomized benchmarking}{90}
+\contentsline {subsection}{\numberline {E.3.1}Finding the optimal gate sequence}{90}
+\contentsline {subsection}{\numberline {E.3.2}Optimizing the gate compilation algorithm}{91}

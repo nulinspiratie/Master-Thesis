@@ -38,7 +38,7 @@
   \chapter{Challenges in scaling up}
     \label{ch:Challenges in scaling up}
 
-    \section{frequency re-use}
+    \section{Frequency re-use}
       \begin{wrapfigure}[16]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
@@ -1062,16 +1062,12 @@
 
     Of the three multi-qubit randomized benchmarking methods, alternating randomized benchmarking clearly scales the worst with number of qubits. Compiled randomized benchmarking per definition always scales the best. However, the complexity of finding the optimal gate compilation scales exponentially, making it a highly non-trivial challenge. The $5$ primitives randomized benchmarking, remains fixed at $5$ gates per Clifford, irrespective of the number of qubits. In contrast to the compiled randomized benchmarking however, finding the Clifford decomposition using the $5$ primitives method can be done using a simple lookup table. furthermore, the average gates per Clifford using compiled randomized benchmarking converges to $5$ quite rapidly, and so unless the number of qubits is small, the gain using compiled randomized benchmarking is small.
 
-    There is an additional advantage of the $5$ primitives method, which is that the $5$ primitive gate sequence remains fixed. Therefore it is not needed to generate qubit pulses on-demand, but only to control the qubit switch. This could potentially have an application in a quantum processor, where a central pulse generator continuously repeats the same $5$ pulses. By selectively directing the pulses to each of the qubits using a switch matrix, each qubit could have access to any given Clifford at any time. The consequence is that for single-qubit Clifford gates the pulses do not need to be generated on demand, but can simply be continuously looped. The timing of the switches is the only thing that needs to be directed, which is a far easier problem. If the $5$ primitive gates are combined with a sixth gate, such as the T-gate, this would even result in any universal single-qubit gates being accessible to any qubit, simply through control of its corresponding switch. For multi-qubit gates it is likely still necessary to generate the gates on-demand. Neverheless, the single-qubit
+    When randomized benchmarking is only performed on one of the qubits, while the other at the same frequency remains idle, cross-driving effects have been observed. However, it has been shown in the $5$ primitives method that by cleverly choosing pulses, cross-driving effects when the other qubit is idle can largely be corrected.
 
-    However, it has been shown in the $5$ primitives method that by cleverly choosing pulses, cross-driving effects when the other qubit is idle can be largely corrected.
+    During the randomized benchmarking sequences leakage to the second excited-state has been observed. The leakage rate is found to be worse for the top qubit than for the bottom qubit. The DRAG parameter has a different optimum value for correcting phase error than it has for minimizing leakage. Since it has been calibrated to minimize the phase error, changing the DRAG parameter could therefore potentially reduce leakage, although this would result in more phase error during gates. Additionally, leakage could be reduced by resorting to longer pulses.
 
+    Even though the Duplexer already proves to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of intstruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
 
+    There is one additional advantage of the $5$ primitives method, which is that the $5$ primitive gate sequence remains fixed. Therefore it is not needed to generate qubit pulses on-demand, but only to control the qubit switch. This could potentially have an application in a quantum processor, where a central pulse generator continuously repeats the same $5$ pulses. By selectively directing the pulses to each of the qubits using a switch matrix, each qubit could have access to any given Clifford at any time. The consequence is that for single-qubit Clifford gates the pulses do not need to be generated on demand, but can simply be continuously looped. The timing of the switches is the only thing that needs to be directed, which is a far easier challenge. If the $5$ primitive gates are combined with a sixth gate, such as the T-gate, this would even result in any universal single-qubit gates being accessible to any qubit, simply through control of its corresponding switch.  This technique could even possibly be extended to two-qubit gates, where the flux pulses could be similarly controlled. This would mean that a universal set of quantum gates could be generated for qubits by only controlling the corresponding switches. It might even be extended to qubit readout, as the readout tonescould be directed via switching as well.
 
-    \begin{itemize}
-      \item Talk about how the $5$ primitives method could be used for easy Clifford generation for an arbitrarily large quantum computer.
-      \item Duplexer turns into a multiplexer
-      \item If cross-coupling and cross-driving effects prove to be too severe, an alternative scheme based on eight distinct frequencies can be used in the surface code architecture.
-
-
-    \end{itemize}
+    Having continuously streaming pulses, which are directed to the qubits via selective broadcasting could have ... consequences, as this would shift the challenge from generating pulses when required to only controlling the switches. This would have important consequences. First of all the feedback response time could improve significantly. Furthermore the amount of data required to be sent into the fridge could be reduced significantly. However, the most important consequence is probably that the amount of instruments required would be reduced significantly, potentially even reaching a constant as the number of qubits grow. This might prove to be an important step in the pathway to building a quantum computer.
