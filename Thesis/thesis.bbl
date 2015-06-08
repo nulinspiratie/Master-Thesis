@@ -84,6 +84,14 @@ Jens Koch, Terri~M. Yu, Jay Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
 \newblock Charge-insensitive qubit design derived from the cooper pair box.
 \newblock {\em Phys. Rev. A}, 76:042319, Oct 2007.
 
+\bibitem{lucero2010reduced}
+Erik Lucero, Julian Kelly, Radoslaw~C Bialczak, Mike Lenander, Matteo
+  Mariantoni, Matthew Neeley, AD~O’Connell, Daniel Sank, H~Wang, Martin
+  Weides, et~al.
+\newblock Reduced phase error through optimized control of a superconducting
+  qubit.
+\newblock {\em Physical Review A}, 82(4):042339, 2010.
+
 \bibitem{magesan2011scalable}
 Easwar Magesan, Jay~M Gambetta, and Joseph Emerson.
 \newblock Scalable and robust randomized benchmarking of quantum processes.
