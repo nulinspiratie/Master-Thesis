@@ -28,25 +28,26 @@
 \contentsline {section}{\numberline {6.2}Selective broadcasting}{24}
 \contentsline {section}{\numberline {6.3}The Muxmon experiment}{25}
 \contentsline {chapter}{\numberline {7}Muxmon device characterization}{28}
-\contentsline {section}{\numberline {7.1}Continuous-wave measurements}{29}
-\contentsline {subsection}{\numberline {7.1.1}Scanning for resonators}{29}
-\contentsline {subsection}{\numberline {7.1.2}Powersweeping the resonators}{30}
-\contentsline {subsection}{\numberline {7.1.3}Scan for qubit sweet-spots}{32}
-\contentsline {subsection}{\numberline {7.1.4}Qubit spectroscopy}{33}
-\contentsline {subsection}{\numberline {7.1.5}Tracking the qubits}{35}
-\contentsline {subsection}{\numberline {7.1.6}Second transition of the qubit}{35}
-\contentsline {subsection}{\numberline {7.1.7}Flux matrix}{37}
-\contentsline {section}{\numberline {7.2}Time-domain measurements}{40}
-\contentsline {subsection}{\numberline {7.2.1}Qubit control}{40}
-\contentsline {subsection}{\numberline {7.2.2}Drive amplitude calibration}{41}
-\contentsline {subsection}{\numberline {7.2.3}Qubit decoherence}{42}
-\contentsline {subsubsection}{\numberline {7.2.3.1}Qubit relaxation: $T_1$}{42}
-\contentsline {subsubsection}{\numberline {7.2.3.2}Qubit dephasing: Ramsey}{42}
-\contentsline {subsubsection}{\numberline {7.2.3.3}Fast frequency qubit dephasing: Echo}{43}
-\contentsline {subsection}{\numberline {7.2.4}Second excited-state}{44}
-\contentsline {section}{\numberline {7.3}Exploring Frequency re-use}{44}
-\contentsline {subsection}{\numberline {7.3.1}Cross-coupling}{45}
-\contentsline {subsection}{\numberline {7.3.2}Cross-driving}{46}
+\contentsline {section}{\numberline {7.1}The transmon}{28}
+\contentsline {section}{\numberline {7.2}Continuous-wave measurements}{29}
+\contentsline {subsection}{\numberline {7.2.1}Scanning for resonators}{29}
+\contentsline {subsection}{\numberline {7.2.2}Powersweeping the resonators}{31}
+\contentsline {subsection}{\numberline {7.2.3}Scan for qubit sweet-spots}{32}
+\contentsline {subsection}{\numberline {7.2.4}Qubit spectroscopy}{33}
+\contentsline {subsection}{\numberline {7.2.5}Tracking the qubits}{35}
+\contentsline {subsection}{\numberline {7.2.6}Second transition of the qubit}{36}
+\contentsline {subsection}{\numberline {7.2.7}Flux matrix}{37}
+\contentsline {section}{\numberline {7.3}Time-domain measurements}{40}
+\contentsline {subsection}{\numberline {7.3.1}Qubit control}{40}
+\contentsline {subsection}{\numberline {7.3.2}Drive amplitude calibration}{41}
+\contentsline {subsection}{\numberline {7.3.3}Qubit decoherence}{42}
+\contentsline {subsubsection}{\numberline {7.3.3.1}Qubit relaxation: $T_1$}{42}
+\contentsline {subsubsection}{\numberline {7.3.3.2}Qubit dephasing: Ramsey}{42}
+\contentsline {subsubsection}{\numberline {7.3.3.3}Fast frequency qubit dephasing: Echo}{43}
+\contentsline {subsection}{\numberline {7.3.4}Second excited-state}{44}
+\contentsline {section}{\numberline {7.4}Exploring Frequency re-use}{44}
+\contentsline {subsection}{\numberline {7.4.1}Cross-coupling}{45}
+\contentsline {subsection}{\numberline {7.4.2}Cross-driving}{46}
 \contentsline {chapter}{\numberline {8}Calibration routines}{49}
 \contentsline {section}{\numberline {8.1}Qubit calibrations}{49}
 \contentsline {subsection}{\numberline {8.1.1}Accurate frequency estimation}{49}
