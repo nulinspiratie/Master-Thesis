@@ -491,7 +491,20 @@
 
       \subsection{Second excited-state}
         \label{ssec:Second excited-state}
-        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second excited-state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Section~\ref{DRAG parameter calibration} for calibration of the DRAG parameter). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second excited-state. This can be done by first exciting the transmon to its first excited-state, and then applying a second pulse at the second transition frequency of the transmon. Measuring this frequency has been explained in Section~\ref{ssec:12-transition spectroscopy}.
+
+        \begin{wrapfigure}[15]{r}{0.4\textwidth}
+          \begin{center}
+          \vspace{-30pt}
+            \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/schematic second transition pulsing.png}
+          \end{center}
+          \vspace{-20 pt}
+          \caption{Schematic of the pulse combination used to reach the second excited-state. First an $X_\pi^{01}$-pulse is applied at frequency $\omega_{01}$. Secondly an $X_\pi^{12}$-pulse is applied at frequency $\omega_{12}$ such that the transmon is in its second excited-state.}
+          \label{fig:schematic pulsing to second excited-state}
+        \end{wrapfigure}
+
+        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second excited-state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Section~\ref{ssec:DRAG parameter calibration} for information on the DRAG pulse). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second excited-state. This can be done by first exciting the transmon to its first excited-state, and then applying a second pulse at the second transition frequency of the transmon, as shown in Figure~\ref{fig:schematic pulsing to second excited-state}. Measuring this frequency has been explained in Section~\ref{ssec:12-transition spectroscopy}.
+
+        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
 
         \begin{wrapfigure}[18]{r}{0.4\textwidth}
           \begin{center}
@@ -502,8 +515,6 @@
           \caption{A second transition Rabi measurement of the second excited-state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground-state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first excited-state.}
           \label{fig:Rabi12}
         \end{wrapfigure}
-
-        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
 
         The pulse-amplitude required to pulse to the second excited-state has been calibrated for both the top and bottom qubit. In Figure~\ref{fig:Rabi12} a second transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first excited-state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the signal at the second excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first excited-state, and that indeed the transmon is fully excited to the second excited-state.
 

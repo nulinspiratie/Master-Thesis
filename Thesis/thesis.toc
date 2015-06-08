@@ -46,7 +46,7 @@
 \contentsline {subsubsection}{\numberline {7.3.3.3}Fast frequency qubit dephasing: Echo}{43}
 \contentsline {subsection}{\numberline {7.3.4}Second excited-state}{43}
 \contentsline {section}{\numberline {7.4}Exploring Frequency re-use}{44}
-\contentsline {subsection}{\numberline {7.4.1}Cross-coupling}{45}
+\contentsline {subsection}{\numberline {7.4.1}Cross-coupling}{46}
 \contentsline {subsection}{\numberline {7.4.2}Cross-driving}{46}
 \contentsline {chapter}{\numberline {8}Calibration routines}{49}
 \contentsline {section}{\numberline {8.1}Qubit calibrations}{49}
