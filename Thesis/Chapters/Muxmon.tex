@@ -470,13 +470,13 @@
             \label{fig:T2star schematic}
           \end{wrapfigure}
 
-          Aside from relaxation, the qubit also experiences dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency, and results in a random phase being added to the qubit. It can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
+          Aside from relaxation, the qubit also experiences dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency, and results in the random accumulation of phase. It can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
 
           The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\;T_1$ due to dissipation \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
 
           Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Figure~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
-          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Section~\ref{sec:Accurate frequency estimation}).
+          During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit acquires a phase with respect to the rotating frame of the drive. As a result the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Section~\ref{sec:Accurate frequency estimation}).
 
         \subsubsection{Fast frequency qubit dephasing: Echo}
 
@@ -635,18 +635,48 @@
 
       As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
 
-
-    \textbf{Figures that need to be included:}
-    \begin{itemize}
-      \item schematic of cross-coupling and readout cross-talk \\
-          It could be good to create this using the actual Muxmon chip as background, with arrows indicating how the different effects operate
-    \end{itemize}
-
-
-
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
-    \textbf{TODO:} Introduction
+    In the Muxmon experiment we want to find out what the best possible qubit performance is in a frequency re-use set-up. The qubit pulses must therefore be optimally tuned. Section~\ref{Instrument calibrations} deals with the calibration routines used to calibrate the mixer and Duplexer, which would otherwise add to the gate error.  Section~\ref{Qubit calibrations} describes the calibration routines used to accurately tune the qubit and its pulses. These routines are have been automatized, and so can also be applied periodically during long measurements.
+
+    \section{Instrument calibrations}
+      \label{Instrument calibrations}
+
+      \subsection{IQ mixer calibration}
+        \label{ssec:Mixer calibration}
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.7\textwidth]{../Figures/Calibration routines/Mixer leakage schematic.png}
+          \caption{Schematic showing spurious signals resulting from mixer leakage and mixer skewness,when using single sideband modulation with frequency $\omega_{sb}$.}
+          \label{fig:mixer imperfections schematic}
+        \end{figure}
+
+        \begin{figure}[tb]
+          \centering
+          \begin{subfigure}[h]{0.49\textwidth}
+            \caption{}
+            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
+          \end{subfigure}
+          \begin{subfigure}[h]{0.49\textwidth}
+            \caption{}
+            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer skewness.png}
+          \end{subfigure}
+          \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
+          \label{fig:Mixer calibrations 2D}
+        \end{figure}
+
+        An important calibration routine which must not be forgotten is correcting for mixer imperfections. An IQ mixer must be calibrated for two types of mixer imperfections: the mixer carrier leakage, and the mixer skewness. These imperfections result in two spurious signals, which are shown in Figure~\ref{fig:mixer imperfections schematic}.
+
+        For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
+
+        Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
+
+      \subsection{Duplexer phase calibration}
+        \label{ssec:Duplexer phase calibration}
+        The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
+
+        Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
 
     \section{Qubit calibrations}
       \label{Qubit calibrations}
@@ -693,7 +723,7 @@
 
       \subsection{AllXY}
         \label{ssec:AllXY}
-        There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in Appendix~\ref{ssec:AllXY app}.
+        There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinatios is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in Appendix~\ref{ch:AllXY pulse table}.
 
         The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
 
@@ -716,46 +746,6 @@
         \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. As can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
         \label{fig:AllXY individual control}
         \end{figure}
-
-    \section{Instrument calibrations}
-      \label{Instrument calibrations}
-
-      \subsection{IQ mixer calibration}
-        \label{ssec:Mixer calibration}
-
-        \begin{figure}[tb]
-          \centering
-          \includegraphics[width=.7\textwidth]{../Figures/Calibration routines/Mixer leakage schematic.png}
-          \caption{Schematic showing spurious signals resulting from mixer leakage and mixer skewness,when using single sideband modulation with frequency $\omega_{sb}$.}
-          \label{fig:mixer imperfections schematic}
-        \end{figure}
-
-        \begin{figure}[tb]
-          \centering
-          \begin{subfigure}[h]{0.49\textwidth}
-            \caption{}
-            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer offset.png}
-          \end{subfigure}
-          \begin{subfigure}[h]{0.49\textwidth}
-            \caption{}
-            \includegraphics[width=\textwidth]{../Figures/Calibration routines/Mixer skewness.png}
-          \end{subfigure}
-          \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
-          \label{fig:Mixer calibrations 2D}
-        \end{figure}
-
-        An important calibration routine which must not be forgotten is correcting for mixer imperfections. An IQ mixer must be calibrated for two types of mixer imperfections: the mixer carrier leakage, and the mixer skewness. These imperfections result in two spurious signals, which are shown in Figure~\ref{fig:mixer imperfections schematic}.
-
-        For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
-
-        Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
-
-      \subsection{Duplexer phase calibration}
-        \label{ssec:Duplexer phase calibration}
-        The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
-
-        Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
-
 
   \chapter{Randomized benchmarking}
     \label{ch:randomized benchmarking}

@@ -1,9 +1,19 @@
 %!TEX root = ../thesis.tex
 \input{noise.tex}
 
-\chapter{Duplexer characterization}
-  \section{Duplexer isolation}
+\chapter{Duplexer isolation}
   \label{ch:Duplexer isolation}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{../Figures/Appendix/Duplexer isolation.png}
+    \caption{Isolation of the Duplexer. Legend indices correspond to switch state($1$ means open, $0$ means closed, lsb corresponds to bottom drive line, msb to top drive line). Transmission is measured relative to transmission when all channels are open (11). The black line corresponds to the measured noise floor. The red dashed line indicates the frequency of the top and bottom qubit, and the blue dashed line to the ancilla qubit, during the Muxmon experiment.}
+    \label{fig:Duplexer isolation}
+  \end{figure}
+
+  The isolation of the Duplexer switches has been measured. During the measurements a signal was sent through input channel $1$ and $2$, corresponding to the signal of the main Gaussian pulse, and derivative pulse, respectively. For each input channel the transmission to each of the two output channels has been measured. These output channels are connected to the drive lines of the top and bottom qubit during the Muxmon experiment. For each input-output port combination the transmission has been measured for different switch configurations, which were controlled using the nanosecond-switches. Four different switch combinations were used, corresponding the the four distinct possibilities of the signal being directed to each of the two output channels.
+
+  The results of the isolation measurements are shown in Figure~\ref{fig:Duplexer isolation}. As can be seen in all four input-output combinations the isolation is around \SI{50}{\dBm} at the frequency of top and bottom qubit. Furthermore, the isolation does not seem to depend strongly on whether the switch to the other output port is open or closed.
 
 \chapter{Chip characterization}
   \section{qubit coherence times versus frequency}
@@ -33,6 +43,15 @@
   \section{Muxmon0 resonator buses}
     \label{sec:Resonator buses}
 
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=\textwidth]{../Figures/Appendix/resonator buses.png}
+      \caption{Normalized transmission showing the resonator buses of the top and bottom qubit, at frequencies \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} respectively.}
+      \label{fig:resonator buses}
+    \end{figure}
+
+    The top and bottom qubit are each coupled to a resonator bus. When the frequency of a qubit approaches that of the bus, they experience an avoided crossing. In Figure~\ref{fig:resonator buses} these avoided crossing are shown for the top and bottom qubit. For the top qubit the frequency of the resonator bus is found to be \SI{4.88}{\giga \hertz}. For the bottom qubit the signal was considerably worse, but the frequency of the resonator bus is found to be roughly \SI{4.97}{\giga \hertz}. For the top qubit the coupling strength $g$ between the qubit and the bus can be extracted. It is equal to half the minimum distance, and approximately equal to \SI{27}{\mega \hertz}.
+
 \chapter{Additional notes}
   \section{Qubit characterization}
       \subsection{Finding the qubit sweet-spot using a one-dimensional scan}
@@ -57,15 +76,46 @@
         \end{itemize}
       \subsubsection{Flux matrix}
         After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
-    \subsection{Part I: Time-domain measurements}
-      \subsubsection{AllXY}
-        \label{ssec:AllXY app}
-        \textbf{TODO:}
-        \begin{itemize}
-          \item Table of AllXY pulses
-        \end{itemize}
-  \section{Randomized benchmarking}
-    \subsection{Clifford gate decomposition}
+    \chapter{AllXY pulse sequence}
+      \label{ch:AllXY pulse table}
+
+      \begin{table}[h]
+        \centering
+        \begin{tabular}{c c c c }
+          \toprule
+          number & ideal $\left<z\right>$ & First pulse & Second pulse \\
+          \midrule
+          1  & 1  & $I$         & $I$         \\
+          2  & 1  & $X_\pi$     & $X_\pi$     \\
+          3  & 1  & $Y_\pi$     & $Y_\pi$     \\
+          4  & 1  & $X_\pi$     & $Y_\pi$     \\
+          5  & 1  & $Y_\pi$     & $X_\pi$     \\
+          6  & 0  & $X_{\pi/2}$ & $I$         \\
+          7  & 0  & $Y_{\pi/2}$ & $I$         \\
+          8  & 0  & $X_{\pi/2}$ & $Y_{\pi/2}$ \\
+          9  & 0  & $Y_{\pi/2}$ & $X_{\pi/2}$ \\
+          10 & 0  & $X_{\pi/2}$ & $Y_\pi$     \\
+          11 & 0  & $Y_{\pi/2}$ & $X_\pi$     \\
+          12 & 0  & $Y_\pi$     & $Y_{\pi/2}$ \\
+          13 & 0  & $X_\pi$     & $X_{\pi/2}$ \\
+          14 & 0  & $X_{\pi/2}$ & $X_\pi$     \\
+          15 & 0  & $X_\pi$     & $X_{\pi/2}$ \\
+          16 & 0  & $Y_{\pi/2}$ & $Y_\pi$     \\
+          17 & 0  & $Y_\pi$     & $Y_{\pi/2}$ \\
+          18 & -1 & $X_\pi$     & $I$         \\
+          19 & -1 & $Y_\pi$     & $I$         \\
+          20 & -1 & $X_{\pi/2}$ & $X_{\pi/2}$ \\
+          21 & -1 & $Y_{\pi/2}$ & $Y_{\pi/2}$ \\
+          \bottomrule
+        \end{tabular}
+        \label{tab:AllXY sequence}
+        \caption{The 21 pulses that comprises the AllXY pulse sequence.}
+      \end{table}
+
+      In Table~\ref{tab:AllXY sequence} the 21 pulse combinations are shown that comprise the AllXY pulse sequence. The AllXY measurement is able to diagnose specific sources contributing to gate errors (see~\ref{ssec:AllXY}). For a more detailed analysis on the AllXY see Reed's thesis~\cite{Reed}.
+
+  \chapter{Randomized benchmarking}
+    \section{Clifford gate decomposition}
       \label{ssec:Clifford gate decomposition}
 
 
@@ -108,10 +158,10 @@
       % \end{figure}
       % \textbf{TODO:} Cite
 
-    \subsection{Individual randomized benchmarking measurements}
+    \section{Individual randomized benchmarking measurements}
       \label{ssec:Individual randomized benchmarking measurements}
 
-    \subsection{Determining population in three states}
+    \section{Determining population in three states}
       \label{ssec:Determining population in three states}
       If there were no leakage present during randomized benchmarking, the full information about the state populations can be extracted from the randomized benchmarking results. However, if leakage to the second-excited state is present, the full information about the populations of the three states can be extracted using two versions of randomized benchmarking, one without a final pi pulse, and one with a final pi pulse. The final pi pulse swaps the populations in the ground and excited state. We assume that the population of the second excited-state remains unaffected by this single final pulse.
 
