@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: bibliography.bib
 Warning--empty journal in plourde2009microwave
-You've used 33 entries,
+You've used 34 entries,
             2118 wiz_defined-function locations,
-            682 strings with 10627 characters,
-and the built_in function-call counts, 12651 in all, are:
-= -- 1122
-> -- 981
+            686 strings with 10906 characters,
+and the built_in function-call counts, 13238 in all, are:
+= -- 1170
+> -- 1039
 < -- 0
-+ -- 389
-- -- 356
-* -- 1084
-:= -- 2320
-add.period$ -- 99
-call.type$ -- 33
-change.case$ -- 262
++ -- 412
+- -- 378
+* -- 1144
+:= -- 2427
+add.period$ -- 102
+call.type$ -- 34
+change.case$ -- 275
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 344
-empty$ -- 710
-format.name$ -- 356
-if$ -- 2411
+cite$ -- 35
+duplicate$ -- 355
+empty$ -- 736
+format.name$ -- 378
+if$ -- 2520
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 28
-newline$ -- 168
-num.names$ -- 66
-pop$ -- 238
+int.to.str$ -- 34
+missing$ -- 29
+newline$ -- 173
+num.names$ -- 68
+pop$ -- 249
 preamble$ -- 1
-purify$ -- 238
+purify$ -- 250
 quote$ -- 0
-skip$ -- 231
+skip$ -- 239
 stack$ -- 0
-substring$ -- 508
-swap$ -- 32
+substring$ -- 531
+swap$ -- 33
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
+type$ -- 132
 warning$ -- 1
-while$ -- 87
-width$ -- 35
-write$ -- 356
+while$ -- 90
+width$ -- 36
+write$ -- 367
 (There was 1 warning)

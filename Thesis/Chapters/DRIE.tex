@@ -157,14 +157,14 @@
 
   \subsubsection{Surface treatment}
 
-  Previous research has determined that for resonators, TLS are mostly present at the surfaces \cite{gao2008experimental}. These defects may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the substrate dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
+  Previous research has determined that the TLS that are the main source of loss in resonators are mostly present at the surfaces \cite{gao2008experimental}. These defects may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the substrate dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
 
   Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this thesis and published in APL~\cite{bruno2015reducing}, before depositing the metal on the substrate an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS can possibly mediate this lattice mismatch. See \cite{bruno2015reducing} for more information.
 
 
   \subsubsection{Infrared shielding}
 
-  Aside from thermal excitation, quasiparticles are also formed from the absorption of photons. High-frequency photons (UV-range or higher) are usually not a significant contribution, as they are easily absorbed by materials, well before they reach the inner layers of the fridge. Lower-frequency photons, such as in the infrared range, however, can penetrate through the fridge to the sample. These infrared photons can cause the excititation of quasiparticles. By using infrared shielding, such as a black coating film inside the fridge, and Eccosorb filters, the amount of infrared radiation reaching the sample can be substantially lowered.
+  Aside from thermal excitation, quasiparticles are also formed from the absorption of photons. High-frequency photons (UV-range or higher) are usually not a significant contribution, as they are easily absorbed by materials, well before they reach the inner layers of the fridge. Lower-frequency photons, such as in the infrared range, however, can penetrate through the fridge to the sample. These infrared photons can cause the excititation of quasiparticles. By using infrared shielding, such as a black coating film inside the fridge, and Eccosorb filters, the amount of infrared radiation reaching the sample can be substantially lowered~\cite{barends2011minimizing}.
 
 
 
@@ -174,14 +174,14 @@
 
   \begin{enumerate}
       \item An etching step in which an $\chem{SF_6}$ plasma is used to etch the substrate layer.
-      \item A passivation step in which $\chem{C_4H_8}$ is released. The gas forms a protective layer on the substrate, except for the direction in which the etching plasma is accelerated. The result is that the sidewalls are protected from the etching process
+      \item A passivation step in which a $\chem{C_4H_8}$ plasma forms a protective layer on the substrate, except for the direction in which the $\chem{SF_6}$ etching plasma is accelerated. The result is that the sidewalls are protected from the etching process
   \end{enumerate}
 
-  Using DRIE, nearly vertical sidewalls can be created for the substrate. The result is that the substate-air interface is removed from the regions between the CPW tracks, which are the regions where the electric field strength is high. As the dissipation due to TLS depends on the electric field strength, it is expected that DRIE will result in a lower TLS dissipation rate at this interface.
+  Using DRIE, nearly vertical sidewalls can be created for the substrate. The result is that the substate-air interface is removed from the regions in the CPW gaps, which are the regions where the electric field strength is higher. As the dissipation due to TLS depends on the electric field strength, we showed that DRIE results in a much lower TLS dissipation rate at this interface.
 
   \subsubsection{Magnetic shielding and vortex trapping}
 
-  Vortices are created when a magnetic field is present. One method to lower the amount of vortices is to use proper magnetic shielding around the sample. Furthermore, using nonmagnetic materials also result in lower amounts of vortices being present.
+  Vortices are created in a superconducting thin film when a magnetic field greater than the sample-dependent threshold magnetic field is present. One method to lower the amount of vortices is to realize CPW with $w < \SIm{15}{\micro \meter}$, while using proper magnetic shielding around the sample. Furthermore, using nonmagnetic materials within the shield also result in less stray magnetic fields bring present.
 
   Even when using these methods to counter the presence of magnetic fields, there may still be a small amount of vortices present in the sample, which may lead to dissipation. To counter their movement a grid-like structure can be added in the superconducting material, effectively pinning the vortices.
 
@@ -190,19 +190,26 @@
 \chapter{Experimental set-up}
   \label{ch:Experimental set-up}
 
-  \begin{wrapfigure}{r}{0.4\textwidth}
-      \begin{center}
-          \includegraphics[width=\textwidth]{Figures/DRIE/All_set4.png}
-      \end{center}
-      \caption{Optical microscopy image of the sample measured in this report. The sample consists of ten quarter wave resonators, with frequencies ranging between \SIrange{1}{11}{\giga \hertz}, connected to a central feedline. The resonators are made using NbTiN on a Si substrate. The sample is treated with HMDS and DRIE.}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=.7\textwidth]{Figures/DRIE/All_set4.png}
+    \caption{Optical microscopy image of the sample measured for the APL paper. The sample consists of ten quarter wave resonators, with frequencies ranging between \SIrange{1}{11}{\giga \hertz}, connected to a central feedline. The resonators are made using NbTiN on a Si substrate. The sample is treated with HMDS and DRIE.}
       \label{fig:set4}
-  \end{wrapfigure}
+  \end{figure}
+
+  % \begin{wrapfigure}{r}{0.4\textwidth}
+  %     \begin{center}
+  %         \includegraphics[width=\textwidth]{Figures/DRIE/All_set4.png}
+  %     \end{center}
+  %     \caption{Optical microscopy image of the sample measured for the APL paper. The sample consists of ten quarter wave resonators, with frequencies ranging between \SIrange{1}{11}{\giga \hertz}, connected to a central feedline. The resonators are made using NbTiN on a Si substrate. The sample is treated with HMDS and DRIE.}
+  %     \label{fig:set4}
+  % \end{wrapfigure}
 
   The fridge used in this experiment is a dilution refrigerator, made by Leiden Cryogenics. The refrigerator has a base temperature of \SI{\sim15}{\milli \kelvin}. An input signal was generated using a Rohde \& Schwarz ZVM vector network analyzer, connected to an Aeroflex 8310 step attenuator, which has an attenuation range of \SI{120}{\decibel}. The signal out of the fridge was measured using the same vector network analyzer.
 
   Using this set-up, quarter wave resonators, fabricated by Alessandro Bruno, were measured in a frequency range between \SIrange{1}{9}{\giga \hertz}. The sample is shown in Figure~\ref{fig:set4}. The resonators were made using NbTiN on a silicon substrate. The advantage of NbTiN is that the metal atoms are bound to nitrogen, thereby inhibiting bond formation with oxides. In a way to minimize losses, all resonators were treated with HMDS and deep-reactive ion etching.
 
-  By driving a signal through the feedline, the resulting transmitted signal $S_{21}$ can be measured. At or close to the resonance frequency of a resonator, the resonator will interact strongly with the feed line, resulting in a reduction in transmission.
+  By driving a signal through the feedline, the resulting transmitted signal $S_{21}$ can be measured. At or close to the resonance frequency, the resonator will interact strongly with the feed line, resulting in a reduction in transmission (see Figure~\ref{fig:resonator}.
 
   Unless stated otherwise, all measurements were performed with the fridge at base temperature (\SI{\sim15}{\milli \kelvin}).
 
@@ -228,7 +235,7 @@
     \label{fig:resonator}
 \end{figure}
 
- In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. As one can see, the resonator has a shape similar to a Lorentzian dip. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p192]{Geerlings}. This could be caused by impedance mismatching.
+ In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. As one can see, the resonator has a shape similar to a Lorentzian dip. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p192]{Geerlings}. This could be caused by impedance mismatching of components in the set-up, which would result in part of the signal being reflected
 
  % TODO
  % Say something about complex data
@@ -244,9 +251,9 @@
 \end{figure}
 To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator \cite{bruno2015reducing}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
 
-As can be seen, the internal quality factor $Q_i$ of all resonators decrease with decreasing photon number. One explanation for this phenomenon is that the dissipation dissipation is mainly due to TLS. Since measurements were performed at \SI{\sim15}{mK}, the TLS are not saturated since the rate of thermal excitation is low. As discussed in section~\ref{sec:TLS}, the relative loss due to TLS is highest at low power, in the regime where they are not saturated. Therefore the fact that the internal quality factor $Q_i$ rises with the mean number of photons present in the resonator can be attributed to a larger amount of TLS being satured. This would suggest that, even with HMDS and DRIE treatment of the sample, at low power and temperature, the internal quality factor is still limited by TLS being present.
+As can be seen, the internal quality factor $Q_i$ of all resonators decrease with decreasing photon number. One explanation for this phenomenon is that the dissipation is mainly due to TLS. Since measurements were performed at \SI{\sim15}{mK}, the TLS are not saturated since the rate of thermal excitation is low. As discussed in section~\ref{sec:TLS}, the relative loss due to TLS is highest at low power, in the regime where they are not saturated. Therefore the fact that the internal quality factor $Q_i$ rises with the mean number of photons present in the resonator can be attributed to a larger amount of TLS being satured. This would suggest that, even with HMDS and DRIE treatment of the sample, at low power and temperature, the internal quality factor is still limited by TLS being present.
 
-The mean photon number of a resonator is inversely proportional to the square of frequency \cite{bruno2015reducing}, so for resonators with a low frequency a lower input power is required than with a high frequency. At high photon numbers this is not a concern, as the transmitted signal is high enough to be accurately measured in a short period of time. For the single-photon powers, however, which is the region of interest for quantum computation, acquiring enough signal took up to five hours for the lowest frequencies. The reason that for the resonator with a resonance frequency at \SI{1.83}{\giga \hertz} has large error bars at low powers can be partly attributed to this, but as we will see in section \ref{sec:noise_results}, the main reason is that its frequency lies outside the bandwidth of the amplifiers and circulators of the set-up, resulting in a large amount of additional noise.
+As the mean photon number of a resonator is inversely proportional to the square of frequency \cite{bruno2015reducing}, for a low frequency resonator a lower input power is required to reach the same photon population as a higher frequency resonator. This has important consequences for the signal-to-noise ratio, and hence for the required integration time. At high photon numbers this is not a concern, as the transmitted signal is high enough to be accurately measured in a short period of time. For the single-photon powers, however, which is the region of interest for quantum computation, acquiring enough signal took up to five hours for the lowest frequencies. The reason that for the resonator with a resonance frequency at \SI{1.83}{\giga \hertz} has large error bars at low powers can be partly attributed to this, but as we will see in section \ref{sec:noise_results}, the main reason is that its frequency lies outside the bandwidth of the amplifiers and circulators of the set-up, resulting in a large amount of additional noise.
 
 % \begin{itemize}
 %     \item Quality factor depends on frequency?
@@ -269,7 +276,7 @@ Aside from power, some of the dissipation channels also depend on the temperatur
 
 The results are shown in Figure~\ref{fig:Qi_vs_n_photon_temperature_dependence}. As can be clearly seen, the quality factor increases with increasing temperature. This is likely due to the fact that TLS are thermally excited for a larger percentage of time. Therefore, the relative energy dissipation with respect to total energy in the resonator will be lower, resulting in an increase in quality factor.
 
-Another interesting point is that the increase in quality factor as a function of temperature is largest at low powers. This can also be explained when the limiting factor is due to TLS. With low powers, the TLS are almost exclusively excited thermally, while at higher powers, the excitation of TLS is not only due to thermal excitations, but also from photon absorption.
+Another interesting point is that the increase in quality factor as a function of temperature is largest at low powers. This can also be explained when the limiting factor is due to TLS. At low powers, the TLS are almost exclusively excited thermally, while at higher powers, the excitation of TLS is not only due to thermal excitations, but also from photon absorption.
 
 If one looks at the highest temperatures, it seems that the increase in quality factor as a function of temperature seems to slowly approach a saturation point. One reason is that the TLS are approaching their saturation, and so increasing the temperature further will have little effect on the percentage of time that the TLS are in the excited state. As will be shown in the next section, at \SI{400}{\milli \kelvin} the quality factor of the resonator is close to its maximum value, and will decrease as temperature is further increased.
 
@@ -291,7 +298,7 @@ If one looks at the highest temperatures, it seems that the increase in quality 
     \label{fig:temperature_tracking_Qi}
 \end{figure}
 
-To further investigate the temperature dependence of the resonator, a continous measurement was performed on the resonator with resonance frequency \SI{2.75}{\giga \hertz} during a cool-down and a subsequent warm-up of the fridge four days later. Measurements were performed for temperatures ranging from base temperature (\SI{15}{\milli \kelvin}) to roughly \SI{1}{\kelvin}. Above this temperature, the fridge entered a cyclic helium condensation/evaporation process. All temperatures were measured at an input power of \SI{-113}{\dBm}, corresponding to roughly $5 \times 10^5$ photons. In Figure \ref{fig:temperature_tracking_Qi} the internal quality factor versus temperature is shown during a cooldown and subsequent warm-up of the fridge. As can be seen, the quality factor reaches a maximum quality factor at a temperature of \SI{\sim400}{\milli \kelvin}. Below this temperature, the quality factor is likely limited by the presence of TLS (see sections \ref{sec:resonator:results:power_dependence} and \ref{sec:resonator:results:emperature_dependence}). Above this temperature however, the quality factor decreases, indicating that TLS are not the limiting factor anymore for $Q_i$. One likely explanation is that the main source of dissipation is now due to the presence of quasiparticles in the resonator. At even higher powers other effects, such as vortices and enhanced radiation, contribute more and more significantly to the decay of the quality factor.
+To further investigate the temperature dependence of the resonator, a continous measurement was performed on the resonator with resonance frequency \SI{2.75}{\giga \hertz} during a cool-down and a subsequent warm-up of the fridge four days later. Measurements were performed for temperatures ranging from base temperature (\SI{15}{\milli \kelvin}) to roughly \SI{1}{\kelvin}. Above this temperature, the fridge entered a cyclic helium condensation/evaporation process. All temperatures were measured at an input power of \SI{-113}{\dBm}, corresponding to roughly $5 \times 10^5$ photons. In Figure \ref{fig:temperature_tracking_Qi} the internal quality factor versus temperature is shown during a cooldown and subsequent warm-up of the fridge. As can be seen, the quality factor reaches a maximum quality factor at a temperature of \SI{\sim400}{\milli \kelvin}. Below this temperature, the quality factor is likely limited by the presence of TLS (see sections \ref{sec:resonator:results:power_dependence} and \ref{sec:resonator:results:emperature_dependence}). Above this temperature however, the quality factor decreases, indicating that TLS are not the limiting factor anymore for $Q_i$. One likely explanation is that the main source of dissipation is now due to the presence of quasiparticles in the resonator. At even higher powers other effects such as vortices contribute more significantly to the decay of the quality factor.
 
 From Figure~\ref{fig:temperature_tracking_Qi} it seems that there is some hysteresis at high temperatures. However, this is likely due to the fact that the thermometer is at a different position in the fridge as the sample, and does not thermalize equally fast. There may therefore be a delay between the temperature of the thermometer, and the actual temperature of the sample.
 
@@ -305,7 +312,7 @@ From Figure~\ref{fig:temperature_tracking_Qi} it seems that there is some hyster
 
 Aside from the internal quality factor, another quantity of interest is the resonance frequency $f_0$ of the resonator, which also depends on the temperature. The result from of tracking the resonance frequency of the resonator during cooldown and subsequent warm-up is shown in Figure~\ref{fig:temperature_tracking_f0}. As can be seen in both cases, the resonance frequency reaches a maximum around \SI{500}{\milli \kelvin}.
 
-Between the cooldown and warm-up the resonance frequency seems to have shifted by roughly \SI{500}{Hz}. As the sample was kept at \SI{15}{\milli \kelvin}, it is unlikely that this decrease in resonance frequency is due to degradation of the sample. One possible explanation is that this change in resonance frequency is due to phase noise, which is known to shift the resonance frequency of the resonator. Further measurements are, however, required to determine if this is the case.
+Between the cooldown and warm-up the resonance frequency seems to have shifted by roughly \SI{500}{Hz}. It is possible that during the four days that the sample was cooled the environment of the resonator slowly varied, which shifted the resonance frequency of the resonator. Further measurements are, however, required to determine if this is the case.
 
 The decrease in resonance frequency at higher temperatures can be explained by the presence of quasiparticles, which increase the kinetic inductance \cite[p91]{Geerlings}. The resonance frequency is inversely proportional to the square root of the total conductance \cite{barends2008contribution}, and so an increase in kinetic inductance leads to a decrease in resonance frequency. For measurements done by Barends et al. \cite{barends2008contribution}, the change in resonance frequency due to changes in the kinetic inductance seem to roughly correspond with the decrease in center frequency measured in Figure~\ref{fig:temperature_tracking_f0}.
 
@@ -316,7 +323,7 @@ The decrease in resonance frequency at higher temperatures can be explained by t
     \label{fig:f0_vs_T_with_fit}
 \end{figure}
 
-The decrease in resonance frequency at lower temperatures can be explained due to TLS still being present. A model is presented by Gao et al. \cite{gao2008experimental}, in which they describe the decrease in resonance frequency due to the presence of TLS. As can be seen in Figure~\ref{fig:f0_vs_T_with_fit} the model corresponds well with the data at low temperatures. At higher temperatures the model deviates from data, which may be explained by quasiparticles dominating as source of dissipation. An interesting thing to note is that an increase in resonance frequency was predicted at the lowest temperatures, but as they did not reach temperatures sufficiently low they could not confirm this effect. In Figure~\ref{fig:f0_vs_T_with_fit} however, this increase in resonance frequency is observed. This supports the claim that at low temperatures the resonator is still limited by TLS, even after treatment of HMDS and DRIE.
+The decrease in resonance frequency at lower temperatures can be explained due to TLS still being present. A model is presented by Gao et al. \cite{gao2008experimental}, in which they describe the decrease in resonance frequency due to the presence of TLS. As can be seen in Figure~\ref{fig:f0_vs_T_with_fit} the model corresponds well with the data at low temperatures. At higher temperatures the model deviates from data, which may be explained by quasiparticles dominating as source of dissipation. The model furthermore predicts an increase in resonance frequency at lowest temperatures, which Gao et al. have indeed measured~\cite{gao2008experimental}. This increase in resonance frequency can also be seen in Figure~\ref{fig:f0_vs_T_with_fit}, further supporting the claim that at low temperatures the resonator is still limited by TLS, even after treatment of HMDS and DRIE.
 
 
 
@@ -324,6 +331,6 @@ The decrease in resonance frequency at lower temperatures can be explained due t
 
 Since the quality factor of all resonators is found to decrease with decreasing input power, this indicates that at low temperatures and powers the limiting factor is still due to TLS. The fact that the quality factor initially increases with higher temperatures, supports this claim. By also measuring  the resonance frequency as a function of temperature, the curve obtained is in good agreement with a model describing the resonance frequency shift due to TLS \cite{gao2008experimental}. The curve even shows an increase in resonance frequency at the lowest temperatures, which was also predicted by the model. These results suggest that even after HMDS surface treatment and deep-reactive ion etching was applied, the internal quality factor of the resonator at low temperatures and power is still limited by the presence of TLS.
 
-Nevertheless, As shown by Bruno et al. \cite{bruno2015reducing}, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. More research must be done to determine at what interface the dissipation due to TLS is greatest after these two treatments.
+Nevertheless, As we did show, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. More research must be done to determine at what interface the dissipation due to TLS is greatest after these two treatments.
 
-The next step is to perform the same treatments (HMDS and DRIE) on transmon qubits, to study what the influence will be on coherence times.
+The next step is to perform the same treatments (HMDS and DRIE) on transmon qubits, as it is expected that this will result in a similar increase in coherence times. This is, however beyond the task of my master thesis.
