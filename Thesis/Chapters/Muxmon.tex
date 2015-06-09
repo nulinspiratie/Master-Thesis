@@ -691,11 +691,41 @@
 
       \subsection{Multiplexed readout calibration}
         \label{ssec:multiplexed readout}
-          In standard heterodyne detection the output signal is downconverted in a mixer using an LO frequency $\omega_\text{LO}$that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} - \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital downconversion.
 
-          If the carrier signal is composed of multiple signals with different frequencies $\omega_\text{c1}, ..., \omega_\text{cn}$, these can be simultaneously downconverted using a single LO-frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF-frequencies can then each be measured using digital downconversion. This method is known as multiplexed readout.
+          \begin{wrapfigure}[19]{r}{0.4\textwidth}
+            \begin{center}
+            \vspace{-30pt}
+              \includegraphics[width=\textwidth]{../Figures/Calibration routines/crosstalk.png}
+            \end{center}
+            \vspace{-20 pt}
+            \caption{Readout cross-talk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground-state.}
+            \label{fig:crosstalk}
+          \end{wrapfigure}
+          In standard heterodyne detection the output signal is downconverted in a mixer using an LO frequency $\omega_\text{LO}$that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} - \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital demodulation.
+
+          If the carrier signal is composed of multiple signals with different frequencies $\omega_\text{c1}, ..., \omega_\text{cn}$, these can be simultaneously downconverted using a single LO-frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF-frequencies can then each be measured using digital demodulation. This method is known as multiplexed readout.
 
           The LO-frequency $\omega_\text{LO}$ has to be chosen such that the resulting IF-frequencies are not multiples of one-another, as this would result in the signal at one IF-frequency also containing signal from a higher harmonic of another IF-frequency.
+
+          \begin{wrapfigure}[15]{r}{0.4\textwidth}
+            \begin{center}
+            \vspace{-30pt}
+              \includegraphics[width=\textwidth]{../Figures/Calibration routines/crosstalk ratio.png}
+            \end{center}
+            \vspace{-20 pt}
+            \caption{The crosstalk ratio, defined in Equation~\ref{eq:crosstalk ratio}, versus readout power.}
+            \label{fig:crosstalk ratio}
+          \end{wrapfigure}
+
+          Multiplexed readout has been used in the Muxmon experiment to read out the state of both the top and bottom qubit simultaneously. However, in doing so the signal of one qubit can also partially contain the signal of the other qubit. This effect is known as readout crosstalk. The result is that the signal of one qubit is slightly dependent on the state of the other qubit. Readout crosstalk can be characterized by measuring the signal of the four two-qubit states $\ket{00}$, $\ket{01}$, $\ket{10}$, and $\ket{11}$. This is shown in Figure~\ref{fig:crosstalk}.
+
+          This readout cross-talk can be quantified through the ratio $r$ of crosstalk signal difference and main signal difference:
+          \begin{equation}
+            r=\frac{\ket{01}+\ket{11}}{\ket{00} + \ket{10}}
+            \label{eq:crosstalk ratio}
+          \end{equation}
+
+          In Figure~\ref{fig:crosstalk ratio} the crosstalk ratio is shown for different readout powers. As can be seen the relative amount of crosstalk decreases with decreasing readout power, but saturates around $3\%$. It can be concluded that although readout crosstalk can be greatly reduced by keeping the readout power sufficiently low, it cannot be eliminated by lowering the readout power alone. Additional measures such as boxcar filtering during digital demodulation and good choice of LO frequency $\omega_\text{LO}$ can further reduce readout crosstalk.
 
       \subsection{Accurate drive amplitude calibration}
         \label{ssec:PiX360}
@@ -864,7 +894,7 @@
       \begin{figure}[tb]
         \centering
         \includegraphics[width=.6\textwidth]{../Figures/Randomized benchmarking/RB_single_seed.png}
-        \caption{Randomized benchmarking results using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include errorbars, determined by the spread of three separate measurements.}
+        \caption{Randomized benchmarking results of the top qubit using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include errorbars, determined by the spread of three separate measurements.}
         \label{fig:RB single seed}
       \end{figure}
 
@@ -882,7 +912,7 @@
           \label{fig:RB normal single vs both}
         \end{figure}
 
-        After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a total duration of \SI{30}{\micro \second}.
+        After tuning up the top and bottom qubit using the calibration methods explained in Chapter~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking.To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a total duration of \SI{30}{\micro \second}. Multiplexed readout has been used to measure both the top and bottom qubit simultaneously. The LO frequency was set to $\omega_\text{LO}=\SIm{6.7378}{\giga \hertz}$, corresponding to IF frequencies \SI{-37.8}{\mega \hertz} and \SI{62.8}{\mega \hertz} for the top and bottom qubit respectively. Combined with sufficiently low readout power the resulting crosstalk was lowered to an average of $2\%$.
 
         The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Figure~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Figure~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its decoherence times, and not by the instruments including the AWG and Duplexer.
 

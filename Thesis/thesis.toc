@@ -55,53 +55,53 @@
 \contentsline {section}{\numberline {8.2}Qubit calibrations}{52}
 \contentsline {subsection}{\numberline {8.2.1}Accurate frequency estimation}{52}
 \contentsline {subsection}{\numberline {8.2.2}Multiplexed readout calibration}{53}
-\contentsline {subsection}{\numberline {8.2.3}Accurate drive amplitude calibration}{53}
-\contentsline {subsection}{\numberline {8.2.4}DRAG parameter calibration}{54}
+\contentsline {subsection}{\numberline {8.2.3}Accurate drive amplitude calibration}{54}
+\contentsline {subsection}{\numberline {8.2.4}DRAG parameter calibration}{55}
 \contentsline {subsection}{\numberline {8.2.5}AllXY}{55}
-\contentsline {chapter}{\numberline {9}Randomized benchmarking}{57}
-\contentsline {section}{\numberline {9.1}Introduction}{57}
-\contentsline {section}{\numberline {9.2}Clifford group}{58}
-\contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{59}
-\contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{61}
-\contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{61}
-\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{62}
-\contentsline {section}{\numberline {9.5}Two qubit randomized benchmarking}{64}
-\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{65}
-\contentsline {subsection}{\numberline {9.5.2}Compiled randomized benchmarking}{65}
-\contentsline {subsection}{\numberline {9.5.3}5 primitives randomized benchmarking}{66}
+\contentsline {chapter}{\numberline {9}Randomized benchmarking}{58}
+\contentsline {section}{\numberline {9.1}Introduction}{58}
+\contentsline {section}{\numberline {9.2}Clifford group}{59}
+\contentsline {section}{\numberline {9.3}The randomized benchmarking protocol}{60}
+\contentsline {section}{\numberline {9.4}Single qubit randomized benchmarking}{62}
+\contentsline {subsection}{\numberline {9.4.1}Driving a single qubit versus driving both qubits}{62}
+\contentsline {subsection}{\numberline {9.4.2}Second-state leakage}{64}
+\contentsline {section}{\numberline {9.5}Two qubit randomized benchmarking}{65}
+\contentsline {subsection}{\numberline {9.5.1}Alternating randomized benchmarking}{66}
+\contentsline {subsection}{\numberline {9.5.2}Compiled randomized benchmarking}{66}
+\contentsline {subsection}{\numberline {9.5.3}5 primitives randomized benchmarking}{67}
 \contentsline {section}{\numberline {9.6}Two qubit randomized benchmarking results}{68}
-\contentsline {section}{\numberline {9.7}Scaling of multi qubit randomized benchmarking}{70}
-\contentsline {chapter}{\numberline {10}Conclusions and outlook}{72}
-\contentsline {chapter}{Appendices}{75}
-\contentsline {chapter}{\numberline {A}Noise characterization}{76}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{76}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{76}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{77}
-\contentsline {section}{\numberline {A.2}The model}{78}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{78}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{79}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{79}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{80}
-\contentsline {section}{\numberline {A.3}Noise temperature}{80}
-\contentsline {section}{\numberline {A.4}Results}{81}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{82}
-\contentsline {chapter}{\numberline {B}Duplexer isolation}{84}
-\contentsline {chapter}{\numberline {C}Chip characterization}{86}
-\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{86}
-\contentsline {section}{\numberline {C.2}Muxmon1 decoherence times}{86}
-\contentsline {section}{\numberline {C.3}Muxmon1 cross-driving}{86}
-\contentsline {section}{\numberline {C.4}Muxmon0 resonator buses}{87}
-\contentsline {chapter}{\numberline {D}Additional notes}{88}
-\contentsline {section}{\numberline {D.1}Qubit characterization}{88}
-\contentsline {subsection}{\numberline {D.1.1}Finding the qubit sweet-spot using a one-dimensional scan}{88}
-\contentsline {subsubsection}{\numberline {D.1.1.1}Spectroscopy}{88}
-\contentsline {subsubsection}{\numberline {D.1.1.2}Flux matrix}{89}
-\contentsline {chapter}{\numberline {E}AllXY pulse sequence}{90}
-\contentsline {chapter}{\numberline {F}Randomized benchmarking}{91}
-\contentsline {section}{\numberline {F.1}Clifford gate decomposition}{91}
-\contentsline {section}{\numberline {F.2}Individual randomized benchmarking measurements}{92}
-\contentsline {section}{\numberline {F.3}Determining population in three states}{92}
-\contentsline {chapter}{\numberline {G}Algorithms}{93}
-\contentsline {section}{\numberline {G.1}Compiled randomized benchmarking}{93}
-\contentsline {subsection}{\numberline {G.1.1}Finding the optimal gate sequence}{93}
-\contentsline {subsection}{\numberline {G.1.2}Optimizing the gate compilation algorithm}{94}
+\contentsline {section}{\numberline {9.7}Scaling of multi qubit randomized benchmarking}{71}
+\contentsline {chapter}{\numberline {10}Conclusions and outlook}{73}
+\contentsline {chapter}{Appendices}{76}
+\contentsline {chapter}{\numberline {A}Noise characterization}{77}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{77}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{77}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{78}
+\contentsline {section}{\numberline {A.2}The model}{79}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{79}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{80}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{80}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{81}
+\contentsline {section}{\numberline {A.3}Noise temperature}{81}
+\contentsline {section}{\numberline {A.4}Results}{82}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{83}
+\contentsline {chapter}{\numberline {B}Duplexer isolation}{85}
+\contentsline {chapter}{\numberline {C}Chip characterization}{87}
+\contentsline {section}{\numberline {C.1}qubit coherence times versus frequency}{87}
+\contentsline {section}{\numberline {C.2}Muxmon1 decoherence times}{87}
+\contentsline {section}{\numberline {C.3}Muxmon1 cross-driving}{87}
+\contentsline {section}{\numberline {C.4}Muxmon0 resonator buses}{88}
+\contentsline {chapter}{\numberline {D}Additional notes}{89}
+\contentsline {section}{\numberline {D.1}Qubit characterization}{89}
+\contentsline {subsection}{\numberline {D.1.1}Finding the qubit sweet-spot using a one-dimensional scan}{89}
+\contentsline {subsubsection}{\numberline {D.1.1.1}Spectroscopy}{89}
+\contentsline {subsubsection}{\numberline {D.1.1.2}Flux matrix}{90}
+\contentsline {chapter}{\numberline {E}AllXY pulse sequence}{91}
+\contentsline {chapter}{\numberline {F}Randomized benchmarking}{92}
+\contentsline {section}{\numberline {F.1}Clifford gate decomposition}{92}
+\contentsline {section}{\numberline {F.2}Individual randomized benchmarking measurements}{93}
+\contentsline {section}{\numberline {F.3}Determining population in three states}{93}
+\contentsline {chapter}{\numberline {G}Algorithms}{94}
+\contentsline {section}{\numberline {G.1}Compiled randomized benchmarking}{94}
+\contentsline {subsection}{\numberline {G.1.1}Finding the optimal gate sequence}{94}
+\contentsline {subsection}{\numberline {G.1.2}Optimizing the gate compilation algorithm}{95}
