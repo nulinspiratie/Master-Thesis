@@ -54,9 +54,10 @@
 \contentsline {subsection}{\numberline {8.1.2}Duplexer phase calibration}{51}
 \contentsline {section}{\numberline {8.2}Qubit calibrations}{52}
 \contentsline {subsection}{\numberline {8.2.1}Accurate frequency estimation}{52}
-\contentsline {subsection}{\numberline {8.2.2}Accurate drive amplitude calibration}{53}
-\contentsline {subsection}{\numberline {8.2.3}DRAG parameter calibration}{54}
-\contentsline {subsection}{\numberline {8.2.4}AllXY}{54}
+\contentsline {subsection}{\numberline {8.2.2}Multiplexed readout calibration}{53}
+\contentsline {subsection}{\numberline {8.2.3}Accurate drive amplitude calibration}{53}
+\contentsline {subsection}{\numberline {8.2.4}DRAG parameter calibration}{54}
+\contentsline {subsection}{\numberline {8.2.5}AllXY}{55}
 \contentsline {chapter}{\numberline {9}Randomized benchmarking}{57}
 \contentsline {section}{\numberline {9.1}Introduction}{57}
 \contentsline {section}{\numberline {9.2}Clifford group}{58}
