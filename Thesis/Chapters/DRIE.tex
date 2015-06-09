@@ -25,13 +25,13 @@
         \begin{center}
             \includegraphics[width=\textwidth]{Figures/DRIE/CPW.png}
         \end{center}
-        \caption{Schematic of a coplanar waveguide.}
+        \caption{Schematic of a coplanar waveguide. For a typical resonator $w=\SIm{12}{\micro \meter}$, $s=\SIm{5}{\micro \meter}$, $t=\SIm{200}{\nano \meter}$, and $h=\SIm{525}{\micro \meter}$.}
         \label{fig:CPW}
     \end{wrapfigure}
 
-    In the context of circuit QED, one of the most common types of resonators are coplanar waveguides (CPW). Coplanar waveguides consist of a long central conducting track, with on both sides a neighbouring grounded track. The conducting track is seperated from the grounded tracks by a fixed distance.
+    Superconducting coplanar waveguides (CPW) microwave resonators have versatile applications. They are used in single-photon detectors \textbf{TODO:} cite, quantum-limited Josephson parametric amplifiers \textbf{TODO:} cite, and in the context of circuit QED are used for memory storage, readout, and as interconnects. Coplanar waveguides consist of a long central conducting strip, with on both sides a neighbouring ground. The center conductor of width $w$ is seperated from the neighbouring grounds by a fixed gap $s$.
 
-    One end is usually capacitively coupled to a feedline and has an open end, while the other end can either be open or shorted. This determines whether the current has a node or an antinode at that end. In the case of a shorted end, current has an antinode at that end, resulting in a quarter wave resonator. This means that the wavelength of the fundamental mode fits a quarter times into the resonator. In the case of an open end, the current has a node at that end, resulting in a half wave resonator.
+    For qubit readout one end is usually capacitively coupled to a feedline and has an open end, while the other end can either be open or shorted. This determines whether the current has a node or an antinode at that end. In the case of a shorted end, current has an antinode at that end, resulting in a quarter wave resonator. This means that the wavelength of the fundamental mode fits a quarter times into the resonator. In the case of an open end, the current has a node at that end, resulting in a half wave resonator.
 
 
   \section{Quality factor}
@@ -40,7 +40,7 @@
     % Find where it says that loss tangents can be added to each other
     % Include the fact that participation ratios are needed for adding quality factors of loss channels
     % Explain why one wants a quality factor that is as high as possible
-    The quality of a resonator can be quantified through its quality factor. Generally speaking, the quality factor of a resonator determines the ratio between energy stored in a resonator and the energy leaking away from the resonator. For cQED resonators this corresponds to the rate at which photons dissipate from the resonator. A high quality factor corresponds to a low dissipation rate.
+    The quality of a resonator can be quantified through its quality factor. Generally speaking, the quality factor of a resonator determines the ratio between energy stored in a resonator and the energy dissipated from the resonator. For cQED resonators this corresponds to the rate at which photons leak out of the resonator. A high quality factor corresponds to a low dissipation rate.
 
     The quality factor can also be defined in two different ways \cite[pp.23-24]{Mazin}:
 
@@ -48,11 +48,11 @@
         Q = \omega_0 \tau_1 = \omega_0 / \Delta \omega
         \label{eqn:quality factor definition}
     \end{equation}
-    Here $\omega_0$ is the resonance frequency of the resonator, and $\tau_1$ is the decay time of the resonator. The decay time is the time taken by a resonator to dissipate its energy to $1/e$ of its original energy.
+    Here $\omega_0$ is the resonance frequency of the resonator, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
 
-    Photons can dissipate from the resonator through the resonator's different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators in cQED being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$. This coupling quality factor depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the amount of interaction wanted between resonator and feedline.
+    Photons can be lost through different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$. This coupling quality factor depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the desired interaction between resonator and feedline.
 
-    The other loss channels are usually unwanted, and therefore desired to be as low as possible. These individual channels are usually lumped together, resulting in a combined quality factor, known as the intrinsic quality factor $Q_i$.
+    The other loss channels are usually unwanted, and therefore desired to be as low as possible. These individual channels are usually lumped together, resulting in a combined quality factor, known as the internal quality factor $Q_i$.
 
     The total quality factor of the resonator is known as the loaded quality factor $Q_l$. It is related to $Q_c$ and $Q_i$ through:
 
@@ -70,7 +70,7 @@
         \label{eq:S21min}
     \end{equation}
 
-    With knowledge of the resonant frequency $\omega_0$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the intrinsic quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors,to get an accurate estimate of both quality factors, they should have a comparable value.
+    With knowledge of the resonant frequency $\omega_0$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the internal quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors,to get an accurate estimate of both quality factors, they should have a comparable value.
 
     One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. This qubit therefore experiences dissipation due to its coupling to the resonator, known as the Purcell effect. The result of dissipation is that when the qubit is in its excited state, it will relax to its ground state. The amount of relaxation due to the Purcell effect can be quantified through its relaxation time $T_1^\text{Purcell}$. The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor \cite[p~22]{Geerlings}. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
 
@@ -242,7 +242,7 @@
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{Figures/DRIE/Qi_vs_n_photon.png}
-    \caption{Intrinsic quality factor of resonators as a function of mean number of photons present in the resonator. Measurements were performed at \SI{15}{\milli \kelvin}.}
+    \caption{Internal quality factor of resonators as a function of mean number of photons present in the resonator. Measurements were performed at \SI{15}{\milli \kelvin}.}
     \label{fig:Qi_vs_n_photon}
 \end{figure}
 To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator \cite{bruno2015reducing}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
@@ -264,7 +264,7 @@ The mean photon number of a resonator is inversely proportional to the square of
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png}
-    \caption{Intrinsic quality factor versus photon number for temperatures ranging from \SI{15}{\milli \kelvin} up to \SI{400}{\milli \kelvin}. All measurements were performed for a resonator with resonance frequency $f_0 = $\SI{2.75}{\giga \hertz}.}
+    \caption{Internal quality factor versus photon number for temperatures ranging from \SI{15}{\milli \kelvin} up to \SI{400}{\milli \kelvin}. All measurements were performed for a resonator with resonance frequency $f_0 = $\SI{2.75}{\giga \hertz}.}
     \label{fig:Qi_vs_n_photon_temperature_dependence}
 \end{figure}
 
