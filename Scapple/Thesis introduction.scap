@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<ScappleDocument ID="81597B55-E577-4710-A4B8-00AE8E37F7AD" Version="1.1">
+   <Notes>
+      <Note Width="273.438" FontSize="21" ID="0" Position="730.5,129.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <TextColor>1.0 0.0 0.0</TextColor>
+            <Fill>0.844068 0.869596 0.923064</Fill>
+            <Border Weight="1">0.485893 0.568933 0.756207</Border>
+         </Appearance>
+         <Formatting>
+            <FormatRange Bold="Yes">0,19</FormatRange>
+         </Formatting>
+         <String>Thesis introduction</String>
+         <ConnectedNoteIDs>1-2, 14</ConnectedNoteIDs>
+      </Note>
+      <Note Width="135.339" FontSize="12" ID="1" Position="642.2,321.9">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>DRIE Resonators</String>
+         <ConnectedNoteIDs>0, 3-5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="69.6655" FontSize="12" ID="2" Position="1004.7,325.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Muxmon</String>
+         <ConnectedNoteIDs>0, 9-11, 13</ConnectedNoteIDs>
+      </Note>
+      <Note Width="192.969" FontSize="12" ID="3" Position="542.2,537.5">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>deep-reactive ion etching</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="193.75" FontSize="12" ID="4" Position="388.3,445.3">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>HMDS surface treatment</String>
+         <ConnectedNoteIDs>1</ConnectedNoteIDs>
+      </Note>
+      <Note Width="136.731" FontSize="12" ID="5" Position="433.6,331.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>High quality factor</String>
+         <ConnectedNoteIDs>1, 6-8</ConnectedNoteIDs>
+      </Note>
+      <Note Width="87.8174" FontSize="12" ID="6" Position="525.0,264.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Limit on T1</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="100.671" FontSize="12" ID="7" Position="360.2,265.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Purcell effect</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="110.828" FontSize="12" ID="8" Position="244.5,333.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Loss channels</String>
+         <ConnectedNoteIDs>5</ConnectedNoteIDs>
+      </Note>
+      <Note Width="72.3511" FontSize="12" ID="9" Position="1214.1,297.7">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Duplexer</String>
+         <ConnectedNoteIDs>2</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="10" Position="1157.8,449.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>selective broadcasting</String>
+         <ConnectedNoteIDs>2, 12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="134.021" FontSize="12" ID="11" Position="928.9,440.6">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Frequency re-use</String>
+         <ConnectedNoteIDs>2, 12</ConnectedNoteIDs>
+      </Note>
+      <Note Width="83.1055" FontSize="12" ID="12" Position="1029.7,574.2">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Scaling up</String>
+         <ConnectedNoteIDs>10-11</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="13" Position="1138.3,207.8">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>Randomized benchmarking</String>
+         <ConnectedNoteIDs>2</ConnectedNoteIDs>
+      </Note>
+      <Note Width="156.25" FontSize="12" ID="14" Position="463.3,59.4">
+         <Appearance>
+            <Alignment>Left</Alignment>
+            <Border Weight="0" Style="Rounded"/>
+         </Appearance>
+         <String>General quantum computing introduction</String>
+         <ConnectedNoteIDs>0</ConnectedNoteIDs>
+      </Note>
+   </Notes>
+   <BackgroundShapes/>
+   <NoteStyles>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Green Bubble" ID="A53DE288-9B45-4784-A2B7-DA69162DCF92" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.399100 0.583322 0.354864</BorderColor>
+         <FillColor>0.808835 0.872419 0.801343</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="Title Text" ID="79C1C056-E302-4949-88B3-B68F6B4B8912" AffectTextColor="No" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <IsBold>Yes</IsBold>
+         <FontSize>12.0</FontSize>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Pink Bubble" ID="EF4DEA80-F6F1-4557-B8AF-35FFF6985DAB" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.690303 0.407263 0.550912</BorderColor>
+         <FillColor>0.898329 0.817472 0.865339</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Blue Bubble" ID="1CBE3680-E328-4A9B-8679-F85F7E551986" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Red Text" ID="33E13838-88C3-49F1-96F4-A9C77D4271FB" AffectTextColor="Yes" AffectNoteBody="No" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <TextColor>1.0 0.0 0.0</TextColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Yellow Bubble" ID="C48AD1D0-7791-4777-8AD7-99199DC5F898" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.769436 0.762219 0.390143</BorderColor>
+         <FillColor>0.912963 0.894118 0.644541</FillColor>
+      </Style>
+      <Style AffectFontStyle="No" AffectAlignment="No" Name="Brown Bubble" ID="77C89AF5-6BD3-4C0A-9A27-A8E99A6B469D" AffectTextColor="No" AffectNoteBody="Yes" AffectSticky="No" AffectSize="No" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.269490 0.164034 0.186694</BorderColor>
+         <FillColor>0.934157 0.888319 0.785290</FillColor>
+      </Style>
+      <Style AffectFontStyle="Yes" AffectAlignment="Yes" Name="main title" ID="1CC4FF8E-9B8D-4388-8E5B-50B0C15FCC0D" AffectTextColor="Yes" AffectNoteBody="Yes" AffectSticky="Yes" AffectSize="Yes" AffectFade="No">
+         <BorderThickness>1</BorderThickness>
+         <BorderColor>0.485893 0.568933 0.756207</BorderColor>
+         <FillColor>0.844068 0.869596 0.923064</FillColor>
+         <TextColor>1.0 0.0 0.0</TextColor>
+         <Sticky>Yes</Sticky>
+         <IsBold>Yes</IsBold>
+         <FontSize>21.0</FontSize>
+      </Style>
+   </NoteStyles>
+   <UISettings>
+      <BackgroundColor>1.0 0.988006 0.945006</BackgroundColor>
+      <DefaultFont>Helvetica</DefaultFont>
+      <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+   </UISettings>
+   <PrintSettings VerticalPagination="Auto" HorizontalPagination="Clip" Orientation="Portrait" RightMargin="12.000000" BottomMargin="12.000000" HorizontallyCentered="Yes" ScaleFactor="1.000000" PagesAcross="1" PaperType="na-letter" PagesDown="1" TopMargin="12.000000" Collates="Yes" PaperSize="-1.000000,-1.000000" LeftMargin="12.000000" VerticallyCentered="Yes"/>
+</ScappleDocument>

@@ -190,7 +190,14 @@
 
       \subsection{Scan for qubit sweet-spots}
         \label{Scan for qubit sweet-spots}
-        All qubits in the Muxmon device have a tunable resonance frequency. This is achieved by replacing the Josephson junction with a superconducting quantum interference device (SQUID). In this case the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. If the two Josephson junctions in a SQUID loop have the same Josephson energy $E_J=E_{J1}=E_{J2}$, this results in an effective Josephson energy~\cite[pp.54-56]{Reed}:
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=.7\textwidth]{../Figures/Qubit characterization/flux-tunable transmon schematic joined.jpg}
+          \caption{Schematic of a flux-tunable transmon coupled to a readout resonator. The two Josephson junctions with Josephson energies $E_{J1}$ and $E_{J2}$ form a SQUID loop, resulting in an effective Josephson energy $E_J^\text{eff}$ that depends on the flux $\phi$ through the SQUID loop.}
+          \label{fig:flux-tunable transmon schematic}
+        \end{figure}
+        All qubits in the Muxmon device have a tunable resonance frequency. This is achieved by replacing the Josephson junction with a superconducting quantum interference device (SQUID), as shown in Figure~\ref{fig:flux-tunable transmon schematic}. Here the two islands that compose the transmon qubit are connected by two Josephson junctions instead of one, effectively forming a loop. If the two Josephson junctions in a SQUID loop have the same Josephson energy $E_J=E_{J1}=E_{J2}$, this results in an effective Josephson energy~\cite[pp.54-56]{Reed}:
 
         \begin{equation}
           E_J^\text{eff}=2E_J*\cos{\left( \pi \frac{\Phi}{\Phi_0} \right)}
@@ -383,9 +390,9 @@
         \label{ssec:qubit control}
         The measurements described so far are able to determine the energy levels of the qubits and resonators using continuous tones. However, for qubit properties such as their decoherence times, time-domain measurements are required. Here well-calibrated pulses accurately control the state of the qubit, and correspond to gates being applied to the qubit.
 
-        A simple time-domain measurement usually consists of two parts: qubit control, and qubit readout. During qubit control precisely timed pulses modify the state of the qubit. During qubit readout a readout tone is applied in a manner similar to spectroscopy. The state of the qubit can be inferred from the response in transmission. More complicated measurements involve feedback, where additional qubit control can be applied depending on the measurement outcome. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
+        A simple time-domain measurement usually consists of two parts: qubit control, and qubit readout. The qubit is initially in the ground-state due to relaxation. During qubit control precisely timed pulses modify the state of the qubit. During qubit readout a readout tone is applied in a manner similar to spectroscopy. The state of the qubit can be inferred from the response in transmission. More complicated measurements involve feedback, where additional qubit control can be applied depending on the measurement outcome. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
 
-        Measuring the qubit will project its state onto the Z-axis, and so it will be either measured in state $\ket{0}$ or in state $\ket{1}$, with a probability determined by its population in the two states. One single measurement, however, provides little information about the actual populations in the two states before the measurement. To determine the actual population in the two states it is required to repeat the measurement many times. The number of times the qubit is measured in either states is then an estimate for the actual state populations of the qubit.
+        Measuring the qubit will project its state onto the Z-axis, and so it will be either measured in state $\ket{0}$ or in state $\ket{1}$, with a probability determined by its population in the two states. One single measurement, however, provides little information about the actual populations in the two states before the measurement. To determine the actual population in the two states it is required to repeat the measurement many times. The number of times the qubit is measured in either states is then an estimate for the actual state populations of the qubit. It is important that the experimental repetition rate is low enough such that the qubit has sufficient time to relax to its ground-state, which is determined by its relaxation time $T_1$ (see Section~\ref{sec:Qubit relaxation: $T_1$}).
 
         \begin{wrapfigure}[14]{r}{0.4\textwidth}
           \begin{center}
@@ -433,7 +440,7 @@
         Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However due to the qubit's interaction with its environment the qubit will experience decoherence. Decoherence can be viewed as the qubit experiencing random interactions with its environment, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
 
         \subsubsection{Qubit relaxation: $T_1$}
-
+          \label{sec:Qubit relaxation: $T_1$}
           \begin{wrapfigure}[9]{r}{0.3\textwidth}
             \begin{center}
             \vspace{-30pt}
@@ -682,7 +689,7 @@
 
         A modification to the Gaussian, known as the Derivative Removal by Adiabatic Gate (DRAG) pulse \cite{motzoi2009simple}, can be used to suppress leakage errors. The DRAG pulse relies on quadrature control, where one quadrature consists ofthe main Gaussian pulse, while the quadrature consists of the derivative of the main Gaussian pulse. The DRAG pulse can reduce leakage and virtual excitation-induced phase errors by roughly an order of magnitude. The DRAG pulse is shown in Figure~\ref{fig:DRAG pulse}.
 
-        The DRAG parameter is the relative amplitude between the derivative pulse and the main Gaussian pulse, and must be accurately calibrated. It has been shown that the virtual excitation-induced phase error is present up to first order in a pi/2-pulse~\cite{lucero2010reduced}. In the Muxmon experiment the DRAG parameter has been calibrated using a method suggested by Reed~\cite{Reed}, by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, any phase error would result in these two measurement shifting away from the equator in opposite direction. The DRAG parameter is found by minimizing this difference.
+        The DRAG parameter determines the amplitude of the derivative pulse, and must be accurately calibrated. It has been shown that the virtual excitation-induced phase error is present up to first order in a pi/2-pulse~\cite{lucero2010reduced}. In the Muxmon experiment the DRAG parameter has been calibrated using a method suggested by Reed~\cite{Reed}, by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, any phase error would result in these two measurement shifting away from the equator in opposite direction. The DRAG parameter is found by minimizing this difference.
 
       \subsection{AllXY}
         \label{ssec:AllXY}
@@ -1066,7 +1073,7 @@
 
     When randomized benchmarking is only performed on one of the qubits, while the other at the same frequency remains idle, cross-driving effects have been observed. However, it has been shown in the $5$ primitives method that by cleverly choosing pulses, cross-driving effects when the other qubit is idle can largely be corrected.
 
-    During the randomized benchmarking sequences leakage to the second excited-state has been observed. The leakage rate is found to be worse for the top qubit than for the bottom qubit. The DRAG parameter has a different optimum value for correcting phase error than it has for minimizing leakage. Since it has been calibrated to minimize the phase error, changing the DRAG parameter could therefore potentially reduce leakage, although this would result in more phase error during gates. Additionally, leakage could be reduced by resorting to longer pulses.
+    During the randomized benchmarking sequences leakage to the second excited-state has been observed. The leakage rate is found to be worse for the top qubit than for the bottom qubit. The DRAG parameter has been calibrated to minimize the phase error. However, it is not necessarily the case that this also corresponds to the optimum for minimizing leakage. Changing the DRAG parameter could therefore potentially reduce leakage, although this would result in more phase error during gates. Additionally, leakage could be reduced by resorting to longer pulses.
 
     Even though the Duplexer already proves to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of intstruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
 
