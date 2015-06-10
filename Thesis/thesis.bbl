@@ -99,6 +99,10 @@ Erik Lucero, Julian Kelly, Radoslaw~C Bialczak, Mike Lenander, Matteo
   qubit.
 \newblock {\em Physical Review A}, 82(4):042339, 2010.
 
+\bibitem{T1_derivation}
+Easwar Magesan.
+\newblock personal communication.
+
 \bibitem{magesan2011scalable}
 Easwar Magesan, Jay~M Gambetta, and Joseph Emerson.
 \newblock Scalable and robust randomized benchmarking of quantum processes.

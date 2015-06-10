@@ -359,7 +359,7 @@
 
         A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row $F_i = \left[F_{i1}, \dots, F_{in}\right]$ corresponds to the ratio's by which each of the DAC currents should be changed such that only the frequency of qubit $i$ changes while the other frequencies remain fixed. This results in $n$ decoupled virtual flux parameters.
 
-        For a flux matrix $F$ knowledge of the frequency responses of each of the qubits due to each of the flux-bias lines is required. It is important that the qubits are tuned away from their sweet-spots, to a point where the frequency is sensitive to changes in flux. In Figure~\ref{fig:flux matrix} the frequency responses of the three Muxmon qubits to currents flowing through each of the flux-bias lines are shown. As can be seen the degree to which a flux-bias line affects other qubits can be quite severe. From the frequency responses a frequency response matrix $\boldsymbol{M}$ can be constructed:
+        For a flux matrix $F$ knowledge of the frequency responses of each of the qubits due to each of the flux-bias lines is required, such as shown in Figure~\ref{fig:flux matrix} for the three qubits in the Muxmon experiment. It is important that the qubits are tuned away from their sweet-spots, to a point where the frequency is sensitive to changes in flux. From the frequency responses a frequency response matrix $\boldsymbol{M}$ can be constructed:
 
         \begin{equation}
           \boldsymbol{M} =
@@ -383,6 +383,8 @@
         \end{equation}
 
         By adding the simultaneous sweet-spot DAC voltages $\vec{V}^{ss}$, we obtain the additional property that the simultaneous sweet-spot of the virtual fluxes is set to zero.
+
+        In Figure~\ref{fig:flux matrix} the frequency responses of the three Muxmon qubits to currents flowing through each of the flux-bias lines are shown. As can be seen the degree to which a flux-bias line affects other qubits can be quite severe. From the Muxmon chip structure one would expect that for both the top and bottom qubit, a flux-bias current would affect the flux  of the ancilla qubit more severely than the other qubit. However, from the results it can be seen that the ancilla qubit is barely affected by by the other flux-bias lines. This could be due to the route taken by the current from the flux-bias lines to ground, although more research must be done to determine if this is indeed the cause.
 
     \section{Time-domain measurements}
       \label{sec:Time-domain measurements}
@@ -882,7 +884,7 @@
         F_g = F_o^{1/n_g}
       \end{equation}
 
-      Qubit relaxation places an upper limit on the number of gates that can be performed, and therefore on the fidelity per gate. This upper limit $F_\text{max}$ is given by:~\cite{knill2008randomized}:
+      Qubit relaxation places an upper limit on the number of gates that can be performed, and therefore on the fidelity per gate. This upper limit $F_\text{max}$ is given by~\cite{T1_derivation}:
 
       \begin{equation}
         F_\text{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right)
