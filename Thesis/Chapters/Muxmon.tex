@@ -121,7 +121,7 @@
         \label{eq:transmon frequency}
       \end{equation}
 
-      The performance of a qubit is determined by its ability to retain information, which are quantified by its decoherence times. The more isolated a qubit is from its environment, the less decay channels it will have, and the longer its decoherence times will be. On the other hand it is also necessary to interact with the qubit. In a cQED chip a signal is sent through a feedline. Directly connecting a qubit to this feedline would result in a strong decay channel. The connection between a transmon and the feedline is therefore mediated by a capacitive coupling to a resonator, in this case a coplanar waveguide (see Part I). The resonator acts as a filter, thereby limiting the decay channel. Nevertheless due to the Purcell effect the resonator is still a decay channel for the qubit, the rate of which depends on the quality factor of the resonator.
+      The performance of a qubit is determined by its ability to retain information, which are quantified by its decoherence times. The more isolated a qubit is from its environment, the less decay channels it will have, and the longer its decoherence times will be. On the other hand it is also necessary to interact with the qubit. In a cQED chip a signal is sent through a feedline. Directly connecting a qubit to this feedline would result in a strong decay channel. The connection between a transmon and the feedline is therefore mediated by a capacitive coupling to a coplanar waveguide resonator, as shown in Figure~\ref{fig:flux-tunable transmon schematic}. The resonator acts as a Purcell filter, thereby limiting the decay channel.
 
     \section{Continuous-wave measurements}
       \label{sec:Continuous-wave measurements}
@@ -453,11 +453,7 @@
             \label{fig:T1 schematic}
           \end{wrapfigure}
 
-          One type of decoherence is relaxation, which results in the excitation of the qubit slowly leaking away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in \ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Figure~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi-pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding decay time $T_1$.
-
-          \begin{itemize}
-            \item Purcell limit
-          \end{itemize}
+          One type of decoherence is relaxation, which results in the excitation of the qubit slowly leaking away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in \ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Figure~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi-pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding relaxation time $T_1$. As explained in Section~\ref{sec:Quality factor}, the Purcell effect places an upper limit $T^1_\text{Purcell}$ on the relaxation time $T_1$ of the qubit, although other relaxation channels can further decrease this time considerably.
 
         \subsubsection{Qubit dephasing: Ramsey}
           \label{sssec:Ramsey}

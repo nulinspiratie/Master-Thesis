@@ -21,13 +21,30 @@
 
   \section{Coplanar waveguide}
 
-    \begin{wrapfigure}{r}{0.4\textwidth}
+    \begin{figure}[h]
+      \begin{subfigure}{.49\textwidth}
         \begin{center}
-            \includegraphics[width=\textwidth]{Figures/DRIE/CPW.png}
+            \includegraphics[width=.8\textwidth]{Figures/DRIE/resonator schematic joined.jpg}
         \end{center}
-        \caption{Schematic of a coplanar waveguide. For a typical resonator $w=\SIm{12}{\micro \meter}$, $s=\SIm{5}{\micro \meter}$, $t=\SIm{200}{\nano \meter}$, and $h=\SIm{525}{\micro \meter}$.}
-        \label{fig:CPW}
-    \end{wrapfigure}
+        \label{fig:CPW schematic}
+      \end{subfigure}
+      ~
+      \begin{subfigure}{.49\textwidth}
+        \begin{center}
+            \includegraphics[width=.8\textwidth]{Figures/DRIE/CPW.png}
+        \end{center}
+        \label{fig:CPW intersection}
+      \end{subfigure}
+      \caption{\textbf{(a)} A resonator circuit diagram, including capacitive coupling to a feedline. \textbf{(b)} Cross-section on a CPW resonator. For a typical resonator $w=\SIm{12}{\micro \meter}$, $s=\SIm{5}{\micro \meter}$, $t=\SIm{200}{\nano \meter}$, and $h=\SIm{525}{\micro \meter}$.}
+    \end{figure}
+
+    % \begin{wrapfigure}{r}{0.4\textwidth}
+    %     \begin{center}
+    %         \includegraphics[width=\textwidth]{Figures/DRIE/CPW.png}
+    %     \end{center}
+    %     \caption{Schematic of a coplanar waveguide. For a typical resonator $w=\SIm{12}{\micro \meter}$, $s=\SIm{5}{\micro \meter}$, $t=\SIm{200}{\nano \meter}$, and $h=\SIm{525}{\micro \meter}$.}
+    %     \label{fig:CPW}
+    % \end{wrapfigure}
 
     Superconducting coplanar waveguides (CPW) microwave resonators have versatile applications. They are used in single-photon detectors \textbf{TODO:} cite, quantum-limited Josephson parametric amplifiers \textbf{TODO:} cite, and in the context of circuit QED are used for memory storage, readout, and as interconnects. Coplanar waveguides consist of a long central conducting strip, with on both sides a neighbouring ground. The center conductor of width $w$ is seperated from the neighbouring grounds by a fixed gap $s$.
 
@@ -48,7 +65,7 @@
         Q = \omega_0 \tau_1 = \omega_0 / \Delta \omega
         \label{eqn:quality factor definition}
     \end{equation}
-    Here $\omega_0$ is the resonance frequency of the resonator, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
+    Here $\omega_0$ is the resonance frequency of the resonator, $\Delta \omega$ is the full width at half maximum, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
 
     Photons can be lost through different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$. This coupling quality factor depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the desired interaction between resonator and feedline.
 
@@ -72,18 +89,16 @@
 
     With knowledge of the resonant frequency $\omega_0$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the internal quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors, to get an accurate estimate of both quality factors, they should have a comparable value.
 
-    One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. This qubit therefore experiences dissipation due to its coupling to the resonator, known as the Purcell effect. The result of dissipation is that when the qubit is in its excited state, it will relax to its ground state. The amount of relaxation due to the Purcell effect can be quantified through its relaxation time $T_1^\text{Purcell}$, given by~\cite{Reed} \textbf{TODO:}
+    One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. The resonator shapes the electromagnetic field seen by the qubit. This can either cause enhanced or diminshed emission, and is known as the Purcell effect. If a qubit is in the excited-state, its coupling to the resonator will result in relaxation of its state to the ground-state. This can be quantified through its relaxation time $T_1^\text{Purcell}$, given by~\cite{Reed}:
 
     \begin{equation}
       T_1^\text{Purcell} = \left(\left(\frac{g}{\Delta}\right)^2\kappa\right)^{-1}
+      \label{eq:purcell T1}
     \end{equation}
 
-    where $\kappa=\omega_0/Q$ is the cavity decay rate.
+    where $\kappa=\omega_0/Q_i$ is the cavity decay rate.
 
      The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
-
-  \section{Photon number}
-    \label{sec:photon number}
 
   \section{Losses}
     \label{sec:Losses}
@@ -134,9 +149,7 @@
 
     \subsubsection{Radiation}
 
-      A third source of dissipation is due to radiation from the resonator. This radiation is due to the spontaneous emission of photons.
-
-      The amount of energy loss due to radiation is directly related to the geometry of the resonator through \cite{sage2011study,Mazin}:
+      The resonator effectively acts as an antenna, where ideally the signal is contained by the neighbouring ground. However, this is not entirely the case, and so photons will also radiate out of the guided modes. The amount of energy loss due to radiation is directly related to the geometry of the resonator through \cite{sage2011study,Mazin}:
 
       \begin{equation}
           Q_\text{rad} = \alpha \left( \frac{L}{s + w}\right)^{n_r}
@@ -179,6 +192,13 @@
 
   \subsubsection{Deep-reactive ion etching}
 
+  \begin{figure}[[h]]
+    \centering
+    \includegraphics[width=.8\textwidth]{Figures/DRIE/DRIE figure.jpg}
+    \caption{\textbf{(a)} false colored SEM image of a RIE feedline capacitively ocupled to a DRIE resonator. \textbf{(b)} Corresponding schematic cross-section. The metal substrate interface treated with HMDS is shown in red. \textbf{(c)} SEM cross section of a DRIE resonator near the surface, showing the metallization (\SI{\sim300}{\nano \meter}), Si underetch (\SI{\sim1}{\micro \meter}) and sidewall roughness (\SI{\sim100}{\micro \meter}). \textbf{(d)} SEM cross section of a DRIE resonator showing that a high etch anisotropy can be obtained, with a depth of \SI{80}{\micro \meter}}
+    \label{fig:DRIE schematic}
+  \end{figure}
+
   Another technique applied to the resonators studied in this report is deep-reactive ion etching (DRIE), which is a type of Bosch process \cite{bruno2015reducing}. In this technique two alternating steps are performed:
 
   \begin{enumerate}
@@ -186,7 +206,7 @@
       \item A passivation step in which a $\chem{C_4H_8}$ plasma forms a protective layer on the substrate, except for the direction in which the $\chem{SF_6}$ etching plasma is accelerated. The result is that the sidewalls are protected from the etching process
   \end{enumerate}
 
-  Using DRIE, nearly vertical sidewalls can be created for the substrate. The result is that the substate-air interface is removed from the regions in the CPW gaps, which are the regions where the electric field strength is higher. As the dissipation due to TLS depends on the electric field strength, we showed that DRIE results in a much lower TLS dissipation rate at this interface.
+  Using DRIE, nearly vertical sidewalls can be created for the substrate. The result is that the substate-air interface is removed from the regions in the CPW gaps, which are the regions where the electric field strength is higher, as is shown in Figure~\ref{fig:DRIE schematic}b. As the dissipation due to TLS depends on the electric field strength, we have shown that DRIE results in a much lower TLS dissipation rate at this interface. In Figure~\ref{fig:DRIE schematic} SEM images of DRIE resonators are shown, along with a schematic cross-section. As can be seen, using DRIE the gap substrate can be etched away with high anisotropy, resulting in nearly vertical sidewalls.
 
   \subsubsection{Magnetic shielding and vortex trapping}
 
@@ -203,7 +223,7 @@
 
 
     \begin{figure}[!htb]
-      \fbox{\includegraphics[width=.5\textwidth]{Figures/DRIE/FigS2_MW_setup.pdf}}
+      \includegraphics[width=.5\textwidth]{Figures/DRIE/FigS2_MW_setup.pdf}
       \caption[width=\textwidth]{Measurement setup used for resonator characterization in the $^{3}\mathrm{He}/^{4}\mathrm{He}$ dilution refrigerator (Leiden Cryogenics CS81): microwave schematic, magnetic shields (two Cryophy, one aluminum), IR filters (home-made Eccosorb filters), and IR adsorbers (inner surface of the inner Cu radiation shield, coated with Stycast~2850 and silicon carbide powder).}
       \label{fig:fridges}
     \end{figure}
@@ -243,10 +263,19 @@
     \label{fig:resonator}
 \end{figure}
 
- In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. At or close to the resonance frequency, the resonator will interact strongly with the feed line, resulting in a reduction in transmission (see Figure~\ref{fig:resonator}. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p192]{Geerlings}. This could be caused by impedance mismatching of components in the set-up, which would result in part of the signal being reflected.
+ At or close to the resonance frequency, the resonator will interact strongly with the feed line, resulting in a reduction in transmission (see Figure~\ref{fig:resonator}. The corresponding frequency spectrum exhibits a Lorentzian lineshape.
 
- % TODO
- % Say something about complex data
+  In Figure~\ref{fig:resonator} the transmission $S_{21}$ of a resonator is shown. Figure~\ref{fig:resonator}(a) shows the transmitted voltage $|S_{21}|$ of the resonator as a function of frequency. One interesting point is that the Lorentzian exhibits an asymmetry, which is often attributed to reflections in the feedline \cite[p192]{Geerlings}. This could be caused by impedance mismatching of components in the set-up, which would result in part of the signal being reflected.
+
+  The data has in Figure~\ref{fig:resonator} been fitted with the following complex function~\cite{bruno2015reducing}:
+
+  \begin{equation}
+    S_{21} =A \left( 1 + \alpha \frac{\omega-\omega_r}{\omega_r} \right)
+    \left(1-\frac{\frac{Q_l}{\lvert Q_e \rvert}e^{i\theta}}{1+2iQ_l\frac{\omega-\omega_r}{\omega_r}}\right)e^{i\left(\phi_v f+\phi_0\right)}.
+    \label{eq:THEhanger}
+  \end{equation}
+
+  Here $\omega_r$ is the resonance frequency of the resonator, $Q_e=\left|Q_e\right|e^{i\theta}$ is the extrinsic quality factor, related to the coupling quality factor by $1/Q_c=Re\left(1/Q_e\right)$, $\alpha$ accounts for any slope in the background transmission surrounding the resonance frequency, and $\phi_v$ and $\phi_0$ account for the propagation delay to and from the sample.
 
 \section{Power dependence}
 \label{sec:resonator:results:power_dependence}
@@ -257,19 +286,11 @@
     \caption{Internal quality factor of resonators as a function of mean number of photons present in the resonator. Measurements were performed at \SI{15}{\milli \kelvin}.}
     \label{fig:Qi_vs_n_photon}
 \end{figure}
-To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator \cite{bruno2015reducing}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
+To be able to study the behaviour of the resonators, measurements were performed for several powers. Using proper calibrations for the attenuation down to the sample, the power can be converted to the input power at the sample. This value can then be converted to the mean number of photons present in the resonator, as described in Appendix~\ref{ch:photon number calculation}. The results are shown in Figure~\ref{fig:Qi_vs_n_photon}.
 
-As can be seen, the internal quality factor $Q_i$ of all resonators decrease with decreasing photon number. One explanation for this phenomenon is that the dissipation is mainly due to TLS. Since measurements were performed at \SI{\sim15}{mK}, the TLS are not saturated since the rate of thermal excitation is low. As discussed in section~\ref{sec:TLS}, the relative loss due to TLS is highest at low power, in the regime where they are not saturated. Therefore the fact that the internal quality factor $Q_i$ rises with the mean number of photons present in the resonator can be attributed to a larger amount of TLS being satured. This would suggest that, even with HMDS and DRIE treatment of the sample, at low power and temperature, the internal quality factor is still limited by TLS being present.
+As can be seen, all resonators measured obtain quality factors in excess of 1 million, even at the single photon regime used in quantum computation. It can furthermore be seen that the internal quality factor $Q_i$ of all resonators decrease with decreasing photon number. One explanation for this phenomenon is that the dissipation is mainly due to TLS. Since measurements were performed at \SI{\sim15}{mK}, the TLS are not saturated since the rate of thermal excitation is low. As discussed in section~\ref{sec:TLS}, the relative loss due to TLS is highest at low power, in the regime where they are not saturated. Therefore the fact that the internal quality factor $Q_i$ rises with the mean number of photons present in the resonator can be attributed to a larger amount of TLS being satured. This would suggest that, even with HMDS and DRIE treatment of the sample, at low power and temperature, the internal quality factor is still limited by TLS being present.
 
 As the mean photon number of a resonator is inversely proportional to the square of frequency \cite{bruno2015reducing}, for a low frequency resonator a lower input power is required to reach the same photon population as a higher frequency resonator. This has important consequences for the signal-to-noise ratio, and hence for the required integration time. At high photon numbers this is not a concern, as the transmitted signal is high enough to be accurately measured in a short period of time. For the single-photon powers, however, which is the region of interest for quantum computation, acquiring enough signal took up to five hours for the lowest frequencies. The reason that for the resonator with a resonance frequency at \SI{1.83}{\giga \hertz} has large error bars at low powers can be partly attributed to this, but as we will see in section \ref{sec:noise_results}, the main reason is that its frequency lies outside the bandwidth of the amplifiers and circulators of the set-up, resulting in a large amount of additional noise.
-
-% \begin{itemize}
-%     \item Quality factor depends on frequency?
-%     \item One can also see that the quality factor is lower for resonators with higher resonance frequency.
-% \end{itemize}
-
-
-
 
 \section{Temperature dependence}
 \label{sec:resonator:results:emperature_dependence}
@@ -337,7 +358,7 @@ The decrease in resonance frequency at lower temperatures can be explained due t
 
 \chapter{Conclusion and future work}
 
-As we have shown, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. These state of the art cQED CPW resonators all attained quality factors in excess of 1 million at single photon level.
+As we have shown, the application of HMDS surface treatment and DRIE resulted in an improvement of the internal quality factor of the resonators by almost an order of magnitude. These state of the art cQED CPW resonators all attained quality factors in excess of 1 million at single photon level, which is the regime at which cQED circuits operate.
 
 Since the quality factor of all resonators is found to decrease with decreasing input power, this indicates that at low temperatures and powers the limiting factor is still due to TLS. The fact that the quality factor initially increases with higher temperatures, supports this claim. By also measuring  the resonance frequency as a function of temperature, the curve obtained is in good agreement with a model describing the resonance frequency shift due to TLS \cite{gao2008experimental}. The curve even shows an increase in resonance frequency at the lowest temperatures, which was also predicted by the model. These results suggest that even after HMDS surface treatment and deep-reactive ion etching was applied, the internal quality factor of the resonator at low temperatures and power is still limited by the presence of TLS. Further research needs to be done to determine at what interface the dissipation due to TLS is greatest.
 
