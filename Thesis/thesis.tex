@@ -71,6 +71,21 @@
   \addtocounter{footnote}{-1}%
   \endgroup
 }
+
+% \usepackage{epigraph}
+% \usepackage{titlesec}
+
+% \makeatletter
+% \titleformat{\part}[display]
+%   {\Huge\scshape\filright}
+%   {\partname~\thepart:}
+%   {20pt}
+%   {\thispagestyle{epigraph}}
+% \makeatother
+% \setlength\epigraphwidth{.6\textwidth}
+
+
+
 % \onehalfspacing
 \setcounter{secnumdepth}{5}
 \setcounter{tocdepth}{5}
@@ -143,13 +158,13 @@ Christian Dickel
     \vspace{0.9cm}
     \textbf{Abstract}
 \end{center}
-As part of this thesis, superconducting coplanar waveguide (CPW) resonators treated with a combination of deep-reactive ion etching and HMDS surface treatment have been studied. These treatments are aimed at reducing the loss due to two-level systems (TLS), which are suspected to dominate loss at the low-power, low-temperature regime. The result of the combination of DRIE and HMDS result an increase of quality factor an order of magnitude. The quality factors were consistently measured in excess of 1M at single-photon levels, showing that these are state of the art resonators. Power-dependent and temperature-dependent measurements however suggest that even after application of DRIE and HMDS, in the low-power, low-temperature regime the resonators are still limited by TLS.
+The first part of this thesis superconducting coplanar waveguide (CPW) resonators treated with a combination of deep-reactive ion etching and HMDS surface treatment are studied. These treatments are aimed at reducing the loss due to two-level systems (TLS), which are suspected to dominate loss at the low-power, low-temperature regime. The result of the combination of DRIE and HMDS result an increase of quality factor an order of magnitude. The quality factors were consistently measured in excess of 1M at single-photon levels, showing that these are state of the art resonators. Power-dependent and temperature-dependent measurements however suggest that even after application of DRIE and HMDS, in the low-power, low-temperature regime the resonators are still limited by TLS.
 
-In a separate experiment, frequency re-use in combination with a vector-switch matrix has been studied using transmon qubits in circuit QED. Using randomized benchmarking, gate fidelities of qubits sharing the same frequency were found reaching $99.9\%$, being limited by decoherence. Furthermore, the nanosecond-scale switches of the Duplexer allow individual control of both qubits simultaneously by directing pulses to either or both qubits. Three different realizations of two-qubit randomized benchmarking using selective broadcasting have been studied. All three methods achieve gate fidelities well in excess of $99\%$, thereby meeting the surface code threshold. Most notable is the $5$ primitives RB method, in which $5$ primitive gates are used to decompose any Clifford by selective directing of pulses. The $5$ primitives method can be applied to an arbitrary number of same-frequency qubits, while having a fixed overhead of $5$ gates per Clifford. This allows for efficient characterization of multiple qubits simultaneously, and could potentially have applications in large-scale quantum computers.
+In the second part of this thesis frequency re-use in combination with a vector-switch matrix is studied using transmon qubits in circuit QED. Using randomized benchmarking, gate fidelities of qubits sharing the same frequency were found reaching $99.9\%$, being limited by decoherence. Furthermore, the nanosecond-scale switches of the Duplexer allow individual control of both qubits simultaneously by directing pulses to either or both qubits. Three different realizations of two-qubit randomized benchmarking using selective broadcasting have been studied. All three methods achieve gate fidelities well in excess of $99\%$, thereby meeting the surface code threshold. Most notable is the $5$ primitives RB method, in which $5$ primitive gates are used to decompose any Clifford by selective directing of pulses. The $5$ primitives method can be applied to an arbitrary number of same-frequency qubits, while having a fixed overhead of $5$ gates per Clifford. This allows for efficient characterization of multiple qubits simultaneously, and could potentially have applications in large-scale quantum computers.
 
 \chapter*{Acknowledgements}
 
-During my master's project at the DiCarlo group I have had the great fortune of working together with some of the ...
+During my master's project at the DiCarlo group I have had the great fortune of working together with an amazing group of scientists dedicated to building a quantum computer.
 
 During my project I have been working very closely with Christian Dickel. His enthusiasm about all matter related to physics has had a contagious influence on me. His hard work and perseverance shows a dedication to his work unparalleled by most. I would like to thank him for all the help he has given me over the nine months, bringing the transmon from an abstract idea to something almost tangible. Although he did not start as my supervisor, he definitely ended as one.
 
@@ -159,11 +174,7 @@ Leo DiCarlo initially planted the seed of quantum computing when I took his cour
 
 I would furthermore like to thank Nathan Langford, who has helped me many times over the past months. His detailed explanations of physics related subjects not only showed deep insight into the subjects, but also gave me the opportunity to glimpse at them. It has also been a pleasure working alongside Adriaan Rol, whose consultant-like workstyle brings structure and order into an otherwise hectic place. Stefano Poletto has also been an important person during my time at the group, who was the go-to guy when the Muxmon experiment showed strange results. His insights have helped a great deal in the progression of the experiment. Furthermore I would like to thank Marios Kounalakis, whom it has been great fun to work with. Who knows, maybe one day I will even make you one of my sandwiches you have been preying for for so long. During my last months I have also had the luck of working with Ramiro Sagastizabal, who flew in from Marseille for a three month project. I would like to thank him for the help he has shown during his time at the group. I would also like to thank Florian L\"uthi. Although our projects never overlapped, our time in the lab did, and I definitely enjoyed the time. Furthermore I would like to thank Gijs de Lange, who unfortunately left us for a Yaler future after the DRIE project. Nevertheless during the time i have spent with him he has taught me a great deal, for which I am very grateful. I would also like to thank Lieven Vandersypen and Stephanie Wehner for being part of my examination committee.
 
-
-Judith
-Oftentimes joking? that I only chose her because her name sounds like qubit.
-
-My parents
+Aside from the people in the lab I would like to thank my parents who have throughout my life been a guiding light, and without whom I would definitely not be writing this thesis right now. I would also like to thank my girlfriend Judith, who was always able to keep my spirits up. My last word of thanks goes to my other friends, general as it may sound, I would like to thank each one of you.
 
 
 \blankpage

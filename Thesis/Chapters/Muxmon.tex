@@ -34,7 +34,7 @@
 
     \section{Selective broadcasting}
       \label{sec:selective broadcasting using the Duplexer}
-      \begin{wrapfigure}[13]{r}{0.45\textwidth}
+      \begin{wrapfigure}[14]{r}{0.5\textwidth}
         \begin{center}
         \vspace{-30pt}
           \includegraphics[width=\textwidth]{../Figures/Duplexer_with_background.png}
@@ -47,12 +47,36 @@
 
       A second challenge that exists when scaling up is that as the number of qubits grow, so do the instruments needed to control them. When thinking of a large-scale quantum computer, it is unrealistic to think that each qubit will have its own RF generator, AWG, and other necessary instruments. Therefore, alternatives have to be devised to combat this scaling of instruments. One such device is the Duplexer, shown in Figure~\ref{fig:Duplexer picture}. The Duplexer is a patented vector switch matrix designed by Duije Deurloo. It has four input ports and two output ports. Signals going through each of the input-output port combinations pass through the following successive components:
 
-      \begin{enumerate}
+      % \begin{wrapfigure}[14]{r}{0.4\textwidth}
+      %   \begin{center}
+      %   \vspace{-30pt}
+      %     \includegraphics[width=\textwidth]{../Figures/Duplexer_properties.jpg}
+      %   \end{center}
+      %   \vspace{-20 pt}
+      %   \caption{Schematic of the Duplexer components.}
+      %   \label{fig:Duplexer components}
+      % \end{wrapfigure}
+
+      % \begin{enumerate}
+      %   \item Digital switch
+      %   \item Variable phase-shifter
+      %   \item Variable attenuator
+      %   \item Amplifier
+      % \end{enumerate}
+
+    \begin{minipage}{.5\textwidth}
+        \begin{enumerate}
         \item Digital switch
         \item Variable phase-shifter
         \item Variable attenuator
         \item Amplifier
       \end{enumerate}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \includegraphics[width=\textwidth]{../Figures/Duplexer_properties.jpg}
+    \end{minipage}
+
+    \vspace{1cm}
 
       The Duplexer's digital switches have an RF-switching time of \SI{4}{\nano \second}. Using these switches, pulses may be sent to either of the two output ports, or to both output ports simultaneously. This allows for selective broadcasting, where pulses are routed to either or both of the two output ports at the nanosecond scale. When the output ports are connected to drive lines that are connected to qubits sharing the same frequency, the result is that two qubits can be controlled using a single generator and AWG. This property will be exploited in Randomized Benchmarking in Chapter~\ref{ch:randomized benchmarking}.
 
@@ -75,7 +99,14 @@
         \label{fig:Muxmon0 and Muxmon1}
       \end{figure}
 
-      \begin{wrapfigure}[7]{r}{0.3\textwidth}
+      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits on them, all three of which are flux-tunable. For convenience, these qubits are named top, ancilla, and bottom qubit, as shown in Figure~\ref{fig:Qubit names}.The key difference between the two chips is the approach used to drive the qubits. In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that these drive lines do not act as filters, and can therefore be a strong decoherence channel for the qubits. The drive lines of Muxmon1, however, are capacitively coupled to the resonator, and therefore act as a filter, leading to a suppression of the decoherence channel.
+
+      The three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section~\ref{sec:frequency re-use}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore the drive line decoherence channel is reduced. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options. Furthermore, each qubit has its own readout resonator. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines.
+
+      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
+
+
+      \begin{wrapfigure}[10]{r}{0.4\textwidth}
         \begin{center}
         \vspace{-30pt}
           \includegraphics[width=\textwidth]{../Figures/Qubit names.jpg}
@@ -85,9 +116,17 @@
         \label{fig:Qubit names}
       \end{wrapfigure}
 
-      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Figure~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits on them, all three of which are flux-tunable. For convenience, these qubits are named top, ancilla, and bottom qubit, as shown in Figure~\ref{fig:Qubit names}.The key difference between the two chips is the approach used to drive the qubits. In Muxmon0 all three qubits have their individual directly coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that these drive lines do not act as filters, and can therefore be a strong decoherence channel for the qubits. However, the three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in section~\ref{sec:frequency re-use}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively coupled drive lines would result in less lines being required, both on-chip and outside the chip. Furthermore the drive line decoherence channel is reduced. Therefore the capacitive coupled drive lines of Muxmon1 seemed the more attractive of the two options. Furthermore, each qubit has its own readout resonator. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines.
 
-      During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0 (see Appendix~\ref{sec:Muxmon1 coherence times}. It is, however, unlikely that this is due to the capacitively coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
+      The Muxmon experiment set-up is shown in Figure~\ref{fig:Muxmon set-up}. The main AWG is used for generating the Gaussian and DRAG pulses, and to trigger other devices. A second AWG is used for pulses at the excited-state to second excited-state transition frequency. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Section~\ref{ssec:qubit control} for more info). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
+
+      % \begin{figure}[h]
+      %   \centering
+      %     \includegraphics[width=.3\textwidth]{../Figures/Qubit names.jpg}
+      %   % \end{center}
+      %   % \vspace{-20 pt}
+      %   \caption{Naming of the three qubits.}
+      %   \label{fig:Qubit names}
+      % \end{figure}
 
       \begin{figure}[tb]
         \centering
@@ -95,9 +134,6 @@
         \caption{The Muxmon set-up}
         \label{fig:Muxmon set-up}
       \end{figure}
-
-      The Muxmon experiment set-up is shown in Figure~\ref{fig:Muxmon set-up}. The main AWG is used for generating the Gaussian and DRAG pulses, and to trigger other devices. A second AWG is used for pulses at the excited-state to second excited-state transition frequency. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Section~\ref{ssec:qubit control} for more info). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
-
   \chapter{Muxmon device characterization}
     \label{ch:Muxmon device characterization}
 
@@ -131,7 +167,7 @@
         \label{sec:resonator-scan}
         Since communication with the qubits is mediated through their capacitive coupling to resonators, the first step is to find the resonator frequencies. This is done using a transmission measurement of the feedline, in combination with heterodyne detection.
 
-        When a resonator and qubit are coupled, the energy levels of the two elements are influenced by one another. When considering the qubit as a two-level system, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{koch2007Transmon}:
+        When a resonator and qubit are coupled, the energy levels of the two elements are influenced by one another. When considering the transmon as a qubit, the behaviour of the coupled resonator-qubit system is governed by the Jaynes-Cummings Hamiltonian \cite{koch2007Transmon}:
 
         \begin{equation}
           \hat{H} = \hbar \wres\left(\hat{a}^\dagger \hat{a} + \frac{1}{2} \right) + \frac{\hbar \wqub}{2}\hat{\sigma}_z + \hbar g \left(\hat{a}^\dagger \sigma_{-} + \hat{a}\sigma_{+}\right)
@@ -149,23 +185,23 @@
 
         The coupling between the qubit and resonator causes both the qubit frequency and the resonator frequency to shift: $\wqub^{'} = \wqub + \chi_{01}$, $\wres^{'}=\wres - \chi_{12}/2$, where $\chi_{ij} = \frac{g_{ij}^2}{\omega_{ij}-\omega_r}$ are the partial dispersive shifts. We see that in this approximation we must not only take into account the lowest two states of the transmon, but also the second excited-state of the transmon. The difference between the first excited-state to second excited-state transition frequency $\omega_{12}$ and the ground-state to first excited-state transition frequency $\omega_{01}$ is given by the anharmonicity $\alpha=\omega_{12} - \omega_{01} \simeq E_C$ \cite{koch2007Transmon}. The anharmonicity $\alpha$ determines the degree in which the transmon behaves as a qubit, without experiences excitations to higher excited-states.
 
-        Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited-state. The parameter $\chi$ is the dispersive shift, and is given by:
-
-        \begin{equation}
-          \chi = \chi_{01} - \chi_{12}/2 \approx \frac{g^2}{\Delta}\frac{\Ec}{\hbar \Delta - \Ec}
-          \label{eq:dispersive-shift}
-        \end{equation}
-
-        Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a critical photon number, this coupling will result in the resonator experiencing nonlinear effects and leaving the low-power regime. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
-
-        \begin{figure}[tb]
+        \begin{figure}[h]
           \centering
           \includegraphics[width=.7\textwidth]{../Figures/Qubit characterization/Resonator scans.png}
           \caption{The three resonators coupled to the top, ancilla, and bottom qubits in ascending frequency.}
           \label{fig:Three resonators}
         \end{figure}
 
+        Aside from experiencing a frequency shift dependent on the amount of detuning, Equation~\ref{eq:dispersive-Jaynes-Cummings} shows that the resonator also experiences a shift depending on the state of the qubit. The resonator's frequency is decreased by an amount $2 \chi$ when the qubit is in the excited-state. The parameter $\chi$ is the dispersive shift, and is given by:
+
+        \begin{equation}
+          \chi = \chi_{01} - \chi_{12}/2 \approx \frac{g^2}{\Delta}\frac{\Ec}{\hbar \Delta - \Ec}
+          \label{eq:dispersive-shift}
+        \end{equation}
+        Due to this coupling between resonator and qubit, it is important to choose the right RF power. When the amount of photons in the resonator reaches a critical photon number, this coupling will result in the resonator experiencing nonlinear effects and leaving the low-power regime. The resonator will thereby lose its Lorentzian lineshape. Therefore the RF power should be kept sufficiently low to avoid these nonlinear effects, while still maintaining a good signal-to-noise ratio.
+
         In Figure~\ref{fig:Three resonators} the three resonators belonging to the top, ancilla, and bottom qubit are shown, with resonator frequencies \SI{6.700}{\giga \hertz}, \SI{6.733}{\giga \hertz}, and \SI{6.800}{\giga \hertz} respectively.
+
 
       \subsection{Powersweeping the resonators}
         \label{ssec:powersweep}
@@ -245,9 +281,7 @@
           \item A readout tone at the resonator frequency when the qubit is in the ground-state.
         \end{enumerate}
 
-        In figure~\ref{fig:qubit spectroscopy} the result of a two-tone spectroscopy is shown. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to the readout tone being at the resonator frequency. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$ the qubit will start to oscillate between its ground- and excited-state, at a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. The result is an increase in transmission
-
-        \begin{wrapfigure}[20]{r}{0.45\textwidth}
+        \begin{wrapfigure}[18]{r}{0.41\textwidth}
           \begin{center}
           \vspace{-30pt}
             \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Spectroscopy.png}
@@ -256,6 +290,8 @@
           \caption{Two-tone spectroscopy performed on the ancilla qubit at its sweet-spot. The transmission is low when the drive tone is off-resonant with the qubit frequency. However, when the drive tone approaches the qubit frequency, the resonator frequency experiences a dispersive shift, resulting in enhanced transmission.}
           \label{fig:qubit spectroscopy}
         \end{wrapfigure}
+
+        In figure~\ref{fig:qubit spectroscopy} the result of a two-tone spectroscopy is shown. When the drive frequency $\wdrive$ is detuned from the qubit's frequency $\wqub$, the drive is off-resonant with respect to the qubit, and so we measure a low transmission due to the readout tone being at the resonator frequency. However, when the drive frequency $\wdrive$ approaches the qubit's frequency $\wqub$ the qubit will start to oscillate between its ground- and excited-state, at a rate dependent on the detuning between the drive frequency $\wdrive$ and the qubit's frequency $\wqub$. The qubit will therefore have a partial population in the excited-state, resulting in a shift of the resonator frequency, dependent on the population in the excited-state. The result is an increase in transmission
 
         The minimum linewidth of the qubit using spectroscopy is set by its dephasing time $T_2$, which can be seen as the uncertainty in its frequency. However, the power of the drive tone causes an additional increase in the linewidth, due to stimulated emission of the qubit. This effect is known as power broadening, and can be quite useful for finding qubits, especially when designing high-quality qubits with a very narrow intrinsic linewidth. The optimal power for the drive strength is further dependent on the amount of detuning $\Delta$ between the qubit and resonator. The resonator effectively acts as a bandpass filter, centered around the resonator frequency. Therefore, the stronger the detuning, the more the drive tone is suppressed.
 
@@ -298,13 +334,13 @@
       \subsection{Tracking the qubits}
         \label{ssec:tracked spectroscopy}
 
-        \begin{wrapfigure}[20]{r}{0.45\textwidth}
+        \begin{wrapfigure}[19]{r}{0.44\textwidth}
           \begin{center}
           \vspace{-30pt}
             \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Tracked_spectroscopy.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{Tracked spectroscopy of the ancilla qubit. The blue dotted line is the corresponding fit to the qubit frequency, showing excellent agreement with measurements.}
+          \caption{Tracked spectroscopy of the ancilla qubit. The blue dotted line is the fit to the qubit frequency, showing excellent agreement with measurements.}
           \label{fig:tracked spectroscopy}
         \end{wrapfigure}
 
@@ -448,7 +484,7 @@
         \subsubsection{Qubit dephasing: Ramsey}
           \label{sssec:Ramsey}
 
-          \begin{wrapfigure}[8]{r}{0.4\textwidth}
+          \begin{wrapfigure}[6]{r}{0.4\textwidth}
             \begin{center}
             \vspace{-30pt}
               \includegraphics[width=\textwidth]{../Figures/Qubit characterization/T2 decoherence.png}
@@ -487,7 +523,7 @@
       \subsection{Second excited-state}
         \label{ssec:Second excited-state}
 
-        \begin{wrapfigure}[15]{r}{0.4\textwidth}
+        \begin{wrapfigure}[17]{r}{0.42\textwidth}
           \begin{center}
           \vspace{-30pt}
             \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/schematic second transition pulsing.png}
@@ -501,7 +537,7 @@
 
         Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
 
-        \begin{wrapfigure}[18]{r}{0.4\textwidth}
+        \begin{wrapfigure}[16]{r}{0.42\textwidth}
           \begin{center}
           \vspace{-30pt}
             \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Rabi12.png}
@@ -545,7 +581,7 @@
 
     \subsection{Cross-coupling}
       \label{ssec:cross-coupling}
-      \begin{figure}[tb]
+      \begin{figure}[h]
         \centering
         \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
         \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
@@ -565,19 +601,29 @@
     \subsection{Cross-driving}
       \label{ssec:cross-driving}
 
-      \begin{figure}[tb]
+      \begin{figure}[h]
         \centering
         \includegraphics[width=.8\textwidth]{../Figures/Exploring frequency re-use/cross-driving_setup.jpg}
         \caption{Schematic for measuring the amount of cross-driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a range range of drive strengths.}
         \label{fig:cross-driving schematic}
       \end{figure}
 
-      \begin{figure}[tb]
-        \centering
-        \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
-        \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
-        \label{fig:cross-driving Rabi}
-      \end{figure}
+      % \begin{wrapfigure}[12]{r}{0.4\textwidth}
+      %   \begin{center}
+      %   \vspace{-30pt}
+      %     \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %   \end{center}
+      %   \vspace{-20 pt}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \label{fig:cross-driving Rabi}
+      % \end{wrapfigure}
+
+      % \begin{figure}[tb]
+      %   \centering
+      %   \includegraphics[width=.5\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \label{fig:cross-driving Rabi}
+      % \end{figure}
       \begin{table}
         \begin{tabular}{l c c}
           \toprule
@@ -610,6 +656,16 @@
 
       When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits. Cross-driving effects affect the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are in resonance, as is the case with the Muxmon experiment.
 
+      \begin{wrapfigure}[21]{r}{0.45\textwidth}
+        \begin{center}
+        \vspace{-30pt}
+          \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+        \end{center}
+        \vspace{-20 pt}
+        \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+        \label{fig:cross-driving Rabi}
+      \end{wrapfigure}
+
       The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Table~\ref{tab:cross-driving}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
 
       \begin{wrapfigure}[12]{r}{0.45\textwidth}
@@ -623,6 +679,42 @@
       \end{wrapfigure}
 
       As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Figure~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
+
+      % \begin{figure}[h]
+      % \centering
+      % \begin{subfigure}[b]{.42\textwidth}
+      %     \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \label{fig:cross-driving Rabi}
+      % \end{subfigure}
+      % \hfill
+      % \begin{subfigure}[b]{.42\textwidth}
+      %     \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+      %   \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
+      %   \label{fig:cross-driving versus top frequency}
+      % \end{subfigure}
+      % \caption{}
+      % \end{figure}
+
+      % \begin{wrapfigure}[12]{r}{0.4\textwidth}
+      %   \begin{center}
+      %   \vspace{-30pt}
+      %     \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %   \end{center}
+      %   \vspace{-20 pt}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \label{fig:cross-driving Rabi}
+      % \end{wrapfigure}
+
+      % \begin{wrapfigure}[12]{r}{0.45\textwidth}
+      %   \begin{center}
+      %   \vspace{-30pt}
+      %     \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+      %   \end{center}
+      %   \vspace{-20 pt}
+      %   \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
+      %   \label{fig:cross-driving versus top frequency}
+      % \end{wrapfigure}
 
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
@@ -681,7 +773,7 @@
       \subsection{Multiplexed readout calibration}
         \label{ssec:multiplexed readout}
 
-          \begin{wrapfigure}[19]{r}{0.4\textwidth}
+          \begin{wrapfigure}[20]{r}{0.4\textwidth}
             \begin{center}
             \vspace{-30pt}
               \includegraphics[width=\textwidth]{../Figures/Calibration routines/crosstalk.png}
@@ -720,14 +812,14 @@
         \label{ssec:PiX360}
         To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in section~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
 
-        \begin{figure}[tb]
+
+        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. Three such examples are shown in Figure~\ref{fig:PiX360}. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
+        \begin{figure}[h]
           \centering
-          \includegraphics[width=.6\linewidth]{../Figures/Calibration routines/Drive calibration.png}
+          \includegraphics[width=.5\linewidth]{../Figures/Calibration routines/Drive calibration.png}
           \caption{Accurate drive calibration using repeated pi-pulses. The initial slope determines if the system is overdriving (positive slope), or underdriving (negative slope)}
           \label{fig:PiX360}
         \end{figure}
-
-        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. Three such examples are shown in Figure~\ref{fig:PiX360}. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
 
       \subsection{DRAG parameter calibration}
         \label{ssec:DRAG parameter calibration}
@@ -880,7 +972,7 @@
 
       where $t_g$ is the duration per gate, including any buffer between successive gates. As is expected this upper limit increases with shorter gates.
 
-      \begin{figure}[tb]
+      \begin{figure}[h]
         \centering
         \includegraphics[width=.6\textwidth]{../Figures/Randomized benchmarking/RB_single_seed.png}
         \caption{Randomized benchmarking results of the top qubit using a single seed. The final ground-state population decreases exponentially as the number of Cliffords $n$ is increased. The points include error bars, determined by the spread of three separate measurements.}
@@ -940,7 +1032,7 @@
           \label{fig:RB normal state populations}
         \end{figure}
 
-        Using the methods explained in Section~\ref{ssec:Second-state leakage}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Figure~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
+        Using the methods explained in Section~\ref{ssec:Second excited-state leakage}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Figure~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
 
         By assuming that the leakage rate $\kappa$ is constant, population in the second excited-state:
 
@@ -993,7 +1085,7 @@
       \subsection{Compiled randomized benchmarking}
         \label{ssec:compiled randomized benchmarking}
 
-        \begin{figure}[tb]
+        \begin{figure}[h]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/compiled RB.jpg}
           \caption{Compiled randomized benchmarking}
@@ -1009,7 +1101,7 @@
       \subsection{5 primitives randomized benchmarking}
         \label{ssec:5 primitives randomized benchmarking}
 
-        \begin{figure}[tb]
+        \begin{figure}[h]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/5 primitives RB.jpg}
           \caption{5 primitives randomized benchmarking}
@@ -1065,7 +1157,7 @@
 
           The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This comparison is not entirely fair, as idle gates (when only the other qubit is being pulsed) are also counted as gates. Nevertheless, it can be concluded that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit surface code fault tolerant threshold.
 
-          Using the method described in Section~\ref{ssec:Second-state leakage}, the mean relaxation time of the second excited-state $T_1^2$ and the leakage rate per gate $\alpha$ has been determined (see Appendix~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
+          Using the method described in Section~\ref{ssec:Second excited-state leakage}, the mean relaxation time of the second excited-state $T_1^2$ and the leakage rate per gate $\alpha$ has been determined (see Appendix~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
 
           \begin{figure}[tb]
             \centering
@@ -1088,12 +1180,6 @@
         \section{Scaling of multi qubit randomized benchmarking}
           \label{sec:scaling of multi qubit randomized benchmarking}
 
-          \begin{figure}[tb]
-            \centering
-            \includegraphics[width=.8\textwidth]{../Figures/Randomized benchmarking/Clifford_comparison.png}
-            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi qubit randomized benchmarking methods. The oval indicates the gates per Clifford at two qubits}
-            \label{fig:gate per Clifford versus qubits comparison}
-          \end{figure}
 
           So far it has been found that for two qubits compiled randomized benchmarking clearly performs best, while $5$ primitives method performs worst. The performance is directly related to the average number of gates per Clifford set. Figure~\ref{fig:gate per Clifford versus qubits comparison} shows how the average number of gates per Clifford scale a function of the number of qubits for all three randomized benchmarking methods. At two qubits the $5$ primitives method performs worst of all three methods. However, at three qubits the $5$ primitives method already outperforms alternating randomized benchmarking. This is because the $5$ primitives method has $5$ gates per Clifford, irrespective of the number of qubits, whereas alternating randomized benchmarking scales linearly with the number of qubits.
 
@@ -1101,6 +1187,12 @@
 
           In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see Appendix~\ref{ssec:Clifford gate decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$, and so unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best and by far easiest of the three randomized benchmarking methods.
 
+          \begin{figure}[h]
+            \centering
+            \includegraphics[width=.8\textwidth]{../Figures/Randomized benchmarking/Clifford_comparison.png}
+            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi qubit randomized benchmarking methods. The oval indicates the gates per Clifford at two qubits}
+            \label{fig:gate per Clifford versus qubits comparison}
+          \end{figure}
 
   \chapter{Conclusions and outlook}
 
@@ -1116,6 +1208,6 @@
 
     Even though the Duplexer already proves to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of instruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
 
-    There is one additional advantage of the $5$ primitives method, which is that the $5$ primitive gate sequence remains fixed. Therefore it is not needed to generate qubit pulses on demand, but only to control the qubit switch. This could potentially have an application in a quantum processor, where a central pulse generator continuously repeats the same $5$ pulses. By selectively directing the pulses to each of the qubits using a switch matrix, each qubit could have access to any given Clifford at any time. The consequence is that for single-qubit Clifford gates the pulses do not need to be generated on demand, but can simply be continuously looped. The timing of the switches is the only thing that needs to be directed, which is a far easier challenge. If the $5$ primitive gates are combined with a sixth gate, such as the T-gate, this would even result in any universal single-qubit gates being accessible to any qubit, simply through control of its corresponding switch.  This technique could even possibly be extended to two-qubit gates, where the flux pulses could be similarly controlled. This remains to be seen, as flux-pulse shaping is a considerably more complicated procedure. However, if this would be possible, it would mean that a universal set of quantum gates could be generated for qubits by only controlling the corresponding switches. It might even be extended to qubit readout, as the readout tones could be directed via switching as well.
+    There is one additional advantage of the $5$ primitives method, which is that the $5$ primitive gate sequence remains fixed. Therefore it is not needed to generate qubit pulses on demand, but only to control the qubit switch. This method is not limited to randomized benchmarking, and could potentially have an application in a quantum processor, where a central pulse generator continuously repeats the same $5$ pulses. By selectively directing the pulses to each of the qubits using a switch matrix, each qubit could have access to any given Clifford at any time. The consequence is that for single-qubit Clifford gates the pulses do not need to be generated on demand, but can simply be continuously looped. The timing of the switches is the only thing that needs to be directed, which is a far easier challenge. If the $5$ primitive gates are combined with a sixth gate, such as the T-gate, this would even result in any universal single-qubit gates being accessible to any qubit, simply through control of its corresponding switch.  This technique could even possibly be extended to two-qubit gates, where the flux pulses could be similarly controlled. This remains to be seen, as flux-pulse shaping is a considerably more complicated procedure. However, if this would be possible, it would mean that a universal set of quantum gates could be generated for qubits by only controlling the corresponding switches.
 
-    Having continuously streaming pulses, which are directed to the qubits via selective broadcasting could have major implications, as this would shift the challenge from generating pulses when required to only controlling the switches. This would have important consequences. First of all the feedback response time could improve significantly. Furthermore the amount of data required to be sent into the fridge could be reduced significantly. However, the most important consequence is probably that the amount of instruments required would be reduced significantly, potentially even reaching a constant as the number of qubits grow. This might prove to be an important step in the pathway to building a quantum computer.
+    Having continuously streaming pulses, which are directed to the qubits via selective broadcasting could have major implications, as this would shift the challenge from generating pulses when required to only controlling the switches. This would have important consequences. First of all the feedback response time could improve significantly. Furthermore the amount of data required to be sent into the fridge could be reduced significantly. However, the most important consequence is probably that the amount of instruments required would be reduced significantly, as qubits sharing the same frequency could be controlled by a single pulse generating source. This might prove to be an important step in the pathway to building a quantum computer.

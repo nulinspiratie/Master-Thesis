@@ -2,17 +2,12 @@
 \label{part:DRIE}
 
 
-% \newpage
 
 
 
 
 
-
-
-
-
-
+% \part{asdf}{dfgs}
 \part{Deep-reactive ion etched resonators\protect\blfootnote{This experiment has been published in Applied Physics Letters \textbf{106} 18 (2015).}}
 \label{chapter:Resonators}
 
@@ -185,7 +180,7 @@
 
   Previous research has determined that the TLS that are the main source of loss in resonators are mostly present at the surfaces \cite{gao2008experimental}. These defects may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the substrate dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
 
-  Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this thesis and published in APL~\cite{bruno2015reducing}, before depositing the metal on the substrate an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS can possibly mediate this lattice mismatch. See \cite{bruno2015reducing} for more information.
+  Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this thesis and published in APL~\cite{bruno2015reducing}, before depositing the metal on the substrate an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS, shown in Figure~\ref{fig:DRIE schematic}b, can possibly mediate this lattice mismatch (see \cite{bruno2015reducing} for more information).
 
 
   \subsubsection{Infrared shielding}
@@ -196,13 +191,6 @@
 
   \subsubsection{Deep-reactive ion etching}
 
-  \begin{figure}[[h]]
-    \centering
-    \includegraphics[width=.8\textwidth]{Figures/DRIE/DRIE figure.jpg}
-    \caption{\textbf{(a)} false colored SEM image of a RIE feedline capacitively ocupled to a DRIE resonator. \textbf{(b)} Corresponding schematic cross-section. The metal substrate interface treated with HMDS is shown in red. \textbf{(c)} SEM cross section of a DRIE resonator near the surface, showing the metallization (\SI{\sim300}{\nano \meter}), Si underetch (\SI{\sim1}{\micro \meter}) and sidewall roughness (\SI{\sim100}{\micro \meter}). \textbf{(d)} SEM cross section of a DRIE resonator showing that a high etch anisotropy can be obtained, with a depth of \SI{80}{\micro \meter}}
-    \label{fig:DRIE schematic}
-  \end{figure}
-
   Another technique applied to the resonators studied in this report is deep-reactive ion etching (DRIE), which is a type of Bosch process \cite{bruno2015reducing}. In this technique two alternating steps are performed:
 
   \begin{enumerate}
@@ -212,12 +200,34 @@
 
   Using DRIE, nearly vertical sidewalls can be created for the substrate. The result is that the substrate-air interface is removed from the regions in the CPW gaps, which are the regions where the electric field strength is higher, as is shown in Figure~\ref{fig:DRIE schematic}b. As the dissipation due to TLS depends on the electric field strength, we have shown that DRIE results in a much lower TLS dissipation rate at this interface. In Figure~\ref{fig:DRIE schematic} SEM images of DRIE resonators are shown, along with a schematic cross-section. As can be seen, using DRIE the gap substrate can be etched away with high anisotropy, resulting in nearly vertical sidewalls.
 
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=.92\textwidth]{Figures/DRIE/DRIE figure.jpg}
+    \caption{\textbf{(a)} false colored SEM image of a RIE feedline capacitively ocupled to a DRIE resonator. \textbf{(b)} Corresponding schematic cross-section. The metal substrate interface treated with HMDS is shown in red. \textbf{(c)} SEM cross section of a DRIE resonator near the surface, showing the metallization (\SI{\sim300}{\nano \meter}), Si underetch (\SI{\sim1}{\micro \meter}) and sidewall roughness (\SI{\sim100}{\micro \meter}). \textbf{(d)} SEM cross section of a DRIE resonator showing that a high etch anisotropy can be obtained, with a depth of \SI{80}{\micro \meter}}
+    \label{fig:DRIE schematic}
+  \end{figure}
+
   \subsubsection{Magnetic shielding and vortex trapping}
 
+  % \begin{wrapfigure}[20]{r}{0.4\textwidth}
+  %   \begin{center}
+  %   \vspace{-30pt}
+  %     \includegraphics[width=\textwidth]{Figures/DRIE/Shielding.jpg}
+  %   \end{center}
+  %   \vspace{-20 pt}
+  %   \caption{Different stages of shielding used. Inside the inner copper shielding is a black coating, used for IR absorption.}
+  %   \label{fig:shielding}
+  % \end{wrapfigure}
   Vortices are created in a superconducting thin film when a magnetic field greater than the sample-dependent threshold magnetic field is present. One method to lower the amount of vortices is to realize CPW with $w < \SIm{15}{\micro \meter}$, while using proper magnetic shielding around the sample. Furthermore, using nonmagnetic materials within the shield also result in less stray magnetic fields bring present.
 
   Even when using these methods to counter the presence of magnetic fields, there may still be a small amount of vortices present in the sample, which may lead to dissipation. To counter their movement a grid-like structure can be added in the superconducting material, effectively pinning the vortices.
 
+  \begin{figure}[h]
+    \centering
+      \includegraphics[width=.4\textwidth]{Figures/DRIE/Shielding.jpg}
+    \caption{Different stages of shielding used. Inside the inner copper shielding is a black coating, used for IR absorption.}
+    \label{fig:shielding}
+  \end{figure}
 
 \chapter{Results and discussion}
 \label{ch:Results and discussion}
@@ -237,17 +247,17 @@
 
     Using this set-up, quarter wave resonators, fabricated by Alessandro Bruno, were measured in a frequency range between \SIrange{1}{9}{\giga \hertz}. The sample is shown in Figure~\ref{fig:set4}. The resonators were made using NbTiN on a silicon substrate. The advantage of NbTiN is that the metal atoms are bound to nitrogen, thereby inhibiting bond formation with oxides. In a way to minimize losses, all resonators were treated with HMDS and deep-reactive ion etching.
 
+
+    Unless stated otherwise, all measurements were performed with the fridge at base temperature (\SI{\sim15}{\milli \kelvin}).
+
+    Because the relevant regime where resonators interact with qubits is the single-photon regime, a very weak signal must must be applied to determine its properties in that regime. At these low powers noise becomes a relevant issue. In Appendix~\ref{ch:noise} the noise of the system is characterized.
+
     \begin{figure}[h]
       \centering
       \includegraphics[width=.7\textwidth]{Figures/DRIE/All_set4.png}
       \caption{Optical microscopy image of the sample measured for the APL paper. The sample consists of ten quarter wave resonators, with frequencies ranging between \SIrange{1}{11}{\giga \hertz}, connected to a central feedline. The resonators are made using NbTiN on a Si substrate. The sample is treated with HMDS and DRIE.}
         \label{fig:set4}
     \end{figure}
-
-
-    Unless stated otherwise, all measurements were performed with the fridge at base temperature (\SI{\sim15}{\milli \kelvin}).
-
-    Because the relevant regime where resonators interact with qubits is the single-photon regime, a very weak signal must must be applied to determine its properties in that regime. At these low powers noise becomes a relevant issue. In Appendix~\ref{ch:noise} the noise of the system is characterized.
 
 
 

@@ -55,16 +55,10 @@
   The results of the isolation measurements are shown in Figure~\ref{fig:Duplexer isolation}. As can be seen in all four input-output combinations the isolation is around \SI{50}{\dBm} at the frequency of top and bottom qubit. Furthermore, the isolation does not seem to depend strongly on whether the switch to the other output port is open or closed.
 
 \chapter{Chip characterization}
-  \section{qubit coherence times versus frequency}
-
-  \section{Muxmon1 decoherence times}
-    \label{sec:Muxmon1 decoherence times}
-
-
 
   \section{Muxmon1 cross-driving}
     \label{sec:Muxmon1 cross-driving}
-      \begin{table}
+      \begin{table}[h]
         \begin{tabular}{l c c}
           \toprule
           qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
@@ -197,8 +191,6 @@
       % \end{figure}
       % \textbf{TODO:} Cite
 
-    \section{Individual randomized benchmarking measurements}
-      \label{ssec:Individual randomized benchmarking measurements}
 
     \section{Determining population in three states}
       \label{ssec:Determining population in three states}
@@ -252,10 +244,10 @@
         \label{eq:RB populations using final pi}
       \end{align}
       If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
+      \newpage
   \section{Two qubit randomized benchmarking leakage}
     \label{sec:Two qubit randomized benchmarking leakage}
-
-        \begin{table}
+        \begin{table}[h]
           \begin{tabular}{c c c c c}
             \toprule
             RB mode & \multicolumn{2}{c}{Top qubit} & \multicolumn{2}{c}{Bottom qubit} \\
@@ -271,7 +263,7 @@
         \end{table}
 
 
-        \begin{figure}[tb]
+        \begin{figure}[h]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/2nd-state leakage 2Q.png}
           \caption{Second state leakage along with fit using Formula~\ref{eq:2nd state formula}}
