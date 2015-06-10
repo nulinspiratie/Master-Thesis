@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433952638 "thesis.aux" "thesis.bbl" "thesis" 1433952653
-  "bibliography.bib" 1433948216 17171 2ab9f3bdbade75bd03fc9d14069b22d1 ""
+["bibtex thesis"] 1433957843 "thesis.aux" "thesis.bbl" "thesis" 1433958799
+  "bibliography.bib" 1433954846 17592 3f381aa71d793e63a7914f442bc85790 ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433952652 45180 0b585ba258cdcc6697abe24ca32539ff ""
+  "thesis.aux" 1433958798 45274 ff04db963ca0091d0bcb7823fc5399b4 ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1433952638 "thesis.tex" "thesis.pdf" "thesis" 1433952653
+["pdflatex"] 1433958785 "thesis.tex" "thesis.pdf" "thesis" 1433958799
   "../Figures/20150512_Muxmon_Setup.jpg" 1433765716 5637603 078509a03629a46a2b04ef42f65fbd41 ""
   "../Figures/Appendix/Duplexer isolation.png" 1433851131 103609 ac53420916a4cd0740a0c652c561bf09 ""
   "../Figures/Appendix/resonator buses.png" 1433854174 66563 68b196c86710dd2944dfc0af3ec93191 ""
@@ -61,9 +61,9 @@
   "../Figures/Randomized benchmarking/RB_single_seed.png" 1433766349 33557 13922e921f7d38b200695d3eb9e4a3d3 ""
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
-  "Chapters/DRIE.tex" 1433948954 38931 4592f37484d0e4d9602794846b97da60 ""
-  "Chapters/Muxmon.tex" 1433950704 143521 b45701629b45b2f28d25ff00881acc20 ""
-  "Chapters/appendix.tex" 1433949711 29033 66a97ef51c385c0cc907ee8c892e01f6 ""
+  "Chapters/DRIE.tex" 1433953363 38937 a5926737a0a221e3dd94c60d8e97090b ""
+  "Chapters/Muxmon.tex" 1433953713 143535 69dfe2a9ce9fbeb86b5504e91135d610 ""
+  "Chapters/appendix.tex" 1433953761 29033 5a267792d03fffe9bcdf2d6e0d242c05 ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
   "Figures/DRIE/DRIE figure.jpg" 1433926846 913384 a5a8a5af95c0ddc366fad1939c263ecd ""
@@ -167,13 +167,13 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1433852723 19844 a3b14c019aa51472e1ec740ac25946c3 ""
-  "thesis.aux" 1433952652 45180 0b585ba258cdcc6697abe24ca32539ff ""
-  "thesis.bbl" 1433952638 10076 f93ebd9f6ae57dbc0e708743ceafe92b "bibtex thesis"
-  "thesis.tex" 1433952622 11065 705794bd35b5c749e039bf2149e0f815 ""
-  "thesis.toc" 1433952652 7852 2e6170c59b6a14eed98b06d31c642725 ""
+  "thesis.aux" 1433958798 45274 ff04db963ca0091d0bcb7823fc5399b4 ""
+  "thesis.bbl" 1433957843 10360 55c026bf5e9d789cce00d84181162f56 "bibtex thesis"
+  "thesis.tex" 1433958784 14792 895cf4ccda39a824906c84d1413e4614 ""
+  "thesis.toc" 1433958798 7868 917f7a42b50e0463339d6afeaaad6201 ""
   (generated)
-  "thesis.pdf"
-  "thesis.aux"
-  "thesis.log"
   "Figures/DRIE/FigS2_MW_setup-eps-converted-to.pdf"
+  "thesis.log"
+  "thesis.aux"
+  "thesis.pdf"
   "thesis.toc"
