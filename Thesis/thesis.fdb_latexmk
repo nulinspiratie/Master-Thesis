@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433877298 "thesis.aux" "thesis.bbl" "thesis" 1433877345
+["bibtex thesis"] 1433915848 "thesis.aux" "thesis.bbl" "thesis" 1433915865
   "bibliography.bib" 1433876469 14889 96bc7ecfff1096c893516b68a677d699 ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433877323 42600 0f83c68b2164a4e72e1ad87bf7124cad ""
+  "thesis.aux" 1433915864 43052 bd97147c4ac5af011a9e8b383317769f ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
-  "thesis.blg"
   "thesis.bbl"
-["pdflatex"] 1433877312 "thesis.tex" "thesis.pdf" "thesis" 1433877345
+  "thesis.blg"
+["pdflatex"] 1433915849 "thesis.tex" "thesis.pdf" "thesis" 1433915865
   "../Figures/20150512_Muxmon_Setup.jpg" 1433765716 5637603 078509a03629a46a2b04ef42f65fbd41 ""
   "../Figures/Appendix/Duplexer isolation.png" 1433851131 103609 ac53420916a4cd0740a0c652c561bf09 ""
   "../Figures/Appendix/resonator buses.png" 1433854174 66563 68b196c86710dd2944dfc0af3ec93191 ""
@@ -59,11 +59,12 @@
   "../Figures/Randomized benchmarking/RB_single_seed.png" 1433766349 33557 13922e921f7d38b200695d3eb9e4a3d3 ""
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
-  "Chapters/DRIE.tex" 1433877342 34887 57358641abd322cd30faf01cc4dede26 ""
+  "Chapters/DRIE.tex" 1433885730 35790 5d601adba8047fd4426bb0f6a2488215 ""
   "Chapters/Muxmon.tex" 1433866963 140505 ab8fff219989cbb9c6a84429a87a6834 ""
-  "Chapters/appendix.tex" 1433855177 26517 636de0293f3baaa516c79ccc7abc82f6 ""
+  "Chapters/appendix.tex" 1433886799 28256 fbec928eb97f101e834d2eb22153149f ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
+  "Figures/DRIE/FigS2_MW_setup.pdf" 1433885411 217677 c21fd475cd5ea86b6945a6d3ace4a10a ""
   "Figures/DRIE/Qi_vs_n_photon.png" 1420647387 47310 0b125d1859ff55801a48bceab7a0581f ""
   "Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png" 1420735720 51444 7a4f3cb41eea77625112c2c571a6003f ""
   "Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png" 1420735720 36992 949847147cec0805545138aa6976f0e8 ""
@@ -161,12 +162,13 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1433852723 19844 a3b14c019aa51472e1ec740ac25946c3 ""
-  "thesis.aux" 1433877323 42600 0f83c68b2164a4e72e1ad87bf7124cad ""
-  "thesis.bbl" 1433877299 8393 f77cd6312402d7944899d44ebd744c3c "bibtex thesis"
+  "thesis.aux" 1433915864 43052 bd97147c4ac5af011a9e8b383317769f ""
+  "thesis.bbl" 1433915849 8393 f77cd6312402d7944899d44ebd744c3c "bibtex thesis"
   "thesis.tex" 1433780737 8814 8f65089ac2e54cdb30b456513cfef9cb ""
-  "thesis.toc" 1433877323 7752 fdb79210a3c214a759942270fa21fae1 ""
+  "thesis.toc" 1433915864 7883 ca6c65f78e161ad0710a0883897e79fe ""
   (generated)
-  "thesis.toc"
   "thesis.aux"
   "thesis.pdf"
+  "Figures/DRIE/FigS2_MW_setup-eps-converted-to.pdf"
+  "thesis.toc"
   "thesis.log"

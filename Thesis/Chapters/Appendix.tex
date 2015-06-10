@@ -1,6 +1,42 @@
 %!TEX root = ../thesis.tex
 \input{noise.tex}
 
+\chapter{Photon number calculation}
+  \label{ch:photon number calculation}
+
+  The average photon number population in the resonator is related
+
+  In the equilibrium state of the resonator the power absorbed $P_\text{abs}$ by the resonator is equal to the power leaking out of the resonator, and so the absorbed power $P_\text{abs}$ can be expressed as:
+
+  \begin{equation}
+    P_\text{abs} = \left<n_\text{ph}\right>\hbar\omega_r \kappa
+    \label{eq:Pabs-nph}
+  \end{equation}
+
+  where $\kappa=\omega_r/Q_i$ is the cavity decay rate.
+
+  The absorbed power $P_\text{abs}$ can also be expressed in terms of the input power $P_\text{in}$ entering the feedline. We note that the absorbed power $P_\text{abs}$ is equal to the input power $\P_\text{in}$ entering the feedline minus the reflected power $P_\text{refl}$ and the transmitted power $P_\text{trans}$. These are given by:
+
+  \begin{align}
+    P_\text{refl} = P_\text{in}\left|S_{11}\right|^2\\
+    P_\text{trans} = P_\text{in}\left|S_{21}\right|^2\\
+  \end{align}
+
+  where $S_{11}$ and $S_{21}$ are the scattering parameters. At the resonance frequency $S_{21}=\frac{Q_c}{Q_i+Q_c}$ (see Equation~\ref{eq:S21min}), and $S_{11}=S_{21}-1$. Therefore the absorbed power is equal to:
+
+  \begin{equation}
+    P_\text{abs}=1-P_\text{refl}-P_\text{trans}=\frac{2Q_l^2}{Q_c Q_i}P_\text{in}
+    \label{Pabs-Pin}
+  \end{equation}
+
+  Combining equations \ref{eq:Pabs-nph} and \ref{Pabs-Pin}, we arrive at a formula for the mean photon number $\left<n_\text{ph}\right>$:
+
+  \begin{equation}
+    \left<n_\text{ph}\right> = \frac{2}{\hbar \omega_r}\frac{Q_l^2}{Q_c}P_\text{in}
+  \end{equation}
+
+  The input power $P_\text{in}$ at the feedline has been converted
+
 \chapter{Duplexer isolation}
   \label{ch:Duplexer isolation}
 
