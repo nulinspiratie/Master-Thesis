@@ -29,11 +29,22 @@ V~Bouchiat, D~Vion, P~Joyez, D~Esteve, and M~H Devoret.
 \newblock Quantum coherence with a single cooper pair.
 \newblock {\em Physica Scripta}, 1998(T76):165, 1998.
 
+\bibitem{bravyi1998quantum}
+Sergey~B Bravyi and A~Yu Kitaev.
+\newblock Quantum codes on a lattice with boundary.
+\newblock {\em arXiv preprint quant-ph/9811052}, 1998.
+
 \bibitem{bruno2015reducing}
 A~Bruno, G~de~Lange, S~Asaad, KL~van~der Enden, NK~Langford, and L~DiCarlo.
 \newblock Reducing intrinsic loss in superconducting resonators by surface
   treatment and deep etching of silicon substrates.
 \newblock {\em Applied Physics Letters}, 106(18):182601, 2015.
+
+\bibitem{castellanos2008amplification}
+MA~Castellanos-Beltran, KD~Irwin, GC~Hilton, LR~Vale, and KW~Lehnert.
+\newblock Amplification and squeezing of quantum noise with a tunable josephson
+  metamaterial.
+\newblock {\em Nature Physics}, 4(12):929--931, 2008.
 
 \bibitem{Chow}
 Jerry~M. Chow.
@@ -63,6 +74,11 @@ L~DiCarlo, JM~Chow, JM~Gambetta, Lev~S Bishop, BR~Johnson, DI~Schuster,
 Arkady Fedorov, Lars Steffen, Matthias Baur, MP~Da~Silva, and Andreas Wallraff.
 \newblock Implementation of a toffoli gate with superconducting circuits.
 \newblock {\em Nature}, 481(7380):170--172, 2011.
+
+\bibitem{fowler2009high}
+Austin~G Fowler, Ashley~M Stephens, and Peter Groszkowski.
+\newblock High-threshold universal quantum computation on the surface code.
+\newblock {\em Physical Review A}, 80(5):052312, 2009.
 
 \bibitem{gao2008experimental}
 Jiansong Gao, Miguel Daal, Anastasios Vayonakis, Shwetank Kumar, Jonas
@@ -161,6 +177,14 @@ PJJ O’Malley, J~Kelly, R~Barends, B~Campbell, Y~Chen, Z~Chen, B~Chiaro,
   benchmarking.
 \newblock {\em Physical Review Applied}, 3(4):044009, 2015.
 
+\bibitem{peterer2015coherence}
+Michael~J Peterer, Samuel~J Bader, Xiaoyue Jin, Fei Yan, Archana Kamal,
+  Theodore~J Gudmundsen, Peter~J Leek, Terry~P Orlando, William~D Oliver, and
+  Simon Gustavsson.
+\newblock Coherence and decay of higher energy levels of a superconducting
+  transmon qubit.
+\newblock {\em Physical review letters}, 114(1):010501, 2015.
+
 \bibitem{plourde2009microwave}
 Britton Plourde, C~Song, TW~Heitmann, MP~DeFeo, and Kang Yu.
 \newblock Microwave response of vortices in superconducting thin films of re
@@ -205,6 +229,13 @@ Sarah Sheldon, Lev~S Bishop, Easwar Magesan, Stefan Filipp, Jerry~M Chow, and
 \newblock Characterizing errors on qubit operations via iterative randomized
   benchmarking.
 \newblock {\em arXiv preprint arXiv:1504.06597}, 2015.
+
+\bibitem{tanner2010enhanced}
+Michael~G Tanner, CM~Natarajan, VK~Pottapenjara, JA~O’Connor, RJ~Warburton,
+  RH~Hadfield, B~Baek, S~Nam, SN~Dorenbos, E~Berm{\'u}dez Ure{\~n}a, et~al.
+\newblock Enhanced telecom wavelength single-photon detection with nbtin
+  superconducting nanowires on oxidized silicon.
+\newblock {\em Applied physics letters}, 96(22):221109, 2010.
 
 \bibitem{vasilescu2006electronic}
 Gabriel Vasilescu.

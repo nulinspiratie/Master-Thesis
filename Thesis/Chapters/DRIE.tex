@@ -20,12 +20,13 @@
   \label{ch:theory}
 
   \section{Coplanar waveguide}
-
+    \captionsetup[subfigure]{position=top}
     \begin{figure}[h]
       \begin{subfigure}{.49\textwidth}
         \begin{center}
             \includegraphics[width=.8\textwidth]{Figures/DRIE/resonator schematic joined.jpg}
         \end{center}
+        \caption{ }
         \label{fig:CPW schematic}
       \end{subfigure}
       ~
@@ -33,11 +34,13 @@
         \begin{center}
             \includegraphics[width=.8\textwidth]{Figures/DRIE/CPW.png}
         \end{center}
+        \caption{ }
         \label{fig:CPW intersection}
       \end{subfigure}
       \caption{\textbf{(a)} A resonator circuit diagram, including capacitive coupling to a feedline. \textbf{(b)} Cross-section on a CPW resonator. For a typical resonator $w=\SIm{12}{\micro \meter}$, $s=\SIm{5}{\micro \meter}$, $t=\SIm{200}{\nano \meter}$, and $h=\SIm{525}{\micro \meter}$.}
       \label{fig:CPW}
     \end{figure}
+    \captionsetup[subfigure]{position=top}
 
     % \begin{wrapfigure}{r}{0.4\textwidth}
     %     \begin{center}
@@ -47,7 +50,7 @@
     %     \label{fig:CPW}
     % \end{wrapfigure}
 
-    Superconducting coplanar waveguides (CPW) microwave resonators have versatile applications. They are used in single-photon detectors \textbf{TODO:} cite, quantum-limited Josephson parametric amplifiers \textbf{TODO:} cite, and in the context of circuit QED are used for memory storage, readout, and as interconnects. Coplanar waveguides consist of a long central conducting strip, with on both sides a neighbouring ground. The center conductor of width $w$ is seperated from the neighbouring grounds by a fixed gap $s$.
+    Superconducting coplanar waveguides (CPW) microwave resonators have versatile applications. They are used in single-photon detectors~\cite{tanner2010enhanced}, quantum-limited Josephson parametric amplifiers~\cite{castellanos2008amplification}, and in the context of circuit QED are used for memory storage, readout, and as interconnects. Coplanar waveguides consist of a long central conducting strip, with on both sides a neighbouring ground. The center conductor of width $w$ is seperated from the neighbouring grounds by a fixed gap $s$.
 
     For qubit readout one end is usually capacitively coupled to a feedline and has an open end, while the other end can either be open or shorted. This determines whether the current has a node or an antinode at that end. In the case of a shorted end, current has an antinode at that end, resulting in a quarter wave resonator. This means that the wavelength of the fundamental mode fits a quarter times into the resonator. In the case of an open end, the current has a node at that end, resulting in a half wave resonator.
 
@@ -63,10 +66,10 @@
     The quality factor can also be defined in two different ways \cite[pp.23-24]{Mazin}:
 
     \begin{equation}
-        Q = \omega_0 \tau_1 = \omega_0 / \Delta \omega
+        Q = \omega_r \tau_1 = \omega_r / \Delta \omega
         \label{eqn:quality factor definition}
     \end{equation}
-    Here $\omega_0$ is the resonance frequency of the resonator, $\Delta \omega$ is the full width at half maximum, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
+    Here $\omega_r$ is the resonance frequency of the resonator, $\Delta \omega$ is the full width at half maximum, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
 
     Photons can be lost through different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$. This coupling quality factor depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the desired interaction between resonator and feedline.
 
@@ -88,7 +91,7 @@
         \label{eq:S21min}
     \end{equation}
 
-    With knowledge of the resonant frequency $\omega_0$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the internal quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors, to get an accurate estimate of both quality factors, they should have a comparable value.
+    With knowledge of the resonant frequency $\omega_r$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through equations \ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the internal quality factor $Q_i$. Note that as equation~\ref{eq:S21min} depends on the ratio of the two quality factors, to get an accurate estimate of both quality factors, they should have a comparable value.
 
     One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. The resonator shapes the electromagnetic field seen by the qubit. This can either cause enhanced or diminshed emission, and is known as the Purcell effect. If a qubit is in the excited-state, its coupling to the resonator will result in relaxation of its state to the ground-state. This can be quantified through its relaxation time $T_1^\text{Purcell}$, given by~\cite{Reed}:
 
@@ -97,7 +100,7 @@
       \label{eq:purcell T1}
     \end{equation}
 
-    where $\kappa=\omega_0/Q_i$ is the cavity decay rate.
+    where $\kappa=\omega_r/Q_i$ is the cavity decay rate.
 
      The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
 
@@ -157,7 +160,7 @@
           \label{Qrad}
       \end{equation}
 
-      As shown in Figure~\ref{fig:CPW}, $s$ is the distance between the center conductor and ground, $w$ is the width of the conductr, and $L$ is the length of the resonator. The parameter $\alpha$ depends on properties such as impedance and the dielectric constant of the substrate, and $n_r$ depends on the shape of the resonator, and is equal to 2 in the case of a straight resonator. From Formula \ref{Qrad} it is clear that a decrease of the conducting track width or the distance between tracks leads to an increase in $Q_\text{rad}$. However, with a decrease of either of the two parameters, the field strength close to the resonator becomes higher. If the TLS are not saturated (i.e. low power and temperature), this will increase the amount of energy loss through TLS. Therefore it is not necessarily advantageous to minimize $s$ and $w$.
+      As shown in Figure~\ref{fig:CPW}, $s$ is the distance between the center conductor and ground, $w$ is the width of the conductr, and $L$ is the length of the resonator. The parameter $\alpha$ depends on properties such as impedance and the dielectric constant of the substrate, and $n_r$ depends on the shape of the resonator, and is equal to 2 in the case of a straight resonator. From Formula \ref{Qrad} it is clear that a decrease of the center conductor width or the distance between strips leads to an increase in $Q_\text{rad}$. However, with a decrease of either of the two parameters, the field strength close to the resonator becomes higher. If the TLS are not saturated (i.e. low power and temperature), this will increase the amount of energy loss through TLS. Therefore it is not necessarily advantageous to minimize $s$ and $w$.
 
       Radiation loss becomes the dominant source of dissipation at high powers and/or temperatures, but otherwise usually is not the limiting factor. Since measurements relevant for quantum computing are usually operated at low power and temperature, this source of energy loss is usually less important than other sources, such as TLS dissipation.
 

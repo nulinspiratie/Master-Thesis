@@ -25,6 +25,13 @@
 \usepackage{floatrow}
 \usepackage{bm}
 \usepackage[section]{placeins}
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
 
 \externaldocument[RES-]{Chapters/DRIE.tex}
@@ -89,7 +96,7 @@
 \\ [3.0 cm]
 \textsc{\Large Master Thesis}
 \HRule{0.5 pt} \\
-\LARGE \textbf{\uppercase{Exploring frequency re-use with transmon qubits in a cQED architecture}}
+\LARGE \textbf{Exploring frequency re-use with transmon qubits in a cQED architecture}
 \HRule{2 pt} \\ [0.5 cm]
 
 % Author and supervisor
@@ -123,6 +130,24 @@ Christian Dickel
     Quantum Transport Group\\
     DiCarlo Lab}
 
+\blankpage
+\thispagestyle{plain}
+\begin{center}
+    \Large
+    \textbf{Exploring frequency re-use with transmon qubits in a cQED architecture}
+
+
+    \vspace{0.4cm}
+    \textbf{Serwan Asaad}
+
+    \vspace{0.9cm}
+    \textbf{Abstract}
+\end{center}
+As part of this thesis, superconducting coplanar waveguide (CPW) resonators treated with a combination of deep-reactive ion etching and HMDS surface treatment have been studied. These treatments are aimed at reducing the loss due to two-level systems (TLS), which are suspected to dominate loss at the low-power, low-temperature regime. The result of the combination of DRIE and HMDS result an increase of quality factor an order of magnitude. The quality factors were consistently measured in excess of 1M at single-photon levels, showing that these are state of the art resonators. Power-dependent and temperature-dependent measurements however suggest that even after application of DRIE and HMDS, in the low-power, low-temperature regime the resonators are still limited by TLS.
+
+In a separate experiment, frequency re-use in combination with a vector-switch matrix has been studied using transmon qubits in circuit QED. Using randomized benchmarking, gate fidelities of qubits sharing the same frequency were found reaching $99.9\%$, being limited by decoherence. Furthermore, the nanosecond-scale switches of the Duplexer allow individual control of both qubits simultaneously by directing pulses to either or both qubits. Three different realizations of two-qubit randomized benchmarking using selective broadcasting have been studied. All three methods achieve gate fidelities well in excess of $99\%$, thereby meeting the surface code threshold. Most notable is the $5$ primitives RB method, in which $5$ primitive gates are used to decompose any Clifford by selective directing of pulses. The $5$ primitives method can be applied to an arbitrary number of same-frequency qubits, while having a fixed overhead of $5$ gates per Clifford. This allows for efficient characterization of multiple qubits simultaneously, and could potentially have applications in large-scale quantum computers.
+\blankpage
+\blankpage
 \tableofcontents
 \newpage
 
@@ -130,6 +155,7 @@ Christian Dickel
 % Section title formatting
 \sectionfont{\scshape}
 %-------------------------------------------------------------------------------
+
 
 %-------------------------------------------------------------------------------
 % BODY
@@ -139,7 +165,7 @@ Christian Dickel
 
   Quantum circuits based on circuit quantum electrodynamics (cQED) have experience rapid development of the past few years. Especially transmon qubits, and variations thereof, have flourished up to the point where they are used to perform multi-qubit algorithms. Fedorov et al.~\cite{fedorov2011implementation} first demonstrated implementation of the Toffoli gate, a key ingredient for error detection schemes. The Grover's search algorithm, and the Deutsch-Josza algorithm have been demonstrated for two qubits by DiCarlo et al.~\cite{dicarlo2009demonstration}. Furthermore, the first quantum error detection algorithms have been implemented by C\'orcoles et al.~\cite{corcoles2015demonstration}, and by Rist\`e et al.~\cite{riste2014detecting}.
 
-  There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to hundreds, possibly even thousands of qubits. One of the most promising quantum computing architecture is the surface code \textbf{TODO:} cite. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
+  There seems to be no inherent limit preventing a cQED-based quantum computing framework from scaling up to thousands, possibly even a million, qubits. One of the most promising quantum computing architecture is the surface code~\cite{bravyi1998quantum}. It has the advantage of having a relatively high fault-tolerance threshold, and only requires nearest-neighbour qubit couplings.
 
   That being said, even in an architecture such as the surface code, the challenges in scaling up are tremendous. Qubits are required to have long coherence times, high fidelity gates with a short duration, and must be arranged such that it is compatible with the architecture. Aside from on-chip challenges stringent requirements are placed on supporting equipment. The chip must be cooled down to the milikelvin temperature range, and each of the qubits must be individually controlled.
 
@@ -155,7 +181,7 @@ Christian Dickel
 
   Since we want to know the best attainable qubit performance under these conditions the qubits must be accurately tuned. In Chapter~\ref{ch:Calibration routines} the calibrations used to tune the qubits are explained.
 
-  Measuring the performance of the qubits is done through randomized benchmarking. This is a method based on repeated application of unitary operations on the qubit, from which the gate performance can be extracted. Randomized benchmarking will be discussed in Chapter~\ref{ch:randomized benchmarking}.
+  Measuring the performance of the qubits is done through randomized benchmarking. This is a method based on repeated application of unitary operations on the qubit, from which the gate performance can be extracted. Using randomized benchmarking we show that we can control qubits simultaneously using selective broadcasting. Randomized benchmarking will be discussed in Chapter~\ref{ch:randomized benchmarking}.
 
 
 

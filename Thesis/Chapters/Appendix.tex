@@ -281,7 +281,7 @@
 \chapter{Compiled randomized benchmarking algorithm}
   \label{sec:compiled randomized benchmarking algorithm}
   \section{Finding the optimal gate sequence}
-    In compiled randomized benchmarking each set of Cliffords is compiled such that the total number of pulses sent is as small as possible. This is done by comparing all the possible decompositions for each Clifford in the set of Cliffords with each other, and determining the combination that results in the least amount of total pulses.
+    In compiled randomized benchmarking each set of Cliffords is compiled such that the total number of pulses sent is as small as possible. This is done by comparing all the possible decompositions for each Clifford in the set of Cliffords with each other, and determining the combination that results in the least amount of total pulses. The constraints are that pulses may not be applied simultaneously, but may be directed to either or both of the qubits.
 
     Given a tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$, where $n$ is the number of qubits and $\alpha_i$ is the Clifford number for qubit $i$, a particular decomposition of the Cliffords is given by $\left(\left( G_1^1, ..., G_{m_1}^1 \right) , ..., \left(G_1^n, ..., G_{m_n}^n\right)\right)$, where $m_i$ is the number of gates in the decomposition of Clifford $C_{\alpha_i}^i$, and $G_j^i$ is gate $j$ of the Clifford decomposition of $C_i$. The algorithm used for finding the minimum number of gates for a particular tuple of Clifford decompositions is a recursive algorithm. The algorithm determines all possible ways in which the gates can be ordered, and finally chooses the sequence having the smallest length.
 
@@ -335,8 +335,3 @@
     \end{table}
 
     Using these $5$ optimizations the average gates per Clifford tuple has been calculated exactly for $n=5$ qubits within two hours. Furthermore, the average gates per Clifford has been approximated for up to $n=10$ Cliffords using random sampling. The results are shown in Table~\ref{tab:gates per Clifford}.
-
-  \begin{itemize}
-    \item Change set to the correct term
-    \item Talk about constraints: Single pulse sequence, markers
-  \end{itemize}
