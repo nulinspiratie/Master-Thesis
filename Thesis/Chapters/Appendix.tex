@@ -1,6 +1,8 @@
 %!TEX root = ../thesis.tex
 \input{noise.tex}
 
+\externaldocument[A-]{Chapters/DRIE.tex}
+\externaldocument[A-]{Chapters/Muxmon.tex}
 
 \chapter{Photon number calculation}
   \label{ch:photon number calculation}
@@ -145,8 +147,8 @@
           21 & -1 & $Y_{\pi/2}$ & $Y_{\pi/2}$ \\
           \bottomrule
         \end{tabular}
-        \label{tab:AllXY sequence}
         \caption{The 21 pulses that comprises the AllXY pulse sequence.}
+        \label{tab:AllXY sequence}
       \end{table}
 
       In Table~\ref{tab:AllXY sequence} the 21 pulse combinations are shown that comprise the AllXY pulse sequence. The AllXY measurement is able to diagnose specific sources contributing to gate errors (see~\ref{ssec:AllXY}). For a more detailed analysis on the AllXY see Reed's thesis~\cite{Reed}.
@@ -250,7 +252,31 @@
         \label{eq:RB populations using final pi}
       \end{align}
       If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Section~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using \ref{eq:RB populations using final pi}.
+  \section{Two qubit randomized benchmarking leakage}
+    \label{sec:Two qubit randomized benchmarking leakage}
 
+        \begin{table}
+          \begin{tabular}{c c c c c}
+            \toprule
+            RB mode & \multicolumn{2}{c}{Top qubit} & \multicolumn{2}{c}{Bottom qubit} \\
+            \cmidrule(lr){2-3}
+            \cmidrule(lr){4-5}
+            & $T_1^2 (\mu s)$ & $\alpha$ (\%) & $T_1^2$ $(\mu s)$ & $\alpha$ (\%) \\
+            \midrule
+            Alternating  & $10.0(6)$    & $0.027(1)$ & $4.9(1.9)$  & $0.011(5)$\\
+            Compiled     & $8.8(6)$    & $0.024(1)$  & $4.5(9)$ & $0.011(2)$\\
+            5 primitives &$9.7(7)$    & $0.038(3)$  & $4.9(1)$  & $0.018(5)$\\
+            \bottomrule
+          \end{tabular}
+        \end{table}
+
+
+        \begin{figure}[tb]
+          \centering
+          \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/2nd-state leakage 2Q.png}
+          \caption{Second state leakage along with fit using Formula~\ref{eq:2nd state formula}}
+          \label{fig:second state leakage 2Q}
+        \end{figure}
 
 \chapter{Compiled randomized benchmarking algorithm}
   \label{sec:compiled randomized benchmarking algorithm}

@@ -65,43 +65,44 @@
 \contentsline {section}{\numberline {8.4}Single qubit randomized benchmarking}{64}
 \contentsline {subsection}{\numberline {8.4.1}Driving a single qubit versus driving both qubits}{64}
 \contentsline {subsection}{\numberline {8.4.2}Second-state leakage}{66}
-\contentsline {section}{\numberline {8.5}Two qubit randomized benchmarking}{67}
-\contentsline {subsection}{\numberline {8.5.1}Alternating randomized benchmarking}{68}
-\contentsline {subsection}{\numberline {8.5.2}Compiled randomized benchmarking}{68}
-\contentsline {subsection}{\numberline {8.5.3}5 primitives randomized benchmarking}{69}
-\contentsline {section}{\numberline {8.6}Two qubit randomized benchmarking results}{70}
-\contentsline {section}{\numberline {8.7}Scaling of multi qubit randomized benchmarking}{73}
-\contentsline {chapter}{\numberline {9}Conclusions and outlook}{75}
-\contentsline {chapter}{Appendices}{78}
-\contentsline {chapter}{\numberline {A}Noise characterization}{79}
-\contentsline {section}{\numberline {A.1}Characterizing noise}{79}
-\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{79}
-\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{80}
-\contentsline {section}{\numberline {A.2}The model}{81}
-\contentsline {subsection}{\numberline {A.2.1}Noise source}{81}
-\contentsline {subsection}{\numberline {A.2.2}Amplification}{82}
-\contentsline {subsection}{\numberline {A.2.3}Downconversion}{82}
-\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{83}
-\contentsline {section}{\numberline {A.3}Noise temperature}{83}
-\contentsline {section}{\numberline {A.4}Results}{84}
-\contentsline {section}{\numberline {A.5}Conclusion and future work}{85}
-\contentsline {chapter}{\numberline {B}Photon number calculation}{87}
-\contentsline {chapter}{\numberline {C}Duplexer isolation}{88}
-\contentsline {chapter}{\numberline {D}Chip characterization}{90}
-\contentsline {section}{\numberline {D.1}qubit coherence times versus frequency}{90}
-\contentsline {section}{\numberline {D.2}Muxmon1 decoherence times}{90}
-\contentsline {section}{\numberline {D.3}Muxmon1 cross-driving}{90}
-\contentsline {section}{\numberline {D.4}Muxmon0 resonator buses}{91}
-\contentsline {chapter}{\numberline {E}Additional notes}{92}
-\contentsline {section}{\numberline {E.1}Qubit characterization}{92}
-\contentsline {subsection}{\numberline {E.1.1}Finding the qubit sweet-spot using a one-dimensional scan}{92}
-\contentsline {subsubsection}{\numberline {E.1.1.1}Spectroscopy}{92}
-\contentsline {subsubsection}{\numberline {E.1.1.2}Flux matrix}{93}
-\contentsline {chapter}{\numberline {F}AllXY pulse sequence}{94}
-\contentsline {chapter}{\numberline {G}Randomized benchmarking}{95}
-\contentsline {section}{\numberline {G.1}Clifford gate decomposition}{95}
-\contentsline {section}{\numberline {G.2}Individual randomized benchmarking measurements}{96}
-\contentsline {section}{\numberline {G.3}Determining population in three states}{96}
-\contentsline {chapter}{\numberline {H}Compiled randomized benchmarking algorithm}{97}
-\contentsline {section}{\numberline {H.1}Finding the optimal gate sequence}{97}
-\contentsline {section}{\numberline {H.2}Optimizing the gate compilation algorithm}{98}
+\contentsline {section}{\numberline {8.5}Two qubit randomized benchmarking}{68}
+\contentsline {subsection}{\numberline {8.5.1}Alternating randomized benchmarking}{69}
+\contentsline {subsection}{\numberline {8.5.2}Compiled randomized benchmarking}{69}
+\contentsline {subsection}{\numberline {8.5.3}5 primitives randomized benchmarking}{70}
+\contentsline {section}{\numberline {8.6}Two qubit randomized benchmarking results}{71}
+\contentsline {section}{\numberline {8.7}Scaling of multi qubit randomized benchmarking}{74}
+\contentsline {chapter}{\numberline {9}Conclusions and outlook}{76}
+\contentsline {chapter}{Appendices}{79}
+\contentsline {chapter}{\numberline {A}Noise characterization}{80}
+\contentsline {section}{\numberline {A.1}Characterizing noise}{80}
+\contentsline {subsection}{\numberline {A.1.1}Circuit representations}{80}
+\contentsline {subsection}{\numberline {A.1.2}Noise power spectral density}{81}
+\contentsline {section}{\numberline {A.2}The model}{82}
+\contentsline {subsection}{\numberline {A.2.1}Noise source}{82}
+\contentsline {subsection}{\numberline {A.2.2}Amplification}{83}
+\contentsline {subsection}{\numberline {A.2.3}Downconversion}{83}
+\contentsline {subsection}{\numberline {A.2.4}Low-pass filtering}{84}
+\contentsline {section}{\numberline {A.3}Noise temperature}{84}
+\contentsline {section}{\numberline {A.4}Results}{85}
+\contentsline {section}{\numberline {A.5}Conclusion and future work}{86}
+\contentsline {chapter}{\numberline {B}Photon number calculation}{88}
+\contentsline {chapter}{\numberline {C}Duplexer isolation}{89}
+\contentsline {chapter}{\numberline {D}Chip characterization}{91}
+\contentsline {section}{\numberline {D.1}qubit coherence times versus frequency}{91}
+\contentsline {section}{\numberline {D.2}Muxmon1 decoherence times}{91}
+\contentsline {section}{\numberline {D.3}Muxmon1 cross-driving}{91}
+\contentsline {section}{\numberline {D.4}Muxmon0 resonator buses}{92}
+\contentsline {chapter}{\numberline {E}Additional notes}{93}
+\contentsline {section}{\numberline {E.1}Qubit characterization}{93}
+\contentsline {subsection}{\numberline {E.1.1}Finding the qubit sweet-spot using a one-dimensional scan}{93}
+\contentsline {subsubsection}{\numberline {E.1.1.1}Spectroscopy}{93}
+\contentsline {subsubsection}{\numberline {E.1.1.2}Flux matrix}{94}
+\contentsline {chapter}{\numberline {F}AllXY pulse sequence}{95}
+\contentsline {chapter}{\numberline {G}Randomized benchmarking}{96}
+\contentsline {section}{\numberline {G.1}Clifford gate decomposition}{96}
+\contentsline {section}{\numberline {G.2}Individual randomized benchmarking measurements}{97}
+\contentsline {section}{\numberline {G.3}Determining population in three states}{97}
+\contentsline {section}{\numberline {G.4}Two qubit randomized benchmarking leakage}{97}
+\contentsline {chapter}{\numberline {H}Compiled randomized benchmarking algorithm}{99}
+\contentsline {section}{\numberline {H.1}Finding the optimal gate sequence}{99}
+\contentsline {section}{\numberline {H.2}Optimizing the gate compilation algorithm}{100}

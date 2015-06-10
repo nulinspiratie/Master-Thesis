@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1433933431 "thesis.aux" "thesis.bbl" "thesis" 1433933445
-  "bibliography.bib" 1433922596 15009 39a9e3fd623c3b4b6fdcff73e37a1614 ""
+["bibtex thesis"] 1433944403 "thesis.aux" "thesis.bbl" "thesis" 1433944417
+  "bibliography.bib" 1433934944 15344 96af49cd13a4c6a86f9bfa1f1f351cd2 ""
   "c:/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1419358895 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "thesis.aux" 1433933444 43757 47e34f54654e9d647fa6f0ed8ff396c0 ""
+  "thesis.aux" 1433944416 44832 acccc8969b7c7d23100d5c9db2c0acab ""
   "thesis.bcf" 0 -1 0 ""
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1433933432 "thesis.tex" "thesis.pdf" "thesis" 1433933445
+["pdflatex"] 1433944403 "thesis.tex" "thesis.pdf" "thesis" 1433944417
   "../Figures/20150512_Muxmon_Setup.jpg" 1433765716 5637603 078509a03629a46a2b04ef42f65fbd41 ""
   "../Figures/Appendix/Duplexer isolation.png" 1433851131 103609 ac53420916a4cd0740a0c652c561bf09 ""
   "../Figures/Appendix/resonator buses.png" 1433854174 66563 68b196c86710dd2944dfc0af3ec93191 ""
@@ -45,6 +45,8 @@
   "../Figures/Qubit characterization/flux-tunable transmon schematic joined.jpg" 1433846210 866896 71fc9a9761e63895e6e00a9b0c7c390b ""
   "../Figures/Qubit characterization/second transition spec.png" 1433535671 28471 bb72d1185351ffd7382968db8f7f1011 ""
   "../Figures/Qubit names.jpg" 1433610651 797098 7131b9eff74976718698fdfb66bd7896 ""
+  "../Figures/Randomized benchmarking/2nd-state leakage 2Q.png" 1433943370 65405 74d2d0c0d9442bbd518227129b6003a5 ""
+  "../Figures/Randomized benchmarking/2nd-state leakage normal.png" 1433940775 47948 e899d0ecea9bc312d8172edfb7141457 ""
   "../Figures/Randomized benchmarking/5 primitive gates.jpg" 1433330693 674556 cb7feffa5ef2f2e63bb1995c7dcc3c88 ""
   "../Figures/Randomized benchmarking/5 primitives RB.jpg" 1433330706 1087011 9ed347b49ca3d2f53c705765cb62725b ""
   "../Figures/Randomized benchmarking/Bloch sphere octahedron.png" 1433155876 49776 61ba420c532b123abe670034315ea48b ""
@@ -59,9 +61,9 @@
   "../Figures/Randomized benchmarking/RB_single_seed.png" 1433766349 33557 13922e921f7d38b200695d3eb9e4a3d3 ""
   "../Figures/Randomized benchmarking/alternating RB.jpg" 1433330732 1070763 6a9301ee6d0192d360d20b03b9b591c8 ""
   "../Figures/Randomized benchmarking/compiled RB.jpg" 1433330722 1032096 5c6ebe9f179a829a409195c1718e9e44 ""
-  "Chapters/DRIE.tex" 1433933002 38609 e2c0650ab442997a551e0d94be65930e ""
-  "Chapters/Muxmon.tex" 1433925284 141107 588e4e2a6789f1abbf6a81e23abf4f21 ""
-  "Chapters/appendix.tex" 1433933412 27869 c7dee9aab2710d95256369d035e8f71c ""
+  "Chapters/DRIE.tex" 1433944246 38781 8d7c9407c5f91761197b82138f9ccf83 ""
+  "Chapters/Muxmon.tex" 1433944352 143645 b26044187cdd7bccfcdce752bb10e7fe ""
+  "Chapters/appendix.tex" 1433944388 29057 61724a00ac8dc5954c1117ca49f28f3f ""
   "Figures/DRIE/All_set4.png" 1420739526 2091121 526cfbbd9665871c3a44806ef994d3f3 ""
   "Figures/DRIE/CPW.png" 1421257093 46220 0bf7b5ead4da3ac71b83f6e6c0c76bd6 ""
   "Figures/DRIE/DRIE figure.jpg" 1433926846 913384 a5a8a5af95c0ddc366fad1939c263ecd ""
@@ -164,13 +166,13 @@
   "c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty" 1419363845 4612 29d19942d7123701aa6a3876b9ba11b1 ""
   "c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1419363864 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "noise.tex" 1433852723 19844 a3b14c019aa51472e1ec740ac25946c3 ""
-  "thesis.aux" 1433933444 43757 47e34f54654e9d647fa6f0ed8ff396c0 ""
-  "thesis.bbl" 1433933432 8468 e56788c97211941efd03731cfeb8f12f "bibtex thesis"
-  "thesis.tex" 1433925722 8790 c09bde2c03bf47ef1acfdd658ecdc37d ""
-  "thesis.toc" 1433933444 7766 e5311e4665a95a402d3fd6206f332dda ""
+  "thesis.aux" 1433944416 44832 acccc8969b7c7d23100d5c9db2c0acab ""
+  "thesis.bbl" 1433944403 8706 b1688210a05232fdc5f1d300965fdbce "bibtex thesis"
+  "thesis.tex" 1433943951 8684 275d311a55b99bb29dd6901fd9f07c6e ""
+  "thesis.toc" 1433944416 7855 f68b76b977fe1a83b32c62404277ff70 ""
   (generated)
   "thesis.log"
   "thesis.pdf"
-  "thesis.aux"
   "Figures/DRIE/FigS2_MW_setup-eps-converted-to.pdf"
+  "thesis.aux"
   "thesis.toc"
