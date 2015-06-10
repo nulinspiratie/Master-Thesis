@@ -9,7 +9,7 @@ R~Barends, HL~Hortensius, T~Zijlstra, JJA Baselmans, SJC Yates, JR~Gao, and
 
 \bibitem{barends2011minimizing}
 R~Barends, J~Wenner, M~Lenander, Y~Chen, RC~Bialczak, J~Kelly, E~Lucero,
-  P~O’Malley, M~Mariantoni, D~Sank, et~al.
+  P~O'Malley, M~Mariantoni, D~Sank, et~al.
 \newblock Minimizing quasiparticle generation from stray infrared light in
   superconducting quantum circuits.
 \newblock {\em Applied Physics Letters}, 99(11):113507, 2011.
@@ -121,8 +121,8 @@ Jens Koch, Terri~M. Yu, Jay Gambetta, A.~A. Houck, D.~I. Schuster, J.~Majer,
 
 \bibitem{lucero2010reduced}
 Erik Lucero, Julian Kelly, Radoslaw~C Bialczak, Mike Lenander, Matteo
-  Mariantoni, Matthew Neeley, AD~O’Connell, Daniel Sank, H~Wang, Martin
-  Weides, et~al.
+  Mariantoni, Matthew Neeley, AD~O'Connell, Daniel Sank, H~Wang, Martin Weides,
+  et~al.
 \newblock Reduced phase error through optimized control of a superconducting
   qubit.
 \newblock {\em Physical Review A}, 82(4):042339, 2010.
@@ -178,7 +178,7 @@ I~Nsanzineza and BLT Plourde.
 \newblock {\em arXiv preprint arXiv:1405.0256}, 2014.
 
 \bibitem{omalley2015qubit}
-PJJ O’Malley, J~Kelly, R~Barends, B~Campbell, Y~Chen, Z~Chen, B~Chiaro,
+PJJ O'Malley, J~Kelly, R~Barends, B~Campbell, Y~Chen, Z~Chen, B~Chiaro,
   A~Dunsworth, AG~Fowler, I-C Hoi, et~al.
 \newblock Qubit metrology of ultralow phase noise using randomized
   benchmarking.
@@ -238,7 +238,7 @@ Sarah Sheldon, Lev~S Bishop, Easwar Magesan, Stefan Filipp, Jerry~M Chow, and
 \newblock {\em arXiv preprint arXiv:1504.06597}, 2015.
 
 \bibitem{tanner2010enhanced}
-Michael~G Tanner, CM~Natarajan, VK~Pottapenjara, JA~O’Connor, RJ~Warburton,
+Michael~G Tanner, CM~Natarajan, VK~Pottapenjara, JA~O'Connor, RJ~Warburton,
   RH~Hadfield, B~Baek, S~Nam, SN~Dorenbos, E~Berm{\'u}dez Ure{\~n}a, et~al.
 \newblock Enhanced telecom wavelength single-photon detection with nbtin
   superconducting nanowires on oxidized silicon.
@@ -252,7 +252,7 @@ Gabriel Vasilescu.
 
 \bibitem{wenner2011surface}
 J~Wenner, R~Barends, RC~Bialczak, Yu~Chen, J~Kelly, Erik Lucero, Matteo
-  Mariantoni, A~Megrant, PJJ O’Malley, D~Sank, et~al.
+  Mariantoni, A~Megrant, PJJ O'Malley, D~Sank, et~al.
 \newblock Surface loss simulations of superconducting coplanar waveguide
   resonators.
 \newblock {\em Applied Physics Letters}, 99(11):113513, 2011.

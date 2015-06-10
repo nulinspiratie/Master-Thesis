@@ -537,7 +537,7 @@
 
         Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
 
-        \begin{wrapfigure}[16]{r}{0.42\textwidth}
+        \begin{wrapfigure}[15]{r}{0.42\textwidth}
           \begin{center}
           \vspace{-30pt}
             \includegraphics[width=\textwidth]{../Figures/Qubit characterization/Rabi12.png}
@@ -581,12 +581,6 @@
 
     \subsection{Cross-coupling}
       \label{ssec:cross-coupling}
-      \begin{figure}[h]
-        \centering
-        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
-        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
-        \label{fig:excitation swap}
-      \end{figure}
 
       The top qubit is coupled to the bottom qubit via the following three successive components:
 
@@ -598,6 +592,12 @@
 
       When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to transfer to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Figure~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
 
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=\linewidth]{../Figures/Exploring frequency re-use/excitation_swap.png}
+        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz}
+        \label{fig:excitation swap}
+      \end{figure}
     \subsection{Cross-driving}
       \label{ssec:cross-driving}
 
@@ -624,21 +624,6 @@
       %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{figure}
-      \begin{table}
-        \begin{tabular}{l c c}
-          \toprule
-          qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
-          \cmidrule(lr){2-3}
-               & top drive line & bottom drive line \\
-          \midrule
-          Top     & $-$    & $0.23$ \\
-          Ancilla & $0.79$ & $0.66$ \\
-          Bottom  & $0.57$ & $-$    \\
-          \bottomrule
-        \end{tabular}
-        \caption{Cross-driving ratios when driving through the top and bottom drive line.}
-        \label{tab:cross-driving}
-      \end{table}
         % \captionof{table}{Driving through top qubit drive line}
         %   \vspace{2cm}
         %   \begin{tabular}{l c}
@@ -668,7 +653,7 @@
 
       The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see Appendix~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Figure~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Figure~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Table~\ref{tab:cross-driving}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
 
-      \begin{wrapfigure}[12]{r}{0.45\textwidth}
+      \begin{wrapfigure}[13]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
           \includegraphics[width=\textwidth]{../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
@@ -715,6 +700,22 @@
       %   \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
       %   \label{fig:cross-driving versus top frequency}
       % \end{wrapfigure}
+      \vspace{2cm}
+      \begin{table}[h]
+        \begin{tabular}{l c c}
+          \toprule
+          qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
+          \cmidrule(lr){2-3}
+               & top drive line & bottom drive line \\
+          \midrule
+          Top     & $-$    & $0.23$ \\
+          Ancilla & $0.79$ & $0.66$ \\
+          Bottom  & $0.57$ & $-$    \\
+          \bottomrule
+        \end{tabular}
+        \caption{Cross-driving ratios when driving through the top and bottom drive line.}
+        \label{tab:cross-driving}
+      \end{table}
 
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
@@ -1065,14 +1066,10 @@
 
       The performance of controlling both qubits simultaneously using selective broadcasting has been studied using randomized benchmarking. In this case each of the two qubits has an individual seed composed of $n$ randomly chosen Cliffords. There are many different ways in which randomized benchmarking on two qubits can be performed. Three methods have been explored: alternating randomized benchmarking, compiled randomized benchmarking, and 5 primitives randomized benchmarking. These will be explained in the following sections.
 
-      \begin{itemize}
-        \item Additionally since the qubits are driven by the same pulses, their states should be identical.
-      \end{itemize}
-
       \subsection{Alternating randomized benchmarking}
         \label{ssec:alternating randomized benchmarking}
 
-        \begin{figure}[tb]
+        \begin{figure}[h]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/alternating RB.jpg}
           \caption{Alternating randomized benchmarking}
@@ -1085,7 +1082,7 @@
       \subsection{Compiled randomized benchmarking}
         \label{ssec:compiled randomized benchmarking}
 
-        \begin{figure}[h]
+        \begin{figure}[!h]
           \centering
           \includegraphics[width=\textwidth]{../Figures/Randomized benchmarking/compiled RB.jpg}
           \caption{Compiled randomized benchmarking}

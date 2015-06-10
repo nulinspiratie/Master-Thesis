@@ -47,7 +47,7 @@
 \contentsline {subsection}{\numberline {6.3.4}Second excited-state}{48}
 \contentsline {section}{\numberline {6.4}Exploring Frequency re-use}{49}
 \contentsline {subsection}{\numberline {6.4.1}Cross-coupling}{50}
-\contentsline {subsection}{\numberline {6.4.2}Cross-driving}{51}
+\contentsline {subsection}{\numberline {6.4.2}Cross-driving}{50}
 \contentsline {chapter}{\numberline {7}Calibration routines}{53}
 \contentsline {section}{\numberline {7.1}Instrument calibrations}{53}
 \contentsline {subsection}{\numberline {7.1.1}IQ mixer calibration}{53}
