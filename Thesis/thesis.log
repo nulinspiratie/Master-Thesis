@@ -1,15 +1,22 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  10 JUN 2015 22:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.5.12)  11 JUN 2015 11:48
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**thesis.tex -recorder
-(./thesis.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(c:/texlive/2014/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(c:/texlive/2014/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+**K:/ns/qt/Transmon/Personal*Folders/Serwan/Master-Thesis/Thesis/thesis.tex
+("K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/thesis.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -24,22 +31,22 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(c:/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -54,29 +61,30 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-)
-(c:/texlive/2014/texmf-dist/tex/latex/preprint/fullpage.sty
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\preprint\fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip43
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen111
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen112
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count91
@@ -117,7 +125,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip47
 \f@ncyO@elh=\skip48
 \f@ncyO@erh=\skip49
@@ -128,30 +136,30 @@ LaTeX Info: Redefining \] on input line 2666.
 \f@ncyO@olf=\skip54
 \f@ncyO@orf=\skip55
 )
-(c:/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(c:/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count103
@@ -159,7 +167,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(c:/texlive/2014/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty
 \wrapoverhang=\dimen122
 \WF@size=\dimen123
 \c@WF@wrappedlines=\count104
@@ -167,10 +175,10 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks21
 Package: wrapfig 2003/01/31  v 3.6
 )
-(c:/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(c:/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen124
 \lightrulewidth=\dimen125
@@ -190,10 +198,10 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count108
 \@thisrulewidth=\dimen136
 )
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\caption\caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\caption\caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen137
@@ -207,17 +215,17 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count109
 Package caption Info: wrapfig package is loaded.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fourier.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fourier.sty
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -232,7 +240,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/ts1enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 266.
@@ -298,7 +306,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fourier-orns.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fourier-orns.sty
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
@@ -401,7 +409,7 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 \symUfutm=\mathgroup5
 )
-(c:/texlive/2014/texmf-dist/tex/latex/microtype/microtype.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\microtype\microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks22
 \MT@count=\count110
@@ -410,7 +418,7 @@ LaTeX Info: Redefining \textls on input line 766.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count111
 
-(c:/texlive/2014/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
@@ -419,17 +427,23 @@ LaTeX Info: Redefining \lslig on input line 915.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(c:/texlive/2014/texmf-dist/tex/latex/microtype/microtype.cfg
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\microtype\microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-(c:/texlive/2014/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
 
-(c:/texlive/2014/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
 
-(c:/texlive/2014/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count112
 \U@D=\dimen145
 )
@@ -437,34 +451,34 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/sectsty/sectsty.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-(c:/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/lipsum/lipsum.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count113
 )
-(c:/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx.sty
-(c:/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2014/11/25 v5471 L3 programming layer (loader) 
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
 
-(c:/texlive/2014/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2014/11/25 v5471 L3 programming layer (code) 
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex
+Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
 L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
 
-(c:/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count114
 )
 L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
 L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
 L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
-L3 Module: l3tl 2014/11/19 v5460 L3 Token lists
+L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
 L3 Module: l3str 2014/08/24 v5368 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2014/09/14 v5421 L3 Integers
@@ -545,7 +559,7 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen160
 \l__coffin_display_y_dim=\dimen161
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
+L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen162
 \l__box_bottom_dim=\dimen163
 \l__box_left_dim=\dimen164
@@ -563,33 +577,33 @@ L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
 \l__coffin_scaled_total_height_dim=\dimen175
 \l__coffin_scaled_width_dim=\dimen176
 )
-(c:/texlive/2014/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
-File: l3unicode-data.def 2014/11/23 v5465 L3 Unicode data
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3kernel\l3unicode-data.def
+File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
 )
-(c:/texlive/2014/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2014/11/23 v5466 L3 Experimental driver: PDF mode
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3kernel\l3pdfmode.def
+File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count137
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.sty
+Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count138
 \l__xparse_m_args_int=\count139
 \l__xparse_mandatory_args_int=\count140
 \l__xparse_processor_int=\count141
 \l__xparse_v_nesting_int=\count142
 )
-Package: siunitx 2014/10/28 v2.6d A comprehensive (SI) units package
+Package: siunitx 2014/10/01 v2.6c A comprehensive (SI) units package
 
-(c:/texlive/2014/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen177
 \extrarowheight=\dimen178
 \NC@list=\toks23
 \extratabsurround=\skip63
 \backup@length=\skip64
 )
-(c:/texlive/2014/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty
+Package: l3keys2e 2014/09/15 v5423 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box44
@@ -754,28 +768,30 @@ Variant \prop_get:NVNTF already defined; not changing it on line 374
 .................................................
 \g__file_internal_ior=\read1
 
-(c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\beamer\base\translator\translator.st
+y
 Package: translator 2010/06/12 ver 1.10
 
-(c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/translator-language-map
-pings.tex))) (c:/texlive/2014/texmf-dist/tex/latex/caption/subcaption.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\beamer\base\translator\translator-la
+nguage-mappings.tex)))
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\caption\subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count160
 \c@subtable=\count161
 )
-(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/grffile.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
 Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
 
-(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -784,7 +800,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -797,20 +813,20 @@ Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/appendix/appendix.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\appendix\appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count162
 \c@@ppsavesec=\count163
 \c@@ppsaveapp=\count164
 )
-(c:/texlive/2014/texmf-dist/tex/latex/braket/braket.sty)
-(c:/texlive/2014/texmf-dist/tex/latex/tools/xr.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\braket\braket.sty)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xr.sty"
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/was/gensymb.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/floatrow/floatrow.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\floatrow\floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 \c@float@type=\count165
 \float@exts=\toks24
@@ -848,19 +864,19 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip82
 \flrow@types=\toks26
 )
-(c:/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldotherletters=\mathgroup8
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
-LaTeX Info: Redefining \bm on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/placeins/placeins.sty
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(c:/texlive/2014/texmf-dist/tex/latex/tools/afterpage.sty
-Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
 \AP@output=\toks27
 \AP@partial=\box54
 \AP@footins=\box55
@@ -868,9 +884,8 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 37.
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 38.
- (./thesis.aux)
-\openout1 = `thesis.aux'.
 
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\thesis.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
 LaTeX Font Info:    ... okay on input line 106.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
@@ -887,7 +902,7 @@ LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 106.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 106
 .
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutm.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 106.
@@ -895,7 +910,7 @@ LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 106.
 LaTeX Font Info:    Try loading font information for FMS+futm on input line 106
 .
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmsfutm.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 106.
@@ -903,7 +918,7 @@ LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 106.
 LaTeX Font Info:    Try loading font information for FMX+futm on input line 106
 .
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 106.
@@ -911,14 +926,14 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 106.
 
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 106.
 LaTeX Font Info:    Try loading font information for T1+futs on input line 106.
 
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/t1futs.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
 *geometry* driver: auto-detecting
@@ -962,7 +977,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 106.
-(c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count172
 \scratchdimen=\dimen195
@@ -975,24 +990,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 \MPnumerator=\count176
 \makeMPintoPDFobject=\count177
 \everyMPtoPDFconversion=\toks29
-) (c:/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(c:/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
 Package caption Info: float package is loaded.
@@ -1013,12 +1011,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(c:/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-
-dictionary/translator-basic-dictionary-English.dict
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\beamer\base\translator\dicts\transla
+tor-basic-dictionary\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(c:/texlive/2014/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2014/10/28 v2.6d siunitx: Abbreviated units
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2014/10/01 v2.6c siunitx: Abbreviated units
 )
 \symgns@font=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
@@ -1033,20 +1031,20 @@ Package gensymb Info: Using \textohm for \ohm on input line 106.
 LaTeX Info: Redefining \micro on input line 106.
 Package gensymb Info: Using \textmu for \micro on input line 106.
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 LaTeX Info: Redefining \color on input line 76.
 
-(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 \c__siunitx_mathsf_int=\count178
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 10
 6.
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1064,7 +1062,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 106
 .
 
-(c:/texlive/2014/texmf-dist/tex/latex/fourier/ts1futs.fd
+(D:\TUD277449\AppData\MiKTeX\2.9\tex\latex\fourier\ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Package microtype Info: Loading generic settings for font family
@@ -1096,15 +1094,17 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 9.19998pt on input line 124.
  [1
 
-{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [0]
+{C:/Users/TUD277449/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [0]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 152.
- [1]
+ [0] [0]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 165.
- [2
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 167.
+ [1
 
-] [2] [2] (./thesis.toc
+]
+[1] ("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\thesis.toc
+"
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
@@ -1123,23 +1123,17 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 3.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 3.
+ [2
 
-[3
-
-] [4]
-Overfull \hbox (1.19994pt too wide) detected at line 105
- []\T1/futs/m/n/12 100
- []
-
-)
+] [3])
 \tf@toc=\write3
-\openout3 = `thesis.toc'.
-
- [5] [6]
+ [4] [5]
 Chapter 1.
-[7
+[6
 
-] (./Chapters/DRIE.tex [8]
+]
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\Chapters/DRIE.
+tex" [7]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 22.88956pt on input line 11.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1148,13 +1142,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 22.88956pt on input line 11.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 15.89755pt on input line 11.
- [9
+ [8
 
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `T1/futs/bx/sc' in size <17.28> not available
 (Font)              Font shape `T1/futs/b/sc' tried instead on input line 17.
-<Figures/DRIE/resonator schematic joined.jpg, id=47, 1203.49625pt x 634.37pt>
+<Figures/DRIE/resonator schematic joined.jpg, id=46, 1203.49625pt x 634.37pt>
 File: Figures/DRIE/resonator schematic joined.jpg Graphic file (type jpg)
 
 <use Figures/DRIE/resonator schematic joined.jpg>
@@ -1164,7 +1158,7 @@ put line 22.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 24.
 
-<Figures/DRIE/CPW.png, id=48, 339.669pt x 158.5122pt>
+<Figures/DRIE/CPW.png, id=47, 339.669pt x 158.5122pt>
 File: Figures/DRIE/CPW.png Graphic file (type png)
 
 <use Figures/DRIE/CPW.png>
@@ -1178,43 +1172,48 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 35.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 35.
- [10
+ [9
 
- <./Figures/DRIE/resonator schematic joined.jpg> <./Figures/DRIE/CPW.png>] [11]
- [12] [13] [14]
-<Figures/DRIE/DRIE figure.jpg, id=71, 1641.13126pt x 1031.855pt>
+ <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRIE/r
+esonator schematic joined.jpg> <K:/ns/qt/Transmon/Personal Folders/Serwan/Maste
+r-Thesis/Thesis/Figures/DRIE/CPW.png>] [10]
+[11] [12] [13]
+<Figures/DRIE/DRIE figure.jpg, id=70, 1641.13126pt x 1031.855pt>
 File: Figures/DRIE/DRIE figure.jpg Graphic file (type jpg)
 
 <use Figures/DRIE/DRIE figure.jpg>
 Package pdftex.def Info: Figures/DRIE/DRIE figure.jpg used on input line 205.
 (pdftex.def)             Requested size: 416.72963pt x 262.00954pt.
- [15 <./Figures/DRIE/DRIE figure.jpg>]
-<Figures/DRIE/Shielding.jpg, id=76, 1040.88875pt x 1561.835pt>
+ [14 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DR
+IE/DRIE figure.jpg>]
+<Figures/DRIE/Shielding.jpg, id=75, 1040.88875pt x 1561.835pt>
 File: Figures/DRIE/Shielding.jpg Graphic file (type jpg)
 
 <use Figures/DRIE/Shielding.jpg>
 Package pdftex.def Info: Figures/DRIE/Shielding.jpg used on input line 227.
 (pdftex.def)             Requested size: 181.18439pt x 271.84766pt.
- [16 <./Figures/DRIE/Shielding.jpg>]
+ [15 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DR
+IE/Shielding.jpg>]
 Chapter 3.
-<Figures/DRIE/FigS2_MW_setup.pdf, id=80, 380.57181pt x 415.53142pt>
+<Figures/DRIE/FigS2_MW_setup.pdf, id=79, 380.57181pt x 415.53142pt>
 File: Figures/DRIE/FigS2_MW_setup.pdf Graphic file (type pdf)
 
 <use Figures/DRIE/FigS2_MW_setup.pdf>
 Package pdftex.def Info: Figures/DRIE/FigS2_MW_setup.pdf used on input line 240
 .
 (pdftex.def)             Requested size: 226.48395pt x 247.29181pt.
- [17
+ [16
 
- <./Figures/DRIE/FigS2_MW_setup.pdf>]
-<Figures/DRIE/All_set4.png, id=102, 725.109pt x 311.2428pt>
+ <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRIE/F
+igS2_MW_setup.pdf>]
+<Figures/DRIE/All_set4.png, id=101, 725.109pt x 311.2428pt>
 File: Figures/DRIE/All_set4.png Graphic file (type png)
 
 <use Figures/DRIE/All_set4.png>
 Package pdftex.def Info: Figures/DRIE/All_set4.png used on input line 257.
 (pdftex.def)             Requested size: 317.07614pt x 136.1019pt.
 
-<Figures/DRIE/resonator_amplitude.png, id=103, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_amplitude.png, id=102, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_amplitude.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_amplitude.png>
@@ -1222,7 +1221,7 @@ Package pdftex.def Info: Figures/DRIE/resonator_amplitude.png used on input lin
 e 270.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/resonator_complex.png, id=104, 433.62pt x 289.08pt>
+<Figures/DRIE/resonator_complex.png, id=103, 433.62pt x 289.08pt>
 File: Figures/DRIE/resonator_complex.png Graphic file (type png)
 
 <use Figures/DRIE/resonator_complex.png>
@@ -1233,17 +1232,19 @@ Package pdftex.def Info: Figures/DRIE/resonator_complex.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./Figures/DRIE/All_set4.png>]
-<Figures/DRIE/Qi_vs_n_photon.png, id=109, 433.62pt x 289.08pt>
+[17 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRI
+E/All_set4.png>]
+<Figures/DRIE/Qi_vs_n_photon.png, id=108, 433.62pt x 289.08pt>
 File: Figures/DRIE/Qi_vs_n_photon.png Graphic file (type png)
 
 <use Figures/DRIE/Qi_vs_n_photon.png>
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon.png used on input line 299
 .
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
- [19 <./Figures/DRIE/resonator_amplitude.png> <./Figures/DRIE/resonator_complex
-.png>]
-<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=115, 433.62pt x 289
+ [18 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DR
+IE/resonator_amplitude.png> <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-T
+hesis/Thesis/Figures/DRIE/resonator_complex.png>]
+<Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png, id=114, 433.62pt x 289
 .08pt>
 File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
  png)
@@ -1251,8 +1252,9 @@ File: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png Graphic file (type
 Package pdftex.def Info: Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png
  used on input line 313.
 (pdftex.def)             Requested size: 362.37569pt x 241.59486pt.
- [20 <./Figures/DRIE/Qi_vs_n_photon.png>]
-<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=120, 433.62pt x 289.0
+ [19 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DR
+IE/Qi_vs_n_photon.png>]
+<Figures/DRIE/Temperature tracking drop - Qi vs T.png, id=119, 433.62pt x 289.0
 8pt>
 File: Figures/DRIE/Temperature tracking drop - Qi vs T.png Graphic file (type p
 ng)
@@ -1261,7 +1263,7 @@ Package pdftex.def Info: Figures/DRIE/Temperature tracking drop - Qi vs T.png u
 sed on input line 334.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=121, 433.62pt x 
+<Figures/DRIE/Temperature tracking - no drop - Qi vs T.png, id=120, 433.62pt x 
 289.08pt>
 File: Figures/DRIE/Temperature tracking - no drop - Qi vs T.png Graphic file (t
 ype png)
@@ -1273,8 +1275,9 @@ png used on input line 338.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./Figures/DRIE/Qi_vs_n_photon_temperature_dependence.png>]
-<Figures/DRIE/Temperature tracking - f0 vs T.png, id=127, 505.89pt x 361.35pt>
+[20 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRI
+E/Qi_vs_n_photon_temperature_dependence.png>]
+<Figures/DRIE/Temperature tracking - f0 vs T.png, id=126, 505.89pt x 361.35pt>
 File: Figures/DRIE/Temperature tracking - f0 vs T.png Graphic file (type png)
 
 <use Figures/DRIE/Temperature tracking - f0 vs T.png>
@@ -1285,9 +1288,11 @@ n input line 350.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./Figures/DRIE/Temperature tracking drop - Qi vs T.png> <./Figures/DRIE/Te
-mperature tracking - no drop - Qi vs T.png>]
-<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=133, 505
+[21 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRI
+E/Temperature tracking drop - Qi vs T.png> <K:/ns/qt/Transmon/Personal Folders/
+Serwan/Master-Thesis/Thesis/Figures/DRIE/Temperature tracking - no drop - Qi vs
+ T.png>]
+<Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png, id=132, 505
 .89pt x 361.35pt>
 File: Figures/DRIE/Temperature increase tracking - f0 vs T with fit.png Graphic
  file (type png)
@@ -1300,20 +1305,24 @@ ith fit.png used on input line 364.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23 <./Figures/DRIE/Temperature tracking - f0 vs T.png>] [24 <./Figures/DRIE/Te
-mperature increase tracking - f0 vs T with fit.png>]
+[22 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/DRI
+E/Temperature tracking - f0 vs T.png>] [23 <K:/ns/qt/Transmon/Personal Folders/
+Serwan/Master-Thesis/Thesis/Figures/DRIE/Temperature increase tracking - f0 vs 
+T with fit.png>]
 Chapter 4.
-) (./Chapters/Muxmon.tex
+)
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\Chapters/Muxmo
+n.tex"
 Package xr Info: IMPORTING LABELS FROM Chapters/appendix.tex.aux on input line 
 2.
- [25
+ [24
 
-] [26
+] [25
 
 ]
 Chapter 5.
 
-<../Figures/Exploring frequency re-use/bandwidth_broadening.png, id=148, 433.62
+<../Figures/Exploring frequency re-use/bandwidth_broadening.png, id=147, 433.62
 pt x 361.35pt>
 File: ../Figures/Exploring frequency re-use/bandwidth_broadening.png Graphic fi
 le (type png)
@@ -1324,7 +1333,7 @@ ning.png used on input line 15.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jpg, i
-d=149, 383.5128pt x 321.3606pt>
+d=148, 383.5128pt x 321.3606pt>
 File: ../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.j
 pg Graphic file (type jpg)
 
@@ -1337,10 +1346,11 @@ quency re-use_cut.jpg used on input line 28.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+[26
 
- <../Figures/Exploring frequency re-use/bandwidth_broadening.png>]
-<../Figures/Duplexer_with_background.png, id=155, 613.69275pt x 475.17525pt>
+ <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring fre
+quency re-use/bandwidth_broadening.png>]
+<../Figures/Duplexer_with_background.png, id=154, 613.69275pt x 475.17525pt>
 File: ../Figures/Duplexer_with_background.png Graphic file (type png)
 
 <use ../Figures/Duplexer_with_background.png>
@@ -1348,7 +1358,7 @@ Package pdftex.def Info: ../Figures/Duplexer_with_background.png used on input
 line 40.
 (pdftex.def)             Requested size: 226.48395pt x 175.36255pt.
 
-<../Figures/Duplexer_properties.jpg, id=156, 495.5313pt x 162.3666pt>
+<../Figures/Duplexer_properties.jpg, id=155, 495.5313pt x 162.3666pt>
 File: ../Figures/Duplexer_properties.jpg Graphic file (type jpg)
 
 <use ../Figures/Duplexer_properties.jpg>
@@ -1360,44 +1370,48 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 67--78
 []$[]$$[]$ 
  []
 
-[28 <../Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jp
-g> <../Figures/Duplexer_with_background.png>]
-<../Figures/MUX_0.jpg, id=160, 5161.2825pt x 1519.6775pt>
+[27 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/surface_code_frequency re-use_cut.jpg> <K:/ns/qt/Transmon/Pers
+onal Folders/Serwan/Master-Thesis/Figures/Duplexer_with_background.png>]
+<../Figures/MUX_0.jpg, id=159, 5161.2825pt x 1519.6775pt>
 File: ../Figures/MUX_0.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_0.jpg>
 Package pdftex.def Info: ../Figures/MUX_0.jpg used on input line 88.
 (pdftex.def)             Requested size: 407.66833pt x 120.02306pt.
 
-<../Figures/MUX_1.jpg, id=161, 5440.325pt x 1524.69624pt>
+<../Figures/MUX_1.jpg, id=160, 5440.325pt x 1524.69624pt>
 File: ../Figures/MUX_1.jpg Graphic file (type jpg)
 
 <use ../Figures/MUX_1.jpg>
 Package pdftex.def Info: ../Figures/MUX_1.jpg used on input line 94.
 (pdftex.def)             Requested size: 407.66833pt x 114.23096pt.
- [29 <../Figures/Duplexer_properties.jpg> <../Figures/MUX_0.jpg> <../Figures/MU
-X_1.jpg>]
-<../Figures/Qubit names.jpg, id=165, 322.3242pt x 184.7703pt>
+ [28 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Duplexer_
+properties.jpg> <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figure
+s/MUX_0.jpg> <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/M
+UX_1.jpg>]
+<../Figures/Qubit names.jpg, id=164, 322.3242pt x 184.7703pt>
 File: ../Figures/Qubit names.jpg Graphic file (type jpg)
 
 <use ../Figures/Qubit names.jpg>
 Package pdftex.def Info: ../Figures/Qubit names.jpg used on input line 112.
 (pdftex.def)             Requested size: 181.18439pt x 103.86536pt.
 
-<../Figures/20150512_Muxmon_Setup.jpg, id=166, 2276.505pt x 3351.52126pt>
+<../Figures/20150512_Muxmon_Setup.jpg, id=165, 2276.505pt x 3351.52126pt>
 File: ../Figures/20150512_Muxmon_Setup.jpg Graphic file (type jpg)
 
 <use ../Figures/20150512_Muxmon_Setup.jpg>
 Package pdftex.def Info: ../Figures/20150512_Muxmon_Setup.jpg used on input lin
 e 133.
 (pdftex.def)             Requested size: 407.66833pt x 600.17941pt.
- [30 <../Figures/Qubit names.jpg>]
-[31 <../Figures/20150512_Muxmon_Setup.jpg>]
+ [29 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit nam
+es.jpg>] [30 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/2
+0150512_Muxmon_Setup.jpg>]
 Chapter 6.
-[32
+[31
 
-] [33]
-<../Figures/Qubit characterization/Resonator scans.png, id=180, 433.62pt x 289.
+] [32]
+<../Figures/Qubit characterization/Resonator scans.png, id=179, 433.62pt x 289.
 08pt>
 File: ../Figures/Qubit characterization/Resonator scans.png Graphic file (type 
 png)
@@ -1405,16 +1419,18 @@ png)
 Package pdftex.def Info: ../Figures/Qubit characterization/Resonator scans.png 
 used on input line 190.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [34 <../Figures/Qubit characterization/Resonator scans.png>]
-<../Figures/Qubit characterization/Powersweep.png, id=185, 433.62pt x 289.08pt>
+ [33 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/Resonator scans.png>]
+<../Figures/Qubit characterization/Powersweep.png, id=184, 433.62pt x 289.08pt>
 File: ../Figures/Qubit characterization/Powersweep.png Graphic file (type png)
 <use ../Figures/Qubit characterization/Powersweep.png>
 Package pdftex.def Info: ../Figures/Qubit characterization/Powersweep.png used 
 on input line 212.
 (pdftex.def)             Requested size: 249.13371pt x 166.09178pt.
- [35 <../Figures/Qubit characterization/Powersweep.png>]
+ [34 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/Powersweep.png>]
 <../Figures/Qubit characterization/flux-tunable transmon schematic joined.jpg, 
-id=190, 2135.98pt x 930.47626pt>
+id=189, 2135.98pt x 930.47626pt>
 File: ../Figures/Qubit characterization/flux-tunable transmon schematic joined.
 jpg Graphic file (type jpg)
 
@@ -1424,15 +1440,15 @@ Package pdftex.def Info: ../Figures/Qubit characterization/flux-tunable transmo
 n schematic joined.jpg used on input line 232.
 (pdftex.def)             Requested size: 317.07614pt x 138.11722pt.
 
-<../Figures/Muxmon SQUID loop w annotation.png, id=191, 1233.408pt x 922.647pt>
+<../Figures/Muxmon SQUID loop w annotation.png, id=190, 1233.408pt x 922.647pt>
 File: ../Figures/Muxmon SQUID loop w annotation.png Graphic file (type png)
 <use ../Figures/Muxmon SQUID loop w annotation.png>
 Package pdftex.def Info: ../Figures/Muxmon SQUID loop w annotation.png used on 
 input line 250.
 (pdftex.def)             Requested size: 203.83417pt x 152.46951pt.
- [36 <../Figures/Qubit characterization/flux-tunable transmon schematic joined.
-jpg>]
-<../Figures/Qubit characterization/dispersive shift.png, id=195, 433.62pt x 289
+ [35 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/flux-tunable transmon schematic joined.jpg>]
+<../Figures/Qubit characterization/dispersive shift.png, id=194, 433.62pt x 289
 .08pt>
 File: ../Figures/Qubit characterization/dispersive shift.png Graphic file (type
  png)
@@ -1440,8 +1456,9 @@ File: ../Figures/Qubit characterization/dispersive shift.png Graphic file (type
 Package pdftex.def Info: ../Figures/Qubit characterization/dispersive shift.png
  used on input line 271.
 (pdftex.def)             Requested size: 226.48395pt x 150.98851pt.
- [37 <../Figures/Muxmon SQUID loop w annotation.png>]
-<../Figures/Qubit characterization/Spectroscopy.png, id=200, 361.35pt x 289.08p
+ [36 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Muxmon SQ
+UID loop w annotation.png>]
+<../Figures/Qubit characterization/Spectroscopy.png, id=199, 361.35pt x 289.08p
 t>
 File: ../Figures/Qubit characterization/Spectroscopy.png Graphic file (type png
 )
@@ -1449,9 +1466,10 @@ File: ../Figures/Qubit characterization/Spectroscopy.png Graphic file (type png
 Package pdftex.def Info: ../Figures/Qubit characterization/Spectroscopy.png use
 d on input line 287.
 (pdftex.def)             Requested size: 185.71849pt x 148.5757pt.
- [38 <../Figures/Qubit characterization/dispersive shift.png> <../Figures/Qubit
- characterization/Spectroscopy.png>]
-<../Figures/Qubit characterization/Tracked_spectroscopy.png, id=206, 361.35pt x
+ [37 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/dispersive shift.png> <K:/ns/qt/Transmon/Personal Folders/Serwan/
+Master-Thesis/Figures/Qubit characterization/Spectroscopy.png>]
+<../Figures/Qubit characterization/Tracked_spectroscopy.png, id=205, 361.35pt x
  433.62pt>
 File: ../Figures/Qubit characterization/Tracked_spectroscopy.png Graphic file (
 type png)
@@ -1460,8 +1478,9 @@ Package pdftex.def Info: ../Figures/Qubit characterization/Tracked_spectroscopy
 .png used on input line 340.
 (pdftex.def)             Requested size: 199.30698pt x 239.16661pt.
 
-[39 <../Figures/Qubit characterization/Tracked_spectroscopy.png>]
-<../Figures/Qubit characterization/second transition spec.png, id=212, 361.35pt
+[38 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit char
+acterization/Tracked_spectroscopy.png>]
+<../Figures/Qubit characterization/second transition spec.png, id=211, 361.35pt
  x 289.08pt>
 File: ../Figures/Qubit characterization/second transition spec.png Graphic file
  (type png)
@@ -1471,7 +1490,7 @@ Package pdftex.def Info: ../Figures/Qubit characterization/second transition sp
 ec.png used on input line 369.
 (pdftex.def)             Requested size: 271.7835pt x 217.427pt.
 
-<../Figures/Qubit characterization/Flux_matrix.png, id=213, 722.7pt x 722.7pt>
+<../Figures/Qubit characterization/Flux_matrix.png, id=212, 722.7pt x 722.7pt>
 File: ../Figures/Qubit characterization/Flux_matrix.png Graphic file (type png)
 
 
@@ -1479,9 +1498,11 @@ File: ../Figures/Qubit characterization/Flux_matrix.png Graphic file (type png)
 Package pdftex.def Info: ../Figures/Qubit characterization/Flux_matrix.png used
  on input line 383.
 (pdftex.def)             Requested size: 452.9679pt x 452.96558pt.
- [40] [41 <../Figures/Qubit characterization/second transition spec.png>] [42] 
-[43 <../Figures/Qubit characterization/Flux_matrix.png>]
-<../Figures/Exploring frequency re-use/Gaussian pulse.png, id=230, 433.62pt x 2
+ [39] [40 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubi
+t characterization/second transition spec.png>] [41] [42 <K:/ns/qt/Transmon/Per
+sonal Folders/Serwan/Master-Thesis/Figures/Qubit characterization/Flux_matrix.p
+ng>]
+<../Figures/Exploring frequency re-use/Gaussian pulse.png, id=228, 433.62pt x 2
 89.08pt>
 File: ../Figures/Exploring frequency re-use/Gaussian pulse.png Graphic file (ty
 pe png)
@@ -1490,18 +1511,20 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/Gaussian pulse.p
 ng used on input line 431.
 (pdftex.def)             Requested size: 181.18439pt x 120.79082pt.
 
-[44
+[43
 
- <../Figures/Exploring frequency re-use/Gaussian pulse.png>]
-<../Figures/Qubit characterization/Rabi.png, id=235, 361.35pt x 252.945pt>
+ <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring fre
+quency re-use/Gaussian pulse.png>]
+<../Figures/Qubit characterization/Rabi.png, id=233, 361.35pt x 252.945pt>
 File: ../Figures/Qubit characterization/Rabi.png Graphic file (type png)
 
 <use ../Figures/Qubit characterization/Rabi.png>
 Package pdftex.def Info: ../Figures/Qubit characterization/Rabi.png used on inp
 ut line 452.
 (pdftex.def)             Requested size: 181.18439pt x 126.82727pt.
- [45 <../Figures/Qubit characterization/Rabi.png>]
-<../Figures/Qubit characterization/T1 decoherence.png, id=241, 391.9443pt x 124
+ [44 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/Rabi.png>]
+<../Figures/Qubit characterization/T1 decoherence.png, id=239, 391.9443pt x 124
 .5453pt>
 File: ../Figures/Qubit characterization/T1 decoherence.png Graphic file (type p
 ng)
@@ -1510,7 +1533,7 @@ Package pdftex.def Info: ../Figures/Qubit characterization/T1 decoherence.png u
 sed on input line 475.
 (pdftex.def)             Requested size: 135.89174pt x 43.18102pt.
 
-<../Figures/Qubit characterization/T2 decoherence.png, id=242, 490.9542pt x 114
+<../Figures/Qubit characterization/T2 decoherence.png, id=240, 490.9542pt x 114
 .4275pt>
 File: ../Figures/Qubit characterization/T2 decoherence.png Graphic file (type p
 ng)
@@ -1524,9 +1547,10 @@ Underfull \hbox (badness 2393) in paragraph at lines 493--493
 L/futmi/m/it/10.95 T[]$ \T1/futs/m/n/10.95 (+20) se-
  []
 
-[46 <../Figures/Qubit characterization/T1 decoherence.png> <../Figures/Qubit ch
-aracterization/T2 decoherence.png>]
-<../Figures/Qubit characterization/T2echo decoherence.png, id=248, 536.9661pt x
+[45 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit char
+acterization/T1 decoherence.png> <K:/ns/qt/Transmon/Personal Folders/Serwan/Mas
+ter-Thesis/Figures/Qubit characterization/T2 decoherence.png>]
+<../Figures/Qubit characterization/T2echo decoherence.png, id=246, 536.9661pt x
  129.8451pt>
 File: ../Figures/Qubit characterization/T2echo decoherence.png Graphic file (ty
 pe png)
@@ -1536,7 +1560,7 @@ ng used on input line 510.
 (pdftex.def)             Requested size: 181.18439pt x 43.8119pt.
 
 <../Figures/Exploring frequency re-use/schematic second transition pulsing.png,
- id=249, 252.945pt x 187.902pt>
+ id=247, 252.945pt x 187.902pt>
 File: ../Figures/Exploring frequency re-use/schematic second transition pulsing
 .png Graphic file (type png)
 
@@ -1545,8 +1569,9 @@ png>
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/schematic second
  transition pulsing.png used on input line 529.
 (pdftex.def)             Requested size: 190.24568pt x 141.32755pt.
- [47 <../Figures/Qubit characterization/T2echo decoherence.png>]
-<../Figures/Qubit characterization/Rabi12.png, id=254, 397.485pt x 289.08pt>
+ [46 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit cha
+racterization/T2echo decoherence.png>]
+<../Figures/Qubit characterization/Rabi12.png, id=252, 397.485pt x 289.08pt>
 File: ../Figures/Qubit characterization/Rabi12.png Graphic file (type png)
 
 <use ../Figures/Qubit characterization/Rabi12.png>
@@ -1554,7 +1579,7 @@ Package pdftex.def Info: ../Figures/Qubit characterization/Rabi12.png used on i
 nput line 543.
 (pdftex.def)             Requested size: 190.24568pt x 138.36424pt.
 
-<../Figures/Exploring frequency re-use/coherence_times.png, id=255, 722.7pt x 5
+<../Figures/Exploring frequency re-use/coherence_times.png, id=253, 722.7pt x 5
 78.16pt>
 File: ../Figures/Exploring frequency re-use/coherence_times.png Graphic file (t
 ype png)
@@ -1563,10 +1588,12 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/coherence_times.
 png used on input line 557.
 (pdftex.def)             Requested size: 452.9679pt x 362.37247pt.
 
-[48 <../Figures/Exploring frequency re-use/schematic second transition pulsing.
-png> <../Figures/Qubit characterization/Rabi12.png>] [49 <../Figures/Exploring 
+[47 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/schematic second transition pulsing.png> <K:/ns/qt/Transmon/Pe
+rsonal Folders/Serwan/Master-Thesis/Figures/Qubit characterization/Rabi12.png>]
+[48 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
 frequency re-use/coherence_times.png>]
-<../Figures/Exploring frequency re-use/excitation_swap.png, id=265, 722.7pt x 3
+<../Figures/Exploring frequency re-use/excitation_swap.png, id=263, 722.7pt x 3
 61.35pt>
 File: ../Figures/Exploring frequency re-use/excitation_swap.png Graphic file (t
 ype png)
@@ -1579,7 +1606,7 @@ png used on input line 597.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Figures/Exploring frequency re-use/cross-driving_setup.jpg, id=266, 2337.73
+<../Figures/Exploring frequency re-use/cross-driving_setup.jpg, id=264, 2337.73
 375pt x 729.72626pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_setup.jpg Graphic fil
 e (type jpg)
@@ -1593,7 +1620,7 @@ tup.jpg used on input line 606.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=267, 433.62pt
+<../Figures/Exploring frequency re-use/cross-driving_Rabi.png, id=265, 433.62pt
  x 505.89pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_Rabi.png Graphic file
  (type png)
@@ -1602,11 +1629,12 @@ File: ../Figures/Exploring frequency re-use/cross-driving_Rabi.png Graphic file
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_Ra
 bi.png used on input line 647.
 (pdftex.def)             Requested size: 203.83417pt x 237.80692pt.
- [50]
-[51 <../Figures/Exploring frequency re-use/excitation_swap.png> <../Figures/Exp
-loring frequency re-use/cross-driving_Rabi.png>]
+ [49]
+[50 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/excitation_swap.png> <K:/ns/qt/Transmon/Personal Folders/Serwa
+n/Master-Thesis/Figures/Exploring frequency re-use/cross-driving_Rabi.png>]
 <../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png, id=2
-77, 433.62pt x 361.35pt>
+75, 433.62pt x 361.35pt>
 File: ../Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png 
 Graphic file (type png)
 
@@ -1615,11 +1643,13 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/cross-driving_vs
 _top_frequency.png used on input line 659.
 (pdftex.def)             Requested size: 203.83417pt x 169.86209pt.
 
-[52 <../Figures/Exploring frequency re-use/cross-driving_setup.jpg> <../Figures
-/Exploring frequency re-use/cross-driving_vs_top_frequency.png>]
+[51 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/cross-driving_setup.jpg> <K:/ns/qt/Transmon/Personal Folders/S
+erwan/Master-Thesis/Figures/Exploring frequency re-use/cross-driving_vs_top_fre
+quency.png>]
 Chapter 7.
 
-<../Figures/Calibration routines/Mixer leakage schematic.png, id=282, 433.62pt 
+<../Figures/Calibration routines/Mixer leakage schematic.png, id=280, 433.62pt 
 x 289.08pt>
 File: ../Figures/Calibration routines/Mixer leakage schematic.png Graphic file 
 (type png)
@@ -1628,14 +1658,14 @@ Package pdftex.def Info: ../Figures/Calibration routines/Mixer leakage schemati
 c.png used on input line 732.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
 
-<../Figures/Calibration routines/Mixer offset.png, id=283, 433.62pt x 289.08pt>
+<../Figures/Calibration routines/Mixer offset.png, id=281, 433.62pt x 289.08pt>
 File: ../Figures/Calibration routines/Mixer offset.png Graphic file (type png)
 <use ../Figures/Calibration routines/Mixer offset.png>
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer offset.png used 
 on input line 741.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
 
-<../Figures/Calibration routines/Mixer skewness.png, id=284, 433.62pt x 289.08p
+<../Figures/Calibration routines/Mixer skewness.png, id=282, 433.62pt x 289.08p
 t>
 File: ../Figures/Calibration routines/Mixer skewness.png Graphic file (type png
 )
@@ -1643,12 +1673,14 @@ File: ../Figures/Calibration routines/Mixer skewness.png Graphic file (type png
 Package pdftex.def Info: ../Figures/Calibration routines/Mixer skewness.png use
 d on input line 745.
 (pdftex.def)             Requested size: 221.95676pt x 147.97139pt.
- [53
+ [52
 
-] [54 <../Figures/Calibration routines/Mixer leakage schematic.png>] [55 <../Fi
-gures/Calibration routines/Mixer offset.png> <../Figures/Calibration routines/M
-ixer skewness.png>]
-<../Figures/Calibration routines/crosstalk.png, id=297, 289.08pt x 216.81pt>
+] [53 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Calibrat
+ion routines/Mixer leakage schematic.png>] [54 <K:/ns/qt/Transmon/Personal Fold
+ers/Serwan/Master-Thesis/Figures/Calibration routines/Mixer offset.png> <K:/ns/
+qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Calibration routines/
+Mixer skewness.png>]
+<../Figures/Calibration routines/crosstalk.png, id=295, 289.08pt x 216.81pt>
 File: ../Figures/Calibration routines/crosstalk.png Graphic file (type png)
 
 <use ../Figures/Calibration routines/crosstalk.png>
@@ -1656,7 +1688,7 @@ Package pdftex.def Info: ../Figures/Calibration routines/crosstalk.png used on
 input line 780.
 (pdftex.def)             Requested size: 181.18439pt x 135.88635pt.
 
-<../Figures/Calibration routines/crosstalk ratio.png, id=298, 289.08pt x 216.81
+<../Figures/Calibration routines/crosstalk ratio.png, id=296, 289.08pt x 216.81
 pt>
 File: ../Figures/Calibration routines/crosstalk ratio.png Graphic file (type pn
 g)
@@ -1664,9 +1696,10 @@ g)
 Package pdftex.def Info: ../Figures/Calibration routines/crosstalk ratio.png us
 ed on input line 795.
 (pdftex.def)             Requested size: 181.18439pt x 135.88635pt.
- [56 <../Figures/Calibration routines/crosstalk.png> <../Figures/Calibration ro
-utines/crosstalk ratio.png>]
-<../Figures/Calibration routines/Drive calibration.png, id=304, 361.35pt x 289.
+ [55 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Calibrati
+on routines/crosstalk.png> <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Th
+esis/Figures/Calibration routines/crosstalk ratio.png>]
+<../Figures/Calibration routines/Drive calibration.png, id=302, 361.35pt x 289.
 08pt>
 File: ../Figures/Calibration routines/Drive calibration.png Graphic file (type 
 png)
@@ -1674,8 +1707,9 @@ png)
 Package pdftex.def Info: ../Figures/Calibration routines/Drive calibration.png 
 used on input line 820.
 (pdftex.def)             Requested size: 226.48395pt x 181.18622pt.
- [57 <../Figures/Calibration routines/Drive calibration.png>]
-<../Figures/Exploring frequency re-use/DRAG pulse.png, id=310, 433.62pt x 202.3
+ [56 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Calibrati
+on routines/Drive calibration.png>]
+<../Figures/Exploring frequency re-use/DRAG pulse.png, id=308, 433.62pt x 202.3
 56pt>
 File: ../Figures/Exploring frequency re-use/DRAG pulse.png Graphic file (type p
 ng)
@@ -1689,8 +1723,9 @@ Overfull \hbox (14.86629pt too wide) in paragraph at lines 846--847
 -gate com-bi-na-tions of $[]$.
  []
 
-[58 <../Figures/Exploring frequency re-use/DRAG pulse.png>]
-<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=315, 722.7pt x 3
+[57 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/DRAG pulse.png>]
+<../Figures/Exploring frequency re-use/AllXY_drive_top.png, id=313, 722.7pt x 3
 61.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drive_top.png Graphic file (t
 ype png)
@@ -1699,7 +1734,7 @@ Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drive_top.
 png used on input line 855.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=316, 722.7pt x 36
+<../Figures/Exploring frequency re-use/AllXY_drag_top.png, id=314, 722.7pt x 36
 1.35pt>
 File: ../Figures/Exploring frequency re-use/AllXY_drag_top.png Graphic file (ty
 pe png)
@@ -1707,14 +1742,15 @@ pe png)
 Package pdftex.def Info: ../Figures/Exploring frequency re-use/AllXY_drag_top.p
 ng used on input line 861.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
- [59]
-[60 <../Figures/Exploring frequency re-use/AllXY_drive_top.png> <../Figures/Exp
-loring frequency re-use/AllXY_drag_top.png>]
+ [58]
+[59 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Exploring 
+frequency re-use/AllXY_drive_top.png> <K:/ns/qt/Transmon/Personal Folders/Serwa
+n/Master-Thesis/Figures/Exploring frequency re-use/AllXY_drag_top.png>]
 Chapter 8.
-[61
+[60
 
 ]
-<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=328, 289.08
+<../Figures/Randomized benchmarking/Bloch sphere octahedron.png, id=326, 289.08
 pt x 289.08pt>
 File: ../Figures/Randomized benchmarking/Bloch sphere octahedron.png Graphic fi
 le (type png)
@@ -1726,7 +1762,7 @@ dron.png used on input line 889.
 LaTeX Font Info:    Try loading font information for OT1+pzc on input line 895.
 
 
-(c:/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pzc.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pzc.fd"
 File: ot1pzc.fd 2001/06/04 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <12> not available
@@ -1742,8 +1778,9 @@ LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <7> not available
 (Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 895.
 
- [62 <../Figures/Randomized benchmarking/Bloch sphere octahedron.png>]
-<../Figures/Randomized benchmarking/RB schematic.jpg, id=334, 771.88374pt x 257
+ [61 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/Bloch sphere octahedron.png>]
+<../Figures/Randomized benchmarking/RB schematic.jpg, id=332, 771.88374pt x 257
 .96375pt>
 File: ../Figures/Randomized benchmarking/RB schematic.jpg Graphic file (type jp
 g)
@@ -1751,8 +1788,9 @@ g)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB schematic.jpg us
 ed on input line 930.
 (pdftex.def)             Requested size: 144.94806pt x 48.43892pt.
- [63 <../Figures/Randomized benchmarking/RB schematic.jpg>]
-<../Figures/Randomized benchmarking/RB_single_seed.png, id=339, 433.62pt x 289.
+ [62 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/RB schematic.jpg>]
+<../Figures/Randomized benchmarking/RB_single_seed.png, id=337, 433.62pt x 289.
 08pt>
 File: ../Figures/Randomized benchmarking/RB_single_seed.png Graphic file (type 
 png)
@@ -1769,8 +1807,9 @@ LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <8.3> not available
 LaTeX Font Info:    Font shape `OT1/pzc/m/it' in size <6> not available
 (Font)              Font shape `OT1/pzc/mb/it' tried instead on input line 979.
 
- [64 <../Figures/Randomized benchmarking/RB_single_seed.png>]
-<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=344, 
+ [63 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/RB_single_seed.png>]
+<../Figures/Randomized benchmarking/RB_normal_driving_single_both.png, id=342, 
 722.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_driving_single_both.png Grap
 hic file (type png)
@@ -1780,7 +1819,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_driving_s
 ingle_both.png used on input line 992.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=345, 722.7p
+<../Figures/Randomized benchmarking/RB_normal_cross-driving.png, id=343, 722.7p
 t x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_cross-driving.png Graphic fi
 le (type png)
@@ -1789,10 +1828,12 @@ le (type png)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_cross-dri
 ving.png used on input line 1003.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
- [65]
-[66 <../Figures/Randomized benchmarking/RB_normal_driving_single_both.png>]
-[67 <../Figures/Randomized benchmarking/RB_normal_cross-driving.png>]
-<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=357, 72
+ [64]
+[65 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomized
+ benchmarking/RB_normal_driving_single_both.png>] [66 <K:/ns/qt/Transmon/Person
+al Folders/Serwan/Master-Thesis/Figures/Randomized benchmarking/RB_normal_cross
+-driving.png>]
+<../Figures/Randomized benchmarking/RB_normal_state_populations.png, id=355, 72
 2.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_normal_state_populations.png Graphi
 c file (type png)
@@ -1802,7 +1843,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_normal_state_pop
 ulations.png used on input line 1031.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Randomized benchmarking/2nd-state leakage normal.png, id=358, 650.4
+<../Figures/Randomized benchmarking/2nd-state leakage normal.png, id=356, 650.4
 3pt x 289.08pt>
 File: ../Figures/Randomized benchmarking/2nd-state leakage normal.png Graphic f
 ile (type png)
@@ -1811,8 +1852,9 @@ ile (type png)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/2nd-state leakage n
 ormal.png used on input line 1053.
 (pdftex.def)             Requested size: 452.9679pt x 201.32243pt.
- [68 <../Figures/Randomized benchmarking/RB_normal_state_populations.png>]
-<../Figures/Randomized benchmarking/alternating RB.jpg, id=363, 4529.92375pt x 
+ [67 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/RB_normal_state_populations.png>]
+<../Figures/Randomized benchmarking/alternating RB.jpg, id=361, 4529.92375pt x 
 1204.5pt>
 File: ../Figures/Randomized benchmarking/alternating RB.jpg Graphic file (type 
 jpg)
@@ -1820,8 +1862,9 @@ jpg)
 Package pdftex.def Info: ../Figures/Randomized benchmarking/alternating RB.jpg 
 used on input line 1074.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
- [69 <../Figures/Randomized benchmarking/2nd-state leakage normal.png>]
-<../Figures/Randomized benchmarking/compiled RB.jpg, id=369, 4529.92375pt x 120
+ [68 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/2nd-state leakage normal.png>]
+<../Figures/Randomized benchmarking/compiled RB.jpg, id=367, 4529.92375pt x 120
 4.5pt>
 File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 )
@@ -1829,9 +1872,10 @@ File: ../Figures/Randomized benchmarking/compiled RB.jpg Graphic file (type jpg
 Package pdftex.def Info: ../Figures/Randomized benchmarking/compiled RB.jpg use
 d on input line 1087.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
- [70 <../Figures/Randomized benchmarking/alternating RB.jpg> <../Figures/Random
-ized benchmarking/compiled RB.jpg>]
-<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=373, 4529.92375pt x
+ [69 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomize
+d benchmarking/alternating RB.jpg> <K:/ns/qt/Transmon/Personal Folders/Serwan/M
+aster-Thesis/Figures/Randomized benchmarking/compiled RB.jpg>]
+<../Figures/Randomized benchmarking/5 primitives RB.jpg, id=371, 4529.92375pt x
  1204.5pt>
 File: ../Figures/Randomized benchmarking/5 primitives RB.jpg Graphic file (type
  jpg)
@@ -1840,7 +1884,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitives RB.jpg
  used on input line 1103.
 (pdftex.def)             Requested size: 452.9679pt x 120.43867pt.
 
-<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=374, 1969.3575pt 
+<../Figures/Randomized benchmarking/5 primitive gates.jpg, id=372, 1969.3575pt 
 x 284.06125pt>
 File: ../Figures/Randomized benchmarking/5 primitive gates.jpg Graphic file (ty
 pe jpg)
@@ -1849,9 +1893,10 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/5 primitive gates.j
 pg used on input line 1112.
 (pdftex.def)             Requested size: 226.48395pt x 32.66418pt.
 
-[71 <../Figures/Randomized benchmarking/5 primitives RB.jpg> <../Figures/Random
-ized benchmarking/5 primitive gates.jpg>]
-<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=378
+[70 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomized
+ benchmarking/5 primitives RB.jpg> <K:/ns/qt/Transmon/Personal Folders/Serwan/M
+aster-Thesis/Figures/Randomized benchmarking/5 primitive gates.jpg>]
+<../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png, id=376
 , 867.24pt x 433.62pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png Gr
 aphic file (type png)
@@ -1861,9 +1906,9 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_state_populat
 ions_notable.png used on input line 1130.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[72] [73 <../Figures/Randomized benchmarking/RB_2Q_state_populations_notable.pn
-g>]
-<../Figures/Randomized benchmarking/RB_5p_driving_single_both.png, id=386, 722.
+[71] [72 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Rando
+mized benchmarking/RB_2Q_state_populations_notable.png>]
+<../Figures/Randomized benchmarking/RB_5p_driving_single_both.png, id=384, 722.
 7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_5p_driving_single_both.png Graphic 
 file (type png)
@@ -1873,7 +1918,7 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_5p_driving_singl
 e_both.png used on input line 1161.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=387, 7
+<../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png, id=385, 7
 22.7pt x 361.35pt>
 File: ../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png Graph
 ic file (type png)
@@ -1883,9 +1928,11 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/RB_2Q_driving_singl
 e_vs_both.png used on input line 1170.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[74 <../Figures/Randomized benchmarking/RB_5p_driving_single_both.png>]
-[75 <../Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png>]
-<../Figures/Randomized benchmarking/Clifford_comparison.png, id=397, 578.16pt x
+[73 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomized
+ benchmarking/RB_5p_driving_single_both.png>] [74 <K:/ns/qt/Transmon/Personal F
+olders/Serwan/Master-Thesis/Figures/Randomized benchmarking/RB_2Q_driving_singl
+e_vs_both.png>]
+<../Figures/Randomized benchmarking/Clifford_comparison.png, id=395, 578.16pt x
  361.35pt>
 File: ../Figures/Randomized benchmarking/Clifford_comparison.png Graphic file (
 type png)
@@ -1894,23 +1941,27 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/Clifford_comparison
 .png used on input line 1189.
 (pdftex.def)             Requested size: 362.37569pt x 226.48279pt.
 
-[76 <../Figures/Randomized benchmarking/Clifford_comparison.png>]
+[75 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomized
+ benchmarking/Clifford_comparison.png>]
 Chapter 9.
-[77
+[76
 
-]) [78] [79
+]) [77] [78
 
 
-] (./Chapters/appendix.tex (./noise.tex
+]
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\Chapters/appen
+dix.tex"
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\noise.tex"
 Appendix A.
-<Figures/Noise/thevenin.png, id=411, 495.65175pt x 345.08925pt>
+<Figures/Noise/thevenin.png, id=409, 495.65175pt x 345.08925pt>
 File: Figures/Noise/thevenin.png Graphic file (type png)
 
 <use Figures/Noise/thevenin.png>
 Package pdftex.def Info: Figures/Noise/thevenin.png used on input line 32.
 (pdftex.def)             Requested size: 194.77287pt x 135.60579pt.
 
-<Figures/Noise/norton.png, id=412, 552.8655pt x 280.6485pt>
+<Figures/Noise/norton.png, id=410, 552.8655pt x 280.6485pt>
 File: Figures/Noise/norton.png Graphic file (type png)
 
 <use Figures/Noise/norton.png>
@@ -1920,25 +1971,28 @@ Package pdftex.def Info: Figures/Noise/norton.png used on input line 37.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[80
+[79
 
-] [81 <./Figures/Noise/thevenin.png> <./Figures/Noise/norton.png>]
-<Figures/Noise/Noise model.png, id=420, 1118.9805pt x 420.3705pt>
+] [80 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/N
+oise/thevenin.png> <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/The
+sis/Figures/Noise/norton.png>]
+<Figures/Noise/Noise model.png, id=418, 1118.9805pt x 420.3705pt>
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
 Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 75.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
- [82 <./Figures/Noise/Noise model.png>]
-[83] [84]
-<Figures/Noise/noise_temperature_versus_power.png, id=431, 433.62pt x 289.08pt>
+ [81 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/No
+ise/Noise model.png>] [82] [83]
+<Figures/Noise/noise_temperature_versus_power.png, id=429, 433.62pt x 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
 on input line 189.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
- [85 <./Figures/Noise/noise_temperature_versus_power.png>]
-<Figures/Noise/noise_temperature_versus_power_detailed.png, id=436, 433.62pt x 
+ [84 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/No
+ise/noise_temperature_versus_power.png>]
+<Figures/Noise/noise_temperature_versus_power_detailed.png, id=434, 433.62pt x 
 289.08pt>
 File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
@@ -1947,28 +2001,31 @@ Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
 png used on input line 202.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
-[86 <./Figures/Noise/noise_temperature_versus_power_detailed.png>])
+[85 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Thesis/Figures/Noi
+se/noise_temperature_versus_power_detailed.png>])
 Package xr Info: IMPORTING LABELS FROM Chapters/DRIE.tex.aux on input line 4.
 Package xr Info: IMPORTING LABELS FROM Chapters/Muxmon.tex.aux on input line 5.
 
- [87]
+ [86]
 Appendix B.
-[88
+[87
 
 ]
 Appendix C.
-<../Figures/Appendix/Duplexer isolation.png, id=448, 578.16pt x 433.62pt>
+<../Figures/Appendix/Duplexer isolation.png, id=446, 578.16pt x 433.62pt>
 File: ../Figures/Appendix/Duplexer isolation.png Graphic file (type png)
 
 <use ../Figures/Appendix/Duplexer isolation.png>
 Package pdftex.def Info: ../Figures/Appendix/Duplexer isolation.png used on inp
 ut line 48.
 (pdftex.def)             Requested size: 452.9679pt x 339.72418pt.
- [89
+ [88
 
- <../Figures/Appendix/Duplexer isolation.png>] [90]
+ <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Appendix/Dupl
+exer isolation.png>]
+[89]
 Appendix D.
-<../Figures/Appendix/resonator buses.png, id=456, 722.7pt x 361.35pt>
+<../Figures/Appendix/resonator buses.png, id=454, 722.7pt x 361.35pt>
 File: ../Figures/Appendix/resonator buses.png Graphic file (type png)
 
 <use ../Figures/Appendix/resonator buses.png>
@@ -1979,12 +2036,13 @@ line 81.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[91
+[90
 
-] [92 <../Figures/Appendix/resonator buses.png>]
+] [91 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Appendix
+/resonator buses.png>]
 Appendix E.
 
-<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=465, 433.62
+<../Figures/Qubit characterization/Resonator vs DAC linecut.png, id=462, 433.62
 pt x 289.08pt>
 File: ../Figures/Qubit characterization/Resonator vs DAC linecut.png Graphic fi
 le (type png)
@@ -1993,19 +2051,20 @@ le (type png)
 Package pdftex.def Info: ../Figures/Qubit characterization/Resonator vs DAC lin
 ecut.png used on input line 94.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
- [93
+ [92
 
 ]
-[94 <../Figures/Qubit characterization/Resonator vs DAC linecut.png>]
+[93 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Qubit char
+acterization/Resonator vs DAC linecut.png>]
 Appendix F.
-[95
+[94
 
 ]
 Appendix G.
-[96
+[95
 
-] [97]
-<../Figures/Randomized benchmarking/2nd-state leakage 2Q.png, id=483, 650.43pt 
+] [96]
+<../Figures/Randomized benchmarking/2nd-state leakage 2Q.png, id=480, 650.43pt 
 x 289.08pt>
 File: ../Figures/Randomized benchmarking/2nd-state leakage 2Q.png Graphic file 
 (type png)
@@ -2014,49 +2073,52 @@ Package pdftex.def Info: ../Figures/Randomized benchmarking/2nd-state leakage 2
 Q.png used on input line 268.
 (pdftex.def)             Requested size: 452.9679pt x 201.32243pt.
 
-[98 <../Figures/Randomized benchmarking/2nd-state leakage 2Q.png>]
+[97 <K:/ns/qt/Transmon/Personal Folders/Serwan/Master-Thesis/Figures/Randomized
+ benchmarking/2nd-state leakage 2Q.png>]
 Appendix H.
-[99
+[98
 
-] [100]
+] [99]
 Overfull \hbox (23.7594pt too wide) in paragraph at lines 314--325
  [][] 
  []
 
-) [101] (./thesis.bbl [102] [103
+) [100]
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\thesis.bbl"
+[101] [102
 
-] [104] [105])
-
+] [103] [104]) 
 AED: lastpage setting LastPage
-[106] (./thesis.aux)
+[105]
+("K:\ns\qt\Transmon\Personal Folders\Serwan\Master-Thesis\Thesis\thesis.aux")
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.01195pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 17851 strings out of 493109
- 354626 string characters out of 6138586
- 473699 words of memory out of 5000000
- 20570 multiletter control sequences out of 15000+600000
- 399569 words of font info for 656 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 50i,18n,57p,10406b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
-f-dist/fonts/type1/public/fourier/fourier-alt.pfb><c:/texlive/2014/texmf-dist/f
-onts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2014/texmf-dist/fonts/typ
-e1/public/fourier/fourier-ml.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public
-/fourier/fourier-mlit.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourie
-r/fourier-mlitb.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/four
-ier-ms.pfb><c:/texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb><c:/
-texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2014/t
-exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts
-/type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zap
-fchan/uzcmi8a.pfb>
-Output written on thesis.pdf (110 pages, 31060983 bytes).
+ 17606 strings out of 493921
+ 353253 string characters out of 3147312
+ 461760 words of memory out of 3000000
+ 20160 multiletter control sequences out of 15000+200000
+ 399569 words of font info for 656 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 50i,18n,57p,10459b,1273s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/TUD277
+449/AppData/MiKTeX/2.9/fonts/type1/public/fourier/fourier-alt.pfb><D:/TUD277449
+/AppData/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mex.pfb><D:/TUD277449/Ap
+pData/MiKTeX/2.9/fonts/type1/public/fourier/fourier-ml.pfb><D:/TUD277449/AppDat
+a/MiKTeX/2.9/fonts/type1/public/fourier/fourier-mlit.pfb><D:/TUD277449/AppData/
+MiKTeX/2.9/fonts/type1/public/fourier/fourier-mlitb.pfb><D:/TUD277449/AppData/M
+iKTeX/2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/adobe/utopia/putbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/adobe/utopia/putr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ado
+be/utopia/putri8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/zapfch
+an/uzcmi8a.pfb>
+Output written on thesis.pdf (110 pages, 31163520 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
+ 552 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  99197 words of extra memory for PDF output out of 106986 (max. 10000000)
 
