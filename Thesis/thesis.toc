@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {6.2}Continuous-wave measurements}{32}
 \contentsline {subsection}{\numberline {6.2.1}Scanning for resonators}{32}
 \contentsline {subsection}{\numberline {6.2.2}Powersweeping the resonators}{34}
-\contentsline {subsection}{\numberline {6.2.3}Scan for qubit sweet-spots}{35}
+\contentsline {subsection}{\numberline {6.2.3}Scan for qubit sweet spots}{35}
 \contentsline {subsection}{\numberline {6.2.4}Qubit spectroscopy}{36}
 \contentsline {subsection}{\numberline {6.2.5}Tracking the qubits}{38}
 \contentsline {subsection}{\numberline {6.2.6}Second transition of the qubit}{39}
