@@ -30,7 +30,7 @@
         \label{fig:surface code frequency re-use}
       \end{figure}
 
-      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Sec.~\ref{ssec:cross-coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Sec.~\ref{ssec:cross-driving}.
+      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Sec.~\ref{ssec:cross coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Sec.~\ref{ssec:cross driving}.
 
     \section{Selective broadcasting}
       \label{sec:selective broadcasting using the Duplexer}
@@ -215,7 +215,7 @@
 
         Once the resonators have been located, the next stage is to find the qubit that is capacitively coupled to each of the resonators. First some initial measurements are performed, aimed at gaining information about our resonator and qubit, which will allow us to search for the qubit frequencies with more focus.
 
-        As explained previously, in the low-power regime the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency $\wbare$ dependent on the state of the qubit. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape, thereby reaching the high-power regime. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. For more information see Reed's thesis~\cite{Reed}. Observing this frequency shift reveals that a qubit is coupled to the resonator. This frequency shift is commonly measured in a powersweep, where a resonator scan is performed for a range of powers. In Fig.~\ref{fig:powersweep} a powersweep is shown of the ancilla qubit. As can be seen the resonator frequency shifts during the transition from the low-power regime to the high-power regime. Since the resonator frequency shifts downwards when entering the high-power regime it can be concluded that the ancilla-qubit frequency lies below the resonator frequency.
+        As explained previously, in the low-power regime the capacitive coupling between the resonator and qubit shifts the resonator frequency $\wres$ from its bare frequency $\wbare$ dependent on the state of the qubit. When the amount of photons in the resonator reaches a certain point, the resonator experiences nonlinearity, thereby losing its Lorentzian lineshape. When increasing the RF power even further, at a certain point the resonator regains its Lorentzian lineshape, thereby reaching the high-power regime. In doing so its resonance frequency has shifted to its bare frequency $\wbare$. For more information see the thesis written by Reed~\cite{Reed}. Observing this frequency shift reveals that a qubit is coupled to the resonator. This frequency shift is commonly measured in a powersweep, where a resonator scan is performed for a range of powers. In Fig.~\ref{fig:powersweep} a powersweep is shown of the ancilla qubit. As can be seen the resonator frequency shifts during the transition from the low-power regime to the high-power regime. Since the resonator frequency shifts downwards when entering the high-power regime it can be concluded that the ancilla-qubit frequency lies below the resonator frequency.
 
         A powersweep additionally provides information about at what power the resonator enters the nonlinear regime. For measurements involving the qubit the readout power must be below this threshold power. Furthermore, from the frequency shift between the dressed cavity frequency and the bare cavity frequency, the amount of detuning between the qubit and the resonator can be estimated using Eq.~\ref{eq:dispersive-shift}.
 
@@ -391,22 +391,20 @@
             \frac{\partial f_1}{\partial I_1} & \dots & \frac{\partial f_1}{\partial I_n} \\
             \vdots & \ddots & \vdots \\
             \frac{\partial f_n}{\partial I_1} & \dots & \frac{\partial f_n}{\partial I_n}
-          \end{bmatrix}
+          \end{bmatrix},
         \end{equation}
-
         where $\frac{\partial f_i}{\partial I_j}$ is the frequency response of qubit $i$ to a change in the DAC current corresponding to flux-bias line $j$. Each rows $M_i$ should be divided by the frequency response of the main qubit $\frac{\partial f_i}{\partial I_i}$, such that the elements are relative frequency responses. The diagonal elements of matrix $\boldsymbol{M}$ should be equal to one.
 
         For each qubit $i$ the DAC current $I^0_i$ corresponding to its sweet spot is known from tracked spectroscopy. However, since the other DAC currents must be set to zero, the corresponding qubits will likely not be at their sweet spots. There is a certain combination of DAC currents $\vec{I}^{ss}$ where all qubits are at their simultaneous sweet spot. This can be found using matrix $\boldsymbol{M}$. Since $\boldsymbol{M}$ contains the frequency responses of each qubit to each of the flux-bias lines, the qubit $i$ remains at its sweet spot as long as $\boldsymbol{M}_i \vec{I}=I^0_i$ holds, where $\vec{I}$ is the vector containing the DAC currents. Therefore the simultaneous sweet spot $\vec{I}^{ss}$ is found by solving $\boldsymbol{M} \vec{I}^{ss} = \vec{I^0}$, where $\vec{I}^0$ contains the DAC currents of the individual sweet spots of the qubits.
 
         The flux matrix $\boldsymbol{F}$ can be found by inverting matrix $\boldsymbol{M}$. As mentioned earlier, each row $F_i$ of matrix $\boldsymbol{F}$ corresponds to the ratio by which the DAC currents of the flux-bias lines need to be varied, such that only the frequency of qubit $i$ is changed. Each row may therefore be multiplied by a different factor, as long as the ratio between the elements in each row remains constant. By dividing each row $F_i$ by $F_{ii}$ the DAC current of the main flux-bias line is equal to its corresponding virtual flux. The main qubit therefore behaves identically when changing the virtual flux, except that all the other qubit frequencies remain fixed.
 
-        A virtual flux vector $\vec{\Phi}=\left[ \phi_1, \dots \phi_n \right]$ can be converted to the corresponding DAC-current vector $\vec{I}$ through:
+        A virtual flux vector $\vec{\Phi}=\left[ \phi_1, \dots \phi_n \right]$ can be converted to the corresponding DAC-current vector $\vec{I}$ through
 
         \begin{equation}
-          \vec{I} = \boldsymbol{F} \vec{\Phi} + \vec{I}^{ss}
+          \vec{I} = \boldsymbol{F} \vec{\Phi} + \vec{I}^{ss}.
         \end{equation}
-
-        By adding the simultaneous sweet-spot DAC voltages $\vec{V}^{ss}$, we obtain the additional property that the simultaneous sweet spot of the virtual fluxes is set to zero.
+        By adding the simultaneous sweet-spot DAC currents $\vec{I}^{ss}$, we obtain the additional property that the simultaneous sweet spot of the virtual fluxes is set to zero.
 
         In Fig.~\ref{fig:flux matrix} the frequency responses of the three Muxmon qubits to currents flowing through each of the flux-bias lines are shown. As can be seen the degree to which a flux-bias line affects other qubits can be quite severe. From the Muxmon chip structure one would expect that for both the top and bottom qubit, a flux-bias current would affect the flux  of the ancilla qubit more severely than the other qubit. However, from the results it can be seen that the ancilla qubit is barely affected by the other flux-bias lines. This could be due to the route taken by the current from the flux-bias lines to ground, although more research must be done to determine if this is indeed the case.
 
@@ -455,9 +453,9 @@
 
         After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wave function of the qubit will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. During a subsequent measurement the qubit will be in the excited state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}.
 
-        In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Fig.~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground state of the qubit. At the other peaks, where the deviation from the ground state is maximal, the qubit is in the excited state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse, known as a pi pulse.
+        In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Fig.~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground state of the qubit. At the other peaks, where the deviation from the ground state is maximal, the qubit is in the excited state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse, known as a $\pi$ pulse.
 
-        The pi pulse is used as a calibration point in successive measurements. The calibration points for the ground state and excited state determine the I and Q quadrature signals of the two states. These are then used to rotate and normalize the data such that all signal is contained in one quadrature, and the signal level corresponds to one of the state populations.
+        The $\pi$ pulse is used as a calibration point in successive measurements. The calibration points for the ground state and excited state determine the I and Q quadrature signals of the two states. These are then used to rotate and normalize the data such that all signal is contained in one quadrature, and the signal level corresponds to one of the state populations.
 
       \subsection{Qubit decoherence}
         Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However, due to the qubit's interaction with its environment the qubit will experience decoherence, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
@@ -474,7 +472,7 @@
             \label{fig:T1 schematic}
           \end{wrapfigure}
 
-          Relaxation is a form of decoherence that is related to the exchange of energy. Due to relaxation an excited qubit will slowly relax to its ground state, thereby leaking its energy away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in Sec.~\ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Fig.~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding relaxation time $T_1$. As explained in Sec.~\ref{sec:Quality factor}, the Purcell effect places an upper limit $T_1^\text{Purcell}$ on the relaxation time $T_1$ of the qubit, although other relaxation channels can further decrease this time considerably.
+          Relaxation is a form of decoherence that is related to the exchange of energy. Due to relaxation an excited qubit will slowly relax to its ground state, thereby leaking its energy away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in Sec.~\ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Fig.~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial $\pi$ pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding relaxation time $T_1$. As explained in Sec.~\ref{sec:Quality factor}, the Purcell effect places an upper limit $T_1^\text{Purcell}$ on the relaxation time $T_1$ of the qubit, although other relaxation channels can further decrease this time considerably.
 
         \subsubsection{Qubit dephasing: Ramsey}
           \label{sssec:Ramsey}
@@ -505,15 +503,15 @@
               \includegraphics[width=\textwidth]{Figures/Qubit characterization/T2echo decoherence.png}
             \end{center}
             \vspace{-20 pt}
-            \caption{Schematic of a $T_2^E$ sequence. In between the wait-time $\tau$, an $X_\pi$ pulse is applied, flipping the state of the qubit with respect to its X-axis.}
+            \caption{Schematic of a $T_2^\text{e}$ sequence. In between the wait-time $\tau$, an $X_\pi$ pulse is applied, flipping the state of the qubit with respect to its X-axis.}
             \label{fig:T2echo schematic}
           \end{wrapfigure}
 
-          The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement, and its schematic is shown in Fig.~\ref{fig:T2echo schematic}.
+          The dephasing time $T_2^*$ is a combination of several different phase-noise sources. Some of these sources produces high-frequency (fast) noise, while others produce low-frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement, and its schematic is shown in Fig.~\ref{fig:T2echo schematic}.
 
-          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. We can view any phase noise that is slow compared to the wait-time $\tau$ as being quasi-static, and is therefore cancelled due to this flipping. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground state, which is in contrast to a Ramsey measurement, where the final state is the excited state.
+          An Echo measurement is quite similar to a Ramsey measurement, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. We can view any phase noise that is slow compared to the wait-time $\tau$ as being quasi-static, and is therefore cancelled due to this flipping. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground state, which is in contrast to a Ramsey measurement, where the final state is the excited state.
 
-          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. The phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation. This allows for better estimation of the Echo dephasing time $T_2^E$, and clearer distinguishability of any odd shapes in the measurement results.
+          An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^\text{e}$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. The phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation. This allows for better estimation of the Echo dephasing time $T_2^\text{e}$, and clearer distinguishability of any odd shapes in the measurement results.
 
       \subsection{Second-excited state}
         \label{ssec:Second-excited state}
@@ -528,9 +526,9 @@
           \label{fig:schematic pulsing to second-excited state}
         \end{wrapfigure}
 
-        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second-excited state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Sec.~\ref{ssec:DRAG parameter calibration} for information on the DRAG pulse). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second-excited state. This can be done by first exciting the transmon to its first-excited state, and then applying a second pulse at the second transition frequency of the transmon, as shown in Fig.~\ref{fig:schematic pulsing to second-excited state}. Measuring this frequency has been explained in Sec.~\ref{ssec:12-transition spectroscopy}.
+        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second-excited state. This is especially the case when the pulse length is short and when the DRAG parameter is not well calibrated (see Sec.~\ref{ssec:DRAG-parameter calibration} for information on the DRAG pulse). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second-excited state. This can be done by first exciting the transmon to its first-excited state, and then applying a second pulse at the $1 \leftrightarrow 2$ transition frequency $omega_{12}$ of the transmon, as shown in Fig.~\ref{fig:schematic pulsing to second-excited state}. Measuring this frequency has been explained in Sec.~\ref{ssec:12-transition spectroscopy}.
 
-        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first-excited state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first-excited state back to the ground state.
+        Determining the correct amplitude for the pulse at the $1 \leftrightarrow 2$ transition frequency can be done using a second-transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first-excited state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first-excited state back to the ground state.
 
         \begin{wrapfigure}[15]{r}{0.42\textwidth}
           \begin{center}
@@ -538,11 +536,11 @@
             \includegraphics[width=\textwidth]{Figures/Qubit characterization/Rabi12.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{A second transition Rabi measurement of the second-excited state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first-excited state.}
+          \caption{A second-transition Rabi measurement of the second-excited state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first-excited state.}
           \label{fig:Rabi12}
         \end{wrapfigure}
 
-        The pulse-amplitude required to pulse to the second-excited state has been calibrated for both the top and bottom qubit. In Fig.~\ref{fig:Rabi12} a second transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first-excited state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the signal at the second-excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first-excited state, and that indeed the transmon is fully excited to the second-excited state.
+        The pulse amplitude required to pulse to the second-excited state has been calibrated for both the top and bottom qubit. In Fig.~\ref{fig:Rabi12} a second-transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first-excited state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the transmission at the second-excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first-excited state, and that indeed the transmon is fully excited to the second-excited state.
 
 
     \section{Exploring Frequency re-use}
@@ -550,7 +548,7 @@
       \begin{figure}[tb]
         \centering
         \includegraphics[width=\linewidth]{Figures/Exploring frequency re-use/coherence_times.png}
-        \caption{Coherence times of the three qubits in Muxmon0. The top qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). When measuring the coherence times of either the top or bottom qubit the other qubit was detuned by \SI{50}{\mega \hertz} to suppress cross-coupling effects. The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
+        \caption{Coherence times of the three qubits in Muxmon0. The top-qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). When measuring the coherence times of either the top or bottom qubit the other qubit was detuned by \SI{50}{\mega \hertz} to suppress cross-coupling effects. The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
         \label{fig:coherence times Muxmon0}
       \end{figure}
 
@@ -568,38 +566,39 @@
         \label{tab:Muxmon0 qubit properties}
       \end{table}
 
-      The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit respectively (see App.~\ref{sec:Resonator buses}).
+      The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit, respectively (see App.~\ref{sec:Resonator buses}).
 
-      To study frequency re-use, the top qubit frequency has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet spots. Under these conditions the coherence times of the three qubits are shown in Fig.~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than of the ancilla and bottom qubit. The reason is that the top qubit is tuned away from its sweet spot to match the frequency of the bottom qubit. As a result its frequency response to flux is higher, and so it is more susceptible to flux noise. We furthermore see that the Echo dephasing times $T_2^\text{Echo}$ of the bottom and ancilla qubit are nearly $T_1$-limited, while the top qubit is clearly not. This is likely due to the fact that the top qubit is tuned away from the sweet spot, thereby being more receptive to phase noise.
+      To study frequency re-use, the frequency of the top qubit has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet spots. Under these conditions the coherence times of the three qubits are shown in Fig.~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than that of the ancilla and bottom qubit. This is because the top qubit is tuned away from its sweet spot to match the frequency of the bottom qubit. As a result its frequency response to flux is stronger, and so it is more susceptible to flux noise. We furthermore see that the Echo dephasing times $T_2^\text{e}$ of the bottom and ancilla qubits are nearly $T_1$-limited, while the top qubit is clearly not. This is likely due to the fact that the top qubit is tuned away from its sweet spot, and is therefore more receptive to phase noise.
 
       Having the top and bottom qubit at the same frequency gives rise to cross-coupling and cross-driving effects. It is important to characterize these effects, as they can potentially result in gate errors.
 
-    \subsection{Cross-coupling}
-      \label{ssec:cross-coupling}
+    \subsection{Cross coupling}
+      \label{ssec:cross coupling}
 
       The top qubit is coupled to the bottom qubit via the following three successive components:
 
       \begin{enumerate}
-        \item The resonator bus coupling the top qubit to the ancilla qubit.
-        \item The ancilla qubit.
+        \item The resonator bus coupling the top qubit to the ancilla qubit;
+        \item The ancilla qubit;
         \item The resonator bus coupling the two ancilla qubit to the bottom qubit.
       \end{enumerate}
 
-      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to transfer to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Fig.~\ref{fig:excitation swap}. From these results the coupling $J$ is found to be equal to $J/2\pi=72. \pm 1.8$ kHz. For more information on the exchange interaction see section~4.3.2 of the thesis by Chow \cite{Chow}.
+      When the top and bottom qubit are tuned into resonance, the two qubits experience an exchange interaction. This interaction leads to an excitation in one qubit being able to transfer to the other qubit. This can result in the swapping of excitation between the top and bottom qubit, at a rate given by the interaction strength $J$. The excitation swapping of the top and bottom qubit when tuned into resonance can be seen in Fig.~\ref{fig:excitation swap}. From these results the coupling $J$ is found to equal $J/2\pi=72 \pm 2$ kHz. For more information on the exchange interaction see Sec.~4.3.2 of the thesis written by Chow \cite{Chow}.
 
       \begin{figure}[h]
         \centering
         \includegraphics[width=\linewidth]{Figures/Exploring frequency re-use/excitation_swap.png}
-        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J2\pi=72.0 \pm 1.8$ kHz.}
+        \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J/2\pi=72.0 \pm 1.8$ kHz.}
         \label{fig:excitation swap}
       \end{figure}
-    \subsection{Cross-driving}
-      \label{ssec:cross-driving}
+
+    \subsection{Cross driving}
+      \label{ssec:cross driving}
 
       \begin{figure}[h]
         \centering
         \includegraphics[width=.8\textwidth]{Figures/Exploring frequency re-use/cross-driving_setup.jpg}
-        \caption{Schematic for measuring the amount of cross-driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a range range of drive strengths.}
+        \caption{Schematic of set-up used to measure cross driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a large range of drive strengths.}
         \label{fig:cross-driving schematic}
       \end{figure}
 
@@ -609,14 +608,14 @@
       %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
       %   \end{center}
       %   \vspace{-20 pt}
-      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{wrapfigure}
 
       % \begin{figure}[tb]
       %   \centering
       %   \includegraphics[width=.5\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
-      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{figure}
         % \captionof{table}{Driving through top qubit drive line}
@@ -634,7 +633,7 @@
         %   \label{tab:cross-driving bottom}
         % \end{minipage}
 
-      When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, where the components separating the qubits do not fully filter the signal, or may be off-chip, due to for instance imperfect isolation between the cables or other components. This signal leakage results in cross-driving effect, where driving one qubit will also partially drive the other qubits. Cross-driving effects affect the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are in resonance, as is the case with the Muxmon experiment.
+      When driving one of the qubits through its dedicated drive line, the signal can partially leak through to the other qubits. The cause of this leakage may be on-chip, due to the components separating the qubits not fully filtering the signal, or may be off-chip, due to for instance imperfect isolation between the cables and/or other components. This signal leakage results in cross-driving effects, where driving one qubit also partially drives the other qubits. Cross-driving effects influence the performance of the qubits when the frequency of the driven qubit and the cross-driven qubit are on resonance, as is the case with the Muxmon experiment.
 
       \begin{wrapfigure}[21]{r}{0.45\textwidth}
         \begin{center}
@@ -642,11 +641,11 @@
           \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
         \end{center}
         \vspace{-20 pt}
-        \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+        \caption{Required drive amplitude required to drive the top and bottom qubit through the top-qubit drive line. The amplitude has been normalized to the amplitude required for a $\pi$ pulse to the top qubit.}
         \label{fig:cross-driving Rabi}
       \end{wrapfigure}
 
-      The amount of cross-driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross-driving due to the finite isolation of the Duplexer has been separately measured (see App.~\ref{ch:Duplexer isolation}). At the frequencies used in the experiment, the isolation of the Duplexer was found to be typically around \SI{50}{\dBm}. The amount of cross-driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Fig.~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Fig.~\ref{fig:cross-driving Rabi}, where the top and bottom qubit are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required for applying pi pulse to the qubit directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Table~\ref{tab:cross-driving}. The cross-driving ratio's are found to be less than one percent, and are higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross-driving is likely on-chip. Furthermore it can be seen that the cross-driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
+      The amount of cross driving can be determined by measuring the pulse amplitude required to drive each of the three qubits through a drive line. The cross driving due to the finite isolation of the Duplexer has been measured separately (see App.~\ref{ch:Duplexer isolation}). The isolation of the Duplexer, at the frequencies used in the experiment, is typically around \SI{50}{\dBm}. The amount of cross driving due to other sources was determined by measuring the pulse amplitude required to perform a Rabi on each of the qubits using a fixed drive line. The measurements were performed using the set-up shown in Fig.~\ref{fig:cross-driving schematic}. The results of a single cross-driving measurement is shown in Fig.~\ref{fig:cross-driving Rabi}, where the top and bottom qubits are driven through the drive line of the top qubit. The pulse amplitude is normalized to the amplitude required to apply a $\pi$ pulse to the main qubit, which is directly connected to the drive line. The amount of cross-driving is equal to the ratio of the pulse amplitude required for a pi rotation for the main qubit, and for the cross-driven qubit. The cross-driving ratio's are shown in Table~\ref{tab:cross-driving}, and are in all cases less than one percent. The cross driving is furthermore higher for the ancilla qubit than for the other cross-driven qubit. This indicates that the main source of cross driving is likely on-chip. It can furthermore be seen that cross driving is stronger from the drive line of the top qubit than from the drive line of the bottom qubit.
 
       \begin{wrapfigure}[13]{r}{0.45\textwidth}
         \begin{center}
@@ -658,13 +657,13 @@
         \label{fig:cross-driving versus top frequency}
       \end{wrapfigure}
 
-      As a check that the effects observed are indeed due to cross-driving, and not due to cross-coupling, the cross-driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Fig.~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross-coupling the amount of cross-driving should depend strongly on the detuning between the top qubit and bottom qubit. Instead we see that the cross-driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
+      As a check that the effects observed are indeed due to cross driving, and not due to cross coupling, the amount of cross driving when driving the bottom qubit through the drive line of the top qubit has been measured as the frequency of the top qubit is varied. The results are shown in Fig.~\ref{fig:cross-driving versus top frequency}. If the effect is due to cross coupling the amount of cross driving should depend strongly on the detuning between the top qubit and the bottom qubit. Instead we see that the cross driving is approximately constant, indicating that this is indeed a cross-driving effect instead of a cross-coupling effect.
 
       % \begin{figure}[h]
       % \centering
       % \begin{subfigure}[b]{.42\textwidth}
       %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
-      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{subfigure}
       % \hfill
@@ -682,7 +681,7 @@
       %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
       %   \end{center}
       %   \vspace{-20 pt}
-      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a pi pulse on the top qubit.}
+      %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{wrapfigure}
 
@@ -714,18 +713,18 @@
 
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
-    In the Muxmon experiment we want to find out what the best possible qubit performance is in a frequency re-use set-up. The qubit pulses must therefore be optimally tuned. Section~\ref{Instrument calibrations} deals with the calibration routines used to calibrate the mixer and Duplexer, which would otherwise add to the gate error. Section~\ref{Qubit calibrations} describes the calibration routines used to accurately tune the qubit and its pulses. These routines are have been automatized, and so can also be applied periodically during long measurements.
+    In the Muxmon experiment we want to find out what the best possible qubit performance is in a frequency re-use set-up. The qubit pulses must therefore be optimally tuned. Section~\ref{Instrument calibrations} deals with the calibration routines used to calibrate the mixer and Duplexer, which would otherwise add to the gate error. Section~\ref{Qubit calibrations} describes the calibration routines used to accurately tune the qubits and their pulses. These routines have been automatized, and so can also be applied periodically during long measurements.
 
     \section{Instrument calibrations}
       \label{Instrument calibrations}
 
-      \subsection{IQ mixer calibration}
+      \subsection{IQ-mixer calibration}
         \label{ssec:Mixer calibration}
 
         \begin{figure}[tb]
           \centering
           \includegraphics[width=.7\textwidth]{Figures/Calibration routines/Mixer leakage schematic.png}
-          \caption{Schematic showing spurious signals resulting from mixer leakage and mixer skewness,when using single sideband modulation with frequency $\omega_{sb}$.}
+          \caption{Schematic showing spurious signals resulting from mixer leakage and mixer skewness, when using single sideband modulation with frequency $\omega_{sb}$.}
           \label{fig:mixer imperfections schematic}
         \end{figure}
 
@@ -739,19 +738,19 @@
             \caption{}
             \includegraphics[width=\textwidth]{Figures/Calibration routines/Mixer skewness.png}
           \end{subfigure}
-          \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections both the mixer carrier leakage and the signal due to mixer skewness are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
+          \caption{Mixer carrier leakage (a) and mixer skewness (b). Without any corrections, both the mixer carrier leakage, and the signal due to mixer skewness, are equal to \SI{-58}{\dBm}. Compared to the main signal with output power equal to \SI{-32}{\dBm}, the mixer imperfections would result in two additional signals, each with strength \SI{-26}{\dB}.}
           \label{fig:Mixer calibrations 2D}
         \end{figure}
 
-        An important calibration routine which must not be forgotten is correcting for mixer imperfections. An IQ mixer must be calibrated for two types of mixer imperfections: the mixer carrier leakage, and the mixer skewness. These imperfections result in two spurious signals, which are shown in Fig.~\ref{fig:mixer imperfections schematic}.
+        An important calibration routine which must not be forgotten is correcting for mixer imperfections. An IQ mixer must be calibrated for two types of mixer imperfections: the mixer-carrier leakage, and the mixer skewness. These imperfections result in two spurious signals, which are shown in Fig.~\ref{fig:mixer imperfections schematic}.
 
-        For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the inphase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the inphase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
+        For a perfectly balanced mixer, a signal of given frequency $\omega_0$ at the LO port should produce no output at the RF port if no modulation signal is applied in the in-phase and quadrature ports.  However, any imperfections, due to for instance diode mismatches in the mixer, may lead to some signal at frequency $\omega_0$ leaking through. This leakage can be compensated to a large extent by adding a DC offset to the in-phase and quadrature IF signals leaving the AWG, for which the leakage is minimized. Determining the optimal DC offset can be performed by sending a carrier signal into the LO port of the mixer, and a continuous DC signal from the AWG to both IF ports of the mixer. The leakage can be measured as signal exiting the RF port at the carrier frequency $\omega_0$, and can be minimized by varying the offsets of the individual AWG channels.
 
-        Another type of IQ mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its inphase and quadrature component, where it is mixed with an inphase and quadrature IF signal. Ideally the inphase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the inphase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The inphase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
+        Another type of IQ-mixer imperfection is mixer skewness. The carrier signal entering the LO port is split into its in-phase and quadrature component, where it is mixed with an in-phase and quadrature IF signal. Ideally the in-phase and quadrature components of the LO signal are perfectly orthogonal. However, in reality this is not the case, and so a small amount of skewness is present. Ideally the signal should be shifted in frequency to the desired sideband frequency $\omega_0 + \omega_{sb}$. However, any mixer skewness will lead to the signal being partially shifted in the opposite direction, resulting in some signal at the unwanted sideband frequency $\omega_0 - \omega_{sb}$. Additionally any amplitude skewness between the two IF ports will also result in signal at the unwanted sideband frequency. The signal at the unwanted sideband can be measured for a given carrier frequency $\omega_0$ by adding a sine and cosine with sideband frequency $\omega_{sb}$ to the in-phase and quadrature ports respectively.   This can be corrected during the generation of the pulses through a transformation $\left( I, Q \right) \rightarrow \left( I', Q' \right) = \left( I - Q \tan{\phi}, Q \sec{\phi} \right)$, where $\phi$ is the phase skewness. The skewness can be corrected by varying the phase and amplitude of one of the AWG channels, and minimizing the signal at the unwanted sideband. The in-phase and quadrature signals have to be transformed for every phase. Note that the mixer skewness is dependent on both the carrier frequency $\omega_0$ and the sideband modulation frequency $\omega_{sb}$
 
       \subsection{Duplexer phase calibration}
         \label{ssec:Duplexer phase calibration}
-        The Duplexer has phase-shifters for each of input-output combinations. That means that the phases of each of the eight channels can be tuned individually.. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phase of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
+        The Duplexer has phase-shifters for each input-output combinations, and so the phases of each of the eight channels can be tuned individually. In the case of the Muxmon experiment, where we have independent control over the main pulse and the DRAG pulse, we require the two channels to share the same phase. The phases of two Duplexer channels can be tuned to one another by sending two signals with opposite phase into the Duplexer. If the relative phase shift of these two signals induced by the Duplexer, these two signals should (partially) cancel each other, resulting in a dip in transmission. The amount of transmission at this dip depends on the amplitude difference between the two signals.
 
         Calibrating the Duplexer phase can be done by splitting a signal from an RF generator, and then using single sideband modulation on both signals individually, where the phase of one of the sidebands is shifted by $180 \degree$, which can be realized using an AWG. As the phase of one of the channels is varied, a dip in transmission corresponds to both Duplexer channels sharing the same phase shift.
 
@@ -764,9 +763,9 @@
 
         In a Ramsey measurement this precession can be measured, from which the qubit frequency can be inferred. This provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Small differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$, because it corresponds to the inherent fluctuation in the qubit frequency.
 
-        The main goal of the Muxmon experiment is to determine the performance of selective broadcasting combined with frequency re-use, which requires the top and bottom qubit to be at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, any frequency detuning from the drive frequency $\omega_d$ will lead to a decrease in qubit performance. The top qubit frequency was initially tuned using spectroscopy. Accurate frequency tuning was then performed using Ramsey measurements. The bottom qubit frequency $\omega_q^B$ was first determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. Using Ramsey measurements the individual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The limit to tuning the frequencies was not determined by the Ramsey measurement accuracy, but due to the IVVI having a finite DAC voltage stepsize.
+        The main goal of the Muxmon experiment is to determine the performance of selective broadcasting combined with frequency re-use, which requires the top and bottom qubit to be at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, any frequency detuning from the drive frequency $\omega_d$ will lead to a decrease in qubit performance. The top qubit frequency was initially tuned using spectroscopy. Accurate frequency tuning was then performed using Ramsey measurements. The bottom qubit frequency $\omega_q^B$ was first determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. Using Ramsey measurements the individual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The limit to tuning the frequencies was not determined by the Ramsey-measurement accuracy, but due to the IVVI having a finite DAC-voltage stepsize.
 
-      \subsection{Multiplexed readout calibration}
+      \subsection{Multiplexed-readout calibration}
         \label{ssec:multiplexed readout}
 
           \begin{wrapfigure}[20]{r}{0.4\textwidth}
@@ -775,12 +774,12 @@
               \includegraphics[width=\textwidth]{Figures/Calibration routines/crosstalk.png}
             \end{center}
             \vspace{-20 pt}
-            \caption{Readout cross-talk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground state.}
+            \caption{Readout crosstalk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground state.}
             \label{fig:crosstalk}
           \end{wrapfigure}
-          In standard heterodyne detection the output signal is down-converted in a mixer using an LO frequency $\omega_\text{LO}$that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} - \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital demodulation.
+          In standard heterodyne detection the output signal is downconverted in a mixer using an LO frequency $\omega_\text{LO}$ that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} + \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital demodulation.
 
-          If the carrier signal is composed of multiple signals with different frequencies $\omega_\text{c1}, ..., \omega_\text{cn}$, these can be simultaneously down-converted using a single LO-frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF-frequencies can then each be measured using digital demodulation. This method is known as multiplexed readout.
+          If the carrier signal is composed of multiple signals with different frequencies $\omega_{\text{c}_1}, ..., \omega_{\text{c}_n}$, these can be simultaneously downconverted using a single LO-frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF-frequencies can then each be measured using digital demodulation. This is known as multiplexed readout.
 
           The LO-frequency $\omega_\text{LO}$ has to be chosen such that the resulting IF-frequencies are not multiples of one-another, as this would result in the signal at one IF-frequency also containing signal from a higher harmonic of another IF-frequency.
 
@@ -794,33 +793,33 @@
             \label{fig:crosstalk ratio}
           \end{wrapfigure}
 
-          Multiplexed readout has been used in the Muxmon experiment to read out the state of both the top and bottom qubit simultaneously. However, in doing so the signal of one qubit can also partially contain the signal of the other qubit. This effect is known as readout crosstalk. The result is that the signal of one qubit is slightly dependent on the state of the other qubit. Readout crosstalk can be characterized by measuring the signal of the four two-qubit states $\ket{00}$, $\ket{01}$, $\ket{10}$, and $\ket{11}$. This is shown in Fig.~\ref{fig:crosstalk}.
+          Multiplexed readout has been used in the Muxmon experiment to read out the state of both the top and bottom qubit simultaneously. However, in doing so the signal of one qubit can also partially contain the signal of the other qubit. This effect is known as readout crosstalk. The result is that the signal of one qubit is slightly dependent on the state of the other qubit. Readout crosstalk can be characterized by measuring the signals of the four two-qubit states $\ket{00}$, $\ket{01}$, $\ket{10}$, and $\ket{11}$. This is shown in Fig.~\ref{fig:crosstalk}.
 
-          This readout cross-talk can be quantified through the ratio $r$ of crosstalk signal difference and main signal difference:
+          This readout crosstalk can be quantified through the ratio $r$ of crosstalk signal difference and main signal difference
           \begin{equation}
-            r=\frac{\ket{01}+\ket{11}}{\ket{00} + \ket{10}}
+            r=\frac{\ket{01}+\ket{11}}{\ket{00} + \ket{10}}.
             \label{eq:crosstalk ratio}
           \end{equation}
 
           In Fig.~\ref{fig:crosstalk ratio} the crosstalk ratio is shown for different readout powers. As can be seen the relative amount of crosstalk decreases with decreasing readout power, but saturates around $3\%$. It can be concluded that although readout crosstalk can be greatly reduced by keeping the readout power sufficiently low, it cannot be eliminated by lowering the readout power alone. Additional measures such as boxcar filtering during digital demodulation and good choice of LO frequency $\omega_\text{LO}$ can further reduce readout crosstalk.
 
-      \subsection{Accurate drive amplitude calibration}
+      \subsection{Accurate drive-amplitude calibration}
         \label{ssec:PiX360}
         To test the limits of performance using the Duplexer all gates need to be calibrated to a very high accuracy. The Rabi measurement explained in Sec.~\ref{ssec:Rabi} is able to tune the drive amplitude up to a certain degree. However, the degree to which one can tune the drive amplitude using Rabi is limited, and for fine-tuning different methods are required.
 
 
-        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated pi-pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope respectively. These slopes serve as very accurate measures for the optimal drive amplitude. Three such examples are shown in Fig.~\ref{fig:PiX360}. If the difference in driving strength is large, oscillations will be present, corresponding to rotations around the Bloch sphere.
+        In the Muxmon experiment, the method used for accurate drive amplitude calibration is based on applying repeated $\pi$ pulses on the qubit. The entire sequence can be summarized as $\left( X_{\pi} \right)^{2N} X_{\pi/2} \ket{0}$, where $N$ is the segment number. In the absence of gate errors and decoherence, the qubit should return to the equator, regardless of the segment number $N$. However, any amount of overdriving or underdriving results in small rotations that are added coherently, resulting in a positive or negative slope, respectively. The slope serves as a very accurate measure for the optimal drive amplitude. Three such examples are shown in Fig.~\ref{fig:PiX360}. If the difference in drive strength is large, oscillations will be present, which correspond to rotations around the Bloch sphere.
         \begin{figure}[h]
           \centering
           \includegraphics[width=.5\linewidth]{Figures/Calibration routines/Drive calibration.png}
-          \caption{Accurate drive calibration using repeated pi-pulses. The initial slope determines if the system is overdriving (positive slope), or underdriving (negative slope).}
+          \caption{Accurate drive-amplitude calibration using repeated $\pi$ pulses. The initial slope determines if the system is overdriving (positive slope), or underdriving (negative slope).}
           \label{fig:PiX360}
         \end{figure}
 
-      \subsection{DRAG parameter calibration}
-        \label{ssec:DRAG parameter calibration}
+      \subsection{DRAG-parameter calibration}
+        \label{ssec:DRAG-parameter calibration}
 
-        Ideally a transmon has two energy levels, and so can be treated as a qubit. However, in Sec.~\ref{sec:resonator-scan} it was shown that the degree to which we can ignore the second-excited state depends on the anharmonicity $\alpha=\omega_{12} - \omega_{01}$.  The presence of the second-excited state (and to lesser extent higher-excited states) can have a considerable influence on the gate performance in two different ways. First of all gates can cause a direct excitation into the second-excited state, thereby resulting in leakage outside the qubit two-state Hilbert space. Ensuring that the frequency bandwidth corresponding to the gate is small compared to the anharmonicity $\alpha$ can greatly reduce this leakage. However, an additional form of leakage is manifested as a virtual excitation to the second-excited state during the pulse, resulting in an added phase error.
+        Ideally a transmon has two energy levels, and can therefore be treated as a qubit. However, in Sec.~\ref{sec:resonator-scan} it was shown that the degree to which we can ignore the second-excited state depends on the anharmonicity $\alpha=\omega_{12} - \omega_{01}$.  The presence of the second-excited state (and to lesser extent higher-excited states) can have a considerable influence on the gate performance in two different ways. First of all gates can cause a direct excitation into the second-excited state, thereby resulting in leakage outside the qubit two-state Hilbert space. Ensuring that the frequency bandwidth corresponding to the gate is small compared to the anharmonicity $\alpha$ can greatly reduce this leakage. However, an additional form of leakage is manifested as a virtual excitation to the second-excited state during the pulse, resulting in an added phase error.
 
         \begin{wrapfigure}[12]{r}{0.5\textwidth}
           \begin{center}
@@ -832,17 +831,17 @@
           \label{fig:DRAG pulse}
         \end{wrapfigure}
 
-        A modification to the Gaussian, known as the Derivative Removal by Adiabatic Gate (DRAG) pulse \cite{motzoi2009simple}, can be used to suppress leakage errors. The DRAG pulse relies on quadrature control, where one quadrature consists of the main Gaussian pulse, while the quadrature consists of the derivative of the main Gaussian pulse. The DRAG pulse can reduce leakage and virtual excitation-induced phase errors by roughly an order of magnitude. The DRAG pulse is shown in Fig.~\ref{fig:DRAG pulse}.
+        A modification to the Gaussian, known as the Derivative Removal by Adiabatic Gate (DRAG) pulse \cite{motzoi2009simple}, can be used to suppress leakage errors. The DRAG pulse relies on quadrature control, where one quadrature consists of the main Gaussian pulse, while the other quadrature consists of the derivative of the main Gaussian pulse. The DRAG pulse can reduce leakage and virtual-excitation-induced phase errors by roughly an order of magnitude. The DRAG pulse is shown in Fig.~\ref{fig:DRAG pulse}.
 
-        The DRAG parameter determines the amplitude of the derivative pulse, and must be accurately calibrated. It has been shown that the virtual excitation-induced phase error is present up to first order in a pi/2-pulse~\cite{lucero2010reduced}. In the Muxmon experiment the DRAG parameter has been calibrated using a method suggested by Reed~\cite{Reed}, by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, any phase error would result in these two measurement shifting away from the equator in opposite direction. The DRAG parameter is found by minimizing this difference.
+        The DRAG parameter determines the amplitude of the derivative pulse, and must be accurately calibrated. It has been shown that the virtual-excitation-induced phase error is present up to first order in a $\pi/2$ pulse~\cite{lucero2010reduced}. In the Muxmon experiment the DRAG parameter has been calibrated using a method suggested by Reed~\cite{Reed}, by measuring the difference in signal between an $X_{\pi} Y_{\pi/2}$ pulse and a $Y_{\pi} X_{\pi/2}$ pulse. Ideally for both pulses the final state should lie on the equator. However, any phase error would result in these two measurement shifting away from the equator in opposite direction. The DRAG parameter is found by minimizing this difference.
 
       \subsection{AllXY}
         \label{ssec:AllXY}
         There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground state, the final state of the second twelve combinations is the equator, and the final state of the last four combinations is the excited state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App.~\ref{ch:AllXY pulse table}.
 
-        The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
+        The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. Nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reed~\cite{Reed}.
 
-        The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be separately tuned for each of the two qubits. In Fig.~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as either the drive amplitude or DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
+        The Duplexer can modify the signal of each of its input-output port combinations individually. In the set-up used for the Muxmon experiment, both the drive amplitude and DRAG parameter can be tuned separately for each of the two qubits. In Fig.~\ref{fig:AllXY individual control} the AllXY results are shown for the top and bottom qubits, as either the drive amplitude or DRAG parameter of the top qubit is varied using the Duplexer. As can be seen there is no noticeable change in the AllXY of the bottom qubit, even though the top qubit's performance changes considerably. This shows that the Duplexer allows for individual drive amplitude and DRAG parameter control for each qubit, without affecting the other.
 
         \begin{figure}
         \centering
@@ -858,7 +857,7 @@
            \label{fig:AllXY DRAG top}
         \end{subfigure}
 
-        \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The AllXY sequences are placed on top of each other. The curves of the bottom qubit are placed on top of each other, and as can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
+        \caption[Two numerical solutions]{AllXY measurement of the top and bottom qubit as one parameter of the top qubit is varied. The parameter varied is (a) drive amplitude, (b) DRAG amplitude. The curves of the bottom qubit are placed on top of each other, and as can be seen the bottom qubit has no noticeable change in the AllXY measurements when the parameters of the top qubit are varied.}
         \label{fig:AllXY individual control}
         \end{figure}
 
@@ -867,13 +866,13 @@
 
     \section{Introduction}
       \label{sec:RB introduction}
-      When preparing the qubits for a quantum algorithm it is important to know what the performance is of the qubits, which can be characterized by its gate errors. One method has already been discussed in Sec.~\ref{ssec:AllXY}, namely the AllXY method. Although the AllXY is good at detecting specific errors, it is a crude method, which is unable to characterize gate errors with high accuracy. Another method used for gate characterization is quantum process tomography. Quantum process tomography measures the output density matrix resulting from the application of a specific to each of the system's basis states. Due to linear superposition of quantum states, the full effect of a gate is thereby characterized, including the different types of gate errors.
+      When preparing the qubits for a quantum algorithm it is important to know what the performance is of the qubits, which can be characterized by its gate errors. One method has already been discussed in Sec.~\ref{ssec:AllXY}, namely the AllXY method. Although the AllXY is good at detecting specific errors, it is a crude method, which is unable to characterize gate errors up to high accuracy. Another method used for gate characterization is quantum process tomography. Quantum process tomography measures the output density matrix resulting from the application of a specific to each of the system's basis states. Due to linear superposition of quantum states, the full effect of a gate is thereby characterized, including the different types of gate errors.
 
       Quantum process tomography suffers from some important drawbacks. The first is that it is sensitive to state preparation and measurement errors, which make it difficult to distinguish whether the gate errors originate from the actual gate being characterized, or from the gates used for preparation and measurement. Another related drawback is that it is unable to measure small gate errors, which are required for fault-tolerant quantum computing. Additionally, quantum process tomography suffers from an exponential scaling in measurement with the number of qubits. These drawbacks result in quantum process tomography being an inadequate gate characterization method for gates with small errors.
 
-      An alternative method to quantum process tomography is randomized benchmarking, described by Knill et al.~\cite{knill2008randomized}. It is based on repeated application of operations drawn randomly from a set of unitary operations, after which the qubit fidelity to the theoretical final state (in the absence of errors) is measured. This fidelity can then be translated to an average unitary operation error. The set of unitaries used in randomized benchmarking may be single-qubit or multi-qubit operations. Randomized benchmarking has the advantage that it is insensitive to state preparation and measurement errors, and is a relatively fast measurement, which is able to accurately determine the average unitary operation error. Compared to quantum process tomography the drawback of randomized benchmarking is that it does not provide additional information about the type of gate error. However, randomized benchmarking has been used to distinguish unitary gate errors, such as overrotations, from non-unitary gate errors, such as decoherence effects~\cite{sheldon2015characterizing}.
+      An alternative method to quantum process tomography is randomized benchmarking, described by Knill et al.~\cite{knill2008randomized}. It is based on repeated application of operations drawn randomly from a set of unitary operations, after which the qubit fidelity to the theoretical final state (in the absence of errors) is measured. This fidelity can then be translated to an average unitary operation error. The set of unitaries used in randomized benchmarking may be single-qubit or multi-qubit operations. Randomized benchmarking has the advantage that it is insensitive to state preparation and measurement errors, and is a relatively fast measurement, which is able to accurately determine the average unitary operation error. Compared to quantum process tomography, the drawback of randomized benchmarking is that it does not provide additional information about the type of gate error. However, randomized benchmarking has been used to distinguish unitary gate errors, such as overrotations, from non-unitary gate errors, such as decoherence effects~\cite{sheldon2015characterizing}.
 
-      Modifications of the randomized benchmarking protocol have resulted in a versatile range of applications. Interleaved randomized benchmarking~\cite{magesan2012efficient}, a variation to the randomized benchmarking method, is able to characterize the performance of a single gate or unitary operation. This is done by interleaving the specific operation with the randomized benchmarking unitary operations, resulting in a uniform sampling of the targeted operation. Another variation of the randomized benchmarking scheme has furthermore been used as a metrological tool to study phase noise at very low timescales~\cite{omalley2015qubit}. In a more recent work, Johnson et al.~\cite{johnson2015demonstration} demonstrated a quantum gate tomography scheme based on randomized benchmarking. This method has the advantage of being insensitive to state preparation and measurement errors.
+      Modifications of the randomized benchmarking protocol have resulted in a versatile range of applications. Interleaved randomized benchmarking~\cite{magesan2012efficient}, a variation to the randomized benchmarking method, is able to characterize the performance of a single gate or other unitary operation. This is done by interleaving the specific operation with the randomized benchmarking unitary operations, resulting in a uniform sampling of the targeted operation. Another variation of the randomized benchmarking scheme has furthermore been used as a metrological tool to study phase noise at very low timescales~\cite{omalley2015qubit}. In a more recent work, Johnson et al.~\cite{johnson2015demonstration} demonstrated a quantum gate tomography scheme based on randomized benchmarking. This method has the advantage of being insensitive to state preparation and measurement errors.
 
       In the Muxmon experiment randomized benchmarking is used to characterize the performance of the qubits when using the Duplexer, and using selective broadcasting. The set of unitary operations is the single-qubit Clifford group, which will be discussed in Sec.~\ref{sec:Clifford group}.
     \section{Clifford group}
@@ -887,7 +886,7 @@
         \label{fig:Clifford octahedron}
       \end{figure}
 
-      The single qubit Pauli group consists of the two-dimensional identity operator and the three Pauli matrices. The $n$ qubit Pauli group is generated by the tensor product of $n$ single qubit Pauli groups. The $n$ qubit Clifford group $\mathpzc{C}_n$ is equal to the set of unitary transformations on the $n$ qubit Pauli group up to a global phase. The $n$ qubit Clifford group $\mathpzc{C}_n$ is generated by $\{H_i, P_i, CNOT_{ij}\} \forall i, j \in (1, \dots, n)$, where:
+      The single-qubit Pauli group consists of the two-dimensional identity operator and the three Pauli matrices. The $n$ qubit Pauli group is generated by the tensor product of $n$ single-qubit Pauli groups. The $n$-qubit Clifford group $\mathpzc{C}_n$ is equal to the set of unitary transformations on the $n$-qubit Pauli group up to a global phase. The $n$-qubit Clifford group $\mathpzc{C}_n$ is generated by $\{H_i, P_i, \text{CNOT}_{ij}\} \forall i, j \in (1, \dots, n)$, where
 
       \begin{equation}
         H =
@@ -901,20 +900,20 @@
           1 & 0 \\
           0 & i
         \end{pmatrix}, \qquad
-        CNOT =
+        \text{CNOT} =
         \begin{pmatrix}
           1 & 0 & 0 & 0 \\
           0 & 1 & 0 & 0 \\
           0 & 0 & 0 & 1 \\
           0 & 0 & 1 & 0
-        \end{pmatrix}
+        \end{pmatrix}.
       \end{equation}
 
-      The single qubit Clifford group $\mathpzc{C}_1$ can be visualized using an octahedron in the Bloch sphere, as shown in Fig.~\ref{fig:Clifford octahedron}. Each Clifford in $\mathpzc{C}_1$ corresponds to a distinct rotation of the octahedron, where the six cardinal states are mapped onto themselves. If one sets the constraint that the state $\ket{0}$ is mapped to itself, four distinct rotations are possible. Since the state $\ket{0}$ can be mapped to each of the six cardinal states, there are $6 \times 4=24$ distinct rotations, and hence $24$ Cliffords in the single qubit Clifford group $\mathpzc{C}_1$.
+      The single qubit Clifford group $\mathpzc{C}_1$ can be visualized using an octahedron in the Bloch sphere, as shown in Fig.~\ref{fig:Clifford octahedron}. Each Clifford in $\mathpzc{C}_1$ corresponds to a distinct rotation of the octahedron, where the six cardinal states are mapped onto themselves. If one sets the constraint that the state $\ket{0}$ is mapped to itself, four distinct rotations are possible. Since the state $\ket{0}$ can be mapped to each of the six cardinal states, there are $6 \times 4=24$ distinct rotations, and hence $24$ Cliffords in the single-qubit Clifford group $\mathpzc{C}_1$.
 
-      Each of the Cliffords in the single qubit Clifford group $\mathpzc{C}_1$ can be decomposed into rotations along the X and Y axis, as is shown in App.~\ref{ssec:Clifford gate decomposition}. Each Clifford can be decomposed into a minimum of zero (identity) gates and a maximum of three gates. If one includes the identity as a gate, a Clifford requires on average 1.875 gates.
+      Each of the Cliffords in the single-qubit Clifford group $\mathpzc{C}_1$ can be decomposed into rotations along the X and Y axis, as is shown in App.~\ref{ssec:Clifford gate decomposition}. Each Clifford can be decomposed into a minimum of zero gates (identity) and a maximum of three gates. If one includes the identity as a gate, a Clifford requires on average 1.875 gates.
 
-      The Clifford group does not form a universal set of gates. This is because the rotations only map cardinal states onto themselves. Since single qubit gates and CNOT is universal~\cite{nielsen2010quantum}, the Clifford group combined with the T-gate ($\pi/4$ rotation) constitute a set of universal quantum gates.
+      The Clifford group does not form a universal set of gates. This is because the rotations only map cardinal states onto themselves. Since single-qubit gates and CNOT is universal~\cite{nielsen2010quantum}, the Clifford group combined with the T-gate ($\pi/4$ rotation) constitute a set of universal quantum gates.
 
     \section{The randomized benchmarking protocol}
       \label{sec:randomized benchmarking protocol}
@@ -931,41 +930,38 @@
 
       Randomized benchmarking is a method to characterize the performance on qubits. It is based on repeated application of operations on the system, and measuring the fidelity to the ideal final state. The operations are randomly chosen from a set of unitary operations.
 
-      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment, depicted in Fig.~\ref{fig:RB schematic}, is as follows:
+      In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single-qubit Clifford group. The randomized benchmarking protocol used in this experiment, depicted in Fig.~\ref{fig:RB schematic}, is as follows:
 
       \begin{enumerate}
-        \item Initialize the qubit in the ground state
-        \item Apply $n$ consecutive Cliffords $\left(C_1, \dots, C_n\right)$, where $C_i \in \mathpzc{C}_1 \; \forall \; i \in \left[1, \dots, n\right]$
-        \item apply final inverting Clifford $C_\text{inv}=\left( C_n \dots C_1 \right)^{-1}$
-        \item Measure the state of the qubit
+        \item Initialize the qubit in the ground state;
+        \item Apply $n$ consecutive Cliffords $\left(C_1, \dots, C_n\right)$, where $C_i \in \mathpzc{C}_1 \; \forall \; i \in \left[1, \dots, n\right]$;
+        \item apply final inverting Clifford $C_\text{inv}=\left( C_n \dots C_1 \right)^{-1}$;
+        \item Measure the state of the qubit.
       \end{enumerate}
 
-      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground state. However, gate errors and decoherence result in the final state having a nonzero population in the excited state. The final population in the ground state $P_0$ decreases exponentially as the number of Cliffords $n$ is increased. In the limiting case where all information about the qubit is lost the qubit has equal population in the ground and excited state. The final ground-state population follows an exponential curve  given by~\cite{knill2008randomized}:
+      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground state. However, gate errors and decoherence result in the final state having a nonzero population in the excited state. The final population in the ground state $P_0$ decreases exponentially as the number of Cliffords $n$ is increased. In the limiting case where all information about the qubit is lost the qubit has equal population in the ground and excited state. The final ground-state population follows an exponential curve  given by~\cite{knill2008randomized}
 
       \begin{equation}
-        P_0= \frac{1}{2} p^n + \frac{1}{2}
+        P_0= \frac{1}{2} p^n + \frac{1}{2},
         \label{eq:RB exponential decay}
       \end{equation}
-
-      where $p$ is the decay parameter, related to the average fidelity per operation $F_0$ by~\cite{magesan2011scalable}:
+      where $p$ is the decay parameter, related to the average fidelity per operation $F_0$ by~\cite{magesan2011scalable}
 
       \begin{equation}
-        F_o = \frac{1+p}{2}
+        F_o = \frac{1+p}{2}.
+      \end{equation}
+      With knowledge of the average number of gates $n_g$ per operation, the average fidelity per operation can be translated to an average fidelity per gate $F_g$ via
+
+      \begin{equation}
+        F_g = F_o^{1/n_g}.
       \end{equation}
 
-      With knowledge of the average number of gates $n_g$ per operation, the average fidelity per operation can be translated to an average fidelity per gate $F_g$ via:
+      Qubit relaxation places an upper limit on the number of gates that can be performed, and therefore on the fidelity per gate. This upper limit $F_\text{max}$ is given by~\cite{T1_derivation}
 
       \begin{equation}
-        F_g = F_o^{1/n_g}
-      \end{equation}
-
-      Qubit relaxation places an upper limit on the number of gates that can be performed, and therefore on the fidelity per gate. This upper limit $F_\text{max}$ is given by~\cite{T1_derivation}:
-
-      \begin{equation}
-        F_\text{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right)
+        F_\text{max} = \frac{1}{6}\left(3 + 2 e^{-t_g/2 T_1} + e^{-t_g/T_1}\right),
         \label{eq:RB T1 fidelity limit}
       \end{equation}
-
       where $t_g$ is the duration per gate, including any buffer between successive gates. As is expected this upper limit increases with shorter gates.
 
       \begin{figure}[h]
@@ -977,8 +973,8 @@
 
       To characterize the shape of the exponential decay in randomized benchmarking measurements, the successive values of $n$ in a measurement are separated by an exponentially increasing amount. Each set of random Cliffords is known as a seed. The randomized benchmarking results using a single seed are shown in Fig.~\ref{fig:RB single seed}. Twenty points are chosen between $n=0$ and $n=800$ Clifford operations. As can be seen there is a clear exponential decay, in agreement with Eq.~\ref{eq:RB exponential decay}. However, upon closer inspection the curve does not have a perfect exponential shape. This deviation is not due to insufficient averaging, but due to the fact that the Cliffords do not all have the same number of gates. A Clifford is on average composed of $1.875$ gates, but may be composed of anywhere between $1$ and $3$ gates. The result is that in a single seed some segments contain on average more than $1.875$ gates per Clifford, while other contain less. For a fixed error per gate, this results in fidelities deviating from the fidelity corresponding to exactly $1.875$ gates per Clifford. To obtain an accurate estimate for the exponential decay rate, multiple seeds must be used to average out the random fluctuations from the average gate per Clifford.
 
-    \section{Single qubit randomized benchmarking}
-      \label{sec:Single qubit randomized benchmarking}
+    \section{Single-qubit randomized benchmarking}
+      \label{sec:Single-qubit randomized benchmarking}
       \subsection{Driving a single qubit versus driving both qubits}
         \label{ssec:Driving a single qubit versus driving both qubits}
 
@@ -1002,13 +998,13 @@
 
         In Fig.~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. One would expect that the measured cross-driving would place a lower bound on the qubit gate error ($0.57\%$ when driving the bottom qubit via the top qubit drive line, and $0.23\%$ when driving the top qubit via the bottom qubit drive line). However this does not seem to be the case. One possible explanation is that the transmon is a nonlinear system, and since the cross-driving measurements were performed at a high power, the cross-driving at low power might be significantly less.
 
-        Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Sec.~\ref{ssec:cross-driving}, indicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equal to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
+        Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Sec.~\ref{ssec:cross driving}, indicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equal to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
 
       \subsection{Second-excited-state leakage}
         \label{ssec:Second-excited-state leakage}
         The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being found with equal probability in the ground state and in the excited state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second-excited state, which would shift the measured signal. The term qubit is therefore strictly speaking not correct.
 
-        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final pi pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited state.
+        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final $\pi$ pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited state.
 
         If we assume there is no further leakage into states higher than the second-excited state, these two measurements result in the following set of equations:
 
@@ -1024,7 +1020,7 @@
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/RB_normal_state_populations.png}
-          \caption{The populations of the first three states of the qubit during randomized benchmarking. Populations are extracted by comparing randomized benchmarking results with and without a final pi pulse (see App.~\ref{ssec:Determining population in three states}). As can be seen, both qubits suffer from a small amount of leakage to the second-state. The leakage rate for the top qubit is higher than for the bottom qubit.}
+          \caption{The populations of the first three states of the qubit during randomized benchmarking. Populations are extracted by comparing randomized benchmarking results with and without a final $\pi$ pulse (see App.~\ref{ssec:Determining population in three states}). As can be seen, both qubits suffer from a small amount of leakage to the second-state. The leakage rate for the top qubit is higher than for the bottom qubit.}
           \label{fig:RB normal state populations}
         \end{figure}
 
@@ -1123,7 +1119,7 @@
           \begin{figure}[tb]
             \centering
             \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png}
-            \caption{State populations using three different two qubit randomized benchmarking sequences. Number of Cliffords correspond to each qubit. A total of $50$ seeds was used. The measurements were performed with and without a final pi pulse, from which the populations of the first thee states of the qubit were determined.}
+            \caption{State populations using three different two qubit randomized benchmarking sequences. Number of Cliffords correspond to each qubit. A total of $50$ seeds was used. The measurements were performed with and without a final $\pi$ pulse, from which the populations of the first thee states of the qubit were determined.}
             \label{fig:RB 2Q state populations}
           \end{figure}
 
@@ -1145,7 +1141,7 @@
             \label{tab:RB 2Q converted gate fidelities}
           \end{table}
 
-          The three different two qubit randomized benchmarking methods have been performed for a total of $50$ seeds. Up to $n=400$ Cliffords per qubit were used, and the pulse length was kept at \SI{16}{\nano \second} with a \SI{4}{\nano \second} buffer between pulses. By performing the measurements both with and without a final pi pulse, the populations of the first three states of the qubit have been determined (see App.~\ref{ssec:Determining population in three states}). The results are shown in Fig.~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$.
+          The three different two qubit randomized benchmarking methods have been performed for a total of $50$ seeds. Up to $n=400$ Cliffords per qubit were used, and the pulse length was kept at \SI{16}{\nano \second} with a \SI{4}{\nano \second} buffer between pulses. By performing the measurements both with and without a final $\pi$ pulse, the populations of the first three states of the qubit have been determined (see App.~\ref{ssec:Determining population in three states}). The results are shown in Fig.~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$.
 
           The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This comparison is not entirely fair, as idle gates (when only the other qubit is being pulsed) are also counted as gates. Nevertheless, it can be concluded that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit surface code fault tolerant threshold.
 

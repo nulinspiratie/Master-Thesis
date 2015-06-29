@@ -46,17 +46,17 @@
 \contentsline {subsubsection}{\numberline {6.3.3.3}Fast frequency qubit dephasing: Echo}{46}
 \contentsline {subsection}{\numberline {6.3.4}Second-excited state}{46}
 \contentsline {section}{\numberline {6.4}Exploring Frequency re-use}{47}
-\contentsline {subsection}{\numberline {6.4.1}Cross-coupling}{49}
-\contentsline {subsection}{\numberline {6.4.2}Cross-driving}{49}
+\contentsline {subsection}{\numberline {6.4.1}Cross coupling}{49}
+\contentsline {subsection}{\numberline {6.4.2}Cross driving}{49}
 \contentsline {chapter}{\numberline {7}Calibration routines}{52}
 \contentsline {section}{\numberline {7.1}Instrument calibrations}{52}
-\contentsline {subsection}{\numberline {7.1.1}IQ mixer calibration}{52}
+\contentsline {subsection}{\numberline {7.1.1}IQ-mixer calibration}{52}
 \contentsline {subsection}{\numberline {7.1.2}Duplexer phase calibration}{53}
 \contentsline {section}{\numberline {7.2}Qubit calibrations}{54}
 \contentsline {subsection}{\numberline {7.2.1}Accurate frequency estimation}{54}
-\contentsline {subsection}{\numberline {7.2.2}Multiplexed readout calibration}{55}
-\contentsline {subsection}{\numberline {7.2.3}Accurate drive amplitude calibration}{56}
-\contentsline {subsection}{\numberline {7.2.4}DRAG parameter calibration}{57}
+\contentsline {subsection}{\numberline {7.2.2}Multiplexed-readout calibration}{55}
+\contentsline {subsection}{\numberline {7.2.3}Accurate drive-amplitude calibration}{56}
+\contentsline {subsection}{\numberline {7.2.4}DRAG-parameter calibration}{57}
 \contentsline {subsection}{\numberline {7.2.5}AllXY}{57}
 \contentsline {chapter}{\numberline {8}Randomized benchmarking}{60}
 \contentsline {section}{\numberline {8.1}Introduction}{60}
