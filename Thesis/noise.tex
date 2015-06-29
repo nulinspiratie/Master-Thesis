@@ -17,9 +17,9 @@
 
 When performing measurements one is faced with the reality that no component is ideal. When a signal passes through the different parts of a set-up, noise is constantly being added. Noise is the term given for all the random fluctuations that are added to the signal. These fluctuations are the cumulative result of several noise source contributions.
 
-Thermal noise is one of the most common sources of noise. It is the result of the random thermal fluctuations of electrons. It is an example of frequency-independent noise, also known as white noise. Noise sources can also be frequency-dependent, such as TLS, as discussed in Chapter~\ref{part:DRIE}. This is an example of $1/f$-noise: the amount of noise added increases with decreasing frequency. In fact, truly frequency-independent noise does not exist, as even white noise has been observed to decrease at extremely high frequencies (\SI{\sim e15}{\hertz}). At these frequencies a quantum correction needs to be added \cite[p50]{vasilescu2006electronic}.
+Thermal noise is one of the most common sources of noise. It is the result of the random thermal fluctuations of electrons. It is an example of frequency-independent noise, also known as white noise. Noise sources can also be frequency-dependent, such as TLS, as discussed in Ch.~\ref{part:DRIE}. This is an example of $1/f$-noise: the amount of noise added increases with decreasing frequency. In fact, truly frequency-independent noise does not exist, as even white noise has been observed to decrease at extremely high frequencies (\SI{\sim e15}{\hertz}). At these frequencies a quantum correction needs to be added \cite[p50]{vasilescu2006electronic}.
 
-When performing measurements one important question to ask is how much noise is being contributed to the signal. In this chapter a model is presented for the general set-up used for measuring superconducting resonators and qubits. Using this model it is possible to characterize the amount of noise by determining its associated noise temperature. Finally, this model is applied to the set-up used to characterize the resonators presented in Chapter~\ref{part:DRIE}.
+When performing measurements one important question to ask is how much noise is being contributed to the signal. In this chapter a model is presented for the general set-up used for measuring superconducting resonators and qubits. Using this model it is possible to characterize the amount of noise by determining its associated noise temperature. Finally, this model is applied to the set-up used to characterize the resonators presented in Ch.~\ref{part:DRIE}.
 
 \section{Characterizing noise}
 
@@ -78,7 +78,7 @@ In this equation $\Delta f$ is the noise bandwidth. This is the bandwidth over w
 \end{figure}
 
 
-As shown in the schematic in Figure~\ref{fig:noise model}, we can model our set-up as a combination of four elements:
+As shown in the schematic in Fig.~\ref{fig:noise model}, we can model our set-up as a combination of four elements:
 
 \begin{enumerate}
     \item A noise source.
@@ -106,7 +106,7 @@ According to Nyquist's theorem \cite[p47]{vasilescu2006electronic}, if the syste
 
 In this equation $\Delta f$ is the bandwidth over which the noise is integrated, $k_B$ is the Boltzmann constant, $T$ is the noise temperature of the noise source, and $R$ is the impedance of the system. We see that the noise added depends linearly on the bandwidth over which is integrated.
 
-Combining Equations~\ref{eqn:noise spectral density definition} and \ref{eqn:noise rms voltage}, the noise power spectral density $S_{\vn}$ can be rewritten as:
+Combining Eqs.~\ref{eqn:noise spectral density definition} and~\ref{eqn:noise rms voltage}, the noise power spectral density $S_{\vn}$ can be rewritten as:
 
 \begin{equation}
 S = \frac{\vsq}{\Delta f} = 4 k_B T R
@@ -124,7 +124,7 @@ During the amplification stage both the signal and the noise is amplified by the
     \label{eqn:gain}
 \end{equation}
 
-According to the maximum power transfer theorem, the maximum power transfer between a source and load occurs when the impedances of source and load are matched, in which case half of the power is transferred. From this it follows that in the amplification process half of the signal is dissipated. However, as $G$ is defined as the ratio between $\text{v}_\text{out}$ and $\text{v}_\text{in}$ (Equation~\ref{eqn:gain}), the factor $\frac{1}{2}$ is included in $G$.
+According to the maximum power transfer theorem, the maximum power transfer between a source and load occurs when the impedances of source and load are matched, in which case half of the power is transferred. From this it follows that in the amplification process half of the signal is dissipated. However, as $G$ is defined as the ratio between $\text{v}_\text{out}$ and $\text{v}_\text{in}$ (see Eq.~\ref{eqn:gain}), the factor $\frac{1}{2}$ is included in $G$.
 
 During amplification not only the signal is amplified with gain G: the noise is amplified by the same amount. Defining the noise power spectral density before amplification as $S^\text{in}$, and after amplification as $S^\text{out}$, the following relation holds:
 
@@ -133,7 +133,7 @@ During amplification not only the signal is amplified with gain G: the noise is 
     \label{eqn:noise power spectral density amplification}
 \end{equation}
 
-Note that in Equation~\ref{eqn:noise power spectral density amplification}, the gain $G$ is squared. This is due to the fact that the noise power spectral density depends quadratically on the root-mean square noise voltage (Equation~\ref{eqn:noise spectral density definition}).
+Note that in Eq.~\ref{eqn:noise power spectral density amplification}, the gain $G$ is squared. This is due to the fact that the noise power spectral density depends quadratically on the root-mean square noise voltage (Eq.~\ref{eqn:noise spectral density definition}).
 
 In our actual set-up the amplification occurs in multiple stages. Aside from amplifying the signal and its noise, at each stage additional noise, originating from the amplifier itself, is added as well. This added noise is then also amplified in the next amplification stage.   Therefore it is always best to have the amplifier with highest gain and lowest noise temperature as the first amplifier in the chain. For more information see Friis formula \cite[p103]{vasilescu2006electronic}.
 
@@ -149,7 +149,7 @@ After amplification the frequency $\omega$ of the signal is still in the GHz ran
         \label{eqn:mixer}
 \end{align}
 
-As can be seen from Equation~\ref{eqn:mixer}, the output signal contains both the sum and the difference of the two signals. However, as the sum of both frequencies is in the GHz range, it can be filtered out using a low-pass filter, leaving only the downconverted signal, which is the result of the difference between the two frequencies. Note that the amplitude of the signal is reduced by a factor two. The noise amplitude is also reduced by a factor 2. Furthermore, in the case of a homodyne set-up, the difference signal is simply a DC signal ($\Delta \omega = 0$), while in the case of heterodyne the signal still contains a slow frequency $\Delta \omega$. For simplification we assume our set-up to be a homodyne set-up, although the result is similar in the case of a heterodyne set-up.
+As can be seen from Eq.~\ref{eqn:mixer}, the output signal contains both the sum and the difference of the two signals. However, as the sum of both frequencies is in the GHz range, it can be filtered out using a low-pass filter, leaving only the downconverted signal, which is the result of the difference between the two frequencies. Note that the amplitude of the signal is reduced by a factor two. The noise amplitude is also reduced by a factor 2. Furthermore, in the case of a homodyne set-up, the difference signal is simply a DC signal ($\Delta \omega = 0$), while in the case of heterodyne the signal still contains a slow frequency $\Delta \omega$. For simplification we assume our set-up to be a homodyne set-up, although the result is similar in the case of a heterodyne set-up.
 
 \subsection{Low-pass filtering}
 
@@ -191,9 +191,9 @@ Note that the factor $1/4$ is because the amplitude is lowered by a factor of $2
     \label{fig:Noise temperature}
 \end{figure}
 
-Using the Rhode \& Schwarz ZVM vector network analyzer, The transmission has been measured for $160$ equidistant frequencies in the range \SIrange{1}{9}{\giga \hertz}. For each frequency a total of $2001$ points was measured with an IF bandwidth $\Delta f = $ \SI{300}{\hertz}. From these measurements the signal-to-noise ratio has been determined for each frequency. With knowledge of the SNR, the noise temperature has then been determined as a function of frequency using Equation~\ref{eqn:noise temperature} . The result is shown in Figure~\ref{fig:Noise temperature}.
+Using the Rhode \& Schwarz ZVM vector network analyzer, The transmission has been measured for $160$ equidistant frequencies in the range \SIrange{1}{9}{\giga \hertz}. For each frequency a total of $2001$ points was measured with an IF bandwidth $\Delta f = $ \SI{300}{\hertz}. From these measurements the signal-to-noise ratio has been determined for each frequency. With knowledge of the SNR, the noise temperature has then been determined as a function of frequency using Eq.~\ref{eqn:noise temperature} . The result is shown in Fig.~\ref{fig:Noise temperature}.
 
-From Figure~\ref{fig:Noise temperature} it is clear that the noise temperature is highly temperature-dependent. In the frequency range \SIrange{4}{8}{\giga \hertz} the noise temperature is quite low, never reaching above \SI{10}{\kelvin}. This is exactly the bandwidth of the cryogenic low-noise amplifier by Low Noise Factory, which is the first amplifier in the amplification chain. From the specifications of the amplifier, the noise temperature of the amplifier has been calculated at an ambient temperature of \SI{8}{\kelvin}, and equals roughly \SI{4}{\kelvin} for the entire bandwidth. Comparing the amplifier specifications with Figure~\ref{fig:Noise temperature}, it is likely that in the frequency range \SIrange{4}{8}{\giga \hertz} the first amplifier is the component contributing most to the total noise temperature.
+From Fig.~\ref{fig:Noise temperature} it is clear that the noise temperature is highly temperature-dependent. In the frequency range \SIrange{4}{8}{\giga \hertz} the noise temperature is quite low, never reaching above \SI{10}{\kelvin}. This is exactly the bandwidth of the cryogenic low-noise amplifier by Low Noise Factory, which is the first amplifier in the amplification chain. From the specifications of the amplifier, the noise temperature of the amplifier has been calculated at an ambient temperature of \SI{8}{\kelvin}, and equals roughly \SI{4}{\kelvin} for the entire bandwidth. Comparing the amplifier specifications with Fig.~\ref{fig:Noise temperature}, it is likely that in the frequency range \SIrange{4}{8}{\giga \hertz} the first amplifier is the component contributing most to the total noise temperature.
 
 Outside the \SIrange{4}{8}{\giga \hertz} frequency band, however, the noise temperature rapidly increases. This is partly due to the frequency lying outside of the bandwidth of the amplifier, in which case the amplification will be lower. However, this is not an adequate explanation for the fact that the noise temperature increases to several hundred thousand Kelvin. The reason for this unrealistic noise temperature is that in our model we did not take into account the noise added by components after the amplifier. While the gain of the amplifier decreases outside its bandwidth, the components after the amplification will still add the same amount of noise. When the gain decreases by a significant amount, the relative contribution of these post-amplification noise sources will increase. Furthermore the assumption that the noise spectrum is white is no longer correct at low frequencies, where $1/f$ noise starts to contribute.
 
@@ -204,7 +204,7 @@ Outside the \SIrange{4}{8}{\giga \hertz} frequency band, however, the noise temp
     \label{fig:noise temperature 2GHz}
 \end{figure}
 
-From Figure~\ref{fig:Noise temperature} it can be seen that the noise temperature can vary by a large amount between consecutive points. To determine whether this variation is due to a large uncertainty, or due to the noise temperature actually fluctuating strongly with varying frequency, a more detailed scan has been performed in the frequency region \SIrange{2.6}{2.9}{\giga \hertz}, in which one resonator has a resonance frequency. The result is shown in Figure~\ref{fig:noise temperature 2GHz}. As the curve of the detailed scan follows the curve of the coarse scan pretty closely, it can be concluded that the noise temperature of the system in fact fluctuates quite strongly with varying frequency.
+From Fig.~\ref{fig:Noise temperature} it can be seen that the noise temperature can vary by a large amount between consecutive points. To determine whether this variation is due to a large uncertainty, or due to the noise temperature actually fluctuating strongly with varying frequency, a more detailed scan has been performed in the frequency region \SIrange{2.6}{2.9}{\giga \hertz}, in which one resonator has a resonance frequency. The result is shown in Fig.~\ref{fig:noise temperature 2GHz}. As the curve of the detailed scan follows the curve of the coarse scan pretty closely, it can be concluded that the noise temperature of the system in fact fluctuates quite strongly with varying frequency.
 
 Another point of interest is that the resonance frequency of the resonator lies near the local minimum of the noise temperature in that region. This is quite a stroke of luck, as a slightly higher or lower frequency would have resulted in a much higher noise temperature.
 
