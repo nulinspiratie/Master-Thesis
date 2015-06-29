@@ -124,7 +124,7 @@
 
       Another source of dissipation for resonators is due to quasiparticles being present in the superconducting layer. When a Cooper-pair is broken up, Bogoliubov quasiparticles are formed \cite[p16]{Barends}. Once formed, the quasiparticles have a finite lifetime, depending on the temperature of the system. These quasiparticles can have either electron-like or hole-like properties. They are a source of dissipation for resonators, since they are non-superconducting and therefore cause the surface impedance to be slightly resistive \cite[p18]{Mazin}.
 
-      The breaking up of Cooper-pairs is due to excitations, either thermal, or due to photon absorption. Therefore an increase in temperature or an increase in photon density will result in a higher density of quasiparticles. The quasiparticle density increases exponentially with increasing temperature \cite[p44]{Mazin}. However, evidence suggests that at low temperatures an excess of quasiparticles is present, the origins of which remain unclear~\cite{de2011number}.
+      The breaking up of Cooper-pairs is due to excitations, either thermal, or due to photon absorption. Therefore an increase in temperature or in photon density will result in a higher density of quasiparticles. The quasiparticle density increases exponentially with increasing temperature \cite[p44]{Mazin}. However, evidence suggests that at low temperatures an excess of quasiparticles is present, the origins of which remain unclear~\cite{de2011number}.
 
       % \begin{itemize}
       %     \item Quasiparticle excitation energy $E = \xi^2 + \Delta ^2$,
@@ -144,14 +144,14 @@
 
     \subsubsection{Radiation}
 
-      The resonator effectively acts as an antenna, where ideally the signal is contained by the neighbouring ground. However, this is not entirely the case, and so photons will also radiate out of the guided modes. The amount of energy loss due to radiation is directly related to the geometry of the resonator through \cite{sage2011study,Mazin}:
+      The resonator effectively acts as an antenna, where ideally the signal is contained by the neighbouring ground. However, this is not entirely the case, and so photons will also radiate out of the guided modes. The amount of energy loss due to radiation is directly related to the geometry of the resonator through \cite{sage2011study,Mazin}
 
       \begin{equation}
-          Q_\text{rad} = \alpha \left( \frac{L}{s + w}\right)^{n_r}
+          Q_\text{rad} = \alpha \left( \frac{L}{s + w}\right)^{n_r}.
           \label{Qrad}
       \end{equation}
 
-      As shown in Fig.~\ref{fig:CPW}, $s$ is the distance between the center conductor and ground, $w$ is the width of the conductor, and $L$ is the length of the resonator. The parameter $\alpha$ depends on properties such as impedance and the dielectric constant of the substrate, and $n_r$ depends on the shape of the resonator, and is equal to 2 in the case of a straight resonator. From Formula \ref{Qrad} it is clear that a decrease of the center conductor width or the distance between strips leads to an increase in $Q_\text{rad}$. However, with a decrease of either of the two parameters, the field strength close to the resonator becomes higher. If the TLS are not saturated (i.e. low power and temperature), this will increase the amount of energy loss through TLS. Therefore it is not necessarily advantageous to minimize $s$ and $w$.
+      As shown in Fig.~\ref{fig:CPW}, $s$ is the distance between the center conductor and ground, $w$ is the width of the conductor, and $L$ is the length of the resonator. The parameter $\alpha$ depends on properties such as impedance and the dielectric constant of the substrate, and $n_r$ depends on the shape of the resonator, and is equal to 2 in the case of a straight resonator. From Eq.~\ref{Qrad} it is clear that a decrease of the center conductor width or the distance between strips leads to an increase in $Q_\text{rad}$. However, with a decrease of either of the two parameters, the field strength close to the resonator becomes higher. If the TLS are not saturated (i.e. low power and temperature), this will increase the amount of energy loss through TLS. Therefore it is not necessarily advantageous to minimize $s$ and $w$.
 
       Radiation loss becomes the dominant source of dissipation at high powers and/or temperatures, but otherwise usually is not the limiting factor. Since measurements relevant for quantum computing are usually operated at low power and temperature, this source of energy loss is usually less important than other sources, such as TLS dissipation.
 
@@ -159,7 +159,7 @@
 
       When a sample is cooled down to the superconducting state there may still be a small, but non-negligible magnetic field present. The presence of a magnetic field can cause vortices to appear in superconducting materials. These vortices have a non-superconducting core. Current passing through superconducting material exerts a Lorentz force on vortices. For a resonator being driven on resonance, this AC current results in the vortices near the resonator experiencing a dissipative oscillatory motion \cite{plourde2009microwave}.
 
-      It is interesting to note that the presence of vortices does not necessarily lead to a lower internal quality factor. The influence of a vortex on a resonator depends on its location. As reported by Nsanzineza et al.~\cite{nsanzineza2014trapping}, a vortex close to a current antinode of a resonator, can result in a significant loss of the quality factor. A vortex close to a current node, however, may even increase the quality factor of the resonator. They attribute this increase in quality factor to quasiparticles, which would otherwise lead to dissipation, being trapped in the vortex's normal core.
+      It is interesting to note that the presence of vortices does not necessarily lead to a lower internal quality factor. The influence of a vortex on a resonator depends on its location. As reported by Nsanzineza et al.~\cite{nsanzineza2014trapping}, a vortex close to a current antinode of a resonator, can result in a significant loss of the quality factor. A vortex close to a current node, however, may even increase the quality factor of the resonator. They attribute this increase in quality factor to quasiparticles being trapped in the vortex's normal core, which would otherwise lead to dissipation.
 
 
       % \begin{itemize}
@@ -174,7 +174,7 @@
 
   \subsubsection{Surface treatment}
 
-  Previous research has determined that the TLS that are the main source of loss in resonators are mostly present at the surfaces \cite{gao2008experimental}. These defects may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the substrate dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
+  Previous research has determined that the TLS that are the main source of loss in resonators are predominantly present at the interfaces \cite{gao2008experimental}. These defects may reside at the interface between metal and dielectric, or between the dielectric and vacuum, or possibly between metal and vacuum (depending on the type of metal used). One explanation for TLS being present is the presence of an amorphous oxide layer at the interfaces. These oxides may act as TLS. During deposition of the metal on the substrate dielectric, this oxide layer can become trapped between the two interfaces. For a silicon dielectric, this oxide layer can be removed by shortly treating the sample with hydrophluoric acid. This process is also known as an 'HF dip'.
 
   Aside from the HF dip, additional surface treatment can be applied. For the resonators measured in this thesis and published in APL~\cite{bruno2015reducing}, before depositing the metal on the substrate an additional exposure to hexamethyldisilazane (HMDS) was applied. The reason for this additional step is that there is a lattice mismatch between the metal and substrate. The intermediate layer of HMDS, shown in Fig.~\ref{fig:DRIE schematic}b, can possibly mediate this lattice mismatch (see \cite{bruno2015reducing} for more information).
 
