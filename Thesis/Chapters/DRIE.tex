@@ -47,7 +47,7 @@
 
     Superconducting coplanar waveguides (CPW) microwave resonators have versatile applications. They are used in single-photon detectors~\cite{tanner2010enhanced}, quantum-limited Josephson parametric amplifiers~\cite{castellanos2008amplification}, and in the context of circuit QED are used for memory storage, readout, and as interconnects. Coplanar waveguides consist of a long central conducting strip, with on both sides a neighbouring ground. The center conductor of width $w$ is separated from the neighbouring grounds by a fixed gap $s$.
 
-    For qubit readout one end is usually capacitively coupled to a feedline and has an open end, while the other end can either be open or shorted. This determines whether the current has a node or an anti-node at that end. In the case of a shorted end, current has an anti-node at that end, resulting in a quarter wave resonator. This means that the wavelength of the fundamental mode fits a quarter times into the resonator. In the case of an open end, the current has a node at that end, resulting in a half wave resonator.
+    For qubit readout one end is usually capacitively coupled to a feedline and has an open end, while the other end can either be open or shorted. This determines whether the current has a node or an anti-node at that end. In the case of a shorted end, current has an anti-node at that end, resulting in a quarter-wave resonator. This means that the wavelength of the fundamental mode fits a quarter times into the resonator. In the case of an open end, the current has a node at that end, resulting in a half-wave resonator.
 
 
   \section{Quality factor}
@@ -56,53 +56,49 @@
     % Find where it says that loss tangents can be added to each other
     % Include the fact that participation ratios are needed for adding quality factors of loss channels
     % Explain why one wants a quality factor that is as high as possible
-    The quality of a resonator can be quantified through its quality factor. Generally speaking, the quality factor of a resonator determines the ratio between energy stored in a resonator and the energy dissipated from the resonator. For cQED resonators this corresponds to the rate at which photons leak out of the resonator. A high quality factor corresponds to a low dissipation rate.
+    The quality of a resonator can be quantified by its quality factor. Generally speaking, the quality factor of a resonator determines the ratio between energy stored in a resonator and the energy dissipated from the resonator. For cQED resonators this corresponds to the rate at which photons leak out of the resonator. A high quality factor corresponds to a low dissipation rate.
 
     The quality factor can also be defined in two different ways \cite[pp.23-24]{Mazin}:
 
     \begin{equation}
-        Q = \omega_r \tau_1 = \omega_r / \Delta \omega
+        Q = \omega_r \tau_1 = \omega_r / \Delta \omega.
         \label{eqn:quality factor definition}
     \end{equation}
-    Here $\omega_r$ is the resonance frequency of the resonator, $\Delta \omega$ is the full width at half maximum, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
+    Here, $\omega_r$ is the resonance frequency of the resonator, $\Delta \omega$ is the full width at half maximum, and $\tau_1$ is the decay time of the resonator. The decay time is the time after which the energy of a resonator is dissipated to $1/e$ of its original value.
 
-    Photons can be lost through different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$. This coupling quality factor depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the desired interaction between resonator and feedline.
+    Photons can be lost through different loss channels. Each of these loss channels has a corresponding quality factor. One such loss channel is due to resonators being capacitively coupled to a feedline. The quality factor associated to this loss channel is known as the coupling quality factor $Q_c$, and depends on the amount of capacitive coupling between the resonator and the feedline. It can therefore be engineered to have a certain value, depending on the desired interaction between resonator and feedline.
 
     The other loss channels are usually unwanted, and therefore desired to be as low as possible. These individual channels are usually lumped together, resulting in a combined quality factor, known as the internal quality factor $Q_i$.
 
-    The total quality factor of the resonator is known as the loaded quality factor $Q_l$. It is related to $Q_c$ and $Q_i$ through:
+    The total quality factor of the resonator is known as the loaded quality factor $Q_l$. It is related to $Q_c$ and $Q_i$ through
 
     \begin{equation}
-        \frac{1}{Q_l} = \frac{1}{Q_c} + \frac{1}{Q_i}
+        \frac{1}{Q_l} = \frac{1}{Q_c} + \frac{1}{Q_i}.
         \label{eq:Q_l}
     \end{equation}
+    It can be seen that if the difference between $Q_c$ and $Q_i$ is large, then the loaded quality factor $Q_l$ will be approximately equal to the minimum of the two.
 
-    From Eq.~\ref{eq:Q_l} it can be seen that if the difference between $Q_c$ and $Q_i$ is large, then the loaded quality factor $Q_l$ will be approximately equal to the minimum of the two.
-
-
-    For a quarter wave resonator the amplitude of transmission has a minimum $S_{21}^{min}$, given by \cite[p29]{Mazin}:
+    For a quarter-wave resonator the amplitude of transmission has a minimum $S_{21}^{min}$, given by \cite[p29]{Mazin}
     \begin{equation}
-        S_{21}^{min} = \frac{Q_c}{Q_c + Q_i}
+        S_{21}^{min} = \frac{Q_c}{Q_c + Q_i}.
         \label{eq:S21min}
     \end{equation}
-
     With knowledge of the resonant frequency $\omega_r$, the resonant width $\Delta \omega$, and the transmitted signal at resonance $S_{21}^{min}$, it is possible through Eqs.~\ref{eqn:quality factor definition} and \ref{eq:S21min} to determine both the coupling quality factor $Q_c$ and the internal quality factor $Q_i$. Note that as Eq.~\ref{eq:S21min} depends on the ratio of the two quality factors, to get an accurate estimate of both quality factors, they should have a comparable value.
 
-    One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. The resonator shapes the electromagnetic field seen by the qubit. This can either cause enhanced or diminished emission, and is known as the Purcell effect. If a qubit is in the excited-state, its coupling to the resonator will result in relaxation of its state to the ground-state. This can be quantified through its relaxation time $T_1^\text{Purcell}$, given by~\cite{Reed}:
+    One reason why a high quality factor is important in the context of cQED is that a qubit can be coupled to a resonator. The resonator shapes the electromagnetic field seen by the qubit. This can either cause enhanced or diminished emission, and is known as the Purcell effect. If a qubit is in the excited state, its coupling to the resonator will result in relaxation of its state to the ground state. This can be quantified through its relaxation time $T_1^\text{Purcell}$, given by~\cite{Reed}
 
     \begin{equation}
-      T_1^\text{Purcell} = \left(\left(\frac{g}{\Delta}\right)^2\kappa\right)^{-1}
+      T_1^\text{Purcell} = \left(\left(\frac{g}{\Delta}\right)^2\kappa\right)^{-1},
       \label{eq:purcell T1}
     \end{equation}
-
     where $\kappa=\omega_r/Q_i$ is the cavity decay rate.
 
-     The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
+    The reason a high quality factor is important is because the Purcell relaxation time is proportional to the quality factor. The Purcell relaxation time $T_1^\text{Purcell}$ places an upper limit on the relaxation time $T_1$ of a qubit. If the qubit's relaxation time $T_1$ is close to this value, the qubit is said to be Purcell limited.
 
   \section{Losses}
     \label{sec:Losses}
 
-      When a resonator is being driven at its resonance frequency, it is dynamically loaded photons from the external source. When this external driving stops, the photons in the resonator leak out through different loss channels.
+      When a resonator is being driven at its resonance frequency, it is dynamically loaded with photons. When this external driving stops, the photons in the resonator leak out through different loss channels.
 
       One loss channel has already been discussed in section~\ref{sec:Quality factor}, namely through the coupling to the feedline. This loss channel is not unwanted, as the amount of coupling to the feedline determines how fast the resonator and feedline can interact with each other. The other loss channels, however, are unwanted, as they have no added benefit, and result in an irreversible loss of information. Some of the main sources of photon loss will be discussed in this section.
 
@@ -111,11 +107,11 @@
     \subsubsection{Two-level systems}
       \label{sec:TLS}
 
-      Two-level systems (TLS) are systems which can be in a ground state or in an excited state. In some cases they can be useful. In fact a qubit itself is a TLS. In other cases, however, TLS can also be a source of dissipation such as in the case of dielectric loss~\cite{martinis2014ucsb}. Study suggests that in cQED, most TLS reside in a thin layer at the metal-substrate interface and the substrate-air interface~\cite{wenner2011surface}.
+      Two-level systems (TLS) are systems which can be in a ground state or in an excited state. In some cases they can be useful. In fact a qubit itself is a TLS. In other cases, however, TLS can be a source of dissipation, such as in the case of dielectric loss~\cite{martinis2014ucsb}. Study suggests that in cQED, most TLS reside in a thin layer at the metal-substrate interface and the substrate-air interface~\cite{wenner2011surface}.
 
       Energy dissipation due to dielectric loss can be modeled as the resonator being surrounded by a bath of TLS, each having its own resonance frequency, depending on its energy landscape. When the resonance frequency of a TLS is close to that of the resonator, it can absorb a photon from the resonator, upon which it is excited to a meta-stable state. TLS have a finite lifetime in their excited state, after which they decay back to their ground state and are then again able to absorb a photon. The rate at which a TLS absorbs a photon depends on the electric field surrounding the TLS and on the temperature.
 
-      In the low power, low temperature regime, TLS are mostly in their ground state, and are only occasionally excited, upon absorption of a photon. It is theorized that, in this regime, TLS are the main source of dissipation for resonators~\cite{gao2008experimental}. At higher powers and/or temperatures, the TLS are excited at a higher rate. Due to their finite lifetime at a certain point they reach saturation. Since the quality factor depends on the ratio between energy stored and energy dissipated, when the TLS are saturated the amount of dissipation is limited, while the energy stored in the resonator can still increase. Therefore, in the low power, low temperature regime, increasing either of the two parameters results in an increase in quality factor. At a certain point, however, further increasing either of the two will not improve the quality factor. This is due to other effects dominating the dissipation rate in these regimes.
+      In the low-power, low-temperature regime, TLS are mostly in their ground state, and are only occasionally excited, upon absorption of a photon. It is theorized that, in this regime, TLS are the main source of dissipation for resonators~\cite{gao2008experimental}. At higher powers and/or temperatures, the TLS are excited at a higher rate. Due to their finite lifetime at a certain point they reach saturation. Since the quality factor depends on the ratio between energy stored and energy dissipated, when the TLS are saturated the amount of dissipation is limited, while the energy stored in the resonator can still increase. Therefore, in the low-power, low-temperature regime, increasing either of the two parameters results in an increase in quality factor. At a certain point, however, further increasing either of the two will not improve the quality factor. This is due to other effects dominating the dissipation rate in these regimes.
 
       % \begin{itemize}
       %     \item 1/f noise \cite{burnett2013evidence}
