@@ -44,7 +44,7 @@
 \contentsline {subsubsection}{\numberline {6.3.3.1}Qubit relaxation: $T_1$}{45}
 \contentsline {subsubsection}{\numberline {6.3.3.2}Qubit dephasing: Ramsey}{45}
 \contentsline {subsubsection}{\numberline {6.3.3.3}Fast frequency qubit dephasing: Echo}{46}
-\contentsline {subsection}{\numberline {6.3.4}Second excited-state}{47}
+\contentsline {subsection}{\numberline {6.3.4}Second-excited state}{46}
 \contentsline {section}{\numberline {6.4}Exploring Frequency re-use}{47}
 \contentsline {subsection}{\numberline {6.4.1}Cross-coupling}{49}
 \contentsline {subsection}{\numberline {6.4.2}Cross-driving}{49}
@@ -64,7 +64,7 @@
 \contentsline {section}{\numberline {8.3}The randomized benchmarking protocol}{62}
 \contentsline {section}{\numberline {8.4}Single qubit randomized benchmarking}{64}
 \contentsline {subsection}{\numberline {8.4.1}Driving a single qubit versus driving both qubits}{64}
-\contentsline {subsection}{\numberline {8.4.2}Second excited-state leakage}{66}
+\contentsline {subsection}{\numberline {8.4.2}Second-excited-state leakage}{66}
 \contentsline {section}{\numberline {8.5}Two qubit randomized benchmarking}{68}
 \contentsline {subsection}{\numberline {8.5.1}Alternating randomized benchmarking}{69}
 \contentsline {subsection}{\numberline {8.5.2}Compiled randomized benchmarking}{69}

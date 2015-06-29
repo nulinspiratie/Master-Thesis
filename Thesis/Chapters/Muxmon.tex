@@ -117,7 +117,7 @@
       \end{wrapfigure}
 
 
-      The Muxmon experiment set-up is shown in Fig.~\ref{fig:Muxmon set-up}. The main AWG is used for generating the Gaussian and DRAG pulses, and to trigger other devices. A second AWG is used for pulses at the excited-state to second excited-state transition frequency. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Sec.~\ref{ssec:qubit control} for more information). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
+      The Muxmon experiment set-up is shown in Fig.~\ref{fig:Muxmon set-up}. The main AWG is used for generating the Gaussian and DRAG pulses, and to trigger other devices. A second AWG is used for pulses at the $1 \leftrightarrow 2$ transition frequency. Two of the four input ports of the Duplexer are used. One input port receives the main pulse, the other receives the DRAG pulse (see Sec.~\ref{ssec:qubit control} for more information). The main pulse and DRAG pulse are combined in the Duplexer. The output ports are connected to the drive lines of the top and bottom qubit.
 
       % \begin{figure}[h]
       %   \centering
@@ -274,7 +274,7 @@
         In a two-tone spectroscopy measurement two tones are sent through the feedline.
         \begin{enumerate}
           \item A drive tone with varying frequency $\wdrive$;
-          \item A readout tone at the resonator frequency when the qubit is in the ground-state.
+          \item A readout tone at the resonator frequency when the qubit is in the ground state.
         \end{enumerate}
 
         \begin{wrapfigure}[18]{r}{0.41\textwidth}
@@ -354,7 +354,7 @@
         \begin{enumerate}
           \item A drive tone with fixed frequency $\omega_\text{drive}^{01}$ at the qubit frequency $\omega_q^{01}$;
           \item A drive tone with varying frequency $\omega_\text{drive}^{12}$ to scan for the $1 \leftrightarrow 2$ transition;
-          \item A third tone at the resonator frequency for the qubit in the excited-state.
+          \item A third tone at the resonator frequency for the qubit in the excited state.
         \end{enumerate}
 
         The first drive tone with frequency $\omega_\text{drive}^{01}$ is used the drive the qubit to the excited state. Since the first drive tone results in the excited state being (partially) populated, the second tone with frequency $\omega_\text{drive}^{12}$ is then able to drive the qubit from the excited state to the second-excited state. The transmission should therefore change when $\omega_\text{drive}^{12}$ is on resonance with $\omega_q^{12}$.
@@ -363,10 +363,10 @@
           \centering
           \includegraphics[width=.6\textwidth]{Figures/Qubit characterization/second transition spec.png}
           \caption{Two-dimensional three-tone pulsed spectroscopy results for the bottom qubit while at its sweet spot. The second-excited state has a frequency equal to $\omega_{12}=\SIm{5.89}{\giga \hertz}$, corresponding to an anharmonicity $\alpha= \omega_{12}-\omega_{01}=\SIm{-330}{\mega \hertz}$.}
-          \label{fig:Second excited-state spectroscopy}
+          \label{fig:Second-excited-state spectroscopy}
         \end{figure}
 
-        In principle the first drive tone with frequency $\omega_\text{drive}^{01}$ can be kept fixed at the $0 \leftrightarrow 1$transition frequency $\omega_q^{01}$. However, by performing a two-dimensional scan, where $\omega_\text{drive}^{01}$ is also varied in a small region around $\omega_q^{01}$, the $1 \leftrightarrow 2$ transition becomes much clearer. This is shown in Fig.~\ref{fig:Second excited-state spectroscopy}. A shift in transmission is observed when $\omega_\text{drive}^{01} = \omega_q^{01}$, corresponding to the $1 \leftrightarrow2$ transition frequency $\omega_q^{12}$. Additionally, a transmission shift is observed at a line crossing $\omega_q^{12}$. At this line $\omega_q^{01} + \omega_q^{12} = \omega_q^{02}$, resulting in some population in the second-excited state.
+        In principle the first drive tone with frequency $\omega_\text{drive}^{01}$ can be kept fixed at the $0 \leftrightarrow 1$transition frequency $\omega_q^{01}$. However, by performing a two-dimensional scan, where $\omega_\text{drive}^{01}$ is also varied in a small region around $\omega_q^{01}$, the $1 \leftrightarrow 2$ transition becomes much clearer. This is shown in Fig.~\ref{fig:Second-excited-state spectroscopy}. A shift in transmission is observed when $\omega_\text{drive}^{01} = \omega_q^{01}$, corresponding to the $1 \leftrightarrow2$ transition frequency $\omega_q^{12}$. Additionally, a transmission shift is observed at a line crossing $\omega_q^{12}$. At this line $\omega_q^{01} + \omega_q^{12} = \omega_q^{02}$, resulting in some population in the second-excited state.
 
         Three-tone spectroscopy produces much more accurate results when using pulsed spectroscopy, as the difference in transmission is generally small compared to two-tone spectroscopy.
 
@@ -376,14 +376,14 @@
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Qubit characterization/Flux_matrix.png}
-          \caption{Frequency responses of each qubit to each flux-bias line. Each qubit has been tuned away from its sweet spot such that the frequency-response is higher. The frequency response slopes determine the coefficients of matrix $\boldsymbol{M}$, used for creating the flux matrix $\boldsymbol{F}$.}
+          \caption{Frequency responses of each qubit to each flux-bias line. Each qubit has been tuned away from its sweet spot such that the frequency response is higher. The frequency-response slopes determine the coefficients of matrix $\boldsymbol{M}$, used for creating the flux matrix $\boldsymbol{F}$.}
           \label{fig:flux matrix}
         \end{figure}
-        When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the fluxes through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias line current also affects the frequencies of the other flux-tunable qubits on the chip. For the Muxmon experiment the frequencies of the three qubits have to be individually tuned to very specific frequencies, and so the frequency responses of the qubits have to be decoupled. This is done by implementing a flux matrix, which corrects for the flux cross-coupling effects.
+        When a current is passed through a flux-bias line, it is not only the flux through the SQUID of the qubit directly connected to it that is affected. Instead, the fluxes through SQUIDs of neighbouring qubits are also affected, albeit to a lesser extent. Therefore changing the frequency of one qubit by changing its corresponding flux-bias current also affects the frequencies of the other flux-tunable qubits on the chip. For the Muxmon experiment the frequencies of the three qubits have to be individually tuned to very specific frequencies, and so the frequency responses of the qubits have to be decoupled. This is done by implementing a flux matrix, which corrects for the flux-cross-coupling effects.
 
         A flux matrix $\boldsymbol{F}$ is an $n \times n$ matrix, where $n$ is the number of flux-tunable qubits. Each row $F_i = \left[F_{i1}, \dots, F_{in}\right]$ corresponds to the ratio's by which each of the DAC currents should be changed such that only the frequency of qubit $i$ changes while the other frequencies remain fixed. This results in $n$ decoupled virtual flux parameters.
 
-        For a flux matrix $F$ knowledge of the frequency responses of each of the qubits due to each of the flux-bias lines is required, such as shown in Fig.~\ref{fig:flux matrix} for the three qubits in the Muxmon experiment. It is important that the qubits are tuned away from their sweet spots, to a point where the frequency is sensitive to changes in flux. From the frequency responses a frequency response matrix $\boldsymbol{M}$ can be constructed:
+        For a flux matrix $F$ knowledge of the frequency responses of each of the qubits due to each of the flux-bias lines is required. The frequency responses of the three qubits in the Muxmon experiment are shown in Fig.~\ref{fig:flux matrix}. It is important that the qubits are tuned away from their sweet spots, to a point where the frequency is sensitive to changes in flux. From the frequency responses a frequency response matrix $\boldsymbol{M}$ can be constructed:
 
         \begin{equation}
           \boldsymbol{M} =
@@ -400,7 +400,7 @@
 
         The flux matrix $\boldsymbol{F}$ can be found by inverting matrix $\boldsymbol{M}$. As mentioned earlier, each row $F_i$ of matrix $\boldsymbol{F}$ corresponds to the ratio by which the DAC currents of the flux-bias lines need to be varied, such that only the frequency of qubit $i$ is changed. Each row may therefore be multiplied by a different factor, as long as the ratio between the elements in each row remains constant. By dividing each row $F_i$ by $F_{ii}$ the DAC current of the main flux-bias line is equal to its corresponding virtual flux. The main qubit therefore behaves identically when changing the virtual flux, except that all the other qubit frequencies remain fixed.
 
-        A virtual flux vector $\vec{\Phi}=\left[ \phi_1, \dots \phi_n \right]$ can be converted to the corresponding DAC current vector $\vec{I}$ through:
+        A virtual flux vector $\vec{\Phi}=\left[ \phi_1, \dots \phi_n \right]$ can be converted to the corresponding DAC-current vector $\vec{I}$ through:
 
         \begin{equation}
           \vec{I} = \boldsymbol{F} \vec{\Phi} + \vec{I}^{ss}
@@ -408,7 +408,7 @@
 
         By adding the simultaneous sweet-spot DAC voltages $\vec{V}^{ss}$, we obtain the additional property that the simultaneous sweet spot of the virtual fluxes is set to zero.
 
-        In Fig.~\ref{fig:flux matrix} the frequency responses of the three Muxmon qubits to currents flowing through each of the flux-bias lines are shown. As can be seen the degree to which a flux-bias line affects other qubits can be quite severe. From the Muxmon chip structure one would expect that for both the top and bottom qubit, a flux-bias current would affect the flux  of the ancilla qubit more severely than the other qubit. However, from the results it can be seen that the ancilla qubit is barely affected by by the other flux-bias lines. This could be due to the route taken by the current from the flux-bias lines to ground, although more research must be done to determine if this is indeed the cause.
+        In Fig.~\ref{fig:flux matrix} the frequency responses of the three Muxmon qubits to currents flowing through each of the flux-bias lines are shown. As can be seen the degree to which a flux-bias line affects other qubits can be quite severe. From the Muxmon chip structure one would expect that for both the top and bottom qubit, a flux-bias current would affect the flux  of the ancilla qubit more severely than the other qubit. However, from the results it can be seen that the ancilla qubit is barely affected by the other flux-bias lines. This could be due to the route taken by the current from the flux-bias lines to ground, although more research must be done to determine if this is indeed the case.
 
     \section{Time-domain measurements}
       \label{sec:Time-domain measurements}
@@ -416,9 +416,9 @@
         \label{ssec:qubit control}
         The measurements described so far are able to determine the energy levels of the qubits and resonators using continuous tones. However, for qubit properties such as their coherence times, time-domain measurements are required. Here well-calibrated pulses accurately control the state of the qubit, and correspond to gates being applied to the qubit.
 
-        A simple time-domain measurement usually consists of two parts: qubit control, and qubit readout. The qubit is initially in the ground-state due to relaxation. During qubit control precisely timed pulses modify the state of the qubit. During qubit readout a readout tone is applied in a manner similar to spectroscopy. The state of the qubit can be inferred from the response in transmission. More complicated measurements involve feedback, where additional qubit control can be applied depending on the measurement outcome. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
+        A simple time-domain measurement usually consists of two parts: qubit control, and qubit readout. The qubit is initially in the ground state due to relaxation. During qubit control precisely timed pulses modify the state of the qubit. During qubit readout a readout tone is applied in a manner similar to spectroscopy. The state of the qubit can be inferred from the response in transmission. More complicated measurements involve feedback, where additional qubit control can be applied depending on the measurement outcome. Feedback measurements are not performed in this experiment, and are therefore beyond the scope of this thesis.
 
-        Measuring the qubit will project its state onto the Z-axis, and so it will be either measured in state $\ket{0}$ or in state $\ket{1}$, with a probability determined by its population in the two states. One single measurement, however, provides little information about the actual populations in the two states before the measurement. To determine the actual population in the two states it is required to repeat the measurement many times. The number of times the qubit is measured in either states is then an estimate for the actual state populations of the qubit. It is important that the experimental repetition rate is low enough such that the qubit has sufficient time to relax to its ground-state, which is determined by its relaxation time $T_1$ (see Sec.~\ref{sec:Qubit relaxation: $T_1$}).
+        Measuring the qubit will project its state onto the Z-axis, and so it will be either measured in state $\ket{0}$ or in state $\ket{1}$, with a probability determined by its population in the two states. One single measurement, however, provides little information about the actual populations in the two states before the measurement. By repeating the measurement many times, and averaging over the results, the populations can be accurately estimated. It is important that the experimental repetition rate is low enough such that the qubit has sufficient time to relax to its ground state, which is determined by its relaxation time $T_1$ (see Sec.~\ref{sec:Qubit relaxation: $T_1$}).
 
         \begin{wrapfigure}[14]{r}{0.4\textwidth}
           \begin{center}
@@ -426,15 +426,15 @@
             \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/Gaussian pulse.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{Schematic representation of the Gaussian pulse. The signal is convoluted with a sine and cosine with sideband modulation frequency $\omega_{sb}$, resulting in single-sideband modulation.}
+          \caption{Schematic representation of the Gaussian pulse. The signal is convoluted with a sine and cosine with sideband modulation frequency $\omega_{sb}$, resulting in single sideband modulation.}
           \label{fig:gaussian pulse}
         \end{wrapfigure}
 
-        Qubit pulses usually have a Gaussian shape, because the corresponding frequency bandwidth is narrow and because it has a smooth shape in the frequency domain. These pulses can be generated by modulating a carrier signal from an RF generator, and is done using an Arbitrary Waveform Generator (AWG). For the Muxmon experiment the Tektronix AWG5014 is used, which has four voltage channels, each of which can control its voltage output at the nanosecond scale. It further has eight marker channels, which are used to trigger devices, such as RF generators and the Duplexer.
+        Qubit pulses usually have a Gaussian shape, because the corresponding frequency bandwidth is narrow and because it has a smooth shape in the frequency domain. These pulses can be generated by modulating a carrier signal from an RF generator, and is done using an Arbitrary Waveform Generator (AWG). For the Muxmon experiment the Tektronix AWG5014 is used, which has four voltage channels, each of which can control its voltage output at the nanosecond scale. It furthermore has eight marker channels, which are used to trigger devices, such as RF generators and the Duplexer.
 
         The carrier signal is sent through the LO port of the mixer, where it is modulated by the AWG. In the Muxmon experiment IQ-modulation is used, and so two AWG channels are used to independently modulate the in-phase and quadrature components of the signal in an IQ-mixer. This allows for single sideband modulation, which shifts the frequency of the signal. Single sideband modulation has the advantage that the carrier frequency $\omega_c$ is shifted away from mixer leakage. For more information on mixer leakage, see section~\ref{ssec:Mixer calibration}. A schematic representation of a Gaussian pulse with single sideband modulation is shown in Fig.~\ref{fig:gaussian pulse}.
 
-        An important consideration is the duration of a pulse, also known as the pulse length. Shorter pulses allow for more qubit operations within its coherence time. However, the pulse length is inversely proportional to its frequency bandwidth. If the frequency bandwidth is too broad, there will be a non-negligible signal at the qubit's excited-state to second excited-state transition frequency. This will cause leakage to the second excited-state, thereby leaving the two-state Hilbert space. It is therefore desirable to have a bandwidth, which is the inverse of the width $\sigma$ of the Gaussian pulse, that is small compared to the anharmonicity of the qubit.
+        An important consideration is the duration of a pulse, also known as the pulse length. Shorter pulses allow for more qubit operations within its coherence time. However, the pulse length is inversely proportional to its frequency bandwidth (the inverse of the width $\sigma$ of the Gaussian pulse). If the frequency bandwidth is too broad, there will be a non-negligible signal at the qubit's $1 \leftrightarrow 2$ transition frequency. This will cause leakage to the second-excited state, thereby leaving the two-state Hilbert space. It is therefore desirable to have a bandwidth that is small compared to the anharmonicity of the qubit.
 
         Performing gates on qubits requires knowledge of the parameters that define the pulse, such as the amplitude, phase, and pulse duration. The phase determines the axis along which the qubit is rotated. The duration and amplitude of the pulse determine the rotation angle. Rotating the qubit by a specific angle can be achieved by either varying the pulse duration or the pulse amplitude. Both methods have advantages and disadvantages. Varying the pulse duration ensures that the maximum amplitude is roughly fixed, regardless of the rotation angle. Varying the amplitude, on the other hand, ensures that pulses applied to multiple qubits end simultaneously, and so it is more natural to speak of a pulse clock cycle. In the measurements for this thesis the amplitude is varied, while the pulse duration is kept fixed.
 
@@ -447,20 +447,20 @@
             \includegraphics[width=\textwidth]{Figures/Qubit characterization/Rabi.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{A Rabi measurement. In the center peak the pulse has zero amplitude, corresponding to the qubit being in the ground-state. The other two peaks therefore correspond to $X_{-\pi}$ and $X_\pi$ pulses, as the qubit is in the excited-state.}
+          \caption{A Rabi measurement. In the center peak the pulse has zero amplitude, corresponding to the qubit being in the ground state. The other two peaks therefore correspond to $X_{-\pi}$ and $X_\pi$ pulses, as the qubit is in the excited state.}
           \label{fig:Rabi}
         \end{wrapfigure}
 
         Determining the correct amplitude for qubit gates is commonly performed using a Rabi measurement. In this measurement the amplitude of a pulse with rotation along the X-axis is varied monotonically. The pulse will cause the qubit to rotate at a Rabi rate $\Omega_R$, which is proportional to the pulse amplitude.
 
-        After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wave function of the qubit will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. During a subsequent measurement the qubit will be in the excited-state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}.
+        After application of a pulse with Rabi rate $\Omega_R$ and duration $\tau$, the wave function of the qubit will be in state $\ket{\psi} = \cos{\left( \frac{\Omega_R}{2} \tau \right) } \ket{0} + \sin{\left( \frac{\Omega_R}{2} \tau \right)} \ket{1}$. During a subsequent measurement the qubit will be in the excited state with probability $\sin^2{\left( \frac{\Omega_R}{2} \tau \right)}$ \cite{Reed}.
 
-        In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Fig.~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground-state of the qubit. At the other peaks, where the deviation from the ground-state is maximal, the qubit is in the excited-state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse.
+        In a Rabi measurement the amplitude is swept monotonically from a negative value to a positive value. The result should look like a cosine, as shown in Fig.~\ref{fig:Rabi}. The center of this cosine is where the amplitude is zero, and therefore corresponds to the ground state of the qubit. At the other peaks, where the deviation from the ground state is maximal, the qubit is in the excited state. The amplitude of the left peak corresponds to an $X_{-\pi}$ pulse, and the amplitude of the right peak to an $X_\pi$ pulse, known as a pi pulse.
 
-        Once the pi-pulse has been calibrated, these are used as calibration points in successive measurements. The calibration points for the ground-state and excited-state determine the I and Q quadrature signals of the two states. These are then used to rotate and normalize the data such that all signal is contained in one quadrature, and the signal level corresponds to one of the state populations.
+        The pi pulse is used as a calibration point in successive measurements. The calibration points for the ground state and excited state determine the I and Q quadrature signals of the two states. These are then used to rotate and normalize the data such that all signal is contained in one quadrature, and the signal level corresponds to one of the state populations.
 
       \subsection{Qubit decoherence}
-        Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However, due to the qubit's interaction with its environment the qubit will experience decoherence. Decoherence can be viewed as the qubit interacting with its environment, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
+        Once the pulse amplitude has been calibrated the qubit state can be controlled. Ideally the state of a qubit remains fixed in the absence of pulses. However, due to the qubit's interaction with its environment the qubit will experience decoherence, and as a result we lose information about the state of the qubit. The decoherence of the qubit can be characterized by its relaxation time $T_1$, and its dephasing time $T_2$.
 
         \subsubsection{Qubit relaxation: $T_1$}
           \label{sec:Qubit relaxation: $T_1$}
@@ -474,7 +474,7 @@
             \label{fig:T1 schematic}
           \end{wrapfigure}
 
-          Relaxation is a form of decoherence that is related to the exchange of energy. Due to relaxation an excited qubit will slowly relax to the ground-state, thereby leaking its energy away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in Sec.~\ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Fig.~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi-pulse is applied, after which the qubit is in its excited-state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding relaxation time $T_1$. As explained in Sec.~\ref{sec:Quality factor}, the Purcell effect places an upper limit $T^1_\text{Purcell}$ on the relaxation time $T_1$ of the qubit, although other relaxation channels can further decrease this time considerably.
+          Relaxation is a form of decoherence that is related to the exchange of energy. Due to relaxation an excited qubit will slowly relax to its ground state, thereby leaking its energy away to its environment through different relaxation channels. Some of these relaxation channels have been discussed in Sec.~\ref{sec:Losses}. The relaxation can be measured in a $T_1$-measurement, a schematic of which is shown in Fig.~\ref{fig:T1 schematic}. In a $T_1$-measurement an initial pi pulse is applied, after which the qubit is in its excited state. After waiting for a monotonically increasing wait time $\tau$, the state of the qubit is measured. During the wait time $\tau$ the qubit experiences an exponential decay due to relaxation, with a corresponding relaxation time $T_1$. As explained in Sec.~\ref{sec:Quality factor}, the Purcell effect places an upper limit $T_1^\text{Purcell}$ on the relaxation time $T_1$ of the qubit, although other relaxation channels can further decrease this time considerably.
 
         \subsubsection{Qubit dephasing: Ramsey}
           \label{sssec:Ramsey}
@@ -491,9 +491,9 @@
 
           Aside from relaxation, the qubit also experiences dephasing, resulting from phase noise. Phase noise can be seen as fluctuations in the qubit frequency, and results in the random accumulation of phase. There are many sources of phase noise, some of which have already been discussed in Sec.~\ref{sec:Losses}. Phase noise can be visualized on the Bloch sphere as the transversal component of the qubit's state decreasing in magnitude, as the qubit's phase has increased uncertainty. In the limiting case this will result in all phase information being lost, with the qubit's state thereby lying on the Z-axis.
 
-          The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\;T_1$ due to dissipation \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
+          The amount of dephasing is characterized by the dephasing time $T_2^*$, which has an upper bound equal to $2\,T_1$ due to dissipation \cite[pp56-58]{Bishop}. However it can decrease significantly due to other sources of phase noise, such as charge noise, fluctuating cavity photon number, and flux noise for flux-tunable qubits \cite[p126]{Sears}.
 
-          Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Fig.~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit ending up at the excited-state. However, during the wait time $\tau$ the qubit experiences dephasing, causing it to deviate from its original position on the equator. Therefore the final state of the qubit will deviate from the qubit's excited-state. The probability of the final state to end up in the excited-state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
+          Measuring the dephasing time $T_2^*$ is done in a Ramsey measurement, a schematic of which is shown in Fig.~\ref{fig:T2star schematic}. A Ramsey sequence consists of an initial $X_{\pi/2}$ pulse, after which the qubit lies on the equator of the Bloch sphere. After a certain wait time $\tau$, a second $X_{\pi/2}$ pulse is applied to the qubit. The combination of the two pulses should result in the qubit being at the excited state. During the wait time $\tau$, howeer, the qubit experiences dephasing, causing it to deviate from its original position on the equator. The final state of the qubit will therefore deviate from the  excited state. The probability of the final state to end up in the excited state has an exponential decay, asymptotically approaching $0.5$ (all phase information lost).
 
           During the wait time $\tau$, when the qubit lies on the equator, it does not only experience dephasing. When the frequency of the driving tone $\omega_d$ is different from the qubit frequency $\omega_q$, the qubit acquires a phase with respect to the rotating frame of the drive. As a result the qubit will precess along the equator with a frequency equal to the frequency difference $\omega_d - \omega_q$. Due to this precession the Ramsey measurement also exhibits an oscillation. The frequency of the oscillation can in fact be used to accurately determine the qubit frequency (see Sec.~\ref{ssec:Accurate frequency estimation}).
 
@@ -511,12 +511,12 @@
 
           The dephasing time $T_2^*$ is a combination of several different phase noise sources. Some of these sources produces high frequency (fast) noise, while others produce low frequency (slow) noise. It is possible to distinguish these two effects by performing a second dephasing measurements that filters out slow noise, called an Echo measurement, and its schematic is shown in Fig.~\ref{fig:T2echo schematic}.
 
-          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. We can view any phase noise that is slow compared to the wait-time $\tau$ as being quasi-static, and is therefore cancelled due to this flipping. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground-state, which is in contrast to a Ramsey measurement, where the final state is the excited-state.
+          An Echo measurement is quite similar to a Ramsey measurements, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. We can view any phase noise that is slow compared to the wait-time $\tau$ as being quasi-static, and is therefore cancelled due to this flipping. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground state, which is in contrast to a Ramsey measurement, where the final state is the excited state.
 
           An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^E$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. The phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation. This allows for better estimation of the Echo dephasing time $T_2^E$, and clearer distinguishability of any odd shapes in the measurement results.
 
-      \subsection{Second excited-state}
-        \label{ssec:Second excited-state}
+      \subsection{Second-excited state}
+        \label{ssec:Second-excited state}
 
         \begin{wrapfigure}[17]{r}{0.42\textwidth}
           \begin{center}
@@ -524,13 +524,13 @@
             \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/schematic second transition pulsing.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{Schematic of the pulse combination used to reach the second excited-state. First an $X_\pi^{01}$-pulse is applied at frequency $\omega_{01}$. Secondly an $X_\pi^{12}$-pulse is applied at frequency $\omega_{12}$ such that the transmon is in its second excited-state.}
-          \label{fig:schematic pulsing to second excited-state}
+          \caption{Schematic of the pulse combination used to reach the second-excited state. First an $X_\pi^{01}$-pulse is applied at frequency $\omega_{01}$. Secondly an $X_\pi^{12}$-pulse is applied at frequency $\omega_{12}$ such that the transmon is in its second-excited state.}
+          \label{fig:schematic pulsing to second-excited state}
         \end{wrapfigure}
 
-        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second excited-state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Sec.~\ref{ssec:DRAG parameter calibration} for information on the DRAG pulse). Measuring the population in the second excited-state due to leakage requires being able to excite the transmon to its second excited-state. This can be done by first exciting the transmon to its first excited-state, and then applying a second pulse at the second transition frequency of the transmon, as shown in Fig.~\ref{fig:schematic pulsing to second excited-state}. Measuring this frequency has been explained in Sec.~\ref{ssec:12-transition spectroscopy}.
+        When viewing the transmon as a qubit the higher energy levels are neglected. However, qubit pulses may result in some population leakage to the second-excited state. This is especially the case when the pulse length is short and when the DRAG parameter is not well-calibrated (see Sec.~\ref{ssec:DRAG parameter calibration} for information on the DRAG pulse). Measuring the population in the second-excited state due to leakage requires being able to excite the transmon to its second-excited state. This can be done by first exciting the transmon to its first-excited state, and then applying a second pulse at the second transition frequency of the transmon, as shown in Fig.~\ref{fig:schematic pulsing to second-excited state}. Measuring this frequency has been explained in Sec.~\ref{ssec:12-transition spectroscopy}.
 
-        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first excited-state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first excited-state back to the ground-state.
+        Determining the correct amplitude for the pulse at the second transition frequency can be done using a second transition Rabi measurement, where an initial $X_\pi$-pulse is applied to excite the transmon to its first-excited state. The amplitude of the second pulse is varied from negative to positive, similar to a standard Rabi measurement. Optionally a third $X_\pi$-pulse at the first transition frequency of the transmon. The third pulse transfers any remaining excitation in the first-excited state back to the ground state.
 
         \begin{wrapfigure}[15]{r}{0.42\textwidth}
           \begin{center}
@@ -538,11 +538,11 @@
             \includegraphics[width=\textwidth]{Figures/Qubit characterization/Rabi12.png}
           \end{center}
           \vspace{-20 pt}
-          \caption{A second transition Rabi measurement of the second excited-state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground-state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first excited-state.}
+          \caption{A second transition Rabi measurement of the second-excited state, both with and without final $X_\pi$ pulse. The signal is rotated and normalized such that $\left|S_{21}\right|=0$ corresponds to the transmon in the ground state, and $\left|S_{21}\right|=1$ corresponds to the transmon in the first-excited state.}
           \label{fig:Rabi12}
         \end{wrapfigure}
 
-        The pulse-amplitude required to pulse to the second excited-state has been calibrated for both the top and bottom qubit. In Fig.~\ref{fig:Rabi12} a second transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first excited-state, and so it can be concluded that the second excited-state is indeed populated. Furthermore, since the signal at the second excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first excited-state, and that indeed the transmon is fully excited to the second excited-state.
+        The pulse-amplitude required to pulse to the second-excited state has been calibrated for both the top and bottom qubit. In Fig.~\ref{fig:Rabi12} a second transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first-excited state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the signal at the second-excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first-excited state, and that indeed the transmon is fully excited to the second-excited state.
 
 
     \section{Exploring Frequency re-use}
@@ -775,7 +775,7 @@
               \includegraphics[width=\textwidth]{Figures/Calibration routines/crosstalk.png}
             \end{center}
             \vspace{-20 pt}
-            \caption{Readout cross-talk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground-state.}
+            \caption{Readout cross-talk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground state.}
             \label{fig:crosstalk}
           \end{wrapfigure}
           In standard heterodyne detection the output signal is down-converted in a mixer using an LO frequency $\omega_\text{LO}$that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} - \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital demodulation.
@@ -820,7 +820,7 @@
       \subsection{DRAG parameter calibration}
         \label{ssec:DRAG parameter calibration}
 
-        Ideally a transmon has two energy levels, and so can be treated as a qubit. However, in Sec.~\ref{sec:resonator-scan} it was shown that the degree to which we can ignore the second excited-state depends on the anharmonicity $\alpha=\omega_{12} - \omega_{01}$.  The presence of the second excited-state (and to lesser extent higher excited-states) can have a considerable influence on the gate performance in two different ways. First of all gates can cause a direct excitation into the second excited-state, thereby resulting in leakage outside the qubit two-state Hilbert space. Ensuring that the frequency bandwidth corresponding to the gate is small compared to the anharmonicity $\alpha$ can greatly reduce this leakage. However, an additional form of leakage is manifested as a virtual excitation to the second excited-state during the pulse, resulting in an added phase error.
+        Ideally a transmon has two energy levels, and so can be treated as a qubit. However, in Sec.~\ref{sec:resonator-scan} it was shown that the degree to which we can ignore the second-excited state depends on the anharmonicity $\alpha=\omega_{12} - \omega_{01}$.  The presence of the second-excited state (and to lesser extent higher-excited states) can have a considerable influence on the gate performance in two different ways. First of all gates can cause a direct excitation into the second-excited state, thereby resulting in leakage outside the qubit two-state Hilbert space. Ensuring that the frequency bandwidth corresponding to the gate is small compared to the anharmonicity $\alpha$ can greatly reduce this leakage. However, an additional form of leakage is manifested as a virtual excitation to the second-excited state during the pulse, resulting in an added phase error.
 
         \begin{wrapfigure}[12]{r}{0.5\textwidth}
           \begin{center}
@@ -838,7 +838,7 @@
 
       \subsection{AllXY}
         \label{ssec:AllXY}
-        There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground-state, the final state of the second twelve combinations is the equator, and the final state of the last four combinations is the excited-state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App.~\ref{ch:AllXY pulse table}.
+        There is a good measurement to test how well the qubit has been tuned. It is known as the AlllXY measurement, and consists of all 21 possible two-gate combinations of $\left\{Id, X_{\pi}, Y_{\pi}, X_{\pi/2}, Y_{\pi/2}\right\}$. Each combination is susceptible to different types of gate errors to a different degree. The AllXY combinations have therefore been arranged in such a way that the final state of the first five combinations is the ground state, the final state of the second twelve combinations is the equator, and the final state of the last four combinations is the excited state. Furthermore the combinations are arranged in such a way that the most common sources of gate errors can be distinguished. The full list of combinations in correct order can be found in App.~\ref{ch:AllXY pulse table}.
 
         The errors that can be distinguished are extensive: drive amplitude, DRAG parameter, frequency detuning, signal reflections, and several more. This is the strength of AllXY, but simultaneously its weakness. If there are multiple errors present, their errors may interfere, resulting in symptoms which are difficult to diagnose. nevertheless, it is a powerful tool, especially if one source of gate error is dominant. For a detailed analysis of the AllXY symptoms produced by different types of gate errors, see Reef~\cite{Reed}.
 
@@ -934,13 +934,13 @@
       In the case of the Muxmon experiment randomized benchmarking is performed on individual qubits, and the set of unitary operations is the single qubit Clifford group. The randomized benchmarking protocol used in this experiment, depicted in Fig.~\ref{fig:RB schematic}, is as follows:
 
       \begin{enumerate}
-        \item Initialize the qubit in the ground-state
+        \item Initialize the qubit in the ground state
         \item Apply $n$ consecutive Cliffords $\left(C_1, \dots, C_n\right)$, where $C_i \in \mathpzc{C}_1 \; \forall \; i \in \left[1, \dots, n\right]$
         \item apply final inverting Clifford $C_\text{inv}=\left( C_n \dots C_1 \right)^{-1}$
         \item Measure the state of the qubit
       \end{enumerate}
 
-      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground-state. However, gate errors and decoherence result in the final state having a nonzero population in the excited-state. The final population in the ground-state $P_0$ decreases exponentially as the number of Cliffords $n$ is increased. In the limiting case where all information about the qubit is lost the qubit has equal population in the ground- and in the excited-state. The final ground-state population follows an exponential curve  given by~\cite{knill2008randomized}:
+      After the final inverting Clifford $C_\text{inv}$ the qubit should return to the ground state. However, gate errors and decoherence result in the final state having a nonzero population in the excited state. The final population in the ground state $P_0$ decreases exponentially as the number of Cliffords $n$ is increased. In the limiting case where all information about the qubit is lost the qubit has equal population in the ground and excited state. The final ground-state population follows an exponential curve  given by~\cite{knill2008randomized}:
 
       \begin{equation}
         P_0= \frac{1}{2} p^n + \frac{1}{2}
@@ -1004,13 +1004,13 @@
 
         Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Sec.~\ref{ssec:cross-driving}, indicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equal to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
 
-      \subsection{Second excited-state leakage}
-        \label{ssec:Second excited-state leakage}
-        The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being found with equal probability in the ground-state and in the excited-state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second excited-state, which would shift the measured signal. The term qubit is therefore strictly speaking not correct.
+      \subsection{Second-excited-state leakage}
+        \label{ssec:Second-excited-state leakage}
+        The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being found with equal probability in the ground state and in the excited state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second-excited state, which would shift the measured signal. The term qubit is therefore strictly speaking not correct.
 
-        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final pi pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited-state.
+        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final pi pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited state.
 
-        If we assume there is no further leakage into states higher than the second excited-state, these two measurements result in the following set of equations:
+        If we assume there is no further leakage into states higher than the second-excited state, these two measurements result in the following set of equations:
 
         \begin{align}
           p_0 V_0 + p_1 V_1 + p_2 V_2 = S_0 \notag\\
@@ -1028,15 +1028,15 @@
           \label{fig:RB normal state populations}
         \end{figure}
 
-        Using the methods explained in Sec.~\ref{ssec:Second excited-state leakage}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Fig.~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
+        Using the methods explained in Sec.~\ref{ssec:Second-excited-state leakage}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Fig.~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
 
-        By assuming that the leakage rate $\kappa$ is constant, population in the second excited-state:
+        By assuming that the leakage rate $\kappa$ is constant, population in the second-excited state:
 
         \begin{equation}
           \frac{d p_2}{d t}= \kappa - p_2 T_1^2
         \end{equation}
 
-        where $T_1^2$ is the relaxation time of the second excited-state to the first excited-state. By imposing the condition that $p_2(0)=0$, the resulting formula for the second excited-state population is:
+        where $T_1^2$ is the relaxation time of the second-excited state to the first-excited state. By imposing the condition that $p_2(0)=0$, the resulting formula for the second-excited-state population is:
 
         \begin{equation}
           p(t) = e^{-t/{T_1^2}}\left(  -1 + e^{t/{T_1^2}}\right)T_1^2 \kappa4
@@ -1046,12 +1046,12 @@
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/2nd-state leakage normal.png}
-          \caption{Second state population for the two qubits along with fit. The extracted second excited-state relaxation time $T_1^2$ and leakage per gate $\alpha$ are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit.}
+          \caption{Second state population for the two qubits along with fit. The extracted second-excited-state relaxation time $T_1^2$ and leakage per gate $\alpha$ are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit.}
           \label{fig:2nd-state leakage normal}
         \end{figure}
 
 
-        We can fit this formula to the experimentally obtained second excited-state populations, from which we can extract the relaxation time $T_1^2$ and the leakage per gate $\alpha$. The results are shown in Fig.~\ref{fig:2nd-state leakage normal}. The extracted values are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)$ \% for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)$ \% for the bottom qubit.As we can see the leakage rate of the top qubit is considerably higher, resulting in a better fit and more accurate parameter estimation. One possible way to combat leakage is to increase the pulse length, which corresponds to the pulses having a smaller frequency bandwidth. It is interesting that the second excited-state relaxation time $T_1^2$ of the top qubit is higher than the first excited-state relaxation time $T_1=\SIm{8.7}{\micro \second}$, as this is in contrast with previous experiments~\cite{peterer2015coherence}, where the relaxation time of the second excited-state is found to be considerably lower.
+        We can fit this formula to the experimentally obtained second-excited-state populations, from which we can extract the relaxation time $T_1^2$ and the leakage per gate $\alpha$. The results are shown in Fig.~\ref{fig:2nd-state leakage normal}. The extracted values are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)$ \% for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)$ \% for the bottom qubit.As we can see the leakage rate of the top qubit is considerably higher, resulting in a better fit and more accurate parameter estimation. One possible way to combat leakage is to increase the pulse length, which corresponds to the pulses having a smaller frequency bandwidth. It is interesting that the second-excited-state relaxation time $T_1^2$ of the top qubit is higher than the first-excited-state relaxation time $T_1=\SIm{8.7}{\micro \second}$, as this is in contrast with previous experiments~\cite{peterer2015coherence}, where the relaxation time of the second-excited state is found to be considerably lower.
 
 
 
@@ -1149,7 +1149,7 @@
 
           The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This comparison is not entirely fair, as idle gates (when only the other qubit is being pulsed) are also counted as gates. Nevertheless, it can be concluded that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit surface code fault tolerant threshold.
 
-          Using the method described in Sec.~\ref{ssec:Second excited-state leakage}, the mean relaxation time of the second excited-state $T_1^2$ and the leakage rate per gate $\alpha$ has been determined (see App.~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
+          Using the method described in Sec.~\ref{ssec:Second-excited-state leakage}, the mean relaxation time of the second-excited-state $T_1^2$ and the leakage rate per gate $\alpha$ has been determined (see App.~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
 
           \begin{figure}[tb]
             \centering
@@ -1196,7 +1196,7 @@
 
     Cross-coupling and cross-driving effects have been observed, which could potentially be a problem, as it results in correlated errors. One example shown is when randomized benchmarking is performed on one qubit, the other qubit is slowly driven as well. The fact that the cross-driving effects in the Muxmon1 experiment are stronger than in the Muxmon0 device suggest that they are dependent on the amount of components separating same-frequency qubits. The same holds for cross-coupling effects. If it turns out that in the surface code architecture these effects must be reduced, a modified frequency re-use structure could be implemented with more components separating same-frequency qubits.
 
-    During the randomized benchmarking sequences leakage to the second excited-state has been observed, with a typical value of $0.03\%$ leakage per gate. Changing the DRAG parameter or increasing the pulse length could potentially reduce this leakage.
+    During the randomized benchmarking sequences leakage to the second-excited state has been observed, with a typical value of $0.03\%$ leakage per gate. Changing the DRAG parameter or increasing the pulse length could potentially reduce this leakage.
 
     Even though the Duplexer already proves to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of instruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
 

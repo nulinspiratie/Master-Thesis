@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  29 JUN 2015 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  29 JUN 2015 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1469,6 +1469,12 @@ Package pdftex.def Info: Figures/Qubit characterization/second transition spec.
 png used on input line 364.
 (pdftex.def)             Requested size: 271.7835pt x 217.427pt.
 
+Overfull \hbox (2.97755pt too wide) in paragraph at lines 369--370
+[]\T1/futs/m/n/12 (-20) In prin-ci-ple the first drive tone with fre-quency $\F
+ML/futmi/m/it/12 ![]$ \T1/futs/m/n/12 (-20) can be kept fixed at the $0 \FMS/fu
+tm/m/n/12 $ \T1/futs/m/n/12 (-20) 1$transition
+ []
+
 <Figures/Qubit characterization/Flux_matrix.png, id=213, 722.7pt x 722.7pt>
 File: Figures/Qubit characterization/Flux_matrix.png Graphic file (type png)
 
@@ -1992,7 +1998,12 @@ Appendix F.
 Appendix G.
 [95
 
-] [96]
+]
+
+LaTeX Warning: Reference `ssec:Second excited-state' on page 96 undefined on in
+put line 246.
+
+[96]
 <Figures/Randomized benchmarking/2nd-state leakage 2Q.png, id=483, 650.43pt x 2
 89.08pt>
 File: Figures/Randomized benchmarking/2nd-state leakage 2Q.png Graphic file (ty
@@ -2026,11 +2037,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17853 strings out of 493109
- 354029 string characters out of 6138586
- 474691 words of memory out of 5000000
- 20572 multiletter control sequences out of 15000+600000
- 399569 words of font info for 656 fonts, out of 8000000 for 9000
+ 17850 strings out of 493109
+ 354015 string characters out of 6138586
+ 473691 words of memory out of 5000000
+ 20573 multiletter control sequences out of 15000+600000
+ 399299 words of font info for 653 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,18n,57p,10406b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2014/texm
@@ -2044,7 +2055,7 @@ texlive/2014/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb><c:/texlive/2014/t
 exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts
 /type1/adobe/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zap
 fchan/uzcmi8a.pfb>
-Output written on thesis.pdf (110 pages, 31144842 bytes).
+Output written on thesis.pdf (110 pages, 31060778 bytes).
 PDF statistics:
  556 PDF objects out of 1000 (max. 8388607)
  289 compressed objects within 3 object streams
