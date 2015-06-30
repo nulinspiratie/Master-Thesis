@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 JUN 2015 10:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 JUN 2015 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1446,11 +1446,6 @@ Package pdftex.def Info: Figures/Muxmon SQUID loop w annotation.png used on inp
 ut line 246.
 (pdftex.def)             Requested size: 203.83417pt x 152.46951pt.
 
-
-LaTeX Warning: Reference `Finding the qubit sweet spot using a one-dimensional 
-scan' on page 36 undefined on input line 254.
-
-
 <Figures/Qubit characterization/dispersive shift.png, id=195, 433.62pt x 289.08
 pt>
 File: Figures/Qubit characterization/dispersive shift.png Graphic file (type pn
@@ -1879,8 +1874,12 @@ Package pdftex.def Info: Figures/Randomized benchmarking/RB_2Q_state_population
 s_notable.png used on input line 1116.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
-[71] [72 <./Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png
->]
+[71]
+
+LaTeX Warning: Reference `sec:Two qubit randomized benchmarking leakage' on pag
+e 72 undefined on input line 1143.
+
+[72 <./Figures/Randomized benchmarking/RB_2Q_state_populations_notable.png>]
 <Figures/Randomized benchmarking/RB_5p_driving_single_both.png, id=386, 722.7pt
  x 361.35pt>
 File: Figures/Randomized benchmarking/RB_5p_driving_single_both.png Graphic fil
@@ -1943,7 +1942,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/Noise/Noise model.png Graphic file (type png)
 
 <use Figures/Noise/Noise model.png>
-Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 75.
+Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 73.
 (pdftex.def)             Requested size: 362.37569pt x 136.1313pt.
  [81 <./Figures/Noise/Noise model.png>]
 [82] [83]
@@ -1951,7 +1950,7 @@ Package pdftex.def Info: Figures/Noise/Noise model.png used on input line 75.
 File: Figures/Noise/noise_temperature_versus_power.png Graphic file (type png)
 <use Figures/Noise/noise_temperature_versus_power.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power.png used 
-on input line 189.
+on input line 182.
 (pdftex.def)             Requested size: 317.07614pt x 211.39275pt.
  [84 <./Figures/Noise/noise_temperature_versus_power.png>]
 <Figures/Noise/noise_temperature_versus_power_detailed.png, id=436, 433.62pt x 
@@ -1960,7 +1959,7 @@ File: Figures/Noise/noise_temperature_versus_power_detailed.png Graphic file (t
 ype png)
  <use Figures/Noise/noise_temperature_versus_power_detailed.png>
 Package pdftex.def Info: Figures/Noise/noise_temperature_versus_power_detailed.
-png used on input line 202.
+png used on input line 195.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
 
 [85 <./Figures/Noise/noise_temperature_versus_power_detailed.png>])
@@ -1978,7 +1977,7 @@ File: Figures/Appendix/Duplexer isolation.png Graphic file (type png)
 
 <use Figures/Appendix/Duplexer isolation.png>
 Package pdftex.def Info: Figures/Appendix/Duplexer isolation.png used on input 
-line 48.
+line 44.
 (pdftex.def)             Requested size: 452.9679pt x 339.72418pt.
  [88
 
@@ -1989,7 +1988,7 @@ File: Figures/Appendix/resonator buses.png Graphic file (type png)
 
 <use Figures/Appendix/resonator buses.png>
 Package pdftex.def Info: Figures/Appendix/resonator buses.png used on input lin
-e 81.
+e 77.
 (pdftex.def)             Requested size: 452.9679pt x 226.48279pt.
 
 
@@ -2006,12 +2005,8 @@ File: Figures/Qubit characterization/Resonator vs DAC linecut.png Graphic file
 (type png)
  <use Figures/Qubit characterization/Resonator vs DAC linecut.png>
 Package pdftex.def Info: Figures/Qubit characterization/Resonator vs DAC linecu
-t.png used on input line 94.
+t.png used on input line 90.
 (pdftex.def)             Requested size: 271.7835pt x 181.19945pt.
-
-
-LaTeX Warning: Reference `Scan for qubit sweet-spots' on page 92 undefined on i
-nput line 99.
 
 [92
 
@@ -2026,7 +2021,7 @@ Appendix G.
 ]
 
 LaTeX Warning: Reference `ssec:Second excited-state' on page 96 undefined on in
-put line 246.
+put line 240.
 
 [96]
 <Figures/Randomized benchmarking/2nd-state leakage 2Q.png, id=483, 650.43pt x 2
@@ -2035,22 +2030,21 @@ File: Figures/Randomized benchmarking/2nd-state leakage 2Q.png Graphic file (ty
 pe png)
  <use Figures/Randomized benchmarking/2nd-state leakage 2Q.png>
 Package pdftex.def Info: Figures/Randomized benchmarking/2nd-state leakage 2Q.p
-ng used on input line 268.
+ng used on input line 262.
 (pdftex.def)             Requested size: 452.9679pt x 201.32243pt.
 
 [97 <./Figures/Randomized benchmarking/2nd-state leakage 2Q.png>]
 Appendix H.
 [98
 
-] [99]
-Overfull \hbox (23.7594pt too wide) in paragraph at lines 314--325
+] [99] [100]
+Overfull \hbox (23.7594pt too wide) in paragraph at lines 308--319
  [][] 
  []
 
-) [100] (./thesis.bbl [101] [102
+) (./thesis.bbl [101] [102
 
-] [103] [104])
-
+] [103] [104]) 
 AED: lastpage setting LastPage
 [105] (./thesis.aux)
 
@@ -2062,11 +2056,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17863 strings out of 493109
- 354250 string characters out of 6138586
+ 17858 strings out of 493109
+ 354173 string characters out of 6138586
  474691 words of memory out of 5000000
- 20586 multiletter control sequences out of 15000+600000
- 399342 words of font info for 651 fonts, out of 8000000 for 9000
+ 20585 multiletter control sequences out of 15000+600000
+ 399072 words of font info for 648 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,19n,57p,10406b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/texlive/2014/texm
@@ -2081,7 +2075,7 @@ mlitb.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
 fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/ado
 be/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
 ftt1200.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (110 pages, 30276529 bytes).
+Output written on thesis.pdf (110 pages, 30275859 bytes).
 PDF statistics:
  560 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams

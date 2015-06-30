@@ -92,14 +92,14 @@
 \contentsline {section}{\numberline {D.2}Muxmon0 resonator buses}{90}
 \contentsline {chapter}{\numberline {E}Additional notes}{92}
 \contentsline {section}{\numberline {E.1}Qubit characterization}{92}
-\contentsline {subsection}{\numberline {E.1.1}Finding the qubit sweet-spot using a one-dimensional scan}{92}
+\contentsline {subsection}{\numberline {E.1.1}Finding the qubit sweet spot using a one-dimensional scan}{92}
 \contentsline {subsubsection}{\numberline {E.1.1.1}Spectroscopy}{92}
 \contentsline {subsubsection}{\numberline {E.1.1.2}Flux matrix}{93}
 \contentsline {chapter}{\numberline {F}AllXY pulse sequence}{94}
 \contentsline {chapter}{\numberline {G}Randomized benchmarking}{95}
 \contentsline {section}{\numberline {G.1}Clifford gate decomposition}{95}
 \contentsline {section}{\numberline {G.2}Determining population in three states}{96}
-\contentsline {section}{\numberline {G.3}Two qubit randomized benchmarking leakage}{97}
+\contentsline {section}{\numberline {G.3}Two-qubit randomized benchmarking leakage}{97}
 \contentsline {chapter}{\numberline {H}Compiled randomized benchmarking algorithm}{98}
 \contentsline {section}{\numberline {H.1}Finding the optimal gate sequence}{98}
 \contentsline {section}{\numberline {H.2}Optimizing the gate compilation algorithm}{99}

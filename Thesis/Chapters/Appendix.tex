@@ -7,35 +7,31 @@
 \chapter{Photon number calculation}
   \label{ch:photon number calculation}
 
-  In cQED resonators usually operate in the single-photon regime. It is therefore important to know what power is required to reach this regime. In the equilibrium state of the resonator the power absorbed $P_\text{abs}$ by the resonator is equal to the power leaking out of the resonator, and so the absorbed power $P_\text{abs}$ can be expressed as:
+  In cQED resonators usually operate in the single-photon regime. It is therefore important to know what power is required to reach this regime. In the equilibrium state of the resonator the power absorbed $P_\text{abs}$ by the resonator is equal to the power leaking out of the resonator, and so the absorbed power $P_\text{abs}$ can be expressed as
 
   \begin{equation}
-    P_\text{abs} = \left<n_\text{ph}\right>\hbar\omega_r \kappa
+    P_\text{abs} = \left<n_\text{ph}\right>\hbar\omega_r \kappa,
     \label{eq:Pabs-nph}
   \end{equation}
-
   where $\kappa=\omega_r/Q_i$ is the cavity decay rate.
 
-  The absorbed power $P_\text{abs}$ can also be expressed in terms of the input power $P_\text{in}$ entering the feedline. We note that the absorbed power $P_\text{abs}$ is equal to the input power $\P_\text{in}$ entering the feedline minus the reflected power $P_\text{refl}$ and the transmitted power $P_\text{trans}$. These are given by:
+  The absorbed power $P_\text{abs}$ can also be expressed in terms of the input power $P_\text{in}$ entering the feedline. We note that the absorbed power $P_\text{abs}$ is equal to the input power $P_\text{in}$ entering the feedline minus the reflected power $P_\text{refl}$ and the transmitted power $P_\text{trans}$. These are given by
 
   \begin{align}
-    P_\text{refl} = P_\text{in}\left|S_{11}\right|^2\\
-    P_\text{trans} = P_\text{in}\left|S_{21}\right|^2\\
+    P_\text{refl} = P_\text{in}\left|S_{11}\right|^2;\\
+    P_\text{trans} = P_\text{in}\left|S_{21}\right|^2,
   \end{align}
-
-  where $S_{11}$ and $S_{21}$ are the scattering parameters. At the resonance frequency $S_{21}=\frac{Q_c}{Q_i+Q_c}$ (see Eq.~\ref{eq:S21min}), and $S_{11}=S_{21}-1$. Therefore the absorbed power is equal to:
+  where $S_{11}$ and $S_{21}$ are the scattering parameters. At the resonance frequency $S_{21}=\frac{Q_c}{Q_i+Q_c}$ (see Eq.~\ref{eq:S21min}), and $S_{11}=S_{21}-1$. Therefore the absorbed power is equal to
 
   \begin{equation}
-    P_\text{abs}=1-P_\text{refl}-P_\text{trans}=\frac{2Q_l^2}{Q_c Q_i}P_\text{in}
+    P_\text{abs}=1-P_\text{refl}-P_\text{trans}=\frac{2Q_l^2}{Q_c Q_i}P_\text{in}.
     \label{Pabs-Pin}
   \end{equation}
-
   Combining Eqs.~\ref{eq:Pabs-nph} and~\ref{Pabs-Pin}, we arrive at a formula for the mean photon number $\left<n_\text{ph}\right>$:
 
   \begin{equation}
-    \left<n_\text{ph}\right> = \frac{2}{\hbar \omega_r}\frac{Q_l^2}{Q_c}P_\text{in}
+    \left<n_\text{ph}\right> = \frac{2}{\hbar \omega_r}\frac{Q_l^2}{Q_c}P_\text{in}.
   \end{equation}
-
   The input power $P_\text{in}$ can be found by measuring the transmission of the components between the generator and feedline.
 
 
@@ -46,11 +42,11 @@
   \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Figures/Appendix/Duplexer isolation.png}
-    \caption{Isolation of the Duplexer. Legend indices correspond to switch state($1$ means open, $0$ means closed, lsb corresponds to bottom drive line, msb to top drive line). Transmission is measured relative to transmission when all channels are open (11). The black line corresponds to the measured noise floor. The red dashed line indicates the frequency of the top and bottom qubit, and the blue dashed line to the ancilla qubit, during the Muxmon experiment.}
+    \caption{Isolation of the Duplexer. Legend indices correspond to switch state ($1$ means open, $0$ means closed, lsb corresponds to bottom drive line, msb to top drive line). Transmission is measured relative to the transmission when all channels are open (11). The black line corresponds to the measured noise floor. The red-dashed line indicates the frequency of the top and bottom qubit, and the blue-dashed line to the ancilla qubit, during the Muxmon experiment.}
     \label{fig:Duplexer isolation}
   \end{figure}
 
-  The isolation of the Duplexer switches has been measured. During the measurements a signal was sent through input channel $1$ and $2$, corresponding to the signal of the main Gaussian pulse, and derivative pulse, respectively. For each input channel the transmission to each of the two output channels has been measured. These output channels are connected to the drive lines of the top and bottom qubit during the Muxmon experiment. For each input-output port combination the transmission has been measured for different switch configurations, which were controlled using the nanosecond-switches. Four different switch combinations were used, corresponding the the four distinct possibilities of the signal being directed to each of the two output channels.
+  The isolation of the Duplexer switches has been measured. During the measurements a signal was sent through input channel $1$ and $2$, corresponding to the signal of the main Gaussian pulse, and derivative pulse, respectively. For each input channel the transmission to each of the two output channels has been measured. These output channels are connected to the drive lines of the top and bottom qubit during the Muxmon experiment. For each input-output-port combination the transmission has been measured for different switch configurations, which were controlled using the nanosecond switches. Four different switch combinations were used, corresponding the the four distinct possibilities of the signal being directed to each of the two output channels.
 
   The results of the isolation measurements are shown in Fig.~\ref{fig:Duplexer isolation}. As can be seen in all four input-output combinations the isolation is around \SI{50}{\dBm} at the frequency of top and bottom qubit. Furthermore, the isolation does not seem to depend strongly on whether the switch to the other output port is open or closed.
 
@@ -79,7 +75,7 @@
     \begin{figure}[h]
       \centering
       \includegraphics[width=\textwidth]{Figures/Appendix/resonator buses.png}
-      \caption{Normalized transmission showing the resonator buses of the top and bottom qubit, at frequencies \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} respectively.}
+      \caption{Normalized transmission showing the resonator buses of the top and bottom qubit, at frequencies \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz}, respectively.}
       \label{fig:resonator buses}
     \end{figure}
 
@@ -87,20 +83,20 @@
 
 \chapter{Additional notes}
   \section{Qubit characterization}
-      \subsection{Finding the qubit sweet-spot using a one-dimensional scan}
-        \label{Finding the qubit sweet-spot using a one-dimensional scan}
+      \subsection{Finding the qubit sweet spot using a one-dimensional scan}
+        \label{Finding the qubit sweet spot using a one-dimensional scan}
         \begin{figure}[tb]
           \centering
           \includegraphics[width=.6\linewidth]{Figures/Qubit characterization/Resonator vs DAC linecut.png}
-          \caption{Fixed frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet-spot of the ancilla qubit.}
+          \caption{Fixed-frequency transmission versus DAC current. The frequency is chosen to be slightly below the resonator frequency, found when the DAC current is set to zero. The symmetry point in the linecut corresponds to the sweet spot of the ancilla qubit.}
           \label{fig:resonator vs dac linecut}
         \end{figure}
 
-        As explained in Sec.~\ref{Scan for qubit sweet-spots}, the sweet-spot of a qubit can be found by performing a series of resonator scans while varying the DAC current. There is however, a faster approach for finding the qubit sweet-spot, at the cost of providing less information. This is done by choosing a fixed frequency close to the resonator's frequency $\wres$ (preferably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one obtains essentially a line-cut of the 2D scan. The idea this measurement is that if the qubit frequency $\fqub$ decreases, so does resonator frequency, resulting in a decrease in transmission (closer to $\wres$). Likewise, if the qubit frequency $\wqub$ increases, so does the resonator frequency, resulting in an increase in transmission (further away from $\wres$).
+        As explained in Sec.~\ref{Scan for qubit sweet spots}, the sweet spot of a qubit can be found by performing a series of resonator scans while varying the DAC current. There is, however, a faster approach for finding the qubit sweet spot, at the cost of providing less information. This is done by choosing a fixed frequency close to the resonator  frequency $\wres$ (preferably slightly below, where the transmission slope is steepest). By measuring the amount of transmission as the DAC voltage is being varied, one essentially obtains a linecut of the 2D scan. The idea this measurement is that if the qubit frequency $\fqub$ decreases, so does resonator frequency, resulting in a decrease in transmission (closer to $\wres$). Likewise, if the qubit frequency $\wqub$ increases, so does the resonator frequency, resulting in an increase in transmission (further away from $\wres$).
 
-        At the qubit's sweet-spot, the resonator's frequency $\wres$ is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the qubit frequency is symmetric with respect to its sweet-spot, so should the transmission. The sweet-spot can therefore be determined by finding the symmetric point in the transmission. In Fig.~\ref{fig:resonator vs dac linecut} one such linecut is shown. The transmission is clearly symmetric, and the symmetric point is equal to the qubit sweet-spot.
+        At the qubit's sweet-spot, the resonator's frequency $\wres$ is at a maximum, and so the transmission should also be at a maximum. Furthermore, because the qubit frequency is symmetric with respect to its sweet spot, so should the transmission. The sweet spot can therefore be determined by finding the symmetric point in the transmission. In Fig.~\ref{fig:resonator vs dac linecut} one such linecut is shown. The transmission is clearly symmetric, and the symmetric point is equal to the qubit sweet spot.
 
-        If the resonator's frequency $\wres$ shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet-spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases does provide sufficient information to determine the sweet-spot.
+        If the resonator's frequency $\wres$ shifts by a large amount in the course of this measurement, it becomes harder to determine where the sweet spot is (although even then often it can still be discerned). Nevertheless, this method is considerably faster than performing a full two-dimensional scan of frequency versus DAC voltage, and in most cases does provide sufficient information to determine the sweet spot.
 
 
       \subsubsection{Spectroscopy}
@@ -108,7 +104,7 @@
           \item If the deviation in transmission becomes less due to more detuning, increasing the power can also increase the contrast.
         \end{itemize}
       \subsubsection{Flux matrix}
-        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross-coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
+        After determining the flux matrix $\boldsymbol{F}$, there will still be some small remaining cross coupling, which depends on the accuracy of the measurements. The process of creating a flux matrix can then be repeated, but instead of using DAC voltages as the varying parameters to construct matrix $\boldsymbol{M}$, the virtual fluxes should be used. Furthermore, as the cross-coupling is small compared to before, the flux range can be much greater, such that small slopes can be accurately measured. The resulting flux matrix $\boldsymbol{F}_2$ can then simply be multiplied with the first flux matrix $\boldsymbol{F}$ to obtain a more accurate final flux matrix.
     \chapter{AllXY pulse sequence}
       \label{ch:AllXY pulse table}
 
@@ -199,13 +195,12 @@
       Using these two randomized benchmarking sequences, two different signals $S_0$ and $S_1$ are measured, corresponding to a measurement without a final pi pulse, and a measurement with a final pi pulse, respectively. This leads to the following three equations:
 
       \begin{align}
-        p_0 V_0 + p_1 V_1 + p_2 V_2 = & S_0 \notag\\
-        p_1 V_1 + p_0 V_1 + p_2 V_2 = & S_1 \notag\\
-        p_0 + p_1 + p_2 = &   1
+        p_0 V_0 + p_1 V_1 + p_2 V_2 = & S_0; \notag\\
+        p_1 V_1 + p_0 V_1 + p_2 V_2 = & S_1; \notag\\
+        p_0 + p_1 + p_2 = &   1,
         \label{eq:three populations equations App}
       \end{align}
-
-      where $p_i$ corresponds to the final population in state $\ket{i}$, and $V_i$ is the signal of state $\ket{i}$.  Filling in $p_2 = 1 - p_0 - p_1$ into the first two equations of \ref{eq:three populations equations App}, we are left with the following set of equations:
+      where $p_i$ corresponds to the final population in state $\ket{i}$, and $V_i$ is the signal of state $\ket{i}$. Filling in $p_2 = 1 - p_0 - p_1$ into the first two equations of \ref{eq:three populations equations App}, we are left with the following set of equations:
 
       \begin{align}
         \begin{bmatrix}
@@ -220,9 +215,8 @@
         \begin{bmatrix}
           S_0 - V_2 \\
           S_1 - V_2
-        \end{bmatrix}
+        \end{bmatrix}.
       \end{align}
-
       This set of equations can be easily solved by matrix inversion, resulting in the following three populations:
 
       \begin{align}
@@ -239,14 +233,14 @@
         \begin{bmatrix}
           S_0 - V_2 \\
           S_1 - V_2
-        \end{bmatrix} \notag\\
-        p_2 = & 1 - p_0 - p_1
+        \end{bmatrix}; \notag\\
+        p_2 = & 1 - p_0 - p_1.
         \label{eq:RB populations using final pi}
       \end{align}
       If one has knowledge of all thee signals $V_0$, $V_1$ and $V_2$ (see Sec.~\ref{ssec:Second excited-state} for information on measuring $V_2$), the three populations can be obtained using Eq.~\ref{eq:RB populations using final pi}.
       \newpage
-  \section{Two qubit randomized benchmarking leakage}
-    \label{sec:Two qubit randomized benchmarking leakage}
+  \section{Two-qubit randomized benchmarking leakage}
+    \label{sec:Two-qubit randomized benchmarking leakage}
         \begin{table}[h]
           \begin{tabular}{c c c c c}
             \toprule
@@ -266,49 +260,49 @@
         \begin{figure}[h]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/2nd-state leakage 2Q.png}
-          \caption{Second state leakage along with fit using Eq.~\ref{eq:2nd state formula}.}
+          \caption{Second-excited-state leakage along with fit using Eq.~\ref{eq:2nd state formula}.}
           \label{fig:second state leakage 2Q}
         \end{figure}
 
 \chapter{Compiled randomized benchmarking algorithm}
   \label{sec:compiled randomized benchmarking algorithm}
   \section{Finding the optimal gate sequence}
-    In compiled randomized benchmarking each set of Cliffords is compiled such that the total number of pulses sent is as small as possible. This is done by comparing all the possible decompositions for each Clifford in the set of Cliffords with each other, and determining the combination that results in the least amount of total pulses. The constraints are that pulses may not be applied simultaneously, but may be directed to either or both of the qubits.
+    In compiled randomized benchmarking, each set of Cliffords is compiled such that the total number of pulses sent is as small as possible. This is done by comparing all the possible decompositions for each Clifford in the set of Cliffords with each other, and determining the combination that results in the least amount of total pulses. The constraints are that pulses may not be applied simultaneously. They may, however, be directed to either or both of the qubits.
 
-    Given a tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$, where $n$ is the number of qubits and $\alpha_i$ is the Clifford number for qubit $i$, a particular decomposition of the Cliffords is given by $\left(\left( G_1^1, ..., G_{m_1}^1 \right) , ..., \left(G_1^n, ..., G_{m_n}^n\right)\right)$, where $m_i$ is the number of gates in the decomposition of Clifford $C_{\alpha_i}^i$, and $G_j^i$ is gate $j$ of the Clifford decomposition of $C_i$. The algorithm used for finding the minimum number of gates for a particular tuple of Clifford decompositions is a recursive algorithm. The algorithm determines all possible ways in which the gates can be ordered, and finally chooses the sequence having the smallest length.
+    Given a tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$, where $n$ is the number of qubits, and $\alpha_i$ is the Clifford number for qubit $i$, a particular decomposition of the Cliffords is given by $\left(\left( G_1^1, ..., G_{m_1}^1 \right) , ..., \left(G_1^n, ..., G_{m_n}^n\right)\right)$, where $m_i$ is the number of gates in the decomposition of Clifford $C_{\alpha_i}^i$, and $G_j^i$ is gate $j$ of the Clifford decomposition of $C_i$. The algorithm used for finding the minimum number of gates for a particular tuple of Clifford decompositions is recursive. The algorithm determines all possible ways in which the gates can be ordered, and finally chooses the sequence having the shortest length.
 
-    To explain this algorithm, let us denote $\bm{\beta}=\left(\beta_1, \dots, \beta_n\right)$ as the indices of the next possible gates. The corresponding gates are given by $\bm{G_\bm{\beta}}=\left( G_{\beta_1}^1, \dots, G_{\beta_n}^n \right)$. If the indices where $\beta_i=m_i + 1$, there is no next gate, and so $G_{\beta_i}$ does not exist and should not be added to $\bm{G_\bm{\beta}}$.
+    To explain this algorithm, let us denote $\bm{\beta}=\left(\beta_1, \dots, \beta_n\right)$ as the indices of the next possible gates. The corresponding gates are given by $\bm{G_\bm{\beta}}=\left( G_{\beta_1}^1, \dots, G_{\beta_n}^n \right)$. For the indices where $\beta_i=m_i + 1$, there is no next gate, and so $G_{\beta_i}$ does not exist and should not be added to $\bm{G_\bm{\beta}}$. The algorithm operates as follows:
 
     \begin{enumerate}
-      \item Start with an empty sequence of gates $G_\text{seq}$ and gate indices $\bm{\beta} = \left(\beta_1, ..., \beta_n\right) = \left(1, ..., 1\right)$
-      \item Determine the set of distinct gates in $G_{\bm{\beta}}$.
+      \item Start with an empty sequence of gates $G_\text{seq}$ and gate indices $\bm{\beta} = \left(\beta_1, ..., \beta_n\right) = \left(1, ..., 1\right)$;
+      \item Determine the set of distinct gates in $G_{\bm{\beta}}$;
       \item For each gate $g$ in the set of distinct gates perform the following steps:
       \begin{enumerate}
-        \item Append $g$ to $G_\text{seq}$.
-        \item Determine all indices $i$ for which the next gate $G_{\beta_i}^i$ equals $g$.
-        \item Copy gate indices $\bm{\beta}$ to $\bm{\beta}^\text{new}=\left(\beta_1^\text{new}, ..., \beta_n^\text{new}\right)=\left(\beta_1, ..., \beta_n\right)$.
-        \item For all indices $i$ for which $G_{\beta_i}^i=g$, increase the gate index $\beta_i^\text{new} = \beta_i+1$.
-        \item Go to step two using the new gate indices $\bm{\beta}^\text{new}$.
+        \item Append $g$ to $G_\text{seq}$;
+        \item Determine all indices $i$ for which the next gate $G_{\beta_i}^i$ equals $g$;
+        \item Copy gate indices $\bm{\beta}$ to $\bm{\beta}^\text{new}=\left(\beta_1^\text{new}, ..., \beta_n^\text{new}\right)=\left(\beta_1, ..., \beta_n\right)$;
+        \item For all indices $i$ for which $G_{\beta_i}^i=g$, increase the gate index $\beta_i^\text{new} = \beta_i+1$;
+        \item Go to step two using the new gate indices $\bm{\beta}^\text{new}$;
       \end{enumerate}
-      \item If $G_{\bm{\beta}}$ is empty, then $G_\text{seq}$ is a particular sequence of pulses that would result in all Cliffords being applied.
-      \item When all possible sequences are combined, choose the sequence with the minimum number of gates in $G_\text{seq}$
+      \item If $G_{\bm{\beta}}$ is empty, then $G_\text{seq}$ is a particular sequence of pulses that would result in all Cliffords being applied;
+      \item When all possible sequences are combined, choose the sequence with the minimum number of gates in $G_\text{seq}$.
     \end{enumerate}
 
-    This algorithm determines the least amount of gates necessary to perform all Cliffords in one particular tuple of decompositions. However, each Clifford has on average $38$ different decompositions, and so for $n$ qubits the total decomposition combinations is approximately$38^n$, meaning this algorithm would have to be repeated $38^n$ times to find the global minimum number of pulses to perform all Cliffords. And in fact this would only determine the optimal compilation for one particular set of Cliffords; to find the average gates per Clifford tuple one would have to perform this on all possible combinations of Cliffords and then determine the average gates per Clifford tuple. This problem therefore scales exponentially with the number of qubits, and would seem impossible for as few as $n=3$ qubits, as it would require $24^3*38^3=7.6*10^8$ different decomposition combinations. Nevertheless the average gates per Clifford has been calculated exactly for up to $n=5$ qubits. This has been done using several optimization methods, which will be discussed below.
+    This algorithm determines the least amount of gates necessary to perform all Cliffords in one particular tuple of decompositions. However, each Clifford has on average $38$ different decompositions, and so for $n$ qubits the total decomposition combinations is approximately $38^n$, meaning this algorithm would have to be repeated $38^n$ times to find the global minimum number of pulses to perform all Cliffords. And in fact this would only determine the optimal compilation for one particular set of Cliffords; to find the average gates per Clifford tuple one would have to perform this on all possible combinations of Cliffords and then determine the average gates per Clifford tuple. This problem therefore scales exponentially with the number of qubits, and would seem computationally challenging for as few as $n=3$ qubits, as it would require $24^3*38^3=7.6*10^8$ different decomposition combinations. Nevertheless the average gates per Clifford has been calculated exactly for up to $n=5$ qubits. This has been done using several optimization methods, which will be discussed below.
 
   \section{Optimizing the gate compilation algorithm}
     \label{Optimizing the gate compilation algorithm}
-    Determining the average gates per Clifford tuple for $n=5$ qubits would initially result in $6.3*10^{14}$ different combinations of Clifford decompositions. For each of these combinations the algorithm must find the least amount of gates necessary to perform all gates in that particular set of Clifford decompositions. It is clear that this is computationally not viable. Luckily several optimizations can be performed which can drastically reduce this number by many orders of magnitude. These optimizations will be discussed in this section.
+    Determining the average gates per Clifford tuple for $n=5$ qubits would initially result in $6.3*10^{14}$ different combinations of Clifford decompositions. For each of these combinations the algorithm must find the least amount of gates necessary to perform all gates in that particular set of Clifford decompositions. It is clear that this is computationally not viable. Fortunately, several optimizations can be performed which can reduce this number by many orders of magnitude. These optimizations will be discussed in this section.
 
     The first and simplest optimization is from the simple observation that the optimal gate compilation for a certain tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$ is the same as any permutation of those Cliffords. Therefore we only have to determine the optimal compilations for the tuples $\left(C_{\beta_1}^1, \dots, C_{\beta_n}^n\right)$ where $\beta_1 \leq \beta_2 \leq \dots \leq \beta_n$. This already reduces the amount of calculations by an exponential amount (a factor $81$ times less computations when $n=5$.
 
-    The second optimization is to keep track of the minimum number of gates so far found that can compile a given tuple of Cliffords. At each stage of the algorithm it checks if the gates that are so far in $G_\text{seq}$ plus all the distinct gates left in $G_{\bm{\beta}}$ is equal to or greater than the minimum number of gates found so far. If this is the case, it will know that it cannot find a better combination of gates using the sequence $G_\text{seq}$. It can therefore stop this sequence and start with the next sequence. The minimum number of gates can initially be placed at $5$ gates, as the $5$ primitives method proves that there is always a decomposition of an arbitrary number of Cliffords into $5$ gates. This optimization places an upper bound on the number of gates, and results in a massive decrease in computation time. This is especially the case because as the minimum number of gates decreases, so does the frequency at which the algorithm stops its current sequence increase.
+    The second optimization is to keep track of the minimum number of gates so far found that can compile a given tuple of Cliffords. At each stage of the algorithm it checks if the gates that are so far in $G_\text{seq}$ plus all the distinct gates left in $G_{\bm{\beta}}$ is equal to or greater than the minimum number of gates found so far. If this is the case, it will know that it cannot find a better combination of gates using the sequence $G_\text{seq}$. It can therefore stop this sequence and start with the next sequence. The minimum number of gates can initially be placed at $5$ gates, as the $5$-primitives method proves that there is always a decomposition of an arbitrary number of Cliffords into $5$ gates. This optimization places an upper bound on the number of gates, and results in a massive decrease in computation time. This is especially the case because, as the minimum number of gates decreases, the frequency at which the algorithm stops its current sequence increases.
 
-    The third optimization relies on the fact that it is more likely that decompositions with fewer gates result in an optimal gate compilation. Therefore the decompositions of all Cliffords have been arranged in ascending number of gates. When comparing the decompositions of the Cliffords the first decompositions compared are those with the fewest gates. The probability of finding the optimal gate compilation is therefore high, and even if it did not find the optimal gate compilation, it is likely that the minimum gate length found so far will be low. This optimization is especially effective when combined with the second optimization.
+    The third optimization relies on the fact that it is more likely that decompositions with fewer gates result in an optimal gate compilation. the decompositions of all Cliffords have therefore been arranged in ascending number of gates. When comparing the decompositions of the Cliffords the first decompositions compared are those with the fewest gates. The probability of finding the optimal gate compilation is therefore high, and even if it did not find the optimal gate compilation, it is likely that the minimum gate length found so far will be low. This optimization is especially effective when combined with the second optimization.
 
-    The fourth optimization places a lower bound on the number of gates. For a given tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$, the lower bound is found by looking at the optimal lengths previously found for all $n-1$ Clifford subsets. This requires knowledge of the lengths of all the $n-1$ Cliffords. Since the length of the tuple of $n$ Cliffords can never be less than any of the lengths of the $n-1$ Clifford subsets, the maximum of these lengths therefore places a lower bound on the optimal number of gates. This means that if during the algorithm ever finds one sequence of gates for any tuple of decompositions whose length is equal to this lower bound, it will know it has found the optimal gate compilation for the tuple of Cliffords, and may abort all further search. This is in contrast to the second optimization, where an upper bound was found, in which case only the particular sequence of gates could be aborted. As the number of qubits increases, it becomes more and more likely that the lower bound is equal to five. In this case the lower bound is equal to the upper bound set by the $5$ primitives method, and so it can immediately be concluded that the optimal gate compilation is the $5$ primitives method. This optimization that places a lower bound is probably the best of all optimizations used, and results in a massive gain in computation time, by many orders of magnitude.
+    The fourth optimization places a lower bound on the number of gates. For a given tuple of Cliffords $\left(C_{\alpha_1}^1, \dots, C_{\alpha_n}^n\right)$, the lower bound is found by looking at the optimal lengths previously found for all $n-1$ Clifford subsets. This requires knowledge of the lengths of all the $n-1$ Cliffords. Since the length of the tuple of $n$ Cliffords can never be less than any of the lengths of the $n-1$ Clifford subsets, the maximum of these lengths therefore places a lower bound on the optimal number of gates. This means that if ever during the algorithm a sequence of gates for any tuple of decompositions is found whose length is equal to this lower bound, it will know it has found the optimal gate compilation for the tuple of Cliffords, and may abort all further search. This is in contrast to the second optimization, where an upper bound was found, in which case only the particular sequence of gates could be aborted. As the number of qubits increases, it becomes more and more likely that the lower bound is equal to five. In this case the lower bound is equal to the upper bound set by the $5$-primitives method, and so it can immediately be concluded that the optimal gate compilation is the $5$-primitives method. This optimization that places a lower bound is probably the best of all optimizations used, and results in a largest gain in computation time, by many orders of magnitude.
 
-    The fifth optimization is the most complicated optimization, and is based on separating all decompositions with three gates or less from those composed of four gates. In this optimization first all combinations are tested using only decompositions with three or less gates. This greatly reduces the average number of decompositions per Clifford, from $38$ to $7$. Especially as the number of qubits increases, this results in drastically less comparisons in total. Now it is not always the case that the minimum number of gates is found using only up to three gates per decomposition: sometimes the optimal gate compilation requires one of the decompositions to have four gates. However, we only need to include four gate decompositions when the lower bound is four or less and when the minimum gate compilation found using only three gates or less is equal to five or more. Only in this case could there be a four gate decomposition that could outperform gate decompositions with only three gates or less. We furthermore know that if there is such a four gate decomposition that results in the optimal gate compilation, its length must be equal to four, as the $5$ primitives method places the upper bound at $5$ gates. We therefore also know that only one Clifford can have a four gate decomposition, and all other Cliffords must be subsets of these four gates. We can therefore simply loop over each of the four gate decompositions, and test whether all other Cliffords are subsets of these four gates. This changes the comparison from scaling exponential with the number of qubits to scaling linear with the number of qubits.
+    The fifth optimization is the most complicated optimization, and is based on separating all decompositions with three gates or less from those composed of four gates. In this optimization, first all combinations are tested using only decompositions with three or less gates. This greatly reduces the average number of decompositions per Clifford, from $38$ to $7$. Especially as the number of qubits increases, this results in drastically less comparisons in total. It is not always the case that the minimum number of gates is found using only up to three gates per decomposition; sometimes the optimal gate compilation requires one of the decompositions to have four gates. However, we only need to include four gate decompositions when the lower bound is four or less, and when the minimum gate compilation found using only three gates or less is equal to five or more. Only in this case could there be a four-gate decomposition that could outperform gate decompositions with only three gates or less. We furthermore know that if there is such a four-gate decomposition that results in the optimal gate compilation, its length must be equal to four, as the $5$-primitives method places the upper bound at $5$ gates. We therefore also know that only one Clifford can have a four-gate decomposition, and all other Cliffords must be subsets of these four gates. We can therefore simply loop over each of the four-gate decompositions, and test whether all other Cliffords are subsets of these four gates. This changes the four-gate comparison from scaling exponential with the number of qubits to scaling linear with the number of qubits.
 
     \begin{table}
       \begin{tabular}{c c || c c}
@@ -322,8 +316,8 @@
         5 & 4.137 & 10 & 4.857 (24)\\
         \bottomrule
       \end{tabular}
-      \caption{The average gates per Clifford after compilation. Values up to n=5 have been calculated exact, while values starting from n=6 have been determined using random sampling.}
+      \caption{The average gates per Clifford after compilation. Values up to $n=5$ have been calculated exact, while values starting from $n=6$ have been determined using random sampling.}
       \label{tab:gates per Clifford}
     \end{table}
 
-    Using these $5$ optimizations the average gates per Clifford tuple has been calculated exactly for $n=5$ qubits within two hours. Furthermore, the average gates per Clifford has been approximated for up to $n=10$ Cliffords using random sampling. The results are shown in Table~\ref{tab:gates per Clifford}.
+    Using these 5 optimizations, the average gates per Clifford tuple has been calculated exactly for $n=5$ qubits within two hours. Furthermore, the average gates per Clifford has been approximated for up to $n=10$ Cliffords using random sampling. The results are shown in Table~\ref{tab:gates per Clifford}.
