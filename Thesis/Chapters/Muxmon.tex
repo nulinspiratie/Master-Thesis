@@ -6,13 +6,13 @@
   \chapter{Challenges in scaling up}
     \label{ch:Challenges in scaling up}
 
-    \section{Frequency re-use}
-      \label{sec:frequency re-use}
+    \section{Frequency reuse}
+      \label{sec:frequency reuse}
 
       \begin{wrapfigure}[16]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
-          \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/bandwidth_broadening.png}
+          \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/bandwidth_broadening.png}
         \end{center}
         \caption{The frequency bandwidth corresponding to Gaussian pulses with different widths $\sigma$.}
         \label{fig:bandwidth broadening}
@@ -21,16 +21,16 @@
 
       Even in large-scale quantum circuits individual qubit control is required. When multiple qubits are connected to a single drive line, being able to control the qubits individually requires their frequencies to be sufficiently separated. The amount by which the frequencies must be separated depends on the length of the pulses applied to the qubit. The shorter the pulse, the larger its corresponding frequency bandwidth, as can be seen in Fig.~\ref{fig:bandwidth broadening}. Longer pulses, on the other hand, result in less operations being possible within the coherence times of the qubit. It is therefore desirable to have pulses with a short duration. This means that the separation between qubit frequencies must be large. Since there is only a finite frequency spectrum, having many qubits, each with a different frequency, results in frequency crowding.
 
-      If the qubits have separate drive lines, they can be individually controlled, even when they share the same frequency. This concept is known as frequency re-use, and is a possible way to overcome frequency crowding. Frequency re-use can be implemented in the surface code architecture~\cite{fowler2009high}. One possible implementation of frequency re-use in the surface code is shown in Fig.~\ref{fig:surface code frequency re-use}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
+      If the qubits have separate drive lines, they can be individually controlled, even when they share the same frequency. This concept is known as frequency reuse, and is a possible way to overcome frequency crowding. Frequency reuse can be implemented in the surface code architecture~\cite{fowler2009high}. One possible implementation of frequency reuse in the surface code is shown in Fig.~\ref{fig:surface code frequency reuse}, where every resonator is connected to four qubits. In this set-up four distinct frequencies suffice to enable individual driving of every qubit on the lattice.
 
       \begin{figure}[h]
         \centering
-        \includegraphics[width=.6\textwidth]{Figures/Exploring frequency re-use/surface_code_frequency re-use_cut.jpg}
-        \caption{A surface code architecture with the implementation of frequency re-use. The different digits correspond to distinct frequencies. }
-        \label{fig:surface code frequency re-use}
+        \includegraphics[width=.6\textwidth]{Figures/Exploring frequency reuse/surface_code_frequency reuse_cut.jpg}
+        \caption{A surface code architecture with the implementation of frequency reuse. The different digits correspond to distinct frequencies. }
+        \label{fig:surface code frequency reuse}
       \end{figure}
 
-      Frequency re-use does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Sec.~\ref{ssec:cross coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency re-use, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Sec.~\ref{ssec:cross driving}.
+      Frequency reuse does pose potential issues. Two unwanted effects in particular arise when multiple qubits that are directly or indirectly coupled to each other share the same frequency. The first effect is cross-coupling, where an excitation can be transferred from one qubit to the other. This will be discussed in Sec.~\ref{ssec:cross coupling}. The second effect is cross-driving, where a pulse that partially leaks through the components will drive other qubits. The components separating qubits do not act as perfect filters, and so the pulse will always partially leak through. This does not pose a problem as long as the frequency of the pulse is sufficiently detuned from the frequency of the other qubits. In the case of frequency reuse, however, the frequencies of the qubits are the same, and so a pulse leaking through will result in cross-driving. This effect is discussed in Sec.~\ref{ssec:cross driving}.
 
     \section{Selective broadcasting}
       \label{sec:selective broadcasting using the Duplexer}
@@ -99,9 +99,9 @@
         \label{fig:Muxmon0 and Muxmon1}
       \end{figure}
 
-      The Muxmon experiment was performed specifically to study frequency re-use and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Fig.~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits on them, all three of which are flux-tunable. For convenience, these qubits are named top, ancilla, and bottom qubit, as shown in Fig.~\ref{fig:Qubit names}.The key difference between the two chips is the approach used to drive the qubits. In Muxmon0 all three qubits have their individual directly-coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that these drive lines do not act as filters, and can therefore be a strong decoherence channel for the qubits. The drive lines of Muxmon1, however, are capacitively coupled to the resonator, and therefore act as a filter, leading to a suppression of the decoherence channel.
+      The Muxmon experiment was performed specifically to study frequency reuse and selective broadcasting using the Duplexer. Two chips were designed, Muxmon0 and Muxmon1, shown in Fig.~\ref{fig:Muxmon0 and Muxmon1}. Both chips have three transmon qubits on them, all three of which are flux-tunable. For convenience, these qubits are named top, ancilla, and bottom qubit, as shown in Fig.~\ref{fig:Qubit names}.The key difference between the two chips is the approach used to drive the qubits. In Muxmon0 all three qubits have their individual directly-coupled drive lines. The top and bottom qubit are connected to the ancilla qubit through a bus. In the Muxmon1 the bus and drive lines are combined into two drive lines, each of which is capacitively coupled to the ancilla qubit and one of the other two qubits. The disadvantage of the direct drive lines in Muxmon0 is that these drive lines do not act as filters, and can therefore be a strong decoherence channel for the qubits. The drive lines of Muxmon1, however, are capacitively coupled to the resonator, and therefore act as a filter, leading to a suppression of the decoherence channel.
 
-      The three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla-qubit frequency must differ from that of the other two qubits. In the frequency re-use structure of the surface code, as explained in Sec.~\ref{sec:frequency re-use}, this should not be a problem, as frequency re-use in not applied to neighbouring qubits. Having capacitively-coupled drive lines would result in less lines being required, both on-chip and outside the chip. Additionally, the drive line decoherence channel is reduced. Therefore the capacitively-coupled drive lines of Muxmon1 seemed the more attractive of the two options. Furthermore, each qubit has its own readout resonator. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines.
+      The three drive lines of Muxmon0 ensure that individual qubit control of all three qubits is possible, even when they share the same frequency. This is in contrast to Muxmon1, where the ancilla-qubit frequency must differ from that of the other two qubits. In the frequency reuse structure of the surface code, as explained in Sec.~\ref{sec:frequency reuse}, this should not be a problem, as frequency reuse in not applied to neighbouring qubits. Having capacitively-coupled drive lines would result in less lines being required, both on-chip and outside the chip. Additionally, the drive line decoherence channel is reduced. Therefore the capacitively-coupled drive lines of Muxmon1 seemed the more attractive of the two options. Furthermore, each qubit has its own readout resonator. Air-bridges are used, not only to connect the ground-planes in the coplanar waveguides, but also such that the feedline can cross over other lines.
 
       During initial characterization of the qubits on both chips it was found that the coherence times of the qubits in Muxmon1 were considerably worse than those in Muxmon0. It is, however, unlikely that this is due to the capacitively-coupled drive lines, since one would expect the absence of direct drive lines to result in one less decoherence channel. Instead it is likely that the lower coherence times are simply due to some error in the chip fabrication process. Due to the lower coherence times of the qubits in Muxmon1, the focus of the experiment was on Muxmon0. Therefore, unless states otherwise, the Muxmon chip used in the experiment refers to the Muxmon0 chip.
 
@@ -137,7 +137,7 @@
   \chapter{Muxmon device characterization}
     \label{ch:Muxmon device characterization}
 
-    This chapter describes the measurements performed to characterize the Muxmon chip. Sec.~\ref{sec:The transmon} gives a short introduction of the transmon qubit. The initial characterization of the chip is done using continuous-wave measurements, described in Sec.~\ref{sec:Continuous-wave measurements}. These are measurements used to determine properties such as the energy levels of the resonators and qubits. Once the energy levels of the resonators and qubits are found, the specific properties of the qubits, such as their coherence times, can be measured. These measurements are known as time-domain measurements, and are described in Sec.~\ref{sec:Time-domain measurements}. With the qubits characterized, frequency re-use is studied in Sec.~\ref{sec:Exploring Frequency re-use} by tuning the top and bottom qubit to the same frequency.
+    This chapter describes the measurements performed to characterize the Muxmon chip. Sec.~\ref{sec:The transmon} gives a short introduction of the transmon qubit. The initial characterization of the chip is done using continuous-wave measurements, described in Sec.~\ref{sec:Continuous-wave measurements}. These are measurements used to determine properties such as the energy levels of the resonators and qubits. Once the energy levels of the resonators and qubits are found, the specific properties of the qubits, such as their coherence times, can be measured. These measurements are known as time-domain measurements, and are described in Sec.~\ref{sec:Time-domain measurements}. With the qubits characterized, frequency reuse is studied in Sec.~\ref{sec:Exploring Frequency reuse} by tuning the top and bottom qubit to the same frequency.
 
     \section{The transmon}
       \label{sec:The transmon}
@@ -421,7 +421,7 @@
         \begin{wrapfigure}[14]{r}{0.4\textwidth}
           \begin{center}
           \vspace{-30pt}
-            \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/Gaussian pulse.png}
+            \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/Gaussian pulse.png}
           \end{center}
           \vspace{-20 pt}
           \caption{Schematic representation of the Gaussian pulse. The signal is convoluted with a sine and cosine with sideband modulation frequency $\omega_{sb}$, resulting in single sideband modulation.}
@@ -519,7 +519,7 @@
         \begin{wrapfigure}[17]{r}{0.42\textwidth}
           \begin{center}
           \vspace{-30pt}
-            \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/schematic second transition pulsing.png}
+            \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/schematic second transition pulsing.png}
           \end{center}
           \vspace{-20 pt}
           \caption{Schematic of the pulse combination used to reach the second-excited state. First an $X_\pi^{01}$-pulse is applied at frequency $\omega_{01}$. Secondly an $X_\pi^{12}$-pulse is applied at frequency $\omega_{12}$ such that the transmon is in its second-excited state.}
@@ -543,11 +543,11 @@
         The pulse amplitude required to pulse to the second-excited state has been calibrated for both the top and bottom qubit. In Fig.~\ref{fig:Rabi12} a second-transition Rabi measurement is shown for the top qubit. The measurement is performed both with and without a third $X_\pi$ pulse. As can be seen the signal reaches above the signal of the first-excited state, and so it can be concluded that the second-excited state is indeed populated. Furthermore, since the transmission at the second-excited-state peaks are identical for the measurements with and without the final pulse, it can be concluded that at these amplitudes there is no residual excitation in the first-excited state, and that indeed the transmon is fully excited to the second-excited state.
 
 
-    \section{Exploring Frequency re-use}
-      \label{sec:Exploring Frequency re-use}
+    \section{Exploring Frequency reuse}
+      \label{sec:Exploring Frequency reuse}
       \begin{figure}[tb]
         \centering
-        \includegraphics[width=\linewidth]{Figures/Exploring frequency re-use/coherence_times.png}
+        \includegraphics[width=\linewidth]{Figures/Exploring frequency reuse/coherence_times.png}
         \caption{Coherence times of the three qubits in Muxmon0. The top-qubit frequency is tuned to match the bottom qubit frequency (\SI{6.22}{\giga \hertz}). When measuring the coherence times of either the top or bottom qubit the other qubit was detuned by \SI{50}{\mega \hertz} to suppress cross-coupling effects. The fit for the dephasing time $T_2^*$ of the top qubit was performed using a Gaussian noise model.}
         \label{fig:coherence times Muxmon0}
       \end{figure}
@@ -568,7 +568,7 @@
 
       The frequencies of the qubits and their corresponding resonators are shown in Table~\ref{tab:Muxmon0 qubit properties}. The resonator buses have a frequency of \SI{4.88}{\giga \hertz} and \SI{4.97}{\giga \hertz} for the bus connecting the ancilla qubit to the top and bottom qubit, respectively (see App.~\ref{sec:Resonator buses}).
 
-      To study frequency re-use, the frequency of the top qubit has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet spots. Under these conditions the coherence times of the three qubits are shown in Fig.~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than that of the ancilla and bottom qubit. This is because the top qubit is tuned away from its sweet spot to match the frequency of the bottom qubit. As a result its frequency response to flux is stronger, and so it is more susceptible to flux noise. We furthermore see that the Echo dephasing times $T_2^\text{e}$ of the bottom and ancilla qubits are nearly $T_1$-limited, while the top qubit is clearly not. This is likely due to the fact that the top qubit is tuned away from its sweet spot, and is therefore more receptive to phase noise.
+      To study frequency reuse, the frequency of the top qubit has been tuned to that of the bottom qubit, while the ancilla and bottom qubits were kept at their respective sweet spots. Under these conditions the coherence times of the three qubits are shown in Fig.~\ref{fig:coherence times Muxmon0}. The dephasing time $T_2^*$ of the top qubit is considerably lower than that of the ancilla and bottom qubit. This is because the top qubit is tuned away from its sweet spot to match the frequency of the bottom qubit. As a result its frequency response to flux is stronger, and so it is more susceptible to flux noise. We furthermore see that the Echo dephasing times $T_2^\text{e}$ of the bottom and ancilla qubits are nearly $T_1$-limited, while the top qubit is clearly not. This is likely due to the fact that the top qubit is tuned away from its sweet spot, and is therefore more receptive to phase noise.
 
       Having the top and bottom qubit at the same frequency gives rise to cross-coupling and cross-driving effects. It is important to characterize these effects, as they can potentially result in gate errors.
 
@@ -587,7 +587,7 @@
 
       \begin{figure}[h]
         \centering
-        \includegraphics[width=\linewidth]{Figures/Exploring frequency re-use/excitation_swap.png}
+        \includegraphics[width=\linewidth]{Figures/Exploring frequency reuse/excitation_swap.png}
         \caption{After initially exciting one qubit, and measuring the excited-state population of both qubits versus time, an excitation swap is observed. The extracted coupling strength is equal to $J/2\pi=72.0 \pm 1.8$ kHz.}
         \label{fig:excitation swap}
       \end{figure}
@@ -597,7 +597,7 @@
 
       \begin{figure}[h]
         \centering
-        \includegraphics[width=.8\textwidth]{Figures/Exploring frequency re-use/cross-driving_setup.jpg}
+        \includegraphics[width=.8\textwidth]{Figures/Exploring frequency reuse/cross-driving_setup.jpg}
         \caption{Schematic of set-up used to measure cross driving using the direct drive lines of the top and bottom qubit. The combination of amplifier and variable attenuator allow a large range of drive strengths.}
         \label{fig:cross-driving schematic}
       \end{figure}
@@ -605,7 +605,7 @@
       % \begin{wrapfigure}[12]{r}{0.4\textwidth}
       %   \begin{center}
       %   \vspace{-30pt}
-      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_Rabi.png}
       %   \end{center}
       %   \vspace{-20 pt}
       %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
@@ -614,7 +614,7 @@
 
       % \begin{figure}[tb]
       %   \centering
-      %   \includegraphics[width=.5\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %   \includegraphics[width=.5\textwidth]{Figures/Exploring frequency reuse/cross-driving_Rabi.png}
       %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{figure}
@@ -638,7 +638,7 @@
       \begin{wrapfigure}[21]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
-          \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+          \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_Rabi.png}
         \end{center}
         \vspace{-20 pt}
         \caption{Required drive amplitude required to drive the top and bottom qubit through the top-qubit drive line. The amplitude has been normalized to the amplitude required for a $\pi$ pulse to the top qubit.}
@@ -650,7 +650,7 @@
       \begin{wrapfigure}[13]{r}{0.45\textwidth}
         \begin{center}
         \vspace{-30pt}
-          \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+          \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_vs_top_frequency.png}
         \end{center}
         \vspace{-20 pt}
         \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
@@ -662,13 +662,13 @@
       % \begin{figure}[h]
       % \centering
       % \begin{subfigure}[b]{.42\textwidth}
-      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_Rabi.png}
       %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
       %   \label{fig:cross-driving Rabi}
       % \end{subfigure}
       % \hfill
       % \begin{subfigure}[b]{.42\textwidth}
-      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_vs_top_frequency.png}
       %   \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
       %   \label{fig:cross-driving versus top frequency}
       % \end{subfigure}
@@ -678,7 +678,7 @@
       % \begin{wrapfigure}[12]{r}{0.4\textwidth}
       %   \begin{center}
       %   \vspace{-30pt}
-      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_Rabi.png}
+      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_Rabi.png}
       %   \end{center}
       %   \vspace{-20 pt}
       %   \caption{Required drive amplitude required to drive the top and bottom qubit through the top qubit drive line. The amplitude has been normalize to the amplitude required for a $\pi$ pulse on the top qubit.}
@@ -688,7 +688,7 @@
       % \begin{wrapfigure}[12]{r}{0.45\textwidth}
       %   \begin{center}
       %   \vspace{-30pt}
-      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/cross-driving_vs_top_frequency.png}
+      %     \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/cross-driving_vs_top_frequency.png}
       %   \end{center}
       %   \vspace{-20 pt}
       %   \caption{Cross-driving ratio of the bottom qubit when pulsing from the drive line of the top qubit, versus frequency of the top qubit. }
@@ -713,7 +713,7 @@
 
   \chapter{Calibration routines}
     \label{ch:Calibration routines}
-    In the Muxmon experiment we want to find out what the best possible qubit performance is in a frequency re-use set-up. The qubit pulses must therefore be optimally tuned. Section~\ref{Instrument calibrations} deals with the calibration routines used to calibrate the mixer and Duplexer, which would otherwise add to the gate error. Section~\ref{Qubit calibrations} describes the calibration routines used to accurately tune the qubits and their pulses. These routines have been automatized, and so can also be applied periodically during long measurements.
+    In the Muxmon experiment we want to find out what the best possible qubit performance is in a frequency reuse set-up. The qubit pulses must therefore be optimally tuned. Section~\ref{Instrument calibrations} deals with the calibration routines used to calibrate the mixer and Duplexer, which would otherwise add to the gate error. Section~\ref{Qubit calibrations} describes the calibration routines used to accurately tune the qubits and their pulses. These routines have been automatized, and so can also be applied periodically during long measurements.
 
     \section{Instrument calibrations}
       \label{Instrument calibrations}
@@ -763,7 +763,7 @@
 
         In a Ramsey measurement this precession can be measured, from which the qubit frequency can be inferred. This provides a very accurate estimate for the qubit frequency $\omega_q$. The longer the wait time $\tau$, the more the qubit precesses around the equator. Small differences between the drive frequency $\omega_\text{drive}$ and the qubit frequency $\omega_q$ can be detected. The upper bound on the accuracy of being able to determine the qubit frequency is set by the qubit's dephasing time $T_2^*$, because it corresponds to the inherent fluctuation in the qubit frequency.
 
-        The main goal of the Muxmon experiment is to determine the performance of selective broadcasting combined with frequency re-use, which requires the top and bottom qubit to be at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, any frequency detuning from the drive frequency $\omega_d$ will lead to a decrease in qubit performance. The top qubit frequency was initially tuned using spectroscopy. Accurate frequency tuning was then performed using Ramsey measurements. The bottom qubit frequency $\omega_q^B$ was first determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. Using Ramsey measurements the individual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The limit to tuning the frequencies was not determined by the Ramsey-measurement accuracy, but due to the IVVI having a finite DAC-voltage stepsize.
+        The main goal of the Muxmon experiment is to determine the performance of selective broadcasting combined with frequency reuse, which requires the top and bottom qubit to be at the same frequency. Any effect due to weak coupling between the qubits is only present if the two qubits are accurately tuned to the same frequency. Furthermore, any frequency detuning from the drive frequency $\omega_d$ will lead to a decrease in qubit performance. The top qubit frequency was initially tuned using spectroscopy. Accurate frequency tuning was then performed using Ramsey measurements. The bottom qubit frequency $\omega_q^B$ was first determined, after which the top qubit frequency $\omega_q^T$  was tuned to match $\omega_q^B$. Using Ramsey measurements the individual frequencies could be determined to within \SI{10}{\kilo \hertz}, and the two frequencies could be tuned to within \SI{50}{\kilo \hertz} of one another. The limit to tuning the frequencies was not determined by the Ramsey-measurement accuracy, but due to the IVVI having a finite DAC-voltage stepsize.
 
       \subsection{Multiplexed-readout calibration}
         \label{ssec:multiplexed readout}
@@ -777,11 +777,11 @@
             \caption{Readout crosstalk as a result of multiplexed readout. The lsb corresponds to the state of the qubit being measured. The mean values (dashed lines) differ depending on the state of the other qubit. The signal has been normalized such that the signal corresponds to the excited-state population when the other qubit is in the ground state.}
             \label{fig:crosstalk}
           \end{wrapfigure}
-          In standard heterodyne detection the output signal is downconverted in a mixer using an LO frequency $\omega_\text{LO}$ that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO-frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC-noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high-frequency $\omega_\text{LO} + \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate-frequency (IF), is then measured using digital demodulation.
+          In standard heterodyne detection the output signal is downconverted in a mixer using an LO frequency $\omega_\text{LO}$ that is slightly different from the carrier frequency $\omega_\text{c}$. One typically chooses an LO frequency $\omega_\text{LO}$ that differs by a few megahertz from the carrier frequency $\omega_\text{c}$, such that the resulting signal has a finite frequency, and is separated from any DC noise. The resulting signal is a combination of the sum $\omega_\text{LO} + \omega_\text{c}$ of the two frequencies, and the difference $\omega_\text{LO} - \omega_\text{c}$ of the two frequencies. The high frequency $\omega_\text{LO} + \omega_\text{c}$ is filtered out using a low-pass filter. The signal of the difference frequency $\omega_\text{LO} - \omega_\text{c}$, known as the intermediate frequency (IF), is then measured using digital demodulation.
 
-          If the carrier signal is composed of multiple signals with different frequencies $\omega_{\text{c}_1}, ..., \omega_{\text{c}_n}$, these can be simultaneously downconverted using a single LO-frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF-frequencies can then each be measured using digital demodulation. This is known as multiplexed readout.
+          If the carrier signal is composed of multiple signals with different frequencies $\omega_{\text{c}_1}, ..., \omega_{\text{c}_n}$, these can be simultaneously downconverted using a single LO frequency $\omega_\text{LO}$, provided that the carrier frequencies do not differ by too much. The resulting IF frequencies can then each be measured using digital demodulation. This is known as multiplexed readout.
 
-          The LO-frequency $\omega_\text{LO}$ has to be chosen such that the resulting IF-frequencies are not multiples of one-another, as this would result in the signal at one IF-frequency also containing signal from a higher harmonic of another IF-frequency.
+          The LO frequency $\omega_\text{LO}$ has to be chosen such that the resulting IF frequencies are not multiples of one another, as this would result in the signal at one IF frequency also containing signal from a higher harmonic of another IF frequency.
 
           \begin{wrapfigure}[15]{r}{0.4\textwidth}
             \begin{center}
@@ -824,7 +824,7 @@
         \begin{wrapfigure}[12]{r}{0.5\textwidth}
           \begin{center}
           \vspace{-30pt}
-            \includegraphics[width=\textwidth]{Figures/Exploring frequency re-use/DRAG pulse.png}
+            \includegraphics[width=\textwidth]{Figures/Exploring frequency reuse/DRAG pulse.png}
           \end{center}
           \vspace{-20 pt}
           \caption{Schematic representation of the DRAG pulse. The I quadrature pulse is the main Gaussian pulse, while the Q quadrature pulse is the derivative of the Gaussian.}
@@ -846,13 +846,13 @@
         \begin{figure}
         \centering
            \begin{subfigure}[b]{\textwidth}
-           \includegraphics[width=1\linewidth]{Figures/Exploring frequency re-use/AllXY_drive_top.png}
+           \includegraphics[width=1\linewidth]{Figures/Exploring frequency reuse/AllXY_drive_top.png}
            \caption{}
            \label{fig:AllXY drive top}
         \end{subfigure}
 
         \begin{subfigure}[b]{\textwidth}
-           \includegraphics[width=1\linewidth]{Figures/Exploring frequency re-use/AllXY_drag_top.png}
+           \includegraphics[width=1\linewidth]{Figures/Exploring frequency reuse/AllXY_drag_top.png}
            \caption{}
            \label{fig:AllXY DRAG top}
         \end{subfigure}
@@ -985,77 +985,72 @@
           \label{fig:RB normal single vs both}
         \end{figure}
 
-        After tuning up the top and bottom qubit using the calibration methods explained in Ch.~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking.To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a total duration of \SI{30}{\micro \second}. Multiplexed readout has been used to measure both the top and bottom qubit simultaneously. The LO frequency was set to $\omega_\text{LO}=\SIm{6.7378}{\giga \hertz}$, corresponding to IF frequencies \SI{-37.8}{\mega \hertz} and \SI{62.8}{\mega \hertz} for the top and bottom qubit respectively. Combined with sufficiently low readout power the resulting crosstalk was lowered to an average of $2\%$.
+        After tuning up the top and bottom qubit using the calibration methods explained in Ch.~\ref{ch:Calibration routines}, their performance was determined using randomized benchmarking. To test whether the performance of the qubits change when driving only a single qubit or when simultaneously driving both qubits using the Duplexer, randomized benchmarking was performed in both cases. A total of 50 seeds were used for randomized benchmarking. For each seed $20$ different number of Cliffords $n$ are used, varying between $n=0$ and $n=800$, with exponentially separated points. Re-calibration of the drive amplitude and top qubit frequency was performed every 5 seeds to correct for small fluctuations in time. Pulses of \SI{16}{\nano \second} were used, with \SI{4}{\nano \second} buffer between pulses. For $800$ Cliffords this corresponds to a total duration of \SI{30}{\micro \second}. Multiplexed readout has been used to measure both the top and bottom qubit simultaneously. The LO frequency was set to $\omega_\text{LO}=\SIm{6.7378}{\giga \hertz}$, corresponding to IF frequencies \SI{-37.8}{\mega \hertz} and \SI{62.8}{\mega \hertz} for the top and bottom qubit respectively. Combined with sufficiently low readout power the resulting crosstalk was lowered to an average of $2\%$.
 
-        The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Fig.~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Fig.~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by the instruments including the AWG and Duplexer.
+        The randomized benchmarking results when driving only a single qubit or when driving both qubits simultaneously are shown in Fig.~\ref{fig:RB normal single vs both}. As the number of Cliffords is increased, the ground-state population exponentially approaches the limiting value of $0.5$. The performance of both qubits reaches $99.9\%$ gate fidelity, and the performance of the bottom qubit is considerably better than that of the top qubit.  This can be expected, as the relaxation time and the dephasing time of the top qubit ($T_1 = \SIm{8.7}{\micro \second}$, $T_2^*=\SIm{4.7}{\micro \second}$) is lower than that of the bottom qubit ($T_1 = \SIm{11.1}{\micro \second}$, $T_2^*=\SIm{12.5}{\micro \second}$). Nevertheless, the gate fidelities of both qubits are still close to the limit imposed by $T_1$ (see Fig.~\ref{fig:RB normal single vs both}). This shows that the qubit performance is mainly limited by its coherence times, and not by instruments, such as the AWG and Duplexer.
 
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/RB_normal_cross-driving.png}
-          \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross-driving and is considerably stronger for the top qubit than for the bottom qubit.}
+          \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross driving and is considerably stronger for the top qubit than for the bottom qubit.}
           \label{fig:RB normal cross-driving}
         \end{figure}
 
-        In Fig.~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. One would expect that the measured cross-driving would place a lower bound on the qubit gate error ($0.57\%$ when driving the bottom qubit via the top qubit drive line, and $0.23\%$ when driving the top qubit via the bottom qubit drive line). However this does not seem to be the case. One possible explanation is that the transmon is a nonlinear system, and since the cross-driving measurements were performed at a high power, the cross-driving at low power might be significantly less.
+        In Fig.~\ref{fig:RB normal single vs both} it can furthermore be seen that there is no discernible difference in qubit performance between driving a single qubit and driving both qubits simultaneously. This indicates that cross-driving and cross-coupling effects do not affect the qubit performance during randomized benchmarking. One would expect that the measured cross driving would place a lower bound on the qubit gate error ($0.57\%$ when driving the bottom qubit via the top-qubit drive line, and $0.23\%$ when driving the top qubit via the bottom-qubit drive line). However this does not seem to be the case. One possible explanation is that the transmon is a nonlinear system, and since the cross-driving measurements were performed at a high power, the cross driving at low power might be significantly less.
 
-        Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross-coupling, or due to cross-driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Sec.~\ref{ssec:cross driving}, indicating that the effect is mainly due to cross-driving, and not cross-coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equal to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross-driving.
+        Figure~\ref{fig:RB normal cross-driving} shows the ground-state population during randomized benchmarking when only the other qubit is driven. This should ideally be unity irrespective of the number of Cliffords applied, but one can see that application of pulses on one qubit also affects the state of the qubit not being driven. The excitation of the qubit not being driven may be due to cross coupling, or due to cross driving, or a combination of the two effects. This effect is much stronger when driving the top qubit and measuring the bottom qubit than the other way around. This is in agreement with the cross-driving measurements in Sec.~\ref{ssec:cross driving}, indicating that the effect is mainly due to cross driving, and not cross coupling. Furthermore, the period of the excitation swap was previously found to be equal to $J^{-1} \approx \SIm{14}{\micro \second}$, whereas the duration of the longest pulse sequence, corresponding to $n=800$ Cliffords, is equal to \SI{30}{\micro \second}. Cross-coupling effects should not depend on which qubit is being driven, and so the fact that the top qubit is not excited much, even after $n=800$ Cliffords, places an upper bound on the cross-coupling effects. This further supports the claim that the main source of the undriven qubit's excitation is due to cross driving.
 
       \subsection{Second-excited-state leakage}
         \label{ssec:Second-excited-state leakage}
         The exponential fits to the single qubit randomized benchmarking measurements show that the asymptote of the exponential curve actually lies slightly below a ground-state population of $0.5$. This is in contrast to expectation, as in the limiting case in randomized benchmarking, where all information about the qubit is lost, a measurement of the qubit should result in the qubit being found with equal probability in the ground state and in the excited state. One possible explanation for this deviation from $0.5$ is that during the randomized benchmarking sequence the qubit experiences leakage to the second-excited state, which would shift the measured signal. The term qubit is therefore strictly speaking not correct.
 
-        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final $\pi$ pulse is applied. The result is that the final ground-state and excited-state populations are swapped. In this case the final state should therefore ideally be the excited state.
+        To test whether the exponential curve not saturating at $0.5$ is indeed due to leakage, an identical randomized benchmarking measurement set has been performed using the same $50$ seeds. At the end of each Clifford sequence a final $\pi$ pulse is applied. The result is that the final ground-state and excited-state populations are swapped. The final state should therefore ideally be the excited state.
 
         If we assume there is no further leakage into states higher than the second-excited state, these two measurements result in the following set of equations:
 
         \begin{align}
-          p_0 V_0 + p_1 V_1 + p_2 V_2 = S_0 \notag\\
-          p_1 V_1 + p_0 V_1 + p_2 V_2 = S_1 \notag\\
-          p_0 + p_1 + p_2 = 1
+          p_0 V_0 + p_1 V_1 + p_2 V_2 = S_0, \notag\\
+          p_1 V_1 + p_0 V_1 + p_2 V_2 = S_1, \notag\\
+          p_0 + p_1 + p_2 = 1,
           \label{eq:three populations equations}
         \end{align}
-
         where $p_i$ is the final population of state $\ket{i}$, $V_i$ is the measured signal corresponding to state $\ket{i}$, and $S_i$ is the signal measured for a fixed number of Cliffords $n$ where the qubit's final state should ideally by $\ket{i}$. If the signals corresponding to all three states are known, the three populations can be extracted (see App.~\ref{ssec:Determining population in three states} for details).
 
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/RB_normal_state_populations.png}
-          \caption{The populations of the first three states of the qubit during randomized benchmarking. Populations are extracted by comparing randomized benchmarking results with and without a final $\pi$ pulse (see App.~\ref{ssec:Determining population in three states}). As can be seen, both qubits suffer from a small amount of leakage to the second-state. The leakage rate for the top qubit is higher than for the bottom qubit.}
+          \caption{The populations of the first three states of the qubit during randomized benchmarking. Populations are extracted by comparing randomized benchmarking results with and without a final $\pi$ pulse (see App.~\ref{ssec:Determining population in three states}). As can be seen, both qubits suffer from a small amount of leakage to the second-excited state. The leakage rate for the top qubit is higher than for the bottom qubit.}
           \label{fig:RB normal state populations}
         \end{figure}
 
-        Using the methods explained in Sec.~\ref{ssec:Second-excited-state leakage}, the signal $V_2$ of the second-state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Fig.~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
+        Using the methods explained in Sec.~\ref{ssec:Second-excited-state leakage}, the signal $V_2$ of the second-excited state has been measured and added as a calibration point to the randomized benchmarking sequence. With knowledge of the signals corresponding to all three states, the populations of the first three states of the qubits during randomized benchmarking have been determined. The results are shown in Fig.~\ref{fig:RB normal state populations}. As can be seen there is indeed a small amount of leakage present. The leakage rate is higher for the top qubit than for the bottom qubit.
 
-        By assuming that the leakage rate $\kappa$ is constant, population in the second-excited state:
+        By assuming that the leakage rate $\kappa$ is constant, the change in population in the second-excited state is
 
         \begin{equation}
-          \frac{d p_2}{d t}= \kappa - p_2 T_1^2
+          \frac{d p_2}{d t}= \kappa - p_2 T_1^2,
         \end{equation}
-
-        where $T_1^2$ is the relaxation time of the second-excited state to the first-excited state. By imposing the condition that $p_2(0)=0$, the resulting formula for the second-excited-state population is:
+        where $T_1^2$ is the relaxation time of the second-excited state to the first-excited state. By imposing the condition that $p_2(0)=0$, the resulting formula for the second-excited-state population is
 
         \begin{equation}
-          p(t) = e^{-t/{T_1^2}}\left(  -1 + e^{t/{T_1^2}}\right)T_1^2 \kappa4
+          p(t) = e^{-t/{T_1^2}}\left(  -1 + e^{t/{T_1^2}}\right)T_1^2 \kappa.
           \label{eq:2nd state formula}
         \end{equation}
-
         \begin{figure}[tb]
           \centering
           \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/2nd-state leakage normal.png}
           \caption{Second state population for the two qubits along with fit. The extracted second-excited-state relaxation time $T_1^2$ and leakage per gate $\alpha$ are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit.}
           \label{fig:2nd-state leakage normal}
         \end{figure}
-
-
-        We can fit this formula to the experimentally obtained second-excited-state populations, from which we can extract the relaxation time $T_1^2$ and the leakage per gate $\alpha$. The results are shown in Fig.~\ref{fig:2nd-state leakage normal}. The extracted values are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)$ \% for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)$ \% for the bottom qubit.As we can see the leakage rate of the top qubit is considerably higher, resulting in a better fit and more accurate parameter estimation. One possible way to combat leakage is to increase the pulse length, which corresponds to the pulses having a smaller frequency bandwidth. It is interesting that the second-excited-state relaxation time $T_1^2$ of the top qubit is higher than the first-excited-state relaxation time $T_1=\SIm{8.7}{\micro \second}$, as this is in contrast with previous experiments~\cite{peterer2015coherence}, where the relaxation time of the second-excited state is found to be considerably lower.
+        We can fit this formula to the experimentally obtained second-excited-state populations, from which we can extract the relaxation time $T_1^2$ and the leakage per gate $\alpha$. The results are shown in Fig.~\ref{fig:2nd-state leakage normal}. The extracted values are $T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)$ \% for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)$ \% for the bottom qubit. As we can see the leakage rate of the top qubit is considerably higher, resulting in a better fit and more accurate parameter estimation. One possible way to combat leakage is to increase the pulse length, which corresponds to the pulses having a smaller frequency bandwidth. It is interesting that the second-excited-state relaxation time $T_1^2$ of the top qubit is higher than the first-excited-state relaxation time $T_1=\SIm{8.7}{\micro \second}$, as this is in contrast with previous experiments~\cite{peterer2015coherence}, where the relaxation time of the second-excited state is found to be considerably lower.
 
 
 
     \section{Two qubit randomized benchmarking}
       \label{Two qubit randomized benchmarking}
-      So far randomized benchmarking on two qubits has only been performed in the case where both qubits receive the same pulses. In a more realistic scenario one would like to be able to control both qubits individually. The Duplexer, in combination with frequency re-use, offers this possibility. The switches of the Duplexer are able to route pulses at nanosecond-scale. Using a single sequence of pulses, these switches allow each individual pulse to be sent to either of the two qubits, or both qubits simultaneously. This is known as selective broadcasting, and enables individual control of both qubits simultaneously.
+      So far randomized benchmarking on two qubits has only been performed in the case where both qubits receive the same pulses. In a more realistic scenario one would like to be able to control both qubits individually. The Duplexer, in combination with frequency reuse, offers this possibility. The switches of the Duplexer are able to route pulses at nanosecond-scale. Using a single sequence of pulses, these switches allow each individual pulse to be sent to either of the two qubits, or to both qubits simultaneously. This is known as selective broadcasting, and enables individual control of both qubits simultaneously.
 
-      The performance of controlling both qubits simultaneously using selective broadcasting has been studied using randomized benchmarking. In this case each of the two qubits has an individual seed composed of $n$ randomly chosen Cliffords. There are many different ways in which randomized benchmarking on two qubits can be performed. Three methods have been explored: alternating randomized benchmarking, compiled randomized benchmarking, and 5 primitives randomized benchmarking. These will be explained in the following sections.
+      The performance of controlling both qubits simultaneously using selective broadcasting has been studied using randomized benchmarking. In this case each of the two qubits has an individual seed composed of $n$ randomly chosen Cliffords. There are many different ways in which randomized benchmarking on two qubits can be performed. Three such methods have been explored: alternating randomized benchmarking, compiled randomized benchmarking, and 5 primitives randomized benchmarking. These will be explained in the following sections.
 
       \subsection{Alternating randomized benchmarking}
         \label{ssec:alternating randomized benchmarking}
@@ -1067,7 +1062,7 @@
           \label{fig:alternating RB schematic}
         \end{figure}
 
-        The first method explored is alternating randomized benchmarking. In this method the Cliffords of the two qubits are applied alternatingly, as shown in Fig.~\ref{fig:alternating RB schematic}. When a Clifford of the top qubit is applied, the switches of the top qubit are on, while the switches of the bottom qubit are off, and vice versa. If each qubit has a seed composed of $n$ Cliffords, the total duration of the sequence will be twice as long as in single qubit randomized benchmarking. Therefore the average duration of a pair of Clifford is equal to $2 \times 1.875 = 3.75$ gates.
+        The first method explored is alternating randomized benchmarking. In this method the Cliffords of the two qubits are applied alternatingly, as shown in Fig.~\ref{fig:alternating RB schematic}. When a Clifford of the top qubit is applied, the switches of the top qubit are on, while the switches of the bottom qubit are off, and vice versa. If each qubit has a seed composed of $n$ Cliffords, the total duration of the sequence will be twice as long as in single-qubit randomized benchmarking. Therefore the average duration of a pair of Clifford is equal to $2 \times 1.875 = 3.75$ gates.
 
 
       \subsection{Compiled randomized benchmarking}
@@ -1080,7 +1075,7 @@
           \label{fig:compiled RB schematic}
         \end{figure}
 
-        In alternating randomized benchmarking pulses are never simultaneously applied to both qubits. However, it is quite possible that a pair of Cliffords has one or more gates in common. Compiled randomized benchmarking is a more efficient alternative to alternating randomized benchmarking, where pairs of Cliffords are compiled into the least amount of physical gates required to perform both Cliffords. The schematic is shown in Fig.~\ref{fig:compiled RB schematic}, where the same Clifford combination is shown as in the schematic of alternating randomized benchmarking (Fig.~\ref{fig:alternating RB schematic}). As can be seen both Clifford decompositions share the $Y_{\pi/2}$ gate, and so can be combined into a single pulse sent to both qubits simultaneously. The result is that the total number of gates is reduced from four to three.
+        In alternating randomized benchmarking pulses are never simultaneously applied to both qubits. It is, however, quite possible that a pair of Cliffords has one or more gates in common. Compiled randomized benchmarking is a more efficient alternative to alternating randomized benchmarking, where pairs of Cliffords are compiled into the least amount of physical gates required to perform both Cliffords. The schematic is shown in Fig.~\ref{fig:compiled RB schematic}, where the same Clifford combination is shown as in the schematic of alternating randomized benchmarking (Fig.~\ref{fig:alternating RB schematic}). As can be seen both Clifford decompositions share the $Y_{\pi/2}$ gate, and so can be combined into a single pulse sent to both qubits simultaneously. The result is that the total number of gates is reduced from four to three.
 
         Compiled randomized benchmarking even goes one step further. The Clifford decomposition shown in App.~\ref{ssec:Clifford gate decomposition} is one way in which the $24$ Cliffords can be decomposed. There are, however, many other possible decompositions for each of the Cliffords into rotations along the X and Y axis. It is not at all obvious which decompositions of the two Cliffords would result in the optimal gate compilation for a given Clifford pair, i.e. the least amount of physical gates required to perform the pair of Cliffords on the two qubits.
 
@@ -1096,7 +1091,7 @@
           \label{fig:5 primitives RB schematic}
         \end{figure}
 
-        When exploring different two qubit randomized benchmarking methods, one very interesting property of the Clifford group was discovered. It was found that each of the $24$ Cliffords can be decomposed into a subset of $5$ primitive gates, while retaining the gate order of the $5$ primitives. The $5$ primitive gates are:
+        When exploring different two qubit randomized benchmarking methods, one very interesting property of the Clifford group was discovered. It was found that each of the $24$ Cliffords can be decomposed into a subset of $5$ primitive gates, while retaining the gate order of the $5$ primitives. The $5$ primitive gates are
 
         \begin{figure}[h!]
           \centering
@@ -1105,11 +1100,11 @@
           \label{5 primitive gates}
         \end{figure}
 
-        Using the fixed set of $5$ primitive gates, and by selectively routing the pulses to each of the qubits, arbitrary Cliffords can simultaneously be applied both qubits. The Cliffords applied to the two qubits need not be equal. In the $5$ primitives method the gate sequence stays fixed, and could even be continuously repeated. The markers corresponding to the state of the switches determine the Clifford operations of the qubits.
+        Using the fixed set of $5$ primitive gates, and by selectively routing the pulses to each of the qubits, arbitrary Cliffords can simultaneously be applied both qubits. The Cliffords applied to the two qubits need not be equal. In the $5$ primitives method the gate sequence stays fixed, and could even be continuously repeated. The markers corresponding to the state of the switches determine the Clifford operations on the qubits.
 
-        There is another advantage of the $5$ primitive gates, which is that it decreases the amount of cross-driving when one of the two qubits is not being driven. The first three gates composing the $5$ primitives are positive $\pi/2$ gates along the X and Y axes. The final two gates are negative $\pi$ gates along the X and Y axes. Cross-driving corresponds to rotations where the angle is a fraction of the full rotation angle. After one full $5$ primitive gates cycle the state of the idle qubit should therefore return close to its initial position. Even if not all $5$ gates are applied, the cross-driving effects should still decrease. This is because the cross-driving rotations are small, and in randomized benchmarking a large number of random Cliffords are applied, and so over the course of an entire randomized benchmarking run these cross-driving effects will still partially cancel out.
+        There is another advantage of the $5$ primitive gates, which is that it decreases the amount of cross driving when one of the two qubits is not being driven. The first three gates composing the $5$ primitives are positive $\pi/2$ gates along the X and Y axes. The final two gates are negative $\pi$ gates along the X and Y axes. Cross driving corresponds to rotations where the angle is a fraction of the full rotation angle. After one full $5$ primitive gates cycle the state of the idle qubit should therefore return close to its initial position. Even if not all $5$ gates are applied, the cross-driving effects should still decrease. This is because the cross-driving rotations are small, and in randomized benchmarking a large number of random Cliffords are applied, and so over the course of an entire randomized benchmarking run these cross-driving effects will still partially cancel out.
 
-        An even better approach to eliminating cross-driving is to alternate between a cycle of the $5$ primitive gates, and a cycle where the $5$ primitive gates are inverted, i.e. negative $\pi/2$ rotations and positive $\pi$ rotations, and switching of the gate order. Since the Clifford set is a group, each Clifford has a unique inverse which is also a Clifford. Inverting a Clifford is equal to inverting the gates of its $5$ primitives decomposition (including reversal of the gate order). Since all the inverted gates are elements of the inverted $5$ primitive gates, we see that we can indeed also decompose all $24$ Cliffords using the inverted $5$ primitive gates. Alternating between the $5$ primitive gates and the inverted $5$ primitive gates is expected to reduce the effects of cross-driving even further, as any deviation from returning to the original position in the first $5$ primitives cycle is compensated for by the inverted cycle.
+        An even better approach to eliminating cross driving is to alternate between a cycle of the $5$ primitive gates, and a cycle where the $5$ primitive gates are inverted, i.e. negative $\pi/2$ rotations and positive $\pi$ rotations, and switching of the gate order. Since the Clifford set is a group, each Clifford has a unique inverse which is also a Clifford. Inverting a Clifford is equal to inverting the gates of its $5$ primitives decomposition (including reversal of the gate order). Since all the inverted gates are elements of the inverted $5$ primitive gates, we see that we can indeed also decompose all $24$ Cliffords using the inverted $5$ primitive gates. Alternating between the $5$ primitive gates and the inverted $5$ primitive gates is expected to reduce the effects of cross driving even further, as any deviation from returning to the original position in the first $5$ primitives cycle is compensated for by the inverted cycle.
 
         The $5$ primitives randomized benchmarking method alternates between the $5$ primitives cycle and the inverted $5$ primitives cycle. The $5$ primitives randomized benchmarking requires $5$ gates per Clifford pair, which is considerably more than compiled randomized benchmarking ($2.925$ gates per Clifford pair) and alternating randomized benchmarking ($3.75$ gates per Clifford pair).
 
@@ -1141,11 +1136,11 @@
             \label{tab:RB 2Q converted gate fidelities}
           \end{table}
 
-          The three different two qubit randomized benchmarking methods have been performed for a total of $50$ seeds. Up to $n=400$ Cliffords per qubit were used, and the pulse length was kept at \SI{16}{\nano \second} with a \SI{4}{\nano \second} buffer between pulses. By performing the measurements both with and without a final $\pi$ pulse, the populations of the first three states of the qubit have been determined (see App.~\ref{ssec:Determining population in three states}). The results are shown in Fig.~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$.
+          The three different two-qubit randomized benchmarking methods have been performed for a total of $50$ seeds. Up to $n=400$ Cliffords per qubit were used, and the pulse length was kept at \SI{16}{\nano \second} with a \SI{4}{\nano \second} buffer between pulses. By performing the measurements both with and without a final $\pi$ pulse, the populations of the first three states of the qubit have been determined (see App.~\ref{ssec:Determining population in three states}). The results are shown in Fig.~\ref{fig:RB 2Q state populations}. For all three methods the bottom qubit performs considerably better than the top qubit, which is expected considering the coherence times of the two qubits. For both qubits compiled randomized benchmarking has the lowest error per Clifford, after which alternating randomized benchmarking, while $5$ primitives randomized benchmarking has the highest error per Clifford. This is in agreement with the average gates per Clifford, which is smallest for compiled Randomized benchmarking, and largest for $5$ primitives randomized benchmarking. Nevertheless we see that for both qubits all three methods result in fidelities per Clifford exceeding $99\%$.
 
-          The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single qubit randomized benchmarking gate fidelities. This comparison is not entirely fair, as idle gates (when only the other qubit is being pulsed) are also counted as gates. Nevertheless, it can be concluded that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate below the single qubit surface code fault tolerant threshold.
+          The fidelity per Clifford can be converted to a corresponding fidelity per gate using the average gates per Cliffords of the three methods. The corresponding gate fidelities are shown in Table~\ref{tab:RB 2Q converted gate fidelities}. As can be seen the gate fidelities are nearly identical, and furthermore are equal to the single-qubit randomized benchmarking gate fidelities. This comparison is not entirely fair, as idle gates (when only the other qubit is being pulsed) are also counted as gates. Nevertheless, it can be concluded that there is no significant decrease in gate fidelity when using selective broadcasting. These results show that simultaneous control of two qubits can be achieved with an error rate meeting the single-qubit surface code fault-tolerance threshold.
 
-          Using the method described in Sec.~\ref{ssec:Second-excited-state leakage}, the mean relaxation time of the second-excited-state $T_1^2$ and the leakage rate per gate $\alpha$ has been determined (see App.~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
+          Using the method described in Sec.~\ref{ssec:Second-excited-state leakage}, the mean relaxation time of the second-excited state $T_1^2$ and the leakage rate per gate $\alpha$ have been determined (see App.~\ref{sec:Two qubit randomized benchmarking leakage}). The resulting estimated values are $T_1^2=\SIm{9.5(5)}{\micro \second}$ and $\alpha=.032(6)\%$ for the top qubit, and $T_1^2=\SIm{4.8(2)}{\micro \second}$ and $\alpha=.014(3)\%$ for the bottom qubit. Compared to single-qubit randomized benchmarking ($T_1^2=\SIm{9.1(6)}{\micro \second}$, $\alpha=0.015(8)\%$ for the top qubit, and $T_1^2=\SIm{6.2(2)}{\micro \second}$, $\alpha=0.005(1)\%$ for the bottom qubit), we see that the leakage rate for both qubits has increased. This might be related to the fast switching of the markers in the Duplexer, which might slightly distort the pulses.
 
           \begin{figure}[tb]
             \centering
@@ -1159,43 +1154,43 @@
           \begin{figure}[tb]
             \centering
             \includegraphics[width=\textwidth]{Figures/Randomized benchmarking/RB_2Q_driving_single_vs_both.png}
-            \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross-driving and is considerably stronger for the top qubit than for the bottom qubit. A total of $5$ seeds was used.}
+            \caption{Excitation in qubit when only the other qubit is driven during randomized benchmarking. This effect is mostly due to cross driving and is considerably stronger for the top qubit than for the bottom qubit. A total of $5$ seeds was used.}
             \label{fig:cross driving two qubit randomized benchmarking}
           \end{figure}
 
-          In Fig.~\ref{fig:cross driving two qubit randomized benchmarking} we can see the effect of cross-driving during two qubit randomized benchmarking. In this case the switches corresponding to one qubit are continuously closed, while the other qubit is being driven. As can be seen the bottom qubit experiences much more cross-driving than the top qubit. We see, however, that this cross-driving is greatly reduced when using the $5$ primitives method. This is due to the fact that the pulses in the $5$ primitives method are chosen such that the cross-driving effects for idle qubits are reduced (see Sec.~\ref{ssec:5 primitives randomized benchmarking}).
+          In Fig.~\ref{fig:cross driving two qubit randomized benchmarking} we can see the effect of cross driving during two qubit randomized benchmarking. In this case the switches corresponding to one qubit are continuously closed, while the other qubit is being driven. As can be seen the bottom qubit experiences much more cross driving than the top qubit. We see, however, that this cross driving is greatly reduced when using the $5$ primitives method. This is due to the fact that the pulses in the $5$ primitives method are chosen such that the cross-driving effects for idle qubits are reduced (see Sec.~\ref{ssec:5 primitives randomized benchmarking}).
 
-        \section{Scaling of multi qubit randomized benchmarking}
-          \label{sec:scaling of multi qubit randomized benchmarking}
+        \section{Scaling of multi-qubit randomized benchmarking}
+          \label{sec:scaling of multi-qubit randomized benchmarking}
 
 
-          So far it has been found that for two qubits compiled randomized benchmarking clearly performs best, while $5$ primitives method performs worst. The performance is directly related to the average number of gates per Clifford set. Fig.~\ref{fig:gate per Clifford versus qubits comparison} shows how the average number of gates per Clifford scale a function of the number of qubits for all three randomized benchmarking methods. At two qubits the $5$ primitives method performs worst of all three methods. However, at three qubits the $5$ primitives method already outperforms alternating randomized benchmarking. This is because the $5$ primitives method has $5$ gates per Clifford, irrespective of the number of qubits, whereas alternating randomized benchmarking scales linearly with the number of qubits.
+          So far it has been found that for two qubits compiled randomized benchmarking clearly performs best, while $5$ primitives method performs worst. The performance is directly related to the average number of gates per Clifford set. Figure~\ref{fig:gate per Clifford versus qubits comparison} shows how the average number of gates per Clifford scale a function of the number of qubits for all three randomized benchmarking methods. At two qubits the $5$ primitives method performs worst of all three methods. However, at three qubits the $5$ primitives method already outperforms alternating randomized benchmarking. This is because the $5$ primitives method has $5$ gates per Clifford, irrespective of the number of qubits, whereas alternating randomized benchmarking scales linearly with the number of qubits.
 
-          Compiled randomized benchmarking always performs the best, as it per definition finds the least amount of gates required to perform a set of Cliffords on the qubits. However, compiled randomized benchmarking has a clear disadvantage, which is that the required time for finding the optimal compilation scales exponentially with the number of qubits. Each Clifford on average has $38$ different decompositions, and so for five qubits this would already result in $38^5\approx 7.9 * 10^{7}$ different combinations for each individual set of Cliffords. Furthermore, finding the average gates per Clifford requires knowledge of the gates per Clifford for all different combinations of Cliffords, and so for five qubits this would result in $6.3*10^{14}$ different combinations of decompositions. Using several optimization methods, which are discussed in App.~\ref{Optimizing the gate compilation algorithm}, the average gates per Clifford has been determined exactly for up to five qubits, and approximated up to ten qubits using random sampling. Nevertheless it is still computationally intensive to find the optimal gate compilation, even for a modest amount of qubits.
+          Compiled randomized benchmarking always performs the best, as it per definition finds the least amount of gates required to perform a set of Cliffords on the qubits. However, compiled randomized benchmarking has a clear disadvantage, which is that the required time for finding the optimal compilation scales exponentially with the number of qubits. Each Clifford on average has $38$ different decompositions, and so for five qubits this would already result in $38^5\approx 7.9 \cdot 10^{7}$ different combinations for each individual set of Cliffords. Furthermore, finding the average gates per Clifford requires knowledge of the gates per Clifford for all different combinations of Cliffords, and so for five qubits this would result in $6.3\cdot10^{14}$ different combinations of decompositions. Using several optimization methods, which are discussed in App.~\ref{Optimizing the gate compilation algorithm}, the average gates per Clifford has been determined exactly for up to five qubits, and approximated up to ten qubits using random sampling. Nevertheless it is still computationally intensive to find the optimal gate compilation, even for a modest amount of qubits.
 
-          In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see App.~\ref{ssec:Clifford gate decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$, and so unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best and by far easiest of the three randomized benchmarking methods.
+          In contrast to the compiled randomized benchmarking method, the $5$ primitives randomized benchmarking method is computationally very easy to perform. Once a marker lookup table has been created (see App.~\ref{ssec:Clifford gate decomposition}), determining the $5$ primitives decomposition of an arbitrary number of Cliffords is simply a matter of looking up the corresponding marker sequences. Furthermore, at $5$ qubits the difference in average gates per Clifford between the compiled randomized benchmarking and the $5$ primitives randomized benchmarking is already less than $1$. Therefore, unless the number of qubits is small, the $5$ primitives randomized benchmarking is the best of the three randomized benchmarking methods.
 
           \begin{figure}[h]
             \centering
             \includegraphics[width=.8\textwidth]{Figures/Randomized benchmarking/Clifford_comparison.png}
-            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi qubit randomized benchmarking methods. The oval indicates the gates per Clifford at two qubits.}
+            \caption{Comparison of the average gates per Clifford set versus the number of qubits using the three different multi-qubit randomized benchmarking methods. The oval indicates the gates per Clifford at two qubits.}
             \label{fig:gate per Clifford versus qubits comparison}
           \end{figure}
 
   \chapter{Conclusions and outlook}
 
-    When the top and bottom qubit share the same frequency, it has been shown that they can be simultaneously controlled by a single generator in combination with the Duplexer. Through randomized benchmarking it has been shown that for both qubits the gate fidelity reaches $99.9$ per cent, thereby meeting the surface code fault-tolerant threshold. The gate fidelity is within a factor of two of limit imposed by its relaxation time $T_1$, indicating that the qubit performance is in fact decoherence limited. There was furthermore no noticeable difference between driving a single qubit or driving both qubits simultaneously.
+    When the top and bottom qubit share the same frequency, it has been shown that they can be simultaneously controlled by a single generator in combination with the Duplexer. Through randomized benchmarking it has been shown that for both qubits the gate fidelity reaches $99.9$ per cent, thereby meeting the surface code fault-tolerant threshold. The gate fidelity is within a factor of two of the limit imposed by its relaxation time $T_1$, indicating that the qubit performance is in fact decoherence limited. There was furthermore no noticeable difference between driving a single qubit or driving both qubits simultaneously.
 
-    Furthermore, it has been shown individual control of both qubits simultaneously is possible through selective broadcasting. This has been demonstrated using multi-qubit randomized benchmarking, where each qubit has a different seed. Three different multi-qubit randomized benchmarking schemes have been implemented, namely alternating, compiled, and $5$ primitives randomized benchmarking. It has been shown for all three methods the Clifford fidelity exceeds $99$ per cent, thereby also meeting the surface code fault-tolerant threshold. Converting the Clifford fidelities to gate fidelities using their average gates per Clifford it has shown to be identical to the gate fidelities obtained by single qubit randomized benchmarking, showing that there is no significant decrease in performance when using selective broadcasting.
+    Furthermore, it has been shown that individual control of both qubits simultaneously is possible through selective broadcasting. This has been demonstrated using multi-qubit randomized benchmarking, where each qubit has a different seed. Three different multi-qubit randomized benchmarking schemes have been implemented, namely alternating, compiled, and $5$ primitives randomized benchmarking. It has been shown for all three methods the Clifford fidelity exceeds $99$ per cent, thereby also meeting the surface code fault-tolerant threshold. Converting the Clifford fidelities to gate fidelities using their average gates per Clifford it has shown to be identical to the gate fidelities obtained by single qubit randomized benchmarking, showing that there is no significant decrease in performance when using selective broadcasting.
 
-    Of the three multi-qubit randomized benchmarking methods, alternating randomized benchmarking clearly scales the worst with number of qubits. Compiled randomized benchmarking per definition always scales the best. However, the complexity of finding the optimal gate compilation scales exponentially, making it a highly non-trivial challenge. The $5$ primitives randomized benchmarking, remains fixed at $5$ gates per Clifford, irrespective of the number of qubits. In contrast to the compiled randomized benchmarking however, finding the Clifford decomposition using the $5$ primitives method can be done using a simple lookup table. furthermore, the average gates per Clifford using compiled randomized benchmarking converges to $5$ quite rapidly, and so unless the number of qubits is small, the gain using compiled randomized benchmarking is small.
+    Of the three multi-qubit randomized benchmarking methods, alternating randomized benchmarking clearly scales the worst with number of qubits. Compiled randomized benchmarking per definition always scales the best. However, the complexity of finding the optimal gate compilation scales exponentially, making it a highly non-trivial challenge. The $5$ primitives randomized benchmarking remains fixed at $5$ gates per Clifford, irrespective of the number of qubits. In contrast to the compiled randomized benchmarking, however, finding the Clifford decomposition using the $5$ primitives method can be done using a simple lookup table. Furthermore, the average gates per Clifford using compiled randomized benchmarking converges to $5$ quite rapidly, and so unless the number of qubits is small, the gain using compiled randomized benchmarking is small.
 
-    Cross-coupling and cross-driving effects have been observed, which could potentially be a problem, as it results in correlated errors. One example shown is when randomized benchmarking is performed on one qubit, the other qubit is slowly driven as well. The fact that the cross-driving effects in the Muxmon1 experiment are stronger than in the Muxmon0 device suggest that they are dependent on the amount of components separating same-frequency qubits. The same holds for cross-coupling effects. If it turns out that in the surface code architecture these effects must be reduced, a modified frequency re-use structure could be implemented with more components separating same-frequency qubits.
+    Cross-coupling and cross-driving effects have been observed, which could potentially be a problem, as it results in correlated errors. One example shown is when randomized benchmarking is performed on one qubit, the other qubit is slowly driven as well. The fact that the cross-driving effects in the Muxmon1 experiment are stronger than in the Muxmon0 device suggest that they are dependent on the amount of components separating same-frequency qubits. The same holds for cross-coupling effects. If it turns out that in the surface code architecture these effects must be reduced, a modified frequency reuse structure could be implemented with more components separating same-frequency qubits.
 
-    During the randomized benchmarking sequences leakage to the second-excited state has been observed, with a typical value of $0.03\%$ leakage per gate. Changing the DRAG parameter or increasing the pulse length could potentially reduce this leakage.
+    During the randomized benchmarking sequences, leakage to the second-excited state has been observed, with a typical leakage of $0.03\%$ per gate. Changing the DRAG parameter or increasing the pulse length could potentially reduce this leakage.
 
-    Even though the Duplexer already proves to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of instruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
+    Even though the Duplexer already proven to be very useful in a measurement set-up, it is only the first step in a path aimed at reducing the amount of instruments. The next generation Duplexer is already being made, which will be a true multiplexer having a variable number of outputs. This will be a huge step in the road to scaling up.
 
     There is one additional advantage of the $5$ primitives method, which is that the $5$ primitive gate sequence remains fixed. Therefore it is not needed to generate qubit pulses on demand, but only to control the qubit switch. This method is not limited to randomized benchmarking, and could potentially have an application in a quantum processor, where a central pulse generator continuously repeats the same $5$ pulses. By selectively directing the pulses to each of the qubits using a switch matrix, each qubit could have access to any given Clifford at any time. The consequence is that for single-qubit Clifford gates the pulses do not need to be generated on demand, but can simply be continuously looped. The timing of the switches is the only thing that needs to be directed, which is a far easier challenge. If the $5$ primitive gates are combined with a sixth gate, such as the T-gate, this would even result in any universal single-qubit gates being accessible to any qubit, simply through control of its corresponding switch.  This technique could even possibly be extended to two-qubit gates, where the flux pulses could be similarly controlled. This remains to be seen, as flux-pulse shaping is a considerably more complicated procedure. However, if this would be possible, it would mean that a universal set of quantum gates could be generated for qubits by only controlling the corresponding switches.
 
-    Having continuously streaming pulses, which are directed to the qubits via selective broadcasting could have major implications, as this would shift the challenge from generating pulses when required to only controlling the switches. This would have important consequences. First of all the feedback response time could improve significantly. Furthermore the amount of data required to be sent into the fridge could be reduced significantly. However, the most important consequence is probably that the amount of instruments required would be reduced significantly, as qubits sharing the same frequency could be controlled by a single pulse generating source. This might prove to be an important step in the pathway to building a quantum computer.
+    Having continuously streaming pulses, which are directed to the qubits via selective broadcasting could have major implications, as this would shift the challenge from generating pulses when required to only controlling the switches. This would have important consequences. First of all the feedback response time could improve significantly. Furthermore the amount of data required to be sent into the fridge could be reduced significantly. However, the most important consequence is probably that the amount of instruments required would be reduced significantly, as qubits sharing the same frequency could be controlled by a single pulse-generating source. This might prove to be an important step in the path to building a quantum computer.

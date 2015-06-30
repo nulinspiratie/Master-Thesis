@@ -24,7 +24,7 @@
 \contentsline {chapter}{\numberline {4}Conclusion and future work}{24}
 \contentsline {part}{II\hspace {1em}Muxmon experiment}{25}
 \contentsline {chapter}{\numberline {5}Challenges in scaling up}{26}
-\contentsline {section}{\numberline {5.1}Frequency re-use}{26}
+\contentsline {section}{\numberline {5.1}Frequency reuse}{26}
 \contentsline {section}{\numberline {5.2}Selective broadcasting}{27}
 \contentsline {section}{\numberline {5.3}The Muxmon experiment}{28}
 \contentsline {chapter}{\numberline {6}Muxmon device characterization}{31}
@@ -45,7 +45,7 @@
 \contentsline {subsubsection}{\numberline {6.3.3.2}Qubit dephasing: Ramsey}{45}
 \contentsline {subsubsection}{\numberline {6.3.3.3}Fast frequency qubit dephasing: Echo}{46}
 \contentsline {subsection}{\numberline {6.3.4}Second-excited state}{46}
-\contentsline {section}{\numberline {6.4}Exploring Frequency re-use}{47}
+\contentsline {section}{\numberline {6.4}Exploring Frequency reuse}{47}
 \contentsline {subsection}{\numberline {6.4.1}Cross coupling}{49}
 \contentsline {subsection}{\numberline {6.4.2}Cross driving}{49}
 \contentsline {chapter}{\numberline {7}Calibration routines}{52}
@@ -62,15 +62,15 @@
 \contentsline {section}{\numberline {8.1}Introduction}{60}
 \contentsline {section}{\numberline {8.2}Clifford group}{61}
 \contentsline {section}{\numberline {8.3}The randomized benchmarking protocol}{62}
-\contentsline {section}{\numberline {8.4}Single qubit randomized benchmarking}{64}
+\contentsline {section}{\numberline {8.4}Single-qubit randomized benchmarking}{64}
 \contentsline {subsection}{\numberline {8.4.1}Driving a single qubit versus driving both qubits}{64}
-\contentsline {subsection}{\numberline {8.4.2}Second-excited-state leakage}{66}
+\contentsline {subsection}{\numberline {8.4.2}Second-excited-state leakage}{65}
 \contentsline {section}{\numberline {8.5}Two qubit randomized benchmarking}{68}
 \contentsline {subsection}{\numberline {8.5.1}Alternating randomized benchmarking}{69}
 \contentsline {subsection}{\numberline {8.5.2}Compiled randomized benchmarking}{69}
 \contentsline {subsection}{\numberline {8.5.3}5 primitives randomized benchmarking}{70}
 \contentsline {section}{\numberline {8.6}Two qubit randomized benchmarking results}{71}
-\contentsline {section}{\numberline {8.7}Scaling of multi qubit randomized benchmarking}{74}
+\contentsline {section}{\numberline {8.7}Scaling of multi-qubit randomized benchmarking}{74}
 \contentsline {chapter}{\numberline {9}Conclusions and outlook}{76}
 \contentsline {chapter}{Appendices}{78}
 \contentsline {chapter}{\numberline {A}Noise characterization}{79}
