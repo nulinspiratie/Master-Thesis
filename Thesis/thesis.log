@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 JUN 2015 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.12.23)  30 JUN 2015 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2037,12 +2037,12 @@ ng used on input line 262.
 Appendix H.
 [98
 
-] [99] [100]
+] [99]
 Overfull \hbox (23.7594pt too wide) in paragraph at lines 308--319
  [][] 
  []
 
-) (./thesis.bbl [101] [102
+[100]) (./thesis.bbl [101] [102
 
 ] [103] [104]) 
 AED: lastpage setting LastPage
@@ -2075,7 +2075,7 @@ mlitb.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb
 fonts/type1/adobe/utopia/putr8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/ado
 be/utopia/putri8a.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/cm-super/s
 ftt1200.pfb><c:/texlive/2014/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb>
-Output written on thesis.pdf (110 pages, 30275859 bytes).
+Output written on thesis.pdf (110 pages, 30284061 bytes).
 PDF statistics:
  560 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams

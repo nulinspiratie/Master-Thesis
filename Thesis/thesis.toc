@@ -68,7 +68,7 @@
 \contentsline {section}{\numberline {8.5}Two qubit randomized benchmarking}{68}
 \contentsline {subsection}{\numberline {8.5.1}Alternating randomized benchmarking}{69}
 \contentsline {subsection}{\numberline {8.5.2}Compiled randomized benchmarking}{69}
-\contentsline {subsection}{\numberline {8.5.3}5 primitives randomized benchmarking}{70}
+\contentsline {subsection}{\numberline {8.5.3}5-primitives randomized benchmarking}{70}
 \contentsline {section}{\numberline {8.6}Two qubit randomized benchmarking results}{71}
 \contentsline {section}{\numberline {8.7}Scaling of multi-qubit randomized benchmarking}{74}
 \contentsline {chapter}{\numberline {9}Conclusions and outlook}{76}
