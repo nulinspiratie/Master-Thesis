@@ -25,7 +25,7 @@
 
       \begin{figure}[h]
         \centering
-        \includegraphics[width=.6\textwidth]{Figures/Exploring frequency reuse/surface_code_frequency reuse_cut.jpg}
+        \includegraphics[width=.6\textwidth]{Figures/Exploring frequency reuse/surface_code_frequency re-use_cut.jpg}
         \caption{A surface code architecture with the implementation of frequency reuse. The different digits correspond to distinct frequencies. }
         \label{fig:surface code frequency reuse}
       \end{figure}
@@ -328,16 +328,22 @@
 
       \subsection{Tracking the qubits}
         \label{ssec:tracked spectroscopy}
-
-        \begin{wrapfigure}[19]{r}{0.44\textwidth}
-          \begin{center}
-          \vspace{-30pt}
-            \includegraphics[width=\textwidth]{Figures/Qubit characterization/Tracked_spectroscopy.png}
-          \end{center}
-          \vspace{-20 pt}
+        \begin{figure}[!htb]
+          \centering
+          \includegraphics[width=.7\textwidth]{Figures/Qubit characterization/Tracked_spectroscopy.png}
           \caption{Tracked spectroscopy of the ancilla qubit. The blue dotted line is the fit to the qubit frequency, showing excellent agreement with measurements.}
           \label{fig:tracked spectroscopy}
-        \end{wrapfigure}
+        \end{figure}
+
+        % \begin{wrapfigure}[19]{r}{0.44\textwidth}
+        %   \begin{center}
+        %   \vspace{-30pt}
+        %     \includegraphics[width=\textwidth]{Figures/Qubit characterization/Tracked_spectroscopy.png}
+        %   \end{center}
+        %   \vspace{-20 pt}
+        %   \caption{Tracked spectroscopy of the ancilla qubit. The blue dotted line is the fit to the qubit frequency, showing excellent agreement with measurements.}
+        %   \label{fig:tracked spectroscopy}
+        % \end{wrapfigure}
 
         For flux-tunable qubits one is usually not only interested in finding the frequency at one specific flux value, but also how this frequency changes with varying flux. A simple approach is to perform a two-dimensional scan of a fixed frequency range versus flux. This however has several disadvantages. First of all it requires a new measurement to be set-up every time the qubit frequency moves out of the frequency range. Secondly, the largest part of the measurement will be spent measuring off-resonant signal, containing no useful information.
 
@@ -512,7 +518,7 @@
           An Echo measurement is quite similar to a Ramsey measurement, where two $X_{\pi/2}$ pulses are applied, separated by a wait time $\tau$. The difference is that in the middle of this wait time, at $\tau/2$, an additional refocusing $X_{\pi}$ pulse is sent. The refocusing pulse flips the qubit state on the Bloch sphere around the X-axis. We can view any phase noise that is slow compared to the wait-time $\tau$ as being quasi-static, and is therefore cancelled due to this flipping. Fast phase noise, however, will vary considerably during the wait time $\tau$, and so will still cause dephasing. In the absence of decoherence, the final state of the qubit is the ground state, which is in contrast to a Ramsey measurement, where the final state is the excited state.
 
           An Echo measurement is performed by monotonically increasing the wait-time $\tau$, while keeping the three pulses relative to the wait time $\tau$ fixed. The result is similar to a Ramsey measurement, showing an exponential decay, with corresponding Echo dephasing time $T_2^\text{e}$. This value should be higher or equal to the dephasing time $T_2^*$. The refocusing pulse has the additional effect that any precession due to detuning is also cancelled, thereby inhibiting the oscillatory behaviour that is present in Ramsey measurements. The phase of the final $X_{\pi/2}$ pulse is monotonically shifted, resulting in an artificial oscillation. This allows for better estimation of the Echo dephasing time $T_2^\text{e}$, and clearer distinguishability of any odd shapes in the measurement results.
-
+      \newpage
       \subsection{Second-excited state}
         \label{ssec:Second-excited state}
 
@@ -698,7 +704,7 @@
       \begin{table}[h]
         \begin{tabular}{l c c}
           \toprule
-          qubit & \multicolumn{2}{c}{cross-driving (\%)} \\
+          qubit & \multicolumn{2}{c}{cross driving (\%)} \\
           \cmidrule(lr){2-3}
                & top drive line & bottom drive line \\
           \midrule
